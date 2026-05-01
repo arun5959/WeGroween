@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Super-food microgreens by WeGroween. Scientifically grown for maximum nutrient density and flavor.">
+    <title>Microgreens | WeGroween</title>
+    <script src="https://kit.fontawesome.com/1d0b7b64ec.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <style type="text/tailwindcss">
+        @theme {
+            --normal-text-font: 'exo 2', sans-serif;
+            --header-text-font: 'figtree', sans-serif;
+        }
+
+        :root {
+            --earth-dark: #54473f;
+            --clay: #9a7e6f;
+            --sage-bg: #e9eed9;
+            --paper: #FAF9F6;
+        }
+
+        .text-gradient-earth {
+            background: linear-gradient(to right, #54473f, #9a7e6f);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .bento-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(154, 126, 111, 0.1);
+            transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+    </style>
+</head>
+
+<body class="bg-[#FAF9F6] text-[#54473f] selection:bg-[#e9eed9] overflow-x-hidden font-[var(--normal-text-font)]">
+
+    <!-- NAVIGATION -->
+    <header class="fixed top-0 w-full z-50 py-4 md:py-6 transition-all duration-500" id="main-nav">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
+            <a href="index.html">
+                <img src="Logo Transparent.webp" alt="Logo" class="h-10 md:h-12 w-auto">
+            </a>
+            
+            <nav class="hidden md:flex items-center gap-10 text-[12px] font-bold uppercase tracking-widest">
+                <a href="index.html#products" class="hover:text-[#9a7e6f] transition-colors">Products</a>
+                <a href="#" class="hover:text-[#9a7e6f] transition-colors">About Us</a>
+                <a href="#" class="px-6 py-3 bg-[#54473f] text-[#e9eed9] rounded-full hover:bg-[#9a7e6f] transition-all flex items-center gap-3">
+                    <i class="fa-solid fa-basket-shopping text-xs"></i>
+                    <span>Cart (0)</span>
+                </a>
+            </nav>
+
+            <button class="md:hidden text-2xl"><i class="fa-solid fa-bars-staggered"></i></button>
+        </div>
+    </header>
+
+    <main class="relative z-10 pt-28 md:pt-40 pb-20">
+        <!-- COLLECTION HEADER -->
+        <section class="max-w-7xl mx-auto px-6 md:px-12 text-center mb-16 md:mb-24">
+            <div data-aos="fade-down" class="inline-block px-4 py-1 border border-[#9a7e6f]/30 rounded-full text-[10px] font-bold uppercase tracking-widest text-[#9a7e6f] mb-6">
+                Super-food Concentrates
+            </div>
+            <h1 data-aos="fade-up" class="text-5xl md:text-7xl font-black font-[var(--header-text-font)]">
+                Vibrant <span class="text-gradient-earth italic">Microgreens.</span>
+            </h1>
+            <p data-aos="fade-up" data-aos-delay="100" class="mt-6 text-[#54473f]/60 max-w-xl mx-auto text-lg">
+                Packed with up to 40x more nutrients than mature leaves, our greens are harvested at the peak of vitality.
+            </p>
+        </section>
+
+        <!-- PRODUCT GRID -->
+        <section class="max-w-7xl mx-auto px-6 md:px-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <!-- Product Card: Radish -->
+                <article data-aos="fade-up" class="bento-card rounded-[32px] p-5 flex flex-col group">
+                    <div class="aspect-square overflow-hidden rounded-[24px] mb-6 bg-white">
+                        <img src="Raddish.webp" loading="lazy" alt="Radish Microgreens" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    </div>
+                    <div class="px-2">
+                        <span class="text-[10px] font-bold uppercase tracking-widest text-[#9a7e6f]">Spicy & Zesty</span>
+                        <h3 class="text-xl font-bold mt-1 mb-4 font-[var(--header-text-font)]">Radish Microgreens</h3>
+                    </div>
+                    <a href="#" class="mt-auto flex items-center justify-between p-4 bg-white rounded-2xl font-bold hover:bg-[#54473f] hover:text-[#e9eed9] transition-all group/btn">
+                        Shop Now <i class="fa-solid fa-arrow-right text-xs group-hover/btn:translate-x-1 transition-transform"></i>
+                    </a>
+                </article>
+
+                <!-- Product Card: Sunflower -->
+                <article data-aos="fade-up" data-aos-delay="100" class="bento-card rounded-[32px] p-5 flex flex-col group">
+                    <div class="aspect-square overflow-hidden rounded-[24px] mb-6 bg-white">
+                        <img src="Sunflower.webp" loading="lazy" alt="Sunflower Shoots" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    </div>
+                    <div class="px-2">
+                        <span class="text-[10px] font-bold uppercase tracking-widest text-[#9a7e6f]">Nutty & Crunchy</span>
+                        <h3 class="text-xl font-bold mt-1 mb-4 font-[var(--header-text-font)]">Sunflower Shoots</h3>
+                    </div>
+                    <a href="#" class="mt-auto flex items-center justify-between p-4 bg-white rounded-2xl font-bold hover:bg-[#54473f] hover:text-[#e9eed9] transition-all group/btn">
+                        Shop Now <i class="fa-solid fa-arrow-right text-xs group-hover/btn:translate-x-1 transition-transform"></i>
+                    </a>
+                </article>
+
+                <!-- Product Card: Mustard -->
+                <article data-aos="fade-up" data-aos-delay="200" class="bento-card rounded-[32px] p-5 flex flex-col group">
+                    <div class="aspect-square overflow-hidden rounded-[24px] mb-6 bg-white">
+                        <img src="Mustard.webp" loading="lazy" alt="Mustard Greens" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    </div>
+                    <div class="px-2">
+                        <span class="text-[10px] font-bold uppercase tracking-widest text-[#9a7e6f]">Bold & Peppery</span>
+                        <h3 class="text-xl font-bold mt-1 mb-4 font-[var(--header-text-font)]">Mustard Greens</h3>
+                    </div>
+                    <a href="#" class="mt-auto flex items-center justify-between p-4 bg-white rounded-2xl font-bold hover:bg-[#54473f] hover:text-[#e9eed9] transition-all group/btn">
+                        Shop Now <i class="fa-solid fa-arrow-right text-xs group-hover/btn:translate-x-1 transition-transform"></i>
+                    </a>
+                </article>
+
+                <!-- Product Card: Broccoli -->
+                <article data-aos="fade-up" data-aos-delay="300" class="bento-card rounded-[32px] p-5 flex flex-col group">
+                    <div class="aspect-square overflow-hidden rounded-[24px] mb-6 bg-white">
+                        <img src="Broccoli.webp" loading="lazy" alt="Broccoli Microgreens" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    </div>
+                    <div class="px-2">
+                        <span class="text-[10px] font-bold uppercase tracking-widest text-[#9a7e6f]">Mild & Nutritious</span>
+                        <h3 class="text-xl font-bold mt-1 mb-4 font-[var(--header-text-font)]">Broccoli Microgreens</h3>
+                    </div>
+                    <a href="#" class="mt-auto flex items-center justify-between p-4 bg-white rounded-2xl font-bold hover:bg-[#54473f] hover:text-[#e9eed9] transition-all group/btn">
+                        Shop Now <i class="fa-solid fa-arrow-right text-xs group-hover/btn:translate-x-1 transition-transform"></i>
+                    </a>
+                </article>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-[#e9eed9] mt-20 pt-16">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 pb-16">
+            <div class="flex flex-col md:flex-row justify-between items-start gap-12">
+                <div class="flex flex-col items-center md:items-start space-y-6 w-full md:w-1/3">
+                    <img src="Logo Transparent.webp" alt="Logo" class="h-16 w-auto">
+                    <p class="text-[#54473f]/70 text-sm font-medium leading-relaxed max-w-xs text-center md:text-left">
+                        Chef-grade mushrooms and super-food greens, grown for the modern kitchen.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://wa.me/7988216512" class="w-10 h-10 bg-white/50 rounded-full flex items-center justify-center hover:bg-[#9a7e6f] hover:text-white transition-all"><i class="fa-brands fa-whatsapp text-lg"></i></a>
+                        <a href="https://www.instagram.com/wegroween_in/" class="w-10 h-10 bg-white/50 rounded-full flex items-center justify-center hover:bg-[#9a7e6f] hover:text-white transition-all"><i class="fa-brands fa-instagram text-lg"></i></a>
+                        <a href="#" class="w-10 h-10 bg-white/50 rounded-full flex items-center justify-center hover:bg-[#9a7e6f] hover:text-white transition-all"><i class="fa-brands fa-linkedin text-lg"></i></a>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 gap-12 w-full md:w-auto">
+                    <div class="flex flex-col space-y-4 text-[13px] text-[#54473f] font-bold uppercase tracking-widest">
+                        <h5 class="text-[#9a7e6f] text-xs">Explore</h5>
+                        <ul class="space-y-3 normal-case tracking-normal">
+                            <li><a href="mushrooms.html" class="hover:text-[#9a7e6f] transition-colors">Mushrooms</a></li>
+                            <li><a href="microgreens.html" class="hover:text-[#9a7e6f] transition-colors">Microgreens</a></li>
+                            <li><a href="combos.html" class="hover:text-[#9a7e6f] transition-colors">Combos</a></li>
+                        </ul>
+                    </div>
+                    <div class="flex flex-col space-y-4 text-[13px] text-[#54473f] font-bold uppercase tracking-widest">
+                        <h5 class="text-[#9a7e6f] text-xs">Support</h5>
+                        <ul class="space-y-3 normal-case tracking-normal">
+                            <li><a href="#" class="hover:text-[#9a7e6f] transition-colors">Contact</a></li>
+                            <li><a href="#" class="hover:text-[#9a7e6f] transition-colors">Shipping</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-[#9a7e6f] py-8 text-[#e9eed9]">
+            <div class="max-w-7xl mx-auto px-6 md:px-12 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-sm font-medium">© 2026 WeGroween. All rights reserved.</p>
+                <div class="flex gap-6 text-[11px] font-bold uppercase tracking-widest underline underline-offset-4 decoration-white/30">
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init({ duration: 1000, once: true });
+
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('main-nav');
+            window.scrollY > 20 
+                ? nav.classList.add('bg-white/90', 'backdrop-blur-md', 'py-3', 'shadow-sm') 
+                : nav.classList.remove('bg-white/90', 'backdrop-blur-md', 'py-3', 'shadow-sm');
+        });
+    </script>
+</body>
+</html>
