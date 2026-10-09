@@ -1,0 +1,546 @@
+{
+  "viewports": [
+    {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "overflow": [],
+      "brokenImages": [],
+      "fonts": "loaded",
+      "cards": [
+        {
+          "height": 490,
+          "action": 1608,
+          "title": "Blue Oyster"
+        },
+        {
+          "height": 490,
+          "action": 1608,
+          "title": "Yellow Oyster"
+        },
+        {
+          "height": 490,
+          "action": 1608,
+          "title": "Radish microgreens"
+        },
+        {
+          "height": 490,
+          "action": 1608,
+          "title": "Sunflower shoots"
+        }
+      ],
+      "palette": "palette-2"
+    },
+    {
+      "width": 768,
+      "scrollWidth": 768,
+      "overflow": [],
+      "brokenImages": [],
+      "fonts": "loaded",
+      "cards": [
+        {
+          "height": 490,
+          "action": 2382,
+          "title": "Blue Oyster"
+        },
+        {
+          "height": 490,
+          "action": 2382,
+          "title": "Yellow Oyster"
+        },
+        {
+          "height": 490,
+          "action": 2890,
+          "title": "Radish microgreens"
+        },
+        {
+          "height": 490,
+          "action": 2890,
+          "title": "Sunflower shoots"
+        }
+      ],
+      "palette": "palette-2"
+    },
+    {
+      "width": 390,
+      "scrollWidth": 625,
+      "overflow": [
+        {
+          "tag": "DIV",
+          "cls": "section-aside",
+          "right": 514
+        },
+        {
+          "tag": "P",
+          "cls": "",
+          "right": 514
+        },
+        {
+          "tag": "FORM",
+          "cls": "pincode-form",
+          "right": 581
+        },
+        {
+          "tag": "LABEL",
+          "cls": "",
+          "right": 581
+        },
+        {
+          "tag": "DIV",
+          "cls": "",
+          "right": 581
+        },
+        {
+          "tag": "INPUT",
+          "cls": "",
+          "right": 478
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "",
+          "right": 581
+        },
+        {
+          "tag": "P",
+          "cls": "",
+          "right": 581
+        },
+        {
+          "tag": "DIV",
+          "cls": "section-aside",
+          "right": 625
+        },
+        {
+          "tag": "P",
+          "cls": "",
+          "right": 625
+        },
+        {
+          "tag": "DIV",
+          "cls": "section-aside",
+          "right": 596
+        },
+        {
+          "tag": "P",
+          "cls": "",
+          "right": 596
+        },
+        {
+          "tag": "ARTICLE",
+          "cls": "",
+          "right": 438
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "right": 415
+        },
+        {
+          "tag": "H4",
+          "cls": "",
+          "right": 409
+        }
+      ],
+      "brokenImages": [],
+      "fonts": "loaded",
+      "cards": [
+        {
+          "height": 515,
+          "action": 2241,
+          "title": "Blue Oyster"
+        },
+        {
+          "height": 515,
+          "action": 2774,
+          "title": "Yellow Oyster"
+        },
+        {
+          "height": 515,
+          "action": 3308,
+          "title": "Radish microgreens"
+        },
+        {
+          "height": 515,
+          "action": 3841,
+          "title": "Sunflower shoots"
+        }
+      ],
+      "palette": "palette-2"
+    },
+    {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "overflow": [],
+      "brokenImages": [],
+      "fonts": "loaded",
+      "cards": [
+        {
+          "height": 490,
+          "action": 1608,
+          "title": "Blue Oyster"
+        },
+        {
+          "height": 490,
+          "action": 1608,
+          "title": "Yellow Oyster"
+        },
+        {
+          "height": 490,
+          "action": 1608,
+          "title": "Radish microgreens"
+        },
+        {
+          "height": 490,
+          "action": 1608,
+          "title": "Sunflower shoots"
+        }
+      ],
+      "palette": "palette-1"
+    },
+    {
+      "width": 768,
+      "scrollWidth": 768,
+      "overflow": [],
+      "brokenImages": [],
+      "fonts": "loaded",
+      "cards": [
+        {
+          "height": 490,
+          "action": 2382,
+          "title": "Blue Oyster"
+        },
+        {
+          "height": 490,
+          "action": 2382,
+          "title": "Yellow Oyster"
+        },
+        {
+          "height": 490,
+          "action": 2890,
+          "title": "Radish microgreens"
+        },
+        {
+          "height": 490,
+          "action": 2890,
+          "title": "Sunflower shoots"
+        }
+      ],
+      "palette": "palette-1"
+    },
+    {
+      "width": 390,
+      "scrollWidth": 625,
+      "overflow": [
+        {
+          "tag": "DIV",
+          "cls": "section-aside",
+          "right": 514
+        },
+        {
+          "tag": "P",
+          "cls": "",
+          "right": 514
+        },
+        {
+          "tag": "FORM",
+          "cls": "pincode-form",
+          "right": 581
+        },
+        {
+          "tag": "LABEL",
+          "cls": "",
+          "right": 581
+        },
+        {
+          "tag": "DIV",
+          "cls": "",
+          "right": 581
+        },
+        {
+          "tag": "INPUT",
+          "cls": "",
+          "right": 478
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "",
+          "right": 581
+        },
+        {
+          "tag": "P",
+          "cls": "",
+          "right": 581
+        },
+        {
+          "tag": "DIV",
+          "cls": "section-aside",
+          "right": 625
+        },
+        {
+          "tag": "P",
+          "cls": "",
+          "right": 625
+        },
+        {
+          "tag": "DIV",
+          "cls": "section-aside",
+          "right": 596
+        },
+        {
+          "tag": "P",
+          "cls": "",
+          "right": 596
+        },
+        {
+          "tag": "ARTICLE",
+          "cls": "",
+          "right": 438
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "right": 415
+        },
+        {
+          "tag": "H4",
+          "cls": "",
+          "right": 409
+        }
+      ],
+      "brokenImages": [],
+      "fonts": "loaded",
+      "cards": [
+        {
+          "height": 515,
+          "action": 2241,
+          "title": "Blue Oyster"
+        },
+        {
+          "height": 515,
+          "action": 2774,
+          "title": "Yellow Oyster"
+        },
+        {
+          "height": 515,
+          "action": 3308,
+          "title": "Radish microgreens"
+        },
+        {
+          "height": 515,
+          "action": 3841,
+          "title": "Sunflower shoots"
+        }
+      ],
+      "palette": "palette-1"
+    },
+    {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "overflow": [],
+      "brokenImages": [],
+      "fonts": "loaded",
+      "cards": [
+        {
+          "height": 490,
+          "action": 1608,
+          "title": "Blue Oyster"
+        },
+        {
+          "height": 490,
+          "action": 1608,
+          "title": "Yellow Oyster"
+        },
+        {
+          "height": 490,
+          "action": 1608,
+          "title": "Radish microgreens"
+        },
+        {
+          "height": 490,
+          "action": 1608,
+          "title": "Sunflower shoots"
+        }
+      ],
+      "palette": "palette-3"
+    },
+    {
+      "width": 768,
+      "scrollWidth": 768,
+      "overflow": [],
+      "brokenImages": [],
+      "fonts": "loaded",
+      "cards": [
+        {
+          "height": 490,
+          "action": 2382,
+          "title": "Blue Oyster"
+        },
+        {
+          "height": 490,
+          "action": 2382,
+          "title": "Yellow Oyster"
+        },
+        {
+          "height": 490,
+          "action": 2890,
+          "title": "Radish microgreens"
+        },
+        {
+          "height": 490,
+          "action": 2890,
+          "title": "Sunflower shoots"
+        }
+      ],
+      "palette": "palette-3"
+    },
+    {
+      "width": 390,
+      "scrollWidth": 625,
+      "overflow": [
+        {
+          "tag": "DIV",
+          "cls": "section-aside",
+          "right": 514
+        },
+        {
+          "tag": "P",
+          "cls": "",
+          "right": 514
+        },
+        {
+          "tag": "FORM",
+          "cls": "pincode-form",
+          "right": 581
+        },
+        {
+          "tag": "LABEL",
+          "cls": "",
+          "right": 581
+        },
+        {
+          "tag": "DIV",
+          "cls": "",
+          "right": 581
+        },
+        {
+          "tag": "INPUT",
+          "cls": "",
+          "right": 478
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "",
+          "right": 581
+        },
+        {
+          "tag": "P",
+          "cls": "",
+          "right": 581
+        },
+        {
+          "tag": "DIV",
+          "cls": "section-aside",
+          "right": 625
+        },
+        {
+          "tag": "P",
+          "cls": "",
+          "right": 625
+        },
+        {
+          "tag": "DIV",
+          "cls": "section-aside",
+          "right": 596
+        },
+        {
+          "tag": "P",
+          "cls": "",
+          "right": 596
+        },
+        {
+          "tag": "ARTICLE",
+          "cls": "",
+          "right": 438
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "right": 415
+        },
+        {
+          "tag": "H4",
+          "cls": "",
+          "right": 409
+        }
+      ],
+      "brokenImages": [],
+      "fonts": "loaded",
+      "cards": [
+        {
+          "height": 515,
+          "action": 2241,
+          "title": "Blue Oyster"
+        },
+        {
+          "height": 515,
+          "action": 2774,
+          "title": "Yellow Oyster"
+        },
+        {
+          "height": 515,
+          "action": 3308,
+          "title": "Radish microgreens"
+        },
+        {
+          "height": 515,
+          "action": 3841,
+          "title": "Sunflower shoots"
+        }
+      ],
+      "palette": "palette-3"
+    }
+  ],
+  "stress": {
+    "width": 720,
+    "scrollWidth": 720,
+    "overflow": [],
+    "brokenImages": [],
+    "fonts": "loaded",
+    "cards": [
+      {
+        "height": 490,
+        "action": 2320,
+        "title": "A longer seasonal mushroom variety"
+      },
+      {
+        "height": 490,
+        "action": 2320,
+        "title": "Yellow Oyster"
+      },
+      {
+        "height": 490,
+        "action": 2827,
+        "title": "Radish microgreens"
+      },
+      {
+        "height": 490,
+        "action": 2827,
+        "title": "Sunflower shoots"
+      }
+    ],
+    "case": "720px equivalent 200% desktop reflow, expanded title/copy and missing optional description"
+  },
+  "gallery": {
+    "title": "WeGroween — design decisions",
+    "options": 0,
+    "frames": 3,
+    "buttons": 13,
+    "text": "WeGroween 1.3.0 — three-palette delivery review\nC2 Soil & Saffron is primary. All variants preserve H1 structure, text, photos and geometry. Primary C2 homepage · C1 comparison · C3 comparison · Component states. Selections below remain proposals; recorded approvals live in language-state.json.\nWeGroween — design decisions\n\nCompare real project opt",
+    "color_frames": 3
+  },
+  "component": {
+    "scrollWidth": 390,
+    "width": 390,
+    "controls": 28,
+    "fonts": "loaded"
+  }
+}

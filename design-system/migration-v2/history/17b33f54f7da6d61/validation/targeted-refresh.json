@@ -1,0 +1,8 @@
+{
+  "change": "Component heading label corrected from v1.2.0 proposed to 1.3.0 proposed",
+  "affected_outputs": [
+    "artifact/component-specimen.html"
+  ],
+  "unchanged_rendering": "No homepage/document template, canonical input or approval changed; existing rendered QA remains applicable",
+  "freshness": "Rebound adapter manifest after targeted component refresh"
+}

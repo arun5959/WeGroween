@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-05",
+  "purpose": "Plan revision only; legacy delivery inputs and approved choices preserved",
+  "project_root": "E:\\WeGroween\\GitHub Clone\\WeGroween",
+  "files": [
+    "PROJECT_STATUS.md",
+    "README.md",
+    "decisions.md"
+  ],
+  "baseline_file_count": 196
+}

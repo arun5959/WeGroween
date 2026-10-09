@@ -1,0 +1,33 @@
+{
+  "status": "passed",
+  "checkedAt": "2026-10-07T12:08:02.646Z",
+  "widths": [
+    320,
+    390,
+    640,
+    768,
+    1440
+  ],
+  "directions": [
+    "desk",
+    "letter",
+    "guide"
+  ],
+  "screenshots": 6,
+  "checks": [
+    "one selected direction",
+    "no horizontal overflow",
+    "local images loaded",
+    "topic guidance and subject",
+    "draft validation and mailto construction",
+    "draft invalidation",
+    "keyboard accordion",
+    "mobile menu Escape",
+    "reduced motion",
+    "no JavaScript fallback",
+    "no message submissions",
+    "no browser runtime errors",
+    "protected source hashes unchanged"
+  ],
+  "protectedFiles": 86
+}

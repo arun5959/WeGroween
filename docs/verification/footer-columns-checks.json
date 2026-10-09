@@ -1,0 +1,179 @@
+{
+  "checks": [
+    {
+      "width": 320,
+      "headings": [
+        "Store",
+        "Policies",
+        "Contact"
+      ],
+      "columns": "128px 128px",
+      "overflow": false,
+      "smallTargets": 0
+    },
+    {
+      "width": 390,
+      "headings": [
+        "Store",
+        "Policies",
+        "Contact"
+      ],
+      "columns": "163px 163px",
+      "overflow": false,
+      "smallTargets": 0
+    },
+    {
+      "width": 640,
+      "headings": [
+        "Store",
+        "Policies",
+        "Contact"
+      ],
+      "columns": "288px 288px",
+      "overflow": false,
+      "smallTargets": 0
+    },
+    {
+      "width": 768,
+      "headings": [
+        "Store",
+        "Policies",
+        "Contact"
+      ],
+      "columns": "218.656px 218.672px 218.672px",
+      "overflow": false,
+      "smallTargets": 0
+    },
+    {
+      "width": 1050,
+      "headings": [
+        "Store",
+        "Policies",
+        "Contact"
+      ],
+      "columns": "312.656px 312.672px 312.656px",
+      "overflow": false,
+      "smallTargets": 0
+    },
+    {
+      "width": 1440,
+      "headings": [
+        "Store",
+        "Policies",
+        "Contact"
+      ],
+      "columns": "367.297px 229.562px 229.562px 229.578px",
+      "overflow": false,
+      "smallTargets": 0
+    }
+  ],
+  "links": [
+    {
+      "label": "WeGroween home",
+      "href": "/"
+    },
+    {
+      "label": "Our Story",
+      "href": "/our-farm"
+    },
+    {
+      "label": "Shop all",
+      "href": "/shop"
+    },
+    {
+      "label": "Mushrooms",
+      "href": "/shop/category/mushrooms"
+    },
+    {
+      "label": "Microgreens",
+      "href": "/shop/category/microgreens"
+    },
+    {
+      "label": "Pairings",
+      "href": "/shop/category/combos"
+    },
+    {
+      "label": "Cart",
+      "href": "/cart"
+    },
+    {
+      "label": "Delivery",
+      "href": "/policies/delivery"
+    },
+    {
+      "label": "Returns and refunds",
+      "href": "/policies/returns"
+    },
+    {
+      "label": "Privacy",
+      "href": "/policies/privacy"
+    },
+    {
+      "label": "Terms",
+      "href": "/policies/terms"
+    },
+    {
+      "label": "Help and contact",
+      "href": "/help"
+    },
+    {
+      "label": "Restaurant Supply",
+      "href": "/restaurant-supply"
+    }
+  ],
+  "keyboard": "visible focus and navigation passed",
+  "noJavaScript": "three columns present",
+  "runtimeErrors": [],
+  "finalContactChecks": [
+    {
+      "width": 320,
+      "overflow": false,
+      "email": "mailto:wegroween@gmail.com",
+      "phone": "tel:+917958614599",
+      "location": "Gohana",
+      "minTargets": true
+    },
+    {
+      "width": 390,
+      "overflow": false,
+      "email": "mailto:wegroween@gmail.com",
+      "phone": "tel:+917958614599",
+      "location": "Gohana",
+      "minTargets": true
+    },
+    {
+      "width": 640,
+      "overflow": false,
+      "email": "mailto:wegroween@gmail.com",
+      "phone": "tel:+917958614599",
+      "location": "Gohana",
+      "minTargets": true
+    },
+    {
+      "width": 768,
+      "overflow": false,
+      "email": "mailto:wegroween@gmail.com",
+      "phone": "tel:+917958614599",
+      "location": "Gohana",
+      "minTargets": true
+    },
+    {
+      "width": 1050,
+      "overflow": false,
+      "email": "mailto:wegroween@gmail.com",
+      "phone": "tel:+917958614599",
+      "location": "Gohana",
+      "minTargets": true
+    },
+    {
+      "width": 1440,
+      "overflow": false,
+      "email": "mailto:wegroween@gmail.com",
+      "phone": "tel:+917958614599",
+      "location": "Gohana",
+      "minTargets": true
+    }
+  ],
+  "staticContactDetails": "present in built HTML",
+  "internalLinks": "13 return 200"
+}

@@ -1,0 +1,30 @@
+{
+  "proposal": {
+    "schema_version": "2.0",
+    "project_id": "wegroween",
+    "version": "1.3.0-proposed",
+    "options_revision": "1",
+    "selections": {
+      "color": "palette-1"
+    },
+    "shortlists": {
+      "territory": [],
+      "color": [],
+      "typography": [],
+      "imagery": [],
+      "structure": []
+    },
+    "notes": {
+      "territory": "",
+      "color": "",
+      "typography": "",
+      "imagery": "",
+      "structure": ""
+    },
+    "status": "proposed",
+    "exported_at": "2026-10-05T11:46:01.756Z"
+  },
+  "summary": "Creative direction: Pending\n\nColor palette: Orchard Ink [palette-1] — proposed\n\nTypography: Pending\n\nImagery treatment: Pending\n\nHomepage structure: Pending",
+  "frames": 3,
+  "keyboard_category": "typography"
+}

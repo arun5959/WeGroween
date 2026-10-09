@@ -1,0 +1,89 @@
+/* Shared runtime button states. Defaults use the existing brand palette;
+   variants and surface contexts customize properties rather than state rules. */
+.button {
+  --button-background: var(--component-button-states-default-background);
+  --button-foreground: var(--component-button-states-default-foreground);
+  --button-border: transparent;
+  --button-hover-background: var(--color-brand-secondary);
+  --button-hover-foreground: var(--color-text-inverse);
+  --button-hover-border: transparent;
+  --button-active-background: var(--color-text-primary);
+  --button-active-foreground: var(--color-text-inverse);
+  --button-active-border: transparent;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-md);
+  min-height: var(--component-button-height-md);
+  padding: var(--space-sm) var(--component-button-padding-inline-md);
+  border: 1px solid var(--button-border);
+  border-radius: var(--radius-control);
+  background-color: var(--button-background);
+  color: var(--button-foreground);
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color var(--motion-micro) var(--motion-easing-standard), color var(--motion-micro) var(--motion-easing-standard), border-color var(--motion-micro) var(--motion-easing-standard);
+}
+
+.button--secondary {
+  --button-background: transparent;
+  --button-foreground: var(--color-brand-primary);
+  --button-border: var(--color-brand-primary);
+  --button-hover-background: color-mix(in srgb, var(--color-brand-primary) 8%, transparent);
+  --button-hover-foreground: var(--color-brand-primary);
+  --button-hover-border: var(--color-brand-primary);
+  --button-active-background: color-mix(in srgb, var(--color-brand-primary) 14%, transparent);
+  --button-active-foreground: var(--color-brand-primary);
+  --button-active-border: var(--color-brand-primary);
+}
+
+.button--quiet {
+  --button-background: transparent;
+  --button-foreground: var(--color-brand-primary);
+  --button-hover-background: transparent;
+  --button-hover-foreground: var(--color-brand-secondary);
+  --button-active-background: transparent;
+  --button-active-foreground: var(--color-text-primary);
+  padding-inline: var(--space-xs);
+  text-decoration: underline;
+}
+
+/* Touch taps use the pressed state without leaving a sticky hover color. */
+@media (hover: hover) and (pointer: fine) {
+  .button:not(:disabled, [aria-disabled="true"], [aria-busy="true"]):hover {
+    background-color: var(--button-hover-background);
+    color: var(--button-hover-foreground);
+    border-color: var(--button-hover-border);
+  }
+}
+
+.button:focus-visible {
+  outline: var(--component-focus-ring-width) solid var(--color-focus);
+  outline-offset: var(--component-focus-ring-offset);
+}
+
+.button:not(:disabled, [aria-disabled="true"], [aria-busy="true"]):focus-visible {
+  background-color: var(--button-hover-background);
+  color: var(--button-hover-foreground);
+  border-color: var(--button-hover-border);
+}
+
+.button:not(:disabled, [aria-disabled="true"], [aria-busy="true"]):active {
+  background-color: var(--button-active-background);
+  color: var(--button-active-foreground);
+  border-color: var(--button-active-border);
+}
+
+.button:disabled, .button[aria-disabled="true"] {
+  background-color: var(--component-button-states-disabled-fill);
+  color: var(--component-button-states-disabled-content);
+  border-color: transparent;
+  cursor: not-allowed;
+}
+
+.button[aria-busy="true"] { cursor: wait; }
+
+@media (prefers-reduced-motion: reduce) {
+  .button { transition: none; }
+}

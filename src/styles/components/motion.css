@@ -1,0 +1,23 @@
+/* Animate specific visual properties, never every property or focus position. */
+a:not(.button), .header-icon-control, summary {
+  transition: color var(--motion-micro) var(--motion-easing-standard), background-color var(--motion-micro) var(--motion-easing-standard);
+}
+.navigation-label { transition: transform var(--motion-micro) var(--motion-easing-standard), color var(--motion-micro) var(--motion-easing-standard); }
+input, select, textarea {
+  transition: border-color var(--motion-micro) var(--motion-easing-standard), background-color var(--motion-micro) var(--motion-easing-standard), color var(--motion-micro) var(--motion-easing-standard);
+}
+.category-card { transition: transform var(--motion-standard) var(--motion-easing-standard), border-color var(--motion-micro) var(--motion-easing-standard); }
+.motion-disclosure summary .wg-icon { transition: transform var(--motion-standard) var(--motion-easing-standard); }
+.motion-disclosure[data-expanded="false"] summary .wg-icon { transform: none; }
+.header-icon-control.menu-toggle { display: inline-grid; }
+.header-icon-control.menu-toggle .menu-open-icon, .header-icon-control.menu-toggle .menu-close-icon { display: inline-flex; grid-area: 1 / 1; transition: opacity var(--motion-micro) var(--motion-easing-standard), transform var(--motion-standard) var(--motion-easing-standard); }
+.header-icon-control.menu-toggle .menu-close-icon { opacity: 0; transform: rotate(-45deg); }
+.header-icon-control.menu-toggle[aria-expanded="true"] .menu-open-icon { display: inline-flex; opacity: 0; transform: rotate(45deg); }
+.header-icon-control.menu-toggle[aria-expanded="true"] .menu-close-icon { opacity: 1; transform: none; }
+@media (max-width: 720px) {
+  .header-inner--storefront { row-gap: 0; }
+  .site-navigation > a, .site-navigation > .mobile-menu-actions { flex-shrink: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  a, input, select, textarea, summary, .navigation-label, .header-icon-control, .motion-disclosure summary .wg-icon, .menu-toggle span { transition: none !important; }
+}

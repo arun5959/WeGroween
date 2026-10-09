@@ -1,0 +1,14 @@
+{
+  "status": "SELECTED",
+  "date": "2026-10-07",
+  "selectionOwner": "User",
+  "request": "mix approaches 2 and 3, ensure the 2nd is primary and the third one is used as FAQs",
+  "primary": "letter",
+  "secondary": "guide",
+  "composition": "Editorial introduction, enquiry form with direct contact details alongside it, then a separate FAQ section. On mobile the form stays before the contact panel and FAQs.",
+  "route": "/help",
+  "label": "Contact",
+  "formBehavior": "Local email draft preparation followed by an explicit mailto action. No website delivery service, message submission or storage.",
+  "foundation": "Existing tokens, typography, Field Notes icons, primary buttons, shared header and footer retained.",
+  "originalGallery": "Preserved as the comparison reviewed before selection. Its historical proposal baseline is not a current production baseline."
+}

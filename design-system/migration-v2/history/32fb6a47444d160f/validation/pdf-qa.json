@@ -1,0 +1,648 @@
+{
+  "pdfs": [
+    {
+      "file": "pdf/wegroween-design-direction-manual.pdf",
+      "pages": [
+        {
+          "page": 1,
+          "size": [
+            594.96,
+            841.92
+          ],
+          "text_chars": 2242,
+          "out_of_bounds": [],
+          "fonts": [
+            "",
+            "",
+            "",
+            "Helvetica"
+          ]
+        },
+        {
+          "page": 2,
+          "size": [
+            594.96,
+            841.92
+          ],
+          "text_chars": 2456,
+          "out_of_bounds": [],
+          "fonts": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "Helvetica"
+          ]
+        },
+        {
+          "page": 3,
+          "size": [
+            594.96,
+            841.92
+          ],
+          "text_chars": 2274,
+          "out_of_bounds": [],
+          "fonts": [
+            "",
+            "",
+            "",
+            "Helvetica"
+          ]
+        },
+        {
+          "page": 4,
+          "size": [
+            594.96,
+            841.92
+          ],
+          "text_chars": 1255,
+          "out_of_bounds": [],
+          "fonts": [
+            "",
+            "",
+            "",
+            "",
+            "Helvetica"
+          ]
+        },
+        {
+          "page": 5,
+          "size": [
+            594.96,
+            841.92
+          ],
+          "text_chars": 1230,
+          "out_of_bounds": [],
+          "fonts": [
+            "",
+            "",
+            "",
+            "",
+            "Helvetica"
+          ]
+        },
+        {
+          "page": 6,
+          "size": [
+            594.96,
+            841.92
+          ],
+          "text_chars": 1026,
+          "out_of_bounds": [],
+          "fonts": [
+            "",
+            "",
+            "Helvetica"
+          ]
+        },
+        {
+          "page": 7,
+          "size": [
+            594.96,
+            841.92
+          ],
+          "text_chars": 1506,
+          "out_of_bounds": [],
+          "fonts": [
+            "",
+            "",
+            "",
+            "Helvetica"
+          ]
+        },
+        {
+          "page": 8,
+          "size": [
+            594.96,
+            841.92
+          ],
+          "text_chars": 785,
+          "out_of_bounds": [],
+          "fonts": [
+            "",
+            "",
+            "",
+            "Helvetica"
+          ]
+        },
+        {
+          "page": 9,
+          "size": [
+            594.96,
+            841.92
+          ],
+          "text_chars": 2242,
+          "out_of_bounds": [],
+          "fonts": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "Helvetica"
+          ]
+        },
+        {
+          "page": 10,
+          "size": [
+            594.96,
+            841.92
+          ],
+          "text_chars": 2128,
+          "out_of_bounds": [],
+          "fonts": [
+            "",
+            "",
+            "Helvetica"
+          ]
+        },
+        {
+          "page": 11,
+          "size": [
+            594.96,
+            841.92
+          ],
+          "text_chars": 1812,
+          "out_of_bounds": [],
+          "fonts": [
+            "",
+            "",
+            "",
+            "",
+            "Helvetica"
+          ]
+        },
+        {
+          "page": 12,
+          "size": [
+            594.96,
+            841.92
+          ],
+          "text_chars": 1945,
+          "out_of_bounds": [],
+          "fonts": [
+            "",
+            "",
+            "Helvetica"
+          ]
+        },
+        {
+          "page": 13,
+          "size": [
+            594.96,
+            841.92
+          ],
+          "text_chars": 3437,
+          "out_of_bounds": [],
+          "fonts": [
+            "",
+            "",
+            "Helvetica"
+          ]
+        },
+        {
+          "page": 14,
+          "size": [
+            594.96,
+            841.92
+          ],
+          "text_chars": 4646,
+          "out_of_bounds": [],
+          "fonts": [
+            "",
+            "Helvetica"
+          ]
+        },
+        {
+          "page": 15,
+          "size": [
+            594.96,
+            841.92
+          ],
+          "text_chars": 2840,
+          "out_of_bounds": [],
+          "fonts": [
+            "",
+            "",
+            "",
+            "Helvetica"
+          ]
+        },
+        {
+          "page": 16,
+          "size": [
+            594.96,
+            841.92
+          ],
+          "text_chars": 2930,
+          "out_of_bounds": [],
+          "fonts": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "Helvetica"
+          ]
+        },
+        {
+          "page": 17,
+          "size": [
+            594.96,
+            841.92
+          ],
+          "text_chars": 2963,
+          "out_of_bounds": [],
+          "fonts": [
+            "",
+            "Helvetica"
+          ]
+        },
+        {
+          "page": 18,
+          "size": [
+            594.96,
+            841.92
+          ],
+          "text_chars": 2908,
+          "out_of_bounds": [],
+          "fonts": [
+            "",
+            "Helvetica"
+          ]
+        },
+        {
+          "page": 19,
+          "size": [
+            594.96,
+            841.92
+          ],
+          "text_chars": 3244,
+          "out_of_bounds": [],
+          "fonts": [
+            "",
+            "Helvetica"
+          ]
+        },
+        {
+          "page": 20,
+          "size": [
+            594.96,
+            841.92
+          ],
+          "text_chars": 540,
+          "out_of_bounds": [],
+          "fonts": [
+            "",
+            "",
+            "Helvetica"
+          ]
+        }
+      ],
+      "repaired": false
+    },
+    {
+      "file": "pdf/wegroween-homepage-prototype-palette-1.pdf",
+      "pages": [
+        {
+          "page": 1,
+          "size": [
+            1152.0,
+            648.0
+          ],
+          "text_chars": 856,
+          "out_of_bounds": [],
+          "fonts": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "page": 2,
+          "size": [
+            1080.0,
+            5256.0
+          ],
+          "text_chars": 5968,
+          "out_of_bounds": [],
+          "fonts": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "page": 3,
+          "size": [
+            1152.0,
+            648.0
+          ],
+          "text_chars": 1288,
+          "out_of_bounds": [],
+          "fonts": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "NBAAAA+SegoeUI",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      ],
+      "repaired": false
+    },
+    {
+      "file": "pdf/wegroween-homepage-prototype-palette-2.pdf",
+      "pages": [
+        {
+          "page": 1,
+          "size": [
+            1152.0,
+            648.0
+          ],
+          "text_chars": 859,
+          "out_of_bounds": [],
+          "fonts": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "page": 2,
+          "size": [
+            1080.0,
+            5256.0
+          ],
+          "text_chars": 5968,
+          "out_of_bounds": [],
+          "fonts": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "page": 3,
+          "size": [
+            1152.0,
+            648.0
+          ],
+          "text_chars": 1288,
+          "out_of_bounds": [],
+          "fonts": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "NBAAAA+SegoeUI",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      ],
+      "repaired": false
+    },
+    {
+      "file": "pdf/wegroween-homepage-prototype-palette-3.pdf",
+      "pages": [
+        {
+          "page": 1,
+          "size": [
+            1152.0,
+            648.0
+          ],
+          "text_chars": 856,
+          "out_of_bounds": [],
+          "fonts": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "page": 2,
+          "size": [
+            1080.0,
+            5256.0
+          ],
+          "text_chars": 5968,
+          "out_of_bounds": [],
+          "fonts": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "page": 3,
+          "size": [
+            1152.0,
+            648.0
+          ],
+          "text_chars": 1288,
+          "out_of_bounds": [],
+          "fonts": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "NBAAAA+SegoeUI",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      ],
+      "repaired": false
+    },
+    {
+      "file": "pdf/wegroween-imagery-direction-guide.pdf",
+      "pages": [
+        {
+          "page": 1,
+          "size": [
+            594.96,
+            841.92
+          ],
+          "text_chars": 2607,
+          "out_of_bounds": [],
+          "fonts": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "Helvetica"
+          ]
+        },
+        {
+          "page": 2,
+          "size": [
+            594.96,
+            841.92
+          ],
+          "text_chars": 1593,
+          "out_of_bounds": [],
+          "fonts": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "Helvetica"
+          ]
+        }
+      ],
+      "repaired": false
+    }
+  ],
+  "all_nonempty": true,
+  "out_of_bounds_count": 0
+}

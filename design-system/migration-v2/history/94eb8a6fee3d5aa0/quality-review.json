@@ -1,0 +1,89 @@
+{
+  "input_hash": null,
+  "stage": "specification-preparation",
+  "checks": [
+    {
+      "category": "token-preservation",
+      "result": "pass",
+      "reviewer": "Codex field-by-field check",
+      "evidence": "migration-equivalence.json"
+    },
+    {
+      "category": "specification",
+      "result": "pass",
+      "reviewer": "Installed specification validator",
+      "evidence": "specification-validation.json"
+    },
+    {
+      "category": "purpose",
+      "result": "not-tested",
+      "reviewer": "Codex",
+      "evidence": "Rendering gated on mapping acceptance"
+    },
+    {
+      "category": "subtraction",
+      "result": "not-tested",
+      "reviewer": "Codex",
+      "evidence": "Rendering gated on mapping acceptance"
+    },
+    {
+      "category": "hierarchy",
+      "result": "not-tested",
+      "reviewer": "Codex",
+      "evidence": "Rendering gated on mapping acceptance"
+    },
+    {
+      "category": "precision",
+      "result": "not-tested",
+      "reviewer": "Codex",
+      "evidence": "Rendering gated on mapping acceptance"
+    },
+    {
+      "category": "imagery",
+      "result": "not-tested",
+      "reviewer": "Codex",
+      "evidence": "Rendering gated on mapping acceptance"
+    },
+    {
+      "category": "originality",
+      "result": "not-tested",
+      "reviewer": "Codex",
+      "evidence": "Rendering gated on mapping acceptance"
+    },
+    {
+      "category": "fonts",
+      "result": "not-tested",
+      "reviewer": "Codex",
+      "evidence": "Rendering gated on mapping acceptance"
+    },
+    {
+      "category": "desktop",
+      "result": "not-tested",
+      "reviewer": "Codex",
+      "evidence": "Rendering gated on mapping acceptance"
+    },
+    {
+      "category": "mobile",
+      "result": "not-tested",
+      "reviewer": "Codex",
+      "evidence": "Rendering gated on mapping acceptance"
+    },
+    {
+      "category": "pdf",
+      "result": "not-tested",
+      "reviewer": "Codex",
+      "evidence": "Rendering gated on mapping acceptance"
+    },
+    {
+      "category": "gallery",
+      "result": "not-tested",
+      "reviewer": "Codex",
+      "evidence": "Rendering gated on mapping acceptance"
+    }
+  ],
+  "blocking_defects": [
+    "Migration mapping acceptance pending",
+    "Expanded imagery/research confirmation pending",
+    "No final template/rendered QA yet"
+  ]
+}

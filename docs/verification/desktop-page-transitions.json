@@ -1,0 +1,46 @@
+{
+  "status": "passed",
+  "checkedAt": "2026-10-07T19:14:05.4258753Z",
+  "phase": "desktop optimization; mobile directional motion deferred",
+  "minimumWidth": 1051,
+  "order": [
+    "Home",
+    "Shop",
+    "Our Story",
+    "Restaurant Supply",
+    "Contact",
+    "Account"
+  ],
+  "crossSectionDirections": 30,
+  "motionMilliseconds": 420,
+  "checks": [
+    "forward and reverse positions",
+    "stable header",
+    "one outgoing copy and the live incoming stage",
+    "lazy imagery preserved below the viewport",
+    "visible incoming image prioritized without blocking navigation",
+    "rapid clicks preserve animation and coalesce to the latest destination",
+    "Back and Forward restore scroll per history entry",
+    "repeated visits and chapter anchors restore distinct positions",
+    "cart and reduced motion commit the latest pending destination",
+    "desktop to mobile resize cleanup",
+    "scrolled outgoing view",
+    "new visits start at top",
+    "account access remains denied",
+    "no horizontal overflow",
+    "temporary layers and will-change cleaned up"
+  ],
+  "unitTests": 7,
+  "build": "passed",
+  "browserChecks": "Full 33-test suite passed before the final chapter-history fix; all 16 affected transition, scroll and story tests passed after it.",
+  "visualCheck": {
+    "temporaryLayersAfterMotion": 0,
+    "liveMainCount": 1,
+    "keyboardFocusAfterMotion": "main-content",
+    "willChangeAfterMotion": "auto",
+    "stageCountDuringMotion": 2,
+    "outgoingCopies": 1,
+    "stageCountAfterMotion": 1,
+    "screenshot": "desktop-page-transitions-optimized-mid.png"
+  }
+}

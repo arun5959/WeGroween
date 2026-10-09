@@ -1,0 +1,11 @@
+{
+  "changes": [
+    "Component version label updated to 1.3.0 proposed",
+    "Retained component reference explicitly loads compatibility aliases; canonical schema-2 ownership explained"
+  ],
+  "affected_outputs": [
+    "artifact/component-specimen.html"
+  ],
+  "unaffected": "Homepages/PDFs/canonical inputs/approval choices unchanged; targeted visual inspection performed",
+  "manifest": "Rebound after only targeted component refresh"
+}

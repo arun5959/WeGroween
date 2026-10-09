@@ -1,0 +1,665 @@
+{
+  "pdfs": [
+    {
+      "file": "pdf/wegroween-design-direction-manual.pdf",
+      "pages": [
+        {
+          "page": 1,
+          "size": [
+            594.96,
+            841.92
+          ],
+          "text_chars": 2235,
+          "out_of_bounds": [],
+          "fonts": [
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "page": 2,
+          "size": [
+            594.96,
+            841.92
+          ],
+          "text_chars": 2449,
+          "out_of_bounds": [],
+          "fonts": [
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "page": 3,
+          "size": [
+            594.96,
+            841.92
+          ],
+          "text_chars": 1800,
+          "out_of_bounds": [],
+          "fonts": [
+            "",
+            ""
+          ]
+        },
+        {
+          "page": 4,
+          "size": [
+            594.96,
+            841.92
+          ],
+          "text_chars": 1637,
+          "out_of_bounds": [],
+          "fonts": [
+            "",
+            ""
+          ]
+        },
+        {
+          "page": 5,
+          "size": [
+            594.96,
+            841.92
+          ],
+          "text_chars": 1622,
+          "out_of_bounds": [],
+          "fonts": [
+            "",
+            ""
+          ]
+        },
+        {
+          "page": 6,
+          "size": [
+            594.96,
+            841.92
+          ],
+          "text_chars": 1560,
+          "out_of_bounds": [],
+          "fonts": [
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "page": 7,
+          "size": [
+            594.96,
+            841.92
+          ],
+          "text_chars": 1147,
+          "out_of_bounds": [],
+          "fonts": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "page": 8,
+          "size": [
+            594.96,
+            841.92
+          ],
+          "text_chars": 1017,
+          "out_of_bounds": [],
+          "fonts": [
+            "",
+            ""
+          ]
+        },
+        {
+          "page": 9,
+          "size": [
+            594.96,
+            841.92
+          ],
+          "text_chars": 1008,
+          "out_of_bounds": [],
+          "fonts": [
+            "",
+            ""
+          ]
+        },
+        {
+          "page": 10,
+          "size": [
+            594.96,
+            841.92
+          ],
+          "text_chars": 1430,
+          "out_of_bounds": [],
+          "fonts": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "page": 11,
+          "size": [
+            594.96,
+            841.92
+          ],
+          "text_chars": 1207,
+          "out_of_bounds": [],
+          "fonts": [
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "page": 12,
+          "size": [
+            594.96,
+            841.92
+          ],
+          "text_chars": 2269,
+          "out_of_bounds": [],
+          "fonts": [
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "page": 13,
+          "size": [
+            594.96,
+            841.92
+          ],
+          "text_chars": 2088,
+          "out_of_bounds": [],
+          "fonts": [
+            "",
+            ""
+          ]
+        },
+        {
+          "page": 14,
+          "size": [
+            594.96,
+            841.92
+          ],
+          "text_chars": 1703,
+          "out_of_bounds": [],
+          "fonts": [
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "page": 15,
+          "size": [
+            594.96,
+            841.92
+          ],
+          "text_chars": 2024,
+          "out_of_bounds": [],
+          "fonts": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "page": 16,
+          "size": [
+            594.96,
+            841.92
+          ],
+          "text_chars": 4265,
+          "out_of_bounds": [],
+          "fonts": [
+            "",
+            ""
+          ]
+        },
+        {
+          "page": 17,
+          "size": [
+            594.96,
+            841.92
+          ],
+          "text_chars": 4532,
+          "out_of_bounds": [],
+          "fonts": [
+            ""
+          ]
+        },
+        {
+          "page": 18,
+          "size": [
+            594.96,
+            841.92
+          ],
+          "text_chars": 2216,
+          "out_of_bounds": [],
+          "fonts": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "page": 19,
+          "size": [
+            594.96,
+            841.92
+          ],
+          "text_chars": 3295,
+          "out_of_bounds": [],
+          "fonts": [
+            "",
+            ""
+          ]
+        },
+        {
+          "page": 20,
+          "size": [
+            594.96,
+            841.92
+          ],
+          "text_chars": 3091,
+          "out_of_bounds": [],
+          "fonts": [
+            ""
+          ]
+        },
+        {
+          "page": 21,
+          "size": [
+            594.96,
+            841.92
+          ],
+          "text_chars": 3001,
+          "out_of_bounds": [],
+          "fonts": [
+            ""
+          ]
+        },
+        {
+          "page": 22,
+          "size": [
+            594.96,
+            841.92
+          ],
+          "text_chars": 2871,
+          "out_of_bounds": [],
+          "fonts": [
+            ""
+          ]
+        },
+        {
+          "page": 23,
+          "size": [
+            594.96,
+            841.92
+          ],
+          "text_chars": 2145,
+          "out_of_bounds": [],
+          "fonts": [
+            "",
+            ""
+          ]
+        }
+      ],
+      "repaired": false
+    },
+    {
+      "file": "pdf/wegroween-homepage-prototype-palette-1.pdf",
+      "pages": [
+        {
+          "page": 1,
+          "size": [
+            1152.0,
+            648.0
+          ],
+          "text_chars": 856,
+          "out_of_bounds": [],
+          "fonts": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "page": 2,
+          "size": [
+            1080.0,
+            5256.0
+          ],
+          "text_chars": 5968,
+          "out_of_bounds": [],
+          "fonts": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "page": 3,
+          "size": [
+            1152.0,
+            648.0
+          ],
+          "text_chars": 1288,
+          "out_of_bounds": [],
+          "fonts": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "NBAAAA+SegoeUI",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      ],
+      "repaired": false
+    },
+    {
+      "file": "pdf/wegroween-homepage-prototype-palette-2.pdf",
+      "pages": [
+        {
+          "page": 1,
+          "size": [
+            1152.0,
+            648.0
+          ],
+          "text_chars": 859,
+          "out_of_bounds": [],
+          "fonts": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "page": 2,
+          "size": [
+            1080.0,
+            5256.0
+          ],
+          "text_chars": 5968,
+          "out_of_bounds": [],
+          "fonts": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "page": 3,
+          "size": [
+            1152.0,
+            648.0
+          ],
+          "text_chars": 1288,
+          "out_of_bounds": [],
+          "fonts": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "NBAAAA+SegoeUI",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      ],
+      "repaired": false
+    },
+    {
+      "file": "pdf/wegroween-homepage-prototype-palette-3.pdf",
+      "pages": [
+        {
+          "page": 1,
+          "size": [
+            1152.0,
+            648.0
+          ],
+          "text_chars": 856,
+          "out_of_bounds": [],
+          "fonts": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "page": 2,
+          "size": [
+            1080.0,
+            5256.0
+          ],
+          "text_chars": 5968,
+          "out_of_bounds": [],
+          "fonts": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "page": 3,
+          "size": [
+            1152.0,
+            648.0
+          ],
+          "text_chars": 1288,
+          "out_of_bounds": [],
+          "fonts": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "NBAAAA+SegoeUI",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      ],
+      "repaired": false
+    },
+    {
+      "file": "pdf/wegroween-imagery-direction-guide.pdf",
+      "pages": [
+        {
+          "page": 1,
+          "size": [
+            594.96,
+            841.92
+          ],
+          "text_chars": 2533,
+          "out_of_bounds": [],
+          "fonts": [
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "page": 2,
+          "size": [
+            594.96,
+            841.92
+          ],
+          "text_chars": 1587,
+          "out_of_bounds": [],
+          "fonts": [
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      ],
+      "repaired": false
+    }
+  ],
+  "all_nonempty": true,
+  "out_of_bounds_count": 0
+}

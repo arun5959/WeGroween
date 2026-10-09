@@ -1,0 +1,52 @@
+{
+  "status": "PROPOSED",
+  "scope": "Three non-production visual-variety studies. Existing story, centered opening, overview, alternating timeline, spacing, palette and type remain the baseline. Only chapter artwork is explored.",
+  "brief": "User requested concept ideas for visual variety after approving the story structure and copy refinements.",
+  "selected": null,
+  "story_source": "../../../src/content/story.js",
+  "identity_sources": ["../../design-tokens.json", "../../design-language.json", "../../decisions.md"],
+  "concepts": [
+    {
+      "id": "notes",
+      "name": "Grower's Field Notes",
+      "recommendation": true,
+      "thesis": "A considered mix of crop photographs, small annotations, purpose diagrams and the brand mark. Each chapter gets a visual role of its own.",
+      "benefit": "The broadest variety while preserving the warm editorial identity; can evolve as genuine origin photographs become available.",
+      "tradeoff": "Needs authentic origin imagery to fully express the first chapter. Current crop photographs illustrate subject matter, not historical events.",
+      "chapters": ["A genuine terrace photograph, framed with one quiet crop note", "Paired microgreen and mushroom photographs with crop labels", "A simple diagram connecting the crops to a kitchen", "The supplied logo presented as the moment the idea gained a name", "A produce composition leading towards the catalogue"],
+      "motion": "140ms state feedback; 360ms one-time photo-frame and annotation reveal; no image zoom or continuous floating.",
+      "mobile": "Photographs remain side by side where readable, with labels below; diagrams and brand frames reflow above their chapter copy."
+    },
+    {
+      "id": "living",
+      "name": "Living Cultivation",
+      "recommendation": false,
+      "thesis": "Five bespoke scenes derived from Field Notes linework: planters, growing trays, a produce-to-kitchen connection, the brand and a table setting.",
+      "benefit": "A distinctive illustrated story with consistent craft and no dependency on origin photography.",
+      "tradeoff": "Creates emotional meaning, but cannot provide documentary proof of the growing operation. Bespoke illustration requires more refinement than enlarging icons.",
+      "chapters": ["Terrace planters and a climbing stem", "A window, microgreen tray and mushroom cluster", "Crops and basket connected to a kitchen", "The supplied brand mark framed by cultivation linework", "A table setting with crop details"],
+      "motion": "360ms line drawing as each scene enters; the timeline connects the scenes. No looping growth animation.",
+      "mobile": "Whole scenes scale to their viewBox; labels remain HTML text. Important content never depends on animation."
+    },
+    {
+      "id": "editorial",
+      "name": "Harvest Editorial",
+      "recommendation": false,
+      "thesis": "A photographic reading rhythm: an establishing image, a close detail, a composed still life, a brand interlude and a table scene.",
+      "benefit": "The most sensory and food-focused direction, using changing image geometry and crop scale rather than more decoration.",
+      "tradeoff": "A consistently art-directed photo set is needed. Produce portraits alone cannot tell the founder's personal history.",
+      "chapters": ["A full terrace scene from the actual origin garden", "One generous crop detail with a secondary mushroom inset", "A wide produce still life", "A quiet branded interlude", "A wide table photograph or current supplied produce composition"],
+      "motion": "360ms restrained opacity reveal; photographs stay still. Gentle chapter transition, no parallax or scroll locking.",
+      "mobile": "Replace extreme detail crops with wider focal framing so the crops remain recognizable; keep text outside photography."
+    }
+  ],
+  "imagery_rules": {
+    "character": "Warm-neutral stone and cream; natural green and mushroom tones; soft side light; restrained contrast; preserve food color and texture.",
+    "provenance": "Existing public/media files are supplied source assets. Their capture/generation origin is not verified here. They are subject-matter illustrations, not cultivation or founding evidence.",
+    "historical_images": "No terrace or founder origin photographs were supplied in the current media inventory. Their slots remain visibly reserved in this review.",
+    "generated_images": "No raster images generated for this study. Bespoke schematic SVG scenes are original code compositions extending approved Field Notes geometry.",
+    "responsive": "No text baked into images; preserve the focal crop; informative photo alt text and decorative diagrams hidden from assistive technology when explained by copy.",
+    "motion": "Existing 140/220/360ms durations; all imagery and copy visible with reduced motion or JavaScript disabled."
+  },
+  "pending": "User may select, combine, revise or reject concepts. Gallery selections are previews, not approval. Production website is unchanged."
+}

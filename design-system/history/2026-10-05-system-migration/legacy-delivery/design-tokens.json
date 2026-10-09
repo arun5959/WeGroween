@@ -1,0 +1,252 @@
+{
+  "$schema": "https://tr.designtokens.org/format/",
+  "meta": {
+    "project": "WeGroween",
+    "version": "1.2.0-proposed",
+    "status": "proposed",
+    "updated_at": "2026-10-02",
+    "creative_direction": "Cultivated Editorial",
+    "voice": "Cultivated Authority",
+    "palette": "C2 Soil & Saffron",
+    "typography": "T2 Fraunces + DM Sans",
+    "grid": "G3 Curated Market",
+    "motion": "M1 Restrained Editorial",
+    "dark_mode": "not-required-v1"
+  },
+  "color": {
+    "primitive": {
+      "soil-950": {"$type": "color", "$value": "#2B211D"},
+      "soil-900": {"$type": "color", "$value": "#402B24"},
+      "soil-700": {"$type": "color", "$value": "#66544B"},
+      "soil-500": {"$type": "color", "$value": "#92796C"},
+      "clay-700": {"$type": "color", "$value": "#98513D"},
+      "saffron-600": {"$type": "color", "$value": "#D49A25"},
+      "grain-50": {"$type": "color", "$value": "#FFFDF7"},
+      "grain-100": {"$type": "color", "$value": "#FBF4E8"},
+      "grain-200": {"$type": "color", "$value": "#F1E8DA"},
+      "grain-300": {"$type": "color", "$value": "#DDD1C2"},
+      "white": {"$type": "color", "$value": "#FFFFFF"},
+      "teal-700": {"$type": "color", "$value": "#006C5B"},
+      "green-700": {"$type": "color", "$value": "#2E654A"},
+      "amber-800": {"$type": "color", "$value": "#925100"},
+      "red-700": {"$type": "color", "$value": "#A42C3B"},
+      "blue-700": {"$type": "color", "$value": "#285C78"},
+      "neutral-disabled-bg": {"$type": "color", "$value": "#E9E2D7"},
+      "neutral-disabled-content": {"$type": "color", "$value": "#74706A"}
+    },
+    "semantic": {
+      "light": {
+        "brand-primary": {"$type": "color", "$value": "#402B24", "$description": "Primary brand anchor and action fill."},
+        "brand-secondary": {"$type": "color", "$value": "#98513D", "$description": "Editorial emphasis and category accent."},
+        "accent": {"$type": "color", "$value": "#D49A25", "$description": "Harvest emphasis with dark text only."},
+        "background": {"$type": "color", "$value": "#FBF4E8"},
+        "surface": {"$type": "color", "$value": "#FFFDF7"},
+        "surface-elevated": {"$type": "color", "$value": "#FFFFFF"},
+        "text-primary": {"$type": "color", "$value": "#2B211D"},
+        "text-secondary": {"$type": "color", "$value": "#66544B"},
+        "text-inverse": {"$type": "color", "$value": "#FFF8EC"},
+        "border": {"$type": "color", "$value": "#DDD1C2"},
+        "border-strong": {"$type": "color", "$value": "#92796C"},
+        "focus": {"$type": "color", "$value": "#006C5B"},
+        "success": {"$type": "color", "$value": "#2E654A"},
+        "warning": {"$type": "color", "$value": "#925100"},
+        "error": {"$type": "color", "$value": "#A42C3B"},
+        "information": {"$type": "color", "$value": "#285C78"},
+        "disabled-background": {"$type": "color", "$value": "#E9E2D7"},
+        "disabled-content": {"$type": "color", "$value": "#74706A"}
+      }
+    }
+  },
+  "typography": {
+    "family": {
+      "display": {"$type": "fontFamily", "$value": ["Fraunces", "Georgia", "serif"]},
+      "body": {"$type": "fontFamily", "$value": ["DM Sans", "Segoe UI", "Arial", "sans-serif"]},
+      "mono": {"$type": "fontFamily", "$value": ["ui-monospace", "SFMono-Regular", "Consolas", "monospace"]}
+    },
+    "weight": {
+      "regular": {"$type": "fontWeight", "$value": 400},
+      "medium": {"$type": "fontWeight", "$value": 500},
+      "semibold": {"$type": "fontWeight", "$value": 600},
+      "bold": {"$type": "fontWeight", "$value": 700},
+      "extrabold": {"$type": "fontWeight", "$value": 800}
+    },
+    "size": {
+      "caption": {"$type": "dimension", "$value": "12px"},
+      "label": {"$type": "dimension", "$value": "13px"},
+      "body": {"$type": "dimension", "$value": "16px"},
+      "lead": {"$type": "dimension", "$value": "20px"},
+      "h6": {"$type": "dimension", "$value": "18px"},
+      "h5": {"$type": "dimension", "$value": "22px"},
+      "h4": {"$type": "dimension", "$value": "28px"},
+      "h3": {"$type": "dimension", "$value": "38px"},
+      "h2": {"$type": "dimension", "$value": "54px"},
+      "h1": {"$type": "dimension", "$value": "68px"},
+      "display": {"$type": "dimension", "$value": "92px"}
+    },
+    "lineHeight": {
+      "display": {"$type": "number", "$value": 0.94},
+      "h1": {"$type": "number", "$value": 0.99},
+      "h2": {"$type": "number", "$value": 1.04},
+      "h3": {"$type": "number", "$value": 1.1},
+      "heading-ui": {"$type": "number", "$value": 1.25},
+      "lead": {"$type": "number", "$value": 1.58},
+      "body": {"$type": "number", "$value": 1.6},
+      "label": {"$type": "number", "$value": 1.3},
+      "caption": {"$type": "number", "$value": 1.45}
+    },
+    "letterSpacing": {
+      "display": {"$type": "dimension", "$value": "-0.05em"},
+      "h1": {"$type": "dimension", "$value": "-0.04em"},
+      "h2": {"$type": "dimension", "$value": "-0.032em"},
+      "h3": {"$type": "dimension", "$value": "-0.022em"},
+      "heading-ui": {"$type": "dimension", "$value": "-0.016em"},
+      "body": {"$type": "dimension", "$value": "-0.008em"},
+      "label": {"$type": "dimension", "$value": "0.07em"},
+      "caption": {"$type": "dimension", "$value": "0.012em"}
+    },
+    "style": {
+      "display": {"$type": "typography", "$value": {"fontFamily": ["Fraunces", "Georgia", "serif"], "fontSize": "92px", "fontWeight": 600, "letterSpacing": "-0.05em", "lineHeight": 0.94}},
+      "h1": {"$type": "typography", "$value": {"fontFamily": ["Fraunces", "Georgia", "serif"], "fontSize": "68px", "fontWeight": 600, "letterSpacing": "-0.04em", "lineHeight": 0.99}},
+      "h2": {"$type": "typography", "$value": {"fontFamily": ["Fraunces", "Georgia", "serif"], "fontSize": "54px", "fontWeight": 600, "letterSpacing": "-0.032em", "lineHeight": 1.04}},
+      "h3": {"$type": "typography", "$value": {"fontFamily": ["Fraunces", "Georgia", "serif"], "fontSize": "38px", "fontWeight": 600, "letterSpacing": "-0.022em", "lineHeight": 1.1}},
+      "h4": {"$type": "typography", "$value": {"fontFamily": ["DM Sans", "Segoe UI", "Arial", "sans-serif"], "fontSize": "28px", "fontWeight": 600, "letterSpacing": "-0.025em", "lineHeight": 1.2}},
+      "h5": {"$type": "typography", "$value": {"fontFamily": ["DM Sans", "Segoe UI", "Arial", "sans-serif"], "fontSize": "22px", "fontWeight": 700, "letterSpacing": "-0.016em", "lineHeight": 1.28}},
+      "h6": {"$type": "typography", "$value": {"fontFamily": ["DM Sans", "Segoe UI", "Arial", "sans-serif"], "fontSize": "18px", "fontWeight": 700, "letterSpacing": "-0.005em", "lineHeight": 1.35}},
+      "lead": {"$type": "typography", "$value": {"fontFamily": ["DM Sans", "Segoe UI", "Arial", "sans-serif"], "fontSize": "20px", "fontWeight": 400, "letterSpacing": "-0.012em", "lineHeight": 1.58}},
+      "body": {"$type": "typography", "$value": {"fontFamily": ["DM Sans", "Segoe UI", "Arial", "sans-serif"], "fontSize": "16px", "fontWeight": 400, "letterSpacing": "-0.008em", "lineHeight": 1.6}},
+      "label": {"$type": "typography", "$value": {"fontFamily": ["DM Sans", "Segoe UI", "Arial", "sans-serif"], "fontSize": "13px", "fontWeight": 700, "letterSpacing": "0.07em", "lineHeight": 1.3}},
+      "caption": {"$type": "typography", "$value": {"fontFamily": ["DM Sans", "Segoe UI", "Arial", "sans-serif"], "fontSize": "12px", "fontWeight": 500, "letterSpacing": "0.012em", "lineHeight": 1.45}},
+      "code": {"$type": "typography", "$value": {"fontFamily": ["ui-monospace", "SFMono-Regular", "Consolas", "monospace"], "fontSize": "13px", "fontWeight": 500, "letterSpacing": "0em", "lineHeight": 1.5}}
+    }
+  },
+  "layout": {
+    "container": {
+      "content": {"$type": "dimension", "$value": "1200px"},
+      "wide": {"$type": "dimension", "$value": "1360px"},
+      "reading": {"$type": "dimension", "$value": "660px"},
+      "form": {"$type": "dimension", "$value": "560px"}
+    },
+    "grid": {
+      "columns": {"$type": "number", "$value": 12},
+      "gutter": {"$type": "dimension", "$value": "20px"},
+      "page-margin-compact": {"$type": "dimension", "$value": "20px"},
+      "page-margin-medium": {"$type": "dimension", "$value": "32px"},
+      "page-margin-wide": {"$type": "dimension", "$value": "48px"}
+    },
+    "breakpoint": {
+      "compact": {"$type": "dimension", "$value": "640px"},
+      "medium": {"$type": "dimension", "$value": "900px"},
+      "wide": {"$type": "dimension", "$value": "1200px"}
+    }
+  },
+  "space": {
+    "primitive": {
+      "0": {"$type": "dimension", "$value": "0px"},
+      "1": {"$type": "dimension", "$value": "2px"},
+      "2": {"$type": "dimension", "$value": "4px"},
+      "3": {"$type": "dimension", "$value": "8px"},
+      "4": {"$type": "dimension", "$value": "12px"},
+      "5": {"$type": "dimension", "$value": "16px"},
+      "6": {"$type": "dimension", "$value": "20px"},
+      "7": {"$type": "dimension", "$value": "24px"},
+      "8": {"$type": "dimension", "$value": "32px"},
+      "9": {"$type": "dimension", "$value": "40px"},
+      "10": {"$type": "dimension", "$value": "48px"},
+      "11": {"$type": "dimension", "$value": "64px"},
+      "12": {"$type": "dimension", "$value": "80px"},
+      "13": {"$type": "dimension", "$value": "96px"}
+    },
+    "semantic": {
+      "none": {"$type": "dimension", "$value": "0px"},
+      "2xs": {"$type": "dimension", "$value": "4px"},
+      "xs": {"$type": "dimension", "$value": "8px"},
+      "sm": {"$type": "dimension", "$value": "12px"},
+      "md": {"$type": "dimension", "$value": "20px"},
+      "lg": {"$type": "dimension", "$value": "32px"},
+      "xl": {"$type": "dimension", "$value": "48px"},
+      "2xl": {"$type": "dimension", "$value": "72px"},
+      "3xl": {"$type": "dimension", "$value": "96px"}
+    }
+  },
+  "radius": {
+    "none": {"$type": "dimension", "$value": "0px"},
+    "control": {"$type": "dimension", "$value": "8px"},
+    "card": {"$type": "dimension", "$value": "10px"},
+    "panel": {"$type": "dimension", "$value": "14px"},
+    "pill": {"$type": "dimension", "$value": "999px"},
+    "round": {"$type": "dimension", "$value": "50%"}
+  },
+  "shadow": {
+    "flat": {"$type": "shadow", "$value": {"color": "#402B2400", "offsetX": "0px", "offsetY": "0px", "blur": "0px", "spread": "0px"}},
+    "raised": {"$type": "shadow", "$value": {"color": "#402B2414", "offsetX": "0px", "offsetY": "2px", "blur": "10px", "spread": "0px"}},
+    "floating": {"$type": "shadow", "$value": {"color": "#402B2424", "offsetX": "0px", "offsetY": "10px", "blur": "28px", "spread": "-8px"}},
+    "overlay": {"$type": "shadow", "$value": {"color": "#402B2430", "offsetX": "0px", "offsetY": "16px", "blur": "44px", "spread": "-12px"}},
+    "modal": {"$type": "shadow", "$value": {"color": "#2B211D42", "offsetX": "0px", "offsetY": "24px", "blur": "72px", "spread": "-16px"}}
+  },
+  "motion": {
+    "duration": {
+      "micro": {"$type": "duration", "$value": "140ms"},
+      "standard": {"$type": "duration", "$value": "220ms"},
+      "emphasized": {"$type": "duration", "$value": "360ms"}
+    },
+    "easing": {
+      "standard": {"$type": "cubicBezier", "$value": [0.2, 0, 0, 1]},
+      "enter": {"$type": "cubicBezier", "$value": [0, 0, 0.2, 1]},
+      "exit": {"$type": "cubicBezier", "$value": [0.4, 0, 1, 1]}
+    }
+  },
+  "component": {
+    "navigation": {
+      "height": {"$type": "dimension", "$value": "72px"},
+      "mobile-height": {"$type": "dimension", "$value": "64px"},
+      "link-gap": {"$type": "dimension", "$value": "24px"}
+    },
+    "button": {
+      "height-sm": {"$type": "dimension", "$value": "44px"},
+      "height-md": {"$type": "dimension", "$value": "48px"},
+      "height-lg": {"$type": "dimension", "$value": "56px"},
+      "padding-inline-sm": {"$type": "dimension", "$value": "16px"},
+      "padding-inline-md": {"$type": "dimension", "$value": "20px"},
+      "padding-inline-lg": {"$type": "dimension", "$value": "24px"},
+      "icon-only": {"$type": "dimension", "$value": "44px"}
+    },
+    "input": {
+      "height": {"$type": "dimension", "$value": "48px"},
+      "padding-inline": {"$type": "dimension", "$value": "14px"},
+      "textarea-min-height": {"$type": "dimension", "$value": "120px"}
+    },
+    "card": {
+      "padding": {"$type": "dimension", "$value": "20px"},
+      "gap": {"$type": "dimension", "$value": "16px"}
+    },
+    "badge": {
+      "height": {"$type": "dimension", "$value": "28px"},
+      "padding-inline": {"$type": "dimension", "$value": "10px"},
+      "gap": {"$type": "dimension", "$value": "4px"}
+    },
+    "touch-target": {
+      "minimum": {"$type": "dimension", "$value": "44px"}
+    },
+    "icon": {
+      "grid": {"$type": "dimension", "$value": "24px", "$description": "Canonical Field Notes drawing grid."},
+      "size-sm": {"$type": "dimension", "$value": "16px"},
+      "size-md": {"$type": "dimension", "$value": "20px"},
+      "size-lg": {"$type": "dimension", "$value": "24px"},
+      "size-xl": {"$type": "dimension", "$value": "32px"},
+      "stroke-width": {"$type": "number", "$value": 1.75, "$description": "Canonical optical stroke on the 24px grid."},
+      "control-gap": {"$type": "dimension", "$value": "8px"}
+    },
+    "focus": {
+      "ring-width": {"$type": "dimension", "$value": "3px"},
+      "ring-offset": {"$type": "dimension", "$value": "3px"}
+    },
+    "quantity": {
+      "height": {"$type": "dimension", "$value": "48px"},
+      "button-width": {"$type": "dimension", "$value": "44px"}
+    },
+    "feedback": {
+      "accent-width": {"$type": "dimension", "$value": "4px"},
+      "padding": {"$type": "dimension", "$value": "16px"}
+    }
+  }
+}

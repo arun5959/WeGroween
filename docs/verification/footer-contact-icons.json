@@ -1,0 +1,187 @@
+{
+  "results": [
+    {
+      "width": 320,
+      "rows": [
+        {
+          "text": "wegroween@gmail.com",
+          "icon": "/icons/field-notes.svg#wg-mail",
+          "width": 16,
+          "box": 17,
+          "height": 44
+        },
+        {
+          "text": "7958614599",
+          "icon": "/icons/field-notes.svg#wg-phone",
+          "width": 16,
+          "box": 16.71511459350586,
+          "height": 44
+        },
+        {
+          "text": "Gohana",
+          "icon": "/icons/field-notes.svg#wg-location",
+          "width": 16,
+          "box": 14,
+          "height": 44
+        },
+        {
+          "text": "Instagram",
+          "icon": "/icons/field-notes.svg#wg-instagram",
+          "width": 16,
+          "box": 17,
+          "height": 44
+        }
+      ],
+      "overflow": false,
+      "social": "https://www.instagram.com/wegroween_in/"
+    },
+    {
+      "width": 390,
+      "rows": [
+        {
+          "text": "wegroween@gmail.com",
+          "icon": "/icons/field-notes.svg#wg-mail",
+          "width": 16,
+          "box": 17,
+          "height": 44
+        },
+        {
+          "text": "7958614599",
+          "icon": "/icons/field-notes.svg#wg-phone",
+          "width": 16,
+          "box": 16.71511459350586,
+          "height": 44
+        },
+        {
+          "text": "Gohana",
+          "icon": "/icons/field-notes.svg#wg-location",
+          "width": 16,
+          "box": 14,
+          "height": 44
+        },
+        {
+          "text": "Instagram",
+          "icon": "/icons/field-notes.svg#wg-instagram",
+          "width": 16,
+          "box": 17,
+          "height": 44
+        }
+      ],
+      "overflow": false,
+      "social": "https://www.instagram.com/wegroween_in/"
+    },
+    {
+      "width": 768,
+      "rows": [
+        {
+          "text": "wegroween@gmail.com",
+          "icon": "/icons/field-notes.svg#wg-mail",
+          "width": 16,
+          "box": 17,
+          "height": 44
+        },
+        {
+          "text": "7958614599",
+          "icon": "/icons/field-notes.svg#wg-phone",
+          "width": 16,
+          "box": 16.71511459350586,
+          "height": 44
+        },
+        {
+          "text": "Gohana",
+          "icon": "/icons/field-notes.svg#wg-location",
+          "width": 16,
+          "box": 14,
+          "height": 44
+        },
+        {
+          "text": "Instagram",
+          "icon": "/icons/field-notes.svg#wg-instagram",
+          "width": 16,
+          "box": 17,
+          "height": 44
+        }
+      ],
+      "overflow": false,
+      "social": "https://www.instagram.com/wegroween_in/"
+    },
+    {
+      "width": 1050,
+      "rows": [
+        {
+          "text": "wegroween@gmail.com",
+          "icon": "/icons/field-notes.svg#wg-mail",
+          "width": 16,
+          "box": 17,
+          "height": 44
+        },
+        {
+          "text": "7958614599",
+          "icon": "/icons/field-notes.svg#wg-phone",
+          "width": 16,
+          "box": 16.71511459350586,
+          "height": 44
+        },
+        {
+          "text": "Gohana",
+          "icon": "/icons/field-notes.svg#wg-location",
+          "width": 16,
+          "box": 14,
+          "height": 44
+        },
+        {
+          "text": "Instagram",
+          "icon": "/icons/field-notes.svg#wg-instagram",
+          "width": 16,
+          "box": 17,
+          "height": 44
+        }
+      ],
+      "overflow": false,
+      "social": "https://www.instagram.com/wegroween_in/"
+    },
+    {
+      "width": 1440,
+      "rows": [
+        {
+          "text": "wegroween@gmail.com",
+          "icon": "/icons/field-notes.svg#wg-mail",
+          "width": 16,
+          "box": 17,
+          "height": 44
+        },
+        {
+          "text": "7958614599",
+          "icon": "/icons/field-notes.svg#wg-phone",
+          "width": 16,
+          "box": 16.71511459350586,
+          "height": 44
+        },
+        {
+          "text": "Gohana",
+          "icon": "/icons/field-notes.svg#wg-location",
+          "width": 16,
+          "box": 14,
+          "height": 44
+        },
+        {
+          "text": "Instagram",
+          "icon": "/icons/field-notes.svg#wg-instagram",
+          "width": 16,
+          "box": 17,
+          "height": 44
+        }
+      ],
+      "overflow": false,
+      "social": "https://www.instagram.com/wegroween_in/"
+    }
+  ],
+  "runtimeErrors": [],
+  "keyboard": "visible focus",
+  "staticFooter": "four icons present",
+  "deferredProfiles": [
+    "YouTube",
+    "Facebook"
+  ],
+  "build": "passed"
+}

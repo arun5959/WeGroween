@@ -1,0 +1,156 @@
+{
+  "checks": [
+    {
+      "viewport": 320,
+      "stage": 1,
+      "loaded": true,
+      "source": "http://127.0.0.1:5173/media/story/paper/01-terrace-768.webp",
+      "width": 256,
+      "objectFit": "contain",
+      "ratio": 1.5000912900690533
+    },
+    {
+      "viewport": 320,
+      "stage": 2,
+      "loaded": true,
+      "source": "http://127.0.0.1:5173/media/story/paper/02-indoor-growing-768.webp",
+      "width": 256,
+      "objectFit": "contain",
+      "ratio": 1.5000915583226515
+    },
+    {
+      "viewport": 320,
+      "stage": 3,
+      "loaded": true,
+      "source": "http://127.0.0.1:5173/media/story/paper/03-purpose-768.webp",
+      "width": 256,
+      "objectFit": "contain",
+      "ratio": 1.5000915583226515
+    },
+    {
+      "viewport": 320,
+      "stage": 5,
+      "loaded": true,
+      "source": "http://127.0.0.1:5173/media/story/paper/05-table-768.webp",
+      "width": 256,
+      "objectFit": "contain",
+      "ratio": 1.5000915583226515
+    },
+    {
+      "viewport": 390,
+      "stage": 1,
+      "loaded": true,
+      "source": "http://127.0.0.1:5173/media/story/paper/01-terrace-768.webp",
+      "width": 326,
+      "objectFit": "contain",
+      "ratio": 1.5000359479473722
+    },
+    {
+      "viewport": 390,
+      "stage": 2,
+      "loaded": true,
+      "source": "http://127.0.0.1:5173/media/story/paper/02-indoor-growing-768.webp",
+      "width": 326,
+      "objectFit": "contain",
+      "ratio": 1.5000359479473722
+    },
+    {
+      "viewport": 390,
+      "stage": 3,
+      "loaded": true,
+      "source": "http://127.0.0.1:5173/media/story/paper/03-purpose-768.webp",
+      "width": 326,
+      "objectFit": "contain",
+      "ratio": 1.5000359479473722
+    },
+    {
+      "viewport": 390,
+      "stage": 5,
+      "loaded": true,
+      "source": "http://127.0.0.1:5173/media/story/paper/05-table-768.webp",
+      "width": 326,
+      "objectFit": "contain",
+      "ratio": 1.5000359479473722
+    },
+    {
+      "viewport": 640,
+      "stage": 1,
+      "loaded": true,
+      "source": "http://127.0.0.1:5173/media/story/paper/01-terrace-768.webp",
+      "width": 576,
+      "objectFit": "contain",
+      "ratio": 1.5
+    },
+    {
+      "viewport": 640,
+      "stage": 2,
+      "loaded": true,
+      "source": "http://127.0.0.1:5173/media/story/paper/02-indoor-growing-768.webp",
+      "width": 576,
+      "objectFit": "contain",
+      "ratio": 1.5
+    },
+    {
+      "viewport": 640,
+      "stage": 3,
+      "loaded": true,
+      "source": "http://127.0.0.1:5173/media/story/paper/03-purpose-768.webp",
+      "width": 576,
+      "objectFit": "contain",
+      "ratio": 1.5
+    },
+    {
+      "viewport": 640,
+      "stage": 5,
+      "loaded": true,
+      "source": "http://127.0.0.1:5173/media/story/paper/05-table-768.webp",
+      "width": 576,
+      "objectFit": "contain",
+      "ratio": 1.5
+    },
+    {
+      "viewport": 1440,
+      "stage": 1,
+      "loaded": true,
+      "source": "http://127.0.0.1:5173/media/story/paper/01-terrace-768.webp",
+      "width": 552,
+      "objectFit": "contain",
+      "ratio": 1.5
+    },
+    {
+      "viewport": 1440,
+      "stage": 2,
+      "loaded": true,
+      "source": "http://127.0.0.1:5173/media/story/paper/02-indoor-growing-768.webp",
+      "width": 552,
+      "objectFit": "contain",
+      "ratio": 1.5
+    },
+    {
+      "viewport": 1440,
+      "stage": 3,
+      "loaded": true,
+      "source": "http://127.0.0.1:5173/media/story/paper/03-purpose-768.webp",
+      "width": 552,
+      "objectFit": "contain",
+      "ratio": 1.5
+    },
+    {
+      "viewport": 1440,
+      "stage": 5,
+      "loaded": true,
+      "source": "http://127.0.0.1:5173/media/story/paper/05-table-768.webp",
+      "width": 552,
+      "objectFit": "contain",
+      "ratio": 1.4999998756077082
+    }
+  ],
+  "runtimeErrors": [],
+  "reducedMotion": "pass",
+  "noJavaScript": "all four scenes load",
+  "stage4Markup": "unchanged",
+  "overflow": "none at 320,390,640,1440",
+  "assets": "8/8 return 200",
+  "existingTests": "5 unit and 14 browser passed",
+  "productionBuild": "passed"
+}

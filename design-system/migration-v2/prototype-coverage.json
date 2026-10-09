@@ -1,0 +1,43 @@
+{
+  "coverage_mode": "all-three",
+  "selected_palette": "palette-2",
+  "primary_palette": "palette-2",
+  "fallback_palette": "palette-1",
+  "fallback_used": false,
+  "requested_palettes": [
+    "palette-2",
+    "palette-1",
+    "palette-3"
+  ],
+  "structure_lock": true,
+  "generated_prototypes": [
+    {
+      "palette_id": "palette-2",
+      "role": "primary",
+      "file": "pdf/wegroween-homepage-prototype-palette-2.pdf",
+      "status": "rendered",
+      "structure_hash": "7d2530a2a9d5619e58ecb63385e995b556259d6381b4226de485177dca3299ef",
+      "renderer": "accepted-project-r3-adapter",
+      "pages": 3
+    },
+    {
+      "palette_id": "palette-1",
+      "role": "alternative",
+      "file": "pdf/wegroween-homepage-prototype-palette-1.pdf",
+      "status": "rendered",
+      "structure_hash": "7d2530a2a9d5619e58ecb63385e995b556259d6381b4226de485177dca3299ef",
+      "renderer": "accepted-project-r3-adapter",
+      "pages": 3
+    },
+    {
+      "palette_id": "palette-3",
+      "role": "alternative",
+      "file": "pdf/wegroween-homepage-prototype-palette-3.pdf",
+      "status": "rendered",
+      "structure_hash": "7d2530a2a9d5619e58ecb63385e995b556259d6381b4226de485177dca3299ef",
+      "renderer": "accepted-project-r3-adapter",
+      "pages": 3
+    }
+  ],
+  "presentation_exception": "Accepted R3 photography and three-page framing; full mobile H1 review provided in separate responsive HTML"
+}

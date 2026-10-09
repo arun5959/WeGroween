@@ -1,0 +1,2116 @@
+{
+  "schema_version": "2.0",
+  "options_revision": "1",
+  "project": {
+    "id": "wegroween",
+    "name": "WeGroween",
+    "version": "1.3.0-proposed",
+    "archetype": "food-commerce-design-reference",
+    "audience": "Quality-conscious Indian households and home cooks first; restaurant/chef/hospitality supply secondary",
+    "objective": "Make premium fresh-produce discovery, trust, household shopping and the secondary supply path understandable",
+    "leader": "User",
+    "tags": [
+      "food",
+      "india",
+      "premium-households",
+      "restaurant-supply",
+      "cultivated-editorial",
+      "design-language"
+    ]
+  },
+  "brief": {
+    "offer": "Microgreens, mushrooms, organic vegetables and fruits, and specialty farming products",
+    "constraints": [
+      "Design system and review prototypes only",
+      "English-first, single brand, no dark mode v1",
+      "Existing approved C2/T2/G3/V1/M1/I1/H1 preserved",
+      "Wordmark/logo deferred"
+    ],
+    "assumptions": [
+      "India initial market from approved brief",
+      "Catalogue expansion, prices, pack sizes and delivery terms remain illustrative/unconfirmed"
+    ],
+    "exclusions": [
+      "Application/backend/database/auth/checkout/CMS implementation",
+      "Dependencies and deployment",
+      "New logo production",
+      "Unsubstantiated health/organic/certification claims",
+      "Public-use image rights clearance"
+    ],
+    "success_criteria": [
+      "Household-first task clarity",
+      "Discoverable restaurant pathway",
+      "Exact preservation of approved values",
+      "Synchronized sources and truthful review status"
+    ],
+    "approval_source": "approved-brief.md dated 2026-10-02"
+  },
+  "brand": {
+    "theme": "Every harvest is an edition worth collecting: specific, seasonal, sensory and quietly confident.",
+    "vibe": "Warm editorial precision. Premium without ornament, authentic without rustic nostalgia, knowledgeable without clinical language.",
+    "emotion": "A discerning grower with the eye of a food editor and the operational clarity of a dependable supplier.",
+    "keywords": [
+      "cultivated",
+      "seasonal",
+      "mineral",
+      "tactile",
+      "sensory",
+      "precise",
+      "traceable",
+      "restrained",
+      "appetizing"
+    ],
+    "principles": [
+      "Specificity is luxury",
+      "Evidence stays close to the claim",
+      "Produce leads",
+      "Seasonality creates movement",
+      "Households come first",
+      "Constraints become service design"
+    ],
+    "anti_principles": [
+      "No generic leaf-logo/beige-wellness/all-green shorthand",
+      "No unsupported health claims",
+      "No glassmorphism or arbitrary radii",
+      "No stock imagery as cultivation evidence",
+      "No hidden service constraints"
+    ],
+    "tone": "V1 Cultivated Authority: precise, sensory, warm, transparent and calm. Concrete nouns/verbs; short headings and plain full sentences.",
+    "copy_examples": [
+      "Grown with quiet precision.",
+      "Shop this harvest.",
+      "Supply your kitchen.",
+      "Harvesting Friday. Delivery begins Saturday.",
+      "This bed is resting. Join the next harvest list.",
+      "We could not confirm that payment. Your basket is safe; try again or choose another method."
+    ],
+    "iconography": "I1 Field Notes: 24px grid, 1.75px optical stroke, square terminals, rounded joins, open counters and crop-specific asymmetry. Icons inherit currentColor; icon-only targets require names and 44px targets.",
+    "motion_purpose": "M1 continuity and immediate state feedback: 140/220/360ms. Reduced motion removes translation and decorative reveals; no critical information depends on animation."
+  },
+  "research": {
+    "summary": "Reuse 2026-10-02 research: premium should come from variety, provenance, harvest, handling, delivery and remedy specificity; households remain primary and restaurant supply secondary.",
+    "sources": [
+      {
+        "id": "ev-current-site",
+        "title": "Current WeGroween static catalogue",
+        "source_url": null,
+        "source_path": "E:\\WeGroween\\GitHub Clone\\WeGroween\\index.html",
+        "date": "2026-10-02",
+        "observation": "Four-page static catalogue with earthy tokens embedded separately in each page, a script wordmark, bento cards, CDN-delivered Tailwind and AOS, placeholder links, and no functional cart, checkout, account, API, database, or admin.",
+        "interpretation": "The existing visual vocabulary can inform continuity, but the implementation must be replaced by a governed application architecture.",
+        "confidence": "high",
+        "limitations": [
+          "No production analytics or user research available",
+          "Historical source; not live reverified during schema migration"
+        ],
+        "rights": "Reference only; no identity, copy or asset reuse inferred"
+      },
+      {
+        "id": "ev-sanesa-provenance",
+        "title": "Sanesa Yourganic",
+        "source_url": "https://www.sanesa.in/",
+        "source_path": null,
+        "date": "2026-10-02",
+        "observation": "Uses source verification, same-day cut-offs, refunds, fulfilment detail, sourcing policy, and a named integrity-check process as trust mechanisms.",
+        "interpretation": "Operational transparency is a stronger premium cue than decorative luxury language.",
+        "confidence": "high",
+        "limitations": [
+          "Claims were not independently audited",
+          "Historical source; not live reverified during schema migration"
+        ],
+        "rights": "Reference only; no identity, copy or asset reuse inferred"
+      },
+      {
+        "id": "ev-bhoomi-membership",
+        "title": "Bhoomi Farms",
+        "source_url": "https://bhoomi.farm/web/",
+        "source_path": null,
+        "date": "2026-10-02",
+        "observation": "Pairs source traceability with a membership model, next-day delivery, pause controls, broad category navigation, and explicit certification links.",
+        "interpretation": "WeGroween should support one-off buying first while leaving room for repeat boxes or subscriptions after operational validation.",
+        "confidence": "high",
+        "limitations": [
+          "Subscription economics are business-specific",
+          "Historical source; not live reverified during schema migration"
+        ],
+        "rights": "Reference only; no identity, copy or asset reuse inferred"
+      },
+      {
+        "id": "ev-gourmet-mushroom-dual-audience",
+        "title": "Gourmet Mushroom Company",
+        "source_url": "https://gourmetmushroomco.com/",
+        "source_path": null,
+        "date": "2026-10-02",
+        "observation": "Builds specialty credibility through an award, locally grown sourcing, chemical-use clarity, freshness, product education, and restaurant relationships while remaining approachable to home cooks.",
+        "interpretation": "Restaurant proof can strengthen the household proposition when it is supporting evidence rather than the dominant navigation.",
+        "confidence": "high",
+        "limitations": [
+          "Contact-led rather than full commerce flow",
+          "Historical source; not live reverified during schema migration"
+        ],
+        "rights": "Reference only; no identity, copy or asset reuse inferred"
+      },
+      {
+        "id": "ev-microgreen-store-harvest",
+        "title": "Microgreen Store Gurgaon",
+        "source_url": "https://www.microgreenstore.in/",
+        "source_path": null,
+        "date": "2026-10-02",
+        "observation": "Frames ordering around harvest windows, box entitlements, upcoming availability, delivery status, storage guidance, and familiar Indian meal usage.",
+        "interpretation": "Harvest-state communication can make operational constraints feel like premium freshness rather than stock failure.",
+        "confidence": "medium",
+        "limitations": [
+          "Prelaunch or early-stage operating evidence",
+          "Historical source; not live reverified during schema migration"
+        ],
+        "rights": "Reference only; no identity, copy or asset reuse inferred"
+      },
+      {
+        "id": "ev-riverford-repeat",
+        "title": "Riverford Organic Farmers",
+        "source_url": "https://www.riverford.co.uk/",
+        "source_path": null,
+        "date": "2026-10-02",
+        "observation": "Connects seasonality, grower traceability, repeat boxes, add-ons, easy pause/skip controls, delivery windows, and recipe education.",
+        "interpretation": "WeGroween can treat seasonality and repeat purchase as service design, not only brand copy.",
+        "confidence": "high",
+        "limitations": [
+          "UK logistics and subscription habits differ from India",
+          "Historical source; not live reverified during schema migration"
+        ],
+        "rights": "Reference only; no identity, copy or asset reuse inferred"
+      },
+      {
+        "id": "ev-oishii-premium",
+        "title": "Oishii Farms",
+        "source_url": "https://oishii.com/pages/our-farms",
+        "source_path": null,
+        "date": "2026-10-02",
+        "observation": "Premium value is expressed through varietal specificity, sensory language, controlled-environment craft, named farms, human expertise, and precise product photography rather than generic luxury motifs.",
+        "interpretation": "WeGroween should make cultivation and sensory distinctions concrete, while avoiding imitation of Oishii's Japanese cultural expression.",
+        "confidence": "high",
+        "limitations": [
+          "Luxury berry category and US distribution differ",
+          "Historical source; not live reverified during schema migration"
+        ],
+        "rights": "Reference only; no identity, copy or asset reuse inferred"
+      },
+      {
+        "id": "ev-natoora-transparency",
+        "title": "Natoora",
+        "source_url": "https://natoora.com/en-GB/",
+        "source_path": null,
+        "date": "2026-10-02",
+        "observation": "Uses radical seasonality, grower stories, culinary content, diversity of varieties, and an editorial visual system to connect chefs and home cooks.",
+        "interpretation": "A strong editorial layer can unify broad categories without turning WeGroween into a generic supermarket.",
+        "confidence": "high",
+        "limitations": [
+          "Distinctive identity must not be reproduced",
+          "Historical source; not live reverified during schema migration"
+        ],
+        "rights": "Reference only; no identity, copy or asset reuse inferred"
+      },
+      {
+        "id": "ev-eztrolley-b2b",
+        "title": "EZTrolley",
+        "source_url": "https://www.eztrolley.com/",
+        "source_path": null,
+        "date": "2026-10-02",
+        "observation": "Restaurant value centers on real-time stock, fast ordering, repeat orders, delivery tracking, automated GST invoices, account support, and broad procurement coverage.",
+        "interpretation": "WeGroween should separate restaurant onboarding and account workflows while reusing the core catalogue.",
+        "confidence": "medium",
+        "limitations": [
+          "Claims and scale were not independently verified",
+          "Historical source; not live reverified during schema migration"
+        ],
+        "rights": "Reference only; no identity, copy or asset reuse inferred"
+      },
+      {
+        "id": "ev-baymard-grocery",
+        "title": "Baymard 2026 Grocery Ecommerce UX Research",
+        "source_url": "https://baymard.com/research-articles/online-grocery-ecommerce-ux-2026",
+        "source_path": null,
+        "date": "2026-10-02",
+        "observation": "Grocery-specific friction clusters around fulfilment availability, substitutions, large repeat baskets, past purchases, and finding critical product attributes.",
+        "interpretation": "WeGroween should expose serviceability and delivery before checkout, support buy-again, and keep substitution control global with exceptions.",
+        "confidence": "high",
+        "limitations": [
+          "Many detailed guidelines are behind a paid research library",
+          "Historical source; not live reverified during schema migration"
+        ],
+        "rights": "Reference only; no identity, copy or asset reuse inferred"
+      },
+      {
+        "id": "ev-wcag22",
+        "title": "Web Content Accessibility Guidelines 2.2",
+        "source_url": "https://www.w3.org/TR/WCAG22/",
+        "source_path": null,
+        "date": "2026-10-02",
+        "observation": "Interactive components need programmatic name, role, state, and value; dynamic status messages must be exposed to assistive technology without requiring focus changes.",
+        "interpretation": "Accessibility must be embedded in component contracts and tested states, not added after visual design.",
+        "confidence": "high",
+        "limitations": [
+          "Historical source; not live reverified during schema migration"
+        ],
+        "rights": "Reference only; no identity, copy or asset reuse inferred"
+      },
+      {
+        "id": "ev-fssai-ecommerce",
+        "title": "FSSAI Advisory for E-commerce Food Business Operators",
+        "source_url": "https://fssai.gov.in/upload/advisories/2024/12/674efa161d756Adobe%20Scan%203%20Dec%202024.pdf",
+        "source_path": null,
+        "date": "2026-10-02",
+        "observation": "Food-commerce listings and operations require valid FSSAI identification, alignment between online and physical-label claims, safe last-mile handling, and adequate remaining shelf life.",
+        "interpretation": "Compliance fields must be supported in product/admin data and surfaced where legally required; claims cannot be invented for design effect.",
+        "confidence": "high",
+        "limitations": [
+          "Legal configuration requires qualified review before launch",
+          "Historical source; not live reverified during schema migration"
+        ],
+        "rights": "Reference only; no identity, copy or asset reuse inferred"
+      },
+      {
+        "id": "ev-local-visuals",
+        "title": "WeGroween local visual resources",
+        "source_url": null,
+        "source_path": "E:\\WeGroween\\Resources",
+        "date": "2026-10-02",
+        "observation": "References favor isolated produce photography, microgreen line drawings, watercolor seedlings, and AI-generated botanical material.",
+        "interpretation": "A restrained botanical mark-making layer could add authenticity, but visible stock watermarks, uncertain licenses, and generic AI imagery make most files unsuitable for direct production use.",
+        "confidence": "high",
+        "limitations": [
+          "Ownership and reuse rights are undocumented",
+          "Historical source; not live reverified during schema migration"
+        ],
+        "rights": "Reference only; no identity, copy or asset reuse inferred"
+      },
+      {
+        "id": "ev-approved-h1",
+        "title": "Leader-approved H1 continuous R3 homepage",
+        "date": "2026-10-03",
+        "observation": "H1 household-first narrative and three-page continuous presentation with selected project photographs.",
+        "interpretation": "Preserve source order, copy, media geometry and original authorization.",
+        "confidence": "high",
+        "rights": "Prototype use authorized; production/public rights unconfirmed"
+      },
+      {
+        "id": "ev-legacy-decisions",
+        "title": "WeGroween leader decision log",
+        "date": "2026-10-05",
+        "observation": "Recorded historic identity approvals and scope corrections.",
+        "confidence": "high",
+        "rights": "Project-private"
+      }
+    ],
+    "gaps": [
+      "Service area and delivery rules",
+      "Final catalogue, pack sizes, prices and claims",
+      "Production asset rights",
+      "New imagery-guide rules and migrated presentation mapping need acceptance"
+    ],
+    "budget": {
+      "questions": [
+        "Legacy schema equivalence",
+        "Existing H1 copy/media preservation",
+        "New mandatory field provenance"
+      ],
+      "max_sources": 6,
+      "max_minutes": 30,
+      "used_web_sources_this_migration": 0
+    },
+    "stop_condition": "Resolve preservation/mapping questions locally; new material design choices remain proposed until accepted"
+  },
+  "options": {
+    "territory": [
+      {
+        "id": "cultivated-editorial",
+        "name": "Cultivated Editorial",
+        "thesis": "Treat every harvest as a precise, seasonal, sensory edition.",
+        "benefits": "Household premium with restaurant credibility",
+        "risks": "Photography/copy discipline; excessive serif or space can slow shopping",
+        "evidence_ids": [
+          "ev-legacy-decisions"
+        ],
+        "recommended": true,
+        "legacy_status": "selected",
+        "preview": {
+          "palette_id": "palette-2",
+          "typography_id": "type-2",
+          "structure_id": "h1"
+        }
+      },
+      {
+        "id": "living-laboratory",
+        "name": "Living Laboratory",
+        "thesis": "Visible cultivation intelligence, state clarity and quality control.",
+        "benefits": "Specialty and restaurant authority",
+        "risks": "Can become clinical or synthetic",
+        "evidence_ids": [
+          "ev-legacy-decisions"
+        ],
+        "legacy_status": "rejected",
+        "preview": {
+          "palette_id": "palette-1",
+          "typography_id": "type-1",
+          "structure_id": "h3"
+        },
+        "preview_status": "new comparison configuration proposed; original geometric-sans territory assets not fabricated"
+      },
+      {
+        "id": "harvest-house",
+        "name": "Harvest House",
+        "thesis": "Generous modern pantry built around human cultivation and shared meals.",
+        "benefits": "Household warmth and broad-category adaptability",
+        "risks": "Rustic/mass-market drift; rounded illustration can reduce precision",
+        "evidence_ids": [
+          "ev-legacy-decisions"
+        ],
+        "legacy_status": "rejected",
+        "preview": {
+          "palette_id": "palette-3",
+          "typography_id": "type-2",
+          "structure_id": "h2"
+        },
+        "preview_status": "new comparison configuration proposed; original arched/illustrated layout not fabricated"
+      }
+    ],
+    "color": [
+      {
+        "id": "palette-1",
+        "name": "Orchard Ink",
+        "thesis": "Botanical ink, blackberry and harvest gold: depth, restraint and produce-led seasonality.",
+        "benefits": "Cultivated, calm and sensory",
+        "risks": "Can suggest wine/cosmetics without fresh food context",
+        "evidence_ids": [
+          "ev-legacy-decisions"
+        ],
+        "pairs": [
+          {
+            "foreground": "text-primary",
+            "background": "background",
+            "kind": "normal-text"
+          },
+          {
+            "foreground": "text-primary",
+            "background": "surface",
+            "kind": "normal-text"
+          },
+          {
+            "foreground": "text-primary",
+            "background": "surface-elevated",
+            "kind": "normal-text"
+          },
+          {
+            "foreground": "text-secondary",
+            "background": "background",
+            "kind": "normal-text"
+          },
+          {
+            "foreground": "text-secondary",
+            "background": "surface",
+            "kind": "normal-text"
+          },
+          {
+            "foreground": "text-secondary",
+            "background": "surface-elevated",
+            "kind": "normal-text"
+          },
+          {
+            "foreground": "text-inverse",
+            "background": "brand-primary",
+            "kind": "normal-text"
+          },
+          {
+            "foreground": "text-inverse",
+            "background": "brand-secondary",
+            "kind": "normal-text"
+          },
+          {
+            "foreground": "surface-elevated",
+            "background": "error",
+            "kind": "normal-text"
+          },
+          {
+            "foreground": "brand-primary",
+            "background": "background",
+            "kind": "normal-text"
+          },
+          {
+            "foreground": "brand-primary",
+            "background": "surface",
+            "kind": "normal-text"
+          },
+          {
+            "foreground": "brand-primary",
+            "background": "surface-elevated",
+            "kind": "normal-text"
+          },
+          {
+            "foreground": "success",
+            "background": "background",
+            "kind": "normal-text"
+          },
+          {
+            "foreground": "success",
+            "background": "surface",
+            "kind": "normal-text"
+          },
+          {
+            "foreground": "success",
+            "background": "surface-elevated",
+            "kind": "normal-text"
+          },
+          {
+            "foreground": "warning",
+            "background": "background",
+            "kind": "normal-text"
+          },
+          {
+            "foreground": "warning",
+            "background": "surface",
+            "kind": "normal-text"
+          },
+          {
+            "foreground": "warning",
+            "background": "surface-elevated",
+            "kind": "normal-text"
+          },
+          {
+            "foreground": "error",
+            "background": "background",
+            "kind": "normal-text"
+          },
+          {
+            "foreground": "error",
+            "background": "surface",
+            "kind": "normal-text"
+          },
+          {
+            "foreground": "error",
+            "background": "surface-elevated",
+            "kind": "normal-text"
+          },
+          {
+            "foreground": "information",
+            "background": "background",
+            "kind": "normal-text"
+          },
+          {
+            "foreground": "information",
+            "background": "surface",
+            "kind": "normal-text"
+          },
+          {
+            "foreground": "information",
+            "background": "surface-elevated",
+            "kind": "normal-text"
+          },
+          {
+            "foreground": "focus",
+            "background": "background",
+            "kind": "non-text"
+          },
+          {
+            "foreground": "focus",
+            "background": "surface",
+            "kind": "non-text"
+          },
+          {
+            "foreground": "focus",
+            "background": "surface-elevated",
+            "kind": "non-text"
+          },
+          {
+            "foreground": "border-strong",
+            "background": "background",
+            "kind": "non-text"
+          },
+          {
+            "foreground": "border-strong",
+            "background": "surface",
+            "kind": "non-text"
+          },
+          {
+            "foreground": "border-strong",
+            "background": "surface-elevated",
+            "kind": "non-text"
+          },
+          {
+            "foreground": "brand-secondary",
+            "background": "background",
+            "kind": "non-text"
+          },
+          {
+            "foreground": "brand-secondary",
+            "background": "surface",
+            "kind": "non-text"
+          },
+          {
+            "foreground": "brand-secondary",
+            "background": "surface-elevated",
+            "kind": "non-text"
+          },
+          {
+            "foreground": "text-primary",
+            "background": "accent",
+            "kind": "normal-text"
+          }
+        ],
+        "recommended": false,
+        "usage": "Stable brand-primary; controlled secondary; palette-specific accessible accent foreground",
+        "misuse": "Do not mix palettes or use untested inverse/white text on gold",
+        "legacy_status": "alternative"
+      },
+      {
+        "id": "palette-2",
+        "name": "Soil & Saffron",
+        "thesis": "Warm soil, terracotta and saffron: grounded, Indian and appetizing.",
+        "benefits": "Warm, honest premium",
+        "risks": "Equal terracotta/saffron emphasis can become rustic/festive",
+        "evidence_ids": [
+          "ev-legacy-decisions"
+        ],
+        "pairs": [
+          {
+            "foreground": "text-primary",
+            "background": "background",
+            "kind": "normal-text"
+          },
+          {
+            "foreground": "text-primary",
+            "background": "surface",
+            "kind": "normal-text"
+          },
+          {
+            "foreground": "text-primary",
+            "background": "surface-elevated",
+            "kind": "normal-text"
+          },
+          {
+            "foreground": "text-secondary",
+            "background": "background",
+            "kind": "normal-text"
+          },
+          {
+            "foreground": "text-secondary",
+            "background": "surface",
+            "kind": "normal-text"
+          },
+          {
+            "foreground": "text-secondary",
+            "background": "surface-elevated",
+            "kind": "normal-text"
+          },
+          {
+            "foreground": "text-inverse",
+            "background": "brand-primary",
+            "kind": "normal-text"
+          },
+          {
+            "foreground": "text-inverse",
+            "background": "brand-secondary",
+            "kind": "normal-text"
+          },
+          {
+            "foreground": "surface-elevated",
+            "background": "error",
+            "kind": "normal-text"
+          },
+          {
+            "foreground": "brand-primary",
+            "background": "background",
+            "kind": "normal-text"
+          },
+          {
+            "foreground": "brand-primary",
+            "background": "surface",
+            "kind": "normal-text"
+          },
+          {
+            "foreground": "brand-primary",
+            "background": "surface-elevated",
+            "kind": "normal-text"
+          },
+          {
+            "foreground": "success",
+            "background": "background",
+            "kind": "normal-text"
+          },
+          {
+            "foreground": "success",
+            "background": "surface",
+            "kind": "normal-text"
+          },
+          {
+            "foreground": "success",
+            "background": "surface-elevated",
+            "kind": "normal-text"
+          },
+          {
+            "foreground": "warning",
+            "background": "background",
+            "kind": "normal-text"
+          },
+          {
+            "foreground": "warning",
+            "background": "surface",
+            "kind": "normal-text"
+          },
+          {
+            "foreground": "warning",
+            "background": "surface-elevated",
+            "kind": "normal-text"
+          },
+          {
+            "foreground": "error",
+            "background": "background",
+            "kind": "normal-text"
+          },
+          {
+            "foreground": "error",
+            "background": "surface",
+            "kind": "normal-text"
+          },
+          {
+            "foreground": "error",
+            "background": "surface-elevated",
+            "kind": "normal-text"
+          },
+          {
+            "foreground": "information",
+            "background": "background",
+            "kind": "normal-text"
+          },
+          {
+            "foreground": "information",
+            "background": "surface",
+            "kind": "normal-text"
+          },
+          {
+            "foreground": "information",
+            "background": "surface-elevated",
+            "kind": "normal-text"
+          },
+          {
+            "foreground": "focus",
+            "background": "background",
+            "kind": "non-text"
+          },
+          {
+            "foreground": "focus",
+            "background": "surface",
+            "kind": "non-text"
+          },
+          {
+            "foreground": "focus",
+            "background": "surface-elevated",
+            "kind": "non-text"
+          },
+          {
+            "foreground": "border-strong",
+            "background": "background",
+            "kind": "non-text"
+          },
+          {
+            "foreground": "border-strong",
+            "background": "surface",
+            "kind": "non-text"
+          },
+          {
+            "foreground": "border-strong",
+            "background": "surface-elevated",
+            "kind": "non-text"
+          },
+          {
+            "foreground": "brand-secondary",
+            "background": "background",
+            "kind": "non-text"
+          },
+          {
+            "foreground": "brand-secondary",
+            "background": "surface",
+            "kind": "non-text"
+          },
+          {
+            "foreground": "brand-secondary",
+            "background": "surface-elevated",
+            "kind": "non-text"
+          },
+          {
+            "foreground": "text-primary",
+            "background": "accent",
+            "kind": "normal-text"
+          }
+        ],
+        "recommended": true,
+        "usage": "Stable brand-primary; controlled secondary; palette-specific accessible accent foreground",
+        "misuse": "Do not mix palettes or use untested inverse/white text on gold",
+        "legacy_status": "selected"
+      },
+      {
+        "id": "palette-3",
+        "name": "Plum & Leaf",
+        "thesis": "Boutique plum, cultivated olive and ripe red: rare and giftable.",
+        "benefits": "Curated gifting/editorial impact",
+        "risks": "Can resemble beauty, wine or hospitality",
+        "evidence_ids": [
+          "ev-legacy-decisions"
+        ],
+        "pairs": [
+          {
+            "foreground": "text-primary",
+            "background": "background",
+            "kind": "normal-text"
+          },
+          {
+            "foreground": "text-primary",
+            "background": "surface",
+            "kind": "normal-text"
+          },
+          {
+            "foreground": "text-primary",
+            "background": "surface-elevated",
+            "kind": "normal-text"
+          },
+          {
+            "foreground": "text-secondary",
+            "background": "background",
+            "kind": "normal-text"
+          },
+          {
+            "foreground": "text-secondary",
+            "background": "surface",
+            "kind": "normal-text"
+          },
+          {
+            "foreground": "text-secondary",
+            "background": "surface-elevated",
+            "kind": "normal-text"
+          },
+          {
+            "foreground": "text-inverse",
+            "background": "brand-primary",
+            "kind": "normal-text"
+          },
+          {
+            "foreground": "text-inverse",
+            "background": "brand-secondary",
+            "kind": "normal-text"
+          },
+          {
+            "foreground": "surface-elevated",
+            "background": "error",
+            "kind": "normal-text"
+          },
+          {
+            "foreground": "brand-primary",
+            "background": "background",
+            "kind": "normal-text"
+          },
+          {
+            "foreground": "brand-primary",
+            "background": "surface",
+            "kind": "normal-text"
+          },
+          {
+            "foreground": "brand-primary",
+            "background": "surface-elevated",
+            "kind": "normal-text"
+          },
+          {
+            "foreground": "success",
+            "background": "background",
+            "kind": "normal-text"
+          },
+          {
+            "foreground": "success",
+            "background": "surface",
+            "kind": "normal-text"
+          },
+          {
+            "foreground": "success",
+            "background": "surface-elevated",
+            "kind": "normal-text"
+          },
+          {
+            "foreground": "warning",
+            "background": "background",
+            "kind": "normal-text"
+          },
+          {
+            "foreground": "warning",
+            "background": "surface",
+            "kind": "normal-text"
+          },
+          {
+            "foreground": "warning",
+            "background": "surface-elevated",
+            "kind": "normal-text"
+          },
+          {
+            "foreground": "error",
+            "background": "background",
+            "kind": "normal-text"
+          },
+          {
+            "foreground": "error",
+            "background": "surface",
+            "kind": "normal-text"
+          },
+          {
+            "foreground": "error",
+            "background": "surface-elevated",
+            "kind": "normal-text"
+          },
+          {
+            "foreground": "information",
+            "background": "background",
+            "kind": "normal-text"
+          },
+          {
+            "foreground": "information",
+            "background": "surface",
+            "kind": "normal-text"
+          },
+          {
+            "foreground": "information",
+            "background": "surface-elevated",
+            "kind": "normal-text"
+          },
+          {
+            "foreground": "focus",
+            "background": "background",
+            "kind": "non-text"
+          },
+          {
+            "foreground": "focus",
+            "background": "surface",
+            "kind": "non-text"
+          },
+          {
+            "foreground": "focus",
+            "background": "surface-elevated",
+            "kind": "non-text"
+          },
+          {
+            "foreground": "border-strong",
+            "background": "background",
+            "kind": "non-text"
+          },
+          {
+            "foreground": "border-strong",
+            "background": "surface",
+            "kind": "non-text"
+          },
+          {
+            "foreground": "border-strong",
+            "background": "surface-elevated",
+            "kind": "non-text"
+          },
+          {
+            "foreground": "brand-secondary",
+            "background": "background",
+            "kind": "non-text"
+          },
+          {
+            "foreground": "brand-secondary",
+            "background": "surface",
+            "kind": "non-text"
+          },
+          {
+            "foreground": "brand-secondary",
+            "background": "surface-elevated",
+            "kind": "non-text"
+          },
+          {
+            "foreground": "text-inverse",
+            "background": "accent",
+            "kind": "normal-text"
+          }
+        ],
+        "recommended": false,
+        "usage": "Stable brand-primary; controlled secondary; palette-specific accessible accent foreground",
+        "misuse": "Do not mix palettes or use untested inverse/white text on gold",
+        "legacy_status": "alternative"
+      }
+    ],
+    "typography": [
+      {
+        "id": "type-1",
+        "name": "Newsreader + Manrope",
+        "thesis": "Literary screen serif plus neutral open UI sans.",
+        "benefits": "Calm editorial hierarchy",
+        "risks": "Overuse can feel literary",
+        "evidence_ids": [
+          "ev-legacy-decisions"
+        ],
+        "license": "SIL OFL 1.1; bundled notices",
+        "loading": "Self-host variable WOFF2; preload roman; font-display swap; preserve OFL",
+        "fallbacks": "Newsreader -> Georgia/Times New Roman/serif; Manrope -> Segoe UI/Arial/sans-serif",
+        "legacy_status": "alternative"
+      },
+      {
+        "id": "type-2",
+        "name": "Fraunces + DM Sans",
+        "thesis": "Tactile contemporary headings plus compact friendly UI.",
+        "benefits": "Approved organic editorial character",
+        "risks": "Excessive axes/heavy weight can become trendy",
+        "evidence_ids": [
+          "ev-legacy-decisions"
+        ],
+        "license": "SIL OFL 1.1; bundled notices",
+        "loading": "Self-host variable WOFF2; preload roman; font-display swap; fixed decorative axes",
+        "fallbacks": "Fraunces -> Georgia/serif; DM Sans -> Segoe UI/Arial/sans-serif",
+        "legacy_status": "selected"
+      }
+    ],
+    "imagery": [
+      {
+        "id": "r3-documentary",
+        "name": "R3 documentary project imagery",
+        "thesis": "Preserve selected project photographs and natural food color.",
+        "benefits": "Approved R3 credibility and continuity",
+        "risks": "Public/production rights remain unverified",
+        "evidence_ids": [
+          "ev-legacy-decisions"
+        ],
+        "legacy_status": "prototype use approved; expanded treatment guide proposed"
+      },
+      {
+        "id": "bounded-schematic",
+        "name": "Bounded schematic media",
+        "thesis": "Empty subject/ratio-labelled areas expose geometry without claiming finished photographs.",
+        "benefits": "Matches skill default and separates design from asset production",
+        "risks": "Less sensory credibility than R3",
+        "evidence_ids": [
+          "ev-legacy-decisions"
+        ],
+        "legacy_status": "earlier R2 treatment; replacing R3 requires approval"
+      }
+    ],
+    "structure": [
+      {
+        "id": "h1",
+        "name": "H1 Harvest to Home",
+        "thesis": "Household-first promise, current harvest, cultivation and delivery, with restaurant supply secondary.",
+        "benefits": "Approved integrated household narrative",
+        "risks": "Needs credible cultivation and operational content",
+        "evidence_ids": [
+          "ev-legacy-decisions"
+        ],
+        "section_ids": [
+          "hero",
+          "trust",
+          "harvest",
+          "categories",
+          "cultivation",
+          "delivery",
+          "home-box",
+          "restaurant",
+          "journal",
+          "closing"
+        ],
+        "legacy_status": "selected"
+      },
+      {
+        "id": "h2",
+        "name": "H2 Home and Kitchen",
+        "thesis": "Earlier explicit household and professional pathway split.",
+        "benefits": "Faster B2B discovery",
+        "risks": "Can dilute household hierarchy",
+        "evidence_ids": [
+          "ev-legacy-decisions"
+        ],
+        "section_ids": [
+          "hero",
+          "categories",
+          "harvest",
+          "home-box",
+          "restaurant",
+          "cultivation",
+          "delivery",
+          "journal",
+          "trust",
+          "closing"
+        ],
+        "legacy_status": "unselected",
+        "mapping_status": "proposed order; legacy name exists but complete original section mapping unavailable"
+      },
+      {
+        "id": "h3",
+        "name": "H3 Cultivation Journal",
+        "thesis": "Cultivation evidence and useful education lead discovery.",
+        "benefits": "Process authority",
+        "risks": "Longer path to household product comparison",
+        "evidence_ids": [
+          "ev-legacy-decisions"
+        ],
+        "section_ids": [
+          "hero",
+          "cultivation",
+          "trust",
+          "journal",
+          "harvest",
+          "categories",
+          "delivery",
+          "home-box",
+          "restaurant",
+          "closing"
+        ],
+        "legacy_status": "unselected",
+        "mapping_status": "proposed order; original complete mapping unavailable"
+      }
+    ]
+  },
+  "composition": {
+    "patterns": [
+      {
+        "id": "h1-hero",
+        "user_need": "Understand offer and find household shopping",
+        "purpose": "Lead with grown food and useful purchase path",
+        "placement": "H1 sequence position 1",
+        "prominence": "Primary promise and household CTA",
+        "removal_cost": "Loss of this approved narrative step and its useful meaning",
+        "responsive": "Preserve anatomy/content order; stack by task priority without hiding prices, units, states or actions",
+        "evidence_ids": [
+          "ev-approved-h1"
+        ],
+        "knowledge_class": "DERIVED",
+        "source": "Legacy H1 section; rationale documents existing intent, not a new user study"
+      },
+      {
+        "id": "h1-trust",
+        "user_need": "Assess what the existing catalogue can support",
+        "purpose": "Keep factual catalogue/support context near discovery",
+        "placement": "H1 sequence position 2",
+        "prominence": "Supporting reassurance",
+        "removal_cost": "Loss of this approved narrative step and its useful meaning",
+        "responsive": "Preserve anatomy/content order; stack by task priority without hiding prices, units, states or actions",
+        "evidence_ids": [
+          "ev-approved-h1"
+        ],
+        "knowledge_class": "DERIVED",
+        "source": "Legacy H1 section; rationale documents existing intent, not a new user study"
+      },
+      {
+        "id": "h1-harvest",
+        "user_need": "Compare varieties, packs, price and availability",
+        "purpose": "Make produce comparison the main next task",
+        "placement": "H1 sequence position 3",
+        "prominence": "Primary shopping collection",
+        "removal_cost": "Loss of this approved narrative step and its useful meaning",
+        "responsive": "Preserve anatomy/content order; stack by task priority without hiding prices, units, states or actions",
+        "evidence_ids": [
+          "ev-approved-h1"
+        ],
+        "knowledge_class": "DERIVED",
+        "source": "Legacy H1 section; rationale documents existing intent, not a new user study"
+      },
+      {
+        "id": "h1-categories",
+        "user_need": "Find the relevant food family",
+        "purpose": "Expose named category routes without vague labels",
+        "placement": "H1 sequence position 4",
+        "prominence": "Equal-priority category peers",
+        "removal_cost": "Loss of this approved narrative step and its useful meaning",
+        "responsive": "Preserve anatomy/content order; stack by task priority without hiding prices, units, states or actions",
+        "evidence_ids": [
+          "ev-approved-h1"
+        ],
+        "knowledge_class": "DERIVED",
+        "source": "Legacy H1 section; rationale documents existing intent, not a new user study"
+      },
+      {
+        "id": "h1-cultivation",
+        "user_need": "Understand growing and handling credibility",
+        "purpose": "Place provenance close to product interest",
+        "placement": "H1 sequence position 5",
+        "prominence": "Supporting evidence",
+        "removal_cost": "Loss of this approved narrative step and its useful meaning",
+        "responsive": "Preserve anatomy/content order; stack by task priority without hiding prices, units, states or actions",
+        "evidence_ids": [
+          "ev-approved-h1"
+        ],
+        "knowledge_class": "DERIVED",
+        "source": "Legacy H1 section; rationale documents existing intent, not a new user study"
+      },
+      {
+        "id": "h1-delivery",
+        "user_need": "Understand whether and when an order can arrive",
+        "purpose": "Explain service constraints before payment",
+        "placement": "H1 sequence position 6",
+        "prominence": "Decision-relevant clarity",
+        "removal_cost": "Loss of this approved narrative step and its useful meaning",
+        "responsive": "Preserve anatomy/content order; stack by task priority without hiding prices, units, states or actions",
+        "evidence_ids": [
+          "ev-approved-h1"
+        ],
+        "knowledge_class": "DERIVED",
+        "source": "Legacy H1 section; rationale documents existing intent, not a new user study"
+      },
+      {
+        "id": "h1-home-box",
+        "user_need": "Explore compatible household pairings",
+        "purpose": "Offer practical combinations and repeat-use context",
+        "placement": "H1 sequence position 7",
+        "prominence": "Secondary household path",
+        "removal_cost": "Loss of this approved narrative step and its useful meaning",
+        "responsive": "Preserve anatomy/content order; stack by task priority without hiding prices, units, states or actions",
+        "evidence_ids": [
+          "ev-approved-h1"
+        ],
+        "knowledge_class": "DERIVED",
+        "source": "Legacy H1 section; rationale documents existing intent, not a new user study"
+      },
+      {
+        "id": "h1-restaurant",
+        "user_need": "Find kitchen supply without displacing households",
+        "purpose": "Provide a separate professional enquiry path",
+        "placement": "H1 sequence position 8",
+        "prominence": "Secondary B2B path",
+        "removal_cost": "Loss of this approved narrative step and its useful meaning",
+        "responsive": "Preserve anatomy/content order; stack by task priority without hiding prices, units, states or actions",
+        "evidence_ids": [
+          "ev-approved-h1"
+        ],
+        "knowledge_class": "DERIVED",
+        "source": "Legacy H1 section; rationale documents existing intent, not a new user study"
+      },
+      {
+        "id": "h1-journal",
+        "user_need": "Use and store unfamiliar ingredients",
+        "purpose": "Reduce uncertainty and avoid food waste",
+        "placement": "H1 sequence position 9",
+        "prominence": "Supporting education",
+        "removal_cost": "Loss of this approved narrative step and its useful meaning",
+        "responsive": "Preserve anatomy/content order; stack by task priority without hiding prices, units, states or actions",
+        "evidence_ids": [
+          "ev-approved-h1"
+        ],
+        "knowledge_class": "DERIVED",
+        "source": "Legacy H1 section; rationale documents existing intent, not a new user study"
+      },
+      {
+        "id": "h1-closing",
+        "user_need": "Return to shopping or choose a harvest note",
+        "purpose": "Offer next steps after the narrative",
+        "placement": "H1 sequence position 10",
+        "prominence": "Primary shopping plus optional follow-up",
+        "removal_cost": "Loss of this approved narrative step and its useful meaning",
+        "responsive": "Preserve anatomy/content order; stack by task priority without hiding prices, units, states or actions",
+        "evidence_ids": [
+          "ev-approved-h1"
+        ],
+        "knowledge_class": "DERIVED",
+        "source": "Legacy H1 section; rationale documents existing intent, not a new user study"
+      }
+    ],
+    "attention": "Household offer and shopping first, evidence near action, restaurant supply secondary; preserve honest alternate routes",
+    "negative_space": "Macro: separate H1 narrative chapters with approved section rhythm. Meso: distinguish copy/media and peer groups. Micro: token gaps within labels, icons, controls and card anatomy. Space clarifies relationships, not a generic premium claim.",
+    "density": "G3 Curated Market: 1200px content, 12 columns, 20px canonical gutter; preserve efficient catalogue and restrained editorial headings",
+    "responsive_priorities": "Preserve essential price, pack, status, navigation and next action; reflow into readable stacked regions; do not clip meaningful text; 35% text expansion and 200% reflow checks pending",
+    "conflict_resolution": "Safety/accessibility/truthfulness, task comprehension, approved brand/business intent, then decoration; material compromises need leader choice",
+    "exceptions": [
+      "Preserve approved R3 imagery authorization despite empty-media default",
+      "H1 three-page continuous presentation retained",
+      "No logo production"
+    ],
+    "status": "DERIVED documentation of approved H1; migration additions accepted 2026-10-05"
+  },
+  "imagery": {
+    "thesis": "Cultivation and ingredient detail support quiet premium confidence; product color remains truthful",
+    "warmth": "Natural neutral to gently warm; preserve believable daylight and food whites",
+    "tint": "Avoid green casts and artificial palette tints",
+    "saturation": "Restrained to moderate; no exaggerated green or fake freshness",
+    "exposure": "Keep highlight texture and shadow detail; avoid luminous fake dew or crushed substrate",
+    "contrast": "Readable food texture without harsh global contrast; overlays need their own contrast check",
+    "lighting": "Soft directional daylight-like light; no clinical glare or stage-lit spectacle",
+    "texture": "Preserve actual skin, leaf, mushroom, substrate and packing texture; restrained retouching",
+    "depth": "Subject-led separation; keep cultivation context legible where it acts as evidence",
+    "composition": "Macro food detail, scale, hands, growing beds, harvest and finished-food context; quiet backgrounds around conversion copy",
+    "crop": "Product 4:3; square packshot allowed; hero/editorial 4:5 or 5:4. Preserve current R3 media geometry",
+    "negative_space": "Reserve focal-safe regions for overlays; do not move copy over busy texture",
+    "background": "Natural low-distraction mineral/paper/kitchen/growing contexts; separate packshot consistency from documentary evidence",
+    "palette_compatibility": "C2 frames cool greens naturally; C1 blackberry remains restrained; C3 must not make food look like beauty/wine. Never grade merchandise to fit a palette.",
+    "archetype_rules": [
+      "Catalogue: consistent angle/scale/padding for comparable food, no price or unit hidden",
+      "Food: appetite through credible texture and clean handling",
+      "B2B: show process evidence and labelled quantities; no invented chef testimonials"
+    ],
+    "people": "Hands and cultivators may explain process; obtain consent/model/property rights; avoid staged stereotypes or implied endorsements",
+    "generated_imagery": "No new generated images are requested. Generated scenes may not be cultivation/provenance evidence; any future production needs separate authorization and human artifact review.",
+    "accessibility": "Meaningful alt text identifies variety/context; decorative media uses empty alt; overlays require readable contrast; responsive crops preserve focal subject",
+    "performance": "Use existing WebP where appropriate; define responsive crops and dimensions; optimize without food-color or texture loss; measure later",
+    "rights": "R3 project-image prototype use authorized on 2026-10-03; ownership/public/production rights unverified. Exclude visible-watermark candidates. Fonts have bundled OFL.",
+    "examples": [
+      "Do: natural mushroom texture against quiet soil/mineral context",
+      "Do: label cultivation evidence only when verified",
+      "Do not: tint greens to match the palette",
+      "Do not: use stock/generated farms as WeGroween evidence"
+    ],
+    "status": "APPROVED project treatment expansion on 2026-10-05; rights limitations retained",
+    "provenance": "BRAND_IDENTITY_BLUEPRINT.md section 9 and assets/README.md; new qualitative bands are authored proposals, not measured edit settings"
+  },
+  "components": {
+    "navigation": {
+      "purpose": "Orient customers and expose primary shopping with discoverable supply",
+      "anatomy": "skip link, brand, primary links, restaurant route, search/account/basket",
+      "variants": "storefront, scrolled, admin reference",
+      "states": [
+        "default",
+        "active",
+        "hover",
+        "focus",
+        "mobile-collapsed",
+        "mobile-expanded",
+        "scrolled",
+        "overflow"
+      ],
+      "responsive": "Collapse to labelled menu; preserve basket and sensible focus order",
+      "content": "Short concrete category nouns; no ambiguous sole Explore label",
+      "accessibility": "nav landmark, aria-current, skip link, Escape/focus return; trap focus only in modal surface",
+      "token_mapping": "component.navigation",
+      "legacy_source": "DESIGN_SYSTEM.md component contracts",
+      "review_status": "Specification and state reference; consult quality-review.json for actual checks and remaining limits"
+    },
+    "button": {
+      "purpose": "Initiate clear immediate actions",
+      "anatomy": "label, optional I1 icon, loading indicator",
+      "variants": "primary, secondary, tertiary, destructive, icon; 44/48/56px",
+      "states": [
+        "default",
+        "hover",
+        "active",
+        "focus",
+        "loading",
+        "disabled",
+        "secondary",
+        "tertiary",
+        "destructive"
+      ],
+      "responsive": "Keep target and label readable when wrapped",
+      "content": "Loading preserves width and explains action; disabled never looks actionable",
+      "accessibility": "Native buttons/links; named icon controls; native Enter/Space; expose busy state",
+      "token_mapping": "component.button",
+      "legacy_source": "DESIGN_SYSTEM.md component contracts",
+      "review_status": "Specification and state reference; consult quality-review.json for actual checks and remaining limits"
+    },
+    "input": {
+      "purpose": "Collect data with persistent guidance",
+      "anatomy": "label, required/optional cue, control, helper/error/status",
+      "variants": "text, email, phone, search, quantity, select, textarea, checkbox/radio/switch",
+      "states": [
+        "empty",
+        "filled",
+        "focus",
+        "error",
+        "success",
+        "disabled",
+        "read-only",
+        "validating",
+        "hover"
+      ],
+      "responsive": "Full available width with labels/helper visible",
+      "content": "Placeholder is example only; errors explain recovery",
+      "accessibility": "Persistent labels, described-by links, error summary, sensible validation timing",
+      "token_mapping": "component.input",
+      "legacy_source": "DESIGN_SYSTEM.md component contracts",
+      "review_status": "Specification and state reference; consult quality-review.json for actual checks and remaining limits"
+    },
+    "card": {
+      "purpose": "Compare food with variety, pack, price, timing and next action",
+      "anatomy": "shared media/title/copy/metadata/divider/price/action rows",
+      "variants": "product, category, editorial, selected/featured with semantic reason",
+      "states": [
+        "default",
+        "focus",
+        "selected",
+        "hover",
+        "unavailable",
+        "loading",
+        "error"
+      ],
+      "responsive": "Shared row geometry; stack predictably; no meaningful clipping at zoom",
+      "content": "Shortest/longest/missing optional content and 35% expansion; preserve price/unit/action",
+      "accessibility": "No nested conflicting links; selection and unavailability have text; focus visible",
+      "token_mapping": "component.card",
+      "legacy_source": "DESIGN_SYSTEM.md component contracts",
+      "review_status": "Specification and state reference; consult quality-review.json for actual checks and remaining limits"
+    },
+    "badge": {
+      "purpose": "Communicate compact named category or availability state",
+      "anatomy": "text, optional I1 glyph, optional named remove button",
+      "variants": "neutral, brand, success, warning, error, information",
+      "states": [
+        "default",
+        "success",
+        "warning",
+        "error",
+        "information"
+      ],
+      "responsive": "Remain readable at 200% zoom; wrap where needed",
+      "content": "Ready now, Harvest Friday, Limited, Resting; no color-only state",
+      "accessibility": "Text carries meaning; removable chip action is separately named",
+      "token_mapping": "component.badge",
+      "legacy_source": "DESIGN_SYSTEM.md component contracts",
+      "review_status": "Specification and state reference; consult quality-review.json for actual checks and remaining limits"
+    }
+  },
+  "homepage": {
+    "navigation": [
+      {
+        "label": "WeGroween Grown thoughtfully. Delivered clearly.",
+        "href": "#"
+      },
+      {
+        "label": "Shop harvest",
+        "href": "#harvest"
+      },
+      {
+        "label": "Microgreens",
+        "href": "#categories"
+      },
+      {
+        "label": "Mushrooms",
+        "href": "#categories"
+      },
+      {
+        "label": "Produce",
+        "href": "#categories"
+      },
+      {
+        "label": "Journal",
+        "href": "#journal"
+      }
+    ],
+    "sections": [
+      {
+        "id": "hero",
+        "pattern_id": "h1-hero",
+        "type": "hero",
+        "title": "Grown with care. Chosen for flavour.",
+        "copy": "Current WeGroween range",
+        "legacy_content": {
+          "text": "Current WeGroween range Grown with care. Chosen for flavour. Small-batch microgreens, mushrooms and seasonal produce, selected for freshness and delivered with clear harvest timing. Shop this harvest -> How we grow Mushroom catalogue Button, White, Yellow and Blue Oyster Microgreen catalogue Radish, Sunflower, Mustard and Broccoli Existing project photograph Current catalogue Chef-grade mushrooms Product photography and mushroom varieties already exist in the tracked WeGroween catalogue.",
+          "headings": [
+            {
+              "level": "h2",
+              "text": "Grown with care. Chosen for flavour."
+            }
+          ],
+          "source_hash": "b4a2a633349e4711f260633cf4be9a0240739c25fb483896d123777106a3eb41",
+          "source_fragment": "<section class=\"hero\">\n        <div class=\"site-container hero-grid\">\n          <div class=\"hero-copy\">\n            <p class=\"kicker\">Current WeGroween range</p>\n            <h2>Grown with care.<br>Chosen for <em>flavour.</em></h2>\n            <p class=\"hero-lead\">Small-batch microgreens, mushrooms and seasonal produce, selected for freshness and delivered with clear harvest timing.</p>\n            <div class=\"button-row\">\n              <a class=\"button button--primary\" href=\"#harvest\">Shop this harvest <span>-></span></a>\n              <a class=\"button button--quiet\" href=\"#cultivation\">How we grow</a>\n            </div>\n            <div class=\"hero-detail\">\n              <div><strong>Mushroom catalogue</strong><span>Button, White, Yellow and Blue Oyster</span></div>\n              <div><strong>Microgreen catalogue</strong><span>Radish, Sunflower, Mustard and Broccoli</span></div>\n            </div>\n          </div>\n          <figure class=\"hero-media photo-frame\">\n            <img class=\"media-image\" src=\"../../assets/hero-mushrooms.webp\" alt=\"Button mushrooms growing in a tray\">\n            <span class=\"media-label\">Existing project photograph</span>\n            <div class=\"batch-note\"><span>Current catalogue</span><strong>Chef-grade mushrooms</strong><p>Product photography and mushroom varieties already exist in the tracked WeGroween catalogue.</p></div>\n          </figure>\n        </div>\n      </section>"
+        },
+        "media_manifest": [
+          {
+            "path": "../../assets/hero-mushrooms.webp",
+            "alt": "Button mushrooms growing in a tray"
+          }
+        ],
+        "media": {
+          "role": "hero approved R3 image region",
+          "ratio": "5/4"
+        }
+      },
+      {
+        "id": "trust",
+        "pattern_id": "h1-trust",
+        "type": "proof",
+        "title": "Shopping assurances",
+        "copy": "",
+        "legacy_content": {
+          "text": "4 mushroom varieties Named in the current catalogue 4 microgreen varieties Named in the current catalogue Commerce-ready structure Price, pack and stock fields visible Direct support path WhatsApp and Instagram available",
+          "headings": [],
+          "source_hash": "262f98917867ada777bad960a9e88ffc0d5a08e8d1f3877351e14282d2c3278d",
+          "source_fragment": "<section class=\"trust-band\" aria-label=\"Shopping assurances\">\n        <div class=\"site-container trust-grid\">\n          <div class=\"trust-item\"><img src=\"../../icons/svg/mushroom.svg\" alt=\"\"><div><strong>4 mushroom varieties</strong><span>Named in the current catalogue</span></div></div>\n          <div class=\"trust-item\"><img src=\"../../icons/svg/microgreens.svg\" alt=\"\"><div><strong>4 microgreen varieties</strong><span>Named in the current catalogue</span></div></div>\n          <div class=\"trust-item\"><img src=\"../../icons/svg/receipt.svg\" alt=\"\"><div><strong>Commerce-ready structure</strong><span>Price, pack and stock fields visible</span></div></div>\n          <div class=\"trust-item\"><img src=\"../../icons/svg/account.svg\" alt=\"\"><div><strong>Direct support path</strong><span>WhatsApp and Instagram available</span></div></div>\n        </div>\n      </section>"
+        },
+        "media_manifest": []
+      },
+      {
+        "id": "harvest",
+        "pattern_id": "h1-harvest",
+        "type": "cards",
+        "title": "What can arrive next.",
+        "copy": "01 - Current harvest",
+        "legacy_content": {
+          "text": "01 - Current harvest What can arrive next. Names and flavour cues come from the current catalogue. Prices, pack sizes and live stock shown here are illustrative and require client confirmation. View the current range -> Existing project image Rare variety Sample price Blue Oyster A named mushroom variety already represented in the current catalogue. Rs 180 / sample pack Existing project image Nutty flavour Sample price Yellow Oyster A distinctive oyster variety already represented in the current catalogue. Rs 180 / sample pack Existing project image Spicy and zesty Sample price Radish microgreens A peppery microgreen variety already represented in the current catalogue. Rs 120 / sample pack Existing project image Nutty and crunchy Sample price Sunflower shoots A fresh microgreen variety already represented in the current catalogue. Rs 150 / sample pack Delivery check Know we can reach you before building a basket. Enter your six-digit pincode for the next available delivery window. Delivery pincode Check availability Illustrative state - service areas and delivery rules require confirmation.",
+          "headings": [
+            {
+              "level": "h3",
+              "text": "What can arrive next."
+            },
+            {
+              "level": "h4",
+              "text": "Blue Oyster"
+            },
+            {
+              "level": "h4",
+              "text": "Yellow Oyster"
+            },
+            {
+              "level": "h4",
+              "text": "Radish microgreens"
+            },
+            {
+              "level": "h4",
+              "text": "Sunflower shoots"
+            },
+            {
+              "level": "h4",
+              "text": "Know we can reach you before building a basket."
+            }
+          ],
+          "source_hash": "0465dbc42d467143d60dba12a7c0f39df17c3a291bae52f6eed7d7856e6301f9",
+          "source_fragment": "<section class=\"site-section harvest-section\" id=\"harvest\">\n        <div class=\"site-container\">\n          <div class=\"section-heading\">\n            <div><p class=\"kicker\">01 - Current harvest</p><h3>What can arrive next.</h3></div>\n            <div class=\"section-aside\"><p>Names and flavour cues come from the current catalogue. Prices, pack sizes and live stock shown here are illustrative and require client confirmation.</p><a href=\"#\">View the current range -></a></div>\n          </div>\n          <div class=\"product-grid\">\n            <article class=\"product-card\">\n              <figure class=\"product-media photo-frame\"><img class=\"media-image\" src=\"../../assets/blue-oyster.webp\" alt=\"Blue Oyster mushroom\"><span class=\"photo-caption\">Existing project image</span></figure>\n              <div class=\"product-content\"><div class=\"product-meta\"><span class=\"pill pill--ready\">Rare variety</span><span>Sample price</span></div><h4>Blue Oyster</h4><p>A named mushroom variety already represented in the current catalogue.</p><div class=\"product-bottom\"><div><strong>Rs 180</strong><span>/ sample pack</span></div><button aria-label=\"Add Blue Oyster\"><img src=\"../../icons/svg/plus.svg\" alt=\"\"></button></div></div>\n            </article>\n            <article class=\"product-card\">\n              <figure class=\"product-media photo-frame\"><img class=\"media-image\" src=\"../../assets/yellow-oyster.webp\" alt=\"Yellow Oyster mushroom\"><span class=\"photo-caption\">Existing project image</span></figure>\n              <div class=\"product-content\"><div class=\"product-meta\"><span class=\"pill pill--harvest\">Nutty flavour</span><span>Sample price</span></div><h4>Yellow Oyster</h4><p>A distinctive oyster variety already represented in the current catalogue.</p><div class=\"product-bottom\"><div><strong>Rs 180</strong><span>/ sample pack</span></div><button aria-label=\"Add Yellow Oyster\"><img src=\"../../icons/svg/plus.svg\" alt=\"\"></button></div></div>\n            </article>\n            <article class=\"product-card\">\n              <figure class=\"product-media photo-frame\"><img class=\"media-image\" src=\"../../assets/radish-microgreens.webp\" alt=\"Radish microgreens\"><span class=\"photo-caption\">Existing project image</span></figure>\n              <div class=\"product-content\"><div class=\"product-meta\"><span class=\"pill pill--limited\">Spicy and zesty</span><span>Sample price</span></div><h4>Radish microgreens</h4><p>A peppery microgreen variety already represented in the current catalogue.</p><div class=\"product-bottom\"><div><strong>Rs 120</strong><span>/ sample pack</span></div><button aria-label=\"Add Radish microgreens\"><img src=\"../../icons/svg/plus.svg\" alt=\"\"></button></div></div>\n            </article>\n            <article class=\"product-card product-card--box\">\n              <figure class=\"product-media photo-frame\"><img class=\"media-image\" src=\"../../assets/sunflower-shoots.webp\" alt=\"Sunflower shoots\"><span class=\"photo-caption\">Existing project image</span></figure>\n              <div class=\"product-content\"><div class=\"product-meta\"><span class=\"pill pill--box\">Nutty and crunchy</span><span>Sample price</span></div><h4>Sunflower shoots</h4><p>A fresh microgreen variety already represented in the current catalogue.</p><div class=\"product-bottom\"><div><strong>Rs 150</strong><span>/ sample pack</span></div><button aria-label=\"Add Sunflower shoots\"><img src=\"../../icons/svg/plus.svg\" alt=\"\"></button></div></div>\n            </article>\n          </div>\n\n          <div class=\"serviceability\">\n            <div class=\"service-copy\"><span class=\"service-icon\"><img src=\"../../icons/svg/location.svg\" alt=\"\"></span><div><p class=\"kicker\">Delivery check</p><h4>Know we can reach you before building a basket.</h4><p>Enter your six-digit pincode for the next available delivery window.</p></div></div>\n            <form class=\"pincode-form\"><label for=\"pincode\">Delivery pincode</label><div><input id=\"pincode\" value=\"6-digit pincode\" aria-label=\"Delivery pincode\"><button type=\"button\">Check availability</button></div><p><span class=\"status-dot\"></span>Illustrative state - service areas and delivery rules require confirmation.</p></form>\n          </div>\n        </div>\n      </section>"
+        },
+        "media_manifest": [
+          {
+            "path": "../../assets/blue-oyster.webp",
+            "alt": "Blue Oyster mushroom"
+          },
+          {
+            "path": "../../assets/yellow-oyster.webp",
+            "alt": "Yellow Oyster mushroom"
+          },
+          {
+            "path": "../../assets/radish-microgreens.webp",
+            "alt": "Radish microgreens"
+          },
+          {
+            "path": "../../assets/sunflower-shoots.webp",
+            "alt": "Sunflower shoots"
+          }
+        ],
+        "items": [
+          {
+            "title": "Blue Oyster",
+            "copy": "A named mushroom variety already represented in the current catalogue.",
+            "media": {
+              "role": "product or editorial image",
+              "ratio": "4/3"
+            },
+            "legacy_content": "Existing project image Rare variety Sample price Blue Oyster A named mushroom variety already represented in the current catalogue. Rs 180 / sample pack",
+            "cta": {
+              "label": "Review Blue Oyster"
+            }
+          },
+          {
+            "title": "Yellow Oyster",
+            "copy": "A distinctive oyster variety already represented in the current catalogue.",
+            "media": {
+              "role": "product or editorial image",
+              "ratio": "4/3"
+            },
+            "legacy_content": "Existing project image Nutty flavour Sample price Yellow Oyster A distinctive oyster variety already represented in the current catalogue. Rs 180 / sample pack",
+            "cta": {
+              "label": "Review Yellow Oyster"
+            }
+          },
+          {
+            "title": "Radish microgreens",
+            "copy": "A peppery microgreen variety already represented in the current catalogue.",
+            "media": {
+              "role": "product or editorial image",
+              "ratio": "4/3"
+            },
+            "legacy_content": "Existing project image Spicy and zesty Sample price Radish microgreens A peppery microgreen variety already represented in the current catalogue. Rs 120 / sample pack",
+            "cta": {
+              "label": "Review Radish microgreens"
+            }
+          },
+          {
+            "title": "Sunflower shoots",
+            "copy": "A fresh microgreen variety already represented in the current catalogue.",
+            "media": {
+              "role": "product or editorial image",
+              "ratio": "4/3"
+            },
+            "legacy_content": "Existing project image Nutty and crunchy Sample price Sunflower shoots A fresh microgreen variety already represented in the current catalogue. Rs 150 / sample pack",
+            "cta": {
+              "label": "Review Sunflower shoots"
+            }
+          }
+        ],
+        "columns": 3
+      },
+      {
+        "id": "categories",
+        "pattern_id": "h1-categories",
+        "type": "cards",
+        "title": "A considered market, not an endless aisle.",
+        "copy": "02 - Shop by kitchen need",
+        "legacy_content": {
+          "text": "02 - Shop by kitchen need A considered market, not an endless aisle. Categories are organised around ingredient character and use, while still naming the product honestly. Fresh finish Microgreens Peppery, mild and aromatic varieties for everyday plates. Shop microgreens -> Savoury depth Mushrooms Distinct varieties with texture, handling and cooking notes. Shop mushrooms -> Seasonal staples Vegetables and fruit Organically grown produce selected for flavour and timing. Shop produce -> Curious ingredients Farm discoveries Limited cultivars and unusual products with clear guidance. Explore the uncommon ->",
+          "headings": [
+            {
+              "level": "h3",
+              "text": "A considered market, not an endless aisle."
+            },
+            {
+              "level": "h4",
+              "text": "Microgreens"
+            },
+            {
+              "level": "h4",
+              "text": "Mushrooms"
+            },
+            {
+              "level": "h4",
+              "text": "Vegetables and fruit"
+            },
+            {
+              "level": "h4",
+              "text": "Farm discoveries"
+            }
+          ],
+          "source_hash": "ae73828716b42b4f65bf4f55b9568eccad4057ce71d495614f3733a39189639e",
+          "source_fragment": "<section class=\"site-section category-section\" id=\"categories\">\n        <div class=\"site-container\">\n          <div class=\"section-heading section-heading--compact\">\n            <div><p class=\"kicker\">02 - Shop by kitchen need</p><h3>A considered market, not an endless aisle.</h3></div>\n            <div class=\"section-aside\"><p>Categories are organised around ingredient character and use, while still naming the product honestly.</p></div>\n          </div>\n          <div class=\"category-grid\">\n            <a class=\"category-card category-card--ink\" href=\"#\"><img src=\"../../icons/svg/microgreens.svg\" alt=\"\"><span>Fresh finish</span><h4>Microgreens</h4><p>Peppery, mild and aromatic varieties for everyday plates.</p><b>Shop microgreens -></b></a>\n            <a class=\"category-card\" href=\"#\"><img src=\"../../icons/svg/mushroom.svg\" alt=\"\"><span>Savoury depth</span><h4>Mushrooms</h4><p>Distinct varieties with texture, handling and cooking notes.</p><b>Shop mushrooms -></b></a>\n            <a class=\"category-card\" href=\"#\"><img src=\"../../icons/svg/produce.svg\" alt=\"\"><span>Seasonal staples</span><h4>Vegetables and fruit</h4><p>Organically grown produce selected for flavour and timing.</p><b>Shop produce -></b></a>\n            <a class=\"category-card category-card--berry\" href=\"#\"><img src=\"../../icons/svg/exotic.svg\" alt=\"\"><span>Curious ingredients</span><h4>Farm discoveries</h4><p>Limited cultivars and unusual products with clear guidance.</p><b>Explore the uncommon -></b></a>\n          </div>\n        </div>\n      </section>"
+        },
+        "media_manifest": [],
+        "items": [
+          {
+            "title": "Microgreens",
+            "copy": "Peppery, mild and aromatic varieties for everyday plates.",
+            "media": {
+              "role": "product or editorial image",
+              "ratio": "4/3"
+            },
+            "legacy_content": "Fresh finish Microgreens Peppery, mild and aromatic varieties for everyday plates. Shop microgreens ->",
+            "cta": {
+              "label": "Review Microgreens"
+            }
+          },
+          {
+            "title": "Mushrooms",
+            "copy": "Distinct varieties with texture, handling and cooking notes.",
+            "media": {
+              "role": "product or editorial image",
+              "ratio": "4/3"
+            },
+            "legacy_content": "Savoury depth Mushrooms Distinct varieties with texture, handling and cooking notes. Shop mushrooms ->",
+            "cta": {
+              "label": "Review Mushrooms"
+            }
+          },
+          {
+            "title": "Vegetables and fruit",
+            "copy": "Organically grown produce selected for flavour and timing.",
+            "media": {
+              "role": "product or editorial image",
+              "ratio": "4/3"
+            },
+            "legacy_content": "Seasonal staples Vegetables and fruit Organically grown produce selected for flavour and timing. Shop produce ->",
+            "cta": {
+              "label": "Review Vegetables and fruit"
+            }
+          },
+          {
+            "title": "Farm discoveries",
+            "copy": "Limited cultivars and unusual products with clear guidance.",
+            "media": {
+              "role": "product or editorial image",
+              "ratio": "4/3"
+            },
+            "legacy_content": "Curious ingredients Farm discoveries Limited cultivars and unusual products with clear guidance. Explore the uncommon ->",
+            "cta": {
+              "label": "Review Farm discoveries"
+            }
+          }
+        ],
+        "columns": 4
+      },
+      {
+        "id": "cultivation",
+        "pattern_id": "h1-cultivation",
+        "type": "split",
+        "title": "Good produce earns trust through specifics.",
+        "copy": "03 - Cultivation journal",
+        "legacy_content": {
+          "text": "Existing project photograph Microgreen growing racks Current workspace image - operational details to be confirmed 03 - Cultivation journal Good produce earns trust through specifics. The existing photography can show a real growing context. Launch copy should add only verified variety, harvest, handling and best-use information. 01 Name the variety Blue-grey oyster is more useful than a generic mushroom label. 02 Show the harvest window Ready, growing, limited and resting are honest operating states. 03 Explain the handling Pack date, storage and best-use notes travel with the order. Read this week's cultivation notes ->",
+          "headings": [
+            {
+              "level": "h3",
+              "text": "Good produce earns trust through specifics."
+            }
+          ],
+          "source_hash": "a37d2444d23c719f47d292db46e8cf9b1fc378f020961eeaff2867e411890f01",
+          "source_fragment": "<section class=\"site-section cultivation-section\" id=\"cultivation\">\n        <div class=\"site-container cultivation-grid\">\n          <figure class=\"cultivation-media photo-frame\"><img class=\"media-image\" src=\"../../assets/cultivation-microgreens.webp\" alt=\"Microgreens growing on indoor racks\"><span class=\"media-label\">Existing project photograph</span><div class=\"media-caption\"><b>Microgreen growing racks</b><span>Current workspace image - operational details to be confirmed</span></div></figure>\n          <div class=\"cultivation-copy\">\n            <p class=\"kicker\">03 - Cultivation journal</p>\n            <h3>Good produce earns trust through specifics.</h3>\n            <p class=\"section-lead\">The existing photography can show a real growing context. Launch copy should add only verified variety, harvest, handling and best-use information.</p>\n            <div class=\"proof-list\">\n              <div><span>01</span><div><strong>Name the variety</strong><p>Blue-grey oyster is more useful than a generic mushroom label.</p></div></div>\n              <div><span>02</span><div><strong>Show the harvest window</strong><p>Ready, growing, limited and resting are honest operating states.</p></div></div>\n              <div><span>03</span><div><strong>Explain the handling</strong><p>Pack date, storage and best-use notes travel with the order.</p></div></div>\n            </div>\n            <a class=\"text-link\" href=\"#\">Read this week's cultivation notes -></a>\n          </div>\n        </div>\n      </section>"
+        },
+        "media_manifest": [
+          {
+            "path": "../../assets/cultivation-microgreens.webp",
+            "alt": "Microgreens growing on indoor racks"
+          }
+        ],
+        "media": {
+          "role": "cultivation approved R3 image region",
+          "ratio": "5/4"
+        }
+      },
+      {
+        "id": "delivery",
+        "pattern_id": "h1-delivery",
+        "type": "proof",
+        "title": "A short path, explained before checkout.",
+        "copy": "04 - From harvest to home",
+        "legacy_content": {
+          "text": "04 - From harvest to home A short path, explained before checkout. Delivery information is part of the shopping experience, not a policy discovered after payment. 1 Check your area Confirm the next delivery window before choosing perishable produce. 2 Choose what is ready See harvest status, pack size and timing on the product itself. 3 We pack with context Storage and use notes help the product arrive with fewer unknowns. 4 Receive your harvest Track the delivery and know whom to contact if something is wrong. Designed around local freshness Service areas, order cut-offs and delivery days should remain explicit and editable as operations grow. Read delivery guidance ->",
+          "headings": [
+            {
+              "level": "h3",
+              "text": "A short path, explained before checkout."
+            },
+            {
+              "level": "h4",
+              "text": "Check your area"
+            },
+            {
+              "level": "h4",
+              "text": "Choose what is ready"
+            },
+            {
+              "level": "h4",
+              "text": "We pack with context"
+            },
+            {
+              "level": "h4",
+              "text": "Receive your harvest"
+            }
+          ],
+          "source_hash": "4f120109d48e4ca2d568c3d28a1b515a50e2583c4616d0e53510aa785fd9f257",
+          "source_fragment": "<section class=\"site-section delivery-section\">\n        <div class=\"site-container\">\n          <div class=\"section-heading section-heading--compact\">\n            <div><p class=\"kicker\">04 - From harvest to home</p><h3>A short path, explained before checkout.</h3></div>\n            <div class=\"section-aside\"><p>Delivery information is part of the shopping experience, not a policy discovered after payment.</p></div>\n          </div>\n          <div class=\"journey\">\n            <article><span>1</span><img src=\"../../icons/svg/location.svg\" alt=\"\"><h4>Check your area</h4><p>Confirm the next delivery window before choosing perishable produce.</p></article>\n            <article><span>2</span><img src=\"../../icons/svg/calendar.svg\" alt=\"\"><h4>Choose what is ready</h4><p>See harvest status, pack size and timing on the product itself.</p></article>\n            <article><span>3</span><img src=\"../../icons/svg/package.svg\" alt=\"\"><h4>We pack with context</h4><p>Storage and use notes help the product arrive with fewer unknowns.</p></article>\n            <article><span>4</span><img src=\"../../icons/svg/delivery.svg\" alt=\"\"><h4>Receive your harvest</h4><p>Track the delivery and know whom to contact if something is wrong.</p></article>\n          </div>\n          <div class=\"delivery-note\"><strong>Designed around local freshness</strong><p>Service areas, order cut-offs and delivery days should remain explicit and editable as operations grow.</p><a href=\"#\">Read delivery guidance -></a></div>\n        </div>\n      </section>"
+        },
+        "media_manifest": []
+      },
+      {
+        "id": "home-box",
+        "pattern_id": "h1-home-box",
+        "type": "split",
+        "title": "Curated pairings already exist in the catalogue.",
+        "copy": "The household edit",
+        "legacy_content": {
+          "text": "The household edit Curated pairings already exist in the catalogue. The current source includes a Stir-Fry Specialist, Gourmet Salad Kit, Umami Power Pack and Chef's Signature Box. This module turns that existing range into a clearer household shopping proposition. Button mushrooms + pea shoots Oyster mushrooms + radish greens Assorted fungi + broccoli microgreens Full seasonal sampler concept Explore current pairings Confirm contents and pricing Existing project photographs Current catalogue 4 pairings pricing to confirm",
+          "headings": [
+            {
+              "level": "h3",
+              "text": "Curated pairings already exist in the catalogue."
+            }
+          ],
+          "source_hash": "0cece9213ecb217c76b18bc2cff03050503cfd6fee6ff2180711e9bda31b0cd3",
+          "source_fragment": "<section class=\"site-section home-box-section\">\n        <div class=\"site-container home-box-grid\">\n          <div class=\"home-box-copy\">\n            <p class=\"kicker kicker--gold\">The household edit</p>\n            <h3>Curated pairings already exist in the catalogue.</h3>\n            <p>The current source includes a Stir-Fry Specialist, Gourmet Salad Kit, Umami Power Pack and Chef's Signature Box. This module turns that existing range into a clearer household shopping proposition.</p>\n            <ul><li>Button mushrooms + pea shoots</li><li>Oyster mushrooms + radish greens</li><li>Assorted fungi + broccoli microgreens</li><li>Full seasonal sampler concept</li></ul>\n            <div class=\"button-row\"><a class=\"button button--gold\" href=\"#\">Explore current pairings</a><a class=\"button button--inverse\" href=\"#\">Confirm contents and pricing</a></div>\n          </div>\n          <div class=\"home-box-media photo-collage\"><img src=\"../../assets/button-mushrooms.webp\" alt=\"Button mushrooms\"><img src=\"../../assets/sunflower-shoots.webp\" alt=\"Sunflower shoots\"><span class=\"media-label\">Existing project photographs</span><div class=\"box-price\"><span>Current catalogue</span><strong>4 pairings</strong><small>pricing to confirm</small></div></div>\n        </div>\n      </section>"
+        },
+        "media_manifest": [],
+        "media": {
+          "role": "home-box approved R3 image region",
+          "ratio": "5/4"
+        }
+      },
+      {
+        "id": "restaurant",
+        "pattern_id": "h1-restaurant",
+        "type": "split",
+        "title": "Specialty produce with a direct supply conversation.",
+        "copy": "05 - For professional kitchens",
+        "legacy_content": {
+          "text": "05 - For professional kitchens Specialty produce with a direct supply conversation. Restaurants, cafes and chefs can request current availability, kitchen pack sizes and recurring supply without changing the household-first shopping journey. Kitchen-ready list Variety, unit, lead time and indicative volume. Recurring requirements A practical path for planned weekly needs. Business support Clear order records and one supply contact. Request kitchen supply View sample list Existing project photograph Illustrative supply fields Oyster mushrooms Pack sizes to confirm Microgreens Chef packs to confirm Recurring supply Enquiry-led",
+          "headings": [
+            {
+              "level": "h3",
+              "text": "Specialty produce with a direct supply conversation."
+            }
+          ],
+          "source_hash": "10a4efafe1ecab2bce65991da80c09c766bde20146a8784e809af1270bc3ef0d",
+          "source_fragment": "<section class=\"site-section restaurant-section\">\n        <div class=\"site-container restaurant-grid\">\n          <div class=\"restaurant-copy\">\n            <p class=\"kicker\">05 - For professional kitchens</p>\n            <h3>Specialty produce with a direct supply conversation.</h3>\n            <p class=\"section-lead\">Restaurants, cafes and chefs can request current availability, kitchen pack sizes and recurring supply without changing the household-first shopping journey.</p>\n            <div class=\"restaurant-features\">\n              <div><img src=\"../../icons/svg/cloche.svg\" alt=\"\"><strong>Kitchen-ready list</strong><span>Variety, unit, lead time and indicative volume.</span></div>\n              <div><img src=\"../../icons/svg/repeat.svg\" alt=\"\"><strong>Recurring requirements</strong><span>A practical path for planned weekly needs.</span></div>\n              <div><img src=\"../../icons/svg/receipt.svg\" alt=\"\"><strong>Business support</strong><span>Clear order records and one supply contact.</span></div>\n            </div>\n            <div class=\"button-row\"><a class=\"button button--primary\" href=\"#\">Request kitchen supply</a><a class=\"button button--quiet\" href=\"#\">View sample list</a></div>\n          </div>\n          <figure class=\"restaurant-media photo-frame\"><img class=\"media-image\" src=\"../../assets/yellow-oyster.webp\" alt=\"Yellow Oyster mushrooms\"><span class=\"media-label\">Existing project photograph</span><div class=\"supply-card\"><span>Illustrative supply fields</span><div><b>Oyster mushrooms</b><em>Pack sizes to confirm</em></div><div><b>Microgreens</b><em>Chef packs to confirm</em></div><div><b>Recurring supply</b><em>Enquiry-led</em></div></div></figure>\n        </div>\n      </section>"
+        },
+        "media_manifest": [
+          {
+            "path": "../../assets/yellow-oyster.webp",
+            "alt": "Yellow Oyster mushrooms"
+          }
+        ],
+        "media": {
+          "role": "restaurant approved R3 image region",
+          "ratio": "5/4"
+        }
+      },
+      {
+        "id": "journal",
+        "pattern_id": "h1-journal",
+        "type": "cards",
+        "title": "Useful reading for the produce in your kitchen.",
+        "copy": "06 - From the growing room",
+        "legacy_content": {
+          "text": "06 - From the growing room Useful reading for the produce in your kitchen. The journal should reduce waste, support better use and reveal the care behind each harvest. Visit the journal -> Kitchen note - proposed How to keep microgreens crisp after delivery. A storage guide to develop and verify before launch. Review the proposed guide -> Field note - proposed Why mushroom batches do not look exactly alike. Review the proposed note -> Recipe - proposed Using mild microgreens in an everyday meal. Review the recipe concept ->",
+          "headings": [
+            {
+              "level": "h3",
+              "text": "Useful reading for the produce in your kitchen."
+            },
+            {
+              "level": "h4",
+              "text": "How to keep microgreens crisp after delivery."
+            },
+            {
+              "level": "h4",
+              "text": "Why mushroom batches do not look exactly alike."
+            },
+            {
+              "level": "h4",
+              "text": "Using mild microgreens in an everyday meal."
+            }
+          ],
+          "source_hash": "64b2f4c13e8d749101457af00e6c3ebcae415d48f7791781bed20d05d546fc7b",
+          "source_fragment": "<section class=\"site-section journal-section\" id=\"journal\">\n        <div class=\"site-container\">\n          <div class=\"section-heading\">\n            <div><p class=\"kicker\">06 - From the growing room</p><h3>Useful reading for the produce in your kitchen.</h3></div>\n            <div class=\"section-aside\"><p>The journal should reduce waste, support better use and reveal the care behind each harvest.</p><a href=\"#\">Visit the journal -></a></div>\n          </div>\n          <div class=\"journal-grid\">\n            <article class=\"journal-card journal-card--feature\"><figure class=\"journal-media photo-frame\"><img class=\"media-image\" src=\"../../assets/mustard-microgreens.webp\" alt=\"Mustard microgreens\"></figure><div><span>Kitchen note - proposed</span><h4>How to keep microgreens crisp after delivery.</h4><p>A storage guide to develop and verify before launch.</p><a href=\"#\">Review the proposed guide -></a></div></article>\n            <article class=\"journal-card\"><figure class=\"journal-media photo-frame\"><img class=\"media-image\" src=\"../../assets/golden-oyster.webp\" alt=\"Golden Oyster mushrooms\"></figure><div><span>Field note - proposed</span><h4>Why mushroom batches do not look exactly alike.</h4><a href=\"#\">Review the proposed note -></a></div></article>\n            <article class=\"journal-card\"><figure class=\"journal-media photo-frame\"><img class=\"media-image\" src=\"../../assets/broccoli-microgreens.webp\" alt=\"Broccoli microgreens\"></figure><div><span>Recipe - proposed</span><h4>Using mild microgreens in an everyday meal.</h4><a href=\"#\">Review the recipe concept -></a></div></article>\n          </div>\n        </div>\n      </section>"
+        },
+        "media_manifest": [
+          {
+            "path": "../../assets/mustard-microgreens.webp",
+            "alt": "Mustard microgreens"
+          },
+          {
+            "path": "../../assets/golden-oyster.webp",
+            "alt": "Golden Oyster mushrooms"
+          },
+          {
+            "path": "../../assets/broccoli-microgreens.webp",
+            "alt": "Broccoli microgreens"
+          }
+        ],
+        "items": [
+          {
+            "title": "How to keep microgreens crisp after delivery.",
+            "copy": "A storage guide to develop and verify before launch.",
+            "media": {
+              "role": "product or editorial image",
+              "ratio": "4/3"
+            },
+            "legacy_content": "Kitchen note - proposed How to keep microgreens crisp after delivery. A storage guide to develop and verify before launch. Review the proposed guide ->",
+            "cta": {
+              "label": "Review How to keep microgreens crisp after delivery."
+            }
+          },
+          {
+            "title": "Why mushroom batches do not look exactly alike.",
+            "copy": "",
+            "media": {
+              "role": "product or editorial image",
+              "ratio": "4/3"
+            },
+            "legacy_content": "Field note - proposed Why mushroom batches do not look exactly alike. Review the proposed note ->",
+            "cta": {
+              "label": "Review Why mushroom batches do not look exactly alike."
+            }
+          },
+          {
+            "title": "Using mild microgreens in an everyday meal.",
+            "copy": "",
+            "media": {
+              "role": "product or editorial image",
+              "ratio": "4/3"
+            },
+            "legacy_content": "Recipe - proposed Using mild microgreens in an everyday meal. Review the recipe concept ->",
+            "cta": {
+              "label": "Review Using mild microgreens in an everyday meal."
+            }
+          }
+        ],
+        "columns": 3
+      },
+      {
+        "id": "closing",
+        "pattern_id": "h1-closing",
+        "type": "cta",
+        "title": "Let the week begin with something genuinely fresh.",
+        "copy": "Next harvest",
+        "legacy_content": {
+          "text": "Next harvest Let the week begin with something genuinely fresh. Browse what is ready now, or receive one concise harvest note when the next batch opens. Shop current harvest Harvest note Join the note",
+          "headings": [
+            {
+              "level": "h3",
+              "text": "Let the week begin with something genuinely fresh."
+            }
+          ],
+          "source_hash": "18beba40d6697757ae4e112a3acba14a8606e6fedc59cb297316dbd7f23a0259",
+          "source_fragment": "<section class=\"closing-cta\">\n        <div class=\"site-container closing-cta-grid\">\n          <div><p class=\"kicker kicker--gold\">Next harvest</p><h3>Let the week begin with something genuinely fresh.</h3><p>Browse what is ready now, or receive one concise harvest note when the next batch opens.</p></div>\n          <div class=\"cta-actions\"><a class=\"button button--gold\" href=\"#harvest\">Shop current harvest</a><form><label for=\"email\">Harvest note</label><div><input id=\"email\" value=\"Email address\"><button type=\"button\">Join the note</button></div></form></div>\n        </div>\n      </section>"
+        },
+        "media_manifest": []
+      }
+    ],
+    "footer": "WeGroween Premium, harvest-aware produce for homes, with restaurant supply available. WhatsApp +91 79882 16512 - Instagram @wegroween_in Shop Current harvest Microgreens Mushrooms Vegetables and fruit Farm discoveries Learn Cultivation journal Storage guides Recipes Delivery areas Our standards Support Contact Returns and freshness Frequently asked Restaurant supply Track an order Prototype content - operational details to be confirmed before launch. Privacy Terms Food business details",
+    "template_file": null,
+    "presentation": {
+      "model": "three-page continuous H1 R3",
+      "mapping_status": "Approved project adapter preserves R3 photographs and three-page H1; actual rendered QA recorded separately",
+      "legacy_source": "provenance/h1-r3-source.html"
+    },
+    "legacy_chrome": [
+      {
+        "tag": "div",
+        "text": "Current catalogue: mushrooms, microgreens and pairings WhatsApp: +91 79882 16512 Instagram: @wegroween_in For restaurants",
+        "source_fragment": "<div class=\"utility-bar\">\n        <div class=\"site-container utility-inner\">\n          <p><span class=\"status-dot\"></span>Current catalogue: mushrooms, microgreens and pairings</p>\n          <div><span>WhatsApp: +91 79882 16512</span><span>Instagram: @wegroween_in</span><span>For restaurants</span></div>\n        </div>\n      </div>"
+      },
+      {
+        "tag": "header",
+        "text": "WeGroween Grown thoughtfully. Delivered clearly. Shop harvest Microgreens Mushrooms Produce Journal Basket 2",
+        "source_fragment": "<header class=\"site-header\">\n        <div class=\"site-container site-nav\">\n          <a class=\"wordmark\" href=\"#\">WeGroween<span>Grown thoughtfully. Delivered clearly.</span></a>\n          <nav class=\"nav-links\" aria-label=\"Main navigation\">\n            <a class=\"active\" href=\"#harvest\">Shop harvest</a>\n            <a href=\"#categories\">Microgreens</a>\n            <a href=\"#categories\">Mushrooms</a>\n            <a href=\"#categories\">Produce</a>\n            <a href=\"#journal\">Journal</a>\n          </nav>\n          <div class=\"nav-actions\">\n            <button class=\"icon-button\" aria-label=\"Search\"><img src=\"../../icons/svg/search.svg\" alt=\"\"></button>\n            <button class=\"icon-button\" aria-label=\"Account\"><img src=\"../../icons/svg/account.svg\" alt=\"\"></button>\n            <button class=\"basket-button\"><img src=\"../../icons/svg/basket.svg\" alt=\"\"><span>Basket</span><b>2</b></button>\n          </div>\n        </div>\n      </header>"
+      },
+      {
+        "tag": "footer",
+        "text": "WeGroween Premium, harvest-aware produce for homes, with restaurant supply available. WhatsApp +91 79882 16512 - Instagram @wegroween_in Shop Current harvest Microgreens Mushrooms Vegetables and fruit Farm discoveries Learn Cultivation journal Storage guides Recipes Delivery areas Our standards Support Contact Returns and freshness Frequently asked Restaurant supply Track an order Prototype content - operational details to be confirmed before launch. Privacy Terms Food business details",
+        "source_fragment": "<footer class=\"site-footer\">\n        <div class=\"site-container footer-grid\">\n          <div class=\"footer-brand\"><strong>WeGroween</strong><p>Premium, harvest-aware produce for homes, with restaurant supply available.</p><span>WhatsApp +91 79882 16512 - Instagram @wegroween_in</span></div>\n          <div><strong>Shop</strong><a href=\"#\">Current harvest</a><a href=\"#\">Microgreens</a><a href=\"#\">Mushrooms</a><a href=\"#\">Vegetables and fruit</a><a href=\"#\">Farm discoveries</a></div>\n          <div><strong>Learn</strong><a href=\"#\">Cultivation journal</a><a href=\"#\">Storage guides</a><a href=\"#\">Recipes</a><a href=\"#\">Delivery areas</a><a href=\"#\">Our standards</a></div>\n          <div><strong>Support</strong><a href=\"#\">Contact</a><a href=\"#\">Returns and freshness</a><a href=\"#\">Frequently asked</a><a href=\"#\">Restaurant supply</a><a href=\"#\">Track an order</a></div>\n        </div>\n        <div class=\"site-container footer-base\"><span>Prototype content - operational details to be confirmed before launch.</span><div><a href=\"#\">Privacy</a><a href=\"#\">Terms</a><a href=\"#\">Food business details</a></div></div>\n      </footer>"
+      }
+    ],
+    "legacy_source_hash": "d143b6b44e9eaf90e8bfc0b058bf8c34962e6cd3f228f63d347b1774afefa524",
+    "canonical_source_bytes": "provenance/h1-r3-source.html"
+  },
+  "font_assets": [
+    {
+      "family": "Fraunces",
+      "weight": "400",
+      "path": "assets/fraunces-latin-variable.woff2",
+      "license": "SIL OFL 1.1; see assets/OFL-Fraunces.txt"
+    },
+    {
+      "family": "Fraunces",
+      "weight": "450",
+      "path": "assets/fraunces-latin-variable.woff2",
+      "license": "SIL OFL 1.1; see assets/OFL-Fraunces.txt"
+    },
+    {
+      "family": "Fraunces",
+      "weight": "500",
+      "path": "assets/fraunces-latin-variable.woff2",
+      "license": "SIL OFL 1.1; see assets/OFL-Fraunces.txt"
+    },
+    {
+      "family": "Fraunces",
+      "weight": "550",
+      "path": "assets/fraunces-latin-variable.woff2",
+      "license": "SIL OFL 1.1; see assets/OFL-Fraunces.txt"
+    },
+    {
+      "family": "Fraunces",
+      "weight": "600",
+      "path": "assets/fraunces-latin-variable.woff2",
+      "license": "SIL OFL 1.1; see assets/OFL-Fraunces.txt"
+    },
+    {
+      "family": "Fraunces",
+      "weight": "650",
+      "path": "assets/fraunces-latin-variable.woff2",
+      "license": "SIL OFL 1.1; see assets/OFL-Fraunces.txt"
+    },
+    {
+      "family": "Fraunces",
+      "weight": "700",
+      "path": "assets/fraunces-latin-variable.woff2",
+      "license": "SIL OFL 1.1; see assets/OFL-Fraunces.txt"
+    },
+    {
+      "family": "Fraunces",
+      "weight": "750",
+      "path": "assets/fraunces-latin-variable.woff2",
+      "license": "SIL OFL 1.1; see assets/OFL-Fraunces.txt"
+    },
+    {
+      "family": "Fraunces",
+      "weight": "800",
+      "path": "assets/fraunces-latin-variable.woff2",
+      "license": "SIL OFL 1.1; see assets/OFL-Fraunces.txt"
+    },
+    {
+      "family": "DM Sans",
+      "weight": "400",
+      "path": "assets/dm-sans-latin-variable.woff2",
+      "license": "SIL OFL 1.1; see assets/OFL-DM-Sans.txt"
+    },
+    {
+      "family": "DM Sans",
+      "weight": "450",
+      "path": "assets/dm-sans-latin-variable.woff2",
+      "license": "SIL OFL 1.1; see assets/OFL-DM-Sans.txt"
+    },
+    {
+      "family": "DM Sans",
+      "weight": "500",
+      "path": "assets/dm-sans-latin-variable.woff2",
+      "license": "SIL OFL 1.1; see assets/OFL-DM-Sans.txt"
+    },
+    {
+      "family": "DM Sans",
+      "weight": "550",
+      "path": "assets/dm-sans-latin-variable.woff2",
+      "license": "SIL OFL 1.1; see assets/OFL-DM-Sans.txt"
+    },
+    {
+      "family": "DM Sans",
+      "weight": "600",
+      "path": "assets/dm-sans-latin-variable.woff2",
+      "license": "SIL OFL 1.1; see assets/OFL-DM-Sans.txt"
+    },
+    {
+      "family": "DM Sans",
+      "weight": "650",
+      "path": "assets/dm-sans-latin-variable.woff2",
+      "license": "SIL OFL 1.1; see assets/OFL-DM-Sans.txt"
+    },
+    {
+      "family": "DM Sans",
+      "weight": "700",
+      "path": "assets/dm-sans-latin-variable.woff2",
+      "license": "SIL OFL 1.1; see assets/OFL-DM-Sans.txt"
+    },
+    {
+      "family": "DM Sans",
+      "weight": "750",
+      "path": "assets/dm-sans-latin-variable.woff2",
+      "license": "SIL OFL 1.1; see assets/OFL-DM-Sans.txt"
+    },
+    {
+      "family": "DM Sans",
+      "weight": "800",
+      "path": "assets/dm-sans-latin-variable.woff2",
+      "license": "SIL OFL 1.1; see assets/OFL-DM-Sans.txt"
+    },
+    {
+      "family": "Newsreader",
+      "weight": "400",
+      "path": "assets/newsreader-latin-variable.woff2",
+      "license": "SIL OFL 1.1; see assets/OFL-Newsreader.txt"
+    },
+    {
+      "family": "Newsreader",
+      "weight": "450",
+      "path": "assets/newsreader-latin-variable.woff2",
+      "license": "SIL OFL 1.1; see assets/OFL-Newsreader.txt"
+    },
+    {
+      "family": "Newsreader",
+      "weight": "500",
+      "path": "assets/newsreader-latin-variable.woff2",
+      "license": "SIL OFL 1.1; see assets/OFL-Newsreader.txt"
+    },
+    {
+      "family": "Newsreader",
+      "weight": "550",
+      "path": "assets/newsreader-latin-variable.woff2",
+      "license": "SIL OFL 1.1; see assets/OFL-Newsreader.txt"
+    },
+    {
+      "family": "Newsreader",
+      "weight": "600",
+      "path": "assets/newsreader-latin-variable.woff2",
+      "license": "SIL OFL 1.1; see assets/OFL-Newsreader.txt"
+    },
+    {
+      "family": "Newsreader",
+      "weight": "650",
+      "path": "assets/newsreader-latin-variable.woff2",
+      "license": "SIL OFL 1.1; see assets/OFL-Newsreader.txt"
+    },
+    {
+      "family": "Newsreader",
+      "weight": "700",
+      "path": "assets/newsreader-latin-variable.woff2",
+      "license": "SIL OFL 1.1; see assets/OFL-Newsreader.txt"
+    },
+    {
+      "family": "Newsreader",
+      "weight": "750",
+      "path": "assets/newsreader-latin-variable.woff2",
+      "license": "SIL OFL 1.1; see assets/OFL-Newsreader.txt"
+    },
+    {
+      "family": "Newsreader",
+      "weight": "800",
+      "path": "assets/newsreader-latin-variable.woff2",
+      "license": "SIL OFL 1.1; see assets/OFL-Newsreader.txt"
+    },
+    {
+      "family": "Manrope",
+      "weight": "400",
+      "path": "assets/manrope-latin-variable.woff2",
+      "license": "SIL OFL 1.1; see assets/OFL-Manrope.txt"
+    },
+    {
+      "family": "Manrope",
+      "weight": "450",
+      "path": "assets/manrope-latin-variable.woff2",
+      "license": "SIL OFL 1.1; see assets/OFL-Manrope.txt"
+    },
+    {
+      "family": "Manrope",
+      "weight": "500",
+      "path": "assets/manrope-latin-variable.woff2",
+      "license": "SIL OFL 1.1; see assets/OFL-Manrope.txt"
+    },
+    {
+      "family": "Manrope",
+      "weight": "550",
+      "path": "assets/manrope-latin-variable.woff2",
+      "license": "SIL OFL 1.1; see assets/OFL-Manrope.txt"
+    },
+    {
+      "family": "Manrope",
+      "weight": "600",
+      "path": "assets/manrope-latin-variable.woff2",
+      "license": "SIL OFL 1.1; see assets/OFL-Manrope.txt"
+    },
+    {
+      "family": "Manrope",
+      "weight": "650",
+      "path": "assets/manrope-latin-variable.woff2",
+      "license": "SIL OFL 1.1; see assets/OFL-Manrope.txt"
+    },
+    {
+      "family": "Manrope",
+      "weight": "700",
+      "path": "assets/manrope-latin-variable.woff2",
+      "license": "SIL OFL 1.1; see assets/OFL-Manrope.txt"
+    },
+    {
+      "family": "Manrope",
+      "weight": "750",
+      "path": "assets/manrope-latin-variable.woff2",
+      "license": "SIL OFL 1.1; see assets/OFL-Manrope.txt"
+    },
+    {
+      "family": "Manrope",
+      "weight": "800",
+      "path": "assets/manrope-latin-variable.woff2",
+      "license": "SIL OFL 1.1; see assets/OFL-Manrope.txt"
+    }
+  ],
+  "governance": {
+    "change_history": [
+      "2026-10-05: Versioned schema-2 candidate; legacy package retained active; original approvals carried with scope evidence",
+      "2026-10-05: Mapping and proposed additions accepted; all-three coverage retained; project-specific R3 renderer authorized by that acceptance"
+    ],
+    "feedback": [],
+    "exceptions": [
+      "R3 imagery prototype-use authorization overrides the skill empty-media default for the approved R3 presentation",
+      "Logo deferred",
+      "No release approval inferred",
+      "Legacy alternate preview/order mappings accepted as proposed comparative hypotheses, not new canonical selections"
+    ],
+    "source_authority": "Tokens: values; design-language.json: narrative/composition; language-state.json: progress/approvals",
+    "confidentiality": "Project-private; B2 permits only reviewed-redacted structural reuse",
+    "migration": {
+      "source_version": "1.2.0-proposed",
+      "status": "mapping-approved; actual artifact QA recorded separately",
+      "legacy_section_order": [
+        "hero",
+        "trust",
+        "harvest",
+        "categories",
+        "cultivation",
+        "delivery",
+        "home-box",
+        "restaurant",
+        "journal",
+        "closing"
+      ],
+      "preservation_report": "migration-equivalence.json; full source hashes in the private rollback manifest"
+    }
+  }
+}

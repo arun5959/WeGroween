@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0",
+  "status": "approved",
+  "market_assumption": "india",
+  "primary_audience": "premium-households",
+  "secondary_audience": "restaurant-supply",
+  "primary_conversion": "online-purchase",
+  "delivery_scope": ["brand-identity", "design-tokens", "component-specifications", "patterns", "interactive-specimen", "governance"],
+  "future_application_context": ["storefront", "checkout", "customer-account", "admin-dashboard"],
+  "future_stack": ["html", "tailwind-css", "javascript", "supabase", "razorpay"],
+  "payment_security_note": "Future Razorpay integration must use server-side order creation and signature verification; implementation is out of scope.",
+  "accessibility_target": "WCAG 2.2 AA",
+  "project_root": "E:\\WeGroween\\GitHub Clone\\WeGroween",
+  "local_resources_root": "E:\\WeGroween\\Resources",
+  "privacy": "project-private"
+}

@@ -1,0 +1,82 @@
+{
+  "input_hash": "fa850497978013613fe42467bd5ac0ac41ae8def5711c1efa07a242c3cc4cb2c",
+  "stage": "rendered",
+  "reviewed_at": "2026-10-05",
+  "review_method": "Distinct post-authoring review by primary agent; no delegation",
+  "checks": [
+    {
+      "category": "purpose",
+      "result": "pass",
+      "reviewer": "Codex rendered review",
+      "evidence": "Preserved household-first harvest/availability sequence and secondary restaurant path; 18 readable desktop slices and mobile crops inspected"
+    },
+    {
+      "category": "subtraction",
+      "result": "pass",
+      "reviewer": "Codex rendered review",
+      "evidence": "Reviewed ten H1 sections against their declared user need; supporting strips/CTAs remain subordinate and serve orientation, evidence or next action"
+    },
+    {
+      "category": "hierarchy",
+      "result": "pass",
+      "reviewer": "Codex rendered review",
+      "evidence": "Fraunces headings/DM Sans body, clear primary CTA and consistent section hierarchy across all three palette canvases and cover/closing frames"
+    },
+    {
+      "category": "precision",
+      "result": "pass",
+      "reviewer": "Codex rendered review",
+      "evidence": "Equal product action rows, retained grids, all three canvases and long/missing-copy card stress inspected; validation/browser-qa.json and migration-equivalence.json"
+    },
+    {
+      "category": "imagery",
+      "result": "pass",
+      "reviewer": "Codex rendered review",
+      "evidence": "All retained photos inspected in authorized R3 slots; source hashes match; both imagery-guide pages reviewed; public rights remain unresolved"
+    },
+    {
+      "category": "originality",
+      "result": "pass",
+      "reviewer": "Codex rendered review",
+      "evidence": "Migration retains project-authored H1 bytes/section expression and I1 icons; comparative hypotheses attributed, no newly copied source expression introduced; provenance/ and migration-equivalence.json"
+    },
+    {
+      "category": "fonts",
+      "result": "pass",
+      "reviewer": "Codex rendered review",
+      "evidence": "Offline Fraunces/DM Sans source hashes match, browser font status loaded, actual PDF heading/body rendering inspected; fallback/resource checks in validation/browser-qa.json"
+    },
+    {
+      "category": "desktop",
+      "result": "pass",
+      "reviewer": "Codex rendered review",
+      "evidence": "All three desktop canvases inspected in six readable slices each; 1440/768px viewport crops checked; validation/browser-qa.json"
+    },
+    {
+      "category": "mobile",
+      "result": "pass",
+      "reviewer": "Codex rendered review",
+      "evidence": "390px palette screenshots, product/form/footer layout, 720px reflow/expanded/missing-copy stress and component crop inspected; zero measured overflow or broken media"
+    },
+    {
+      "category": "pdf",
+      "result": "pass",
+      "reviewer": "Codex rendered review",
+      "evidence": "Every current page inspected: 3+3+3 homepage pages, 2 imagery pages and 15 manual pages; 26 nonempty pages and no out-of-bounds text; validation/pdf-qa.json"
+    },
+    {
+      "category": "gallery",
+      "result": "pass",
+      "reviewer": "Codex rendered review",
+      "evidence": "Three preview frames, native option selection and keyboard ArrowRight category switching tested; exported status remains proposed; validation/gallery-interaction.json"
+    }
+  ],
+  "blocking_defects": [],
+  "limitations": [
+    "No empirical user testing or formal accessibility certification",
+    "Historical research not refreshed",
+    "R3 project review permission does not clear production/public rights",
+    "Image/gradient contrast not certified by solid-surface measurements",
+    "Release/private archive pending leader confirmation"
+  ]
+}

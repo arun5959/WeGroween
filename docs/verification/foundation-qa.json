@@ -1,0 +1,27 @@
+{
+  "checked": "2026-10-06",
+  "unitTests": {
+    "passed": 5
+  },
+  "browserTests": {
+    "passed": 6
+  },
+  "pageTypes": {
+    "customer": 22,
+    "admin": 15,
+    "total": 37
+  },
+  "publicHtmlRoutes": 14,
+  "widthsChecked": [
+    320,
+    390
+  ],
+  "developmentRegistryLinks": 37,
+  "runtimeErrors": [],
+  "fonts": {
+    "heading": "Fraunces, Georgia, serif",
+    "body": "\"DM Sans\", \"Segoe UI\", Arial, sans-serif",
+    "frauncesLoaded": true,
+    "dmSansLoaded": true
+  }
+}

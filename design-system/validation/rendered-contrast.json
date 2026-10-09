@@ -1,0 +1,22 @@
+{
+  "reports": [
+    {
+      "checks": 203,
+      "failures": [],
+      "limitations": "Computed flat/alpha background compositing; photo/gradient contrast needs rendered inspection",
+      "palette": "palette-2"
+    },
+    {
+      "checks": 203,
+      "failures": [],
+      "limitations": "Computed flat/alpha background compositing; photo/gradient contrast needs rendered inspection",
+      "palette": "palette-1"
+    },
+    {
+      "checks": 203,
+      "failures": [],
+      "limitations": "Computed flat/alpha background compositing; photo/gradient contrast needs rendered inspection",
+      "palette": "palette-3"
+    }
+  ]
+}

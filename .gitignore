@@ -1,0 +1,10 @@
+node_modules/
+dist/
+public/fonts/
+public/icons/field-notes.svg
+test-results/
+playwright-report/
+.env
+.env.*
+!.env.example
+*.log

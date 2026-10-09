@@ -1,0 +1,29 @@
+{
+  "sections": [
+    {
+      "section": "navigation",
+      "overflow": false
+    },
+    {
+      "section": "buttons",
+      "overflow": false
+    },
+    {
+      "section": "fields",
+      "overflow": false
+    },
+    {
+      "section": "badges",
+      "overflow": false
+    },
+    {
+      "section": "cards",
+      "overflow": false
+    },
+    {
+      "section": "feedback",
+      "overflow": false
+    }
+  ],
+  "version_label": "Current specification reference · 1.3.0 proposed"
+}

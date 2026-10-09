@@ -1,0 +1,26 @@
+{
+  "projects": [
+    {
+      "aliases": [
+        "We Grow Green",
+        "WeGroeen"
+      ],
+      "path": "projects/wegroween",
+      "privacy": "project-private",
+      "project_id": "wegroween",
+      "status": "active",
+      "tags": [
+        "premium-food-commerce",
+        "household-ecommerce",
+        "restaurant-supply",
+        "organic-produce",
+        "microgreens",
+        "mushrooms",
+        "india"
+      ],
+      "updated_at": "2026-10-03T00:00:00+05:30"
+    }
+  ],
+  "schema_version": "1.0",
+  "updated_at": "2026-10-03T02:55:25+00:00"
+}

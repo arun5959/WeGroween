@@ -1,0 +1,16 @@
+{
+  "coverage_mode": "all-three",
+  "selected_palette": "palette-2",
+  "primary_palette": "palette-2",
+  "fallback_palette": "palette-1",
+  "fallback_used": false,
+  "requested_palettes": [
+    "palette-2",
+    "palette-1",
+    "palette-3"
+  ],
+  "structure_lock": true,
+  "generated_prototypes": [],
+  "status": "coverage-approved-rendering-pending",
+  "variant_lock": "Copy, type, structure, spacing, media geometry and framing fixed; mapped palette values only"
+}

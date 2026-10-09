@@ -1,0 +1,72 @@
+import { test, expect } from '@playwright/test';
+
+test('contact form validates fields, safely prepares a draft, and discards stale drafts', async ({ page }) => {
+  const submissions = [];
+  const failures = [];
+  page.on('request', request => { if (request.method() !== 'GET') submissions.push(request.url()); });
+  page.on('pageerror', error => failures.push(error.message));
+  await page.goto('/help');
+  await expect(page).toHaveTitle('Contact · WeGroween');
+  await expect(page.locator('.site-navigation a[href="/help"]')).toHaveAccessibleName('Contact');
+  const prepare = page.getByRole('button', { name: 'Prepare email draft' });
+  await prepare.click();
+  await expect(page.getByLabel('Email address', { exact: true })).toBeFocused();
+  await expect(page.locator('#contact-email-error')).toHaveText('Enter a valid email address.');
+  await page.getByLabel('Email address', { exact: true }).fill('visitor@example.invalid');
+  await page.getByLabel('Your message').fill('   ');
+  await prepare.click();
+  await expect(page.getByLabel('Your message')).toBeFocused();
+  await page.getByLabel('Name (optional)').fill('Test visitor');
+  const message = '<img src=x onerror=alert(1)> & produce enquiry';
+  await page.getByLabel('Your message').fill(message);
+  await page.getByLabel('What is your enquiry about?').selectOption('restaurant');
+  await prepare.click();
+  await expect(page.locator('#contact-email-draft')).toBeVisible();
+  await expect(page.locator('#contact-email-draft')).toBeFocused();
+  await expect(page.locator('#contact-draft-body')).toContainText(message);
+  await expect(page.locator('#contact-draft-body img')).toHaveCount(0);
+  const draftURL = new URL(await page.locator('#contact-open-draft').getAttribute('href'));
+  expect(draftURL.protocol).toBe('mailto:');
+  expect(draftURL.pathname).toBe('wegroween@gmail.com');
+  expect(draftURL.searchParams.get('subject')).toBe('Restaurant supply enquiry');
+  expect(draftURL.searchParams.get('body')).toContain('Reply email: visitor@example.invalid');
+  expect(draftURL.searchParams.get('body')).toContain(message);
+  await page.getByLabel('Your message').fill('Revised enquiry');
+  await expect(page.locator('#contact-email-draft')).toBeHidden();
+  await expect(page.locator('#contact-open-draft')).not.toHaveAttribute('href');
+  await prepare.click();
+  await page.getByLabel('What is your enquiry about?').selectOption('delivery');
+  await expect(page.locator('#contact-email-draft')).toBeHidden();
+  await expect(page.locator('#contact-message-hint')).toContainText('Delivery areas');
+  expect(submissions).toEqual([]);
+  expect(failures).toEqual([]);
+});
+
+test('FAQs support keyboard use and the form works after client-side navigation', async ({ page }) => {
+  await page.goto('/');
+  await page.locator('.site-navigation a[href="/help"]').click();
+  await expect(page.locator('#main-content')).toBeFocused();
+  await expect(page.locator('#contact-form')).toBeVisible();
+  const question = page.locator('.contact-questions summary').nth(1);
+  await question.focus();
+  await page.keyboard.press('Enter');
+  await expect(page.locator('.contact-answer').nth(1)).toBeVisible();
+  await expect(page.locator('.contact-answer a, .contact-answer button')).toHaveCount(0);
+  await page.locator('.site-navigation a[href="/shop"]').click();
+  await page.goBack();
+  await expect(page.locator('#contact-form')).toBeVisible();
+  await page.getByRole('button', { name: 'Prepare email draft' }).click();
+  await expect(page.getByLabel('Email address', { exact: true })).toBeFocused();
+});
+
+test('contact is usable without JavaScript and does not expose a submit form', async ({ browser }) => {
+  const context = await browser.newContext({ javaScriptEnabled: false });
+  const page = await context.newPage();
+  await page.goto('/help');
+  await expect(page.locator('h1')).toHaveText('Let’s talk about your next harvest.');
+  await expect(page.locator('#contact-form')).toBeHidden();
+  await expect(page.locator('.contact-sheet a[href="mailto:wegroween@gmail.com"]')).toHaveCount(2);
+  await page.locator('.contact-questions summary').nth(1).click();
+  await expect(page.locator('.contact-answer').nth(1)).toBeVisible();
+  await context.close();
+});

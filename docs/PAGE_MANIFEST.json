@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0",
+  "project": "WeGroween",
+  "status": "proposed-development-baseline",
+  "updated": "2026-10-05",
+  "counts": { "customer": 22, "admin": 15, "total": 37 },
+  "counting_rule": "A reusable page type counts once. Dynamic records, alternate create/edit paths, query strings, UI states and utility handlers do not increase the count.",
+  "access_rules": {
+    "public": "Only published content and safe catalogue projections; no private stock/customer fields.",
+    "customer": "Authenticated owner; ownership enforced by grants/RLS or a trusted owner-checking API.",
+    "customer-or-guest": "Authenticated owner or verified short-lived guest order/checkout session if guest checkout is enabled. Never order ID/email alone.",
+    "identity": "Authentication/recovery page; signed-in redirects use safe internal destinations.",
+    "staff-identity": "Staff authentication entry; active staff membership and MFA required before administration.",
+    "staff": "Active staff membership plus named server-checked permissions; hidden navigation is not authorisation."
+  },
+  "rendering_rules": {
+    "public-html-live-data": "Meaningful generated public HTML and metadata; live availability hydrated separately; content publishing queues rebuild.",
+    "client": "Interactive route within compiled frontend; private routes are non-indexed and enforce data access separately."
+  },
+  "pages": [
+    { "id": "C01", "area": "customer", "name": "Home", "route": "/", "shell": "storefront", "access": "public", "rendering": "public-html-live-data", "module": "catalogue", "primary_action": "Shop this harvest" },
+    { "id": "C02", "area": "customer", "name": "Shop", "route": "/shop", "shell": "storefront", "access": "public", "rendering": "public-html-live-data", "module": "catalogue", "primary_action": "Explore products" },
+    { "id": "C03", "area": "customer", "name": "Category listing", "route": "/shop/category/:slug", "shell": "storefront", "access": "public", "rendering": "public-html-live-data", "module": "catalogue", "primary_action": "Explore category products" },
+    { "id": "C04", "area": "customer", "name": "Search results", "route": "/search", "query_parameters": ["q", "category", "sort", "page"], "shell": "storefront", "access": "public", "rendering": "client", "module": "catalogue", "primary_action": "Open product", "indexing": "noindex" },
+    { "id": "C05", "area": "customer", "name": "Product detail", "route": "/products/:slug", "shell": "storefront", "access": "public", "rendering": "public-html-live-data", "module": "catalogue", "primary_action": "Add selected pack to cart" },
+    { "id": "C06", "area": "customer", "name": "Our Story", "route": "/our-farm", "shell": "storefront", "access": "public", "rendering": "public-html-live-data", "module": "content", "primary_action": "Explore products" },
+    { "id": "C07", "area": "customer", "name": "Restaurant Supply", "route": "/restaurant-supply", "shell": "storefront", "access": "public", "rendering": "public-html-live-data", "module": "restaurant-supply", "primary_action": "Submit supply enquiry" },
+    { "id": "C08", "area": "customer", "name": "Contact", "route": "/help", "shell": "storefront", "access": "public", "rendering": "public-html-live-data", "module": "support", "primary_action": "Prepare email draft" },
+    { "id": "C09", "area": "customer", "name": "Cart", "route": "/cart", "shell": "checkout", "access": "public", "rendering": "client", "module": "cart", "primary_action": "Continue to checkout", "indexing": "noindex" },
+    { "id": "C10", "area": "customer", "name": "Checkout", "route": "/checkout", "shell": "checkout", "access": "customer-or-guest", "rendering": "client", "module": "checkout", "primary_action": "Confirm quote and pay", "indexing": "noindex" },
+    { "id": "C11", "area": "customer", "name": "Order confirmation", "route": "/orders/:orderId/confirmation", "shell": "checkout", "access": "customer-or-guest", "rendering": "client", "module": "orders", "primary_action": "View authorised order", "indexing": "noindex" },
+    { "id": "C12", "area": "customer", "name": "Sign in", "route": "/sign-in", "shell": "identity", "access": "identity", "rendering": "client", "module": "identity", "primary_action": "Sign in", "indexing": "noindex" },
+    { "id": "C13", "area": "customer", "name": "Register", "route": "/register", "shell": "identity", "access": "identity", "rendering": "client", "module": "identity", "primary_action": "Create and verify account", "indexing": "noindex" },
+    { "id": "C14", "area": "customer", "name": "Password recovery", "route": "/recover-password", "modes": ["request", "set-new-password"], "shell": "identity", "access": "identity", "rendering": "client", "module": "identity", "primary_action": "Recover access", "indexing": "noindex" },
+    { "id": "C15", "area": "customer", "name": "Profile", "route": "/account", "shell": "account", "access": "customer", "rendering": "client", "module": "identity", "primary_action": "Save profile", "indexing": "noindex" },
+    { "id": "C16", "area": "customer", "name": "Saved addresses", "route": "/account/addresses", "shell": "account", "access": "customer", "rendering": "client", "module": "identity", "primary_action": "Save address", "indexing": "noindex" },
+    { "id": "C17", "area": "customer", "name": "Order history", "route": "/account/orders", "shell": "account", "access": "customer", "rendering": "client", "module": "orders", "primary_action": "Open order or reorder", "indexing": "noindex" },
+    { "id": "C18", "area": "customer", "name": "Order detail and tracking", "route": "/account/orders/:orderId", "shell": "account", "access": "customer-or-guest", "rendering": "client", "module": "orders", "primary_action": "Track order or get help", "indexing": "noindex", "guest_navigation": "Guest access exposes only this order; account profile/address/history navigation requires sign-in." },
+    { "id": "C19", "area": "customer", "name": "Delivery policy", "route": "/policies/delivery", "shell": "storefront", "access": "public", "rendering": "public-html-live-data", "module": "content", "primary_action": "Check delivery coverage" },
+    { "id": "C20", "area": "customer", "name": "Returns and refunds", "route": "/policies/returns", "shell": "storefront", "access": "public", "rendering": "public-html-live-data", "module": "content", "primary_action": "Get order help" },
+    { "id": "C21", "area": "customer", "name": "Privacy policy", "route": "/policies/privacy", "shell": "storefront", "access": "public", "rendering": "public-html-live-data", "module": "content", "primary_action": "Read data-handling policy" },
+    { "id": "C22", "area": "customer", "name": "Terms", "route": "/policies/terms", "shell": "storefront", "access": "public", "rendering": "public-html-live-data", "module": "content", "primary_action": "Read purchasing terms" },
+    { "id": "A01", "area": "admin", "name": "Admin sign in", "route": "/admin/sign-in", "shell": "identity", "access": "staff-identity", "rendering": "client", "module": "identity", "primary_action": "Authenticate staff session", "indexing": "noindex" },
+    { "id": "A02", "area": "admin", "name": "Overview", "route": "/admin", "shell": "admin", "access": "staff", "permissions": ["dashboard.read"], "rendering": "client", "module": "administration", "primary_action": "Open actionable work", "indexing": "noindex" },
+    { "id": "A03", "area": "admin", "name": "Orders", "route": "/admin/orders", "shell": "admin", "access": "staff", "permissions": ["orders.read"], "rendering": "client", "module": "orders", "primary_action": "Open order", "indexing": "noindex" },
+    { "id": "A04", "area": "admin", "name": "Order detail", "route": "/admin/orders/:orderId", "shell": "admin", "access": "staff", "permissions": ["orders.read"], "action_permissions": { "transition": "orders.manage", "refund": "refunds.manage" }, "rendering": "client", "module": "orders", "primary_action": "Fulfil order or resolve exception", "indexing": "noindex" },
+    { "id": "A05", "area": "admin", "name": "Products", "route": "/admin/products", "shell": "admin", "access": "staff", "permissions": ["catalogue.read"], "action_permissions": { "edit": "catalogue.manage" }, "rendering": "client", "module": "catalogue", "primary_action": "Open product editor", "indexing": "noindex" },
+    { "id": "A06", "area": "admin", "name": "Product editor", "route": "/admin/products/:productId/edit", "alternate_routes": ["/admin/products/new"], "modes": ["create", "edit"], "shell": "admin", "access": "staff", "permissions": ["catalogue.manage"], "rendering": "client", "module": "catalogue", "primary_action": "Save draft or publish", "indexing": "noindex" },
+    { "id": "A07", "area": "admin", "name": "Categories", "route": "/admin/categories", "shell": "admin", "access": "staff", "permissions": ["catalogue.manage"], "rendering": "client", "module": "catalogue", "primary_action": "Maintain categories", "indexing": "noindex" },
+    { "id": "A08", "area": "admin", "name": "Inventory", "route": "/admin/inventory", "shell": "admin", "access": "staff", "permissions": ["inventory.manage"], "rendering": "client", "module": "inventory", "primary_action": "Record reasoned stock change", "indexing": "noindex" },
+    { "id": "A09", "area": "admin", "name": "Customers", "route": "/admin/customers", "shell": "admin", "access": "staff", "permissions": ["customers.read"], "rendering": "client", "module": "administration", "primary_action": "Open customer", "indexing": "noindex" },
+    { "id": "A10", "area": "admin", "name": "Customer detail", "route": "/admin/customers/:customerId", "shell": "admin", "access": "staff", "permissions": ["customers.read"], "rendering": "client", "module": "administration", "primary_action": "Review customer context", "indexing": "noindex" },
+    { "id": "A11", "area": "admin", "name": "Restaurant enquiries and accounts", "route": "/admin/restaurant-supply", "modes": ["enquiries", "business-accounts", "inline-detail"], "shell": "admin", "access": "staff", "permissions": ["restaurant.manage"], "rendering": "client", "module": "restaurant-supply", "primary_action": "Qualify enquiry or manage business record", "indexing": "noindex" },
+    { "id": "A12", "area": "admin", "name": "Promotions", "route": "/admin/promotions", "shell": "admin", "access": "staff", "permissions": ["promotions.manage"], "rendering": "client", "module": "pricing", "primary_action": "Maintain promotion rules", "indexing": "noindex" },
+    { "id": "A13", "area": "admin", "name": "Delivery settings", "route": "/admin/delivery", "shell": "admin", "access": "staff", "permissions": ["delivery.manage"], "rendering": "client", "module": "delivery", "primary_action": "Maintain zones, slots and rules", "indexing": "noindex" },
+    { "id": "A14", "area": "admin", "name": "Reports", "route": "/admin/reports", "shell": "admin", "access": "staff", "permissions": ["reports.read"], "rendering": "client", "module": "administration", "primary_action": "Review or export permitted reports", "indexing": "noindex" },
+    { "id": "A15", "area": "admin", "name": "General settings", "route": "/admin/settings", "shell": "admin", "access": "staff", "permissions": ["settings.manage"], "action_permissions": { "assign-staff-role": "owner.only" }, "rendering": "client", "module": "administration", "primary_action": "Save authorised settings", "indexing": "noindex" }
+  ],
+  "utility_handlers": [
+    { "route": "/auth/callback", "purpose": "Validate Auth callback and redirect to existing safe destination", "counted_as_page": false },
+    { "route": "/order-access", "purpose": "Exchange guest access token for protected order session if enabled; redirect to C18", "counted_as_page": false }
+  ],
+  "utility_states": ["404", "403", "session-expired", "payment-pending", "payment-failed", "empty", "loading", "error"],
+  "legacy_redirects": [
+    { "from": "/index.html", "to": "/" },
+    { "from": "/microgreens.html", "to": "/shop/category/microgreens", "condition": "Matching category is published" },
+    { "from": "/mushrooms.html", "to": "/shop/category/mushrooms", "condition": "Matching category is published" },
+    { "from": "/combos.html", "to": "/shop/category/combos", "condition": "Matching category is published" }
+  ]
+}

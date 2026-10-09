@@ -1,0 +1,284 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>WeGroween · Story visual concepts</title><style>:root {
+  --color-accent: #D49A25;
+  --color-background: #FBF4E8;
+  --color-border: #DDD1C2;
+  --color-border-strong: #92796C;
+  --color-brand-primary: #402B24;
+  --color-brand-secondary: #98513D;
+  --color-disabled-background: #E9E2D7;
+  --color-disabled-content: #74706A;
+  --color-error: #A42C3B;
+  --color-focus: #006C5B;
+  --color-information: #285C78;
+  --color-success: #2E654A;
+  --color-surface: #FFFDF7;
+  --color-surface-elevated: #FFFFFF;
+  --color-text-inverse: #FFF8EC;
+  --color-text-primary: #2B211D;
+  --color-text-secondary: #66544B;
+  --color-warning: #925100;
+  --component-badge-gap: 4px;
+  --component-badge-height: 28px;
+  --component-badge-padding-inline: 10px;
+  --component-badge-states-default-background: var(--color-surface);
+  --component-badge-states-default-foreground: var(--color-text-secondary);
+  --component-badge-states-error-background: var(--color-surface);
+  --component-badge-states-error-border: var(--color-error);
+  --component-badge-states-error-foreground: var(--color-error);
+  --component-badge-states-information-background: var(--color-surface);
+  --component-badge-states-information-foreground: var(--color-information);
+  --component-badge-states-success-background: var(--color-surface);
+  --component-badge-states-success-border: var(--color-success);
+  --component-badge-states-success-foreground: var(--color-success);
+  --component-badge-states-warning-background: var(--color-surface);
+  --component-badge-states-warning-foreground: var(--color-warning);
+  --component-button-height-lg: 56px;
+  --component-button-height-md: 48px;
+  --component-button-height-sm: 44px;
+  --component-button-icon-only: 44px;
+  --component-button-padding-inline-lg: 24px;
+  --component-button-padding-inline-md: 20px;
+  --component-button-padding-inline-sm: 16px;
+  --component-button-states-active-background: var(--color-brand-primary);
+  --component-button-states-active-foreground: var(--color-text-inverse);
+  --component-button-states-default-background: var(--color-brand-primary);
+  --component-button-states-default-foreground: var(--color-text-inverse);
+  --component-button-states-destructive-background: var(--color-error);
+  --component-button-states-destructive-foreground: var(--color-surface-elevated);
+  --component-button-states-disabled-content: var(--color-disabled-content);
+  --component-button-states-disabled-fill: var(--color-disabled-background);
+  --component-button-states-focus-background: var(--color-brand-primary);
+  --component-button-states-focus-border: var(--color-focus);
+  --component-button-states-focus-foreground: var(--color-text-inverse);
+  --component-button-states-hover-background: var(--color-brand-primary);
+  --component-button-states-hover-foreground: var(--color-text-inverse);
+  --component-button-states-hover-mix-rule: 88% brand-primary with 12% text-primary, as legacy CSS;
+  --component-button-states-loading-background: var(--color-brand-primary);
+  --component-button-states-loading-foreground: var(--color-text-inverse);
+  --component-button-states-secondary-background: var(--color-background);
+  --component-button-states-secondary-foreground: var(--color-brand-primary);
+  --component-button-states-tertiary-background: var(--color-background);
+  --component-button-states-tertiary-foreground: var(--color-brand-primary);
+  --component-card-gap: 16px;
+  --component-card-padding: 20px;
+  --component-card-states-default-background: var(--color-surface);
+  --component-card-states-default-foreground: var(--color-text-primary);
+  --component-card-states-error-background: var(--color-surface);
+  --component-card-states-error-foreground: var(--color-text-primary);
+  --component-card-states-focus-background: var(--color-surface);
+  --component-card-states-focus-border: var(--color-focus);
+  --component-card-states-focus-foreground: var(--color-text-primary);
+  --component-card-states-hover-background: var(--color-surface);
+  --component-card-states-hover-foreground: var(--color-text-primary);
+  --component-card-states-loading-background: var(--color-surface);
+  --component-card-states-loading-foreground: var(--color-text-primary);
+  --component-card-states-selected-background: var(--color-surface);
+  --component-card-states-selected-border: var(--color-brand-secondary);
+  --component-card-states-selected-foreground: var(--color-text-primary);
+  --component-card-states-unavailable-content: var(--color-disabled-content);
+  --component-card-states-unavailable-fill: var(--color-disabled-background);
+  --component-feedback-accent-width: 4px;
+  --component-feedback-padding: 16px;
+  --component-focus-ring-offset: 3px;
+  --component-focus-ring-width: 3px;
+  --component-icon-control-gap: 8px;
+  --component-icon-grid: 24px;
+  --component-icon-size-lg: 24px;
+  --component-icon-size-md: 20px;
+  --component-icon-size-sm: 16px;
+  --component-icon-size-xl: 32px;
+  --component-icon-stroke-width: 1.75;
+  --component-input-height: 48px;
+  --component-input-padding-inline: 14px;
+  --component-input-states-disabled-content: var(--color-disabled-content);
+  --component-input-states-disabled-fill: var(--color-disabled-background);
+  --component-input-states-empty-background: var(--color-surface-elevated);
+  --component-input-states-empty-foreground: var(--color-text-primary);
+  --component-input-states-error-background: var(--color-surface-elevated);
+  --component-input-states-error-border: var(--color-error);
+  --component-input-states-error-foreground: var(--color-text-primary);
+  --component-input-states-filled-background: var(--color-surface-elevated);
+  --component-input-states-filled-foreground: var(--color-text-primary);
+  --component-input-states-focus-background: var(--color-surface-elevated);
+  --component-input-states-focus-border: var(--color-focus);
+  --component-input-states-focus-foreground: var(--color-text-primary);
+  --component-input-states-hover-background: var(--color-surface-elevated);
+  --component-input-states-hover-foreground: var(--color-text-primary);
+  --component-input-states-read-only-background: var(--color-background);
+  --component-input-states-read-only-foreground: var(--color-text-primary);
+  --component-input-states-success-background: var(--color-surface-elevated);
+  --component-input-states-success-border: var(--color-success);
+  --component-input-states-success-foreground: var(--color-text-primary);
+  --component-input-states-validating-background: var(--color-surface-elevated);
+  --component-input-states-validating-foreground: var(--color-text-primary);
+  --component-input-textarea-min-height: 120px;
+  --component-navigation-height: 72px;
+  --component-navigation-link-gap: 24px;
+  --component-navigation-mobile-height: 64px;
+  --component-navigation-states-active-background: var(--color-background);
+  --component-navigation-states-active-foreground: var(--color-text-primary);
+  --component-navigation-states-default-background: var(--color-background);
+  --component-navigation-states-default-foreground: var(--color-text-primary);
+  --component-navigation-states-focus-background: var(--color-background);
+  --component-navigation-states-focus-border: var(--color-focus);
+  --component-navigation-states-focus-foreground: var(--color-text-primary);
+  --component-navigation-states-hover-background: var(--color-background);
+  --component-navigation-states-hover-foreground: var(--color-text-primary);
+  --component-navigation-states-mobile-collapsed-background: var(--color-background);
+  --component-navigation-states-mobile-collapsed-foreground: var(--color-text-primary);
+  --component-navigation-states-mobile-expanded-background: var(--color-background);
+  --component-navigation-states-mobile-expanded-foreground: var(--color-text-primary);
+  --component-navigation-states-overflow-background: var(--color-background);
+  --component-navigation-states-overflow-foreground: var(--color-text-primary);
+  --component-navigation-states-scrolled-background: var(--color-surface);
+  --component-navigation-states-scrolled-foreground: var(--color-text-primary);
+  --component-quantity-button-width: 44px;
+  --component-quantity-height: 48px;
+  --component-touch-target-minimum: 44px;
+  --layout-breakpoint-compact: 640px;
+  --layout-breakpoint-medium: 900px;
+  --layout-breakpoint-wide: 1200px;
+  --layout-container-content: 1200px;
+  --layout-container-form: 560px;
+  --layout-container-reading: 660px;
+  --layout-container-wide: 1360px;
+  --layout-grid-columns: 12;
+  --layout-grid-gutter: 20px;
+  --layout-grid-page-margin: 20px;
+  --layout-grid-page-margin-compact: 20px;
+  --layout-grid-page-margin-medium: 32px;
+  --layout-grid-page-margin-wide: 48px;
+  --motion-duration-emphasized: 360ms;
+  --motion-duration-micro: 140ms;
+  --motion-duration-standard: 220ms;
+  --motion-easing-enter: cubic-bezier(0, 0, 0.2, 1);
+  --motion-easing-exit: cubic-bezier(0.4, 0, 1, 1);
+  --motion-easing-standard: cubic-bezier(0.2, 0, 0, 1);
+  --motion-emphasized: 360ms;
+  --motion-micro: 140ms;
+  --motion-standard: 220ms;
+  --radius-card: 10px;
+  --radius-control: 8px;
+  --radius-none: 0px;
+  --radius-panel: 14px;
+  --radius-pill: 999px;
+  --radius-round: 50%;
+  --shadow-flat: 0px 0px 0px 0px #402B2400;
+  --shadow-floating: 0px 10px 28px -8px #402B2424;
+  --shadow-modal: 0px 24px 72px -16px #2B211D42;
+  --shadow-overlay: 0px 16px 44px -12px #402B2430;
+  --shadow-raised: 0px 2px 10px 0px #402B2414;
+  --space-2xl: 72px;
+  --space-2xs: 4px;
+  --space-3xl: 96px;
+  --space-lg: 32px;
+  --space-md: 20px;
+  --space-none: 0px;
+  --space-sm: 12px;
+  --space-xl: 48px;
+  --space-xs: 8px;
+  --typography-family-body: "DM Sans", "Segoe UI", "Arial", sans-serif;
+  --typography-family-display: "Fraunces", "Georgia", serif;
+  --typography-family-mono: ui-monospace, "SFMono-Regular", "Consolas", monospace;
+  --typography-style-body-font-family: "DM Sans", "Segoe UI", "Arial", sans-serif;
+  --typography-style-body-letter-spacing: -0.008em;
+  --typography-style-body-line-height: 1.6;
+  --typography-style-body-size: 16px;
+  --typography-style-body-weight: 400;
+  --typography-style-caption-font-family: "DM Sans", "Segoe UI", "Arial", sans-serif;
+  --typography-style-caption-letter-spacing: 0.012em;
+  --typography-style-caption-line-height: 1.45;
+  --typography-style-caption-size: 12px;
+  --typography-style-caption-weight: 500;
+  --typography-style-code-font-family: ui-monospace, "SFMono-Regular", "Consolas", monospace;
+  --typography-style-code-letter-spacing: 0em;
+  --typography-style-code-line-height: 1.5;
+  --typography-style-code-size: 13px;
+  --typography-style-code-weight: 500;
+  --typography-style-display-font-family: "Fraunces", "Georgia", serif;
+  --typography-style-display-letter-spacing: -0.05em;
+  --typography-style-display-line-height: 0.94;
+  --typography-style-display-size: 92px;
+  --typography-style-display-weight: 600;
+  --typography-style-h1-font-family: "Fraunces", "Georgia", serif;
+  --typography-style-h1-letter-spacing: -0.04em;
+  --typography-style-h1-line-height: 0.99;
+  --typography-style-h1-size: 68px;
+  --typography-style-h1-weight: 600;
+  --typography-style-h2-font-family: "Fraunces", "Georgia", serif;
+  --typography-style-h2-letter-spacing: -0.032em;
+  --typography-style-h2-line-height: 1.04;
+  --typography-style-h2-size: 54px;
+  --typography-style-h2-weight: 600;
+  --typography-style-h3-font-family: "Fraunces", "Georgia", serif;
+  --typography-style-h3-letter-spacing: -0.022em;
+  --typography-style-h3-line-height: 1.1;
+  --typography-style-h3-size: 38px;
+  --typography-style-h3-weight: 600;
+  --typography-style-h4-font-family: "DM Sans", "Segoe UI", "Arial", sans-serif;
+  --typography-style-h4-letter-spacing: -0.025em;
+  --typography-style-h4-line-height: 1.2;
+  --typography-style-h4-size: 28px;
+  --typography-style-h4-weight: 600;
+  --typography-style-h5-font-family: "DM Sans", "Segoe UI", "Arial", sans-serif;
+  --typography-style-h5-letter-spacing: -0.016em;
+  --typography-style-h5-line-height: 1.28;
+  --typography-style-h5-size: 22px;
+  --typography-style-h5-weight: 700;
+  --typography-style-h6-font-family: "DM Sans", "Segoe UI", "Arial", sans-serif;
+  --typography-style-h6-letter-spacing: -0.005em;
+  --typography-style-h6-line-height: 1.35;
+  --typography-style-h6-size: 18px;
+  --typography-style-h6-weight: 700;
+  --typography-style-label-font-family: "DM Sans", "Segoe UI", "Arial", sans-serif;
+  --typography-style-label-letter-spacing: 0.07em;
+  --typography-style-label-line-height: 1.3;
+  --typography-style-label-size: 13px;
+  --typography-style-label-weight: 700;
+  --typography-style-lead-font-family: "DM Sans", "Segoe UI", "Arial", sans-serif;
+  --typography-style-lead-letter-spacing: -0.012em;
+  --typography-style-lead-line-height: 1.58;
+  --typography-style-lead-size: 20px;
+  --typography-style-lead-weight: 400;
+}
+
+@font-face{font-family:Fraunces;src:url('assets/fraunces-latin-variable.woff2') format('woff2');font-weight:300 900;font-display:swap}@font-face{font-family:Fraunces;src:url('assets/fraunces-latin-italic-variable.woff2') format('woff2');font-style:italic;font-weight:300 800;font-display:swap}@font-face{font-family:'DM Sans';src:url('assets/dm-sans-latin-variable.woff2') format('woff2');font-weight:300 900;font-display:swap}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--color-background);color:var(--color-text-primary);font:17px/1.65 'DM Sans',sans-serif}h1,h2,h3,p,figure{margin:0}h1,h2,h3{font-family:Fraunces,Georgia,serif;font-weight:600;line-height:1.12;letter-spacing:-.02em}.shell{width:min(1200px,calc(100% - 64px));margin:auto}button{font:inherit;cursor:pointer;color:inherit}button:focus-visible,a:focus-visible{outline:3px solid var(--color-focus);outline-offset:3px}.review-header{padding:24px 0;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--color-border);gap:20px}.review-header img{width:218px;max-width:55%}.review-header span{font-size:12px;text-transform:uppercase;letter-spacing:.07em}.intro{padding:48px 0 32px;max-width:810px}.eyebrow,.mini{font-size:12px;font-weight:700;letter-spacing:.09em;text-transform:uppercase}.eyebrow{color:var(--color-brand-secondary);margin-bottom:16px}h1{font-size:clamp(32px,4vw,48px);margin-bottom:20px}.intro p:not(.eyebrow){color:var(--color-text-secondary)}.tabs{display:flex;flex-wrap:wrap;gap:12px;padding:0 0 32px;border-bottom:1px solid var(--color-border)}.tabs button{border:1px solid var(--color-border);border-radius:var(--radius-control);background:var(--color-surface);padding:12px 20px;min-height:44px;font-size:15px;font-weight:700}.tabs button[aria-pressed=true]{background:var(--color-brand-primary);color:var(--color-text-inverse)}[hidden]{display:none!important}.concept-head{padding:32px 0}.concept-head h2{font-size:34px;margin-bottom:12px}.concept-head>p:last-child{max-width:850px}.sample{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:96px;align-items:center;position:relative;padding:32px 0 48px}.sample:before{content:'';position:absolute;left:50%;top:32px;bottom:48px;width:1px;background:var(--color-border)}.sample:after{content:'';position:absolute;left:calc(50% - 6px);top:calc(50% - 6px);width:12px;height:12px;background:var(--color-background);border:2px solid var(--color-brand-secondary);border-radius:50%}.sample-art{aspect-ratio:1.25;min-width:0;display:grid;align-items:center;}.sample-art.playing{animation:art-reveal var(--motion-emphasized) var(--motion-easing-enter) both}.sample-art>div,.sample-art>figure{width:100%;height:100%}.sample-art img{display:block;max-width:100%;width:100%;height:100%;object-fit:cover}.sample-copy{min-width:0}.sample-copy h3{font-size:clamp(30px,3.5vw,48px);margin-bottom:28px}.note{font:italic 23px/1.5 Fraunces;color:var(--color-brand-secondary);margin-top:32px}.icon{width:48px;height:48px;fill:none;stroke:currentColor;stroke-width:1.75;stroke-linecap:square;stroke-linejoin:round}.scene{display:block;width:100%;height:100%;color:var(--color-brand-primary)}.scene .scenery{stroke:var(--color-border)}.field-sheet{padding:24px;background:var(--color-surface);border:1px solid var(--color-border)}.sheet-top{display:flex;justify-content:space-between;font-size:12px;letter-spacing:.1em;text-transform:uppercase;border-bottom:1px solid var(--color-border);padding-bottom:14px;margin-bottom:20px}.crop-pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.crop-pair figure{min-width:0}.crop-pair img{aspect-ratio:1;height:auto;object-fit:cover}.crop-pair figcaption{font-size:13px;padding-top:10px}.sheet-note{margin-top:24px;font:italic 21px/1.5 Fraunces;color:var(--color-brand-secondary)}.editorial-photo{position:relative;overflow:hidden}.editorial-photo .macro{object-fit:cover;object-position:55% 50%}.inset{position:absolute;right:24px;bottom:24px;width:35%;padding:8px;background:var(--color-surface)}.inset img{aspect-ratio:1;object-fit:cover;height:auto}.inset figcaption{font-size:11px;padding-top:4px}.photo-label{position:absolute;left:24px;top:24px;background:var(--color-background);padding:4px 10px;font-size:12px}.brand-moment{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:40px;border-block:1px solid var(--color-border)}.brand-moment img{width:85%;height:auto;object-fit:contain}.brand-crops{display:flex;align-items:center;gap:20px;color:var(--color-brand-secondary)}.brand-crops .icon{width:32px;height:32px}.brand-crops span{width:110px;height:1px;background:var(--color-border)}.origin-slot{border:1px dashed var(--color-border);padding:16px 24px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;text-align:center}.origin-slot .scene{width:75%;height:65%;opacity:.5}.origin-slot strong{font-weight:600;font-size:16px}.origin-slot span{font-size:13px;color:var(--color-text-secondary)}.diagram{display:flex;flex-direction:column;justify-content:center}.diagram .scene{height:80%}.diagram-labels{display:flex;justify-content:space-around;font-size:12px}.living-brand{position:relative}.living-brand>.scene{opacity:.3}.living-brand>img{position:absolute;inset:23% 31%;width:38%;height:54%;object-fit:contain}.evidence-note{font-size:12px;color:var(--color-text-secondary);max-width:850px;margin-bottom:48px}.chapter-plan{padding-top:32px;border-top:1px solid var(--color-border)}.chapter-buttons{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:16px}.chapter-choice{min-width:0;padding:16px;text-align:left;background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-card);display:flex;flex-direction:column;gap:12px;font-size:13px;line-height:1.5}.chapter-choice[aria-pressed=true]{border-color:var(--color-brand-secondary);box-shadow:inset 0 0 0 1px var(--color-brand-secondary)}.thumbnail{height:100px;width:100%;display:grid;place-items:center;position:relative;overflow:hidden}.thumbnail>.scene{max-width:160px}.thumbnail img{width:100%;height:100%;object-fit:cover}.thumbnail .living-brand{width:100%;height:100%}.thumbnail .living-brand img{width:38%;height:54%;object-fit:contain}.chapter-choice .mini{color:var(--color-brand-secondary);font-size:10px}.details{display:grid;grid-template-columns:1fr 1fr 1fr;gap:32px;padding:48px 0 64px}.details>div{min-width:0}.details h3{font-size:23px;margin-bottom:12px}.details p{font-size:14px}.footer{border-top:1px solid var(--color-border);padding:24px 0 40px;font-size:13px;color:var(--color-text-secondary)}.no-js{font-size:13px}.replay{background:transparent;border:0;text-decoration:underline;text-underline-offset:.2em;padding:8px 0;min-height:44px;color:var(--color-brand-primary)}@keyframes art-reveal{from{opacity:.7;transform:translateY(8px)}to{opacity:1;transform:none}}.playing .draw{stroke-dasharray:1000;animation:line-draw var(--motion-emphasized) var(--motion-easing-enter) both}@keyframes line-draw{from{stroke-dashoffset:1000}to{stroke-dashoffset:0}}
+@media(max-width:760px){.shell{width:calc(100% - 40px)}.review-header img{width:185px}.review-header span{font-size:10px;text-align:right}.intro{padding-top:32px}.tabs button{flex:1 1 100%;text-align:left}.sample{display:flex;flex-direction:column;gap:40px;padding:24px 0 40px;align-items:stretch}.sample:before,.sample:after{display:none}.sample-art{aspect-ratio:1.25;width:100%}.sample-copy h3{font-size:34px}.field-sheet{padding:16px}.sheet-note{font-size:19px;margin-top:16px}.sheet-top{margin-bottom:16px}.crop-pair{gap:12px}.brand-moment{gap:20px}.chapter-buttons{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.chapter-choice{padding:12px;font-size:12px}.details{grid-template-columns:1fr;gap:24px;padding-block:32px}.evidence-note{margin-bottom:32px}.origin-slot{padding:12px}.origin-slot strong{font-size:14px}.origin-slot span{font-size:12px}.inset{right:16px;bottom:16px}.photo-label{left:16px;top:16px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}.sample-art{opacity:1;transform:none}}
+</style></head><body><svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden" xmlns="http://www.w3.org/2000/svg">
+  <symbol id="wg-mushroom" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="square" stroke-linejoin="round"><path d="M4 11.2c.5-4.4 3.5-7 8.1-7.1 4.4-.1 7.4 2.5 7.9 7.1-2.4.7-5.1.9-7.9.8-2.9.1-5.6-.1-8.1-.8Z"/><path d="M10.1 12c.2 2.7-.1 5.4-1.3 7.8 2.1.4 4.2.4 6.4 0-1.1-2.4-1.5-5.1-1.2-7.8"/><path d="M7.3 10.8c.4-1.6 1.5-2.6 3.1-3.2M16.9 10.6c-.3-1.1-.9-2-1.8-2.7"/></symbol>
+  <symbol id="wg-microgreens" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="square" stroke-linejoin="round"><path d="M4 20h16M8.4 19.8c.1-4.8-.7-8.2-2.5-10.3M12 20c0-7.1 1-11.6 3.1-13.7M16.2 20c-.1-3.9.7-6.9 2.3-8.9"/><path d="M5.9 9.5c-2.4-.1-3.8-1.2-4.1-3.2 2.5-.4 4.3.7 4.1 3.2ZM15.1 6.3c-2.2-.8-3.2-2.3-2.8-4.3 2.5.4 3.7 1.9 2.8 4.3ZM18.5 11.1c1.9-1.3 3.6-1.2 5 .3-1.5 1.8-3.3 1.7-5-.3Z"/></symbol>
+  <symbol id="wg-produce" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="square" stroke-linejoin="round"><path d="M9.1 7.2c-2.7 2.7-4.3 7.1-3.5 11.6 4.6.8 8.9-.9 11.5-3.7 2.1-2.3 2.3-5 .6-6.7-1.7-1.8-5.4-3.4-8.6-1.2Z"/><path d="M10.2 6.6C8.5 4.8 8.5 3 10.1 1.6c1.9 1.7 2 3.5.1 5ZM12.2 6.1c1.5-2.1 3.3-2.7 5.4-1.7-1.1 2.3-2.9 2.9-5.4 1.7ZM8.2 16.7l7.4-7.2"/></symbol>
+  <symbol id="wg-fruit" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="square" stroke-linejoin="round"><path d="M12.3 6.1c-2.9.1-3.8 2.1-4.2 4.1-.3 1.6-1.7 2.8-2 5.1-.4 3 2 5 5.9 5s6.3-2 5.9-5c-.3-2.3-1.7-3.5-2-5.1-.4-2-1.3-4-3.6-4.1Z"/><path d="M12.2 6c-.2-2.2.5-3.8 2.2-4.8M14.3 3.1c1.9-.8 3.5-.4 4.6 1.1-1.8 1.2-3.4.8-4.6-1.1Z"/></symbol>
+  <symbol id="wg-exotic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="square" stroke-linejoin="round"><path d="m12 3 1.6 5.2L19 10l-5.4 1.8L12 17l-1.6-5.2L5 10l5.4-1.8L12 3Z"/><path d="m18.5 15 .8 2.2 2.2.8-2.2.8-.8 2.2-.8-2.2-2.2-.8 2.2-.8.8-2.2ZM5.2 3.5l.6 1.7 1.7.6-1.7.6-.6 1.7-.6-1.7-1.7-.6 1.7-.6.6-1.7Z"/></symbol>
+  <symbol id="wg-cloche" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="square" stroke-linejoin="round"><path d="M3 17.5h18M5 16.5c.2-5 2.9-8.2 7-8.2s6.8 3.2 7 8.2M10 5.4c.5-.6 1.1-.9 2-.9s1.5.3 2 .9"/><path d="M8 12.5c.8-1.3 2-2 3.7-2"/></symbol>
+  <symbol id="wg-basket" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="square" stroke-linejoin="round"><path d="M4.2 9.5h15.6l-1.6 10H5.8l-1.6-10Z"/><path d="M8.2 9.5C8.7 6.2 10 4.4 12 4.4s3.4 1.8 3.8 5.1M8 13h8M7.4 16h9.2M10 10l.5 9.5M14 10l-.5 9.5"/></symbol>
+  <symbol id="wg-package" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="square" stroke-linejoin="round"><path d="m4 7.4 8-4 8 4v9.2l-8 4-8-4V7.4Z"/><path d="m4.4 7.5 7.6 4 7.6-4M12 11.5v9M8 5.4l8 4"/></symbol>
+  <symbol id="wg-delivery" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="square" stroke-linejoin="round"><path d="M3 6.5h11.5v10H3zM14.5 10h3.1l3.4 3.2v3.3h-6.5z"/><path d="M6.7 19.5a2 2 0 1 0 0-4 2 2 0 0 0 0 4ZM17.8 19.5a2 2 0 1 0 0-4 2 2 0 0 0 0 4ZM5 10h5"/></symbol>
+  <symbol id="wg-receipt" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="square" stroke-linejoin="round"><path d="M6 3.5h12v17l-2-1.3-2 1.3-2-1.3-2 1.3-2-1.3-2 1.3v-17Z"/><path d="M9 8h6M9 12h6M9 16h3"/></symbol>
+  <symbol id="wg-calendar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="square" stroke-linejoin="round"><path d="M4 5.5h16v15H4zM4 9.5h16M8 3.5v4M16 3.5v4"/><path d="M9 14c1.8 0 3 .8 3 2.5M12 16.5c0-2.2 1.2-3.4 3.5-3.7"/></symbol>
+  <symbol id="wg-repeat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="square" stroke-linejoin="round"><path d="M19.3 8.3A7.8 7.8 0 0 0 6 5.8L4 8M4 4v4h4M4.7 15.7A7.8 7.8 0 0 0 18 18.2l2-2.2M20 20v-4h-4"/></symbol>
+  <symbol id="wg-location" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="square" stroke-linejoin="round"><path d="M19 10c0 4.5-7 10.5-7 10.5S5 14.5 5 10a7 7 0 1 1 14 0Z"/><path d="M12 12.5a2.8 2.8 0 1 0 0-5.6 2.8 2.8 0 0 0 0 5.6Z"/></symbol>
+  <symbol id="wg-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="square" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 7v5l3.4 2"/></symbol>
+  <symbol id="wg-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="square" stroke-linejoin="round"><circle cx="10.5" cy="10.5" r="6.3"/><path d="m15.1 15.1 4.7 4.7"/></symbol>
+  <symbol id="wg-account" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="square" stroke-linejoin="round"><path d="M12.1 12.2a4.1 4.1 0 1 0 0-8.2 4.1 4.1 0 0 0 0 8.2ZM4.4 20c.7-4 3.2-6 7.7-6s7 2 7.5 6"/></symbol>
+  <symbol id="wg-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="square" stroke-linejoin="round"><path d="M4 6.5h16M4 12h16M4 17.5h16"/></symbol>
+  <symbol id="wg-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="square" stroke-linejoin="round"><path d="m5 5 14 14M19 5 5 19"/></symbol>
+  <symbol id="wg-arrow-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="square" stroke-linejoin="round"><path d="M4 12h15M14 6.5l5.5 5.5-5.5 5.5"/></symbol>
+  <symbol id="wg-chevron-down" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="square" stroke-linejoin="round"><path d="m5.5 8.5 6.5 6.5 6.5-6.5"/></symbol>
+  <symbol id="wg-plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="square" stroke-linejoin="round"><path d="M12 4v16M4 12h16"/></symbol>
+  <symbol id="wg-minus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="square" stroke-linejoin="round"><path d="M4 12h16"/></symbol>
+  <symbol id="wg-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="square" stroke-linejoin="round"><path d="m4.5 12.5 4.8 4.8L19.8 6.8"/></symbol>
+  <symbol id="wg-information" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="square" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 10.5v6M12 7.2h.01"/></symbol>
+  <symbol id="wg-warning" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="square" stroke-linejoin="round"><path d="M11.9 3.5 21 20H3l8.9-16.5Z"/><path d="M12 9v5M12 17h.01"/></symbol>
+  <symbol id="wg-error" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="square" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="m8.7 8.7 6.6 6.6M15.3 8.7l-6.6 6.6"/></symbol>
+  <symbol id="wg-filter" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="square" stroke-linejoin="round"><path d="M3.5 5h17l-6.7 7.4v5.8l-3.6 1.8v-7.6L3.5 5Z"/></symbol>
+  <symbol id="wg-water" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="square" stroke-linejoin="round"><path d="M12 3.2S6.3 10 6.3 14.4a5.7 5.7 0 0 0 11.4 0C17.7 10 12 3.2 12 3.2Z"/><path d="M9.2 15.2c.2 1.4 1.1 2.2 2.6 2.5"/></symbol>
+</svg>
+<header class="shell review-header"><img src="assets/wegroween-header.svg" alt="WeGroween"><span>Story artwork · proposed concepts</span></header><main class="shell"><div class="intro"><p class="eyebrow">Visual variety for Our Story</p><h1>One story. Three ways to see it.</h1><p>Compare the same chapter and copy with three artwork treatments. The approved page structure and brand identity stay in place. Select a chapter below to explore how each treatment changes across the journey.</p></div><div class="tabs" aria-label="Visual directions"><button type="button" data-choice="notes" aria-pressed="true">01 · Grower's Field Notes</button><button type="button" data-choice="living" aria-pressed="false">02 · Living Cultivation</button><button type="button" data-choice="editorial" aria-pressed="false">03 · Harvest Editorial</button></div><noscript><style>.concept-panel[hidden]{display:block!important}#replay{display:none}</style><p class="no-js">All three concepts appear below. Interactive chapter switching requires JavaScript.</p></noscript><section class="concept-panel" id="concept-notes"  aria-labelledby="heading-notes"><div class="concept-head"><p class="eyebrow">Direction 01 · Recommended</p><h2 id="heading-notes">Grower's Field Notes</h2><p>A considered mix of crop photographs, small annotations, purpose diagrams and the brand mark. Each chapter gets a visual role of its own.</p></div><div class="sample" data-concept="notes"><div class="sample-art" id="art-notes"><div class="field-sheet"><div class="sheet-top"><span>Crop notes</span><span>02</span></div><div class="crop-pair"><figure><img src="assets/Fresh%20Broccoli%20Microgreens%20on%20Stone.png" alt="Broccoli microgreens on a stone surface"><figcaption>Microgreens</figcaption></figure><figure><img src="assets/Fresh%20Oyster%20Mushroom%20Cluster.png" alt="An oyster mushroom cluster on a stone surface"><figcaption>Mushrooms</figcaption></figure></div><div class="sheet-note">Two crops. A wider world of possibilities.</div></div></div><div class="sample-copy"><p class="eyebrow" id="label-notes">02 · The curiosity</p><h3 id="title-notes">Then, curiosity moved indoors.</h3><p id="body-notes">Microgreens and mushrooms came next, grown inside our home. Experimenting with these crops opened up possibilities beyond the vegetables we started with.</p><p class="note" id="note-notes">A new crop. Another question.</p></div></div><p class="evidence-note">Review artwork: existing crop imagery and symbolic scenes. No historical cultivation evidence is implied. The terrace photo remains an open slot.</p><div class="chapter-plan"><p class="eyebrow">Explore the five-chapter rhythm</p><div class="chapter-buttons"><button type="button" class="chapter-choice" data-concept="notes" data-index="0" aria-pressed="false"><span class="thumbnail"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#wg-produce"/></svg></span><span class="mini">01 · The terrace</span><span>A genuine terrace photograph, framed with one quiet crop note</span></button><button type="button" class="chapter-choice" data-concept="notes" data-index="1" aria-pressed="true"><span class="thumbnail"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#wg-microgreens"/></svg></span><span class="mini">02 · The curiosity</span><span>Paired microgreen and mushroom photographs with crop labels</span></button><button type="button" class="chapter-choice" data-concept="notes" data-index="2" aria-pressed="false"><span class="thumbnail"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#wg-basket"/></svg></span><span class="mini">03 · The purpose</span><span>A simple diagram connecting the crops to a kitchen</span></button><button type="button" class="chapter-choice" data-concept="notes" data-index="3" aria-pressed="false"><span class="thumbnail"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#wg-mushroom"/></svg></span><span class="mini">04 · The brand</span><span>The supplied logo presented as the moment the idea gained a name</span></button><button type="button" class="chapter-choice" data-concept="notes" data-index="4" aria-pressed="false"><span class="thumbnail"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#wg-cloche"/></svg></span><span class="mini">05 · The next chapter</span><span>A produce composition leading towards the catalogue</span></button></div></div><div class="details"><div><h3>Why it fits</h3><p>The broadest variety while preserving the warm editorial identity; can evolve as genuine origin photographs become available.</p></div><div><h3>What it needs</h3><p>Needs authentic origin imagery to fully express the first chapter. Current crop photographs illustrate subject matter, not historical events.</p></div><div><h3>Motion and mobile</h3><p>140ms state feedback; 360ms one-time photo-frame and annotation reveal; no image zoom or continuous floating. Photographs remain side by side where readable, with labels below; diagrams and brand frames reflow above their chapter copy.</p></div></div></section><section class="concept-panel" id="concept-living" hidden aria-labelledby="heading-living"><div class="concept-head"><p class="eyebrow">Direction 02</p><h2 id="heading-living">Living Cultivation</h2><p>Five bespoke scenes derived from Field Notes linework: planters, growing trays, a produce-to-kitchen connection, the brand and a table setting.</p></div><div class="sample" data-concept="living"><div class="sample-art" id="art-living"><svg class="scene" viewBox="0 0 480 360" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"><path class="scenery" d="M55 38h370v176M55 110h370M239 38v155M35 272h410"/><path class="draw" d="M52 228h168l-10 42H62l-10-42Zm227 0h149l-10 42H290l-11-42Z"/><use href="#wg-microgreens" x="67" y="110" width="128" height="128"/><use href="#wg-mushroom" x="290" y="115" width="116" height="116"/><path d="M82 251h99m119 0h93"/></svg></div><div class="sample-copy"><p class="eyebrow" id="label-living">02 · The curiosity</p><h3 id="title-living">Then, curiosity moved indoors.</h3><p id="body-living">Microgreens and mushrooms came next, grown inside our home. Experimenting with these crops opened up possibilities beyond the vegetables we started with.</p><p class="note" id="note-living">A new crop. Another question.</p></div></div><p class="evidence-note">Review artwork: existing crop imagery and symbolic scenes. No historical cultivation evidence is implied. The terrace photo remains an open slot.</p><div class="chapter-plan"><p class="eyebrow">Explore the five-chapter rhythm</p><div class="chapter-buttons"><button type="button" class="chapter-choice" data-concept="living" data-index="0" aria-pressed="false"><span class="thumbnail"><svg class="scene" viewBox="0 0 480 360" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"><path class="scenery" d="M35 230h410M35 230v-45m410 45v-45M60 260h365M70 45h155v170M70 105h155M147 45v170"/><path class="draw" d="m100 230 10 58h80l10-58H100Zm180 0 12 58h95l13-58H280Z"/><use href="#wg-microgreens" x="103" y="132" width="96" height="96"/><use href="#wg-produce" x="287" y="131" width="98" height="98"/><path d="M320 145V72m0 25c-40 0-51-17-47-43 30 0 47 15 47 43Zm0-2c36 0 53-17 50-43-29 0-50 15-50 43Z"/></svg></span><span class="mini">01 · The terrace</span><span>Terrace planters and a climbing stem</span></button><button type="button" class="chapter-choice" data-concept="living" data-index="1" aria-pressed="true"><span class="thumbnail"><svg class="scene" viewBox="0 0 480 360" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"><path class="scenery" d="M55 38h370v176M55 110h370M239 38v155M35 272h410"/><path class="draw" d="M52 228h168l-10 42H62l-10-42Zm227 0h149l-10 42H290l-11-42Z"/><use href="#wg-microgreens" x="67" y="110" width="128" height="128"/><use href="#wg-mushroom" x="290" y="115" width="116" height="116"/><path d="M82 251h99m119 0h93"/></svg></span><span class="mini">02 · The curiosity</span><span>A window, microgreen tray and mushroom cluster</span></button><button type="button" class="chapter-choice" data-concept="living" data-index="2" aria-pressed="false"><span class="thumbnail"><svg class="scene" viewBox="0 0 480 360" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"><use href="#wg-microgreens" x="25" y="98" width="95" height="95"/><use href="#wg-mushroom" x="118" y="115" width="78" height="78"/><use href="#wg-basket" x="215" y="112" width="100" height="100"/><use href="#wg-cloche" x="352" y="125" width="91" height="91"/><path class="draw" d="M98 235h283m-18-10 18 10-18 10"/><path class="scenery" d="M20 286h440M51 85h137m34 0h93m49 0h76"/></svg></span><span class="mini">03 · The purpose</span><span>Crops and basket connected to a kitchen</span></button><button type="button" class="chapter-choice" data-concept="living" data-index="3" aria-pressed="false"><span class="thumbnail"><div class="living-brand"><svg class="scene" viewBox="0 0 480 360" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"><path class="scenery" d="M35 230h410M35 230v-45m410 45v-45M60 260h365M70 45h155v170M70 105h155M147 45v170"/><path class="draw" d="m100 230 10 58h80l10-58H100Zm180 0 12 58h95l13-58H280Z"/><use href="#wg-microgreens" x="103" y="132" width="96" height="96"/><use href="#wg-produce" x="287" y="131" width="98" height="98"/><path d="M320 145V72m0 25c-40 0-51-17-47-43 30 0 47 15 47 43Zm0-2c36 0 53-17 50-43-29 0-50 15-50 43Z"/></svg><img src="assets/wegroween-brand-mark.png" alt="WeGroween mushroom and sprout brand mark"></div></span><span class="mini">04 · The brand</span><span>The supplied brand mark framed by cultivation linework</span></button><button type="button" class="chapter-choice" data-concept="living" data-index="4" aria-pressed="false"><span class="thumbnail"><svg class="scene" viewBox="0 0 480 360" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"><ellipse cx="241" cy="195" rx="132" ry="86"/><ellipse cx="241" cy="195" rx="110" ry="66"/><path class="draw" d="M61 115v160m-12-160v55c0 14 24 14 24 0v-55m347 0v160m-8-160v105h8M70 302h340"/><use href="#wg-microgreens" x="168" y="120" width="82" height="82"/><use href="#wg-mushroom" x="234" y="169" width="75" height="75"/><use href="#wg-fruit" x="280" y="101" width="68" height="68"/></svg></span><span class="mini">05 · The next chapter</span><span>A table setting with crop details</span></button></div></div><div class="details"><div><h3>Why it fits</h3><p>A distinctive illustrated story with consistent craft and no dependency on origin photography.</p></div><div><h3>What it needs</h3><p>Creates emotional meaning, but cannot provide documentary proof of the growing operation. Bespoke illustration requires more refinement than enlarging icons.</p></div><div><h3>Motion and mobile</h3><p>360ms line drawing as each scene enters; the timeline connects the scenes. No looping growth animation. Whole scenes scale to their viewBox; labels remain HTML text. Important content never depends on animation.</p></div></div></section><section class="concept-panel" id="concept-editorial" hidden aria-labelledby="heading-editorial"><div class="concept-head"><p class="eyebrow">Direction 03</p><h2 id="heading-editorial">Harvest Editorial</h2><p>A photographic reading rhythm: an establishing image, a close detail, a composed still life, a brand interlude and a table scene.</p></div><div class="sample" data-concept="editorial"><div class="sample-art" id="art-editorial"><div class="editorial-photo"><img class="macro" src="assets/Fresh%20Broccoli%20Microgreens%20on%20Stone.png" alt="A close view of broccoli microgreens"><figure class="inset"><img src="assets/Fresh%20Oyster%20Mushroom%20Cluster.png" alt="Oyster mushroom gills and caps"><figcaption>Mushrooms</figcaption></figure><span class="photo-label">Microgreens</span></div></div><div class="sample-copy"><p class="eyebrow" id="label-editorial">02 · The curiosity</p><h3 id="title-editorial">Then, curiosity moved indoors.</h3><p id="body-editorial">Microgreens and mushrooms came next, grown inside our home. Experimenting with these crops opened up possibilities beyond the vegetables we started with.</p><p class="note" id="note-editorial">A new crop. Another question.</p></div></div><p class="evidence-note">Review artwork: existing crop imagery and symbolic scenes. No historical cultivation evidence is implied. The terrace photo remains an open slot.</p><div class="chapter-plan"><p class="eyebrow">Explore the five-chapter rhythm</p><div class="chapter-buttons"><button type="button" class="chapter-choice" data-concept="editorial" data-index="0" aria-pressed="false"><span class="thumbnail"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#wg-produce"/></svg></span><span class="mini">01 · The terrace</span><span>A full terrace scene from the actual origin garden</span></button><button type="button" class="chapter-choice" data-concept="editorial" data-index="1" aria-pressed="true"><span class="thumbnail"><img src="assets/Fresh%20Broccoli%20Microgreens%20on%20Stone.png" alt=""></span><span class="mini">02 · The curiosity</span><span>One generous crop detail with a secondary mushroom inset</span></button><button type="button" class="chapter-choice" data-concept="editorial" data-index="2" aria-pressed="false"><span class="thumbnail"><img src="assets/Fresh%20Oyster%20Mushroom%20Cluster.png" alt=""></span><span class="mini">03 · The purpose</span><span>A wide produce still life</span></button><button type="button" class="chapter-choice" data-concept="editorial" data-index="3" aria-pressed="false"><span class="thumbnail"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#wg-mushroom"/></svg></span><span class="mini">04 · The brand</span><span>A quiet branded interlude</span></button><button type="button" class="chapter-choice" data-concept="editorial" data-index="4" aria-pressed="false"><span class="thumbnail"><img src="assets/Rustic%20Mushroom%20and%20Microgreens%20Still%20Life.png" alt=""></span><span class="mini">05 · The next chapter</span><span>A wide table photograph or current supplied produce composition</span></button></div></div><div class="details"><div><h3>Why it fits</h3><p>The most sensory and food-focused direction, using changing image geometry and crop scale rather than more decoration.</p></div><div><h3>What it needs</h3><p>A consistently art-directed photo set is needed. Produce portraits alone cannot tell the founder's personal history.</p></div><div><h3>Motion and mobile</h3><p>360ms restrained opacity reveal; photographs stay still. Gentle chapter transition, no parallax or scroll locking. Replace extreme detail crops with wider focal framing so the crops remain recognizable; keep text outside photography.</p></div></div></section><button type="button" class="replay" id="replay">Replay the artwork reveal</button></main><footer class="shell footer">Proposed review studies · choosing a preview does not approve or change the website.</footer><script>
+const artwork={"notes":["\u003cdiv class=\"origin-slot\">\u003csvg class=\"scene\" viewBox=\"0 0 480 360\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"square\" stroke-linejoin=\"round\">\u003cpath class=\"scenery\" d=\"M35 230h410M35 230v-45m410 45v-45M60 260h365M70 45h155v170M70 105h155M147 45v170\"/>\u003cpath class=\"draw\" d=\"m100 230 10 58h80l10-58H100Zm180 0 12 58h95l13-58H280Z\"/>\u003cuse href=\"#wg-microgreens\" x=\"103\" y=\"132\" width=\"96\" height=\"96\"/>\u003cuse href=\"#wg-produce\" x=\"287\" y=\"131\" width=\"98\" height=\"98\"/>\u003cpath d=\"M320 145V72m0 25c-40 0-51-17-47-43 30 0 47 15 47 43Zm0-2c36 0 53-17 50-43-29 0-50 15-50 43Z\"/>\u003c/svg>\u003cstrong>Original terrace photograph\u003c/strong>\u003cspan>Reserved for a genuine image from the beginning.\u003c/span>\u003c/div>","\u003cdiv class=\"field-sheet\">\u003cdiv class=\"sheet-top\">\u003cspan>Crop notes\u003c/span>\u003cspan>02\u003c/span>\u003c/div>\u003cdiv class=\"crop-pair\">\u003cfigure>\u003cimg src=\"assets/Fresh%20Broccoli%20Microgreens%20on%20Stone.png\" alt=\"Broccoli microgreens on a stone surface\">\u003cfigcaption>Microgreens\u003c/figcaption>\u003c/figure>\u003cfigure>\u003cimg src=\"assets/Fresh%20Oyster%20Mushroom%20Cluster.png\" alt=\"An oyster mushroom cluster on a stone surface\">\u003cfigcaption>Mushrooms\u003c/figcaption>\u003c/figure>\u003c/div>\u003cdiv class=\"sheet-note\">Two crops. A wider world of possibilities.\u003c/div>\u003c/div>","\u003cdiv class=\"diagram\">\u003csvg class=\"scene\" viewBox=\"0 0 480 360\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"square\" stroke-linejoin=\"round\">\u003cuse href=\"#wg-microgreens\" x=\"25\" y=\"98\" width=\"95\" height=\"95\"/>\u003cuse href=\"#wg-mushroom\" x=\"118\" y=\"115\" width=\"78\" height=\"78\"/>\u003cuse href=\"#wg-basket\" x=\"215\" y=\"112\" width=\"100\" height=\"100\"/>\u003cuse href=\"#wg-cloche\" x=\"352\" y=\"125\" width=\"91\" height=\"91\"/>\u003cpath class=\"draw\" d=\"M98 235h283m-18-10 18 10-18 10\"/>\u003cpath class=\"scenery\" d=\"M20 286h440M51 85h137m34 0h93m49 0h76\"/>\u003c/svg>\u003cdiv class=\"diagram-labels\">\u003cspan>Crops\u003c/span>\u003cspan>Supply\u003c/span>\u003cspan>Kitchen\u003c/span>\u003c/div>\u003c/div>","\u003cdiv class=\"brand-moment\">\u003cp class=\"mini\">The idea gained a name\u003c/p>\u003cimg src=\"assets/wegroween-header.svg\" alt=\"WeGroween logo\">\u003cdiv class=\"brand-crops\">\u003csvg class=\"icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\">\u003cuse href=\"#wg-microgreens\"/>\u003c/svg>\u003cspan>\u003c/span>\u003csvg class=\"icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\">\u003cuse href=\"#wg-mushroom\"/>\u003c/svg>\u003c/div>\u003c/div>","\u003cfigure class=\"still-life\">\u003cimg src=\"assets/Rustic%20Mushroom%20and%20Microgreens%20Still%20Life.png\" alt=\"Mushrooms and microgreens arranged on a stone surface\">\u003c/figure>"],"living":["\u003csvg class=\"scene\" viewBox=\"0 0 480 360\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"square\" stroke-linejoin=\"round\">\u003cpath class=\"scenery\" d=\"M35 230h410M35 230v-45m410 45v-45M60 260h365M70 45h155v170M70 105h155M147 45v170\"/>\u003cpath class=\"draw\" d=\"m100 230 10 58h80l10-58H100Zm180 0 12 58h95l13-58H280Z\"/>\u003cuse href=\"#wg-microgreens\" x=\"103\" y=\"132\" width=\"96\" height=\"96\"/>\u003cuse href=\"#wg-produce\" x=\"287\" y=\"131\" width=\"98\" height=\"98\"/>\u003cpath d=\"M320 145V72m0 25c-40 0-51-17-47-43 30 0 47 15 47 43Zm0-2c36 0 53-17 50-43-29 0-50 15-50 43Z\"/>\u003c/svg>","\u003csvg class=\"scene\" viewBox=\"0 0 480 360\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"square\" stroke-linejoin=\"round\">\u003cpath class=\"scenery\" d=\"M55 38h370v176M55 110h370M239 38v155M35 272h410\"/>\u003cpath class=\"draw\" d=\"M52 228h168l-10 42H62l-10-42Zm227 0h149l-10 42H290l-11-42Z\"/>\u003cuse href=\"#wg-microgreens\" x=\"67\" y=\"110\" width=\"128\" height=\"128\"/>\u003cuse href=\"#wg-mushroom\" x=\"290\" y=\"115\" width=\"116\" height=\"116\"/>\u003cpath d=\"M82 251h99m119 0h93\"/>\u003c/svg>","\u003csvg class=\"scene\" viewBox=\"0 0 480 360\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"square\" stroke-linejoin=\"round\">\u003cuse href=\"#wg-microgreens\" x=\"25\" y=\"98\" width=\"95\" height=\"95\"/>\u003cuse href=\"#wg-mushroom\" x=\"118\" y=\"115\" width=\"78\" height=\"78\"/>\u003cuse href=\"#wg-basket\" x=\"215\" y=\"112\" width=\"100\" height=\"100\"/>\u003cuse href=\"#wg-cloche\" x=\"352\" y=\"125\" width=\"91\" height=\"91\"/>\u003cpath class=\"draw\" d=\"M98 235h283m-18-10 18 10-18 10\"/>\u003cpath class=\"scenery\" d=\"M20 286h440M51 85h137m34 0h93m49 0h76\"/>\u003c/svg>","\u003cdiv class=\"living-brand\">\u003csvg class=\"scene\" viewBox=\"0 0 480 360\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"square\" stroke-linejoin=\"round\">\u003cpath class=\"scenery\" d=\"M35 230h410M35 230v-45m410 45v-45M60 260h365M70 45h155v170M70 105h155M147 45v170\"/>\u003cpath class=\"draw\" d=\"m100 230 10 58h80l10-58H100Zm180 0 12 58h95l13-58H280Z\"/>\u003cuse href=\"#wg-microgreens\" x=\"103\" y=\"132\" width=\"96\" height=\"96\"/>\u003cuse href=\"#wg-produce\" x=\"287\" y=\"131\" width=\"98\" height=\"98\"/>\u003cpath d=\"M320 145V72m0 25c-40 0-51-17-47-43 30 0 47 15 47 43Zm0-2c36 0 53-17 50-43-29 0-50 15-50 43Z\"/>\u003c/svg>\u003cimg src=\"assets/wegroween-brand-mark.png\" alt=\"WeGroween mushroom and sprout brand mark\">\u003c/div>","\u003csvg class=\"scene\" viewBox=\"0 0 480 360\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"square\" stroke-linejoin=\"round\">\u003cellipse cx=\"241\" cy=\"195\" rx=\"132\" ry=\"86\"/>\u003cellipse cx=\"241\" cy=\"195\" rx=\"110\" ry=\"66\"/>\u003cpath class=\"draw\" d=\"M61 115v160m-12-160v55c0 14 24 14 24 0v-55m347 0v160m-8-160v105h8M70 302h340\"/>\u003cuse href=\"#wg-microgreens\" x=\"168\" y=\"120\" width=\"82\" height=\"82\"/>\u003cuse href=\"#wg-mushroom\" x=\"234\" y=\"169\" width=\"75\" height=\"75\"/>\u003cuse href=\"#wg-fruit\" x=\"280\" y=\"101\" width=\"68\" height=\"68\"/>\u003c/svg>"],"editorial":["\u003cdiv class=\"origin-slot\">\u003csvg class=\"scene\" viewBox=\"0 0 480 360\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"square\" stroke-linejoin=\"round\">\u003cpath class=\"scenery\" d=\"M35 230h410M35 230v-45m410 45v-45M60 260h365M70 45h155v170M70 105h155M147 45v170\"/>\u003cpath class=\"draw\" d=\"m100 230 10 58h80l10-58H100Zm180 0 12 58h95l13-58H280Z\"/>\u003cuse href=\"#wg-microgreens\" x=\"103\" y=\"132\" width=\"96\" height=\"96\"/>\u003cuse href=\"#wg-produce\" x=\"287\" y=\"131\" width=\"98\" height=\"98\"/>\u003cpath d=\"M320 145V72m0 25c-40 0-51-17-47-43 30 0 47 15 47 43Zm0-2c36 0 53-17 50-43-29 0-50 15-50 43Z\"/>\u003c/svg>\u003cstrong>Original terrace photograph\u003c/strong>\u003cspan>Reserved for a genuine image from the beginning.\u003c/span>\u003c/div>","\u003cdiv class=\"editorial-photo\">\u003cimg class=\"macro\" src=\"assets/Fresh%20Broccoli%20Microgreens%20on%20Stone.png\" alt=\"A close view of broccoli microgreens\">\u003cfigure class=\"inset\">\u003cimg src=\"assets/Fresh%20Oyster%20Mushroom%20Cluster.png\" alt=\"Oyster mushroom gills and caps\">\u003cfigcaption>Mushrooms\u003c/figcaption>\u003c/figure>\u003cspan class=\"photo-label\">Microgreens\u003c/span>\u003c/div>","\u003cfigure class=\"still-life\">\u003cimg src=\"assets/Rustic%20Mushroom%20and%20Microgreens%20Still%20Life.png\" alt=\"Mushrooms and microgreens arranged on a stone surface\">\u003c/figure>","\u003cdiv class=\"brand-moment\">\u003cp class=\"mini\">The idea gained a name\u003c/p>\u003cimg src=\"assets/wegroween-header.svg\" alt=\"WeGroween logo\">\u003cdiv class=\"brand-crops\">\u003csvg class=\"icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\">\u003cuse href=\"#wg-microgreens\"/>\u003c/svg>\u003cspan>\u003c/span>\u003csvg class=\"icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\">\u003cuse href=\"#wg-mushroom\"/>\u003c/svg>\u003c/div>\u003c/div>","\u003cfigure class=\"still-life\">\u003cimg src=\"assets/Rustic%20Mushroom%20and%20Microgreens%20Still%20Life.png\" alt=\"Mushrooms and microgreens arranged on a stone surface\">\u003c/figure>"]};const chapters=[{"label":"The terrace","title":"First, we grew a little.","body":"We started with a few vegetables on our terrace. Tending them brought us closer to the food we ate and made us want to explore other crops.","note":"Food felt closer when we grew it ourselves.","icon":"produce"},{"label":"The curiosity","title":"Then, curiosity moved indoors.","body":"Microgreens and mushrooms came next, grown inside our home. Experimenting with these crops opened up possibilities beyond the vegetables we started with.","note":"A new crop. Another question.","icon":"microgreens"},{"label":"The purpose","title":"The idea grew beyond our home.","body":"We saw the potential for a business, and a chance to help change the fruit and vegetable market. Our focus became building the kind of supplier every kitchen could count on.","note":"Something worth taking beyond our home.","icon":"basket"},{"label":"The brand","title":"That idea became WeGroween.","body":"We established WeGroween to turn that idea into a fresh produce business, with trust at its heart.","note":"From home experiments to a business.","icon":"mushroom"},{"label":"The next chapter","title":"Now, we want to grow your trust.","body":"Our aim is to become the most trustworthy supplier of fresh, organic fruits and vegetables. We intend to earn that trust over time through the produce we supply and the care we bring to our work.","note":"Trust takes care, every time.","icon":"fruit"}];let selected='notes';let chapterIndex=1;
+function refreshArt(){const area=document.getElementById('art-'+selected);area.innerHTML=artwork[selected][chapterIndex];area.classList.remove('playing');void area.offsetWidth;area.classList.add('playing');document.getElementById('label-'+selected).textContent=String(chapterIndex+1).padStart(2,'0')+' · '+chapters[chapterIndex].label;document.getElementById('title-'+selected).textContent=chapters[chapterIndex].title;document.getElementById('body-'+selected).textContent=chapters[chapterIndex].body;document.getElementById('note-'+selected).textContent=chapters[chapterIndex].note;document.querySelectorAll('.chapter-choice[data-concept="'+selected+'"]').forEach(button=>button.setAttribute('aria-pressed',String(Number(button.dataset.index)===chapterIndex)))}
+function choose(id){selected=id;document.querySelectorAll('.concept-panel').forEach(panel=>panel.hidden=panel.id!=='concept-'+id);document.querySelectorAll('[data-choice]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.choice===id)));history.replaceState(null,'','?concept='+id);refreshArt()}
+document.querySelectorAll('[data-choice]').forEach(button=>button.addEventListener('click',()=>choose(button.dataset.choice)));document.querySelectorAll('.chapter-choice').forEach(button=>button.addEventListener('click',()=>{chapterIndex=Number(button.dataset.index);refreshArt()}));document.getElementById('replay').addEventListener('click',refreshArt);const initial=new URLSearchParams(location.search).get('concept');choose(['notes','living','editorial'].includes(initial)?initial:'notes');
+</script><style>html:not(:has(script)) .concept-panel{display:block}</style></body></html>

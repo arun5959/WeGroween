@@ -1,0 +1,448 @@
+{
+  "date": "2026-10-05",
+  "status": "adopted",
+  "source": "E:\\WeGroween\\GitHub Clone\\WeGroween\\design-system\\migration-v2",
+  "active_root": "E:\\WeGroween\\GitHub Clone\\WeGroween\\design-system",
+  "files": [
+    {
+      "path": "BRAND_IDENTITY_BLUEPRINT.md",
+      "sha256": "bcecf20a8fecb09a5c0d55f4189ecc03aea22afe943baf4c4f214619113f1ec3"
+    },
+    {
+      "path": "contrast-detail.json",
+      "sha256": "d5df1438574bcefafb86be31e6fa875e099189ceca6cf164f7c7377c3b386ee9"
+    },
+    {
+      "path": "decisions.md",
+      "sha256": "d1e1ed7497113aa8eea2ca7b7252d8baff8b92e9058c6ce86dd08e1bcb8f792a"
+    },
+    {
+      "path": "design-language.json",
+      "sha256": "d2674e756231d0c7b9e34955980975e277af2184cb07e05bc6a44921b2ad0585"
+    },
+    {
+      "path": "design-tokens.json",
+      "sha256": "83e2f268332209cbf12fb3e1a8268286c8bbd1e88d49da01126edaf01cc3d317"
+    },
+    {
+      "path": "DESIGN_DIRECTION_MANUAL.md",
+      "sha256": "6dfcbcacb807fd21e732e19fd542feb82c2a321cae47b3d6ded0ecfbf56e45b6"
+    },
+    {
+      "path": "DESIGN_SYSTEM.md",
+      "sha256": "3cc1690f6f87e599c80e9053efefaa63eb8eac115a0bf35dadc5776e4b94a724"
+    },
+    {
+      "path": "IMAGERY_DIRECTION_GUIDE.md",
+      "sha256": "c833285c1b369475afc1462f333bc42851c115cd367d821ea83a66e57e37538a"
+    },
+    {
+      "path": "language-state.json",
+      "sha256": "0dfccf58b49043b4834157c0970b1e75d7aad69f91722d7daebb74bde510e135"
+    },
+    {
+      "path": "migration-equivalence.json",
+      "sha256": "ea466d94151bfed9973195b791953582e10d11a01db1ccbab00859542f585000"
+    },
+    {
+      "path": "MIGRATION_REVIEW.md",
+      "sha256": "3246dbb40e8aa6a916b07c421327e0cdb4fe2eb2f997a81c244cb14c4d46728d"
+    },
+    {
+      "path": "PROJECT_STATUS.md",
+      "sha256": "d8d6dcc1530ec8ae38e65f4faf34c0091cc514e75153a760a7f4594c17a49e80"
+    },
+    {
+      "path": "prototype-coverage.json",
+      "sha256": "6f33a8cbc4c56d73fa6aac2a79bc02f2ce2104505184df2761c585f080860742"
+    },
+    {
+      "path": "quality-review.json",
+      "sha256": "88e41e54917e179db48f6e725766071b6d25cc1ce4ea8d4f93b2ab54635ff886"
+    },
+    {
+      "path": "QUALITY_REVIEW.md",
+      "sha256": "b32a6d2afb55aabfd5f5ed80f6304cd3306ecc367670a697f3b81bbdcada47ab"
+    },
+    {
+      "path": "README.md",
+      "sha256": "047d790d3b083270042bf7b6292e838490f416d6c82d1a13169b6742991a5552"
+    },
+    {
+      "path": "research-summary.md",
+      "sha256": "b1276aa67ab5143f7e102fc5895c03dbfe6e010386b531c6666ba0c5070c4e73"
+    },
+    {
+      "path": "specification-validation.json",
+      "sha256": "4234b5f9ed2944e300921210d15dd02f6601b42ac0b5d0ec432822ffa0d7c8e4"
+    },
+    {
+      "path": "tokens.css",
+      "sha256": "0d1060bd119abf68b6e8e7c197f5efa9ecb888991b94d1e6d432ba192ff74f6b"
+    },
+    {
+      "path": "artifact/component-specimen.html",
+      "sha256": "e0236d4c5a57831181ce69f40304d819254ee801493925b99c201da8b00e9759"
+    },
+    {
+      "path": "artifact/design-direction-manual.html",
+      "sha256": "569e4539ceb4ad369f5874be9da0390e76b93d778e8807b648edf0f6fee7723c"
+    },
+    {
+      "path": "artifact/homepage-palette-1.html",
+      "sha256": "658abfc5aa79899819d2d06c0ddc33de988bcb982add79fd22c64c25bf6444ed"
+    },
+    {
+      "path": "artifact/homepage-palette-2.html",
+      "sha256": "7766705296b30db0a74bd82dca28879d63594e84c5acf077beecc4058b74ba7f"
+    },
+    {
+      "path": "artifact/homepage-palette-3.html",
+      "sha256": "174572988542fbcc3e10c46a90f0b4ada378194473273ad0044b2a49535726e9"
+    },
+    {
+      "path": "artifact/imagery-direction-guide.html",
+      "sha256": "ffc73bf86f5f3e40f363fb655e6b7a41f34bc44f5fb93a6aa5e3a87dbd053bc7"
+    },
+    {
+      "path": "artifact/index.html",
+      "sha256": "06d3f97e8f634c40598242f40559fe225200311215a1120478584cc9c646446a"
+    },
+    {
+      "path": "artifact/prototype-palette-1.css",
+      "sha256": "1013bca21a696a81c0c093a1445ce664c51620edf697ba3dc9846438c9f269e8"
+    },
+    {
+      "path": "artifact/prototype-palette-1.html",
+      "sha256": "5bcfc46157cbd0b61f61fb621a0422b4ebd61b10e4f00f5847d7d2ef581b1cb6"
+    },
+    {
+      "path": "artifact/prototype-palette-2.css",
+      "sha256": "a39bc97229547ed8c3400b13820ede83054db66013de46228b4751021c18b880"
+    },
+    {
+      "path": "artifact/prototype-palette-2.html",
+      "sha256": "3c7aecad617fe8ab23ab5dc9213abf8b4fdcdd1071c0f9c3e94692dad76f69ce"
+    },
+    {
+      "path": "artifact/prototype-palette-3.css",
+      "sha256": "dc844bc4bef481d960349663df48c8cb8d10e1d302ef0bae211ddc64c11df544"
+    },
+    {
+      "path": "artifact/prototype-palette-3.html",
+      "sha256": "04e1b237dc4b55bf86dc5a57cdc7c6692c0430e16a7dd1148198988f7b0f99a5"
+    },
+    {
+      "path": "assets/blue-oyster.webp",
+      "sha256": "31d7256aba77659a195c92ca66cac9f7a94bd23277d8ebf27e91eba1f6dbd4ee"
+    },
+    {
+      "path": "assets/broccoli-microgreens.webp",
+      "sha256": "d2f21e064fe4195a14551e08c87ffc9b75cdbe77b0e87c456321f7aeab338269"
+    },
+    {
+      "path": "assets/button-mushrooms.webp",
+      "sha256": "326dfd28cb9f5d24e42872a620e31f6447f569c29e1c9f3903c0dc759624b0e1"
+    },
+    {
+      "path": "assets/cultivation-microgreens.webp",
+      "sha256": "49f4cde0ec73c303d46470174cde4ec83ba09715e163b6f3b07d681936e2dd98"
+    },
+    {
+      "path": "assets/dm-sans-latin-variable.woff2",
+      "sha256": "ca72d2bcea8f4daa783dbdfa2d9b46068c3ce38168e05918fb867aa453b4f890"
+    },
+    {
+      "path": "assets/fraunces-latin-italic-variable.woff2",
+      "sha256": "7026a01ad498bfe76964ab92227aea0f4b7c9dc0d2ca153e962e3eef13257192"
+    },
+    {
+      "path": "assets/fraunces-latin-variable.woff2",
+      "sha256": "e79165432c3e1e01aff1ea4d394dec633c13ec70f09e92432ae77aa6e1aa7328"
+    },
+    {
+      "path": "assets/golden-oyster.webp",
+      "sha256": "f18210253503ad28767b9f150bd28035f7bb89f950c2cedf634dc6bd54dab165"
+    },
+    {
+      "path": "assets/hero-mushrooms.webp",
+      "sha256": "8ed9a0809d407c407a00a2e390ec8f863c5e71e615e9773d9a64cdf6e3bb89ec"
+    },
+    {
+      "path": "assets/manrope-latin-variable.woff2",
+      "sha256": "a30ddcd349703aff7464c34bef3fffdff405ee50c113440d7c8693c02d210972"
+    },
+    {
+      "path": "assets/mustard-microgreens.webp",
+      "sha256": "2513e1ad09e7e008370ffa755b07a605f0740ecdd006b79dfd381f363d941ced"
+    },
+    {
+      "path": "assets/newsreader-latin-italic-variable.woff2",
+      "sha256": "5dfcd10d24af8c82927ba57f7983dd997f7b200594c09c35a1b1ed9fc4597506"
+    },
+    {
+      "path": "assets/newsreader-latin-variable.woff2",
+      "sha256": "6e4f2958c3a7c4a80acde4e5a679abe7e01bc1e30b92be3c7a8b696ef401d101"
+    },
+    {
+      "path": "assets/OFL-DM-Sans.txt",
+      "sha256": "9af36190332437f5ecd09974de43c1f7c77a310a996cdd8ceb25628b458840e1"
+    },
+    {
+      "path": "assets/OFL-Fraunces.txt",
+      "sha256": "bdf4c22802eaf804f998195871c6b8938aac2ac14b2d78a8bd66a6f1eced833b"
+    },
+    {
+      "path": "assets/OFL-Manrope.txt",
+      "sha256": "58172e0c0fac2cda8a37b348164bb55e44b0e69051e557e92b1d3f6910141f7b"
+    },
+    {
+      "path": "assets/OFL-Newsreader.txt",
+      "sha256": "fdfad38143ec470553cae82a1e45320bdd1b9ec70415d37bd0171051d8a4ded8"
+    },
+    {
+      "path": "assets/radish-microgreens.webp",
+      "sha256": "0a086db8ec713416e75cc649001ff356bd4d5172d7953166aa4844fb002c15ad"
+    },
+    {
+      "path": "assets/README.md",
+      "sha256": "a593b3a287f1f9248fe116ab309158123efd47d8b8c0342392471e3710d5d538"
+    },
+    {
+      "path": "assets/sunflower-shoots.webp",
+      "sha256": "32aa2c1ed710fa918f81f0a679e9d9ea8d8b0208bc55a6ff9f25727261694cde"
+    },
+    {
+      "path": "assets/yellow-oyster.webp",
+      "sha256": "58fd0bc105baa4ff61c3f88c9a3c2ad06627e9965f985f25645902b881f33ff8"
+    },
+    {
+      "path": "components/components.css",
+      "sha256": "c8cbbcc832aaf6b7a121c38620ae2f771f0e3b9b7715933e514a10b1cae1c658"
+    },
+    {
+      "path": "components/legacy-aliases.css",
+      "sha256": "0c2bb5442a0c52e49d8c767e23886ceeaa35493d72d5a4554afeee79d8a4b5c5"
+    },
+    {
+      "path": "components/README.md",
+      "sha256": "ef8c82219c61d73782818f1ad77076ef7ee7743a52630f289478dbf43f556498"
+    },
+    {
+      "path": "icons/generate-icons.mjs",
+      "sha256": "cdc3ac61a14cd6998de21301291cc981f501204033f8d2e1c946bdf45504f31f"
+    },
+    {
+      "path": "icons/icons.svg",
+      "sha256": "24eb8d2e45bcf37019544de8ed7ca1569663bb89faddfe5848c8d4d7cc288f96"
+    },
+    {
+      "path": "icons/manifest.json",
+      "sha256": "0188691569c252259951821a2b7e06922d55d1b77df7c43b5b242ee453eea524"
+    },
+    {
+      "path": "icons/README.md",
+      "sha256": "069423031f16bf7a43e90fd4ef433cc71181f6c25db5e766e3ada6db6920c8dc"
+    },
+    {
+      "path": "pdf/wegroween-design-direction-manual.pdf",
+      "sha256": "481a490262eeb3d60403017392d47635e5df593d2e32b1c13b826fb6b170fae4"
+    },
+    {
+      "path": "pdf/wegroween-homepage-prototype-palette-1.pdf",
+      "sha256": "077e618ccb1e590f4b573ff5cea077d855774933df33c8afd8d8cb99e6b750f7"
+    },
+    {
+      "path": "pdf/wegroween-homepage-prototype-palette-2.pdf",
+      "sha256": "4e94fd07c9da83abcb27f83fcf690b535ada9d2ed794c8b83739dcac664c743a"
+    },
+    {
+      "path": "pdf/wegroween-homepage-prototype-palette-3.pdf",
+      "sha256": "739a3860ce3aa9e7cd6047dd5da68cdd8fe0553891d7a6127ddf7b4116730b96"
+    },
+    {
+      "path": "pdf/wegroween-imagery-direction-guide.pdf",
+      "sha256": "a0c3fb8fa4ab8dc8282acc22f060b4dc633dee86823d7e3e45b4f62d82985b77"
+    },
+    {
+      "path": "provenance/h1-r3-source.css",
+      "sha256": "8803916181780e55f3d0fefef5784bc97942c6e971ce54bcd8a947897ef58bcc"
+    },
+    {
+      "path": "provenance/h1-r3-source.html",
+      "sha256": "d143b6b44e9eaf90e8bfc0b058bf8c34962e6cd3f228f63d347b1774afefa524"
+    },
+    {
+      "path": "provenance/legacy-decisions.md",
+      "sha256": "3bd92a93eb13d40e54ffd3c7f206a271c35b7fbdc263144efdb20f13a148f001"
+    },
+    {
+      "path": "scripts/build_project_delivery.py",
+      "sha256": "db0fd7efb9a289fcd3493b7491702496a17e9946555ff0b440da8c2a13252c1d"
+    },
+    {
+      "path": "scripts/inspect_contrast.py",
+      "sha256": "59a8c8431e0fa4823e010021c8ca87f801e4024bb41467dee990a10f58a2b663"
+    },
+    {
+      "path": "scripts/inspect_delivery.py",
+      "sha256": "3f7431359ac2d50bd231b8b5bfe14bb9a1661b2b64e6cbd7a90cefbd655e469d"
+    },
+    {
+      "path": "scripts/inspect_gallery.py",
+      "sha256": "2c45f2b510994a2ac1a15c65d7d4594bb2659dee130164abb04fed42ca7dce73"
+    },
+    {
+      "path": "scripts/validate_project_delivery.py",
+      "sha256": "aa5321ceb2a4de90778ec1a4ab988ed0e584b8d4bda602486f945ae413a46d52"
+    },
+    {
+      "path": "validation/adapter-freshness.json",
+      "sha256": "71fd0f39b10f42a7381c3216747464089d988cc1f777f7f7ee8ac1a4bf73c426"
+    },
+    {
+      "path": "validation/browser-qa.json",
+      "sha256": "e1744fc789f621a0414c2986c7d5e03cb9a162835fd7a5fbf229a299e1dda914"
+    },
+    {
+      "path": "validation/component-final.json",
+      "sha256": "b5ff834a0a80d0f5c1a8b73ffe07354d5a1ff8ab8bf8926fc3f237b8da33ad6c"
+    },
+    {
+      "path": "validation/gallery-interaction.json",
+      "sha256": "92a9f526be667081f2f9b26f7e1155062db9cdd475169e814489d881a9bee41e"
+    },
+    {
+      "path": "validation/pdf-qa.json",
+      "sha256": "d275f5d8dd71a05da0c12d5b75b1c492535cb9c1f9f63df48796051f44995b09"
+    },
+    {
+      "path": "validation/rendered-contrast.json",
+      "sha256": "e3cb4c944cf3ea1e9765903b579769700eda42a2e60cb3ed74e664e02a2c7762"
+    },
+    {
+      "path": "validation/rendered-validation.json",
+      "sha256": "0ef7ce300815e7399a0785f4e788201034aeec2b44187e5c914638869f02157a"
+    },
+    {
+      "path": "validation/targeted-refresh.json",
+      "sha256": "489ee19a8b3563a15d18b193c857288171296819fb0241509578ab63e4b8a788"
+    },
+    {
+      "path": "icons/svg/account.svg",
+      "sha256": "5143362af2d94f1077b92bde4461089af0881b6cae22935c0a2ccdd3ab2ad236"
+    },
+    {
+      "path": "icons/svg/arrow-right.svg",
+      "sha256": "ddb42526183381b5564136238fa9760481ba778a3dd37d6a15d6866c26f329a3"
+    },
+    {
+      "path": "icons/svg/basket.svg",
+      "sha256": "80fbf1ed0a2af790989159486ec93b1b9fe7f864aca2bbd3396d81fb9e54603b"
+    },
+    {
+      "path": "icons/svg/calendar.svg",
+      "sha256": "d63cd83f6b62b21e78aac179f41333f75c3aa2e6d9062da91ff8f65f50da78b9"
+    },
+    {
+      "path": "icons/svg/check.svg",
+      "sha256": "591494890dc4a5065bd4bd46558c410b30ae792b97cc45e00131131b0436c665"
+    },
+    {
+      "path": "icons/svg/chevron-down.svg",
+      "sha256": "664b577c86be107e55ca983b20adb2e23f327d8e7252729e4c0d2936f1f1166e"
+    },
+    {
+      "path": "icons/svg/cloche.svg",
+      "sha256": "fac28df6db709fcc5ac6c2c1e0962c8b1e41ed511bac5a0b140684684130f474"
+    },
+    {
+      "path": "icons/svg/clock.svg",
+      "sha256": "92862b0d32f096cae6eff388bcffd6a6ff28d3d91cd32357eeed0bbd0184c28c"
+    },
+    {
+      "path": "icons/svg/close.svg",
+      "sha256": "a4db4190ecdde79e440772d65746922b240573397b4aec5621fcfaec6bba9c42"
+    },
+    {
+      "path": "icons/svg/delivery.svg",
+      "sha256": "2e5c09b68a93f80c16750093d0ee2eb6072b05ab9764eec1706359d9bf3f342b"
+    },
+    {
+      "path": "icons/svg/error.svg",
+      "sha256": "3f58204b4aac1adeb7991e2f0126b7ddce223a1d114359e12c4e0a1cb439c25f"
+    },
+    {
+      "path": "icons/svg/exotic.svg",
+      "sha256": "4f89e9cd103f050b2668414838fc172a4394b0d3b38fd5b74c0d85b1cb28c476"
+    },
+    {
+      "path": "icons/svg/filter.svg",
+      "sha256": "97420f9a21afeb9cd05a7f15db4e9e5c069f4b3beceeec6654b5ba12027960f6"
+    },
+    {
+      "path": "icons/svg/fruit.svg",
+      "sha256": "0ad75654d1da9f1a0e30ee13528884c20c53851398f75eddbbce0d59904d123e"
+    },
+    {
+      "path": "icons/svg/information.svg",
+      "sha256": "245a44979d4190ec64a742f923fd01ff752b85508d103e712483cc82729f7775"
+    },
+    {
+      "path": "icons/svg/location.svg",
+      "sha256": "14656c57b554321b14f70912911aa35428ca313cb13261df9f7b97c294a61508"
+    },
+    {
+      "path": "icons/svg/menu.svg",
+      "sha256": "4d0d34dbee59ed0ac50016827f6e7277ec84f6e74b14cf5296d1bf335ca0c61b"
+    },
+    {
+      "path": "icons/svg/microgreens.svg",
+      "sha256": "09fbb55cc96892bbccc7a207ec8c6e9b09e8ea5cceb2ab0eccfcd9b0b94f8d06"
+    },
+    {
+      "path": "icons/svg/minus.svg",
+      "sha256": "a89a9b87ffe418506f3a7f9e3c2c5c59a633ddf0100fd1958cb7731b24198fe0"
+    },
+    {
+      "path": "icons/svg/mushroom.svg",
+      "sha256": "df38aae36ad022b7be756ea1057d4fe7663ad6cb0ef45921fb970064178f59c8"
+    },
+    {
+      "path": "icons/svg/package.svg",
+      "sha256": "8279fa52c882acadac348036be14197b095f6a56555b6f412da0951c5e4f285b"
+    },
+    {
+      "path": "icons/svg/plus.svg",
+      "sha256": "d3b7ea36dbee3d45a6631f6e17695f91b1d5a4b64e16c0b8dc66aaad7eea8ae3"
+    },
+    {
+      "path": "icons/svg/produce.svg",
+      "sha256": "23aa36e8de965a38ae4ee17458eeeb905b4ecab2101422428fc98fa1503d6d5a"
+    },
+    {
+      "path": "icons/svg/receipt.svg",
+      "sha256": "823468e4d63d45cd0f7682873634b394554abe7678e19ac1ef20ebd05a547d89"
+    },
+    {
+      "path": "icons/svg/repeat.svg",
+      "sha256": "43d23c319740ee4cfdce78c1f585b71c2725f586ff263a02933e26b037709fb2"
+    },
+    {
+      "path": "icons/svg/search.svg",
+      "sha256": "356a943c56fbfc15a90fb8f475f251da07c13c402318424fae5bfdb0aac938e2"
+    },
+    {
+      "path": "icons/svg/warning.svg",
+      "sha256": "68de7f2560c357b99ac7a672638af9c39899530baf911640d6dcaddf5b7e2903"
+    },
+    {
+      "path": "icons/svg/water.svg",
+      "sha256": "575ee92cf63415f28ab1460caa9b071bc6c3c77781e4cb32db749d6a5430a801"
+    }
+  ],
+  "legacy_rollback_files_verified": 92,
+  "product_and_existing_memory_changes": [],
+  "release": "PROPOSED; confirmation pending",
+  "private_archive": "Not performed"
+}

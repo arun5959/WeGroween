@@ -1,0 +1,77 @@
+{
+  "project_version": "1.2.0-proposed",
+  "approval_status": "proposed",
+  "decision_leader": "User",
+  "delegated_decisions": [],
+  "creative_direction": {
+    "name": "Cultivated Editorial",
+    "status": "approved"
+  },
+  "palette_approach_1": {
+    "name": "C1 Orchard Ink",
+    "canonical_status": "prototype-only",
+    "primary": "#223225",
+    "secondary": "#7D3F54",
+    "accent": "#C89538",
+    "background": "#F5F0E6",
+    "text": "#1E251D"
+  },
+  "canonical_palette": {
+    "name": "C2 Soil & Saffron",
+    "primary": "#402B24",
+    "secondary": "#98513D",
+    "accent": "#D49A25",
+    "background": "#FBF4E8",
+    "text": "#2B211D"
+  },
+  "typography": {
+    "display": "Fraunces",
+    "body": "DM Sans",
+    "scale_id": "T2"
+  },
+  "grid": {
+    "name": "G3 Curated Market",
+    "container": "1200px",
+    "columns": 12,
+    "gutter": "16-20px"
+  },
+  "voice": "V1 Cultivated Authority",
+  "motion": "M1 Restrained Editorial",
+  "iconography": "I1 Field Notes",
+  "homepage_presentation": "R3 resource-grounded continuous desktop homepage with themed opening and responsive closing",
+  "homepage_structure": [
+    "Utility and service cues",
+    "Primary navigation",
+    "Harvest-led hero",
+    "Trust band",
+    "Current harvest",
+    "Serviceability",
+    "Shop by kitchen need",
+    "Cultivation journal",
+    "Delivery journey",
+    "Household edit",
+    "Restaurant supply",
+    "Journal and recipes",
+    "Closing harvest call to action",
+    "Footer and policies"
+  ],
+  "pdf_outputs": [
+    "pdf/wegroween-homepage-prototype.pdf",
+    "pdf/wegroween-design-direction-manual.pdf"
+  ],
+  "limitations": [
+    "Wordmark and logo direction deferred",
+    "Current project photographs authorized by the user for prototype use; production and public reuse rights not independently verified",
+    "Prices, pack sizes, service areas and delivery rules remain illustrative or to be confirmed",
+    "Accessibility target requires implemented-product manual testing"
+  ],
+  "tags": {
+    "industry": ["premium food", "fresh produce", "farming"],
+    "archetype": ["household ecommerce", "restaurant supply", "brand commerce"],
+    "audience": ["premium households", "restaurants", "chefs"],
+    "market": ["India"],
+    "visual_territory": ["Cultivated Editorial"]
+  },
+  "confidentiality": "project-private",
+  "reuse_status": "authorized-reviewed-redacted-structural-reuse-only"
+}

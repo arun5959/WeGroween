@@ -1,0 +1,29 @@
+[
+  {
+    "direction": "ink",
+    "originalPath": "C:\\Users\\tarun\\.codex\\generated_images\\01a10bf8-9031-7290-bbec-a1c5d3956e10\\exec-1e665772-387f-4f49-bda9-dd43452d9877.png",
+    "workspacePath": "assets/ink.png",
+    "tool": "built-in image_gen",
+    "mode": "generate",
+    "inputImages": [],
+    "transparentBackground": false
+  },
+  {
+    "direction": "paper",
+    "originalPath": "C:\\Users\\tarun\\.codex\\generated_images\\01a10bf8-9031-7290-bbec-a1c5d3956e10\\exec-be2e6393-862c-4208-9cd5-c44b2a6ff152.png",
+    "workspacePath": "assets/paper.png",
+    "tool": "built-in image_gen",
+    "mode": "generate",
+    "inputImages": [],
+    "transparentBackground": false
+  },
+  {
+    "direction": "gouache",
+    "originalPath": "C:\\Users\\tarun\\.codex\\generated_images\\01a10bf8-9031-7290-bbec-a1c5d3956e10\\exec-2b8d2978-3e2c-4c58-9777-c17bc14f7c24.png",
+    "workspacePath": "assets/gouache.png",
+    "tool": "built-in image_gen",
+    "mode": "generate",
+    "inputImages": [],
+    "transparentBackground": false
+  }
+]

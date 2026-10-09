@@ -1,0 +1,1495 @@
+{
+  "source_version": "1.2.0-proposed",
+  "candidate_version": "1.3.0-proposed",
+  "selected_value_comparisons": [
+    {
+      "legacy": "color.semantic.light.brand-primary",
+      "candidate": "color.semantic.light.brand-primary",
+      "legacy_value": "#402B24",
+      "candidate_value": "#402B24",
+      "equal": true
+    },
+    {
+      "legacy": "color.semantic.light.brand-secondary",
+      "candidate": "color.semantic.light.brand-secondary",
+      "legacy_value": "#98513D",
+      "candidate_value": "#98513D",
+      "equal": true
+    },
+    {
+      "legacy": "color.semantic.light.accent",
+      "candidate": "color.semantic.light.accent",
+      "legacy_value": "#D49A25",
+      "candidate_value": "#D49A25",
+      "equal": true
+    },
+    {
+      "legacy": "color.semantic.light.background",
+      "candidate": "color.semantic.light.background",
+      "legacy_value": "#FBF4E8",
+      "candidate_value": "#FBF4E8",
+      "equal": true
+    },
+    {
+      "legacy": "color.semantic.light.surface",
+      "candidate": "color.semantic.light.surface",
+      "legacy_value": "#FFFDF7",
+      "candidate_value": "#FFFDF7",
+      "equal": true
+    },
+    {
+      "legacy": "color.semantic.light.surface-elevated",
+      "candidate": "color.semantic.light.surface-elevated",
+      "legacy_value": "#FFFFFF",
+      "candidate_value": "#FFFFFF",
+      "equal": true
+    },
+    {
+      "legacy": "color.semantic.light.text-primary",
+      "candidate": "color.semantic.light.text-primary",
+      "legacy_value": "#2B211D",
+      "candidate_value": "#2B211D",
+      "equal": true
+    },
+    {
+      "legacy": "color.semantic.light.text-secondary",
+      "candidate": "color.semantic.light.text-secondary",
+      "legacy_value": "#66544B",
+      "candidate_value": "#66544B",
+      "equal": true
+    },
+    {
+      "legacy": "color.semantic.light.text-inverse",
+      "candidate": "color.semantic.light.text-inverse",
+      "legacy_value": "#FFF8EC",
+      "candidate_value": "#FFF8EC",
+      "equal": true
+    },
+    {
+      "legacy": "color.semantic.light.border",
+      "candidate": "color.semantic.light.border",
+      "legacy_value": "#DDD1C2",
+      "candidate_value": "#DDD1C2",
+      "equal": true
+    },
+    {
+      "legacy": "color.semantic.light.border-strong",
+      "candidate": "color.semantic.light.border-strong",
+      "legacy_value": "#92796C",
+      "candidate_value": "#92796C",
+      "equal": true
+    },
+    {
+      "legacy": "color.semantic.light.focus",
+      "candidate": "color.semantic.light.focus",
+      "legacy_value": "#006C5B",
+      "candidate_value": "#006C5B",
+      "equal": true
+    },
+    {
+      "legacy": "color.semantic.light.success",
+      "candidate": "color.semantic.light.success",
+      "legacy_value": "#2E654A",
+      "candidate_value": "#2E654A",
+      "equal": true
+    },
+    {
+      "legacy": "color.semantic.light.warning",
+      "candidate": "color.semantic.light.warning",
+      "legacy_value": "#925100",
+      "candidate_value": "#925100",
+      "equal": true
+    },
+    {
+      "legacy": "color.semantic.light.error",
+      "candidate": "color.semantic.light.error",
+      "legacy_value": "#A42C3B",
+      "candidate_value": "#A42C3B",
+      "equal": true
+    },
+    {
+      "legacy": "color.semantic.light.information",
+      "candidate": "color.semantic.light.information",
+      "legacy_value": "#285C78",
+      "candidate_value": "#285C78",
+      "equal": true
+    },
+    {
+      "legacy": "color.semantic.light.disabled-background",
+      "candidate": "color.semantic.light.disabled-background",
+      "legacy_value": "#E9E2D7",
+      "candidate_value": "#E9E2D7",
+      "equal": true
+    },
+    {
+      "legacy": "color.semantic.light.disabled-content",
+      "candidate": "color.semantic.light.disabled-content",
+      "legacy_value": "#74706A",
+      "candidate_value": "#74706A",
+      "equal": true
+    },
+    {
+      "legacy": "typography.style.display.fontFamily",
+      "candidate": "typography.options.type-2.style.display.font_family",
+      "legacy_value": [
+        "Fraunces",
+        "Georgia",
+        "serif"
+      ],
+      "candidate_value": [
+        "Fraunces",
+        "Georgia",
+        "serif"
+      ],
+      "equal": true
+    },
+    {
+      "legacy": "typography.style.display.fontSize",
+      "candidate": "typography.options.type-2.style.display.size",
+      "legacy_value": "92px",
+      "candidate_value": "92px",
+      "equal": true
+    },
+    {
+      "legacy": "typography.style.display.fontWeight",
+      "candidate": "typography.options.type-2.style.display.weight",
+      "legacy_value": 600,
+      "candidate_value": 600,
+      "equal": true
+    },
+    {
+      "legacy": "typography.style.display.letterSpacing",
+      "candidate": "typography.options.type-2.style.display.letter_spacing",
+      "legacy_value": "-0.05em",
+      "candidate_value": "-0.05em",
+      "equal": true
+    },
+    {
+      "legacy": "typography.style.display.lineHeight",
+      "candidate": "typography.options.type-2.style.display.line_height",
+      "legacy_value": 0.94,
+      "candidate_value": 0.94,
+      "equal": true
+    },
+    {
+      "legacy": "typography.style.h1.fontFamily",
+      "candidate": "typography.options.type-2.style.h1.font_family",
+      "legacy_value": [
+        "Fraunces",
+        "Georgia",
+        "serif"
+      ],
+      "candidate_value": [
+        "Fraunces",
+        "Georgia",
+        "serif"
+      ],
+      "equal": true
+    },
+    {
+      "legacy": "typography.style.h1.fontSize",
+      "candidate": "typography.options.type-2.style.h1.size",
+      "legacy_value": "68px",
+      "candidate_value": "68px",
+      "equal": true
+    },
+    {
+      "legacy": "typography.style.h1.fontWeight",
+      "candidate": "typography.options.type-2.style.h1.weight",
+      "legacy_value": 600,
+      "candidate_value": 600,
+      "equal": true
+    },
+    {
+      "legacy": "typography.style.h1.letterSpacing",
+      "candidate": "typography.options.type-2.style.h1.letter_spacing",
+      "legacy_value": "-0.04em",
+      "candidate_value": "-0.04em",
+      "equal": true
+    },
+    {
+      "legacy": "typography.style.h1.lineHeight",
+      "candidate": "typography.options.type-2.style.h1.line_height",
+      "legacy_value": 0.99,
+      "candidate_value": 0.99,
+      "equal": true
+    },
+    {
+      "legacy": "typography.style.h2.fontFamily",
+      "candidate": "typography.options.type-2.style.h2.font_family",
+      "legacy_value": [
+        "Fraunces",
+        "Georgia",
+        "serif"
+      ],
+      "candidate_value": [
+        "Fraunces",
+        "Georgia",
+        "serif"
+      ],
+      "equal": true
+    },
+    {
+      "legacy": "typography.style.h2.fontSize",
+      "candidate": "typography.options.type-2.style.h2.size",
+      "legacy_value": "54px",
+      "candidate_value": "54px",
+      "equal": true
+    },
+    {
+      "legacy": "typography.style.h2.fontWeight",
+      "candidate": "typography.options.type-2.style.h2.weight",
+      "legacy_value": 600,
+      "candidate_value": 600,
+      "equal": true
+    },
+    {
+      "legacy": "typography.style.h2.letterSpacing",
+      "candidate": "typography.options.type-2.style.h2.letter_spacing",
+      "legacy_value": "-0.032em",
+      "candidate_value": "-0.032em",
+      "equal": true
+    },
+    {
+      "legacy": "typography.style.h2.lineHeight",
+      "candidate": "typography.options.type-2.style.h2.line_height",
+      "legacy_value": 1.04,
+      "candidate_value": 1.04,
+      "equal": true
+    },
+    {
+      "legacy": "typography.style.h3.fontFamily",
+      "candidate": "typography.options.type-2.style.h3.font_family",
+      "legacy_value": [
+        "Fraunces",
+        "Georgia",
+        "serif"
+      ],
+      "candidate_value": [
+        "Fraunces",
+        "Georgia",
+        "serif"
+      ],
+      "equal": true
+    },
+    {
+      "legacy": "typography.style.h3.fontSize",
+      "candidate": "typography.options.type-2.style.h3.size",
+      "legacy_value": "38px",
+      "candidate_value": "38px",
+      "equal": true
+    },
+    {
+      "legacy": "typography.style.h3.fontWeight",
+      "candidate": "typography.options.type-2.style.h3.weight",
+      "legacy_value": 600,
+      "candidate_value": 600,
+      "equal": true
+    },
+    {
+      "legacy": "typography.style.h3.letterSpacing",
+      "candidate": "typography.options.type-2.style.h3.letter_spacing",
+      "legacy_value": "-0.022em",
+      "candidate_value": "-0.022em",
+      "equal": true
+    },
+    {
+      "legacy": "typography.style.h3.lineHeight",
+      "candidate": "typography.options.type-2.style.h3.line_height",
+      "legacy_value": 1.1,
+      "candidate_value": 1.1,
+      "equal": true
+    },
+    {
+      "legacy": "typography.style.h4.fontFamily",
+      "candidate": "typography.options.type-2.style.h4.font_family",
+      "legacy_value": [
+        "DM Sans",
+        "Segoe UI",
+        "Arial",
+        "sans-serif"
+      ],
+      "candidate_value": [
+        "DM Sans",
+        "Segoe UI",
+        "Arial",
+        "sans-serif"
+      ],
+      "equal": true
+    },
+    {
+      "legacy": "typography.style.h4.fontSize",
+      "candidate": "typography.options.type-2.style.h4.size",
+      "legacy_value": "28px",
+      "candidate_value": "28px",
+      "equal": true
+    },
+    {
+      "legacy": "typography.style.h4.fontWeight",
+      "candidate": "typography.options.type-2.style.h4.weight",
+      "legacy_value": 600,
+      "candidate_value": 600,
+      "equal": true
+    },
+    {
+      "legacy": "typography.style.h4.letterSpacing",
+      "candidate": "typography.options.type-2.style.h4.letter_spacing",
+      "legacy_value": "-0.025em",
+      "candidate_value": "-0.025em",
+      "equal": true
+    },
+    {
+      "legacy": "typography.style.h4.lineHeight",
+      "candidate": "typography.options.type-2.style.h4.line_height",
+      "legacy_value": 1.2,
+      "candidate_value": 1.2,
+      "equal": true
+    },
+    {
+      "legacy": "typography.style.h5.fontFamily",
+      "candidate": "typography.options.type-2.style.h5.font_family",
+      "legacy_value": [
+        "DM Sans",
+        "Segoe UI",
+        "Arial",
+        "sans-serif"
+      ],
+      "candidate_value": [
+        "DM Sans",
+        "Segoe UI",
+        "Arial",
+        "sans-serif"
+      ],
+      "equal": true
+    },
+    {
+      "legacy": "typography.style.h5.fontSize",
+      "candidate": "typography.options.type-2.style.h5.size",
+      "legacy_value": "22px",
+      "candidate_value": "22px",
+      "equal": true
+    },
+    {
+      "legacy": "typography.style.h5.fontWeight",
+      "candidate": "typography.options.type-2.style.h5.weight",
+      "legacy_value": 700,
+      "candidate_value": 700,
+      "equal": true
+    },
+    {
+      "legacy": "typography.style.h5.letterSpacing",
+      "candidate": "typography.options.type-2.style.h5.letter_spacing",
+      "legacy_value": "-0.016em",
+      "candidate_value": "-0.016em",
+      "equal": true
+    },
+    {
+      "legacy": "typography.style.h5.lineHeight",
+      "candidate": "typography.options.type-2.style.h5.line_height",
+      "legacy_value": 1.28,
+      "candidate_value": 1.28,
+      "equal": true
+    },
+    {
+      "legacy": "typography.style.h6.fontFamily",
+      "candidate": "typography.options.type-2.style.h6.font_family",
+      "legacy_value": [
+        "DM Sans",
+        "Segoe UI",
+        "Arial",
+        "sans-serif"
+      ],
+      "candidate_value": [
+        "DM Sans",
+        "Segoe UI",
+        "Arial",
+        "sans-serif"
+      ],
+      "equal": true
+    },
+    {
+      "legacy": "typography.style.h6.fontSize",
+      "candidate": "typography.options.type-2.style.h6.size",
+      "legacy_value": "18px",
+      "candidate_value": "18px",
+      "equal": true
+    },
+    {
+      "legacy": "typography.style.h6.fontWeight",
+      "candidate": "typography.options.type-2.style.h6.weight",
+      "legacy_value": 700,
+      "candidate_value": 700,
+      "equal": true
+    },
+    {
+      "legacy": "typography.style.h6.letterSpacing",
+      "candidate": "typography.options.type-2.style.h6.letter_spacing",
+      "legacy_value": "-0.005em",
+      "candidate_value": "-0.005em",
+      "equal": true
+    },
+    {
+      "legacy": "typography.style.h6.lineHeight",
+      "candidate": "typography.options.type-2.style.h6.line_height",
+      "legacy_value": 1.35,
+      "candidate_value": 1.35,
+      "equal": true
+    },
+    {
+      "legacy": "typography.style.lead.fontFamily",
+      "candidate": "typography.options.type-2.style.lead.font_family",
+      "legacy_value": [
+        "DM Sans",
+        "Segoe UI",
+        "Arial",
+        "sans-serif"
+      ],
+      "candidate_value": [
+        "DM Sans",
+        "Segoe UI",
+        "Arial",
+        "sans-serif"
+      ],
+      "equal": true
+    },
+    {
+      "legacy": "typography.style.lead.fontSize",
+      "candidate": "typography.options.type-2.style.lead.size",
+      "legacy_value": "20px",
+      "candidate_value": "20px",
+      "equal": true
+    },
+    {
+      "legacy": "typography.style.lead.fontWeight",
+      "candidate": "typography.options.type-2.style.lead.weight",
+      "legacy_value": 400,
+      "candidate_value": 400,
+      "equal": true
+    },
+    {
+      "legacy": "typography.style.lead.letterSpacing",
+      "candidate": "typography.options.type-2.style.lead.letter_spacing",
+      "legacy_value": "-0.012em",
+      "candidate_value": "-0.012em",
+      "equal": true
+    },
+    {
+      "legacy": "typography.style.lead.lineHeight",
+      "candidate": "typography.options.type-2.style.lead.line_height",
+      "legacy_value": 1.58,
+      "candidate_value": 1.58,
+      "equal": true
+    },
+    {
+      "legacy": "typography.style.body.fontFamily",
+      "candidate": "typography.options.type-2.style.body.font_family",
+      "legacy_value": [
+        "DM Sans",
+        "Segoe UI",
+        "Arial",
+        "sans-serif"
+      ],
+      "candidate_value": [
+        "DM Sans",
+        "Segoe UI",
+        "Arial",
+        "sans-serif"
+      ],
+      "equal": true
+    },
+    {
+      "legacy": "typography.style.body.fontSize",
+      "candidate": "typography.options.type-2.style.body.size",
+      "legacy_value": "16px",
+      "candidate_value": "16px",
+      "equal": true
+    },
+    {
+      "legacy": "typography.style.body.fontWeight",
+      "candidate": "typography.options.type-2.style.body.weight",
+      "legacy_value": 400,
+      "candidate_value": 400,
+      "equal": true
+    },
+    {
+      "legacy": "typography.style.body.letterSpacing",
+      "candidate": "typography.options.type-2.style.body.letter_spacing",
+      "legacy_value": "-0.008em",
+      "candidate_value": "-0.008em",
+      "equal": true
+    },
+    {
+      "legacy": "typography.style.body.lineHeight",
+      "candidate": "typography.options.type-2.style.body.line_height",
+      "legacy_value": 1.6,
+      "candidate_value": 1.6,
+      "equal": true
+    },
+    {
+      "legacy": "typography.style.label.fontFamily",
+      "candidate": "typography.options.type-2.style.label.font_family",
+      "legacy_value": [
+        "DM Sans",
+        "Segoe UI",
+        "Arial",
+        "sans-serif"
+      ],
+      "candidate_value": [
+        "DM Sans",
+        "Segoe UI",
+        "Arial",
+        "sans-serif"
+      ],
+      "equal": true
+    },
+    {
+      "legacy": "typography.style.label.fontSize",
+      "candidate": "typography.options.type-2.style.label.size",
+      "legacy_value": "13px",
+      "candidate_value": "13px",
+      "equal": true
+    },
+    {
+      "legacy": "typography.style.label.fontWeight",
+      "candidate": "typography.options.type-2.style.label.weight",
+      "legacy_value": 700,
+      "candidate_value": 700,
+      "equal": true
+    },
+    {
+      "legacy": "typography.style.label.letterSpacing",
+      "candidate": "typography.options.type-2.style.label.letter_spacing",
+      "legacy_value": "0.07em",
+      "candidate_value": "0.07em",
+      "equal": true
+    },
+    {
+      "legacy": "typography.style.label.lineHeight",
+      "candidate": "typography.options.type-2.style.label.line_height",
+      "legacy_value": 1.3,
+      "candidate_value": 1.3,
+      "equal": true
+    },
+    {
+      "legacy": "typography.style.caption.fontFamily",
+      "candidate": "typography.options.type-2.style.caption.font_family",
+      "legacy_value": [
+        "DM Sans",
+        "Segoe UI",
+        "Arial",
+        "sans-serif"
+      ],
+      "candidate_value": [
+        "DM Sans",
+        "Segoe UI",
+        "Arial",
+        "sans-serif"
+      ],
+      "equal": true
+    },
+    {
+      "legacy": "typography.style.caption.fontSize",
+      "candidate": "typography.options.type-2.style.caption.size",
+      "legacy_value": "12px",
+      "candidate_value": "12px",
+      "equal": true
+    },
+    {
+      "legacy": "typography.style.caption.fontWeight",
+      "candidate": "typography.options.type-2.style.caption.weight",
+      "legacy_value": 500,
+      "candidate_value": 500,
+      "equal": true
+    },
+    {
+      "legacy": "typography.style.caption.letterSpacing",
+      "candidate": "typography.options.type-2.style.caption.letter_spacing",
+      "legacy_value": "0.012em",
+      "candidate_value": "0.012em",
+      "equal": true
+    },
+    {
+      "legacy": "typography.style.caption.lineHeight",
+      "candidate": "typography.options.type-2.style.caption.line_height",
+      "legacy_value": 1.45,
+      "candidate_value": 1.45,
+      "equal": true
+    },
+    {
+      "legacy": "typography.style.code.fontFamily",
+      "candidate": "typography.options.type-2.style.code.font_family",
+      "legacy_value": [
+        "ui-monospace",
+        "SFMono-Regular",
+        "Consolas",
+        "monospace"
+      ],
+      "candidate_value": [
+        "ui-monospace",
+        "SFMono-Regular",
+        "Consolas",
+        "monospace"
+      ],
+      "equal": true
+    },
+    {
+      "legacy": "typography.style.code.fontSize",
+      "candidate": "typography.options.type-2.style.code.size",
+      "legacy_value": "13px",
+      "candidate_value": "13px",
+      "equal": true
+    },
+    {
+      "legacy": "typography.style.code.fontWeight",
+      "candidate": "typography.options.type-2.style.code.weight",
+      "legacy_value": 500,
+      "candidate_value": 500,
+      "equal": true
+    },
+    {
+      "legacy": "typography.style.code.letterSpacing",
+      "candidate": "typography.options.type-2.style.code.letter_spacing",
+      "legacy_value": "0em",
+      "candidate_value": "0em",
+      "equal": true
+    },
+    {
+      "legacy": "typography.style.code.lineHeight",
+      "candidate": "typography.options.type-2.style.code.line_height",
+      "legacy_value": 1.5,
+      "candidate_value": 1.5,
+      "equal": true
+    },
+    {
+      "legacy": "typography.family.display",
+      "candidate": "typography.family.display",
+      "legacy_value": [
+        "Fraunces",
+        "Georgia",
+        "serif"
+      ],
+      "candidate_value": [
+        "Fraunces",
+        "Georgia",
+        "serif"
+      ],
+      "equal": true
+    },
+    {
+      "legacy": "typography.family.body",
+      "candidate": "typography.family.body",
+      "legacy_value": [
+        "DM Sans",
+        "Segoe UI",
+        "Arial",
+        "sans-serif"
+      ],
+      "candidate_value": [
+        "DM Sans",
+        "Segoe UI",
+        "Arial",
+        "sans-serif"
+      ],
+      "equal": true
+    },
+    {
+      "legacy": "typography.family.mono",
+      "candidate": "typography.family.mono",
+      "legacy_value": [
+        "ui-monospace",
+        "SFMono-Regular",
+        "Consolas",
+        "monospace"
+      ],
+      "candidate_value": [
+        "ui-monospace",
+        "SFMono-Regular",
+        "Consolas",
+        "monospace"
+      ],
+      "equal": true
+    },
+    {
+      "legacy": "layout.container.content",
+      "candidate": "layout.container.content",
+      "legacy_value": "1200px",
+      "candidate_value": "1200px",
+      "equal": true
+    },
+    {
+      "legacy": "layout.container.wide",
+      "candidate": "layout.container.wide",
+      "legacy_value": "1360px",
+      "candidate_value": "1360px",
+      "equal": true
+    },
+    {
+      "legacy": "layout.container.reading",
+      "candidate": "layout.container.reading",
+      "legacy_value": "660px",
+      "candidate_value": "660px",
+      "equal": true
+    },
+    {
+      "legacy": "layout.container.form",
+      "candidate": "layout.container.form",
+      "legacy_value": "560px",
+      "candidate_value": "560px",
+      "equal": true
+    },
+    {
+      "legacy": "layout.grid.columns",
+      "candidate": "layout.grid.columns",
+      "legacy_value": 12,
+      "candidate_value": 12,
+      "equal": true
+    },
+    {
+      "legacy": "layout.grid.gutter",
+      "candidate": "layout.grid.gutter",
+      "legacy_value": "20px",
+      "candidate_value": "20px",
+      "equal": true
+    },
+    {
+      "legacy": "layout.grid.page-margin-compact",
+      "candidate": "layout.grid.page-margin-compact",
+      "legacy_value": "20px",
+      "candidate_value": "20px",
+      "equal": true
+    },
+    {
+      "legacy": "layout.grid.page-margin-medium",
+      "candidate": "layout.grid.page-margin-medium",
+      "legacy_value": "32px",
+      "candidate_value": "32px",
+      "equal": true
+    },
+    {
+      "legacy": "layout.grid.page-margin-wide",
+      "candidate": "layout.grid.page-margin-wide",
+      "legacy_value": "48px",
+      "candidate_value": "48px",
+      "equal": true
+    },
+    {
+      "legacy": "layout.breakpoint.compact",
+      "candidate": "layout.breakpoint.compact",
+      "legacy_value": "640px",
+      "candidate_value": "640px",
+      "equal": true
+    },
+    {
+      "legacy": "layout.breakpoint.medium",
+      "candidate": "layout.breakpoint.medium",
+      "legacy_value": "900px",
+      "candidate_value": "900px",
+      "equal": true
+    },
+    {
+      "legacy": "layout.breakpoint.wide",
+      "candidate": "layout.breakpoint.wide",
+      "legacy_value": "1200px",
+      "candidate_value": "1200px",
+      "equal": true
+    },
+    {
+      "legacy": "space.primitive.0",
+      "candidate": "space.primitive.0",
+      "legacy_value": "0px",
+      "candidate_value": "0px",
+      "equal": true
+    },
+    {
+      "legacy": "space.primitive.1",
+      "candidate": "space.primitive.1",
+      "legacy_value": "2px",
+      "candidate_value": "2px",
+      "equal": true
+    },
+    {
+      "legacy": "space.primitive.2",
+      "candidate": "space.primitive.2",
+      "legacy_value": "4px",
+      "candidate_value": "4px",
+      "equal": true
+    },
+    {
+      "legacy": "space.primitive.3",
+      "candidate": "space.primitive.3",
+      "legacy_value": "8px",
+      "candidate_value": "8px",
+      "equal": true
+    },
+    {
+      "legacy": "space.primitive.4",
+      "candidate": "space.primitive.4",
+      "legacy_value": "12px",
+      "candidate_value": "12px",
+      "equal": true
+    },
+    {
+      "legacy": "space.primitive.5",
+      "candidate": "space.primitive.5",
+      "legacy_value": "16px",
+      "candidate_value": "16px",
+      "equal": true
+    },
+    {
+      "legacy": "space.primitive.6",
+      "candidate": "space.primitive.6",
+      "legacy_value": "20px",
+      "candidate_value": "20px",
+      "equal": true
+    },
+    {
+      "legacy": "space.primitive.7",
+      "candidate": "space.primitive.7",
+      "legacy_value": "24px",
+      "candidate_value": "24px",
+      "equal": true
+    },
+    {
+      "legacy": "space.primitive.8",
+      "candidate": "space.primitive.8",
+      "legacy_value": "32px",
+      "candidate_value": "32px",
+      "equal": true
+    },
+    {
+      "legacy": "space.primitive.9",
+      "candidate": "space.primitive.9",
+      "legacy_value": "40px",
+      "candidate_value": "40px",
+      "equal": true
+    },
+    {
+      "legacy": "space.primitive.10",
+      "candidate": "space.primitive.10",
+      "legacy_value": "48px",
+      "candidate_value": "48px",
+      "equal": true
+    },
+    {
+      "legacy": "space.primitive.11",
+      "candidate": "space.primitive.11",
+      "legacy_value": "64px",
+      "candidate_value": "64px",
+      "equal": true
+    },
+    {
+      "legacy": "space.primitive.12",
+      "candidate": "space.primitive.12",
+      "legacy_value": "80px",
+      "candidate_value": "80px",
+      "equal": true
+    },
+    {
+      "legacy": "space.primitive.13",
+      "candidate": "space.primitive.13",
+      "legacy_value": "96px",
+      "candidate_value": "96px",
+      "equal": true
+    },
+    {
+      "legacy": "space.semantic.none",
+      "candidate": "space.semantic.none",
+      "legacy_value": "0px",
+      "candidate_value": "0px",
+      "equal": true
+    },
+    {
+      "legacy": "space.semantic.2xs",
+      "candidate": "space.semantic.2xs",
+      "legacy_value": "4px",
+      "candidate_value": "4px",
+      "equal": true
+    },
+    {
+      "legacy": "space.semantic.xs",
+      "candidate": "space.semantic.xs",
+      "legacy_value": "8px",
+      "candidate_value": "8px",
+      "equal": true
+    },
+    {
+      "legacy": "space.semantic.sm",
+      "candidate": "space.semantic.sm",
+      "legacy_value": "12px",
+      "candidate_value": "12px",
+      "equal": true
+    },
+    {
+      "legacy": "space.semantic.md",
+      "candidate": "space.semantic.md",
+      "legacy_value": "20px",
+      "candidate_value": "20px",
+      "equal": true
+    },
+    {
+      "legacy": "space.semantic.lg",
+      "candidate": "space.semantic.lg",
+      "legacy_value": "32px",
+      "candidate_value": "32px",
+      "equal": true
+    },
+    {
+      "legacy": "space.semantic.xl",
+      "candidate": "space.semantic.xl",
+      "legacy_value": "48px",
+      "candidate_value": "48px",
+      "equal": true
+    },
+    {
+      "legacy": "space.semantic.2xl",
+      "candidate": "space.semantic.2xl",
+      "legacy_value": "72px",
+      "candidate_value": "72px",
+      "equal": true
+    },
+    {
+      "legacy": "space.semantic.3xl",
+      "candidate": "space.semantic.3xl",
+      "legacy_value": "96px",
+      "candidate_value": "96px",
+      "equal": true
+    },
+    {
+      "legacy": "radius.none",
+      "candidate": "radius.none",
+      "legacy_value": "0px",
+      "candidate_value": "0px",
+      "equal": true
+    },
+    {
+      "legacy": "radius.control",
+      "candidate": "radius.control",
+      "legacy_value": "8px",
+      "candidate_value": "8px",
+      "equal": true
+    },
+    {
+      "legacy": "radius.card",
+      "candidate": "radius.card",
+      "legacy_value": "10px",
+      "candidate_value": "10px",
+      "equal": true
+    },
+    {
+      "legacy": "radius.panel",
+      "candidate": "radius.panel",
+      "legacy_value": "14px",
+      "candidate_value": "14px",
+      "equal": true
+    },
+    {
+      "legacy": "radius.pill",
+      "candidate": "radius.pill",
+      "legacy_value": "999px",
+      "candidate_value": "999px",
+      "equal": true
+    },
+    {
+      "legacy": "radius.round",
+      "candidate": "radius.round",
+      "legacy_value": "50%",
+      "candidate_value": "50%",
+      "equal": true
+    },
+    {
+      "legacy": "shadow.flat",
+      "candidate": "shadow.flat",
+      "legacy_value": {
+        "color": "#402B2400",
+        "offsetX": "0px",
+        "offsetY": "0px",
+        "blur": "0px",
+        "spread": "0px"
+      },
+      "candidate_value": {
+        "color": "#402B2400",
+        "offsetX": "0px",
+        "offsetY": "0px",
+        "blur": "0px",
+        "spread": "0px"
+      },
+      "equal": true
+    },
+    {
+      "legacy": "shadow.raised",
+      "candidate": "shadow.raised",
+      "legacy_value": {
+        "color": "#402B2414",
+        "offsetX": "0px",
+        "offsetY": "2px",
+        "blur": "10px",
+        "spread": "0px"
+      },
+      "candidate_value": {
+        "color": "#402B2414",
+        "offsetX": "0px",
+        "offsetY": "2px",
+        "blur": "10px",
+        "spread": "0px"
+      },
+      "equal": true
+    },
+    {
+      "legacy": "shadow.floating",
+      "candidate": "shadow.floating",
+      "legacy_value": {
+        "color": "#402B2424",
+        "offsetX": "0px",
+        "offsetY": "10px",
+        "blur": "28px",
+        "spread": "-8px"
+      },
+      "candidate_value": {
+        "color": "#402B2424",
+        "offsetX": "0px",
+        "offsetY": "10px",
+        "blur": "28px",
+        "spread": "-8px"
+      },
+      "equal": true
+    },
+    {
+      "legacy": "shadow.overlay",
+      "candidate": "shadow.overlay",
+      "legacy_value": {
+        "color": "#402B2430",
+        "offsetX": "0px",
+        "offsetY": "16px",
+        "blur": "44px",
+        "spread": "-12px"
+      },
+      "candidate_value": {
+        "color": "#402B2430",
+        "offsetX": "0px",
+        "offsetY": "16px",
+        "blur": "44px",
+        "spread": "-12px"
+      },
+      "equal": true
+    },
+    {
+      "legacy": "shadow.modal",
+      "candidate": "shadow.modal",
+      "legacy_value": {
+        "color": "#2B211D42",
+        "offsetX": "0px",
+        "offsetY": "24px",
+        "blur": "72px",
+        "spread": "-16px"
+      },
+      "candidate_value": {
+        "color": "#2B211D42",
+        "offsetX": "0px",
+        "offsetY": "24px",
+        "blur": "72px",
+        "spread": "-16px"
+      },
+      "equal": true
+    },
+    {
+      "legacy": "motion.duration.micro",
+      "candidate": "motion.duration.micro",
+      "legacy_value": "140ms",
+      "candidate_value": "140ms",
+      "equal": true
+    },
+    {
+      "legacy": "motion.duration.standard",
+      "candidate": "motion.duration.standard",
+      "legacy_value": "220ms",
+      "candidate_value": "220ms",
+      "equal": true
+    },
+    {
+      "legacy": "motion.duration.emphasized",
+      "candidate": "motion.duration.emphasized",
+      "legacy_value": "360ms",
+      "candidate_value": "360ms",
+      "equal": true
+    },
+    {
+      "legacy": "motion.easing.standard",
+      "candidate": "motion.easing.standard",
+      "legacy_value": [
+        0.2,
+        0,
+        0,
+        1
+      ],
+      "candidate_value": [
+        0.2,
+        0,
+        0,
+        1
+      ],
+      "equal": true
+    },
+    {
+      "legacy": "motion.easing.enter",
+      "candidate": "motion.easing.enter",
+      "legacy_value": [
+        0,
+        0,
+        0.2,
+        1
+      ],
+      "candidate_value": [
+        0,
+        0,
+        0.2,
+        1
+      ],
+      "equal": true
+    },
+    {
+      "legacy": "motion.easing.exit",
+      "candidate": "motion.easing.exit",
+      "legacy_value": [
+        0.4,
+        0,
+        1,
+        1
+      ],
+      "candidate_value": [
+        0.4,
+        0,
+        1,
+        1
+      ],
+      "equal": true
+    },
+    {
+      "legacy": "component.navigation.height",
+      "candidate": "component.navigation.height",
+      "legacy_value": "72px",
+      "candidate_value": "72px",
+      "equal": true
+    },
+    {
+      "legacy": "component.navigation.mobile-height",
+      "candidate": "component.navigation.mobile-height",
+      "legacy_value": "64px",
+      "candidate_value": "64px",
+      "equal": true
+    },
+    {
+      "legacy": "component.navigation.link-gap",
+      "candidate": "component.navigation.link-gap",
+      "legacy_value": "24px",
+      "candidate_value": "24px",
+      "equal": true
+    },
+    {
+      "legacy": "component.button.height-sm",
+      "candidate": "component.button.height-sm",
+      "legacy_value": "44px",
+      "candidate_value": "44px",
+      "equal": true
+    },
+    {
+      "legacy": "component.button.height-md",
+      "candidate": "component.button.height-md",
+      "legacy_value": "48px",
+      "candidate_value": "48px",
+      "equal": true
+    },
+    {
+      "legacy": "component.button.height-lg",
+      "candidate": "component.button.height-lg",
+      "legacy_value": "56px",
+      "candidate_value": "56px",
+      "equal": true
+    },
+    {
+      "legacy": "component.button.padding-inline-sm",
+      "candidate": "component.button.padding-inline-sm",
+      "legacy_value": "16px",
+      "candidate_value": "16px",
+      "equal": true
+    },
+    {
+      "legacy": "component.button.padding-inline-md",
+      "candidate": "component.button.padding-inline-md",
+      "legacy_value": "20px",
+      "candidate_value": "20px",
+      "equal": true
+    },
+    {
+      "legacy": "component.button.padding-inline-lg",
+      "candidate": "component.button.padding-inline-lg",
+      "legacy_value": "24px",
+      "candidate_value": "24px",
+      "equal": true
+    },
+    {
+      "legacy": "component.button.icon-only",
+      "candidate": "component.button.icon-only",
+      "legacy_value": "44px",
+      "candidate_value": "44px",
+      "equal": true
+    },
+    {
+      "legacy": "component.input.height",
+      "candidate": "component.input.height",
+      "legacy_value": "48px",
+      "candidate_value": "48px",
+      "equal": true
+    },
+    {
+      "legacy": "component.input.padding-inline",
+      "candidate": "component.input.padding-inline",
+      "legacy_value": "14px",
+      "candidate_value": "14px",
+      "equal": true
+    },
+    {
+      "legacy": "component.input.textarea-min-height",
+      "candidate": "component.input.textarea-min-height",
+      "legacy_value": "120px",
+      "candidate_value": "120px",
+      "equal": true
+    },
+    {
+      "legacy": "component.card.padding",
+      "candidate": "component.card.padding",
+      "legacy_value": "20px",
+      "candidate_value": "20px",
+      "equal": true
+    },
+    {
+      "legacy": "component.card.gap",
+      "candidate": "component.card.gap",
+      "legacy_value": "16px",
+      "candidate_value": "16px",
+      "equal": true
+    },
+    {
+      "legacy": "component.badge.height",
+      "candidate": "component.badge.height",
+      "legacy_value": "28px",
+      "candidate_value": "28px",
+      "equal": true
+    },
+    {
+      "legacy": "component.badge.padding-inline",
+      "candidate": "component.badge.padding-inline",
+      "legacy_value": "10px",
+      "candidate_value": "10px",
+      "equal": true
+    },
+    {
+      "legacy": "component.badge.gap",
+      "candidate": "component.badge.gap",
+      "legacy_value": "4px",
+      "candidate_value": "4px",
+      "equal": true
+    },
+    {
+      "legacy": "component.touch-target.minimum",
+      "candidate": "component.touch-target.minimum",
+      "legacy_value": "44px",
+      "candidate_value": "44px",
+      "equal": true
+    },
+    {
+      "legacy": "component.icon.grid",
+      "candidate": "component.icon.grid",
+      "legacy_value": "24px",
+      "candidate_value": "24px",
+      "equal": true
+    },
+    {
+      "legacy": "component.icon.size-sm",
+      "candidate": "component.icon.size-sm",
+      "legacy_value": "16px",
+      "candidate_value": "16px",
+      "equal": true
+    },
+    {
+      "legacy": "component.icon.size-md",
+      "candidate": "component.icon.size-md",
+      "legacy_value": "20px",
+      "candidate_value": "20px",
+      "equal": true
+    },
+    {
+      "legacy": "component.icon.size-lg",
+      "candidate": "component.icon.size-lg",
+      "legacy_value": "24px",
+      "candidate_value": "24px",
+      "equal": true
+    },
+    {
+      "legacy": "component.icon.size-xl",
+      "candidate": "component.icon.size-xl",
+      "legacy_value": "32px",
+      "candidate_value": "32px",
+      "equal": true
+    },
+    {
+      "legacy": "component.icon.stroke-width",
+      "candidate": "component.icon.stroke-width",
+      "legacy_value": 1.75,
+      "candidate_value": 1.75,
+      "equal": true
+    },
+    {
+      "legacy": "component.icon.control-gap",
+      "candidate": "component.icon.control-gap",
+      "legacy_value": "8px",
+      "candidate_value": "8px",
+      "equal": true
+    },
+    {
+      "legacy": "component.focus.ring-width",
+      "candidate": "component.focus.ring-width",
+      "legacy_value": "3px",
+      "candidate_value": "3px",
+      "equal": true
+    },
+    {
+      "legacy": "component.focus.ring-offset",
+      "candidate": "component.focus.ring-offset",
+      "legacy_value": "3px",
+      "candidate_value": "3px",
+      "equal": true
+    },
+    {
+      "legacy": "component.quantity.height",
+      "candidate": "component.quantity.height",
+      "legacy_value": "48px",
+      "candidate_value": "48px",
+      "equal": true
+    },
+    {
+      "legacy": "component.quantity.button-width",
+      "candidate": "component.quantity.button-width",
+      "legacy_value": "44px",
+      "candidate_value": "44px",
+      "equal": true
+    },
+    {
+      "legacy": "component.feedback.accent-width",
+      "candidate": "component.feedback.accent-width",
+      "legacy_value": "4px",
+      "candidate_value": "4px",
+      "equal": true
+    },
+    {
+      "legacy": "component.feedback.padding",
+      "candidate": "component.feedback.padding",
+      "legacy_value": "16px",
+      "candidate_value": "16px",
+      "equal": true
+    }
+  ],
+  "all_selected_values_equal": true,
+  "selected_values_count": 165,
+  "legacy_full_html_bytes_equal": true,
+  "legacy_section_order": [
+    "hero",
+    "trust",
+    "harvest",
+    "categories",
+    "cultivation",
+    "delivery",
+    "home-box",
+    "restaurant",
+    "journal",
+    "closing"
+  ],
+  "candidate_section_order": [
+    "hero",
+    "trust",
+    "harvest",
+    "categories",
+    "cultivation",
+    "delivery",
+    "home-box",
+    "restaurant",
+    "journal",
+    "closing"
+  ],
+  "section_source_hashes": {
+    "hero": "b4a2a633349e4711f260633cf4be9a0240739c25fb483896d123777106a3eb41",
+    "trust": "262f98917867ada777bad960a9e88ffc0d5a08e8d1f3877351e14282d2c3278d",
+    "harvest": "0465dbc42d467143d60dba12a7c0f39df17c3a291bae52f6eed7d7856e6301f9",
+    "categories": "ae73828716b42b4f65bf4f55b9568eccad4057ce71d495614f3733a39189639e",
+    "cultivation": "a37d2444d23c719f47d292db46e8cf9b1fc378f020961eeaff2867e411890f01",
+    "delivery": "4f120109d48e4ca2d568c3d28a1b515a50e2583c4616d0e53510aa785fd9f257",
+    "home-box": "0cece9213ecb217c76b18bc2cff03050503cfd6fee6ff2180711e9bda31b0cd3",
+    "restaurant": "10a4efafe1ecab2bce65991da80c09c766bde20146a8784e809af1270bc3ef0d",
+    "journal": "64b2f4c13e8d749101457af00e6c3ebcae415d48f7791781bed20d05d546fc7b",
+    "closing": "18beba40d6697757ae4e112a3acba14a8606e6fedc59cb297316dbd7f23a0259"
+  },
+  "image_checks": [
+    {
+      "path": "../../assets/hero-mushrooms.webp",
+      "alt": "Button mushrooms growing in a tray",
+      "same_bytes": true
+    },
+    {
+      "path": "../../assets/blue-oyster.webp",
+      "alt": "Blue Oyster mushroom",
+      "same_bytes": true
+    },
+    {
+      "path": "../../assets/yellow-oyster.webp",
+      "alt": "Yellow Oyster mushroom",
+      "same_bytes": true
+    },
+    {
+      "path": "../../assets/radish-microgreens.webp",
+      "alt": "Radish microgreens",
+      "same_bytes": true
+    },
+    {
+      "path": "../../assets/sunflower-shoots.webp",
+      "alt": "Sunflower shoots",
+      "same_bytes": true
+    },
+    {
+      "path": "../../assets/cultivation-microgreens.webp",
+      "alt": "Microgreens growing on indoor racks",
+      "same_bytes": true
+    },
+    {
+      "path": "../../assets/yellow-oyster.webp",
+      "alt": "Yellow Oyster mushrooms",
+      "same_bytes": true
+    },
+    {
+      "path": "../../assets/mustard-microgreens.webp",
+      "alt": "Mustard microgreens",
+      "same_bytes": true
+    },
+    {
+      "path": "../../assets/golden-oyster.webp",
+      "alt": "Golden Oyster mushrooms",
+      "same_bytes": true
+    },
+    {
+      "path": "../../assets/broccoli-microgreens.webp",
+      "alt": "Broccoli microgreens",
+      "same_bytes": true
+    }
+  ],
+  "font_hashes_match": true,
+  "rendered_equivalence": {
+    "status": "reviewed-with-permitted-differences",
+    "evidence": [
+      "quality-review.json",
+      "validation/pdf-qa.json",
+      "validation/browser-qa.json",
+      "validation/rendered-contrast.json"
+    ],
+    "differences": "Accepted purpose/component/imagery additions; semantic contrast repairs and responsive geometry corrections; no pixel-identical rendering claim",
+    "selected_original_values_equal": true
+  },
+  "release_status": "PROPOSED"
+}

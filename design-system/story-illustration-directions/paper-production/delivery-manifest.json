@@ -1,0 +1,50 @@
+[
+  {
+    "file": "01-terrace-768.webp",
+    "width": 768,
+    "height": 512,
+    "bytes": 20460
+  },
+  {
+    "file": "01-terrace-1536.webp",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 79092
+  },
+  {
+    "file": "03-purpose-768.webp",
+    "width": 768,
+    "height": 512,
+    "bytes": 38334
+  },
+  {
+    "file": "03-purpose-1536.webp",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 142526
+  },
+  {
+    "file": "05-table-768.webp",
+    "width": 768,
+    "height": 512,
+    "bytes": 35442
+  },
+  {
+    "file": "05-table-1536.webp",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 114692
+  },
+  {
+    "file": "02-indoor-growing-768.webp",
+    "width": 768,
+    "height": 512,
+    "bytes": 41342
+  },
+  {
+    "file": "02-indoor-growing-1536.webp",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 151048
+  }
+]

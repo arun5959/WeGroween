@@ -1,0 +1,151 @@
+{
+  "status": "PROPOSED",
+  "date": "2026-10-07",
+  "mode": "EXTEND",
+  "scope": "Contact-page structure comparison only. Existing /help route and canonical DLS remain unchanged.",
+  "selectionOwner": "User",
+  "recommended": "desk",
+  "approvedFoundation": "Cultivated Editorial; current Soil & Saffron palette, Fraunces + DM Sans, Field Notes icons and existing primary button states.",
+  "routeProposal": {
+    "path": "/help",
+    "label": "Contact",
+    "requiresSelection": true,
+    "newPageCount": 0
+  },
+  "commonCopy": {
+    "eyebrow": "Contact WeGroween",
+    "title": "Let’s talk about your next harvest.",
+    "intro": "Questions about mushrooms, microgreens or produce for your kitchen? Get in touch with WeGroween.",
+    "topics": [
+      {
+        "id": "produce",
+        "name": "Produce questions",
+        "icon": "mushroom",
+        "description": "Ask about mushrooms, microgreens or pairings.",
+        "guidance": "Tell us which produce you’re interested in and what you’d like to know.",
+        "subject": "Produce enquiry"
+      },
+      {
+        "id": "delivery",
+        "name": "Delivery questions",
+        "icon": "delivery",
+        "description": "Discuss where your harvest needs to go.",
+        "guidance": "Include your location and preferred produce. Delivery areas, charges and timing are still being prepared for this catalogue preview.",
+        "subject": "Delivery enquiry"
+      },
+      {
+        "id": "restaurant",
+        "name": "Restaurant enquiries",
+        "icon": "cloche",
+        "description": "Start a conversation about your kitchen.",
+        "guidance": "Share your kitchen’s name, produce preferences, expected quantities and location.",
+        "subject": "Restaurant supply enquiry"
+      }
+    ]
+  },
+  "facts": {
+    "email": "wegroween@gmail.com",
+    "phone": "7958614599",
+    "location": "Gohana",
+    "instagram": "https://www.instagram.com/wegroween_in/",
+    "youtube": "Visible label only; no profile URL supplied",
+    "facebook": "Visible label only; no profile URL supplied",
+    "source": "Business details supplied by user on 2026-10-07; Instagram carried from legacy website; current routes and catalogue verified locally."
+  },
+  "directions": [
+    {
+      "id": "desk",
+      "name": "The Harvest Desk",
+      "short": "Contact first",
+      "thesis": "A calm editorial opening with a clear contact panel; enquiry topics sit underneath.",
+      "benefit": "The fastest route to the confirmed email and phone number. A compact topic guide helps visitors explain their needs.",
+      "tradeoff": "Every enquiry starts through email or phone; this does not create a website message inbox.",
+      "structure": [
+        "Split introduction and direct contact panel",
+        "Three equal enquiry-topic choices with shared guidance",
+        "Existing brand footer"
+      ],
+      "motion": "140ms topic-selection colour feedback; no hero animation.",
+      "mobile": "Heading, contact panel, topic choices and guidance stack in that priority."
+    },
+    {
+      "id": "letter",
+      "name": "A Letter to WeGroween",
+      "short": "Enquiry first",
+      "thesis": "A structured email draft gives a visitor a little help putting their question into words.",
+      "benefit": "Best when messages need context, especially produce preferences and restaurant quantities.",
+      "tradeoff": "More effort than a direct contact page. This preview prepares an email draft; a native send form would need a separately chosen delivery service.",
+      "structure": [
+        "Editorial introduction",
+        "Four-field email draft with direct contact details beside it",
+        "Existing brand footer"
+      ],
+      "motion": "140ms focus and error feedback; draft region appears without movement.",
+      "mobile": "Direct email and phone remain visible above the form; fields stack vertically."
+    },
+    {
+      "id": "guide",
+      "name": "The Kitchen Guide",
+      "short": "Questions first",
+      "thesis": "A short, useful question guide sits alongside direct contact, with an enquiry action for each topic.",
+      "benefit": "Helps visitors understand what information to include before contacting the business.",
+      "tradeoff": "Requires more content discipline; keep answers specific and avoid becoming a long FAQ page.",
+      "structure": [
+        "Editorial introduction",
+        "Three question accordions beside direct contact",
+        "Existing brand footer"
+      ],
+      "motion": "Native details expansion; no animated height or scroll hijacking.",
+      "mobile": "Direct contact first, then the three questions."
+    }
+  ],
+  "constraints": [
+    "No production source edits, dependencies, backend, deployment or messages sent.",
+    "No invented opening hours, response times, exact farm address, delivery coverage, certifications or harvest schedules.",
+    "No invented Facebook or YouTube URLs; show their current unlinked labels only in the shared footer.",
+    "No new palette, typography or visual language. Existing selected paper artwork remains elsewhere; contact information leads here."
+  ],
+  "interactionContract": "Gallery switches comparable structures. Topic buttons update guidance and email subject. Draft form validates locally and produces a mailto link without sending or storing data. FAQ uses native keyboard-accessible details. No-JS exposes all three directions and direct contact links.",
+  "reducedMotion": "No decorative movement; transitions disabled.",
+  "research": {
+    "method": "Bounded local evidence review",
+    "sources": [
+      "src/content/contact.js",
+      "src/content/foundation.js",
+      "docs/PAGE_MANIFEST.json",
+      "design-system/design-language.json",
+      "design-system/tokens.css"
+    ],
+    "confidence": "High for supplied contact details and current route state; visitor preference is a design hypothesis, not user-research evidence."
+  },
+  "purpose": [
+    {
+      "id": "contact-sheet",
+      "need": "Reach the business without hunting",
+      "placement": "Beside introduction or above form/FAQ on mobile",
+      "prominence": "Primary in desk; consistently visible in all three",
+      "removalCost": "Confirmed contact channels become hard to find",
+      "hypothesis": "Direct contact will suit the current early-stage catalogue better than a long form."
+    },
+    {
+      "id": "topic-guide",
+      "need": "Know what information to include",
+      "placement": "Under direct contact in desk, inside form selection in letter, as questions in guide",
+      "prominence": "Secondary",
+      "removalCost": "Less useful enquiry context",
+      "hypothesis": "Three crop-specific topics are sufficient initially."
+    },
+    {
+      "id": "draft-form",
+      "need": "Compose a structured question",
+      "placement": "Primary in letter only",
+      "prominence": "Primary with direct contact fallback",
+      "removalCost": "Visitors compose in their email app instead",
+      "hypothesis": "A form is worthwhile only if it improves message clarity."
+    }
+  ],
+  "delivery": {
+    "only": "Functional gallery, direction JSON and Markdown, screenshots, verification report, source scope baseline.",
+    "fullOnboarding": "Not applicable to this bounded extension; no PDF manuals or canonical token rewrite."
+  }
+}

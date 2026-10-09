@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en" data-palette="orchard" data-type="newsreader" data-density="dual">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WeGroween — Identity System Options</title>
+  <meta name="description" content="Interactive comparison of proposed WeGroween palettes, typography and density systems.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400..800&family=Fraunces:opsz,wght,SOFT,WONK@9..144,300..800,0..100,0..1&family=Manrope:wght@400..800&family=Newsreader:opsz,wght@6..72,400..700&family=Newsreader:ital,opsz,wght@1,6..72,400..700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <style>
+    * { box-sizing: border-box; }
+    :root {
+      --brand-primary:#223225; --brand-secondary:#7D3F54; --accent:#C89538;
+      --background:#F5F0E6; --surface:#FFFCF5; --surface-elevated:#FFFFFF;
+      --text-primary:#1E251D; --text-secondary:#53604F; --text-inverse:#FFF9EE;
+      --border:#CED2C8; --border-strong:#7C8978; --focus:#006C5B;
+      --success:#226348; --warning:#995300; --error:#A52A3B; --information:#245B78;
+      --display:"Newsreader",Georgia,serif; --body:"Manrope","Segoe UI",Arial,sans-serif;
+      --container:1280px; --gap:24px; --section:96px; --card-radius:14px;
+    }
+    html[data-palette="soil"] {
+      --brand-primary:#402B24; --brand-secondary:#98513D; --accent:#D49A25;
+      --background:#FBF4E8; --surface:#FFFDF7; --text-primary:#2B211D; --text-secondary:#66544B;
+      --text-inverse:#FFF8EC; --border:#DDD1C2; --border-strong:#92796C; --focus:#006C5B;
+      --success:#2E654A; --warning:#925100; --error:#A42C3B; --information:#285C78;
+    }
+    html[data-palette="plum"] {
+      --brand-primary:#402238; --brand-secondary:#50633B; --accent:#B54836;
+      --background:#F6F1E9; --surface:#FFFDF9; --text-primary:#251D23; --text-secondary:#62545D;
+      --text-inverse:#FFF9F2; --border:#D8CED3; --border-strong:#8A737D; --focus:#006B65;
+      --success:#35633C; --warning:#8D5600; --error:#A3283D; --information:#2E5D78;
+    }
+    html[data-type="fraunces"] { --display:"Fraunces",Georgia,serif; --body:"DM Sans","Segoe UI",Arial,sans-serif; }
+    html[data-density="gallery"] { --container:1440px; --gap:32px; --section:144px; --card-radius:20px; }
+    html[data-density="market"] { --container:1200px; --gap:16px; --section:64px; --card-radius:10px; }
+    body { margin:0; background:var(--background); color:var(--text-primary); font-family:var(--body); transition:background .22s,color .22s; }
+    button, input { font:inherit; }
+    button:focus-visible, input:focus-visible, a:focus-visible { outline:3px solid var(--focus); outline-offset:3px; }
+    .shell { width:min(var(--container),calc(100% - 40px)); margin-inline:auto; }
+    .labbar { background:#171a17; color:#f8f5ed; padding:18px 0; position:sticky; top:0; z-index:10; box-shadow:0 1px 0 rgba(255,255,255,.12); }
+    .labgrid { display:grid; grid-template-columns:1fr auto; align-items:center; gap:20px; }
+    .controls { display:flex; align-items:center; justify-content:flex-end; flex-wrap:wrap; gap:16px; }
+    .group { display:flex; align-items:center; gap:6px; }
+    .group-label { font-size:10px; text-transform:uppercase; letter-spacing:.13em; color:#b9c0b7; margin-right:3px; }
+    .chip { color:#eef0eb; background:transparent; border:1px solid #596059; border-radius:999px; padding:8px 10px; cursor:pointer; font-size:12px; }
+    .chip[aria-pressed="true"] { background:#f5f1e8; border-color:#f5f1e8; color:#151815; }
+    .nav { display:flex; align-items:center; justify-content:space-between; gap:24px; padding:22px 0; border-bottom:1px solid var(--border); }
+    .brand { font:italic 600 28px var(--display); letter-spacing:-.035em; }
+    .navlinks { display:flex; align-items:center; gap:28px; }
+    .nav a { color:inherit; text-decoration:none; font-size:14px; }
+    .btn { min-height:48px; display:inline-flex; align-items:center; justify-content:center; gap:8px; padding:12px 20px; border-radius:10px; border:1px solid var(--brand-primary); text-decoration:none; font-weight:750; }
+    .btn-primary { background:var(--brand-primary); color:var(--text-inverse)!important; }
+    .btn-secondary { color:var(--brand-primary); background:transparent; }
+    .hero { display:grid; grid-template-columns:1.05fr .95fr; gap:var(--gap); padding:var(--section) 0; align-items:center; }
+    .kicker, .label { color:var(--brand-secondary); font-size:11px; font-weight:800; letter-spacing:.14em; text-transform:uppercase; }
+    h1 { font:500 clamp(54px,7vw,96px)/.92 var(--display); letter-spacing:-.055em; margin:18px 0 24px; max-width:9ch; }
+    h1 em { color:var(--brand-secondary); font-weight:500; }
+    .lead { max-width:52ch; color:var(--text-secondary); font-size:19px; line-height:1.62; }
+    .actions { display:flex; flex-wrap:wrap; gap:12px; margin-top:30px; }
+    .hero-media { min-height:560px; overflow:hidden; border-radius:var(--card-radius); position:relative; border:1px solid var(--border-strong); }
+    .hero-media img { width:100%; height:100%; object-fit:cover; position:absolute; inset:0; }
+    .media-note { position:absolute; right:16px; bottom:16px; background:var(--surface); border:1px solid var(--border); color:var(--text-primary); padding:12px 14px; font-size:11px; font-weight:750; letter-spacing:.08em; }
+    .trust { display:grid; grid-template-columns:repeat(3,1fr); border-block:1px solid var(--border-strong); }
+    .trust article { padding:28px; border-right:1px solid var(--border); }
+    .trust article:last-child { border-right:0; }
+    .trust h2 { font:600 23px/1.15 var(--display); margin:0 0 8px; }
+    .trust p { margin:0; color:var(--text-secondary); font-size:14px; line-height:1.5; }
+    .showcase { padding:var(--section) 0; }
+    .section-head { display:flex; justify-content:space-between; align-items:end; gap:20px; margin-bottom:30px; }
+    .section-head h2 { font:550 clamp(36px,4vw,56px)/1 var(--display); letter-spacing:-.04em; margin:8px 0 0; }
+    .products { display:grid; grid-template-columns:repeat(3,1fr); gap:var(--gap); }
+    .card { background:var(--surface); border:1px solid var(--border); border-radius:var(--card-radius); overflow:hidden; }
+    .card img { width:100%; aspect-ratio:4/3; object-fit:cover; display:block; border-bottom:1px solid var(--border); }
+    .card-body { padding:22px; }
+    .card-meta { display:flex; justify-content:space-between; gap:12px; align-items:center; }
+    .badge { display:inline-flex; align-items:center; min-height:27px; padding:5px 9px; border-radius:999px; border:1px solid currentColor; color:var(--success); font-size:11px; font-weight:750; }
+    .card h3 { font:600 26px/1.12 var(--display); margin:18px 0 8px; }
+    .card p { color:var(--text-secondary); font-size:14px; line-height:1.55; }
+    .price { font-weight:800; }
+    .component-grid { display:grid; grid-template-columns:1fr 1fr; gap:var(--gap); margin-top:var(--gap); }
+    .panel { background:var(--surface); border:1px solid var(--border); border-radius:var(--card-radius); padding:28px; }
+    .panel h3 { font:600 27px/1.1 var(--display); margin:0 0 8px; }
+    .panel > p { color:var(--text-secondary); line-height:1.55; }
+    .field { margin-top:20px; }
+    .field label { display:block; font-size:13px; font-weight:750; margin-bottom:8px; }
+    .field input { width:100%; min-height:48px; background:var(--surface-elevated); color:var(--text-primary); border:1px solid var(--border-strong); border-radius:10px; padding:12px 14px; }
+    .states { display:flex; gap:10px; flex-wrap:wrap; margin-top:20px; }
+    .state { padding:8px 10px; border-radius:8px; font-size:12px; font-weight:750; border:1px solid currentColor; }
+    .success { color:var(--success); }.warning { color:var(--warning); }.error { color:var(--error); }.info { color:var(--information); }
+    .decision { background:var(--brand-primary); color:var(--text-inverse); padding:60px 0; margin-top:var(--section); }
+    .decision-grid { display:grid; grid-template-columns:1fr 1fr; gap:40px; }
+    .decision h2 { font:550 clamp(38px,5vw,64px)/.98 var(--display); letter-spacing:-.04em; margin:8px 0 18px; }
+    .decision p { opacity:.78; line-height:1.6; }
+    .decision ol { margin:0; padding-left:20px; line-height:1.8; }
+    footer { padding:28px 0 44px; color:var(--text-secondary); font-size:12px; }
+    @media(max-width:900px){
+      .labgrid,.hero,.decision-grid { grid-template-columns:1fr; }
+      .controls { justify-content:flex-start; }
+      .navlinks a:not(.btn) { display:none; }
+      .hero-media { min-height:420px; }
+      .trust,.products,.component-grid { grid-template-columns:1fr; }
+      .trust article { border-right:0; border-bottom:1px solid var(--border); }
+    }
+    @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important;animation:none!important;}}
+  </style>
+</head>
+<body>
+  <header class="labbar">
+    <div class="shell labgrid">
+      <div><strong>WeGroween Identity Lab</strong><div style="font-size:12px;color:#aeb5ad;margin-top:3px">Cultivated Editorial · proposed options</div></div>
+      <div class="controls">
+        <div class="group" aria-label="Palette options"><span class="group-label">Palette</span><button class="chip" data-set="palette" data-value="orchard" aria-pressed="true">C1 Orchard</button><button class="chip" data-set="palette" data-value="soil" aria-pressed="false">C2 Soil</button><button class="chip" data-set="palette" data-value="plum" aria-pressed="false">C3 Plum</button></div>
+        <div class="group" aria-label="Typography options"><span class="group-label">Type</span><button class="chip" data-set="type" data-value="newsreader" aria-pressed="true">T1 Newsreader</button><button class="chip" data-set="type" data-value="fraunces" aria-pressed="false">T2 Fraunces</button></div>
+        <div class="group" aria-label="Density options"><span class="group-label">Grid</span><button class="chip" data-set="density" data-value="dual" aria-pressed="true">G1 Dual</button><button class="chip" data-set="density" data-value="gallery" aria-pressed="false">G2 Gallery</button><button class="chip" data-set="density" data-value="market" aria-pressed="false">G3 Market</button></div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="shell">
+      <nav class="nav" aria-label="Example main navigation">
+        <div class="brand">WeGroween</div>
+        <div class="navlinks"><a href="#shop">Shop</a><a href="#cultivation">Our cultivation</a><a href="#restaurants">For restaurants</a><a href="#basket" class="btn btn-primary">Basket · 2</a></div>
+      </nav>
+
+      <section class="hero">
+        <div>
+          <div class="kicker">The October harvest · Edition 04</div>
+          <h1>Grown with <em>quiet precision.</em></h1>
+          <p class="lead">Remarkable mushrooms, microgreens and seasonal produce—cultivated for depth of flavour and delivered with their story intact.</p>
+          <div class="actions"><a class="btn btn-primary" href="#shop">Shop this harvest</a><a class="btn btn-secondary" href="#cultivation">Read cultivation notes</a></div>
+        </div>
+        <div class="hero-media"><img src="../../../../../Mushroom main.webp" alt="Mushrooms growing in a tray"><div class="media-note">READY / OYSTER · EARTHY · SILKEN</div></div>
+      </section>
+
+      <section class="trust" aria-label="Trust principles">
+        <article><h2>Harvested to order</h2><p>See what is growing, when it will be ready, and the delivery window before checkout.</p></article>
+        <article><h2>Traceable cultivation</h2><p>Source, variety, growing practice and freshness guidance beside every product.</p></article>
+        <article><h2>For home and service</h2><p>Household shopping first, with a dedicated supply path for professional kitchens.</p></article>
+      </section>
+
+      <section class="showcase" id="shop">
+        <div class="section-head"><div><div class="label">Ready this week</div><h2>The current harvest</h2></div><a class="btn btn-secondary" href="#">View all produce</a></div>
+        <div class="products">
+          <article class="card"><img src="../../../../../Blue Gray Oyster.webp" alt="Blue grey oyster mushrooms"><div class="card-body"><div class="card-meta"><span class="badge">Ready now</span><span class="price">₹180 / 200g</span></div><h3>Blue-grey oyster</h3><p>Silken texture, savoury depth and delicate edges. Harvested within twelve hours of dispatch.</p><a class="btn btn-primary" href="#">Add to basket</a></div></article>
+          <article class="card"><img src="../../../../../Raddish.webp" alt="Radish microgreens"><div class="card-body"><div class="card-meta"><span class="badge">Harvest Fri</span><span class="price">₹120 / 75g</span></div><h3>Radish microgreens</h3><p>Peppery, crisp and vivid. Finish poha, chaat, eggs or salads just before serving.</p><a class="btn btn-primary" href="#">Reserve harvest</a></div></article>
+          <article class="card"><img src="../../../../../Broccoli.webp" alt="Broccoli microgreens"><div class="card-body"><div class="card-meta"><span class="badge">Limited</span><span class="price">₹150 / 75g</span></div><h3>Broccoli microgreens</h3><p>Mild brassica flavour with a clean finish. Grown in small batches for peak freshness.</p><a class="btn btn-primary" href="#">Add to basket</a></div></article>
+        </div>
+
+        <div class="component-grid">
+          <section class="panel"><div class="label">Form behavior</div><h3>Check your delivery area</h3><p>Serviceability appears before shoppers invest time building a perishable basket.</p><div class="field"><label for="pincode">Delivery pincode</label><input id="pincode" inputmode="numeric" autocomplete="postal-code" placeholder="Enter six-digit pincode"></div><div class="actions"><button class="btn btn-primary" type="button">Check availability</button></div></section>
+          <section class="panel"><div class="label">Semantic states</div><h3>Status without color alone</h3><p>Every status includes text, shape and programmatic meaning. Color reinforces rather than carries the message.</p><div class="states"><span class="state success">✓ Payment received</span><span class="state warning">! Low harvest stock</span><span class="state error">× Delivery unavailable</span><span class="state info">i Next harvest Friday</span></div></section>
+        </div>
+      </section>
+    </div>
+
+    <section class="decision">
+      <div class="shell decision-grid">
+        <div><div class="label" style="color:var(--accent)">Decision preview</div><h2>One territory. Multiple credible systems.</h2><p>The recommended bundle is C1 Orchard Ink, T1 Newsreader + Manrope and G1 Dual Rhythm. Switch the controls above and judge what changes in warmth, rarity, readability and shopping efficiency.</p></div>
+        <div><strong>Choose or combine:</strong><ol><li>Tone: Cultivated Authority, Warm Abundance or Exacting Grower</li><li>Palette: C1 Orchard, C2 Soil or C3 Plum</li><li>Typography: T1 Newsreader or T2 Fraunces</li><li>Grid: G1 Dual, G2 Gallery or G3 Market</li><li>Motion: M1 Restrained, M2 Expressive or M3 Near Static</li></ol></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="shell">Proposed identity lab · 2026-10-02 · Values remain non-canonical until approved.</footer>
+  <script type="module">
+    document.querySelectorAll('[data-set]').forEach((button) => {
+      button.addEventListener('click', () => {
+        const group = button.dataset.set;
+        document.documentElement.dataset[group] = button.dataset.value;
+        document.querySelectorAll(`[data-set="${group}"]`).forEach((peer) => peer.setAttribute('aria-pressed', String(peer === button)));
+      });
+    });
+  </script>
+</body>
+</html>

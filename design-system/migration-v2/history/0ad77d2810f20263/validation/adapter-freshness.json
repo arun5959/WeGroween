@@ -1,0 +1,32 @@
+{
+  "basis": "0e46c466c3fec3f6915d9ccc36fd5d4e5dce4fb87dccddd0bb4cb78f871ae5d6",
+  "files": {
+    "tokens.css": "0d1060bd119abf68b6e8e7c197f5efa9ecb888991b94d1e6d432ba192ff74f6b",
+    "artifact/index.html": "06d3f97e8f634c40598242f40559fe225200311215a1120478584cc9c646446a",
+    "BRAND_IDENTITY_BLUEPRINT.md": "f2fba49b6ab976653f5b8cc3c1b18bc3c96f01ce3e303aaf4d76521c813e240e",
+    "IMAGERY_DIRECTION_GUIDE.md": "b9240ae2d07dd134bb73c20e768d7a5d75bd1247d363448b8b893cfd68990b2f",
+    "DESIGN_SYSTEM.md": "e01038befaec0c5b12b492e15ba0595ff46ba49a68175c20265e25b3428b2702",
+    "decisions.md": "010dc2656d0436d8b4d107d69c492b0f52060a223ad64f6964fdf6b481c0827f",
+    "research-summary.md": "b1276aa67ab5143f7e102fc5895c03dbfe6e010386b531c6666ba0c5070c4e73",
+    "artifact/imagery-direction-guide.html": "95d31ca4bf79cbad40b71bcf4257f33bb8353566ce36aae1bb22a7e4597eb8b4",
+    "artifact/design-direction-manual.html": "8778937d2df4636fba0db62772470e81b77f6f0c75bfac864326746981a9fb62",
+    "DESIGN_DIRECTION_MANUAL.md": "2a1c283c9b797739cca176367f4dbed0fe57b5c687de653d52d25e778907a21a",
+    "pdf/wegroween-imagery-direction-guide.pdf": "bce1df30b5d73cd1ca9677c922b2edce56706c46e1767e8f0dc7e528ee6f91e5",
+    "pdf/wegroween-design-direction-manual.pdf": "bfbae96e46f36c95e6910d169bb7de360be2d73f6c92cde8e86d747106f33f7b",
+    "artifact/prototype-palette-2.html": "3c7aecad617fe8ab23ab5dc9213abf8b4fdcdd1071c0f9c3e94692dad76f69ce",
+    "artifact/prototype-palette-2.css": "bfd1b41384bd32133bb7c1c718ea35f7dce6af73e16e3e58153a36fe8b1b4f6d",
+    "artifact/homepage-palette-2.html": "4e6b62dcf2458d986d7484c9ebe7595ed62c580c0882232e9675201da0eb4121",
+    "pdf/wegroween-homepage-prototype-palette-2.pdf": "9a64ba445e981f3d8efe9aa802f15b9ca1ca8047aa68765783289349bc86d917",
+    "artifact/prototype-palette-1.html": "5bcfc46157cbd0b61f61fb621a0422b4ebd61b10e4f00f5847d7d2ef581b1cb6",
+    "artifact/prototype-palette-1.css": "fc3f48d774d1773aa31584e7d3cfc1ce04e1f4780b748bd8f85357d78bc01f3b",
+    "artifact/homepage-palette-1.html": "3f555f7df44db2b3620a6288eaee2bf0a65b7c200174483690a15a3d05344555",
+    "pdf/wegroween-homepage-prototype-palette-1.pdf": "495fb36a9d6cb9c07dd791ae58f2d635136b09c3fe2d3b62be5b0d083f93083b",
+    "artifact/prototype-palette-3.html": "04e1b237dc4b55bf86dc5a57cdc7c6692c0430e16a7dd1148198988f7b0f99a5",
+    "artifact/prototype-palette-3.css": "af3da6e30749d19dca2b3795e8c1982f531c9f0b287b64e967095f0aba92b0e7",
+    "artifact/homepage-palette-3.html": "0c4f0c7546b53d240153d49feb234b9cb87be213c6ea9054a373a4a2895421db",
+    "pdf/wegroween-homepage-prototype-palette-3.pdf": "501cd875121d9575b18e61a1932da561cee624a4cb7fd14595ab1cb13e13803a",
+    "prototype-coverage.json": "6f33a8cbc4c56d73fa6aac2a79bc02f2ce2104505184df2761c585f080860742",
+    "components/legacy-aliases.css": "0c2bb5442a0c52e49d8c767e23886ceeaa35493d72d5a4554afeee79d8a4b5c5",
+    "artifact/component-specimen.html": "4710d22bde7e9a5227770f9de9fd2d2a3d6b288271ab968ea24386a035f6cca1"
+  }
+}

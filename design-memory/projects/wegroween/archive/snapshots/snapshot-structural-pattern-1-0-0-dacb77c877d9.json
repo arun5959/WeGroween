@@ -1,0 +1,68 @@
+{
+  "approval_status": "approved-for-reviewed-redacted-reuse",
+  "confidentiality": "reviewed-redacted",
+  "content_hash": "dacb77c877d9570b4391652f01b56292c2abef3f4aabeb8ed190cfede8fec031",
+  "created_at": "2026-10-03T02:53:07+00:00",
+  "creative_direction": {
+    "name": "Cultivated editorial commerce structure",
+    "status": "structure-only"
+  },
+  "decision_leader": "User",
+  "delegated_decisions": [],
+  "delivery_root": "E:\\WeGroween\\GitHub Clone\\WeGroween\\design-memory\\shared\\patterns\\continuous-fresh-produce-commerce-homepage",
+  "excluded": [
+    "client identity",
+    "copy",
+    "contact details",
+    "catalogue data",
+    "images",
+    "pricing",
+    "delivery promises",
+    "confidential operations"
+  ],
+  "files": [
+    {
+      "bytes": 2201,
+      "path": "STRUCTURAL_PATTERN.md",
+      "sha256": "de8d8474f0b35f447d199c3d55987b4c5ef58bad0b0ea982cdbb0f2b42db7f7f"
+    }
+  ],
+  "grid": "Responsive editorial-commerce structure; project-specific values excluded",
+  "homepage_structure": [
+    "Utility and service cues",
+    "Catalogue-first hero with primary and secondary pathways",
+    "Trust band",
+    "Current harvest cards",
+    "Early serviceability check",
+    "Intent-led category curation",
+    "Cultivation evidence",
+    "Delivery journey",
+    "Household bundle",
+    "Restaurant supply pathway",
+    "Editorial guidance",
+    "Closing action, policies and responsive state sheet"
+  ],
+  "knowledge_class": "ARCHIVED",
+  "palette_approach_1": "Not promoted; client identity excluded",
+  "project_id": "wegroween",
+  "project_version": "structural-pattern-1.0.0",
+  "reuse_status": "authorized-reviewed-redacted-structural-reuse",
+  "schema_version": "1.0",
+  "snapshot_id": "snapshot-structural-pattern-1-0-0-dacb77c877d9",
+  "tags": {
+    "archetype": [
+      "household ecommerce",
+      "secondary supply pathway"
+    ],
+    "industry": [
+      "fresh produce",
+      "cultivation-led commerce"
+    ],
+    "pattern": [
+      "continuous homepage",
+      "serviceability before basket",
+      "evidence near action"
+    ]
+  },
+  "typography": "Not promoted; client identity excluded"
+}

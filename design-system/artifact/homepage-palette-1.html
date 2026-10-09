@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WeGroween - Harvest to Home Homepage Prototype</title>
+  <link rel="stylesheet" href="prototype-palette-1.css">
+<style>@font-face{font-family:"Fraunces";src:url("../assets/fraunces-latin-variable.woff2") format("woff2");font-weight:300 900;font-style:normal;font-display:swap}
+@font-face{font-family:"DM Sans";src:url("../assets/dm-sans-latin-variable.woff2") format("woff2");font-weight:300 900;font-style:normal;font-display:swap}
+@font-face{font-family:"Newsreader";src:url("../assets/newsreader-latin-variable.woff2") format("woff2");font-weight:300 900;font-style:normal;font-display:swap}
+@font-face{font-family:"Manrope";src:url("../assets/manrope-latin-variable.woff2") format("woff2");font-weight:300 900;font-style:normal;font-display:swap}
+@font-face{font-family:"Fraunces";src:url("../assets/fraunces-latin-italic-variable.woff2") format("woff2");font-weight:300 800;font-style:italic;font-display:swap}</style><style>
+html,body{background:var(--bg)}
+.homepage{min-height:0}.site-container{width:min(1200px,calc(100% - 40px))}
+@media(max-width:900px){
+.utility-bar,.utility-inner{height:auto;min-height:40px}.utility-inner{padding:8px 0;gap:10px;flex-wrap:wrap}
+.utility-inner>div{gap:12px;flex-wrap:wrap}.site-header,.site-nav{height:auto;min-height:76px}
+.site-nav{gap:14px;flex-wrap:wrap;padding:12px 0}.nav-links{width:100%;overflow:auto;order:3;gap:22px}
+.nav-links a{padding:12px 0;white-space:nowrap}.nav-links a.active::after{bottom:4px}
+.hero-grid,.cultivation-grid,.home-box-grid,.restaurant-grid{grid-template-columns:1fr}
+.hero-copy{padding:40px 0}.hero-copy h2{font-size:clamp(42px,8vw,73px)}
+.hero-media{min-height:380px}.site-section{padding:48px 0}
+.section-heading{display:flex;align-items:start;gap:20px;flex-direction:column}.section-aside{width:100%;max-width:none;min-width:0}
+.serviceability{grid-template-columns:1fr;gap:24px;padding:24px}.pincode-form{min-width:0}.pincode-form input{width:100%;min-width:0}
+.journey{grid-template-columns:repeat(2,minmax(0,1fr))}.delivery-note{grid-template-columns:1fr;gap:12px}
+.product-grid,.category-grid,.journal-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.trust-grid,.delivery-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.cultivation-copy,.home-box-copy,.restaurant-copy{padding:32px 0}
+.cultivation-media,.box-media,.restaurant-media{min-height:320px}
+.footer-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:32px}.footer-base{flex-wrap:wrap;gap:14px}
+}
+@media(max-width:540px){
+.site-container{width:calc(100% - 32px)}.hero-media{min-height:320px}
+.hero-copy h2{max-width:12ch}.hero-detail{gap:16px}
+.product-grid,.category-grid,.journal-grid{grid-template-columns:1fr}
+.journey{grid-template-columns:1fr}.journal-card--feature{grid-template-columns:1fr}
+.restaurant-features{grid-template-columns:1fr}.home-box-copy ul{grid-template-columns:1fr}
+.product-content h4{min-height:0}.product-media{height:auto;aspect-ratio:4/3}
+.trust-grid,.delivery-grid{grid-template-columns:1fr}.trust-item{min-height:64px}
+.cta-inner,.closing-cta .site-container{display:flex;flex-direction:column;align-items:start;gap:24px}
+.cta-actions{width:100%}.cta-actions form{width:100%}.cta-actions input{min-width:0;width:100%}
+.hero-copy h2,.section-heading h3{overflow-wrap:normal}.category-card{min-height:0}
+.footer-grid{grid-template-columns:1fr}.home-box-media,.restaurant-media{height:340px}
+}
+</style></head>
+<body><main class="homepage" aria-label="Complete WeGroween desktop homepage prototype">
+      <div class="utility-bar">
+        <div class="site-container utility-inner">
+          <p><span class="status-dot"></span>Current catalogue: mushrooms, microgreens and pairings</p>
+          <div><span>WhatsApp: +91 79882 16512</span><span>Instagram: @wegroween_in</span><span>For restaurants</span></div>
+        </div>
+      </div>
+
+      <header class="site-header">
+        <div class="site-container site-nav">
+          <a class="wordmark" href="#">WeGroween<span>Grown thoughtfully. Delivered clearly.</span></a>
+          <nav class="nav-links" aria-label="Main navigation">
+            <a class="active" href="#harvest">Shop harvest</a>
+            <a href="#categories">Microgreens</a>
+            <a href="#categories">Mushrooms</a>
+            <a href="#categories">Produce</a>
+            <a href="#journal">Journal</a>
+          </nav>
+          <div class="nav-actions">
+            <button class="icon-button" aria-label="Search"><svg class="inline-arrow" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="square" stroke-linejoin="round"><circle cx="10.5" cy="10.5" r="6.3"/><path d="m15.1 15.1 4.7 4.7"/></svg>
+</button>
+            <button class="icon-button" aria-label="Account"><svg class="inline-arrow" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="square" stroke-linejoin="round"><path d="M12.1 12.2a4.1 4.1 0 1 0 0-8.2 4.1 4.1 0 0 0 0 8.2ZM4.4 20c.7-4 3.2-6 7.7-6s7 2 7.5 6"/></svg>
+</button>
+            <button class="basket-button"><svg class="inline-arrow" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="square" stroke-linejoin="round"><path d="M4.2 9.5h15.6l-1.6 10H5.8l-1.6-10Z"/><path d="M8.2 9.5C8.7 6.2 10 4.4 12 4.4s3.4 1.8 3.8 5.1M8 13h8M7.4 16h9.2M10 10l.5 9.5M14 10l-.5 9.5"/></svg>
+<span>Basket</span><b>2</b></button>
+          </div>
+        </div>
+      </header>
+
+      <section class="hero">
+        <div class="site-container hero-grid">
+          <div class="hero-copy">
+            <p class="kicker">Current WeGroween range</p>
+            <h2>Grown with care.<br>Chosen for <em>flavour.</em></h2>
+            <p class="hero-lead">Small-batch microgreens, mushrooms and seasonal produce, selected for freshness and delivered with clear harvest timing.</p>
+            <div class="button-row">
+              <a class="button button--primary" href="#harvest">Shop this harvest <svg class="inline-arrow" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="square" stroke-linejoin="round"><path d="M4 12h15M14 6.5l5.5 5.5-5.5 5.5"/></svg>
+</a>
+              <a class="button button--quiet" href="#cultivation">How we grow</a>
+            </div>
+            <div class="hero-detail">
+              <div><strong>Mushroom catalogue</strong><span>Button, White, Yellow and Blue Oyster</span></div>
+              <div><strong>Microgreen catalogue</strong><span>Radish, Sunflower, Mustard and Broccoli</span></div>
+            </div>
+          </div>
+          <figure class="hero-media photo-frame">
+            <img class="media-image" src="../assets/hero-mushrooms.webp" alt="Button mushrooms growing in a tray">
+            <span class="media-label">Existing project photograph</span>
+            <div class="batch-note"><span>Current catalogue</span><strong>Chef-grade mushrooms</strong><p>Product photography and mushroom varieties already exist in the tracked WeGroween catalogue.</p></div>
+          </figure>
+        </div>
+      </section>
+
+      <section class="trust-band" aria-label="Shopping assurances">
+        <div class="site-container trust-grid">
+          <div class="trust-item"><svg class="inline-arrow" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="square" stroke-linejoin="round"><path d="M4 11.2c.5-4.4 3.5-7 8.1-7.1 4.4-.1 7.4 2.5 7.9 7.1-2.4.7-5.1.9-7.9.8-2.9.1-5.6-.1-8.1-.8Z"/><path d="M10.1 12c.2 2.7-.1 5.4-1.3 7.8 2.1.4 4.2.4 6.4 0-1.1-2.4-1.5-5.1-1.2-7.8"/><path d="M7.3 10.8c.4-1.6 1.5-2.6 3.1-3.2M16.9 10.6c-.3-1.1-.9-2-1.8-2.7"/></svg>
+<div><strong>4 mushroom varieties</strong><span>Named in the current catalogue</span></div></div>
+          <div class="trust-item"><svg class="inline-arrow" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="square" stroke-linejoin="round"><path d="M4 20h16M8.4 19.8c.1-4.8-.7-8.2-2.5-10.3M12 20c0-7.1 1-11.6 3.1-13.7M16.2 20c-.1-3.9.7-6.9 2.3-8.9"/><path d="M5.9 9.5c-2.4-.1-3.8-1.2-4.1-3.2 2.5-.4 4.3.7 4.1 3.2ZM15.1 6.3c-2.2-.8-3.2-2.3-2.8-4.3 2.5.4 3.7 1.9 2.8 4.3ZM18.5 11.1c1.9-1.3 3.6-1.2 5 .3-1.5 1.8-3.3 1.7-5-.3Z"/></svg>
+<div><strong>4 microgreen varieties</strong><span>Named in the current catalogue</span></div></div>
+          <div class="trust-item"><svg class="inline-arrow" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="square" stroke-linejoin="round"><path d="M6 3.5h12v17l-2-1.3-2 1.3-2-1.3-2 1.3-2-1.3-2 1.3v-17Z"/><path d="M9 8h6M9 12h6M9 16h3"/></svg>
+<div><strong>Commerce-ready structure</strong><span>Price, pack and stock fields visible</span></div></div>
+          <div class="trust-item"><svg class="inline-arrow" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="square" stroke-linejoin="round"><path d="M12.1 12.2a4.1 4.1 0 1 0 0-8.2 4.1 4.1 0 0 0 0 8.2ZM4.4 20c.7-4 3.2-6 7.7-6s7 2 7.5 6"/></svg>
+<div><strong>Direct support path</strong><span>WhatsApp and Instagram available</span></div></div>
+        </div>
+      </section>
+
+      <section class="site-section harvest-section" id="harvest">
+        <div class="site-container">
+          <div class="section-heading">
+            <div><p class="kicker">01 - Current harvest</p><h3>What can arrive next.</h3></div>
+            <div class="section-aside"><p>Names and flavour cues come from the current catalogue. Prices, pack sizes and live stock shown here are illustrative and require client confirmation.</p><a href="#">View the current range <svg class="inline-arrow" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="square" stroke-linejoin="round"><path d="M4 12h15M14 6.5l5.5 5.5-5.5 5.5"/></svg>
+</a></div>
+          </div>
+          <div class="product-grid">
+            <article class="product-card">
+              <figure class="product-media photo-frame"><img class="media-image" src="../assets/blue-oyster.webp" alt="Blue Oyster mushroom"><span class="photo-caption">Existing project image</span></figure>
+              <div class="product-content"><div class="product-meta"><span class="pill pill--ready">Rare variety</span><span>Sample price</span></div><h4>Blue Oyster</h4><p>A named mushroom variety already represented in the current catalogue.</p><div class="product-bottom"><div><strong>Rs 180</strong><span>/ sample pack</span></div><button aria-label="Add Blue Oyster"><svg class="inline-arrow" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="square" stroke-linejoin="round"><path d="M12 4v16M4 12h16"/></svg>
+</button></div></div>
+            </article>
+            <article class="product-card">
+              <figure class="product-media photo-frame"><img class="media-image" src="../assets/yellow-oyster.webp" alt="Yellow Oyster mushroom"><span class="photo-caption">Existing project image</span></figure>
+              <div class="product-content"><div class="product-meta"><span class="pill pill--harvest">Nutty flavour</span><span>Sample price</span></div><h4>Yellow Oyster</h4><p>A distinctive oyster variety already represented in the current catalogue.</p><div class="product-bottom"><div><strong>Rs 180</strong><span>/ sample pack</span></div><button aria-label="Add Yellow Oyster"><svg class="inline-arrow" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="square" stroke-linejoin="round"><path d="M12 4v16M4 12h16"/></svg>
+</button></div></div>
+            </article>
+            <article class="product-card">
+              <figure class="product-media photo-frame"><img class="media-image" src="../assets/radish-microgreens.webp" alt="Radish microgreens"><span class="photo-caption">Existing project image</span></figure>
+              <div class="product-content"><div class="product-meta"><span class="pill pill--limited">Spicy and zesty</span><span>Sample price</span></div><h4>Radish microgreens</h4><p>A peppery microgreen variety already represented in the current catalogue.</p><div class="product-bottom"><div><strong>Rs 120</strong><span>/ sample pack</span></div><button aria-label="Add Radish microgreens"><svg class="inline-arrow" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="square" stroke-linejoin="round"><path d="M12 4v16M4 12h16"/></svg>
+</button></div></div>
+            </article>
+            <article class="product-card product-card--box">
+              <figure class="product-media photo-frame"><img class="media-image" src="../assets/sunflower-shoots.webp" alt="Sunflower shoots"><span class="photo-caption">Existing project image</span></figure>
+              <div class="product-content"><div class="product-meta"><span class="pill pill--box">Nutty and crunchy</span><span>Sample price</span></div><h4>Sunflower shoots</h4><p>A fresh microgreen variety already represented in the current catalogue.</p><div class="product-bottom"><div><strong>Rs 150</strong><span>/ sample pack</span></div><button aria-label="Add Sunflower shoots"><svg class="inline-arrow" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="square" stroke-linejoin="round"><path d="M12 4v16M4 12h16"/></svg>
+</button></div></div>
+            </article>
+          </div>
+
+          <div class="serviceability">
+            <div class="service-copy"><span class="service-icon"><svg class="inline-arrow" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="square" stroke-linejoin="round"><path d="M19 10c0 4.5-7 10.5-7 10.5S5 14.5 5 10a7 7 0 1 1 14 0Z"/><path d="M12 12.5a2.8 2.8 0 1 0 0-5.6 2.8 2.8 0 0 0 0 5.6Z"/></svg>
+</span><div><p class="kicker">Delivery check</p><h4>Know we can reach you before building a basket.</h4><p>Enter your six-digit pincode for the next available delivery window.</p></div></div>
+            <form class="pincode-form"><label for="pincode">Delivery pincode</label><div><input id="pincode" value="6-digit pincode" aria-label="Delivery pincode"><button type="button">Check availability</button></div><p><span class="status-dot"></span>Illustrative state - service areas and delivery rules require confirmation.</p></form>
+          </div>
+        </div>
+      </section>
+
+      <section class="site-section category-section" id="categories">
+        <div class="site-container">
+          <div class="section-heading section-heading--compact">
+            <div><p class="kicker">02 - Shop by kitchen need</p><h3>A considered market, not an endless aisle.</h3></div>
+            <div class="section-aside"><p>Categories are organised around ingredient character and use, while still naming the product honestly.</p></div>
+          </div>
+          <div class="category-grid">
+            <a class="category-card category-card--ink" href="#"><svg class="inline-arrow" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="square" stroke-linejoin="round"><path d="M4 20h16M8.4 19.8c.1-4.8-.7-8.2-2.5-10.3M12 20c0-7.1 1-11.6 3.1-13.7M16.2 20c-.1-3.9.7-6.9 2.3-8.9"/><path d="M5.9 9.5c-2.4-.1-3.8-1.2-4.1-3.2 2.5-.4 4.3.7 4.1 3.2ZM15.1 6.3c-2.2-.8-3.2-2.3-2.8-4.3 2.5.4 3.7 1.9 2.8 4.3ZM18.5 11.1c1.9-1.3 3.6-1.2 5 .3-1.5 1.8-3.3 1.7-5-.3Z"/></svg>
+<span>Fresh finish</span><h4>Microgreens</h4><p>Peppery, mild and aromatic varieties for everyday plates.</p><b>Shop microgreens <svg class="inline-arrow" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="square" stroke-linejoin="round"><path d="M4 12h15M14 6.5l5.5 5.5-5.5 5.5"/></svg>
+</b></a>
+            <a class="category-card" href="#"><svg class="inline-arrow" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="square" stroke-linejoin="round"><path d="M4 11.2c.5-4.4 3.5-7 8.1-7.1 4.4-.1 7.4 2.5 7.9 7.1-2.4.7-5.1.9-7.9.8-2.9.1-5.6-.1-8.1-.8Z"/><path d="M10.1 12c.2 2.7-.1 5.4-1.3 7.8 2.1.4 4.2.4 6.4 0-1.1-2.4-1.5-5.1-1.2-7.8"/><path d="M7.3 10.8c.4-1.6 1.5-2.6 3.1-3.2M16.9 10.6c-.3-1.1-.9-2-1.8-2.7"/></svg>
+<span>Savoury depth</span><h4>Mushrooms</h4><p>Distinct varieties with texture, handling and cooking notes.</p><b>Shop mushrooms <svg class="inline-arrow" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="square" stroke-linejoin="round"><path d="M4 12h15M14 6.5l5.5 5.5-5.5 5.5"/></svg>
+</b></a>
+            <a class="category-card" href="#"><svg class="inline-arrow" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="square" stroke-linejoin="round"><path d="M9.1 7.2c-2.7 2.7-4.3 7.1-3.5 11.6 4.6.8 8.9-.9 11.5-3.7 2.1-2.3 2.3-5 .6-6.7-1.7-1.8-5.4-3.4-8.6-1.2Z"/><path d="M10.2 6.6C8.5 4.8 8.5 3 10.1 1.6c1.9 1.7 2 3.5.1 5ZM12.2 6.1c1.5-2.1 3.3-2.7 5.4-1.7-1.1 2.3-2.9 2.9-5.4 1.7ZM8.2 16.7l7.4-7.2"/></svg>
+<span>Seasonal staples</span><h4>Vegetables and fruit</h4><p>Organically grown produce selected for flavour and timing.</p><b>Shop produce <svg class="inline-arrow" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="square" stroke-linejoin="round"><path d="M4 12h15M14 6.5l5.5 5.5-5.5 5.5"/></svg>
+</b></a>
+            <a class="category-card category-card--berry" href="#"><svg class="inline-arrow" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="square" stroke-linejoin="round"><path d="m12 3 1.6 5.2L19 10l-5.4 1.8L12 17l-1.6-5.2L5 10l5.4-1.8L12 3Z"/><path d="m18.5 15 .8 2.2 2.2.8-2.2.8-.8 2.2-.8-2.2-2.2-.8 2.2-.8.8-2.2ZM5.2 3.5l.6 1.7 1.7.6-1.7.6-.6 1.7-.6-1.7-1.7-.6 1.7-.6.6-1.7Z"/></svg>
+<span>Curious ingredients</span><h4>Farm discoveries</h4><p>Limited cultivars and unusual products with clear guidance.</p><b>Explore the uncommon <svg class="inline-arrow" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="square" stroke-linejoin="round"><path d="M4 12h15M14 6.5l5.5 5.5-5.5 5.5"/></svg>
+</b></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="site-section cultivation-section" id="cultivation">
+        <div class="site-container cultivation-grid">
+          <figure class="cultivation-media photo-frame"><img class="media-image" src="../assets/cultivation-microgreens.webp" alt="Microgreens growing on indoor racks"><span class="media-label">Existing project photograph</span><div class="media-caption"><b>Microgreen growing racks</b><span>Current workspace image - operational details to be confirmed</span></div></figure>
+          <div class="cultivation-copy">
+            <p class="kicker">03 - Cultivation journal</p>
+            <h3>Good produce earns trust through specifics.</h3>
+            <p class="section-lead">The existing photography can show a real growing context. Launch copy should add only verified variety, harvest, handling and best-use information.</p>
+            <div class="proof-list">
+              <div><span>01</span><div><strong>Name the variety</strong><p>Blue-grey oyster is more useful than a generic mushroom label.</p></div></div>
+              <div><span>02</span><div><strong>Show the harvest window</strong><p>Ready, growing, limited and resting are honest operating states.</p></div></div>
+              <div><span>03</span><div><strong>Explain the handling</strong><p>Pack date, storage and best-use notes travel with the order.</p></div></div>
+            </div>
+            <a class="text-link" href="#">Read this week's cultivation notes <svg class="inline-arrow" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="square" stroke-linejoin="round"><path d="M4 12h15M14 6.5l5.5 5.5-5.5 5.5"/></svg>
+</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="site-section delivery-section">
+        <div class="site-container">
+          <div class="section-heading section-heading--compact">
+            <div><p class="kicker">04 - From harvest to home</p><h3>A short path, explained before checkout.</h3></div>
+            <div class="section-aside"><p>Delivery information is part of the shopping experience, not a policy discovered after payment.</p></div>
+          </div>
+          <div class="journey">
+            <article><span>1</span><svg class="inline-arrow" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="square" stroke-linejoin="round"><path d="M19 10c0 4.5-7 10.5-7 10.5S5 14.5 5 10a7 7 0 1 1 14 0Z"/><path d="M12 12.5a2.8 2.8 0 1 0 0-5.6 2.8 2.8 0 0 0 0 5.6Z"/></svg>
+<h4>Check your area</h4><p>Confirm the next delivery window before choosing perishable produce.</p></article>
+            <article><span>2</span><svg class="inline-arrow" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="square" stroke-linejoin="round"><path d="M4 5.5h16v15H4zM4 9.5h16M8 3.5v4M16 3.5v4"/><path d="M9 14c1.8 0 3 .8 3 2.5M12 16.5c0-2.2 1.2-3.4 3.5-3.7"/></svg>
+<h4>Choose what is ready</h4><p>See harvest status, pack size and timing on the product itself.</p></article>
+            <article><span>3</span><svg class="inline-arrow" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="square" stroke-linejoin="round"><path d="m4 7.4 8-4 8 4v9.2l-8 4-8-4V7.4Z"/><path d="m4.4 7.5 7.6 4 7.6-4M12 11.5v9M8 5.4l8 4"/></svg>
+<h4>We pack with context</h4><p>Storage and use notes help the product arrive with fewer unknowns.</p></article>
+            <article><span>4</span><svg class="inline-arrow" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="square" stroke-linejoin="round"><path d="M3 6.5h11.5v10H3zM14.5 10h3.1l3.4 3.2v3.3h-6.5z"/><path d="M6.7 19.5a2 2 0 1 0 0-4 2 2 0 0 0 0 4ZM17.8 19.5a2 2 0 1 0 0-4 2 2 0 0 0 0 4ZM5 10h5"/></svg>
+<h4>Receive your harvest</h4><p>Track the delivery and know whom to contact if something is wrong.</p></article>
+          </div>
+          <div class="delivery-note"><strong>Designed around local freshness</strong><p>Service areas, order cut-offs and delivery days should remain explicit and editable as operations grow.</p><a href="#">Read delivery guidance <svg class="inline-arrow" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="square" stroke-linejoin="round"><path d="M4 12h15M14 6.5l5.5 5.5-5.5 5.5"/></svg>
+</a></div>
+        </div>
+      </section>
+
+      <section class="site-section home-box-section">
+        <div class="site-container home-box-grid">
+          <div class="home-box-copy">
+            <p class="kicker kicker--gold">The household edit</p>
+            <h3>Curated pairings already exist in the catalogue.</h3>
+            <p>The current source includes a Stir-Fry Specialist, Gourmet Salad Kit, Umami Power Pack and Chef's Signature Box. This module turns that existing range into a clearer household shopping proposition.</p>
+            <ul><li>Button mushrooms + pea shoots</li><li>Oyster mushrooms + radish greens</li><li>Assorted fungi + broccoli microgreens</li><li>Full seasonal sampler concept</li></ul>
+            <div class="button-row"><a class="button button--gold" href="#">Explore current pairings</a><a class="button button--inverse" href="#">Confirm contents and pricing</a></div>
+          </div>
+          <div class="home-box-media photo-collage"><img src="../assets/button-mushrooms.webp" alt="Button mushrooms"><img src="../assets/sunflower-shoots.webp" alt="Sunflower shoots"><span class="media-label">Existing project photographs</span><div class="box-price"><span>Current catalogue</span><strong>4 pairings</strong><small>pricing to confirm</small></div></div>
+        </div>
+      </section>
+
+      <section class="site-section restaurant-section">
+        <div class="site-container restaurant-grid">
+          <div class="restaurant-copy">
+            <p class="kicker">05 - For professional kitchens</p>
+            <h3>Specialty produce with a direct supply conversation.</h3>
+            <p class="section-lead">Restaurants, cafes and chefs can request current availability, kitchen pack sizes and recurring supply without changing the household-first shopping journey.</p>
+            <div class="restaurant-features">
+              <div><svg class="inline-arrow" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="square" stroke-linejoin="round"><path d="M3 17.5h18M5 16.5c.2-5 2.9-8.2 7-8.2s6.8 3.2 7 8.2M10 5.4c.5-.6 1.1-.9 2-.9s1.5.3 2 .9"/><path d="M8 12.5c.8-1.3 2-2 3.7-2"/></svg>
+<strong>Kitchen-ready list</strong><span>Variety, unit, lead time and indicative volume.</span></div>
+              <div><svg class="inline-arrow" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="square" stroke-linejoin="round"><path d="M19.3 8.3A7.8 7.8 0 0 0 6 5.8L4 8M4 4v4h4M4.7 15.7A7.8 7.8 0 0 0 18 18.2l2-2.2M20 20v-4h-4"/></svg>
+<strong>Recurring requirements</strong><span>A practical path for planned weekly needs.</span></div>
+              <div><svg class="inline-arrow" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="square" stroke-linejoin="round"><path d="M6 3.5h12v17l-2-1.3-2 1.3-2-1.3-2 1.3-2-1.3-2 1.3v-17Z"/><path d="M9 8h6M9 12h6M9 16h3"/></svg>
+<strong>Business support</strong><span>Clear order records and one supply contact.</span></div>
+            </div>
+            <div class="button-row"><a class="button button--primary" href="#">Request kitchen supply</a><a class="button button--quiet" href="#">View sample list</a></div>
+          </div>
+          <figure class="restaurant-media photo-frame"><img class="media-image" src="../assets/yellow-oyster.webp" alt="Yellow Oyster mushrooms"><span class="media-label">Existing project photograph</span><div class="supply-card"><span>Illustrative supply fields</span><div><b>Oyster mushrooms</b><em>Pack sizes to confirm</em></div><div><b>Microgreens</b><em>Chef packs to confirm</em></div><div><b>Recurring supply</b><em>Enquiry-led</em></div></div></figure>
+        </div>
+      </section>
+
+      <section class="site-section journal-section" id="journal">
+        <div class="site-container">
+          <div class="section-heading">
+            <div><p class="kicker">06 - From the growing room</p><h3>Useful reading for the produce in your kitchen.</h3></div>
+            <div class="section-aside"><p>The journal should reduce waste, support better use and reveal the care behind each harvest.</p><a href="#">Visit the journal <svg class="inline-arrow" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="square" stroke-linejoin="round"><path d="M4 12h15M14 6.5l5.5 5.5-5.5 5.5"/></svg>
+</a></div>
+          </div>
+          <div class="journal-grid">
+            <article class="journal-card journal-card--feature"><figure class="journal-media photo-frame"><img class="media-image" src="../assets/mustard-microgreens.webp" alt="Mustard microgreens"></figure><div><span>Kitchen note - proposed</span><h4>How to keep microgreens crisp after delivery.</h4><p>A storage guide to develop and verify before launch.</p><a href="#">Review the proposed guide <svg class="inline-arrow" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="square" stroke-linejoin="round"><path d="M4 12h15M14 6.5l5.5 5.5-5.5 5.5"/></svg>
+</a></div></article>
+            <article class="journal-card"><figure class="journal-media photo-frame"><img class="media-image" src="../assets/golden-oyster.webp" alt="Golden Oyster mushrooms"></figure><div><span>Field note - proposed</span><h4>Why mushroom batches do not look exactly alike.</h4><a href="#">Review the proposed note <svg class="inline-arrow" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="square" stroke-linejoin="round"><path d="M4 12h15M14 6.5l5.5 5.5-5.5 5.5"/></svg>
+</a></div></article>
+            <article class="journal-card"><figure class="journal-media photo-frame"><img class="media-image" src="../assets/broccoli-microgreens.webp" alt="Broccoli microgreens"></figure><div><span>Recipe - proposed</span><h4>Using mild microgreens in an everyday meal.</h4><a href="#">Review the recipe concept <svg class="inline-arrow" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="square" stroke-linejoin="round"><path d="M4 12h15M14 6.5l5.5 5.5-5.5 5.5"/></svg>
+</a></div></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="closing-cta">
+        <div class="site-container closing-cta-grid">
+          <div><p class="kicker kicker--gold">Next harvest</p><h3>Let the week begin with something genuinely fresh.</h3><p>Browse what is ready now, or receive one concise harvest note when the next batch opens.</p></div>
+          <div class="cta-actions"><a class="button button--gold" href="#harvest">Shop current harvest</a><form><label for="email">Harvest note</label><div><input id="email" type="email" placeholder="Email address"><button type="button">Join the note</button></div></form></div>
+        </div>
+      </section>
+
+      <footer class="site-footer">
+        <div class="site-container footer-grid">
+          <div class="footer-brand"><strong>WeGroween</strong><p>Premium, harvest-aware produce for homes, with restaurant supply available.</p><span>WhatsApp +91 79882 16512 - Instagram @wegroween_in</span></div>
+          <div><strong>Shop</strong><a href="#">Current harvest</a><a href="#">Microgreens</a><a href="#">Mushrooms</a><a href="#">Vegetables and fruit</a><a href="#">Farm discoveries</a></div>
+          <div><strong>Learn</strong><a href="#">Cultivation journal</a><a href="#">Storage guides</a><a href="#">Recipes</a><a href="#">Delivery areas</a><a href="#">Our standards</a></div>
+          <div><strong>Support</strong><a href="#">Contact</a><a href="#">Returns and freshness</a><a href="#">Frequently asked</a><a href="#">Restaurant supply</a><a href="#">Track an order</a></div>
+        </div>
+        <div class="site-container footer-base"><span>Prototype content - operational details to be confirmed before launch.</span><div><a href="#">Privacy</a><a href="#">Terms</a><a href="#">Food business details</a></div></div>
+      </footer>
+    </main></body>
+</html>

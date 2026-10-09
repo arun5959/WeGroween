@@ -1,0 +1,45 @@
+{
+  "status": "PROPOSED",
+  "eyebrow": "The WeGroween story",
+  "title": "A few vegetables. A much bigger purpose.",
+  "intro": "WeGroween began with terrace gardening. A few vegetables, grown close to home. Then curiosity took root, and a small beginning opened up a much bigger possibility.",
+  "chapters": [
+    {
+      "label": "The terrace",
+      "title": "First, we grew a little.",
+      "body": "Before there was a brand, there was a terrace garden. Growing a few vegetables brought us closer to the food we ate. It also gave us a reason to keep exploring.",
+      "note": "A small beginning, close to home.",
+      "icon": "produce"
+    },
+    {
+      "label": "The curiosity",
+      "title": "Then, curiosity moved indoors.",
+      "body": "We began growing microgreens and mushrooms inside our home. What started with a few vegetables became an exploration of different crops and ways to grow. Each experiment led to another question: what else could we grow?",
+      "note": "Microgreens. Mushrooms. More possibilities.",
+      "icon": "microgreens"
+    },
+    {
+      "label": "The purpose",
+      "title": "The idea grew beyond our home.",
+      "body": "We saw an opportunity to turn our growing into a business. But the ambition went further than selling produce. We wanted to help change the fruit and vegetable market, starting with something every kitchen should be able to count on: a supplier it can trust.",
+      "note": "An opportunity became a purpose.",
+      "icon": "basket"
+    },
+    {
+      "label": "The brand",
+      "title": "That purpose became WeGroween.",
+      "body": "We set up WeGroween to give that ambition a name and a direction. Our beginnings in terrace gardening still shape the story. The curiosity that brought us indoors now gives us a reason to keep growing.",
+      "note": "Rooted in curiosity. Growing with purpose.",
+      "icon": "mushroom"
+    },
+    {
+      "label": "The next chapter",
+      "title": "Now, we want to grow your trust.",
+      "body": "Our aim is to become the most trustworthy supplier of fresh, organic fruits and vegetables. It is an ambition we intend to earn over time, through the produce we supply and the care we bring to the work. A few vegetables started the journey. Building your trust is what gives it a future.",
+      "note": "Trust is the harvest we are working towards.",
+      "icon": "fruit"
+    }
+  ],
+  "closing": "From a terrace garden to a bigger purpose. Still growing.",
+  "action": "Explore this harvest"
+}

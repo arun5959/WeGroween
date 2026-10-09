@@ -1,0 +1,66 @@
+{
+  "status": "PROPOSED",
+  "scope": "Separate illustration directions only. No production files or canonical DLS changed.",
+  "date": "2026-10-07",
+  "recommended": "gouache",
+  "comparison": "Same chapter 2 copy, same image geometry, same current brand typography and tokens. Only illustration treatment varies.",
+  "provenance": "Original symbolic illustrations generated with the built-in image_gen tool. They are not photographs or evidence of the historical garden. No outside artwork used.",
+  "reducedMotion": "Show completed artwork immediately. No reveal, translation, parallax or automatic motion.",
+  "stage4": "Existing brand composition is preserved in every direction.",
+  "directions": [
+    {
+      "id": "ink",
+      "name": "Living Lines",
+      "prompt": "Use case: illustration-story. Asset type: original illustration study for WeGroween's Our Story webpage, chapter 2 \"Then, curiosity moved indoors.\" Create a sophisticated landscape 3:2 illustration for a cultivated editorial fresh produce brand. Subject: a small indoor growing experiment on a simple ledge: a shallow terracotta tray of delicate microgreens with varied small paired leaves, beside an organic cluster of oyster mushrooms with overlapping fan-shaped caps growing from a compact substrate block. A very lightly suggested window structure in the distance. This is a symbolic scene, not evidence of an actual historical home. Crop anatomy should feel observant and specific. Composition: generous uninterrupted negative space around one centred arrangement, subjects occupy roughly 60 percent of the frame, no frame or border. Quiet warm cream background #FBF4E8, soil brown #402B24, muted terracotta #98513D, grain #DDD1C2; a small restrained botanical green #2E654A is permitted only on living leaves. No text, typography, logo, watermark, arrows, infographic symbols, generic stock icons, people, faces, labels, sunburst, rustic scrapbook, vintage nostalgia, wellness motifs or decorative all-over pattern. Premium contemporary editorial mood, calm, subtle, tactile. Medium: original expressive contemporary botanical ink drawing. Fine varying soil-brown pencil and ink lines describe the growth, a few spare terracotta wash accents, very restrained stippling for mushroom gills, leaf vein detail. Delicate irregular hand-drawn organic contours contrast with a precise architectural ledge. Light warm colour washes only, mostly cream negative space. The plants form a graceful asymmetric rhythm. No thick outlines, no enlarged pictogram shapes, no antique botanical specimen chart.",
+      "thesis": "A drawing that feels observed, rather than assembled from symbols.",
+      "benefit": "Fine botanical detail gives the growing story specificity. The light ink treatment leaves room for the existing editorial typography.",
+      "risk": "Detailed stems and gills need simplifying at mobile size; avoid antique engraving and scientific specimen labels.",
+      "motion": "One quiet 360ms reveal; later, a few separately drawn stems could resolve once as the chapter enters. Never animate the entire garden continuously.",
+      "chapters": [
+        "A loose climbing vegetable stem crosses a simple terrace planter; one cropped railing suggests home.",
+        "Microgreen stems and oyster mushroom fans are drawn with real organic differences.",
+        "A planted root line travels beyond its container and becomes the contour of a produce crate: the idea has outgrown home.",
+        "Keep the supplied logo, caption, crop motif and existing composition unchanged.",
+        "A few distinct vegetables, microgreens and mushrooms gathered around the rim of a quiet dinner plate."
+      ],
+      "asset": "assets/ink.png",
+      "generated": true
+    },
+    {
+      "id": "paper",
+      "name": "Layers of Growth",
+      "prompt": "Use case: illustration-story. Asset type: original illustration study for WeGroween's Our Story webpage, chapter 2 \"Then, curiosity moved indoors.\" Create a sophisticated landscape 3:2 illustration for a cultivated editorial fresh produce brand. Subject: a small indoor growing experiment on a simple ledge: a shallow terracotta tray of delicate microgreens with varied small paired leaves, beside an organic cluster of oyster mushrooms with overlapping fan-shaped caps growing from a compact substrate block. A very lightly suggested window structure in the distance. This is a symbolic scene, not evidence of an actual historical home. Crop anatomy should feel observant and specific. Composition: generous uninterrupted negative space around one centred arrangement, subjects occupy roughly 60 percent of the frame, no frame or border. Quiet warm cream background #FBF4E8, soil brown #402B24, muted terracotta #98513D, grain #DDD1C2; a small restrained botanical green #2E654A is permitted only on living leaves. No text, typography, logo, watermark, arrows, infographic symbols, generic stock icons, people, faces, labels, sunburst, rustic scrapbook, vintage nostalgia, wellness motifs or decorative all-over pattern. Premium contemporary editorial mood, calm, subtle, tactile. Medium: meticulously sculpted layered matte paper relief, photographed front-on with a slight oblique view. Precisely cut dimensional leaves, gently folded microgreen stems, beautifully layered oyster mushroom fans with delicate scored gills. Restrained low relief, soft narrow contact shadows and subtle paper fibres. Terracotta planter, soil-brown substrate, cream mushroom caps, muted botanical green leaves. Window is two extremely faint raised cream lines. Architectural and sophisticated, elegant hand-crafted set, no shiny 3D, plastic, toy, cartoon or playful craft aesthetic. Large quiet cream background.",
+      "thesis": "Small growing scenes become tactile, carefully constructed objects.",
+      "benefit": "Layered leaves and mushroom caps echo the brand’s tactile character while bringing the greatest visual change from the current icon scenes.",
+      "risk": "Keep the relief shallow and the shadows restrained; otherwise it can feel like a toy or a separate 3D brand.",
+      "motion": "A short 360ms reveal. A final layered version could settle its foreground by 4px once; no pointer tilt or permanent floating.",
+      "chapters": [
+        "One paper planter, a folded climbing stem and a barely raised terrace ledge.",
+        "Folded microgreen leaves and layered oyster mushroom fans share a shallow growing shelf.",
+        "An open paper produce crate expands around the tiny original planter, with one folded leaf extending past its edge.",
+        "Keep the supplied logo, caption, crop motif and existing composition unchanged.",
+        "A shallow cream paper plate receives sculpted produce; soft contact shadows supply depth."
+      ],
+      "asset": "assets/paper.png",
+      "generated": true
+    },
+    {
+      "id": "gouache",
+      "name": "The Growing Still Life",
+      "prompt": "Use case: illustration-story. Asset type: original illustration study for WeGroween's Our Story webpage, chapter 2 \"Then, curiosity moved indoors.\" Create a sophisticated landscape 3:2 illustration for a cultivated editorial fresh produce brand. Subject: a small indoor growing experiment on a simple ledge: a shallow terracotta tray of delicate microgreens with varied small paired leaves, beside an organic cluster of oyster mushrooms with overlapping fan-shaped caps growing from a compact substrate block. A very lightly suggested window structure in the distance. This is a symbolic scene, not evidence of an actual historical home. Crop anatomy should feel observant and specific. Composition: generous uninterrupted negative space around one centred arrangement, subjects occupy roughly 60 percent of the frame, no frame or border. Quiet warm cream background #FBF4E8, soil brown #402B24, muted terracotta #98513D, grain #DDD1C2; a small restrained botanical green #2E654A is permitted only on living leaves. No text, typography, logo, watermark, arrows, infographic symbols, generic stock icons, people, faces, labels, sunburst, rustic scrapbook, vintage nostalgia, wellness motifs or decorative all-over pattern. Premium contemporary editorial mood, calm, subtle, tactile. Medium: contemporary editorial gouache painting with confident economical brush marks and softly textured pigment. Organic irregular shapes, a few clear fine pencil details for gills and leaves, warm cream mushroom caps, muted green microgreens, terracotta tray, soil-brown substrate. A gentle directional light is suggested through a thin translucent cream window shadow. Subjects should have dimensional volume from two or three restrained tones, not photographic realism. Calm appetizing observed still life, not cartoon, vector flat icon, pastoral landscape or rustic watercolour illustration. The cream background should remain flat and quiet.",
+      "thesis": "Warm, expressive still lifes make each chapter feel like an edition of the harvest.",
+      "benefit": "A strong match for Cultivated Editorial: appetizing produce, tactile pigment and generous empty space, without competing with the logo.",
+      "risk": "Brush texture must stay selective; full painted backgrounds or rustic props would make the page too busy.",
+      "motion": "A single 360ms reveal of the completed illustration. If layered later, reveal just a small painted shadow; no looping plant growth.",
+      "chapters": [
+        "One terracotta pot with a modest vegetable plant; a brush of light suggests the terrace.",
+        "A still life of microgreen trays and oyster mushroom fans, with a softly suggested indoor ledge.",
+        "An open harvest crate gathers the two crops; one small tray remains beside it to show the shift in scale.",
+        "Keep the supplied logo, caption, crop motif and existing composition unchanged.",
+        "A simple ceramic plate with a restrained arrangement of fresh produce, ready for the next chapter."
+      ],
+      "asset": "assets/gouache.png",
+      "generated": true
+    }
+  ]
+}

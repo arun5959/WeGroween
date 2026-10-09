@@ -1,0 +1,20 @@
+{
+  "version": "1.3.0-proposed",
+  "stage": "rendered",
+  "valid": true,
+  "errors": [],
+  "manual_review_current": true,
+  "scope_changes": [],
+  "approved_mapping": true,
+  "coverage": "all-three",
+  "primary": "palette-2",
+  "pdf_pages": {
+    "pdf/wegroween-design-direction-manual.pdf": 15,
+    "pdf/wegroween-homepage-prototype-palette-1.pdf": 3,
+    "pdf/wegroween-homepage-prototype-palette-2.pdf": 3,
+    "pdf/wegroween-homepage-prototype-palette-3.pdf": 3,
+    "pdf/wegroween-imagery-direction-guide.pdf": 2
+  },
+  "final_stage": "Pending leader release/private archive confirmation; not run",
+  "legacy_rollback_verified_files": 92
+}

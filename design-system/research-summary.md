@@ -1,0 +1,176 @@
+# Research synthesis
+
+WeGroween | 1.3.0-proposed
+
+## Observed evidence and interpretation
+
+- Summary: Reuse 2026-10-02 research: premium should come from variety, provenance, harvest, handling, delivery and remedy specificity; households remain primary and restaurant supply secondary.
+- Sources:
+  - Id: ev-current-site
+  - Title: Current WeGroween static catalogue
+  - Date: 2026-10-02
+  - Observation: Four-page static catalogue with earthy tokens embedded separately in each page, a script wordmark, bento cards, CDN-delivered Tailwind and AOS, placeholder links, and no functional cart, checkout, account, API, database, or admin.
+  - Interpretation: The existing visual vocabulary can inform continuity, but the implementation must be replaced by a governed application architecture.
+  - Confidence: high
+  - Limitations:
+    - No production analytics or user research available
+    - Historical source; not live reverified during schema migration
+  - Rights: Reference only; no identity, copy or asset reuse inferred
+  - Id: ev-sanesa-provenance
+  - Title: Sanesa Yourganic
+  - Source Url: https://www.sanesa.in/
+  - Date: 2026-10-02
+  - Observation: Uses source verification, same-day cut-offs, refunds, fulfilment detail, sourcing policy, and a named integrity-check process as trust mechanisms.
+  - Interpretation: Operational transparency is a stronger premium cue than decorative luxury language.
+  - Confidence: high
+  - Limitations:
+    - Claims were not independently audited
+    - Historical source; not live reverified during schema migration
+  - Rights: Reference only; no identity, copy or asset reuse inferred
+  - Id: ev-bhoomi-membership
+  - Title: Bhoomi Farms
+  - Source Url: https://bhoomi.farm/web/
+  - Date: 2026-10-02
+  - Observation: Pairs source traceability with a membership model, next-day delivery, pause controls, broad category navigation, and explicit certification links.
+  - Interpretation: WeGroween should support one-off buying first while leaving room for repeat boxes or subscriptions after operational validation.
+  - Confidence: high
+  - Limitations:
+    - Subscription economics are business-specific
+    - Historical source; not live reverified during schema migration
+  - Rights: Reference only; no identity, copy or asset reuse inferred
+  - Id: ev-gourmet-mushroom-dual-audience
+  - Title: Gourmet Mushroom Company
+  - Source Url: https://gourmetmushroomco.com/
+  - Date: 2026-10-02
+  - Observation: Builds specialty credibility through an award, locally grown sourcing, chemical-use clarity, freshness, product education, and restaurant relationships while remaining approachable to home cooks.
+  - Interpretation: Restaurant proof can strengthen the household proposition when it is supporting evidence rather than the dominant navigation.
+  - Confidence: high
+  - Limitations:
+    - Contact-led rather than full commerce flow
+    - Historical source; not live reverified during schema migration
+  - Rights: Reference only; no identity, copy or asset reuse inferred
+  - Id: ev-microgreen-store-harvest
+  - Title: Microgreen Store Gurgaon
+  - Source Url: https://www.microgreenstore.in/
+  - Date: 2026-10-02
+  - Observation: Frames ordering around harvest windows, box entitlements, upcoming availability, delivery status, storage guidance, and familiar Indian meal usage.
+  - Interpretation: Harvest-state communication can make operational constraints feel like premium freshness rather than stock failure.
+  - Confidence: medium
+  - Limitations:
+    - Prelaunch or early-stage operating evidence
+    - Historical source; not live reverified during schema migration
+  - Rights: Reference only; no identity, copy or asset reuse inferred
+  - Id: ev-riverford-repeat
+  - Title: Riverford Organic Farmers
+  - Source Url: https://www.riverford.co.uk/
+  - Date: 2026-10-02
+  - Observation: Connects seasonality, grower traceability, repeat boxes, add-ons, easy pause/skip controls, delivery windows, and recipe education.
+  - Interpretation: WeGroween can treat seasonality and repeat purchase as service design, not only brand copy.
+  - Confidence: high
+  - Limitations:
+    - UK logistics and subscription habits differ from India
+    - Historical source; not live reverified during schema migration
+  - Rights: Reference only; no identity, copy or asset reuse inferred
+  - Id: ev-oishii-premium
+  - Title: Oishii Farms
+  - Source Url: https://oishii.com/pages/our-farms
+  - Date: 2026-10-02
+  - Observation: Premium value is expressed through varietal specificity, sensory language, controlled-environment craft, named farms, human expertise, and precise product photography rather than generic luxury motifs.
+  - Interpretation: WeGroween should make cultivation and sensory distinctions concrete, while avoiding imitation of Oishii's Japanese cultural expression.
+  - Confidence: high
+  - Limitations:
+    - Luxury berry category and US distribution differ
+    - Historical source; not live reverified during schema migration
+  - Rights: Reference only; no identity, copy or asset reuse inferred
+  - Id: ev-natoora-transparency
+  - Title: Natoora
+  - Source Url: https://natoora.com/en-GB/
+  - Date: 2026-10-02
+  - Observation: Uses radical seasonality, grower stories, culinary content, diversity of varieties, and an editorial visual system to connect chefs and home cooks.
+  - Interpretation: A strong editorial layer can unify broad categories without turning WeGroween into a generic supermarket.
+  - Confidence: high
+  - Limitations:
+    - Distinctive identity must not be reproduced
+    - Historical source; not live reverified during schema migration
+  - Rights: Reference only; no identity, copy or asset reuse inferred
+  - Id: ev-eztrolley-b2b
+  - Title: EZTrolley
+  - Source Url: https://www.eztrolley.com/
+  - Date: 2026-10-02
+  - Observation: Restaurant value centers on real-time stock, fast ordering, repeat orders, delivery tracking, automated GST invoices, account support, and broad procurement coverage.
+  - Interpretation: WeGroween should separate restaurant onboarding and account workflows while reusing the core catalogue.
+  - Confidence: medium
+  - Limitations:
+    - Claims and scale were not independently verified
+    - Historical source; not live reverified during schema migration
+  - Rights: Reference only; no identity, copy or asset reuse inferred
+  - Id: ev-baymard-grocery
+  - Title: Baymard 2026 Grocery Ecommerce UX Research
+  - Source Url: https://baymard.com/research-articles/online-grocery-ecommerce-ux-2026
+  - Date: 2026-10-02
+  - Observation: Grocery-specific friction clusters around fulfilment availability, substitutions, large repeat baskets, past purchases, and finding critical product attributes.
+  - Interpretation: WeGroween should expose serviceability and delivery before checkout, support buy-again, and keep substitution control global with exceptions.
+  - Confidence: high
+  - Limitations:
+    - Many detailed guidelines are behind a paid research library
+    - Historical source; not live reverified during schema migration
+  - Rights: Reference only; no identity, copy or asset reuse inferred
+  - Id: ev-wcag22
+  - Title: Web Content Accessibility Guidelines 2.2
+  - Source Url: https://www.w3.org/TR/WCAG22/
+  - Date: 2026-10-02
+  - Observation: Interactive components need programmatic name, role, state, and value; dynamic status messages must be exposed to assistive technology without requiring focus changes.
+  - Interpretation: Accessibility must be embedded in component contracts and tested states, not added after visual design.
+  - Confidence: high
+  - Limitations:
+    - Historical source; not live reverified during schema migration
+  - Rights: Reference only; no identity, copy or asset reuse inferred
+  - Id: ev-fssai-ecommerce
+  - Title: FSSAI Advisory for E-commerce Food Business Operators
+  - Source Url: https://fssai.gov.in/upload/advisories/2024/12/674efa161d756Adobe%20Scan%203%20Dec%202024.pdf
+  - Date: 2026-10-02
+  - Observation: Food-commerce listings and operations require valid FSSAI identification, alignment between online and physical-label claims, safe last-mile handling, and adequate remaining shelf life.
+  - Interpretation: Compliance fields must be supported in product/admin data and surfaced where legally required; claims cannot be invented for design effect.
+  - Confidence: high
+  - Limitations:
+    - Legal configuration requires qualified review before launch
+    - Historical source; not live reverified during schema migration
+  - Rights: Reference only; no identity, copy or asset reuse inferred
+  - Id: ev-local-visuals
+  - Title: WeGroween local visual resources
+  - Date: 2026-10-02
+  - Observation: References favor isolated produce photography, microgreen line drawings, watercolor seedlings, and AI-generated botanical material.
+  - Interpretation: A restrained botanical mark-making layer could add authenticity, but visible stock watermarks, uncertain licenses, and generic AI imagery make most files unsuitable for direct production use.
+  - Confidence: high
+  - Limitations:
+    - Ownership and reuse rights are undocumented
+    - Historical source; not live reverified during schema migration
+  - Rights: Reference only; no identity, copy or asset reuse inferred
+  - Id: ev-approved-h1
+  - Title: Leader-approved H1 continuous R3 homepage
+  - Date: 2026-10-03
+  - Observation: H1 household-first narrative and three-page continuous presentation with selected project photographs.
+  - Interpretation: Preserve source order, copy, media geometry and original authorization.
+  - Confidence: high
+  - Rights: Prototype use authorized; production/public rights unconfirmed
+  - Id: ev-legacy-decisions
+  - Title: WeGroween leader decision log
+  - Date: 2026-10-05
+  - Observation: Recorded historic identity approvals and scope corrections.
+  - Confidence: high
+  - Rights: Project-private
+- Gaps:
+  - Service area and delivery rules
+  - Final catalogue, pack sizes, prices and claims
+  - Production asset rights
+  - New imagery-guide rules and migrated presentation mapping need acceptance
+- Budget:
+  - Questions:
+    - Legacy schema equivalence
+    - Existing H1 copy/media preservation
+    - New mandatory field provenance
+  - Max Sources: 6
+  - Max Minutes: 30
+  - Used Web Sources This Migration: 0
+- Stop Condition: Resolve preservation/mapping questions locally; new material design choices remain proposed until accepted
+

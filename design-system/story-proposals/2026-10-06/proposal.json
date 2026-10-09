@@ -1,0 +1,24 @@
+{
+  "project": "wegroween",
+  "mode": "EXTEND",
+  "status": "PROPOSED",
+  "scope": "Two non-production animated story page studies and proposed brand copy. Existing identity is retained; no website source edits.",
+  "brief_evidence": "User supplied five origin/ambition milestones and requested interesting storytelling, two initial directions, animation and fidelity to the brand identity.",
+  "identity_sources": ["../../design-language.json", "../../design-tokens.json", "../../decisions.md", "../../BRAND_IDENTITY_BLUEPRINT.md"],
+  "content_source": "story.json",
+  "selected_direction": null,
+  "directions": [
+    {"id": "seed", "name": "A seed of something bigger", "recommendation": true, "composition": "An open, alternating chapter journey connected by a growing vertical line. A five-stage illustrated hero establishes the arc.", "motion": "Chapter reveals, line progress and crop illustration draw-on explain chronological growth; no photo zoom.", "benefit": "Makes the origin and expanding ambition immediately understandable and memorable.", "tradeoff": "Longer page; pacing needs generous but purposeful gaps."},
+    {"id": "journal", "name": "The grower's journal", "recommendation": false, "composition": "A centered editorial opening followed by a sticky illustrated chapter index and spacious reading column.", "motion": "The chapter marker and illustration change as the reader reaches each chapter; short text reveals preserve reading rhythm.", "benefit": "A more intimate, reflective experience with clear orientation through the story.", "tradeoff": "Less spectacle; the desktop sticky composition becomes a simple stacked narrative on mobile."}
+  ],
+  "motion": {"durations": "Existing 140/220/360ms tokens", "reduced_motion": "All copy and illustrations visible; no reveal, progress interpolation or decorative translation.", "scroll": "Native browser scrolling; never lock, hijack, or autoplay chapters."},
+  "imagery": {"study": "Existing Field Notes crop icons composed as symbolic illustrations, plus supplied logo. These are not documentary evidence.", "future": "Use actual founder terrace/indoor-growing photographs if available. Existing produce imagery can support crop chapters; do not label unrelated farm or generated scenes as historical photographs."},
+  "claim_boundary": "Fresh and organic supply and market leadership remain ambitions. No invented dates, founders, certifications, customers, operational achievements or origin photographs.",
+  "purpose": [
+    {"pattern": "opening", "need": "Understand why the brand exists", "placement": "First", "prominence": "Primary heading and concise premise", "removal_cost": "Origin loses its unifying idea", "responsive": "Illustration stacks below heading", "evidence": "User story"},
+    {"pattern": "chapter", "need": "Follow curiosity becoming purpose", "placement": "Chronological middle", "prominence": "One heading and paragraph at a time", "removal_cost": "Journey becomes a generic mission statement", "responsive": "Single column, generous chapter spacing", "evidence": "User five milestones"},
+    {"pattern": "closing", "need": "Understand the ambition and continue to the produce", "placement": "After the story", "prominence": "One primary action", "removal_cost": "No connection back to discovery", "responsive": "Wrapping heading and native link", "evidence": "Existing storefront action convention"}
+  ],
+  "phases": {"0": "Current nested checkout verified; output restricted to a new proposal directory", "1": "Brief supplied explicitly in the request", "2": "Existing approved identity reused", "3": "No external research needed for founder-supplied copy and bounded local studies", "4": "Two territories requested, rather than skill default three", "5": "Existing palette/type/icons retained; no new identity selection", "6": "Rendered review required before handoff", "7": "Both requested compositions use the existing approved palette", "8": "Interactive comparison, copy and scoped proposal sources", "9": "No memory write authorized"},
+  "pending": "User selection, combination or revision of direction and copy before website implementation"
+}

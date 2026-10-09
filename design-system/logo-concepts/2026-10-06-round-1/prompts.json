@@ -1,0 +1,65 @@
+{
+  "status": "PROPOSED — awaiting user selection",
+  "date": "2026-10-06",
+  "generator": "Built-in image_gen",
+  "sourceLogo": "E:\\WeGroween\\Website Source Code\\Logo.webp",
+  "preservedDirection": "Cultivated Editorial; C2 Soil & Saffron; existing website typography unchanged",
+  "commonPrompt": "Use case: logo-brand. Create ONE refined flat logo concept for WeGroween, a premium Indian grower of mushrooms and microgreens, extending to seasonal produce. Brand: Cultivated Editorial, quietly confident, tactile, precise, appetising, warm editorial craft. Image 1 is the original logo, a contextual reference for the spelling and brand warmth, not an edit target. All concepts must remain compatible with the existing Fraunces + DM Sans website. Render one large primary logo centred on a landscape cream canvas, flat solid soil-brown #402B24 artwork on plain warm-white #FFFDF7, with generous even margins. Vector-like clean edges and restrained coherent strokes. No shadows, gradients, 3D, photographs, mockups, texture, tagline, badges, concept labels, explanation, watermarks, decorative leaves, generic eco clipart, or extra marks. For wordmarks render EXACTLY \"WeGroween\": W e G r o w e e n. One word, nine letters, uppercase W and G, no space; verify spelling. Designs must have good optical spacing and reproduce clearly in one colour.",
+  "concepts": [
+    {
+      "n": 1,
+      "id": "01-script-continuity",
+      "name": "Script Continuity",
+      "brief": "WORDMARK ONLY. Reimagine the original connected handwritten wordmark as confident custom calligraphic lettering. Preserve the readable capital W and G, gentle forward rhythm and human warmth, but use sturdier strokes, open counters, restrained joins and short terminals that stay clear at website-header scale. Warm food-editorial lettering, not wedding stationery, no giant swashes. The word itself is the entire identity: no icon, underline, emblem, botanical decoration or monogram. Clean reading of every letter especially the double e and ending n. A materially refined script direction.",
+      "type": "Wordmark only",
+      "idea": "A sturdier script preserves the warmth and recognition of the original.",
+      "tradeoff": "The flowing joins and long G descender need a careful small-size refinement.",
+      "filename": "01-script-continuity.png",
+      "sourcePath": "C:\\Users\\tarun\\.codex\\generated_images\\01a110b4-d483-7051-b5fc-076d304baedb\\exec-24ee9ece-0513-49de-a901-56d145cd6277.png"
+    },
+    {
+      "n": 2,
+      "id": "02-editorial-wordmark",
+      "name": "Editorial Wordmark",
+      "brief": "WORDMARK ONLY. Create an original bespoke upright editorial serif wordmark, with generous lowercase x-height, gently soft/bracketed serifs, open counters and confident medium-weight strokes, informed by the warmth and personality of Fraunces but optically crafted as a logo. Entirely distinct from the original script: upright roman letters, not italic, no handwritten joins. Subtle memorable custom cuts in W and G; keep all lowercase letters highly readable. Balanced compact horizontal silhouette. No icon, underline, monogram or leaf. This should feel like the title of a cultivated food journal with the practical clarity of a fresh-produce brand.",
+      "type": "Wordmark only",
+      "idea": "Upright serif lettering gives the name an editorial presence that fits the website.",
+      "tradeoff": "It relies on the name rather than a separate symbol for recognition.",
+      "filename": "02-editorial-wordmark.png",
+      "sourcePath": "C:\\Users\\tarun\\.codex\\generated_images\\01a110b4-d483-7051-b5fc-076d304baedb\\exec-f4b5fac1-3e53-43ec-ad20-8f49cb7a0728.png"
+    },
+    {
+      "n": 3,
+      "id": "03-cap-and-shoot",
+      "name": "Cap & Shoot",
+      "brief": "SYMBOL + WORDMARK. Design an original compact botanical-cultivation symbol placed beside an upright warm editorial serif WeGroween wordmark. Symbol: one asymmetric oyster mushroom cap drawn with a bold, gently curved silhouette; a separate young microgreen shoot with two small cotyledons rises beside its base. Both components are optically integrated into one simple compact emblem through a shared ground line; keep the mushroom and shoot anatomically distinct. Minimal internal mushroom gill detail, strong negative space, sturdy readable strokes, not a cute cartoon and not a generic leaf circle. The cap-and-shoot emblem should stand on its own for labels and favicons; horizontal full lockup should be balanced and restrained. One-colour solid artwork only.",
+      "type": "Wordmark + symbol",
+      "idea": "An oyster cap and young shoot communicate both core crop families.",
+      "tradeoff": "The gill detail should be simplified before favicon and label use.",
+      "filename": "03-cap-and-shoot.png",
+      "sourcePath": "C:\\Users\\tarun\\.codex\\generated_images\\01a110b4-d483-7051-b5fc-076d304baedb\\exec-6d8976ce-317d-483c-b8a5-c640495d288d.png"
+    },
+    {
+      "n": 4,
+      "id": "04-growers-monogram",
+      "name": "Grower’s Monogram",
+      "brief": "MONOGRAM SYMBOL + WORDMARK. Make a strong architectural WG ligature beside a warm understated humanist sans-serif \"WeGroween\" wordmark. Crucial: the W MUST have two visible lower vertices and three upward endpoints, recognisable as a full W rather than V. Draw a sturdy angular W, then join an open curved G to its right using one shared stroke and generous negative space; show a readable G crossbar. Preserve W and G identities without letter tangles or a swooping V ribbon. Compact square-ish symbol with restrained softened inner corners and clipped outer terminals; flat silhouette, no enclosing badge. The result should feel like a practical grower's signature refined as an editorial typographic stamp. No mushroom, leaf, sprout or botanical illustration. Clean horizontal lockup, strong legibility at small sizes.",
+      "type": "Wordmark + monogram",
+      "idea": "A compact WG signature supports packaging and broad future produce categories.",
+      "tradeoff": "The symbol is less immediately descriptive of the products.",
+      "filename": "04-growers-monogram.png",
+      "sourcePath": "C:\\Users\\tarun\\.codex\\generated_images\\01a110b4-d483-7051-b5fc-076d304baedb\\exec-c6cebd83-9786-4d87-9380-a07a4469cea4.png"
+    },
+    {
+      "n": 5,
+      "id": "05-harvest-aperture",
+      "name": "Harvest Aperture",
+      "brief": "SYMBOL ONLY. Absolutely no words or letters. Create a distinctively abstract compact cultivation-aperture emblem: a near-square solid ink shape, slightly wider than tall, with three horizontal negative-space incisions entering from alternating edges. The incisions have a subtle upward curve inspired by oyster gill rhythm, and connect through one narrow offset diagonal negative-space channel. The channel runs off-centre toward the upper right, suggesting emergence through cultivated layers. Use an asymmetric cut-paper silhouette, blunt crop-like terminals and very few robust shapes. The centre must NOT resemble a plant stem; no leaf-like lobes, pointed leaves, seedling, tree, open book, stacked leaves, Wi-Fi arcs or literal rack illustration. Strong simple silhouette at favicon size. Quiet editorial precision with natural asymmetric rhythm, not an IT logo. Render exactly one soil-brown flat mark on the same warm-white canvas, no secondary versions or labels.",
+      "type": "Symbol only",
+      "idea": "An abstract aperture through cultivated layers gives the brand a compact graphic mark.",
+      "tradeoff": "It needs an accompanying brand name during early use; its meaning is interpretive.",
+      "filename": "05-harvest-aperture.png",
+      "sourcePath": "C:\\Users\\tarun\\.codex\\generated_images\\01a110b4-d483-7051-b5fc-076d304baedb\\exec-056a3fa3-d6b1-4318-bee4-e0648e114092.png"
+    }
+  ]
+}

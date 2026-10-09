@@ -1,0 +1,92 @@
+patterns:
+  - pattern_id: pat-provenance-led-premium
+    name: Provenance-led premium
+    problem_solved: Justifies premium pricing and reduces distrust around organic and specialty claims.
+    suitable_contexts: [homepage, product-detail, about, checkout-reassurance]
+    unsuitable_contexts: [claims-without-evidence]
+    visual_characteristics: [specific farm imagery, named practices, restrained verification marks, sensory detail]
+    interaction_behavior: [expandable sourcing details, linked certifications, batch-or-harvest context]
+    accessibility_requirements: [text alternatives, readable certificate labels, no color-only proof]
+    technical_implications: [structured provenance fields, optional certification records]
+    supporting_evidence_ids: [ev-sanesa-provenance, ev-gourmet-mushroom-dual-audience, ev-oishii-premium]
+    original_adaptation_opportunity: Create a WeGroween “Cultivation Notes” pattern joining harvest, source, taste, and best use.
+    copying_risk: low
+    confidence: high
+  - pattern_id: pat-harvest-aware-commerce
+    name: Harvest-aware commerce
+    problem_solved: Makes variable availability and biological lead times understandable.
+    suitable_contexts: [product-card, product-detail, cart, account, admin]
+    unsuitable_contexts: [manufactured-always-in-stock-products]
+    visual_characteristics: [calm status labels, dates, availability bands]
+    interaction_behavior: [show next harvest, order cutoff, delivery window, notify-me state]
+    accessibility_requirements: [status semantics, non-color indicators, timezone-safe dates]
+    technical_implications: [availability windows, stock reservations, event states, notifications]
+    supporting_evidence_ids: [ev-microgreen-store-harvest, ev-riverford-repeat, ev-baymard-grocery]
+    original_adaptation_opportunity: Express freshness as “Growing / Harvesting / Ready / Resting” with plain operational explanations.
+    copying_risk: low
+    confidence: high
+  - pattern_id: pat-household-b2b-split
+    name: Shared catalogue, distinct buying pathways
+    problem_solved: Serves homes and restaurants without muddying the primary proposition.
+    suitable_contexts: [global-navigation, account-type, restaurant-landing, pricing]
+    unsuitable_contexts: [single-audience-products]
+    visual_characteristics: [household-first navigation, quieter professional entry point]
+    interaction_behavior: [restaurant application or login, saved lists, repeat order, invoice access]
+    accessibility_requirements: [clear account context, unambiguous labels]
+    technical_implications: [customer type, organization accounts, price lists, GST fields, approval states]
+    supporting_evidence_ids: [ev-gourmet-mushroom-dual-audience, ev-eztrolley-b2b]
+    original_adaptation_opportunity: “For your table / For your kitchen” language can distinguish homes and professional kitchens without splitting the brand.
+    copying_risk: low
+    confidence: high
+  - pattern_id: pat-repeat-with-control
+    name: Repeat purchase without lock-in anxiety
+    problem_solved: Speeds routine ordering while preserving customer control.
+    suitable_contexts: [account-home, homepage-for-returning-users, cart, subscriptions]
+    unsuitable_contexts: [first-visit-primary-hero]
+    visual_characteristics: [compact prior-item rows, clear dates and quantities]
+    interaction_behavior: [buy again, saved basket, skip, pause, adjust]
+    accessibility_requirements: [descriptive controls, confirmation messages, undo where feasible]
+    technical_implications: [order history, reorder cloning, subscription state if enabled]
+    supporting_evidence_ids: [ev-bhoomi-membership, ev-riverford-repeat, ev-baymard-grocery]
+    original_adaptation_opportunity: Start with “Buy this harvest again”; add subscriptions only after fulfilment is reliable.
+    copying_risk: low
+    confidence: high
+  - pattern_id: pat-perishable-checkout
+    name: Fulfilment-first perishable checkout
+    problem_solved: Prevents late discovery of unavailable slots, locations, or substitutions.
+    suitable_contexts: [catalogue-header, cart, checkout]
+    unsuitable_contexts: [non-perishable-national-shipping-only]
+    visual_characteristics: [persistent location and delivery context, concise summaries]
+    interaction_behavior: [check serviceability early, select slot before payment, global substitution preference with item exceptions]
+    accessibility_requirements: [announced availability changes, errors linked to fields, keyboard-operable slot selection]
+    technical_implications: [pincode rules, slots, capacity, stock reservation, substitution policy]
+    supporting_evidence_ids: [ev-sanesa-provenance, ev-baymard-grocery]
+    original_adaptation_opportunity: Use a single “Delivery promise” module from catalogue through confirmation.
+    copying_risk: low
+    confidence: high
+  - pattern_id: pat-editorial-seasonality
+    name: Editorial seasonality
+    problem_solved: Keeps a broad produce catalogue distinctive and discoverable.
+    suitable_contexts: [homepage, category, journal, product-detail]
+    unsuitable_contexts: [admin-operations]
+    visual_characteristics: [produce-led color, strong editorial hierarchy, generous negative space, sparse botanical marks]
+    interaction_behavior: [seasonal collections, recipes, variety stories, related produce]
+    accessibility_requirements: [logical reading order, responsive reflow, motion reduction]
+    technical_implications: [content types for growers, seasons, recipes, collections]
+    supporting_evidence_ids: [ev-natoora-transparency, ev-oishii-premium, ev-local-visuals]
+    original_adaptation_opportunity: Ground stories in Indian kitchens, climate, and WeGroween cultivation rather than European market aesthetics.
+    copying_risk: medium
+    confidence: high
+  - pattern_id: pat-structured-compliance
+    name: Structured food-commerce compliance
+    problem_solved: Keeps listings, invoices, and claims accurate and launch-ready.
+    suitable_contexts: [admin-product-editor, product-detail, invoice, policies]
+    unsuitable_contexts: []
+    visual_characteristics: [quiet metadata, legible disclosures]
+    interaction_behavior: [required admin fields, claim review, validation warnings]
+    accessibility_requirements: [plain language, programmatic field errors]
+    technical_implications: [FSSAI fields, label claims, tax data, shelf-life metadata, audit trail]
+    supporting_evidence_ids: [ev-fssai-ecommerce]
+    original_adaptation_opportunity: Make traceability and compliance part of the premium trust layer without turning the storefront into a legal notice.
+    copying_risk: low
+    confidence: high

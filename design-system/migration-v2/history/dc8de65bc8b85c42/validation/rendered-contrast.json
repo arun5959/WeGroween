@@ -1,0 +1,259 @@
+{
+  "reports": [
+    {
+      "checks": 203,
+      "failures": [
+        {
+          "text": "Curious ingredients",
+          "cls": "",
+          "ratio": 4.45,
+          "minimum": 4.5,
+          "foreground": "color(srgb 0.952784 0.869333 0.70698)",
+          "background": [
+            152,
+            81,
+            61
+          ],
+          "pass": false
+        },
+        {
+          "text": "1",
+          "cls": "",
+          "ratio": 1.04,
+          "minimum": 3,
+          "foreground": "rgb(255, 248, 236)",
+          "background": [
+            255,
+            253,
+            247
+          ],
+          "pass": false
+        },
+        {
+          "text": "2",
+          "cls": "",
+          "ratio": 1.04,
+          "minimum": 3,
+          "foreground": "rgb(255, 248, 236)",
+          "background": [
+            255,
+            253,
+            247
+          ],
+          "pass": false
+        },
+        {
+          "text": "3",
+          "cls": "",
+          "ratio": 1.04,
+          "minimum": 3,
+          "foreground": "rgb(255, 248, 236)",
+          "background": [
+            255,
+            253,
+            247
+          ],
+          "pass": false
+        },
+        {
+          "text": "4",
+          "cls": "",
+          "ratio": 1.04,
+          "minimum": 3,
+          "foreground": "rgb(255, 248, 236)",
+          "background": [
+            255,
+            253,
+            247
+          ],
+          "pass": false
+        },
+        {
+          "text": "Next harvest",
+          "cls": "kicker kicker--gold",
+          "ratio": 4.45,
+          "minimum": 4.5,
+          "foreground": "color(srgb 0.952784 0.869333 0.70698)",
+          "background": [
+            152,
+            81,
+            61
+          ],
+          "pass": false
+        }
+      ],
+      "limitations": "Computed flat/alpha background compositing; photo/gradient contrast needs rendered inspection",
+      "palette": "palette-2"
+    },
+    {
+      "checks": 203,
+      "failures": [
+        {
+          "text": "1",
+          "cls": "",
+          "ratio": 1.02,
+          "minimum": 3,
+          "foreground": "rgb(255, 249, 238)",
+          "background": [
+            255,
+            252,
+            245
+          ],
+          "pass": false
+        },
+        {
+          "text": "2",
+          "cls": "",
+          "ratio": 1.02,
+          "minimum": 3,
+          "foreground": "rgb(255, 249, 238)",
+          "background": [
+            255,
+            252,
+            245
+          ],
+          "pass": false
+        },
+        {
+          "text": "3",
+          "cls": "",
+          "ratio": 1.02,
+          "minimum": 3,
+          "foreground": "rgb(255, 249, 238)",
+          "background": [
+            255,
+            252,
+            245
+          ],
+          "pass": false
+        },
+        {
+          "text": "4",
+          "cls": "",
+          "ratio": 1.02,
+          "minimum": 3,
+          "foreground": "rgb(255, 249, 238)",
+          "background": [
+            255,
+            252,
+            245
+          ],
+          "pass": false
+        }
+      ],
+      "limitations": "Computed flat/alpha background compositing; photo/gradient contrast needs rendered inspection",
+      "palette": "palette-1"
+    },
+    {
+      "checks": 203,
+      "failures": [
+        {
+          "text": "Curious ingredients",
+          "cls": "",
+          "ratio": 4.2,
+          "minimum": 4.5,
+          "foreground": "color(srgb 0.918745 0.782118 0.742588)",
+          "background": [
+            80,
+            99,
+            59
+          ],
+          "pass": false
+        },
+        {
+          "text": "1",
+          "cls": "",
+          "ratio": 1.03,
+          "minimum": 3,
+          "foreground": "rgb(255, 249, 242)",
+          "background": [
+            255,
+            253,
+            249
+          ],
+          "pass": false
+        },
+        {
+          "text": "2",
+          "cls": "",
+          "ratio": 1.03,
+          "minimum": 3,
+          "foreground": "rgb(255, 249, 242)",
+          "background": [
+            255,
+            253,
+            249
+          ],
+          "pass": false
+        },
+        {
+          "text": "3",
+          "cls": "",
+          "ratio": 1.03,
+          "minimum": 3,
+          "foreground": "rgb(255, 249, 242)",
+          "background": [
+            255,
+            253,
+            249
+          ],
+          "pass": false
+        },
+        {
+          "text": "4",
+          "cls": "",
+          "ratio": 1.03,
+          "minimum": 3,
+          "foreground": "rgb(255, 249, 242)",
+          "background": [
+            255,
+            253,
+            249
+          ],
+          "pass": false
+        },
+        {
+          "text": "Current catalogue",
+          "cls": "",
+          "ratio": 3.09,
+          "minimum": 4.5,
+          "foreground": "rgb(37, 29, 35)",
+          "background": [
+            181,
+            72,
+            54
+          ],
+          "pass": false
+        },
+        {
+          "text": "pricing to confirm",
+          "cls": "",
+          "ratio": 3.09,
+          "minimum": 4.5,
+          "foreground": "rgb(37, 29, 35)",
+          "background": [
+            181,
+            72,
+            54
+          ],
+          "pass": false
+        },
+        {
+          "text": "Next harvest",
+          "cls": "kicker kicker--gold",
+          "ratio": 4.2,
+          "minimum": 4.5,
+          "foreground": "color(srgb 0.918745 0.782118 0.742588)",
+          "background": [
+            80,
+            99,
+            59
+          ],
+          "pass": false
+        }
+      ],
+      "limitations": "Computed flat/alpha background compositing; photo/gradient contrast needs rendered inspection",
+      "palette": "palette-3"
+    }
+  ]
+}

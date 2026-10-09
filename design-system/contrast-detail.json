@@ -1,0 +1,1111 @@
+{
+  "declared_pairs": [
+    {
+      "palette": "palette-1",
+      "pair": {
+        "foreground": "text-primary",
+        "background": "background",
+        "kind": "normal-text"
+      },
+      "ratio": 13.823,
+      "minimum": 4.5
+    },
+    {
+      "palette": "palette-1",
+      "pair": {
+        "foreground": "text-primary",
+        "background": "surface",
+        "kind": "normal-text"
+      },
+      "ratio": 15.322,
+      "minimum": 4.5
+    },
+    {
+      "palette": "palette-1",
+      "pair": {
+        "foreground": "text-primary",
+        "background": "surface-elevated",
+        "kind": "normal-text"
+      },
+      "ratio": 15.7,
+      "minimum": 4.5
+    },
+    {
+      "palette": "palette-1",
+      "pair": {
+        "foreground": "text-secondary",
+        "background": "background",
+        "kind": "normal-text"
+      },
+      "ratio": 5.862,
+      "minimum": 4.5
+    },
+    {
+      "palette": "palette-1",
+      "pair": {
+        "foreground": "text-secondary",
+        "background": "surface",
+        "kind": "normal-text"
+      },
+      "ratio": 6.498,
+      "minimum": 4.5
+    },
+    {
+      "palette": "palette-1",
+      "pair": {
+        "foreground": "text-secondary",
+        "background": "surface-elevated",
+        "kind": "normal-text"
+      },
+      "ratio": 6.659,
+      "minimum": 4.5
+    },
+    {
+      "palette": "palette-1",
+      "pair": {
+        "foreground": "text-inverse",
+        "background": "brand-primary",
+        "kind": "normal-text"
+      },
+      "ratio": 12.919,
+      "minimum": 4.5
+    },
+    {
+      "palette": "palette-1",
+      "pair": {
+        "foreground": "text-inverse",
+        "background": "brand-secondary",
+        "kind": "normal-text"
+      },
+      "ratio": 7.391,
+      "minimum": 4.5
+    },
+    {
+      "palette": "palette-1",
+      "pair": {
+        "foreground": "surface-elevated",
+        "background": "error",
+        "kind": "normal-text"
+      },
+      "ratio": 7.014,
+      "minimum": 4.5
+    },
+    {
+      "palette": "palette-1",
+      "pair": {
+        "foreground": "brand-primary",
+        "background": "background",
+        "kind": "normal-text"
+      },
+      "ratio": 11.921,
+      "minimum": 4.5
+    },
+    {
+      "palette": "palette-1",
+      "pair": {
+        "foreground": "brand-primary",
+        "background": "surface",
+        "kind": "normal-text"
+      },
+      "ratio": 13.214,
+      "minimum": 4.5
+    },
+    {
+      "palette": "palette-1",
+      "pair": {
+        "foreground": "brand-primary",
+        "background": "surface-elevated",
+        "kind": "normal-text"
+      },
+      "ratio": 13.54,
+      "minimum": 4.5
+    },
+    {
+      "palette": "palette-1",
+      "pair": {
+        "foreground": "success",
+        "background": "background",
+        "kind": "normal-text"
+      },
+      "ratio": 6.275,
+      "minimum": 4.5
+    },
+    {
+      "palette": "palette-1",
+      "pair": {
+        "foreground": "success",
+        "background": "surface",
+        "kind": "normal-text"
+      },
+      "ratio": 6.956,
+      "minimum": 4.5
+    },
+    {
+      "palette": "palette-1",
+      "pair": {
+        "foreground": "success",
+        "background": "surface-elevated",
+        "kind": "normal-text"
+      },
+      "ratio": 7.128,
+      "minimum": 4.5
+    },
+    {
+      "palette": "palette-1",
+      "pair": {
+        "foreground": "warning",
+        "background": "background",
+        "kind": "normal-text"
+      },
+      "ratio": 5.148,
+      "minimum": 4.5
+    },
+    {
+      "palette": "palette-1",
+      "pair": {
+        "foreground": "warning",
+        "background": "surface",
+        "kind": "normal-text"
+      },
+      "ratio": 5.706,
+      "minimum": 4.5
+    },
+    {
+      "palette": "palette-1",
+      "pair": {
+        "foreground": "warning",
+        "background": "surface-elevated",
+        "kind": "normal-text"
+      },
+      "ratio": 5.847,
+      "minimum": 4.5
+    },
+    {
+      "palette": "palette-1",
+      "pair": {
+        "foreground": "error",
+        "background": "background",
+        "kind": "normal-text"
+      },
+      "ratio": 6.175,
+      "minimum": 4.5
+    },
+    {
+      "palette": "palette-1",
+      "pair": {
+        "foreground": "error",
+        "background": "surface",
+        "kind": "normal-text"
+      },
+      "ratio": 6.845,
+      "minimum": 4.5
+    },
+    {
+      "palette": "palette-1",
+      "pair": {
+        "foreground": "error",
+        "background": "surface-elevated",
+        "kind": "normal-text"
+      },
+      "ratio": 7.014,
+      "minimum": 4.5
+    },
+    {
+      "palette": "palette-1",
+      "pair": {
+        "foreground": "information",
+        "background": "background",
+        "kind": "normal-text"
+      },
+      "ratio": 6.504,
+      "minimum": 4.5
+    },
+    {
+      "palette": "palette-1",
+      "pair": {
+        "foreground": "information",
+        "background": "surface",
+        "kind": "normal-text"
+      },
+      "ratio": 7.21,
+      "minimum": 4.5
+    },
+    {
+      "palette": "palette-1",
+      "pair": {
+        "foreground": "information",
+        "background": "surface-elevated",
+        "kind": "normal-text"
+      },
+      "ratio": 7.387,
+      "minimum": 4.5
+    },
+    {
+      "palette": "palette-1",
+      "pair": {
+        "foreground": "focus",
+        "background": "background",
+        "kind": "non-text"
+      },
+      "ratio": 5.609,
+      "minimum": 3
+    },
+    {
+      "palette": "palette-1",
+      "pair": {
+        "foreground": "focus",
+        "background": "surface",
+        "kind": "non-text"
+      },
+      "ratio": 6.218,
+      "minimum": 3
+    },
+    {
+      "palette": "palette-1",
+      "pair": {
+        "foreground": "focus",
+        "background": "surface-elevated",
+        "kind": "non-text"
+      },
+      "ratio": 6.371,
+      "minimum": 3
+    },
+    {
+      "palette": "palette-1",
+      "pair": {
+        "foreground": "border-strong",
+        "background": "background",
+        "kind": "non-text"
+      },
+      "ratio": 3.24,
+      "minimum": 3
+    },
+    {
+      "palette": "palette-1",
+      "pair": {
+        "foreground": "border-strong",
+        "background": "surface",
+        "kind": "non-text"
+      },
+      "ratio": 3.591,
+      "minimum": 3
+    },
+    {
+      "palette": "palette-1",
+      "pair": {
+        "foreground": "border-strong",
+        "background": "surface-elevated",
+        "kind": "non-text"
+      },
+      "ratio": 3.68,
+      "minimum": 3
+    },
+    {
+      "palette": "palette-1",
+      "pair": {
+        "foreground": "brand-secondary",
+        "background": "background",
+        "kind": "non-text"
+      },
+      "ratio": 6.82,
+      "minimum": 3
+    },
+    {
+      "palette": "palette-1",
+      "pair": {
+        "foreground": "brand-secondary",
+        "background": "surface",
+        "kind": "non-text"
+      },
+      "ratio": 7.56,
+      "minimum": 3
+    },
+    {
+      "palette": "palette-1",
+      "pair": {
+        "foreground": "brand-secondary",
+        "background": "surface-elevated",
+        "kind": "non-text"
+      },
+      "ratio": 7.746,
+      "minimum": 3
+    },
+    {
+      "palette": "palette-1",
+      "pair": {
+        "foreground": "text-primary",
+        "background": "accent",
+        "kind": "normal-text"
+      },
+      "ratio": 5.84,
+      "minimum": 4.5
+    },
+    {
+      "palette": "palette-2",
+      "pair": {
+        "foreground": "text-primary",
+        "background": "background",
+        "kind": "normal-text"
+      },
+      "ratio": 14.355,
+      "minimum": 4.5
+    },
+    {
+      "palette": "palette-2",
+      "pair": {
+        "foreground": "text-primary",
+        "background": "surface",
+        "kind": "normal-text"
+      },
+      "ratio": 15.43,
+      "minimum": 4.5
+    },
+    {
+      "palette": "palette-2",
+      "pair": {
+        "foreground": "text-primary",
+        "background": "surface-elevated",
+        "kind": "normal-text"
+      },
+      "ratio": 15.695,
+      "minimum": 4.5
+    },
+    {
+      "palette": "palette-2",
+      "pair": {
+        "foreground": "text-secondary",
+        "background": "background",
+        "kind": "normal-text"
+      },
+      "ratio": 6.545,
+      "minimum": 4.5
+    },
+    {
+      "palette": "palette-2",
+      "pair": {
+        "foreground": "text-secondary",
+        "background": "surface",
+        "kind": "normal-text"
+      },
+      "ratio": 7.035,
+      "minimum": 4.5
+    },
+    {
+      "palette": "palette-2",
+      "pair": {
+        "foreground": "text-secondary",
+        "background": "surface-elevated",
+        "kind": "normal-text"
+      },
+      "ratio": 7.156,
+      "minimum": 4.5
+    },
+    {
+      "palette": "palette-2",
+      "pair": {
+        "foreground": "text-inverse",
+        "background": "brand-primary",
+        "kind": "normal-text"
+      },
+      "ratio": 12.517,
+      "minimum": 4.5
+    },
+    {
+      "palette": "palette-2",
+      "pair": {
+        "foreground": "text-inverse",
+        "background": "brand-secondary",
+        "kind": "normal-text"
+      },
+      "ratio": 5.557,
+      "minimum": 4.5
+    },
+    {
+      "palette": "palette-2",
+      "pair": {
+        "foreground": "surface-elevated",
+        "background": "error",
+        "kind": "normal-text"
+      },
+      "ratio": 6.996,
+      "minimum": 4.5
+    },
+    {
+      "palette": "palette-2",
+      "pair": {
+        "foreground": "brand-primary",
+        "background": "background",
+        "kind": "normal-text"
+      },
+      "ratio": 12.088,
+      "minimum": 4.5
+    },
+    {
+      "palette": "palette-2",
+      "pair": {
+        "foreground": "brand-primary",
+        "background": "surface",
+        "kind": "normal-text"
+      },
+      "ratio": 12.992,
+      "minimum": 4.5
+    },
+    {
+      "palette": "palette-2",
+      "pair": {
+        "foreground": "brand-primary",
+        "background": "surface-elevated",
+        "kind": "normal-text"
+      },
+      "ratio": 13.216,
+      "minimum": 4.5
+    },
+    {
+      "palette": "palette-2",
+      "pair": {
+        "foreground": "success",
+        "background": "background",
+        "kind": "normal-text"
+      },
+      "ratio": 6.243,
+      "minimum": 4.5
+    },
+    {
+      "palette": "palette-2",
+      "pair": {
+        "foreground": "success",
+        "background": "surface",
+        "kind": "normal-text"
+      },
+      "ratio": 6.711,
+      "minimum": 4.5
+    },
+    {
+      "palette": "palette-2",
+      "pair": {
+        "foreground": "success",
+        "background": "surface-elevated",
+        "kind": "normal-text"
+      },
+      "ratio": 6.826,
+      "minimum": 4.5
+    },
+    {
+      "palette": "palette-2",
+      "pair": {
+        "foreground": "warning",
+        "background": "background",
+        "kind": "normal-text"
+      },
+      "ratio": 5.651,
+      "minimum": 4.5
+    },
+    {
+      "palette": "palette-2",
+      "pair": {
+        "foreground": "warning",
+        "background": "surface",
+        "kind": "normal-text"
+      },
+      "ratio": 6.074,
+      "minimum": 4.5
+    },
+    {
+      "palette": "palette-2",
+      "pair": {
+        "foreground": "warning",
+        "background": "surface-elevated",
+        "kind": "normal-text"
+      },
+      "ratio": 6.178,
+      "minimum": 4.5
+    },
+    {
+      "palette": "palette-2",
+      "pair": {
+        "foreground": "error",
+        "background": "background",
+        "kind": "normal-text"
+      },
+      "ratio": 6.398,
+      "minimum": 4.5
+    },
+    {
+      "palette": "palette-2",
+      "pair": {
+        "foreground": "error",
+        "background": "surface",
+        "kind": "normal-text"
+      },
+      "ratio": 6.877,
+      "minimum": 4.5
+    },
+    {
+      "palette": "palette-2",
+      "pair": {
+        "foreground": "error",
+        "background": "surface-elevated",
+        "kind": "normal-text"
+      },
+      "ratio": 6.996,
+      "minimum": 4.5
+    },
+    {
+      "palette": "palette-2",
+      "pair": {
+        "foreground": "information",
+        "background": "background",
+        "kind": "normal-text"
+      },
+      "ratio": 6.641,
+      "minimum": 4.5
+    },
+    {
+      "palette": "palette-2",
+      "pair": {
+        "foreground": "information",
+        "background": "surface",
+        "kind": "normal-text"
+      },
+      "ratio": 7.138,
+      "minimum": 4.5
+    },
+    {
+      "palette": "palette-2",
+      "pair": {
+        "foreground": "information",
+        "background": "surface-elevated",
+        "kind": "normal-text"
+      },
+      "ratio": 7.261,
+      "minimum": 4.5
+    },
+    {
+      "palette": "palette-2",
+      "pair": {
+        "foreground": "focus",
+        "background": "background",
+        "kind": "non-text"
+      },
+      "ratio": 5.827,
+      "minimum": 3
+    },
+    {
+      "palette": "palette-2",
+      "pair": {
+        "foreground": "focus",
+        "background": "surface",
+        "kind": "non-text"
+      },
+      "ratio": 6.264,
+      "minimum": 3
+    },
+    {
+      "palette": "palette-2",
+      "pair": {
+        "foreground": "focus",
+        "background": "surface-elevated",
+        "kind": "non-text"
+      },
+      "ratio": 6.371,
+      "minimum": 3
+    },
+    {
+      "palette": "palette-2",
+      "pair": {
+        "foreground": "border-strong",
+        "background": "background",
+        "kind": "non-text"
+      },
+      "ratio": 3.713,
+      "minimum": 3
+    },
+    {
+      "palette": "palette-2",
+      "pair": {
+        "foreground": "border-strong",
+        "background": "surface",
+        "kind": "non-text"
+      },
+      "ratio": 3.99,
+      "minimum": 3
+    },
+    {
+      "palette": "palette-2",
+      "pair": {
+        "foreground": "border-strong",
+        "background": "surface-elevated",
+        "kind": "non-text"
+      },
+      "ratio": 4.059,
+      "minimum": 3
+    },
+    {
+      "palette": "palette-2",
+      "pair": {
+        "foreground": "brand-secondary",
+        "background": "background",
+        "kind": "non-text"
+      },
+      "ratio": 5.366,
+      "minimum": 3
+    },
+    {
+      "palette": "palette-2",
+      "pair": {
+        "foreground": "brand-secondary",
+        "background": "surface",
+        "kind": "non-text"
+      },
+      "ratio": 5.768,
+      "minimum": 3
+    },
+    {
+      "palette": "palette-2",
+      "pair": {
+        "foreground": "brand-secondary",
+        "background": "surface-elevated",
+        "kind": "non-text"
+      },
+      "ratio": 5.867,
+      "minimum": 3
+    },
+    {
+      "palette": "palette-2",
+      "pair": {
+        "foreground": "text-primary",
+        "background": "accent",
+        "kind": "normal-text"
+      },
+      "ratio": 6.314,
+      "minimum": 4.5
+    },
+    {
+      "palette": "palette-3",
+      "pair": {
+        "foreground": "text-primary",
+        "background": "background",
+        "kind": "normal-text"
+      },
+      "ratio": 14.607,
+      "minimum": 4.5
+    },
+    {
+      "palette": "palette-3",
+      "pair": {
+        "foreground": "text-primary",
+        "background": "surface",
+        "kind": "normal-text"
+      },
+      "ratio": 16.165,
+      "minimum": 4.5
+    },
+    {
+      "palette": "palette-3",
+      "pair": {
+        "foreground": "text-primary",
+        "background": "surface-elevated",
+        "kind": "normal-text"
+      },
+      "ratio": 16.423,
+      "minimum": 4.5
+    },
+    {
+      "palette": "palette-3",
+      "pair": {
+        "foreground": "text-secondary",
+        "background": "background",
+        "kind": "normal-text"
+      },
+      "ratio": 6.341,
+      "minimum": 4.5
+    },
+    {
+      "palette": "palette-3",
+      "pair": {
+        "foreground": "text-secondary",
+        "background": "surface",
+        "kind": "normal-text"
+      },
+      "ratio": 7.017,
+      "minimum": 4.5
+    },
+    {
+      "palette": "palette-3",
+      "pair": {
+        "foreground": "text-secondary",
+        "background": "surface-elevated",
+        "kind": "normal-text"
+      },
+      "ratio": 7.129,
+      "minimum": 4.5
+    },
+    {
+      "palette": "palette-3",
+      "pair": {
+        "foreground": "text-inverse",
+        "background": "brand-primary",
+        "kind": "normal-text"
+      },
+      "ratio": 13.355,
+      "minimum": 4.5
+    },
+    {
+      "palette": "palette-3",
+      "pair": {
+        "foreground": "text-inverse",
+        "background": "brand-secondary",
+        "kind": "normal-text"
+      },
+      "ratio": 6.298,
+      "minimum": 4.5
+    },
+    {
+      "palette": "palette-3",
+      "pair": {
+        "foreground": "surface-elevated",
+        "background": "error",
+        "kind": "normal-text"
+      },
+      "ratio": 7.172,
+      "minimum": 4.5
+    },
+    {
+      "palette": "palette-3",
+      "pair": {
+        "foreground": "brand-primary",
+        "background": "background",
+        "kind": "normal-text"
+      },
+      "ratio": 12.419,
+      "minimum": 4.5
+    },
+    {
+      "palette": "palette-3",
+      "pair": {
+        "foreground": "brand-primary",
+        "background": "surface",
+        "kind": "normal-text"
+      },
+      "ratio": 13.744,
+      "minimum": 4.5
+    },
+    {
+      "palette": "palette-3",
+      "pair": {
+        "foreground": "brand-primary",
+        "background": "surface-elevated",
+        "kind": "normal-text"
+      },
+      "ratio": 13.964,
+      "minimum": 4.5
+    },
+    {
+      "palette": "palette-3",
+      "pair": {
+        "foreground": "success",
+        "background": "background",
+        "kind": "normal-text"
+      },
+      "ratio": 6.223,
+      "minimum": 4.5
+    },
+    {
+      "palette": "palette-3",
+      "pair": {
+        "foreground": "success",
+        "background": "surface",
+        "kind": "normal-text"
+      },
+      "ratio": 6.887,
+      "minimum": 4.5
+    },
+    {
+      "palette": "palette-3",
+      "pair": {
+        "foreground": "success",
+        "background": "surface-elevated",
+        "kind": "normal-text"
+      },
+      "ratio": 6.997,
+      "minimum": 4.5
+    },
+    {
+      "palette": "palette-3",
+      "pair": {
+        "foreground": "warning",
+        "background": "background",
+        "kind": "normal-text"
+      },
+      "ratio": 5.392,
+      "minimum": 4.5
+    },
+    {
+      "palette": "palette-3",
+      "pair": {
+        "foreground": "warning",
+        "background": "surface",
+        "kind": "normal-text"
+      },
+      "ratio": 5.968,
+      "minimum": 4.5
+    },
+    {
+      "palette": "palette-3",
+      "pair": {
+        "foreground": "warning",
+        "background": "surface-elevated",
+        "kind": "normal-text"
+      },
+      "ratio": 6.063,
+      "minimum": 4.5
+    },
+    {
+      "palette": "palette-3",
+      "pair": {
+        "foreground": "error",
+        "background": "background",
+        "kind": "normal-text"
+      },
+      "ratio": 6.378,
+      "minimum": 4.5
+    },
+    {
+      "palette": "palette-3",
+      "pair": {
+        "foreground": "error",
+        "background": "surface",
+        "kind": "normal-text"
+      },
+      "ratio": 7.059,
+      "minimum": 4.5
+    },
+    {
+      "palette": "palette-3",
+      "pair": {
+        "foreground": "error",
+        "background": "surface-elevated",
+        "kind": "normal-text"
+      },
+      "ratio": 7.172,
+      "minimum": 4.5
+    },
+    {
+      "palette": "palette-3",
+      "pair": {
+        "foreground": "information",
+        "background": "background",
+        "kind": "normal-text"
+      },
+      "ratio": 6.325,
+      "minimum": 4.5
+    },
+    {
+      "palette": "palette-3",
+      "pair": {
+        "foreground": "information",
+        "background": "surface",
+        "kind": "normal-text"
+      },
+      "ratio": 6.999,
+      "minimum": 4.5
+    },
+    {
+      "palette": "palette-3",
+      "pair": {
+        "foreground": "information",
+        "background": "surface-elevated",
+        "kind": "normal-text"
+      },
+      "ratio": 7.111,
+      "minimum": 4.5
+    },
+    {
+      "palette": "palette-3",
+      "pair": {
+        "foreground": "focus",
+        "background": "background",
+        "kind": "non-text"
+      },
+      "ratio": 5.675,
+      "minimum": 3
+    },
+    {
+      "palette": "palette-3",
+      "pair": {
+        "foreground": "focus",
+        "background": "surface",
+        "kind": "non-text"
+      },
+      "ratio": 6.281,
+      "minimum": 3
+    },
+    {
+      "palette": "palette-3",
+      "pair": {
+        "foreground": "focus",
+        "background": "surface-elevated",
+        "kind": "non-text"
+      },
+      "ratio": 6.381,
+      "minimum": 3
+    },
+    {
+      "palette": "palette-3",
+      "pair": {
+        "foreground": "border-strong",
+        "background": "background",
+        "kind": "non-text"
+      },
+      "ratio": 3.868,
+      "minimum": 3
+    },
+    {
+      "palette": "palette-3",
+      "pair": {
+        "foreground": "border-strong",
+        "background": "surface",
+        "kind": "non-text"
+      },
+      "ratio": 4.28,
+      "minimum": 3
+    },
+    {
+      "palette": "palette-3",
+      "pair": {
+        "foreground": "border-strong",
+        "background": "surface-elevated",
+        "kind": "non-text"
+      },
+      "ratio": 4.349,
+      "minimum": 3
+    },
+    {
+      "palette": "palette-3",
+      "pair": {
+        "foreground": "brand-secondary",
+        "background": "background",
+        "kind": "non-text"
+      },
+      "ratio": 5.857,
+      "minimum": 3
+    },
+    {
+      "palette": "palette-3",
+      "pair": {
+        "foreground": "brand-secondary",
+        "background": "surface",
+        "kind": "non-text"
+      },
+      "ratio": 6.482,
+      "minimum": 3
+    },
+    {
+      "palette": "palette-3",
+      "pair": {
+        "foreground": "brand-secondary",
+        "background": "surface-elevated",
+        "kind": "non-text"
+      },
+      "ratio": 6.585,
+      "minimum": 3
+    },
+    {
+      "palette": "palette-3",
+      "pair": {
+        "foreground": "text-inverse",
+        "background": "accent",
+        "kind": "normal-text"
+      },
+      "ratio": 5.091,
+      "minimum": 4.5
+    }
+  ],
+  "additional_actual_pairs": [
+    {
+      "palette": "palette-1",
+      "purpose": "primary hover",
+      "ratio": 13.215,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "palette": "palette-1",
+      "purpose": "secondary hover",
+      "ratio": 10.538,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "palette": "palette-1",
+      "purpose": "placeholder",
+      "ratio": 4.778,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "palette": "palette-1",
+      "purpose": "inactive disabled controls",
+      "ratio": 3.718,
+      "result": "exempt only while inactive; not a normal-text pass"
+    },
+    {
+      "palette": "palette-2",
+      "purpose": "primary hover",
+      "ratio": 12.8,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "palette": "palette-2",
+      "purpose": "secondary hover",
+      "ratio": 10.677,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "palette": "palette-2",
+      "purpose": "placeholder",
+      "ratio": 4.92,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "palette": "palette-2",
+      "purpose": "inactive disabled controls",
+      "ratio": 3.825,
+      "result": "exempt only while inactive; not a normal-text pass"
+    },
+    {
+      "palette": "palette-3",
+      "purpose": "primary hover",
+      "ratio": 13.687,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "palette": "palette-3",
+      "purpose": "secondary hover",
+      "ratio": 10.969,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "palette": "palette-3",
+      "purpose": "placeholder",
+      "ratio": 5.228,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "palette": "palette-3",
+      "purpose": "inactive disabled controls",
+      "ratio": 4.038,
+      "result": "exempt only while inactive; not a normal-text pass"
+    }
+  ],
+  "blocking_failures": [],
+  "not_tested": [
+    "All actual overlays/gradients and final rendered surfaces; see source mapping limitations"
+  ]
+}

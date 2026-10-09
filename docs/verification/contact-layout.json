@@ -1,0 +1,21 @@
+{
+  "widths": [
+    320,
+    390,
+    768,
+    1440
+  ],
+  "overflow": false,
+  "checkedAt": "2026-10-07T14:07:04.374Z",
+  "status": "passed",
+  "unitTests": 5,
+  "browserTests": 18,
+  "productionBuild": "passed",
+  "visualReview": [
+    "desktop 1440px",
+    "mobile 390px"
+  ],
+  "route": "/help",
+  "label": "Contact",
+  "messageDelivery": "local draft only"
+}

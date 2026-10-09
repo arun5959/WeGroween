@@ -1,0 +1,1471 @@
+# Design Language System
+
+WeGroween | 1.3.0-proposed
+
+## Status
+
+proposed
+
+## Design principles
+
+- Specificity is luxury
+- Evidence stays close to the claim
+- Produce leads
+- Seasonality creates movement
+- Households come first
+- Constraints become service design
+
+## Color strategies and measured contrast
+
+- Options:
+  - Id: palette-1
+  - Name: Orchard Ink
+  - Thesis: Botanical ink, blackberry and harvest gold: depth, restraint and produce-led seasonality.
+  - Benefits: Cultivated, calm and sensory
+  - Risks: Can suggest wine/cosmetics without fresh food context
+  - Evidence Ids:
+    - ev-legacy-decisions
+  - Pairs:
+    - Foreground: text-primary
+    - Background: background
+    - Kind: normal-text
+    - Foreground: text-primary
+    - Background: surface
+    - Kind: normal-text
+    - Foreground: text-primary
+    - Background: surface-elevated
+    - Kind: normal-text
+    - Foreground: text-secondary
+    - Background: background
+    - Kind: normal-text
+    - Foreground: text-secondary
+    - Background: surface
+    - Kind: normal-text
+    - Foreground: text-secondary
+    - Background: surface-elevated
+    - Kind: normal-text
+    - Foreground: text-inverse
+    - Background: brand-primary
+    - Kind: normal-text
+    - Foreground: text-inverse
+    - Background: brand-secondary
+    - Kind: normal-text
+    - Foreground: surface-elevated
+    - Background: error
+    - Kind: normal-text
+    - Foreground: brand-primary
+    - Background: background
+    - Kind: normal-text
+    - Foreground: brand-primary
+    - Background: surface
+    - Kind: normal-text
+    - Foreground: brand-primary
+    - Background: surface-elevated
+    - Kind: normal-text
+    - Foreground: success
+    - Background: background
+    - Kind: normal-text
+    - Foreground: success
+    - Background: surface
+    - Kind: normal-text
+    - Foreground: success
+    - Background: surface-elevated
+    - Kind: normal-text
+    - Foreground: warning
+    - Background: background
+    - Kind: normal-text
+    - Foreground: warning
+    - Background: surface
+    - Kind: normal-text
+    - Foreground: warning
+    - Background: surface-elevated
+    - Kind: normal-text
+    - Foreground: error
+    - Background: background
+    - Kind: normal-text
+    - Foreground: error
+    - Background: surface
+    - Kind: normal-text
+    - Foreground: error
+    - Background: surface-elevated
+    - Kind: normal-text
+    - Foreground: information
+    - Background: background
+    - Kind: normal-text
+    - Foreground: information
+    - Background: surface
+    - Kind: normal-text
+    - Foreground: information
+    - Background: surface-elevated
+    - Kind: normal-text
+    - Foreground: focus
+    - Background: background
+    - Kind: non-text
+    - Foreground: focus
+    - Background: surface
+    - Kind: non-text
+    - Foreground: focus
+    - Background: surface-elevated
+    - Kind: non-text
+    - Foreground: border-strong
+    - Background: background
+    - Kind: non-text
+    - Foreground: border-strong
+    - Background: surface
+    - Kind: non-text
+    - Foreground: border-strong
+    - Background: surface-elevated
+    - Kind: non-text
+    - Foreground: brand-secondary
+    - Background: background
+    - Kind: non-text
+    - Foreground: brand-secondary
+    - Background: surface
+    - Kind: non-text
+    - Foreground: brand-secondary
+    - Background: surface-elevated
+    - Kind: non-text
+    - Foreground: text-primary
+    - Background: accent
+    - Kind: normal-text
+  - Recommended: False
+  - Usage: Stable brand-primary; controlled secondary; palette-specific accessible accent foreground
+  - Misuse: Do not mix palettes or use untested inverse/white text on gold
+  - Legacy Status: alternative
+  - Id: palette-2
+  - Name: Soil & Saffron
+  - Thesis: Warm soil, terracotta and saffron: grounded, Indian and appetizing.
+  - Benefits: Warm, honest premium
+  - Risks: Equal terracotta/saffron emphasis can become rustic/festive
+  - Evidence Ids:
+    - ev-legacy-decisions
+  - Pairs:
+    - Foreground: text-primary
+    - Background: background
+    - Kind: normal-text
+    - Foreground: text-primary
+    - Background: surface
+    - Kind: normal-text
+    - Foreground: text-primary
+    - Background: surface-elevated
+    - Kind: normal-text
+    - Foreground: text-secondary
+    - Background: background
+    - Kind: normal-text
+    - Foreground: text-secondary
+    - Background: surface
+    - Kind: normal-text
+    - Foreground: text-secondary
+    - Background: surface-elevated
+    - Kind: normal-text
+    - Foreground: text-inverse
+    - Background: brand-primary
+    - Kind: normal-text
+    - Foreground: text-inverse
+    - Background: brand-secondary
+    - Kind: normal-text
+    - Foreground: surface-elevated
+    - Background: error
+    - Kind: normal-text
+    - Foreground: brand-primary
+    - Background: background
+    - Kind: normal-text
+    - Foreground: brand-primary
+    - Background: surface
+    - Kind: normal-text
+    - Foreground: brand-primary
+    - Background: surface-elevated
+    - Kind: normal-text
+    - Foreground: success
+    - Background: background
+    - Kind: normal-text
+    - Foreground: success
+    - Background: surface
+    - Kind: normal-text
+    - Foreground: success
+    - Background: surface-elevated
+    - Kind: normal-text
+    - Foreground: warning
+    - Background: background
+    - Kind: normal-text
+    - Foreground: warning
+    - Background: surface
+    - Kind: normal-text
+    - Foreground: warning
+    - Background: surface-elevated
+    - Kind: normal-text
+    - Foreground: error
+    - Background: background
+    - Kind: normal-text
+    - Foreground: error
+    - Background: surface
+    - Kind: normal-text
+    - Foreground: error
+    - Background: surface-elevated
+    - Kind: normal-text
+    - Foreground: information
+    - Background: background
+    - Kind: normal-text
+    - Foreground: information
+    - Background: surface
+    - Kind: normal-text
+    - Foreground: information
+    - Background: surface-elevated
+    - Kind: normal-text
+    - Foreground: focus
+    - Background: background
+    - Kind: non-text
+    - Foreground: focus
+    - Background: surface
+    - Kind: non-text
+    - Foreground: focus
+    - Background: surface-elevated
+    - Kind: non-text
+    - Foreground: border-strong
+    - Background: background
+    - Kind: non-text
+    - Foreground: border-strong
+    - Background: surface
+    - Kind: non-text
+    - Foreground: border-strong
+    - Background: surface-elevated
+    - Kind: non-text
+    - Foreground: brand-secondary
+    - Background: background
+    - Kind: non-text
+    - Foreground: brand-secondary
+    - Background: surface
+    - Kind: non-text
+    - Foreground: brand-secondary
+    - Background: surface-elevated
+    - Kind: non-text
+    - Foreground: text-primary
+    - Background: accent
+    - Kind: normal-text
+  - Recommended: True
+  - Usage: Stable brand-primary; controlled secondary; palette-specific accessible accent foreground
+  - Misuse: Do not mix palettes or use untested inverse/white text on gold
+  - Legacy Status: selected
+  - Id: palette-3
+  - Name: Plum & Leaf
+  - Thesis: Boutique plum, cultivated olive and ripe red: rare and giftable.
+  - Benefits: Curated gifting/editorial impact
+  - Risks: Can resemble beauty, wine or hospitality
+  - Evidence Ids:
+    - ev-legacy-decisions
+  - Pairs:
+    - Foreground: text-primary
+    - Background: background
+    - Kind: normal-text
+    - Foreground: text-primary
+    - Background: surface
+    - Kind: normal-text
+    - Foreground: text-primary
+    - Background: surface-elevated
+    - Kind: normal-text
+    - Foreground: text-secondary
+    - Background: background
+    - Kind: normal-text
+    - Foreground: text-secondary
+    - Background: surface
+    - Kind: normal-text
+    - Foreground: text-secondary
+    - Background: surface-elevated
+    - Kind: normal-text
+    - Foreground: text-inverse
+    - Background: brand-primary
+    - Kind: normal-text
+    - Foreground: text-inverse
+    - Background: brand-secondary
+    - Kind: normal-text
+    - Foreground: surface-elevated
+    - Background: error
+    - Kind: normal-text
+    - Foreground: brand-primary
+    - Background: background
+    - Kind: normal-text
+    - Foreground: brand-primary
+    - Background: surface
+    - Kind: normal-text
+    - Foreground: brand-primary
+    - Background: surface-elevated
+    - Kind: normal-text
+    - Foreground: success
+    - Background: background
+    - Kind: normal-text
+    - Foreground: success
+    - Background: surface
+    - Kind: normal-text
+    - Foreground: success
+    - Background: surface-elevated
+    - Kind: normal-text
+    - Foreground: warning
+    - Background: background
+    - Kind: normal-text
+    - Foreground: warning
+    - Background: surface
+    - Kind: normal-text
+    - Foreground: warning
+    - Background: surface-elevated
+    - Kind: normal-text
+    - Foreground: error
+    - Background: background
+    - Kind: normal-text
+    - Foreground: error
+    - Background: surface
+    - Kind: normal-text
+    - Foreground: error
+    - Background: surface-elevated
+    - Kind: normal-text
+    - Foreground: information
+    - Background: background
+    - Kind: normal-text
+    - Foreground: information
+    - Background: surface
+    - Kind: normal-text
+    - Foreground: information
+    - Background: surface-elevated
+    - Kind: normal-text
+    - Foreground: focus
+    - Background: background
+    - Kind: non-text
+    - Foreground: focus
+    - Background: surface
+    - Kind: non-text
+    - Foreground: focus
+    - Background: surface-elevated
+    - Kind: non-text
+    - Foreground: border-strong
+    - Background: background
+    - Kind: non-text
+    - Foreground: border-strong
+    - Background: surface
+    - Kind: non-text
+    - Foreground: border-strong
+    - Background: surface-elevated
+    - Kind: non-text
+    - Foreground: brand-secondary
+    - Background: background
+    - Kind: non-text
+    - Foreground: brand-secondary
+    - Background: surface
+    - Kind: non-text
+    - Foreground: brand-secondary
+    - Background: surface-elevated
+    - Kind: non-text
+    - Foreground: text-inverse
+    - Background: accent
+    - Kind: normal-text
+  - Recommended: False
+  - Usage: Stable brand-primary; controlled secondary; palette-specific accessible accent foreground
+  - Misuse: Do not mix palettes or use untested inverse/white text on gold
+  - Legacy Status: alternative
+- Measurements:
+  - Palette: palette-1
+  - Pair:
+    - Foreground: text-primary
+    - Background: background
+    - Kind: normal-text
+  - Ratio: 13.823
+  - Minimum: 4.5
+  - Palette: palette-1
+  - Pair:
+    - Foreground: text-primary
+    - Background: surface
+    - Kind: normal-text
+  - Ratio: 15.322
+  - Minimum: 4.5
+  - Palette: palette-1
+  - Pair:
+    - Foreground: text-primary
+    - Background: surface-elevated
+    - Kind: normal-text
+  - Ratio: 15.7
+  - Minimum: 4.5
+  - Palette: palette-1
+  - Pair:
+    - Foreground: text-secondary
+    - Background: background
+    - Kind: normal-text
+  - Ratio: 5.862
+  - Minimum: 4.5
+  - Palette: palette-1
+  - Pair:
+    - Foreground: text-secondary
+    - Background: surface
+    - Kind: normal-text
+  - Ratio: 6.498
+  - Minimum: 4.5
+  - Palette: palette-1
+  - Pair:
+    - Foreground: text-secondary
+    - Background: surface-elevated
+    - Kind: normal-text
+  - Ratio: 6.659
+  - Minimum: 4.5
+  - Palette: palette-1
+  - Pair:
+    - Foreground: text-inverse
+    - Background: brand-primary
+    - Kind: normal-text
+  - Ratio: 12.919
+  - Minimum: 4.5
+  - Palette: palette-1
+  - Pair:
+    - Foreground: text-inverse
+    - Background: brand-secondary
+    - Kind: normal-text
+  - Ratio: 7.391
+  - Minimum: 4.5
+  - Palette: palette-1
+  - Pair:
+    - Foreground: surface-elevated
+    - Background: error
+    - Kind: normal-text
+  - Ratio: 7.014
+  - Minimum: 4.5
+  - Palette: palette-1
+  - Pair:
+    - Foreground: brand-primary
+    - Background: background
+    - Kind: normal-text
+  - Ratio: 11.921
+  - Minimum: 4.5
+  - Palette: palette-1
+  - Pair:
+    - Foreground: brand-primary
+    - Background: surface
+    - Kind: normal-text
+  - Ratio: 13.214
+  - Minimum: 4.5
+  - Palette: palette-1
+  - Pair:
+    - Foreground: brand-primary
+    - Background: surface-elevated
+    - Kind: normal-text
+  - Ratio: 13.54
+  - Minimum: 4.5
+  - Palette: palette-1
+  - Pair:
+    - Foreground: success
+    - Background: background
+    - Kind: normal-text
+  - Ratio: 6.275
+  - Minimum: 4.5
+  - Palette: palette-1
+  - Pair:
+    - Foreground: success
+    - Background: surface
+    - Kind: normal-text
+  - Ratio: 6.956
+  - Minimum: 4.5
+  - Palette: palette-1
+  - Pair:
+    - Foreground: success
+    - Background: surface-elevated
+    - Kind: normal-text
+  - Ratio: 7.128
+  - Minimum: 4.5
+  - Palette: palette-1
+  - Pair:
+    - Foreground: warning
+    - Background: background
+    - Kind: normal-text
+  - Ratio: 5.148
+  - Minimum: 4.5
+  - Palette: palette-1
+  - Pair:
+    - Foreground: warning
+    - Background: surface
+    - Kind: normal-text
+  - Ratio: 5.706
+  - Minimum: 4.5
+  - Palette: palette-1
+  - Pair:
+    - Foreground: warning
+    - Background: surface-elevated
+    - Kind: normal-text
+  - Ratio: 5.847
+  - Minimum: 4.5
+  - Palette: palette-1
+  - Pair:
+    - Foreground: error
+    - Background: background
+    - Kind: normal-text
+  - Ratio: 6.175
+  - Minimum: 4.5
+  - Palette: palette-1
+  - Pair:
+    - Foreground: error
+    - Background: surface
+    - Kind: normal-text
+  - Ratio: 6.845
+  - Minimum: 4.5
+  - Palette: palette-1
+  - Pair:
+    - Foreground: error
+    - Background: surface-elevated
+    - Kind: normal-text
+  - Ratio: 7.014
+  - Minimum: 4.5
+  - Palette: palette-1
+  - Pair:
+    - Foreground: information
+    - Background: background
+    - Kind: normal-text
+  - Ratio: 6.504
+  - Minimum: 4.5
+  - Palette: palette-1
+  - Pair:
+    - Foreground: information
+    - Background: surface
+    - Kind: normal-text
+  - Ratio: 7.21
+  - Minimum: 4.5
+  - Palette: palette-1
+  - Pair:
+    - Foreground: information
+    - Background: surface-elevated
+    - Kind: normal-text
+  - Ratio: 7.387
+  - Minimum: 4.5
+  - Palette: palette-1
+  - Pair:
+    - Foreground: focus
+    - Background: background
+    - Kind: non-text
+  - Ratio: 5.609
+  - Minimum: 3
+  - Palette: palette-1
+  - Pair:
+    - Foreground: focus
+    - Background: surface
+    - Kind: non-text
+  - Ratio: 6.218
+  - Minimum: 3
+  - Palette: palette-1
+  - Pair:
+    - Foreground: focus
+    - Background: surface-elevated
+    - Kind: non-text
+  - Ratio: 6.371
+  - Minimum: 3
+  - Palette: palette-1
+  - Pair:
+    - Foreground: border-strong
+    - Background: background
+    - Kind: non-text
+  - Ratio: 3.24
+  - Minimum: 3
+  - Palette: palette-1
+  - Pair:
+    - Foreground: border-strong
+    - Background: surface
+    - Kind: non-text
+  - Ratio: 3.591
+  - Minimum: 3
+  - Palette: palette-1
+  - Pair:
+    - Foreground: border-strong
+    - Background: surface-elevated
+    - Kind: non-text
+  - Ratio: 3.68
+  - Minimum: 3
+  - Palette: palette-1
+  - Pair:
+    - Foreground: brand-secondary
+    - Background: background
+    - Kind: non-text
+  - Ratio: 6.82
+  - Minimum: 3
+  - Palette: palette-1
+  - Pair:
+    - Foreground: brand-secondary
+    - Background: surface
+    - Kind: non-text
+  - Ratio: 7.56
+  - Minimum: 3
+  - Palette: palette-1
+  - Pair:
+    - Foreground: brand-secondary
+    - Background: surface-elevated
+    - Kind: non-text
+  - Ratio: 7.746
+  - Minimum: 3
+  - Palette: palette-1
+  - Pair:
+    - Foreground: text-primary
+    - Background: accent
+    - Kind: normal-text
+  - Ratio: 5.84
+  - Minimum: 4.5
+  - Palette: palette-2
+  - Pair:
+    - Foreground: text-primary
+    - Background: background
+    - Kind: normal-text
+  - Ratio: 14.355
+  - Minimum: 4.5
+  - Palette: palette-2
+  - Pair:
+    - Foreground: text-primary
+    - Background: surface
+    - Kind: normal-text
+  - Ratio: 15.43
+  - Minimum: 4.5
+  - Palette: palette-2
+  - Pair:
+    - Foreground: text-primary
+    - Background: surface-elevated
+    - Kind: normal-text
+  - Ratio: 15.695
+  - Minimum: 4.5
+  - Palette: palette-2
+  - Pair:
+    - Foreground: text-secondary
+    - Background: background
+    - Kind: normal-text
+  - Ratio: 6.545
+  - Minimum: 4.5
+  - Palette: palette-2
+  - Pair:
+    - Foreground: text-secondary
+    - Background: surface
+    - Kind: normal-text
+  - Ratio: 7.035
+  - Minimum: 4.5
+  - Palette: palette-2
+  - Pair:
+    - Foreground: text-secondary
+    - Background: surface-elevated
+    - Kind: normal-text
+  - Ratio: 7.156
+  - Minimum: 4.5
+  - Palette: palette-2
+  - Pair:
+    - Foreground: text-inverse
+    - Background: brand-primary
+    - Kind: normal-text
+  - Ratio: 12.517
+  - Minimum: 4.5
+  - Palette: palette-2
+  - Pair:
+    - Foreground: text-inverse
+    - Background: brand-secondary
+    - Kind: normal-text
+  - Ratio: 5.557
+  - Minimum: 4.5
+  - Palette: palette-2
+  - Pair:
+    - Foreground: surface-elevated
+    - Background: error
+    - Kind: normal-text
+  - Ratio: 6.996
+  - Minimum: 4.5
+  - Palette: palette-2
+  - Pair:
+    - Foreground: brand-primary
+    - Background: background
+    - Kind: normal-text
+  - Ratio: 12.088
+  - Minimum: 4.5
+  - Palette: palette-2
+  - Pair:
+    - Foreground: brand-primary
+    - Background: surface
+    - Kind: normal-text
+  - Ratio: 12.992
+  - Minimum: 4.5
+  - Palette: palette-2
+  - Pair:
+    - Foreground: brand-primary
+    - Background: surface-elevated
+    - Kind: normal-text
+  - Ratio: 13.216
+  - Minimum: 4.5
+  - Palette: palette-2
+  - Pair:
+    - Foreground: success
+    - Background: background
+    - Kind: normal-text
+  - Ratio: 6.243
+  - Minimum: 4.5
+  - Palette: palette-2
+  - Pair:
+    - Foreground: success
+    - Background: surface
+    - Kind: normal-text
+  - Ratio: 6.711
+  - Minimum: 4.5
+  - Palette: palette-2
+  - Pair:
+    - Foreground: success
+    - Background: surface-elevated
+    - Kind: normal-text
+  - Ratio: 6.826
+  - Minimum: 4.5
+  - Palette: palette-2
+  - Pair:
+    - Foreground: warning
+    - Background: background
+    - Kind: normal-text
+  - Ratio: 5.651
+  - Minimum: 4.5
+  - Palette: palette-2
+  - Pair:
+    - Foreground: warning
+    - Background: surface
+    - Kind: normal-text
+  - Ratio: 6.074
+  - Minimum: 4.5
+  - Palette: palette-2
+  - Pair:
+    - Foreground: warning
+    - Background: surface-elevated
+    - Kind: normal-text
+  - Ratio: 6.178
+  - Minimum: 4.5
+  - Palette: palette-2
+  - Pair:
+    - Foreground: error
+    - Background: background
+    - Kind: normal-text
+  - Ratio: 6.398
+  - Minimum: 4.5
+  - Palette: palette-2
+  - Pair:
+    - Foreground: error
+    - Background: surface
+    - Kind: normal-text
+  - Ratio: 6.877
+  - Minimum: 4.5
+  - Palette: palette-2
+  - Pair:
+    - Foreground: error
+    - Background: surface-elevated
+    - Kind: normal-text
+  - Ratio: 6.996
+  - Minimum: 4.5
+  - Palette: palette-2
+  - Pair:
+    - Foreground: information
+    - Background: background
+    - Kind: normal-text
+  - Ratio: 6.641
+  - Minimum: 4.5
+  - Palette: palette-2
+  - Pair:
+    - Foreground: information
+    - Background: surface
+    - Kind: normal-text
+  - Ratio: 7.138
+  - Minimum: 4.5
+  - Palette: palette-2
+  - Pair:
+    - Foreground: information
+    - Background: surface-elevated
+    - Kind: normal-text
+  - Ratio: 7.261
+  - Minimum: 4.5
+  - Palette: palette-2
+  - Pair:
+    - Foreground: focus
+    - Background: background
+    - Kind: non-text
+  - Ratio: 5.827
+  - Minimum: 3
+  - Palette: palette-2
+  - Pair:
+    - Foreground: focus
+    - Background: surface
+    - Kind: non-text
+  - Ratio: 6.264
+  - Minimum: 3
+  - Palette: palette-2
+  - Pair:
+    - Foreground: focus
+    - Background: surface-elevated
+    - Kind: non-text
+  - Ratio: 6.371
+  - Minimum: 3
+  - Palette: palette-2
+  - Pair:
+    - Foreground: border-strong
+    - Background: background
+    - Kind: non-text
+  - Ratio: 3.713
+  - Minimum: 3
+  - Palette: palette-2
+  - Pair:
+    - Foreground: border-strong
+    - Background: surface
+    - Kind: non-text
+  - Ratio: 3.99
+  - Minimum: 3
+  - Palette: palette-2
+  - Pair:
+    - Foreground: border-strong
+    - Background: surface-elevated
+    - Kind: non-text
+  - Ratio: 4.059
+  - Minimum: 3
+  - Palette: palette-2
+  - Pair:
+    - Foreground: brand-secondary
+    - Background: background
+    - Kind: non-text
+  - Ratio: 5.366
+  - Minimum: 3
+  - Palette: palette-2
+  - Pair:
+    - Foreground: brand-secondary
+    - Background: surface
+    - Kind: non-text
+  - Ratio: 5.768
+  - Minimum: 3
+  - Palette: palette-2
+  - Pair:
+    - Foreground: brand-secondary
+    - Background: surface-elevated
+    - Kind: non-text
+  - Ratio: 5.867
+  - Minimum: 3
+  - Palette: palette-2
+  - Pair:
+    - Foreground: text-primary
+    - Background: accent
+    - Kind: normal-text
+  - Ratio: 6.314
+  - Minimum: 4.5
+  - Palette: palette-3
+  - Pair:
+    - Foreground: text-primary
+    - Background: background
+    - Kind: normal-text
+  - Ratio: 14.607
+  - Minimum: 4.5
+  - Palette: palette-3
+  - Pair:
+    - Foreground: text-primary
+    - Background: surface
+    - Kind: normal-text
+  - Ratio: 16.165
+  - Minimum: 4.5
+  - Palette: palette-3
+  - Pair:
+    - Foreground: text-primary
+    - Background: surface-elevated
+    - Kind: normal-text
+  - Ratio: 16.423
+  - Minimum: 4.5
+  - Palette: palette-3
+  - Pair:
+    - Foreground: text-secondary
+    - Background: background
+    - Kind: normal-text
+  - Ratio: 6.341
+  - Minimum: 4.5
+  - Palette: palette-3
+  - Pair:
+    - Foreground: text-secondary
+    - Background: surface
+    - Kind: normal-text
+  - Ratio: 7.017
+  - Minimum: 4.5
+  - Palette: palette-3
+  - Pair:
+    - Foreground: text-secondary
+    - Background: surface-elevated
+    - Kind: normal-text
+  - Ratio: 7.129
+  - Minimum: 4.5
+  - Palette: palette-3
+  - Pair:
+    - Foreground: text-inverse
+    - Background: brand-primary
+    - Kind: normal-text
+  - Ratio: 13.355
+  - Minimum: 4.5
+  - Palette: palette-3
+  - Pair:
+    - Foreground: text-inverse
+    - Background: brand-secondary
+    - Kind: normal-text
+  - Ratio: 6.298
+  - Minimum: 4.5
+  - Palette: palette-3
+  - Pair:
+    - Foreground: surface-elevated
+    - Background: error
+    - Kind: normal-text
+  - Ratio: 7.172
+  - Minimum: 4.5
+  - Palette: palette-3
+  - Pair:
+    - Foreground: brand-primary
+    - Background: background
+    - Kind: normal-text
+  - Ratio: 12.419
+  - Minimum: 4.5
+  - Palette: palette-3
+  - Pair:
+    - Foreground: brand-primary
+    - Background: surface
+    - Kind: normal-text
+  - Ratio: 13.744
+  - Minimum: 4.5
+  - Palette: palette-3
+  - Pair:
+    - Foreground: brand-primary
+    - Background: surface-elevated
+    - Kind: normal-text
+  - Ratio: 13.964
+  - Minimum: 4.5
+  - Palette: palette-3
+  - Pair:
+    - Foreground: success
+    - Background: background
+    - Kind: normal-text
+  - Ratio: 6.223
+  - Minimum: 4.5
+  - Palette: palette-3
+  - Pair:
+    - Foreground: success
+    - Background: surface
+    - Kind: normal-text
+  - Ratio: 6.887
+  - Minimum: 4.5
+  - Palette: palette-3
+  - Pair:
+    - Foreground: success
+    - Background: surface-elevated
+    - Kind: normal-text
+  - Ratio: 6.997
+  - Minimum: 4.5
+  - Palette: palette-3
+  - Pair:
+    - Foreground: warning
+    - Background: background
+    - Kind: normal-text
+  - Ratio: 5.392
+  - Minimum: 4.5
+  - Palette: palette-3
+  - Pair:
+    - Foreground: warning
+    - Background: surface
+    - Kind: normal-text
+  - Ratio: 5.968
+  - Minimum: 4.5
+  - Palette: palette-3
+  - Pair:
+    - Foreground: warning
+    - Background: surface-elevated
+    - Kind: normal-text
+  - Ratio: 6.063
+  - Minimum: 4.5
+  - Palette: palette-3
+  - Pair:
+    - Foreground: error
+    - Background: background
+    - Kind: normal-text
+  - Ratio: 6.378
+  - Minimum: 4.5
+  - Palette: palette-3
+  - Pair:
+    - Foreground: error
+    - Background: surface
+    - Kind: normal-text
+  - Ratio: 7.059
+  - Minimum: 4.5
+  - Palette: palette-3
+  - Pair:
+    - Foreground: error
+    - Background: surface-elevated
+    - Kind: normal-text
+  - Ratio: 7.172
+  - Minimum: 4.5
+  - Palette: palette-3
+  - Pair:
+    - Foreground: information
+    - Background: background
+    - Kind: normal-text
+  - Ratio: 6.325
+  - Minimum: 4.5
+  - Palette: palette-3
+  - Pair:
+    - Foreground: information
+    - Background: surface
+    - Kind: normal-text
+  - Ratio: 6.999
+  - Minimum: 4.5
+  - Palette: palette-3
+  - Pair:
+    - Foreground: information
+    - Background: surface-elevated
+    - Kind: normal-text
+  - Ratio: 7.111
+  - Minimum: 4.5
+  - Palette: palette-3
+  - Pair:
+    - Foreground: focus
+    - Background: background
+    - Kind: non-text
+  - Ratio: 5.675
+  - Minimum: 3
+  - Palette: palette-3
+  - Pair:
+    - Foreground: focus
+    - Background: surface
+    - Kind: non-text
+  - Ratio: 6.281
+  - Minimum: 3
+  - Palette: palette-3
+  - Pair:
+    - Foreground: focus
+    - Background: surface-elevated
+    - Kind: non-text
+  - Ratio: 6.381
+  - Minimum: 3
+  - Palette: palette-3
+  - Pair:
+    - Foreground: border-strong
+    - Background: background
+    - Kind: non-text
+  - Ratio: 3.868
+  - Minimum: 3
+  - Palette: palette-3
+  - Pair:
+    - Foreground: border-strong
+    - Background: surface
+    - Kind: non-text
+  - Ratio: 4.28
+  - Minimum: 3
+  - Palette: palette-3
+  - Pair:
+    - Foreground: border-strong
+    - Background: surface-elevated
+    - Kind: non-text
+  - Ratio: 4.349
+  - Minimum: 3
+  - Palette: palette-3
+  - Pair:
+    - Foreground: brand-secondary
+    - Background: background
+    - Kind: non-text
+  - Ratio: 5.857
+  - Minimum: 3
+  - Palette: palette-3
+  - Pair:
+    - Foreground: brand-secondary
+    - Background: surface
+    - Kind: non-text
+  - Ratio: 6.482
+  - Minimum: 3
+  - Palette: palette-3
+  - Pair:
+    - Foreground: brand-secondary
+    - Background: surface-elevated
+    - Kind: non-text
+  - Ratio: 6.585
+  - Minimum: 3
+  - Palette: palette-3
+  - Pair:
+    - Foreground: text-inverse
+    - Background: accent
+    - Kind: normal-text
+  - Ratio: 5.091
+  - Minimum: 4.5
+
+## Typography pairings
+
+- Id: type-1
+- Name: Newsreader + Manrope
+- Thesis: Literary screen serif plus neutral open UI sans.
+- Benefits: Calm editorial hierarchy
+- Risks: Overuse can feel literary
+- Evidence Ids:
+  - ev-legacy-decisions
+- License: SIL OFL 1.1; bundled notices
+- Loading: Self-host variable WOFF2; preload roman; font-display swap; preserve OFL
+- Fallbacks: Newsreader -> Georgia/Times New Roman/serif; Manrope -> Segoe UI/Arial/sans-serif
+- Legacy Status: alternative
+- Id: type-2
+- Name: Fraunces + DM Sans
+- Thesis: Tactile contemporary headings plus compact friendly UI.
+- Benefits: Approved organic editorial character
+- Risks: Excessive axes/heavy weight can become trendy
+- Evidence Ids:
+  - ev-legacy-decisions
+- License: SIL OFL 1.1; bundled notices
+- Loading: Self-host variable WOFF2; preload roman; font-display swap; fixed decorative axes
+- Fallbacks: Fraunces -> Georgia/serif; DM Sans -> Segoe UI/Arial/sans-serif
+- Legacy Status: selected
+
+## Visual hierarchy, empty space and precision
+
+- Patterns:
+  - Id: h1-hero
+  - User Need: Understand offer and find household shopping
+  - Purpose: Lead with grown food and useful purchase path
+  - Placement: H1 sequence position 1
+  - Prominence: Primary promise and household CTA
+  - Removal Cost: Loss of this approved narrative step and its useful meaning
+  - Responsive: Preserve anatomy/content order; stack by task priority without hiding prices, units, states or actions
+  - Evidence Ids:
+    - ev-approved-h1
+  - Knowledge Class: DERIVED
+  - Source: Legacy H1 section; rationale documents existing intent, not a new user study
+  - Id: h1-trust
+  - User Need: Assess what the existing catalogue can support
+  - Purpose: Keep factual catalogue/support context near discovery
+  - Placement: H1 sequence position 2
+  - Prominence: Supporting reassurance
+  - Removal Cost: Loss of this approved narrative step and its useful meaning
+  - Responsive: Preserve anatomy/content order; stack by task priority without hiding prices, units, states or actions
+  - Evidence Ids:
+    - ev-approved-h1
+  - Knowledge Class: DERIVED
+  - Source: Legacy H1 section; rationale documents existing intent, not a new user study
+  - Id: h1-harvest
+  - User Need: Compare varieties, packs, price and availability
+  - Purpose: Make produce comparison the main next task
+  - Placement: H1 sequence position 3
+  - Prominence: Primary shopping collection
+  - Removal Cost: Loss of this approved narrative step and its useful meaning
+  - Responsive: Preserve anatomy/content order; stack by task priority without hiding prices, units, states or actions
+  - Evidence Ids:
+    - ev-approved-h1
+  - Knowledge Class: DERIVED
+  - Source: Legacy H1 section; rationale documents existing intent, not a new user study
+  - Id: h1-categories
+  - User Need: Find the relevant food family
+  - Purpose: Expose named category routes without vague labels
+  - Placement: H1 sequence position 4
+  - Prominence: Equal-priority category peers
+  - Removal Cost: Loss of this approved narrative step and its useful meaning
+  - Responsive: Preserve anatomy/content order; stack by task priority without hiding prices, units, states or actions
+  - Evidence Ids:
+    - ev-approved-h1
+  - Knowledge Class: DERIVED
+  - Source: Legacy H1 section; rationale documents existing intent, not a new user study
+  - Id: h1-cultivation
+  - User Need: Understand growing and handling credibility
+  - Purpose: Place provenance close to product interest
+  - Placement: H1 sequence position 5
+  - Prominence: Supporting evidence
+  - Removal Cost: Loss of this approved narrative step and its useful meaning
+  - Responsive: Preserve anatomy/content order; stack by task priority without hiding prices, units, states or actions
+  - Evidence Ids:
+    - ev-approved-h1
+  - Knowledge Class: DERIVED
+  - Source: Legacy H1 section; rationale documents existing intent, not a new user study
+  - Id: h1-delivery
+  - User Need: Understand whether and when an order can arrive
+  - Purpose: Explain service constraints before payment
+  - Placement: H1 sequence position 6
+  - Prominence: Decision-relevant clarity
+  - Removal Cost: Loss of this approved narrative step and its useful meaning
+  - Responsive: Preserve anatomy/content order; stack by task priority without hiding prices, units, states or actions
+  - Evidence Ids:
+    - ev-approved-h1
+  - Knowledge Class: DERIVED
+  - Source: Legacy H1 section; rationale documents existing intent, not a new user study
+  - Id: h1-home-box
+  - User Need: Explore compatible household pairings
+  - Purpose: Offer practical combinations and repeat-use context
+  - Placement: H1 sequence position 7
+  - Prominence: Secondary household path
+  - Removal Cost: Loss of this approved narrative step and its useful meaning
+  - Responsive: Preserve anatomy/content order; stack by task priority without hiding prices, units, states or actions
+  - Evidence Ids:
+    - ev-approved-h1
+  - Knowledge Class: DERIVED
+  - Source: Legacy H1 section; rationale documents existing intent, not a new user study
+  - Id: h1-restaurant
+  - User Need: Find kitchen supply without displacing households
+  - Purpose: Provide a separate professional enquiry path
+  - Placement: H1 sequence position 8
+  - Prominence: Secondary B2B path
+  - Removal Cost: Loss of this approved narrative step and its useful meaning
+  - Responsive: Preserve anatomy/content order; stack by task priority without hiding prices, units, states or actions
+  - Evidence Ids:
+    - ev-approved-h1
+  - Knowledge Class: DERIVED
+  - Source: Legacy H1 section; rationale documents existing intent, not a new user study
+  - Id: h1-journal
+  - User Need: Use and store unfamiliar ingredients
+  - Purpose: Reduce uncertainty and avoid food waste
+  - Placement: H1 sequence position 9
+  - Prominence: Supporting education
+  - Removal Cost: Loss of this approved narrative step and its useful meaning
+  - Responsive: Preserve anatomy/content order; stack by task priority without hiding prices, units, states or actions
+  - Evidence Ids:
+    - ev-approved-h1
+  - Knowledge Class: DERIVED
+  - Source: Legacy H1 section; rationale documents existing intent, not a new user study
+  - Id: h1-closing
+  - User Need: Return to shopping or choose a harvest note
+  - Purpose: Offer next steps after the narrative
+  - Placement: H1 sequence position 10
+  - Prominence: Primary shopping plus optional follow-up
+  - Removal Cost: Loss of this approved narrative step and its useful meaning
+  - Responsive: Preserve anatomy/content order; stack by task priority without hiding prices, units, states or actions
+  - Evidence Ids:
+    - ev-approved-h1
+  - Knowledge Class: DERIVED
+  - Source: Legacy H1 section; rationale documents existing intent, not a new user study
+- Attention: Household offer and shopping first, evidence near action, restaurant supply secondary; preserve honest alternate routes
+- Negative Space: Macro: separate H1 narrative chapters with approved section rhythm. Meso: distinguish copy/media and peer groups. Micro: token gaps within labels, icons, controls and card anatomy. Space clarifies relationships, not a generic premium claim.
+- Density: G3 Curated Market: 1200px content, 12 columns, 20px canonical gutter; preserve efficient catalogue and restrained editorial headings
+- Responsive Priorities: Preserve essential price, pack, status, navigation and next action; reflow into readable stacked regions; do not clip meaningful text; 35% text expansion and 200% reflow checks pending
+- Conflict Resolution: Safety/accessibility/truthfulness, task comprehension, approved brand/business intent, then decoration; material compromises need leader choice
+- Exceptions:
+  - Preserve approved R3 imagery authorization despite empty-media default
+  - H1 three-page continuous presentation retained
+  - No logo production
+- Status: DERIVED documentation of approved H1; new presentation mapping awaits confirmation
+
+## Spacing, radius, elevation, motion
+
+- Spacing:
+  - Primitive:
+    - 0:
+0px
+    - 1:
+2px
+    - 2:
+4px
+    - 3:
+8px
+    - 4:
+12px
+    - 5:
+16px
+    - 6:
+20px
+    - 7:
+24px
+    - 8:
+32px
+    - 9:
+40px
+    - 10:
+48px
+    - 11:
+64px
+    - 12:
+80px
+    - 13:
+96px
+  - Semantic:
+    - None:
+0px
+    - 2Xs:
+4px
+    - Xs:
+8px
+    - Sm:
+12px
+    - Md:
+20px
+    - Lg:
+32px
+    - Xl:
+48px
+    - 2Xl:
+72px
+    - 3Xl:
+96px
+- Radius:
+  - None:
+0px
+  - Control:
+8px
+  - Card:
+10px
+  - Panel:
+14px
+  - Pill:
+999px
+  - Round:
+50%
+- Elevation:
+  - Flat:
+    - Color: #402B2400
+    - Offsetx: 0px
+    - Offsety: 0px
+    - Blur: 0px
+    - Spread: 0px
+  - Raised:
+    - Color: #402B2414
+    - Offsetx: 0px
+    - Offsety: 2px
+    - Blur: 10px
+    - Spread: 0px
+  - Floating:
+    - Color: #402B2424
+    - Offsetx: 0px
+    - Offsety: 10px
+    - Blur: 28px
+    - Spread: -8px
+  - Overlay:
+    - Color: #402B2430
+    - Offsetx: 0px
+    - Offsety: 16px
+    - Blur: 44px
+    - Spread: -12px
+  - Modal:
+    - Color: #2B211D42
+    - Offsetx: 0px
+    - Offsety: 24px
+    - Blur: 72px
+    - Spread: -16px
+- Motion:
+  - Duration:
+    - Micro:
+140ms
+    - Standard:
+220ms
+    - Emphasized:
+360ms
+  - Easing:
+    - Standard:
+      - 0.2
+      - 0
+      - 0
+      - 1
+    - Enter:
+      - 0
+      - 0
+      - 0.2
+      - 1
+    - Exit:
+      - 0.4
+      - 0
+      - 1
+      - 1
+  - Micro:
+140ms
+  - Standard:
+220ms
+  - Emphasized:
+360ms
+  - Easing Standard:
+cubic-bezier(0.2, 0, 0, 1)
+  - Easing Enter:
+cubic-bezier(0, 0, 0.2, 1)
+  - Easing Exit:
+cubic-bezier(0.4, 0, 1, 1)
+
+## Navigation, buttons, inputs, cards, badges
+
+- Navigation:
+  - Purpose: Orient customers and expose primary shopping with discoverable supply
+  - Anatomy: skip link, brand, primary links, restaurant route, search/account/basket
+  - Variants: storefront, scrolled, admin reference
+  - States:
+    - default
+    - active
+    - hover
+    - focus
+    - mobile-collapsed
+    - mobile-expanded
+    - scrolled
+    - overflow
+  - Responsive: Collapse to labelled menu; preserve basket and sensible focus order
+  - Content: Short concrete category nouns; no ambiguous sole Explore label
+  - Accessibility: nav landmark, aria-current, skip link, Escape/focus return; trap focus only in modal surface
+  - Token Mapping: component.navigation
+  - Legacy Source: DESIGN_SYSTEM.md component contracts
+  - Review Status: Specification only; rendered state/stress checks pending
+- Button:
+  - Purpose: Initiate clear immediate actions
+  - Anatomy: label, optional I1 icon, loading indicator
+  - Variants: primary, secondary, tertiary, destructive, icon; 44/48/56px
+  - States:
+    - default
+    - hover
+    - active
+    - focus
+    - loading
+    - disabled
+    - secondary
+    - tertiary
+    - destructive
+  - Responsive: Keep target and label readable when wrapped
+  - Content: Loading preserves width and explains action; disabled never looks actionable
+  - Accessibility: Native buttons/links; named icon controls; native Enter/Space; expose busy state
+  - Token Mapping: component.button
+  - Legacy Source: DESIGN_SYSTEM.md component contracts
+  - Review Status: Specification only; rendered state/stress checks pending
+- Input:
+  - Purpose: Collect data with persistent guidance
+  - Anatomy: label, required/optional cue, control, helper/error/status
+  - Variants: text, email, phone, search, quantity, select, textarea, checkbox/radio/switch
+  - States:
+    - empty
+    - filled
+    - focus
+    - error
+    - success
+    - disabled
+    - read-only
+    - validating
+    - hover
+  - Responsive: Full available width with labels/helper visible
+  - Content: Placeholder is example only; errors explain recovery
+  - Accessibility: Persistent labels, described-by links, error summary, sensible validation timing
+  - Token Mapping: component.input
+  - Legacy Source: DESIGN_SYSTEM.md component contracts
+  - Review Status: Specification only; rendered state/stress checks pending
+- Card:
+  - Purpose: Compare food with variety, pack, price, timing and next action
+  - Anatomy: shared media/title/copy/metadata/divider/price/action rows
+  - Variants: product, category, editorial, selected/featured with semantic reason
+  - States:
+    - default
+    - focus
+    - selected
+    - hover
+    - unavailable
+    - loading
+    - error
+  - Responsive: Shared row geometry; stack predictably; no meaningful clipping at zoom
+  - Content: Shortest/longest/missing optional content and 35% expansion; preserve price/unit/action
+  - Accessibility: No nested conflicting links; selection and unavailability have text; focus visible
+  - Token Mapping: component.card
+  - Legacy Source: DESIGN_SYSTEM.md component contracts
+  - Review Status: Specification only; rendered state/stress checks pending
+- Badge:
+  - Purpose: Communicate compact named category or availability state
+  - Anatomy: text, optional I1 glyph, optional named remove button
+  - Variants: neutral, brand, success, warning, error, information
+  - States:
+    - default
+    - success
+    - warning
+    - error
+    - information
+  - Responsive: Remain readable at 200% zoom; wrap where needed
+  - Content: Ready now, Harvest Friday, Limited, Resting; no color-only state
+  - Accessibility: Text carries meaning; removable chip action is separately named
+  - Token Mapping: component.badge
+  - Legacy Source: DESIGN_SYSTEM.md component contracts
+  - Review Status: Specification only; rendered state/stress checks pending
+
+## Imagery direction
+
+- Guide: IMAGERY_DIRECTION_GUIDE.md
+- Treatment: Cultivation and ingredient detail support quiet premium confidence; product color remains truthful
+
+## Accessibility and responsive implementation
+
+- Priorities: Preserve essential price, pack, status, navigation and next action; reflow into readable stacked regions; do not clip meaningful text; 35% text expansion and 200% reflow checks pending
+- Tokens: Use approved semantic aliases, not invented literals
+- Boundary: Review prototypes only; no production implementation
+
+## Change history
+
+- 2026-10-05: Versioned schema-2 candidate; legacy package retained active; original approvals carried with scope evidence
+- 2026-10-05: Mapping and proposed additions accepted; all-three coverage retained; project-specific R3 renderer authorized by that acceptance
+

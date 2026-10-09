@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Interactive reference specimen for the WeGroween Cultivated Editorial design system.">
+  <title>WeGroween design system — Cultivated Editorial</title>
+  <link rel="stylesheet" href="../tokens.css">
+  <link rel="stylesheet" href="specimen.css">
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="WeGroween design system home">
+        <span class="brand-name">WeGroween</span>
+        <span class="brand-label">Design system 1.0</span>
+      </a>
+      <nav aria-label="Specimen sections">
+        <a href="#foundations">Foundations</a>
+        <a href="#components">Components</a>
+        <a href="#patterns">Patterns</a>
+        <a href="#voice">Voice</a>
+        <a href="iconography.html">Iconography</a>
+        <a href="components.html">Components</a>
+        <a href="comparison.html">Compare options</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content">
+    <section class="hero" id="top">
+      <div class="container hero-grid">
+        <div>
+          <p class="kicker">Cultivated Editorial · Approved direction</p>
+          <h1>Grown with<br><em>quiet precision.</em></h1>
+          <p class="hero-copy">A warm, editorial system for remarkable produce—premium through specificity, authentic through evidence, and practical across household and restaurant contexts.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#foundations">Explore the system</a>
+            <a class="button button-secondary" href="../DESIGN_SYSTEM.md">Read the specification</a>
+          </div>
+        </div>
+        <figure class="hero-media">
+          <img src="../assets/blue-oyster.webp" alt="Blue-grey oyster mushrooms with layered, fan-shaped caps">
+          <figcaption><span>Crop 01</span><strong>Blue-grey oyster</strong><span>Macro texture · natural color</span></figcaption>
+        </figure>
+      </div>
+      <div class="container system-signature" aria-label="Selected system signature">
+        <span><b>C2</b> Soil &amp; Saffron</span>
+        <span><b>T2</b> Fraunces + DM Sans</span>
+        <span><b>G3</b> Curated Market</span>
+        <span><b>V1</b> Cultivated Authority</span>
+        <span><b>M1</b> Restrained Editorial</span>
+      </div>
+    </section>
+
+    <section class="section border-top" id="principles">
+      <div class="container section-grid">
+        <div class="section-intro">
+          <p class="kicker">01 · Principles</p>
+          <h2>The rules behind the look.</h2>
+          <p>These principles resolve ambiguity before visual taste does.</p>
+        </div>
+        <ol class="principle-list">
+          <li><span>01</span><div><h3>Specificity is luxury.</h3><p>Name the variety, harvest state, texture, use and source.</p></div></li>
+          <li><span>02</span><div><h3>Evidence stays close.</h3><p>Place provenance and operating facts beside the claim they support.</p></div></li>
+          <li><span>03</span><div><h3>Produce leads.</h3><p>Typography, rules and color frame food; they never compete with it.</p></div></li>
+          <li><span>04</span><div><h3>Constraints become service.</h3><p>Availability, substitutions and lead times are made clear early.</p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section panel-section" id="foundations">
+      <div class="container">
+        <div class="section-heading">
+          <div><p class="kicker">02 · Foundations</p><h2>Soil, grain and harvest.</h2></div>
+          <p>The palette avoids default “organic green.” Soil brown anchors trust, clay brings appetite, saffron marks a harvest moment, and grain surfaces keep the system warm.</p>
+        </div>
+
+        <div class="swatch-grid" aria-label="Core color tokens">
+          <button class="swatch dark" style="--swatch:#402B24" data-copy="#402B24"><span>Brand primary</span><b>#402B24</b><small>Soil 900</small></button>
+          <button class="swatch dark" style="--swatch:#98513D" data-copy="#98513D"><span>Brand secondary</span><b>#98513D</b><small>Clay 700</small></button>
+          <button class="swatch" style="--swatch:#D49A25" data-copy="#D49A25"><span>Accent</span><b>#D49A25</b><small>Saffron 600</small></button>
+          <button class="swatch" style="--swatch:#FBF4E8" data-copy="#FBF4E8"><span>Background</span><b>#FBF4E8</b><small>Grain 100</small></button>
+          <button class="swatch" style="--swatch:#FFFDF7" data-copy="#FFFDF7"><span>Surface</span><b>#FFFDF7</b><small>Grain 50</small></button>
+          <button class="swatch dark" style="--swatch:#2B211D" data-copy="#2B211D"><span>Text primary</span><b>#2B211D</b><small>Soil 950</small></button>
+        </div>
+        <p class="copy-status" data-copy-status aria-live="polite">Select a swatch to copy its value.</p>
+
+        <div class="foundation-split">
+          <article class="type-card">
+            <p class="meta-label">Display family · Fraunces</p>
+            <p class="type-display">Every harvest<br>is an <em>edition.</em></p>
+            <div class="type-row"><span>H1 / 68 / 0.99</span><strong>Remarkable produce.</strong></div>
+            <div class="type-row"><span>H3 / 38 / 1.10</span><strong>Harvested this morning.</strong></div>
+          </article>
+          <article class="type-card sans-card">
+            <p class="meta-label">Interface family · DM Sans</p>
+            <p class="lead">Warm, direct language gives useful detail without turning every product into a lecture.</p>
+            <p>Body / 16 / 1.60 — Oyster mushrooms with silken texture, savoury depth and delicate edges. Best seared quickly over high heat.</p>
+            <p class="label-demo">READY NOW · 200 G · HARVESTED TODAY</p>
+          </article>
+        </div>
+
+        <div class="grid-demo" aria-label="Twelve-column grid demonstration">
+          <div class="grid-label"><span>12-column grid</span><span>20px gutter · 1200px max</span></div>
+          <div class="columns" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        </div>
+
+        <div class="token-row">
+          <article><p class="meta-label">Spacing</p><div class="spacing-scale"><i style="--size:4px"></i><i style="--size:8px"></i><i style="--size:12px"></i><i style="--size:20px"></i><i style="--size:32px"></i><i style="--size:48px"></i></div><p>4 · 8 · 12 · 20 · 32 · 48 · 72 · 96</p></article>
+          <article><p class="meta-label">Radius</p><div class="radius-scale"><i></i><i></i><i></i><i></i></div><p>0 · 8 · 10 · 14 · pill by exception</p></article>
+          <article><p class="meta-label">Motion</p><div class="motion-demo" aria-hidden="true"><i></i></div><p>140ms micro · 220ms standard · 360ms emphasized</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="components">
+      <div class="container">
+        <div class="section-heading">
+          <div><p class="kicker">03 · Components</p><h2>Editorial restraint, operational clarity.</h2></div>
+          <p>The same visual language must support appetite, confidence and dense operating information. Every component specifies states—not just its ideal appearance.</p>
+        </div>
+
+        <div class="component-board">
+          <article class="component-card button-showcase">
+            <div class="component-title"><h3>Buttons</h3><span>5 variants · 6 states</span></div>
+            <div class="component-stack">
+              <button class="button button-primary">Shop this harvest</button>
+              <button class="button button-secondary">View details</button>
+              <button class="button button-tertiary">Supply your kitchen <span aria-hidden="true">→</span></button>
+              <button class="button button-primary" disabled>Unavailable</button>
+            </div>
+          </article>
+
+          <article class="component-card">
+            <div class="component-title"><h3>Inputs</h3><span>Persistent labels</span></div>
+            <form class="component-stack" action="#" onsubmit="return false">
+              <label class="field"><span>Delivery pincode</span><input type="text" inputmode="numeric" value="124001" aria-describedby="pin-help"><small id="pin-help">We currently deliver selected harvests locally.</small></label>
+              <label class="field"><span>Kitchen type <small>Optional</small></span><select><option>Household</option><option>Restaurant</option><option>Café or bakery</option></select></label>
+              <label class="check"><input type="checkbox" checked><span>Tell me when the next harvest opens.</span></label>
+            </form>
+          </article>
+
+          <article class="component-card">
+            <div class="component-title"><h3>Badges and states</h3><span>Never color alone</span></div>
+            <div class="badge-stack">
+              <span class="badge success">Ready now</span>
+              <span class="badge warning">Harvest Friday</span>
+              <span class="badge information">Growing</span>
+              <span class="badge error">Out of season</span>
+              <span class="badge neutral">Restaurant pack</span>
+            </div>
+            <div class="status-note"><b>Availability pattern</b><span>Harvesting Friday. Delivery begins Saturday.</span></div>
+          </article>
+
+          <article class="component-card">
+            <div class="component-title"><h3>System feedback</h3><span>Text + role + recovery</span></div>
+            <div class="alert success-alert"><b>Added to your harvest</b><span>Blue-grey oyster mushrooms · 200 g</span></div>
+            <div class="alert error-alert"><b>Payment not confirmed</b><span>Your basket is safe. Try again or choose another method.</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section panel-section" id="patterns">
+      <div class="container">
+        <div class="section-heading">
+          <div><p class="kicker">04 · Patterns</p><h2>One brand, three contexts.</h2></div>
+          <p>Switch the specimen to see how hierarchy changes without changing the underlying design language.</p>
+        </div>
+
+        <div class="segmented" role="tablist" aria-label="Pattern context">
+          <button role="tab" aria-selected="true" data-context="household">Household</button>
+          <button role="tab" aria-selected="false" data-context="restaurant">Restaurant</button>
+          <button role="tab" aria-selected="false" data-context="operations">Operations</button>
+        </div>
+
+        <div class="context-panel" data-context-panel>
+          <div class="context-copy">
+            <p class="kicker" data-context-kicker>Household product card</p>
+            <h3 data-context-title>Taste first. Trust close behind.</h3>
+            <p data-context-description>Lead with appetite and cooking use, then show harvest evidence, pack size and availability before asking for action.</p>
+            <ul data-context-list><li>Sensory title and description</li><li>Unit and price remain inseparable</li><li>Availability uses plain language</li></ul>
+          </div>
+          <div class="pattern-stage" data-context-stage>
+            <article class="product-card">
+              <div class="product-image"><img src="../assets/radish-microgreens.webp" alt="Vivid radish microgreens growing densely"><span class="badge success">Ready now</span></div>
+              <div class="product-body"><p class="meta-label">Microgreens</p><h4>Radish microgreens</h4><p>Peppery, crisp and vivid. Finish chaat, eggs or salads just before serving.</p><div class="product-meta"><strong>₹120 <small>/ 75 g</small></strong><span>Harvested today</span></div><button class="button button-primary">Add to harvest</button></div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="voice">
+      <div class="container section-grid">
+        <div class="section-intro">
+          <p class="kicker">05 · Voice</p>
+          <h2>Confident because it is specific.</h2>
+          <p>WeGroween sounds like a knowledgeable grower and a thoughtful food editor—not a wellness advertisement.</p>
+        </div>
+        <div class="voice-list">
+          <article><span>Instead of</span><p>“Supercharge your health with our premium greens!”</p><span>Write</span><strong>“Peppery radish greens, harvested this morning.”</strong></article>
+          <article><span>Instead of</span><p>“Out of stock.”</p><span>Write</span><strong>“This bed is resting. Join the next harvest list.”</strong></article>
+          <article><span>Instead of</span><p>“Best quality guaranteed.”</p><span>Write</span><strong>“Packed within twelve hours of harvest.”</strong></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section governance">
+      <div class="container governance-grid">
+        <div><p class="kicker">06 · Governance</p><h2>Consistency is a maintained decision.</h2></div>
+        <div class="governance-list">
+          <p><b>Source of truth</b><span><code>design-tokens.json</code> controls visual values.</span></p>
+          <p><b>Accessibility</b><span>WCAG 2.2 AA, visible focus, 44px targets, text-supported states.</span></p>
+          <p><b>Change rule</b><span>New visual values require a token and a documented decision.</span></p>
+          <p><b>Current boundary</b><span>This package defines the system only. Application behavior is future work.</span></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container"><span class="brand-name">WeGroween</span><span>Cultivated Editorial · Design system 1.0 · 02 October 2026</span></div>
+  </footer>
+
+  <script type="module" src="specimen.js"></script>
+</body>
+</html>

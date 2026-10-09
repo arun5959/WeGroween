@@ -1,0 +1,120 @@
+{
+  "checks": [
+    {
+      "width": 320,
+      "id": "ink",
+      "overflow": false,
+      "images": true,
+      "panels": 1,
+      "background": "rgb(251, 244, 232)",
+      "colour": "rgb(43, 33, 29)"
+    },
+    {
+      "width": 320,
+      "id": "paper",
+      "overflow": false,
+      "images": true,
+      "panels": 1,
+      "background": "rgb(251, 244, 232)",
+      "colour": "rgb(43, 33, 29)"
+    },
+    {
+      "width": 320,
+      "id": "gouache",
+      "overflow": false,
+      "images": true,
+      "panels": 1,
+      "background": "rgb(251, 244, 232)",
+      "colour": "rgb(43, 33, 29)"
+    },
+    {
+      "width": 390,
+      "id": "ink",
+      "overflow": false,
+      "images": true,
+      "panels": 1,
+      "background": "rgb(251, 244, 232)",
+      "colour": "rgb(43, 33, 29)"
+    },
+    {
+      "width": 390,
+      "id": "paper",
+      "overflow": false,
+      "images": true,
+      "panels": 1,
+      "background": "rgb(251, 244, 232)",
+      "colour": "rgb(43, 33, 29)"
+    },
+    {
+      "width": 390,
+      "id": "gouache",
+      "overflow": false,
+      "images": true,
+      "panels": 1,
+      "background": "rgb(251, 244, 232)",
+      "colour": "rgb(43, 33, 29)"
+    },
+    {
+      "width": 640,
+      "id": "ink",
+      "overflow": false,
+      "images": true,
+      "panels": 1,
+      "background": "rgb(251, 244, 232)",
+      "colour": "rgb(43, 33, 29)"
+    },
+    {
+      "width": 640,
+      "id": "paper",
+      "overflow": false,
+      "images": true,
+      "panels": 1,
+      "background": "rgb(251, 244, 232)",
+      "colour": "rgb(43, 33, 29)"
+    },
+    {
+      "width": 640,
+      "id": "gouache",
+      "overflow": false,
+      "images": true,
+      "panels": 1,
+      "background": "rgb(251, 244, 232)",
+      "colour": "rgb(43, 33, 29)"
+    },
+    {
+      "width": 1440,
+      "id": "ink",
+      "overflow": false,
+      "images": true,
+      "panels": 1,
+      "background": "rgb(251, 244, 232)",
+      "colour": "rgb(43, 33, 29)"
+    },
+    {
+      "width": 1440,
+      "id": "paper",
+      "overflow": false,
+      "images": true,
+      "panels": 1,
+      "background": "rgb(251, 244, 232)",
+      "colour": "rgb(43, 33, 29)"
+    },
+    {
+      "width": 1440,
+      "id": "gouache",
+      "overflow": false,
+      "images": true,
+      "panels": 1,
+      "background": "rgb(251, 244, 232)",
+      "colour": "rgb(43, 33, 29)"
+    }
+  ],
+  "keyboard": {
+    "tag": "BUTTON",
+    "outline": "solid"
+  },
+  "reducedMotion": "pass",
+  "noJavaScript": "all three directions visible",
+  "errors": [],
+  "productionFilesVerifiedUnchanged": 71
+}

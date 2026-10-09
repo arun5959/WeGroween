@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0",
+  "project_id": "wegroween",
+  "project_name": "WeGroween",
+  "client_name": "WeGroween",
+  "canonical_domain": null,
+  "aliases": ["We Grow Green", "WeGroeen"],
+  "mode": "REFRESH",
+  "tags": [
+    "premium-food-commerce",
+    "household-ecommerce",
+    "restaurant-supply",
+    "organic-produce",
+    "microgreens",
+    "mushrooms",
+    "india"
+  ],
+  "privacy": "project-private",
+  "status": "active",
+  "created_at": "2026-10-02T00:00:00+05:30",
+  "updated_at": "2026-10-03T00:00:00+05:30",
+  "design_system_version": "1.2.0-proposed",
+  "delivery_scope": "design-system-only"
+}

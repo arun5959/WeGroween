@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-09",
+  "source": "E:\\WeGroween\\WeGroween",
+  "remote": "https://github.com/arun5959/WeGroween",
+  "originalCommit": "db21a8ceeb94a327a9ef81ccf81dedbbd3032fea",
+  "unitTestsPassed": 7,
+  "applicationBrowserTestsPassed": 34,
+  "staticPagesTestsPassed": 3,
+  "buildBasePath": "/WeGroween/",
+  "published": false,
+  "backup": "E:\\WeGroween\\release-backups\\2026-10-09-pre-publication"
+}

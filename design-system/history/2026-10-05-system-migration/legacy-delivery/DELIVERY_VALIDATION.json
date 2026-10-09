@@ -1,0 +1,21 @@
+{
+  "valid": true,
+  "errors": [],
+  "warnings": [
+    "Manually verify the homepage prototype uses only Color Palette Approach #1.",
+    "Manually verify all image, video and rich-media regions remain empty bounded placeholders.",
+    "Render and visually inspect every PDF page before delivery."
+  ],
+  "checks": [
+    "Present brand blueprint: BRAND_IDENTITY_BLUEPRINT.md",
+    "Present design system: DESIGN_SYSTEM.md",
+    "Present decision log: decisions.md",
+    "Present tokens: design-tokens.json",
+    "Present CSS tokens: tokens.css",
+    "Present interactive artifact: artifact\\index.html",
+    "Present homepage prototype PDF: pdf\\wegroween-homepage-prototype.pdf",
+    "Present design direction manual PDF: pdf\\wegroween-design-direction-manual.pdf",
+    "Present archive log: archive\\archive-log.jsonl",
+    "Archive log records: 5"
+  ]
+}

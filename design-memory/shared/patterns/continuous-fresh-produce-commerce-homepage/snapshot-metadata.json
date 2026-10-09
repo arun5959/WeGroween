@@ -1,0 +1,44 @@
+{
+  "project_version": "structural-pattern-1.0.0",
+  "approval_status": "approved-for-reviewed-redacted-reuse",
+  "decision_leader": "User",
+  "delegated_decisions": [],
+  "creative_direction": {
+    "name": "Editorial commerce structure",
+    "status": "structure-only"
+  },
+  "palette_approach_1": "Not promoted; client identity excluded",
+  "typography": "Not promoted; client identity excluded",
+  "grid": "Responsive editorial-commerce structure; project-specific values excluded",
+  "homepage_structure": [
+    "Utility and service cues",
+    "Catalogue-first hero with primary and secondary pathways",
+    "Trust band",
+    "Current harvest cards",
+    "Early serviceability check",
+    "Intent-led category curation",
+    "Cultivation evidence",
+    "Delivery journey",
+    "Household bundle",
+    "Restaurant supply pathway",
+    "Editorial guidance",
+    "Closing action, policies and responsive state sheet"
+  ],
+  "tags": {
+    "industry": ["fresh produce", "cultivation-led commerce"],
+    "archetype": ["household ecommerce", "secondary supply pathway"],
+    "pattern": ["continuous homepage", "serviceability before basket", "evidence near action"]
+  },
+  "confidentiality": "reviewed-redacted",
+  "reuse_status": "authorized-reviewed-redacted-structural-reuse",
+  "excluded": [
+    "client identity",
+    "copy",
+    "contact details",
+    "catalogue data",
+    "images",
+    "pricing",
+    "delivery promises",
+    "confidential operations"
+  ]
+}

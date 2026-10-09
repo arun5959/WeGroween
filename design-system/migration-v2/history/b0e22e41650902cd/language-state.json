@@ -1,0 +1,357 @@
+{
+  "schema_version": "2.0",
+  "project_id": "wegroween",
+  "version": "1.3.0-proposed",
+  "mode": "MIGRATE",
+  "phase": 5,
+  "phases": {
+    "0": {
+      "status": "complete",
+      "evidence": "Full rollback with source hashes; exact nested project and scope checked"
+    },
+    "1": {
+      "status": "reused",
+      "evidence": "Approved brief dated 2026-10-02; proposed schema additions await mapping acceptance"
+    },
+    "2": {
+      "status": "complete",
+      "evidence": "Historical project evidence retrieved; mapping questions resolved locally"
+    },
+    "3": {
+      "status": "pending",
+      "evidence": "Historical synthesis carried with dates; no fresh research approval invented"
+    },
+    "4": {
+      "status": "reused",
+      "evidence": "Cultivated Editorial choice preserved; alternative preview mappings marked proposed"
+    },
+    "5": {
+      "status": "pending",
+      "evidence": "Candidate prepared; mapping and expanded imagery treatment acceptance pending"
+    },
+    "6": {
+      "status": "pending",
+      "evidence": "Automated specification checks pending, independent review not rendered QA"
+    },
+    "7": {
+      "status": "complete",
+      "evidence": "User answered All three palettes on 2026-10-05"
+    },
+    "8": {
+      "status": "pending",
+      "evidence": "No new rendering before migration mapping confirmation"
+    },
+    "9": {
+      "status": "pending",
+      "evidence": "Final release and verified archival not performed"
+    }
+  },
+  "decisions": {
+    "brief": {
+      "choice": "approved-brief",
+      "status": "approved",
+      "owner": "User",
+      "evidence": "User in current conversation on 2026-10-05: Accept mapping and additions (Recommended). Accepted MIGRATION_REVIEW.md including preserved identity/H1/R3, carried research, purpose/component additions, fuller imagery treatment and proposed alternative mappings. Original evidence: Legacy approved-brief.md dated 2026-10-02: Status approved; existing design-system-only brief reused",
+      "at": "2026-10-05T11:31:33+00:00",
+      "option_revision": "1",
+      "basis_hash": "b5c0cbc4d6d929ea6bbd0fafa1078703b28673c32b3a88acc39cca8f3d0c2555"
+    },
+    "territory": {
+      "choice": "cultivated-editorial",
+      "status": "approved",
+      "owner": "User",
+      "evidence": "User in current conversation on 2026-10-05: Accept mapping and additions (Recommended). Accepted MIGRATION_REVIEW.md including preserved identity/H1/R3, carried research, purpose/component additions, fuller imagery treatment and proposed alternative mappings. Original evidence: Legacy decisions.md 2026-10-02 Creative territory: selected Cultivated Editorial after comparable previews",
+      "at": "2026-10-05T11:31:33+00:00",
+      "option_revision": "1",
+      "basis_hash": "8ffa7da3e30188e9a0efce67eb61b39f5c93ed470b8521982a4b7ada47f5d1a9"
+    },
+    "voice": {
+      "choice": "v1",
+      "status": "approved",
+      "owner": "User",
+      "evidence": "User in current conversation on 2026-10-05: Accept mapping and additions (Recommended). Accepted MIGRATION_REVIEW.md including preserved identity/H1/R3, carried research, purpose/component additions, fuller imagery treatment and proposed alternative mappings. Original evidence: Legacy decisions.md 2026-10-02 Tone of voice: user explicitly instructed recommended V1 Cultivated Authority",
+      "at": "2026-10-05T11:31:33+00:00",
+      "option_revision": "1",
+      "basis_hash": "4322ba8f941c6f3c3107292bd473fdad57e225ea99f3120abe4f28a192f98179"
+    },
+    "color": {
+      "choice": "palette-2",
+      "status": "approved",
+      "owner": "User",
+      "evidence": "User in current conversation on 2026-10-05: Accept mapping and additions (Recommended). Accepted MIGRATION_REVIEW.md including preserved identity/H1/R3, carried research, purpose/component additions, fuller imagery treatment and proposed alternative mappings. Original evidence: Legacy decisions.md 2026-10-02 Canonical palette: user response c2 t2 g3 selected C2 Soil & Saffron",
+      "at": "2026-10-05T11:31:33+00:00",
+      "option_revision": "1",
+      "basis_hash": "c7eca080fde983358c2b24395f23898ede014593fe5f265fd485b9152dd54fb9"
+    },
+    "typography": {
+      "choice": "type-2",
+      "status": "approved",
+      "owner": "User",
+      "evidence": "User in current conversation on 2026-10-05: Accept mapping and additions (Recommended). Accepted MIGRATION_REVIEW.md including preserved identity/H1/R3, carried research, purpose/component additions, fuller imagery treatment and proposed alternative mappings. Original evidence: Legacy decisions.md 2026-10-02 Canonical typography: user response c2 t2 g3 selected T2 Fraunces + DM Sans",
+      "at": "2026-10-05T11:31:33+00:00",
+      "option_revision": "1",
+      "basis_hash": "104aecf34b4c903d4029a59025a376f12d88f5ace12cbb75bf511e913c189777"
+    },
+    "density": {
+      "choice": "g3",
+      "status": "approved",
+      "owner": "User",
+      "evidence": "User in current conversation on 2026-10-05: Accept mapping and additions (Recommended). Accepted MIGRATION_REVIEW.md including preserved identity/H1/R3, carried research, purpose/component additions, fuller imagery treatment and proposed alternative mappings. Original evidence: Legacy decisions.md 2026-10-02 Canonical grid/density: user response c2 t2 g3 selected G3 Curated Market",
+      "at": "2026-10-05T11:31:33+00:00",
+      "option_revision": "1",
+      "basis_hash": "361df4aaf732f9cc318ce94ade607aec185b95776687701db565aad59bb17454"
+    },
+    "structure": {
+      "choice": "h1",
+      "status": "stale",
+      "owner": "User",
+      "evidence": "Legacy decisions.md H1 + PDFs on 2026-10-02; three-page continuous presentation on 2026-10-03. Source copy/order retained; renderer mapping not approved",
+      "at": "2026-10-05T11:23:30+00:00",
+      "option_revision": "1",
+      "basis_hash": "55c0f8445ccaaeb460e06796b1b989e80f140688c03a5be20394e4b9225bb85e",
+      "original_approval_date": "2026-10-02",
+      "scope_note": "Carry-forward selection only; does not approve new proposed migration additions or presentation mapping",
+      "additional_approval_date": "2026-10-03",
+      "stale_reason": "Changed density"
+    },
+    "coverage": {
+      "choice": "all-three",
+      "status": "stale",
+      "owner": "User",
+      "evidence": "User in current conversation on 2026-10-05: All three palettes",
+      "at": "2026-10-05T11:23:30+00:00",
+      "option_revision": "1",
+      "basis_hash": "fe648a4fc626f426a173c5b050804b03d40aad23cbcfc9400de1f3390181350b",
+      "stale_reason": "Changed density"
+    },
+    "reuse": {
+      "choice": "b2",
+      "status": "approved",
+      "owner": "User",
+      "evidence": "Legacy decisions.md 2026-10-03: B2 reviewed-redacted structural reuse; no client identity/copy/images/contacts/catalogue promotion",
+      "at": "2026-10-05T11:23:30+00:00",
+      "option_revision": "1",
+      "basis_hash": "b43ec1b3a3bc8c94ba440294d1a66b6aa9d1fca0f79f182d1e7774e1ec9edc78",
+      "original_approval_date": "2026-10-03"
+    },
+    "research": {
+      "choice": "carried-synthesis",
+      "status": "approved",
+      "owner": "User",
+      "evidence": "User in current conversation on 2026-10-05: Accept mapping and additions (Recommended). Accepted MIGRATION_REVIEW.md including preserved identity/H1/R3, carried research, purpose/component additions, fuller imagery treatment and proposed alternative mappings.",
+      "at": "2026-10-05T11:31:33+00:00",
+      "option_revision": "1",
+      "basis_hash": "551c38f28a44398577b002db7ed861d182f301d1e7032c7e4786b092cdb111f8"
+    }
+  },
+  "dirty_groups": [
+    "docs",
+    "gallery",
+    "prototypes"
+  ],
+  "artifacts": {},
+  "scope": {
+    "project_root": "E:\\WeGroween\\GitHub Clone\\WeGroween",
+    "approved_roots": [],
+    "baseline": {
+      "Blue Gray Oyster.webp": "31d7256aba77659a195c92ca66cac9f7a94bd23277d8ebf27e91eba1f6dbd4ee",
+      "Broccoli.webp": "d2f21e064fe4195a14551e08c87ffc9b75cdbe77b0e87c456321f7aeab338269",
+      "Button Mushoom.webp": "326dfd28cb9f5d24e42872a620e31f6447f569c29e1c9f3903c0dc759624b0e1",
+      "Combo Main.webp": "71982a167a566c9f3c7226f9911b5a7e971f83d38611c2094c055d0fece78630",
+      "combos.html": "66b270ae62d3fcbd7c2471cf57529055446fc54e836eef001dc8c60d193d039f",
+      "file_info.md": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "Golden Oyster.webp": "f18210253503ad28767b9f150bd28035f7bb89f950c2cedf634dc6bd54dab165",
+      "index.html": "6f2205cbd4a0800b60cd3868bab53dfb83290b73b949deda4911bc6b78cb62aa",
+      "Logo Transparent.webp": "4324bf58ba643a0cbf632278e30f845cefda5a668ddba6ab22b6ec8dd1e65d4f",
+      "Logo.webp": "342cf5e2f116f9d465e6501505d0e045ea6528ba9f26e15f103bf5b1377ce9e9",
+      "Microgreen main.webp": "49f4cde0ec73c303d46470174cde4ec83ba09715e163b6f3b07d681936e2dd98",
+      "microgreens.html": "fdfcc74459eddd8718883754ffac9b884b21a6422b9ec4ed175d7f1e62bad2c5",
+      "Mushroom main.webp": "8ed9a0809d407c407a00a2e390ec8f863c5e71e615e9773d9a64cdf6e3bb89ec",
+      "mushrooms.html": "e5924a462a1f154cf928f28f3e3681b640fc15c11a3fd3ca7a19bafa0bbf9d80",
+      "Mustard.webp": "2513e1ad09e7e008370ffa755b07a605f0740ecdd006b79dfd381f363d941ced",
+      "Raddish.webp": "0a086db8ec713416e75cc649001ff356bd4d5172d7953166aa4844fb002c15ad",
+      "README.md": "dfb5a712c3d7b254f51c451a6bb1881f2f50f16e63588553f6bf0f46a5ce1840",
+      "Sunflower.webp": "32aa2c1ed710fa918f81f0a679e9d9ea8d8b0208bc55a6ff9f25727261694cde",
+      "White Oyster.webp": "e96fa50a1148762b851f772fe804074069fdfc469d603bb7dfb3e577ca695645",
+      "Yellow Oyster.webp": "58fd0bc105baa4ff61c3f88c9a3c2ad06627e9965f985f25645902b881f33ff8",
+      "design-memory/index.json": "0e02bc9273f1b3cad3cf9fddc70b1069c252ba4bb469dfd7eaa8c9346e7ea5af",
+      "design-memory/projects/wegroween/progress.md": "135235d918ab884a8c31fa8049cce9672f0718c178c8fd2449dd23daae07cc8d",
+      "design-memory/projects/wegroween/project-manifest.json": "791129809338d175ba9cff500ef306803226f9f2e722394a609bf8bd3bdb756e",
+      "design-memory/projects/wegroween/archive/archive-log.jsonl": "d78cc989ae8e61fe529721daf1f0391551219992aba8ae56dc309c242663e3c3",
+      "design-memory/projects/wegroween/archive/snapshot-metadata-v1.2.0-proposed.json": "e61bb6c915ca16b71fa5d5f42eaaf8255406602818de729de8b37c36bd9c05b8",
+      "design-memory/projects/wegroween/archive/snapshots/snapshot-1-2-0-proposed-005e59745393.json": "06112ce953ac0711126eb62dbffdd4402e8ec9934cabde451e84292843a84f5b",
+      "design-memory/projects/wegroween/archive/snapshots/snapshot-1-2-0-proposed-055c4a30eca4.json": "aa8f6b75942117c3b15ad457455c74426b485cdf2714dc59466e101466d8dee5",
+      "design-memory/projects/wegroween/archive/snapshots/snapshot-1-2-0-proposed-8fd28a216b8a.json": "9e5e5b8bee20dd723bf1655ba33f41cef4e9c3d83921ca348ee9142caedb0397",
+      "design-memory/projects/wegroween/archive/snapshots/snapshot-1-2-0-proposed-b415e36c409b.json": "0f776cd2fb9c5c91a4d2d1ab50f8b2b7f76e366d13471631474afee587890aac",
+      "design-memory/projects/wegroween/archive/snapshots/snapshot-1-2-0-proposed-fba0e7dfa476.json": "e1929275ea6fccfc1998703933039067892120a52ffb353f8da7710ee1c098c5",
+      "design-memory/projects/wegroween/archive/snapshots/snapshot-structural-pattern-1-0-0-dacb77c877d9.json": "18f7dc7a6f5e77632f59f4d25badb6c1277bd1e05723977c3e77d46708bbc327",
+      "design-memory/projects/wegroween/brief/approved-brief.md": "766c357b12f55457a5db246919328107df58c7c6507347efd80701a1ec742420",
+      "design-memory/projects/wegroween/brief/constraints.json": "aa316fff5f7f7a334c6527a051c81e50ef55292538a29171f286f3f2b38b1a0f",
+      "design-memory/projects/wegroween/decisions/creative-territories.md": "a16caa2c3b0ce4305d6ed9f599b3e8a1ff00499a82324f539354e102ed74f079",
+      "design-memory/projects/wegroween/decisions/decision-log.md": "5ba8cab1bac0353f3af21d9443f6cf44a67eaa5378391a7797396b009ad81ad3",
+      "design-memory/projects/wegroween/decisions/identity-options.md": "2ca2efccb2fada96db8f6cafd194d7a88faa966ee94a9c74c8b39635abd705d3",
+      "design-memory/projects/wegroween/design-system/BRAND_IDENTITY_BLUEPRINT.md": "dc7103397255675f1a1026ba825b2f2a6f534b46780bb492226ebd8ca0852b60",
+      "design-memory/projects/wegroween/design-system/design-tokens.json": "fdc24832a4d5f9c1e53be77ab5b9d6c09178e4a22769c617ff3855c06fef7d4d",
+      "design-memory/projects/wegroween/design-system/DESIGN_SYSTEM.md": "fcef1e7a3d13ea66070101cb98091f67aff5bb7cf3dd4e11a613d54bd888a38a",
+      "design-memory/projects/wegroween/design-system/QUALITY_REVIEW.md": "4e8dc014b583f50593d4a5636a08f9a04cb1b4e60721e47401b2558e2d7a7cc1",
+      "design-memory/projects/wegroween/design-system/tokens.css": "0c2bb5442a0c52e49d8c767e23886ceeaa35493d72d5a4554afeee79d8a4b5c5",
+      "design-memory/projects/wegroween/outputs/artifact/components-desktop.png": "ae3630921f0cfeb4e7832e872727708fd3e2c58b1012f5c8507a58c03ba29330",
+      "design-memory/projects/wegroween/outputs/artifact/components-mobile-full.png": "02c6289733c45eede150c90c4099e821273d3e7e75a0a0f55cab489ddbf65085",
+      "design-memory/projects/wegroween/outputs/artifact/creative-territories-preview.png": "cd1b4cf0a8ecd1facb2d0ffadd4b5a86c82dbe9e82ea3f00dad6a5bda17524f6",
+      "design-memory/projects/wegroween/outputs/artifact/creative-territories.html": "914a249902d3b483be56b422989d42762a8ee04c2d59e41c0000d9a662b437ef",
+      "design-memory/projects/wegroween/outputs/artifact/design-system-specimen-desktop.png": "ab5342e326a0d48b04de2d153b4c00aa6392963d4ec236b8bd840db965555297",
+      "design-memory/projects/wegroween/outputs/artifact/design-system-specimen-mobile.png": "f964c0a94b3693fddb56c5a2967a823708ac1f6155d4aad65e1f89c85b34a568",
+      "design-memory/projects/wegroween/outputs/artifact/field-notes-gallery.png": "33ecd68a90ed673e2152c8babc9ba0e929c13d157641615a31b2137619ad2b6b",
+      "design-memory/projects/wegroween/outputs/artifact/field-notes-mobile.png": "73cf5cab7eb664045e7fd3ed7fd8821da313094c502e8d9288596b9d8b76d9b0",
+      "design-memory/projects/wegroween/outputs/artifact/iconography-options-mobile.png": "a7fe6b172b2c39c2cd74cd85066054e113a3b0dfab95a6798da9bc00ce242b49",
+      "design-memory/projects/wegroween/outputs/artifact/iconography-options-preview.png": "40cb3ee675f02d5dc5b6c5e0e8876b76c140cf57a471912358b5479b5ead1ec0",
+      "design-memory/projects/wegroween/outputs/artifact/identity-options-preview.png": "cd7e936b5e68805a895fa4eedded34ae323af1206706a8aa91b6c04947f42aba",
+      "design-memory/projects/wegroween/outputs/artifact/identity-options.html": "30a55899e2e363a985c5798a01194a45eb9f82d8aae2dbf47581c9b603441b32",
+      "design-memory/projects/wegroween/outputs/pdf/wegroween-design-direction-manual.pdf": "94479b38e2ea647cf202c606b92ed34a0da9fe903605af49f4a2f1a902b85f14",
+      "design-memory/projects/wegroween/outputs/pdf/wegroween-homepage-prototype.pdf": "f4bb07569932d2d608f50ccd4b30829f95ba15bf8c60006f73a8718cdfb60d0d",
+      "design-memory/projects/wegroween/outputs/pdf/design-direction-manual/manual-contact-sheet.png": "78a660072df81ec1988678322f7a394ff39d2ab117bbe82aaae09b448e08c182",
+      "design-memory/projects/wegroween/outputs/pdf/design-direction-manual/page-01.png": "8d5b81ed6535ea5f91c0e7ff952457f2b5767be7b5a605fa314091261ca5d7a3",
+      "design-memory/projects/wegroween/outputs/pdf/design-direction-manual/page-02.png": "dec61854a4d93d08d3812839f99186ecb91a79154c0e12c28b0684bdacb72236",
+      "design-memory/projects/wegroween/outputs/pdf/design-direction-manual/page-03.png": "1dbec77a35f2c13f68e4a87df8dd5d78babf1b05b844537240dc1a4ccb1adf50",
+      "design-memory/projects/wegroween/outputs/pdf/design-direction-manual/page-04.png": "5d5fb6ed51f6efab43f3dc55ac2f4231d2f3c2b04a8c7654d9e1bfebe1d59a82",
+      "design-memory/projects/wegroween/outputs/pdf/design-direction-manual/page-05.png": "10b49ea1e6c9b3b99d824bb749133b07e886b6e1d5e4114f19bfaf3f6d2cde6d",
+      "design-memory/projects/wegroween/outputs/pdf/design-direction-manual/page-06.png": "c5e47962479baa4a0194dd2332e837a682a57192fdea203cdd99be0e59b08e4f",
+      "design-memory/projects/wegroween/outputs/pdf/design-direction-manual/page-07.png": "1761bc30e85a82fe9be6bc3cb57032daec09e0f4214d17a57bfb5ec6d4b99c4e",
+      "design-memory/projects/wegroween/outputs/pdf/design-direction-manual/page-08.png": "cac43eaab023426d754d94abbb82c3bd29452e650e00e36d10a6eeed262a3b8c",
+      "design-memory/projects/wegroween/outputs/pdf/design-direction-manual/page-09.png": "cd422238bc71727d8f1549821af94deadd39b2d4915bcbd9858f670fc349f5b7",
+      "design-memory/projects/wegroween/outputs/pdf/design-direction-manual/page-10.png": "57dfecf2c2e090acb82b8e5dfaeb686382cb4c3d317e35d465a7d78f50f1652a",
+      "design-memory/projects/wegroween/outputs/pdf/design-direction-manual/page-11.png": "44cfea2fb01ff024ab491701ae932d430998a848e132430a4afc1f504100249e",
+      "design-memory/projects/wegroween/outputs/pdf/design-direction-manual/page-12.png": "2812e96884da0d0dfb665af0834ecae7556bcc66803a6a4b0fd26675c9348313",
+      "design-memory/projects/wegroween/outputs/pdf/design-direction-manual/page-13.png": "3a2cd4c1b2ed2da1f8508cde37a61e28e7422f78a30e0df572e8a403b6a6867e",
+      "design-memory/projects/wegroween/outputs/pdf/design-direction-manual/page-14.png": "4ca9e3a5cafd559c78586caa7a0ba28a366b57b5d587b706034eacc8ec947533",
+      "design-memory/projects/wegroween/outputs/pdf/design-direction-manual/page-15.png": "17d62cb4bd59251cf0789e4278d1b1eb7084b99dc2cfe89e3e627a35af970b9c",
+      "design-memory/projects/wegroween/outputs/pdf/design-direction-manual/page-16.png": "2e63dea9316d708018dd15a51970e394d9565919ecc56f869dca266e7e4e4bcd",
+      "design-memory/projects/wegroween/outputs/pdf/design-direction-manual/page-17.png": "4d1c1189685d8e2cb164a5d253c1855d3d7b0e8446f4ac77b4d666dce1bbc35d",
+      "design-memory/projects/wegroween/outputs/pdf/design-direction-manual/page-18.png": "2b7ff57ccc0475b61b776d98fddbb0cf120b19406287d3c4efefc5129b8a9a2f",
+      "design-memory/projects/wegroween/outputs/pdf/design-direction-manual/page-19.png": "29f48c58c25894db94a3c3de50dca74b4bc6e262f0b05cb318a83af1c0c6373e",
+      "design-memory/projects/wegroween/outputs/pdf/design-direction-manual/page-20.png": "335d82744835517f96779d63aa4449efd1af56d380fd55dbbeede48336bdc695",
+      "design-memory/projects/wegroween/outputs/pdf/homepage-prototype/page-01.png": "6346889c67caaebf91efe1116a8f64f6562dd9b797bd16d02749f6437d18f32a",
+      "design-memory/projects/wegroween/outputs/pdf/homepage-prototype/page-02.png": "d5df0cb343db671712ed4b41251930c65a905f6f558b9a057aad9dd781d018ef",
+      "design-memory/projects/wegroween/outputs/pdf/homepage-prototype/page-03.png": "ef00c346e9ca6bde543364e369439a0d850fa6e215e39ffd5d869112b666df3f",
+      "design-memory/projects/wegroween/outputs/pdf/homepage-prototype/page-04.png": "0a72e4e63de06b5dab98a0dea03e11fbeb1e8867e09b0845a98939b5998ba370",
+      "design-memory/projects/wegroween/outputs/pdf/homepage-prototype/page-05.png": "4da69ede6615fed0786728acd2e4064ac7d668f3babc8e35af6c0b0ec4c51dcb",
+      "design-memory/projects/wegroween/outputs/pdf/homepage-prototype/prototype-contact-sheet.png": "a9873a44bfcb386d9d8bc72d21e49610892a3557259bea895a83fcb4d7f095e4",
+      "design-memory/projects/wegroween/outputs/pdf/homepage-prototype-r2/page-1.png": "214fa92508781e41dbf9b482bf0ca9410cd8fba276b76eb252487632d1103d61",
+      "design-memory/projects/wegroween/outputs/pdf/homepage-prototype-r2/page-2-slice-1.png": "83c93804646e5effcb2b9ca578ee9c711cf4f7aeac501f45c2856afb90b4fc30",
+      "design-memory/projects/wegroween/outputs/pdf/homepage-prototype-r2/page-2-slice-2.png": "e083c6b90943474370904dbcaeb845d109f6d1c3878c1a50985569cbc13cc8c6",
+      "design-memory/projects/wegroween/outputs/pdf/homepage-prototype-r2/page-2-slice-3.png": "c3b72b82d1a984def5d9a14c00ef04b209e9c45a2cc53e097b965d95c8ee7ca7",
+      "design-memory/projects/wegroween/outputs/pdf/homepage-prototype-r2/page-2-slice-4.png": "ea6b1129da26a0d8ecfbfff5670d9d59784a6f4361315a852b8bcf9f85ba5552",
+      "design-memory/projects/wegroween/outputs/pdf/homepage-prototype-r2/page-2-slice-5.png": "ed9177096bffe4652d1133a64e74c1e485a124571c3d39547666b1acdd762a67",
+      "design-memory/projects/wegroween/outputs/pdf/homepage-prototype-r2/page-2.png": "7107c4d43297513a1ad8f6a136a99e7d9b38e13f0271be86e78ad9f6f663e496",
+      "design-memory/projects/wegroween/outputs/pdf/homepage-prototype-r2/page-3.png": "c36c4fb73e48a7e7d3c530f505f0456f258779c3f39595b19bf326223321a6e1",
+      "design-memory/projects/wegroween/outputs/pdf/homepage-prototype-r3/page-1.png": "b918438994f6346b4775c5ae8a512c53adcb31b2df1e05f692a21c1913cfb3a5",
+      "design-memory/projects/wegroween/outputs/pdf/homepage-prototype-r3/page-2-slice-1.png": "4c5168c9cd143d8ccc59ce1281b1231e58ca737152e0cec1e5f8410f6013af27",
+      "design-memory/projects/wegroween/outputs/pdf/homepage-prototype-r3/page-2-slice-2.png": "b6a6a474bad68f25431a654278573cf772a96536bf10f67c9ec4b8ea1f2219cb",
+      "design-memory/projects/wegroween/outputs/pdf/homepage-prototype-r3/page-2-slice-3.png": "b0a636a965c4aff5b34b1551da03ede82ac809ee8c18d2c025141de1411e9290",
+      "design-memory/projects/wegroween/outputs/pdf/homepage-prototype-r3/page-2-slice-4.png": "59592d05e6e1a7f29690f386e09fbd951da738a1aa054a6d2eeedfe036a15934",
+      "design-memory/projects/wegroween/outputs/pdf/homepage-prototype-r3/page-2-slice-5.png": "74ba176d5e2b8a32dd9428321e94f6ff7d558f172541c1f4049db29c0a3333a1",
+      "design-memory/projects/wegroween/outputs/pdf/homepage-prototype-r3/page-2.png": "a23d356021f0ff4afc1ccd69fa67f5124716b3962ed7597614f2c780770284ef",
+      "design-memory/projects/wegroween/outputs/pdf/homepage-prototype-r3/page-3.png": "6f9d690399318de46f9c089f5dc214ff048efff439b8fa99b7a8cd2f21abd4ac",
+      "design-memory/projects/wegroween/research/research-summary.md": "fd142727fcbdd6649f54c66f5066c9202387b15ee7d0a6d5f6a9f6a7e5f67a37",
+      "design-memory/projects/wegroween/research/sources.jsonl": "9fbe6484c6bf1785d5e3fd450e864e482b5f460f34fc1dfa273c694d82dc5f96",
+      "design-memory/projects/wegroween/research/pattern-cards/core-patterns.yaml": "0990767eeaf7d1d4a32ce6329400cb1c0c61792a284bb9abad7bf4d16e6b85ae",
+      "design-memory/shared/agency-archive-log.jsonl": "503833b19699f7721e3340d737d39c0be7a131a53e5feb32f55396b615e285b0",
+      "design-memory/shared/patterns/continuous-fresh-produce-commerce-homepage/snapshot-metadata.json": "a954b989590ddf5736086c47d9d1abe9515da6eecf504f62b2b3fa7fb6a60326",
+      "design-memory/shared/patterns/continuous-fresh-produce-commerce-homepage/STRUCTURAL_PATTERN.md": "de8d8474f0b35f447d199c3d55987b4c5ef58bad0b0ea982cdbb0f2b42db7f7f"
+    }
+  },
+  "pending_decisions": [
+    "migration-mapping",
+    "research-carried-synthesis",
+    "imagery-expanded-guide",
+    "release"
+  ],
+  "created_at": "2026-10-05T11:23:29+00:00",
+  "updated_at": "2026-10-05T11:31:33+00:00",
+  "legacy_approval_sources": {
+    "decision_log": "provenance/legacy-decisions.md"
+  },
+  "migration_confirmation": {
+    "status": "pending",
+    "evidence": null
+  },
+  "decision_history": [
+    {
+      "category": "brief",
+      "choice": "approved-brief",
+      "status": "approved",
+      "owner": "User",
+      "evidence": "Legacy approved-brief.md dated 2026-10-02: Status approved; existing design-system-only brief reused",
+      "at": "2026-10-05T11:23:30+00:00",
+      "option_revision": "1",
+      "basis_hash": "b1dfaaae06ec50f1ab6752064eae370efdd1f0e89f20000a859d8896bdd855fb",
+      "original_approval_date": "2026-10-02",
+      "scope_note": "Carry-forward selection only; does not approve new proposed migration additions or presentation mapping"
+    },
+    {
+      "category": "territory",
+      "choice": "cultivated-editorial",
+      "status": "stale",
+      "owner": "User",
+      "evidence": "Legacy decisions.md 2026-10-02 Creative territory: selected Cultivated Editorial after comparable previews",
+      "at": "2026-10-05T11:23:30+00:00",
+      "option_revision": "1",
+      "basis_hash": "8ffa7da3e30188e9a0efce67eb61b39f5c93ed470b8521982a4b7ada47f5d1a9",
+      "original_approval_date": "2026-10-02",
+      "scope_note": "Carry-forward selection only; does not approve new proposed migration additions or presentation mapping",
+      "stale_reason": "Changed brief"
+    },
+    {
+      "category": "voice",
+      "choice": "v1",
+      "status": "stale",
+      "owner": "User",
+      "evidence": "Legacy decisions.md 2026-10-02 Tone of voice: user explicitly instructed recommended V1 Cultivated Authority",
+      "at": "2026-10-05T11:23:30+00:00",
+      "option_revision": "1",
+      "basis_hash": "4322ba8f941c6f3c3107292bd473fdad57e225ea99f3120abe4f28a192f98179",
+      "original_approval_date": "2026-10-02",
+      "scope_note": "Carry-forward selection only; does not approve new proposed migration additions or presentation mapping",
+      "stale_reason": "Changed territory"
+    },
+    {
+      "category": "color",
+      "choice": "palette-2",
+      "status": "stale",
+      "owner": "User",
+      "evidence": "Legacy decisions.md 2026-10-02 Canonical palette: user response c2 t2 g3 selected C2 Soil & Saffron",
+      "at": "2026-10-05T11:23:30+00:00",
+      "option_revision": "1",
+      "basis_hash": "c7eca080fde983358c2b24395f23898ede014593fe5f265fd485b9152dd54fb9",
+      "original_approval_date": "2026-10-02",
+      "scope_note": "Carry-forward selection only; does not approve new proposed migration additions or presentation mapping",
+      "stale_reason": "Changed territory"
+    },
+    {
+      "category": "typography",
+      "choice": "type-2",
+      "status": "stale",
+      "owner": "User",
+      "evidence": "Legacy decisions.md 2026-10-02 Canonical typography: user response c2 t2 g3 selected T2 Fraunces + DM Sans",
+      "at": "2026-10-05T11:23:30+00:00",
+      "option_revision": "1",
+      "basis_hash": "104aecf34b4c903d4029a59025a376f12d88f5ace12cbb75bf511e913c189777",
+      "original_approval_date": "2026-10-02",
+      "scope_note": "Carry-forward selection only; does not approve new proposed migration additions or presentation mapping",
+      "stale_reason": "Changed territory"
+    },
+    {
+      "category": "density",
+      "choice": "g3",
+      "status": "stale",
+      "owner": "User",
+      "evidence": "Legacy decisions.md 2026-10-02 Canonical grid/density: user response c2 t2 g3 selected G3 Curated Market",
+      "at": "2026-10-05T11:23:30+00:00",
+      "option_revision": "1",
+      "basis_hash": "361df4aaf732f9cc318ce94ade607aec185b95776687701db565aad59bb17454",
+      "original_approval_date": "2026-10-02",
+      "scope_note": "Carry-forward selection only; does not approve new proposed migration additions or presentation mapping",
+      "stale_reason": "Changed typography"
+    }
+  ]
+}
