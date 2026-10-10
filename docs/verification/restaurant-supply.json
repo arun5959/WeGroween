@@ -1,0 +1,25 @@
+{
+  "checkedOn": "2026-10-10",
+  "route": "/restaurant-supply",
+  "status": "passed",
+  "build": "passed; 37 page types retained and public HTML generated",
+  "unitChecks": 7,
+  "browserChecks": 24,
+  "staticHostingChecks": 3,
+  "browserSuites": ["restaurant-supply", "contact", "interface-motion", "foundation"],
+  "responsiveWidths": [320, 390, 768, 1440],
+  "emptyPhotoSlots": ["hero", "mushrooms", "microgreens", "growing-story"],
+  "checkedBehaviours": [
+    "Conditional quantities and other-produce description",
+    "Required fields, optional PIN and email-or-phone validation",
+    "Safely rendered and encoded mailto draft",
+    "Deselected quantities omitted and stale drafts discarded",
+    "Keyboard FAQs and client navigation/back lifecycle",
+    "Subtle form height animation and reduced motion",
+    "No JavaScript direct-email fallback",
+    "No viewport overflow at all four responsive widths",
+    "Existing routes, menus, access denial and static hosting regressions"
+  ],
+  "visualReview": ["restaurant-supply-1440-intro.png", "restaurant-supply-390-intro.png", "restaurant-supply-1440.png", "restaurant-supply-390.png"],
+  "limitations": ["Email drafts only; the website has no connected enquiry-sending backend.", "All four new photo areas remain empty as requested."]
+}

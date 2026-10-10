@@ -19,7 +19,8 @@ test('contact form validates fields, safely prepares a draft, and discards stale
   await page.getByLabel('Name (optional)').fill('Test visitor');
   const message = '<img src=x onerror=alert(1)> & produce enquiry';
   await page.getByLabel('Your message').fill(message);
-  await page.getByLabel('What is your enquiry about?').selectOption('restaurant');
+  await page.getByRole('combobox', { name: 'What is your enquiry about?' }).click();
+  await page.getByRole('option', { name: 'Restaurant enquiries', exact: true }).click();
   await prepare.click();
   await expect(page.locator('#contact-email-draft')).toBeVisible();
   await expect(page.locator('#contact-email-draft')).toBeFocused();
@@ -35,7 +36,8 @@ test('contact form validates fields, safely prepares a draft, and discards stale
   await expect(page.locator('#contact-email-draft')).toBeHidden();
   await expect(page.locator('#contact-open-draft')).not.toHaveAttribute('href');
   await prepare.click();
-  await page.getByLabel('What is your enquiry about?').selectOption('delivery');
+  await page.getByRole('combobox', { name: 'What is your enquiry about?' }).click();
+  await page.getByRole('option', { name: 'Delivery questions', exact: true }).click();
   await expect(page.locator('#contact-email-draft')).toBeHidden();
   await expect(page.locator('#contact-message-hint')).toContainText('Delivery areas');
   expect(submissions).toEqual([]);

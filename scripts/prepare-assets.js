@@ -10,9 +10,13 @@ const root = fileURLToPath(new URL('../', import.meta.url));
 await prepareLogoAssets();
 await prepareStoryArtwork();
 // Public media is authoritative: never copy legacy photographs over user assets.
-for (const { filename } of Object.values(mediaAssets)) {
+for (const { filename, sources = [] } of Object.values(mediaAssets)) {
   try { await access(resolve(root, 'public/media', filename)); }
   catch { throw new Error(`Missing supplied media: public/media/${filename}`); }
+  for (const source of sources) {
+    try { await access(resolve(root, 'public/media', source.filename)); }
+    catch { throw new Error(`Missing responsive media: public/media/${source.filename}`); }
+  }
   if (filename.startsWith('story/paper/') && filename.endsWith('-1536.webp')) {
     const small = filename.replace('-1536.webp', '-768.webp');
     try { await access(resolve(root, 'public/media', small)); }

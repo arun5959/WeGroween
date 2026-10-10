@@ -1,0 +1,1213 @@
+{
+  "date": "2026-10-10",
+  "pageTypes": 37,
+  "renderedCases": 80,
+  "visibleElements": 6586,
+  "textChecks": 2444,
+  "inactiveTextExemptions": 26,
+  "endpointFailures": 0,
+  "contrastFailures": 0,
+  "limitations": "Computed UI colors and flat/alpha text backgrounds; photograph pixels, gradients and browser chrome are outside this check. Disabled controls and aria-hidden decorations are exempt from text contrast checks.",
+  "reports": [
+    {
+      "label": "C01 /",
+      "width": 390,
+      "visibleElements": 160,
+      "textChecks": 55,
+      "inactiveTextExemptions": 0,
+      "extremes": [],
+      "contrastFailures": [],
+      "tokens": {
+        "text-primary": "#2B211D",
+        "surface": "#FAF7F0",
+        "surface-elevated": "#FCFAF6",
+        "background": "#FBF4E8"
+      }
+    },
+    {
+      "label": "C02 /shop",
+      "width": 390,
+      "visibleElements": 119,
+      "textChecks": 39,
+      "inactiveTextExemptions": 0,
+      "extremes": [],
+      "contrastFailures": [],
+      "tokens": {
+        "text-primary": "#2B211D",
+        "surface": "#FAF7F0",
+        "surface-elevated": "#FCFAF6",
+        "background": "#FBF4E8"
+      }
+    },
+    {
+      "label": "C03 /shop/category/mushrooms",
+      "width": 390,
+      "visibleElements": 99,
+      "textChecks": 31,
+      "inactiveTextExemptions": 0,
+      "extremes": [],
+      "contrastFailures": [],
+      "tokens": {
+        "text-primary": "#2B211D",
+        "surface": "#FAF7F0",
+        "surface-elevated": "#FCFAF6",
+        "background": "#FBF4E8"
+      }
+    },
+    {
+      "label": "C04 /search",
+      "width": 390,
+      "visibleElements": 95,
+      "textChecks": 29,
+      "inactiveTextExemptions": 0,
+      "extremes": [],
+      "contrastFailures": [],
+      "tokens": {
+        "text-primary": "#2B211D",
+        "surface": "#FAF7F0",
+        "surface-elevated": "#FCFAF6",
+        "background": "#FBF4E8"
+      }
+    },
+    {
+      "label": "C05 /products/button-mushrooms",
+      "width": 390,
+      "visibleElements": 94,
+      "textChecks": 29,
+      "inactiveTextExemptions": 1,
+      "extremes": [],
+      "contrastFailures": [],
+      "tokens": {
+        "text-primary": "#2B211D",
+        "surface": "#FAF7F0",
+        "surface-elevated": "#FCFAF6",
+        "background": "#FBF4E8"
+      }
+    },
+    {
+      "label": "C06 /our-farm",
+      "width": 390,
+      "visibleElements": 178,
+      "textChecks": 55,
+      "inactiveTextExemptions": 5,
+      "extremes": [],
+      "contrastFailures": [],
+      "tokens": {
+        "text-primary": "#2B211D",
+        "surface": "#FAF7F0",
+        "surface-elevated": "#FCFAF6",
+        "background": "#FBF4E8"
+      }
+    },
+    {
+      "label": "C07 /restaurant-supply",
+      "width": 390,
+      "visibleElements": 268,
+      "textChecks": 99,
+      "inactiveTextExemptions": 3,
+      "extremes": [],
+      "contrastFailures": [],
+      "tokens": {
+        "text-primary": "#2B211D",
+        "surface": "#FAF7F0",
+        "surface-elevated": "#FCFAF6",
+        "background": "#FBF4E8"
+      }
+    },
+    {
+      "label": "C08 /help",
+      "width": 390,
+      "visibleElements": 169,
+      "textChecks": 56,
+      "inactiveTextExemptions": 0,
+      "extremes": [],
+      "contrastFailures": [],
+      "tokens": {
+        "text-primary": "#2B211D",
+        "surface": "#FAF7F0",
+        "surface-elevated": "#FCFAF6",
+        "background": "#FBF4E8"
+      }
+    },
+    {
+      "label": "C09 /cart",
+      "width": 390,
+      "visibleElements": 27,
+      "textChecks": 11,
+      "inactiveTextExemptions": 0,
+      "extremes": [],
+      "contrastFailures": [],
+      "tokens": {
+        "text-primary": "#2B211D",
+        "surface": "#FAF7F0",
+        "surface-elevated": "#FCFAF6",
+        "background": "#FBF4E8"
+      }
+    },
+    {
+      "label": "C10 /checkout",
+      "width": 390,
+      "visibleElements": 22,
+      "textChecks": 10,
+      "inactiveTextExemptions": 0,
+      "extremes": [],
+      "contrastFailures": [],
+      "tokens": {
+        "text-primary": "#2B211D",
+        "surface": "#FAF7F0",
+        "surface-elevated": "#FCFAF6",
+        "background": "#FBF4E8"
+      }
+    },
+    {
+      "label": "C11 /orders/preview-order/confirmation",
+      "width": 390,
+      "visibleElements": 22,
+      "textChecks": 10,
+      "inactiveTextExemptions": 0,
+      "extremes": [],
+      "contrastFailures": [],
+      "tokens": {
+        "text-primary": "#2B211D",
+        "surface": "#FAF7F0",
+        "surface-elevated": "#FCFAF6",
+        "background": "#FBF4E8"
+      }
+    },
+    {
+      "label": "C12 /sign-in",
+      "width": 390,
+      "visibleElements": 26,
+      "textChecks": 11,
+      "inactiveTextExemptions": 1,
+      "extremes": [],
+      "contrastFailures": [],
+      "tokens": {
+        "text-primary": "#2B211D",
+        "surface": "#FAF7F0",
+        "surface-elevated": "#FCFAF6",
+        "background": "#FBF4E8"
+      }
+    },
+    {
+      "label": "C13 /register",
+      "width": 390,
+      "visibleElements": 23,
+      "textChecks": 9,
+      "inactiveTextExemptions": 1,
+      "extremes": [],
+      "contrastFailures": [],
+      "tokens": {
+        "text-primary": "#2B211D",
+        "surface": "#FAF7F0",
+        "surface-elevated": "#FCFAF6",
+        "background": "#FBF4E8"
+      }
+    },
+    {
+      "label": "C14 /recover-password",
+      "width": 390,
+      "visibleElements": 20,
+      "textChecks": 8,
+      "inactiveTextExemptions": 1,
+      "extremes": [],
+      "contrastFailures": [],
+      "tokens": {
+        "text-primary": "#2B211D",
+        "surface": "#FAF7F0",
+        "surface-elevated": "#FCFAF6",
+        "background": "#FBF4E8"
+      }
+    },
+    {
+      "label": "C15 /account",
+      "width": 390,
+      "visibleElements": 98,
+      "textChecks": 32,
+      "inactiveTextExemptions": 0,
+      "extremes": [],
+      "contrastFailures": [],
+      "tokens": {
+        "text-primary": "#2B211D",
+        "surface": "#FAF7F0",
+        "surface-elevated": "#FCFAF6",
+        "background": "#FBF4E8"
+      }
+    },
+    {
+      "label": "C16 /account/addresses",
+      "width": 390,
+      "visibleElements": 98,
+      "textChecks": 32,
+      "inactiveTextExemptions": 0,
+      "extremes": [],
+      "contrastFailures": [],
+      "tokens": {
+        "text-primary": "#2B211D",
+        "surface": "#FAF7F0",
+        "surface-elevated": "#FCFAF6",
+        "background": "#FBF4E8"
+      }
+    },
+    {
+      "label": "C17 /account/orders",
+      "width": 390,
+      "visibleElements": 98,
+      "textChecks": 32,
+      "inactiveTextExemptions": 0,
+      "extremes": [],
+      "contrastFailures": [],
+      "tokens": {
+        "text-primary": "#2B211D",
+        "surface": "#FAF7F0",
+        "surface-elevated": "#FCFAF6",
+        "background": "#FBF4E8"
+      }
+    },
+    {
+      "label": "C18 /account/orders/preview-order",
+      "width": 390,
+      "visibleElements": 98,
+      "textChecks": 32,
+      "inactiveTextExemptions": 0,
+      "extremes": [],
+      "contrastFailures": [],
+      "tokens": {
+        "text-primary": "#2B211D",
+        "surface": "#FAF7F0",
+        "surface-elevated": "#FCFAF6",
+        "background": "#FBF4E8"
+      }
+    },
+    {
+      "label": "C19 /policies/delivery",
+      "width": 390,
+      "visibleElements": 89,
+      "textChecks": 28,
+      "inactiveTextExemptions": 0,
+      "extremes": [],
+      "contrastFailures": [],
+      "tokens": {
+        "text-primary": "#2B211D",
+        "surface": "#FAF7F0",
+        "surface-elevated": "#FCFAF6",
+        "background": "#FBF4E8"
+      }
+    },
+    {
+      "label": "C20 /policies/returns",
+      "width": 390,
+      "visibleElements": 89,
+      "textChecks": 28,
+      "inactiveTextExemptions": 0,
+      "extremes": [],
+      "contrastFailures": [],
+      "tokens": {
+        "text-primary": "#2B211D",
+        "surface": "#FAF7F0",
+        "surface-elevated": "#FCFAF6",
+        "background": "#FBF4E8"
+      }
+    },
+    {
+      "label": "C21 /policies/privacy",
+      "width": 390,
+      "visibleElements": 89,
+      "textChecks": 28,
+      "inactiveTextExemptions": 0,
+      "extremes": [],
+      "contrastFailures": [],
+      "tokens": {
+        "text-primary": "#2B211D",
+        "surface": "#FAF7F0",
+        "surface-elevated": "#FCFAF6",
+        "background": "#FBF4E8"
+      }
+    },
+    {
+      "label": "C22 /policies/terms",
+      "width": 390,
+      "visibleElements": 89,
+      "textChecks": 28,
+      "inactiveTextExemptions": 0,
+      "extremes": [],
+      "contrastFailures": [],
+      "tokens": {
+        "text-primary": "#2B211D",
+        "surface": "#FAF7F0",
+        "surface-elevated": "#FCFAF6",
+        "background": "#FBF4E8"
+      }
+    },
+    {
+      "label": "A01 /admin/sign-in",
+      "width": 390,
+      "visibleElements": 23,
+      "textChecks": 9,
+      "inactiveTextExemptions": 1,
+      "extremes": [],
+      "contrastFailures": [],
+      "tokens": {
+        "text-primary": "#2B211D",
+        "surface": "#FAF7F0",
+        "surface-elevated": "#FCFAF6",
+        "background": "#FBF4E8"
+      }
+    },
+    {
+      "label": "A02 /admin",
+      "width": 390,
+      "visibleElements": 36,
+      "textChecks": 21,
+      "inactiveTextExemptions": 0,
+      "extremes": [],
+      "contrastFailures": [],
+      "tokens": {
+        "text-primary": "#2B211D",
+        "surface": "#FAF7F0",
+        "surface-elevated": "#FCFAF6",
+        "background": "#FBF4E8"
+      }
+    },
+    {
+      "label": "A03 /admin/orders",
+      "width": 390,
+      "visibleElements": 36,
+      "textChecks": 21,
+      "inactiveTextExemptions": 0,
+      "extremes": [],
+      "contrastFailures": [],
+      "tokens": {
+        "text-primary": "#2B211D",
+        "surface": "#FAF7F0",
+        "surface-elevated": "#FCFAF6",
+        "background": "#FBF4E8"
+      }
+    },
+    {
+      "label": "A04 /admin/orders/preview-order",
+      "width": 390,
+      "visibleElements": 36,
+      "textChecks": 21,
+      "inactiveTextExemptions": 0,
+      "extremes": [],
+      "contrastFailures": [],
+      "tokens": {
+        "text-primary": "#2B211D",
+        "surface": "#FAF7F0",
+        "surface-elevated": "#FCFAF6",
+        "background": "#FBF4E8"
+      }
+    },
+    {
+      "label": "A05 /admin/products",
+      "width": 390,
+      "visibleElements": 36,
+      "textChecks": 21,
+      "inactiveTextExemptions": 0,
+      "extremes": [],
+      "contrastFailures": [],
+      "tokens": {
+        "text-primary": "#2B211D",
+        "surface": "#FAF7F0",
+        "surface-elevated": "#FCFAF6",
+        "background": "#FBF4E8"
+      }
+    },
+    {
+      "label": "A06 /admin/products/preview-product/edit",
+      "width": 390,
+      "visibleElements": 36,
+      "textChecks": 21,
+      "inactiveTextExemptions": 0,
+      "extremes": [],
+      "contrastFailures": [],
+      "tokens": {
+        "text-primary": "#2B211D",
+        "surface": "#FAF7F0",
+        "surface-elevated": "#FCFAF6",
+        "background": "#FBF4E8"
+      }
+    },
+    {
+      "label": "A07 /admin/categories",
+      "width": 390,
+      "visibleElements": 36,
+      "textChecks": 21,
+      "inactiveTextExemptions": 0,
+      "extremes": [],
+      "contrastFailures": [],
+      "tokens": {
+        "text-primary": "#2B211D",
+        "surface": "#FAF7F0",
+        "surface-elevated": "#FCFAF6",
+        "background": "#FBF4E8"
+      }
+    },
+    {
+      "label": "A08 /admin/inventory",
+      "width": 390,
+      "visibleElements": 36,
+      "textChecks": 21,
+      "inactiveTextExemptions": 0,
+      "extremes": [],
+      "contrastFailures": [],
+      "tokens": {
+        "text-primary": "#2B211D",
+        "surface": "#FAF7F0",
+        "surface-elevated": "#FCFAF6",
+        "background": "#FBF4E8"
+      }
+    },
+    {
+      "label": "A09 /admin/customers",
+      "width": 390,
+      "visibleElements": 36,
+      "textChecks": 21,
+      "inactiveTextExemptions": 0,
+      "extremes": [],
+      "contrastFailures": [],
+      "tokens": {
+        "text-primary": "#2B211D",
+        "surface": "#FAF7F0",
+        "surface-elevated": "#FCFAF6",
+        "background": "#FBF4E8"
+      }
+    },
+    {
+      "label": "A10 /admin/customers/preview-customer",
+      "width": 390,
+      "visibleElements": 36,
+      "textChecks": 21,
+      "inactiveTextExemptions": 0,
+      "extremes": [],
+      "contrastFailures": [],
+      "tokens": {
+        "text-primary": "#2B211D",
+        "surface": "#FAF7F0",
+        "surface-elevated": "#FCFAF6",
+        "background": "#FBF4E8"
+      }
+    },
+    {
+      "label": "A11 /admin/restaurant-supply",
+      "width": 390,
+      "visibleElements": 36,
+      "textChecks": 21,
+      "inactiveTextExemptions": 0,
+      "extremes": [],
+      "contrastFailures": [],
+      "tokens": {
+        "text-primary": "#2B211D",
+        "surface": "#FAF7F0",
+        "surface-elevated": "#FCFAF6",
+        "background": "#FBF4E8"
+      }
+    },
+    {
+      "label": "A12 /admin/promotions",
+      "width": 390,
+      "visibleElements": 36,
+      "textChecks": 21,
+      "inactiveTextExemptions": 0,
+      "extremes": [],
+      "contrastFailures": [],
+      "tokens": {
+        "text-primary": "#2B211D",
+        "surface": "#FAF7F0",
+        "surface-elevated": "#FCFAF6",
+        "background": "#FBF4E8"
+      }
+    },
+    {
+      "label": "A13 /admin/delivery",
+      "width": 390,
+      "visibleElements": 36,
+      "textChecks": 21,
+      "inactiveTextExemptions": 0,
+      "extremes": [],
+      "contrastFailures": [],
+      "tokens": {
+        "text-primary": "#2B211D",
+        "surface": "#FAF7F0",
+        "surface-elevated": "#FCFAF6",
+        "background": "#FBF4E8"
+      }
+    },
+    {
+      "label": "A14 /admin/reports",
+      "width": 390,
+      "visibleElements": 36,
+      "textChecks": 21,
+      "inactiveTextExemptions": 0,
+      "extremes": [],
+      "contrastFailures": [],
+      "tokens": {
+        "text-primary": "#2B211D",
+        "surface": "#FAF7F0",
+        "surface-elevated": "#FCFAF6",
+        "background": "#FBF4E8"
+      }
+    },
+    {
+      "label": "A15 /admin/settings",
+      "width": 390,
+      "visibleElements": 36,
+      "textChecks": 21,
+      "inactiveTextExemptions": 0,
+      "extremes": [],
+      "contrastFailures": [],
+      "tokens": {
+        "text-primary": "#2B211D",
+        "surface": "#FAF7F0",
+        "surface-elevated": "#FCFAF6",
+        "background": "#FBF4E8"
+      }
+    },
+    {
+      "label": "Sample account overview",
+      "width": 390,
+      "visibleElements": 165,
+      "textChecks": 55,
+      "inactiveTextExemptions": 0,
+      "extremes": [],
+      "contrastFailures": [],
+      "tokens": {
+        "text-primary": "#2B211D",
+        "surface": "#FAF7F0",
+        "surface-elevated": "#FCFAF6",
+        "background": "#FBF4E8"
+      }
+    },
+    {
+      "label": "Sample account inline editor",
+      "width": 390,
+      "visibleElements": 154,
+      "textChecks": 46,
+      "inactiveTextExemptions": 0,
+      "extremes": [],
+      "contrastFailures": [],
+      "tokens": {
+        "text-primary": "#2B211D",
+        "surface": "#FAF7F0",
+        "surface-elevated": "#FCFAF6",
+        "background": "#FBF4E8"
+      }
+    },
+    {
+      "label": "Open cart panel",
+      "width": 390,
+      "visibleElements": 205,
+      "textChecks": 60,
+      "inactiveTextExemptions": 0,
+      "extremes": [],
+      "contrastFailures": [],
+      "tokens": {
+        "text-primary": "#2B211D",
+        "surface": "#FAF7F0",
+        "surface-elevated": "#FCFAF6",
+        "background": "#FBF4E8"
+      }
+    },
+    {
+      "label": "C01 /",
+      "width": 1440,
+      "visibleElements": 179,
+      "textChecks": 62,
+      "inactiveTextExemptions": 0,
+      "extremes": [],
+      "contrastFailures": [],
+      "tokens": {
+        "text-primary": "#2B211D",
+        "surface": "#FAF7F0",
+        "surface-elevated": "#FCFAF6",
+        "background": "#FBF4E8"
+      }
+    },
+    {
+      "label": "C02 /shop",
+      "width": 1440,
+      "visibleElements": 138,
+      "textChecks": 46,
+      "inactiveTextExemptions": 0,
+      "extremes": [],
+      "contrastFailures": [],
+      "tokens": {
+        "text-primary": "#2B211D",
+        "surface": "#FAF7F0",
+        "surface-elevated": "#FCFAF6",
+        "background": "#FBF4E8"
+      }
+    },
+    {
+      "label": "C03 /shop/category/mushrooms",
+      "width": 1440,
+      "visibleElements": 118,
+      "textChecks": 38,
+      "inactiveTextExemptions": 0,
+      "extremes": [],
+      "contrastFailures": [],
+      "tokens": {
+        "text-primary": "#2B211D",
+        "surface": "#FAF7F0",
+        "surface-elevated": "#FCFAF6",
+        "background": "#FBF4E8"
+      }
+    },
+    {
+      "label": "C04 /search",
+      "width": 1440,
+      "visibleElements": 114,
+      "textChecks": 36,
+      "inactiveTextExemptions": 0,
+      "extremes": [],
+      "contrastFailures": [],
+      "tokens": {
+        "text-primary": "#2B211D",
+        "surface": "#FAF7F0",
+        "surface-elevated": "#FCFAF6",
+        "background": "#FBF4E8"
+      }
+    },
+    {
+      "label": "C05 /products/button-mushrooms",
+      "width": 1440,
+      "visibleElements": 113,
+      "textChecks": 36,
+      "inactiveTextExemptions": 1,
+      "extremes": [],
+      "contrastFailures": [],
+      "tokens": {
+        "text-primary": "#2B211D",
+        "surface": "#FAF7F0",
+        "surface-elevated": "#FCFAF6",
+        "background": "#FBF4E8"
+      }
+    },
+    {
+      "label": "C06 /our-farm",
+      "width": 1440,
+      "visibleElements": 197,
+      "textChecks": 62,
+      "inactiveTextExemptions": 5,
+      "extremes": [],
+      "contrastFailures": [],
+      "tokens": {
+        "text-primary": "#2B211D",
+        "surface": "#FAF7F0",
+        "surface-elevated": "#FCFAF6",
+        "background": "#FBF4E8"
+      }
+    },
+    {
+      "label": "C07 /restaurant-supply",
+      "width": 1440,
+      "visibleElements": 287,
+      "textChecks": 106,
+      "inactiveTextExemptions": 3,
+      "extremes": [],
+      "contrastFailures": [],
+      "tokens": {
+        "text-primary": "#2B211D",
+        "surface": "#FAF7F0",
+        "surface-elevated": "#FCFAF6",
+        "background": "#FBF4E8"
+      }
+    },
+    {
+      "label": "C08 /help",
+      "width": 1440,
+      "visibleElements": 188,
+      "textChecks": 63,
+      "inactiveTextExemptions": 0,
+      "extremes": [],
+      "contrastFailures": [],
+      "tokens": {
+        "text-primary": "#2B211D",
+        "surface": "#FAF7F0",
+        "surface-elevated": "#FCFAF6",
+        "background": "#FBF4E8"
+      }
+    },
+    {
+      "label": "C09 /cart",
+      "width": 1440,
+      "visibleElements": 27,
+      "textChecks": 11,
+      "inactiveTextExemptions": 0,
+      "extremes": [],
+      "contrastFailures": [],
+      "tokens": {
+        "text-primary": "#2B211D",
+        "surface": "#FAF7F0",
+        "surface-elevated": "#FCFAF6",
+        "background": "#FBF4E8"
+      }
+    },
+    {
+      "label": "C10 /checkout",
+      "width": 1440,
+      "visibleElements": 22,
+      "textChecks": 10,
+      "inactiveTextExemptions": 0,
+      "extremes": [],
+      "contrastFailures": [],
+      "tokens": {
+        "text-primary": "#2B211D",
+        "surface": "#FAF7F0",
+        "surface-elevated": "#FCFAF6",
+        "background": "#FBF4E8"
+      }
+    },
+    {
+      "label": "C11 /orders/preview-order/confirmation",
+      "width": 1440,
+      "visibleElements": 22,
+      "textChecks": 10,
+      "inactiveTextExemptions": 0,
+      "extremes": [],
+      "contrastFailures": [],
+      "tokens": {
+        "text-primary": "#2B211D",
+        "surface": "#FAF7F0",
+        "surface-elevated": "#FCFAF6",
+        "background": "#FBF4E8"
+      }
+    },
+    {
+      "label": "C12 /sign-in",
+      "width": 1440,
+      "visibleElements": 26,
+      "textChecks": 11,
+      "inactiveTextExemptions": 1,
+      "extremes": [],
+      "contrastFailures": [],
+      "tokens": {
+        "text-primary": "#2B211D",
+        "surface": "#FAF7F0",
+        "surface-elevated": "#FCFAF6",
+        "background": "#FBF4E8"
+      }
+    },
+    {
+      "label": "C13 /register",
+      "width": 1440,
+      "visibleElements": 23,
+      "textChecks": 9,
+      "inactiveTextExemptions": 1,
+      "extremes": [],
+      "contrastFailures": [],
+      "tokens": {
+        "text-primary": "#2B211D",
+        "surface": "#FAF7F0",
+        "surface-elevated": "#FCFAF6",
+        "background": "#FBF4E8"
+      }
+    },
+    {
+      "label": "C14 /recover-password",
+      "width": 1440,
+      "visibleElements": 20,
+      "textChecks": 8,
+      "inactiveTextExemptions": 1,
+      "extremes": [],
+      "contrastFailures": [],
+      "tokens": {
+        "text-primary": "#2B211D",
+        "surface": "#FAF7F0",
+        "surface-elevated": "#FCFAF6",
+        "background": "#FBF4E8"
+      }
+    },
+    {
+      "label": "C15 /account",
+      "width": 1440,
+      "visibleElements": 117,
+      "textChecks": 39,
+      "inactiveTextExemptions": 0,
+      "extremes": [],
+      "contrastFailures": [],
+      "tokens": {
+        "text-primary": "#2B211D",
+        "surface": "#FAF7F0",
+        "surface-elevated": "#FCFAF6",
+        "background": "#FBF4E8"
+      }
+    },
+    {
+      "label": "C16 /account/addresses",
+      "width": 1440,
+      "visibleElements": 117,
+      "textChecks": 39,
+      "inactiveTextExemptions": 0,
+      "extremes": [],
+      "contrastFailures": [],
+      "tokens": {
+        "text-primary": "#2B211D",
+        "surface": "#FAF7F0",
+        "surface-elevated": "#FCFAF6",
+        "background": "#FBF4E8"
+      }
+    },
+    {
+      "label": "C17 /account/orders",
+      "width": 1440,
+      "visibleElements": 117,
+      "textChecks": 39,
+      "inactiveTextExemptions": 0,
+      "extremes": [],
+      "contrastFailures": [],
+      "tokens": {
+        "text-primary": "#2B211D",
+        "surface": "#FAF7F0",
+        "surface-elevated": "#FCFAF6",
+        "background": "#FBF4E8"
+      }
+    },
+    {
+      "label": "C18 /account/orders/preview-order",
+      "width": 1440,
+      "visibleElements": 117,
+      "textChecks": 39,
+      "inactiveTextExemptions": 0,
+      "extremes": [],
+      "contrastFailures": [],
+      "tokens": {
+        "text-primary": "#2B211D",
+        "surface": "#FAF7F0",
+        "surface-elevated": "#FCFAF6",
+        "background": "#FBF4E8"
+      }
+    },
+    {
+      "label": "C19 /policies/delivery",
+      "width": 1440,
+      "visibleElements": 108,
+      "textChecks": 35,
+      "inactiveTextExemptions": 0,
+      "extremes": [],
+      "contrastFailures": [],
+      "tokens": {
+        "text-primary": "#2B211D",
+        "surface": "#FAF7F0",
+        "surface-elevated": "#FCFAF6",
+        "background": "#FBF4E8"
+      }
+    },
+    {
+      "label": "C20 /policies/returns",
+      "width": 1440,
+      "visibleElements": 108,
+      "textChecks": 35,
+      "inactiveTextExemptions": 0,
+      "extremes": [],
+      "contrastFailures": [],
+      "tokens": {
+        "text-primary": "#2B211D",
+        "surface": "#FAF7F0",
+        "surface-elevated": "#FCFAF6",
+        "background": "#FBF4E8"
+      }
+    },
+    {
+      "label": "C21 /policies/privacy",
+      "width": 1440,
+      "visibleElements": 108,
+      "textChecks": 35,
+      "inactiveTextExemptions": 0,
+      "extremes": [],
+      "contrastFailures": [],
+      "tokens": {
+        "text-primary": "#2B211D",
+        "surface": "#FAF7F0",
+        "surface-elevated": "#FCFAF6",
+        "background": "#FBF4E8"
+      }
+    },
+    {
+      "label": "C22 /policies/terms",
+      "width": 1440,
+      "visibleElements": 108,
+      "textChecks": 35,
+      "inactiveTextExemptions": 0,
+      "extremes": [],
+      "contrastFailures": [],
+      "tokens": {
+        "text-primary": "#2B211D",
+        "surface": "#FAF7F0",
+        "surface-elevated": "#FCFAF6",
+        "background": "#FBF4E8"
+      }
+    },
+    {
+      "label": "A01 /admin/sign-in",
+      "width": 1440,
+      "visibleElements": 23,
+      "textChecks": 9,
+      "inactiveTextExemptions": 1,
+      "extremes": [],
+      "contrastFailures": [],
+      "tokens": {
+        "text-primary": "#2B211D",
+        "surface": "#FAF7F0",
+        "surface-elevated": "#FCFAF6",
+        "background": "#FBF4E8"
+      }
+    },
+    {
+      "label": "A02 /admin",
+      "width": 1440,
+      "visibleElements": 36,
+      "textChecks": 21,
+      "inactiveTextExemptions": 0,
+      "extremes": [],
+      "contrastFailures": [],
+      "tokens": {
+        "text-primary": "#2B211D",
+        "surface": "#FAF7F0",
+        "surface-elevated": "#FCFAF6",
+        "background": "#FBF4E8"
+      }
+    },
+    {
+      "label": "A03 /admin/orders",
+      "width": 1440,
+      "visibleElements": 36,
+      "textChecks": 21,
+      "inactiveTextExemptions": 0,
+      "extremes": [],
+      "contrastFailures": [],
+      "tokens": {
+        "text-primary": "#2B211D",
+        "surface": "#FAF7F0",
+        "surface-elevated": "#FCFAF6",
+        "background": "#FBF4E8"
+      }
+    },
+    {
+      "label": "A04 /admin/orders/preview-order",
+      "width": 1440,
+      "visibleElements": 36,
+      "textChecks": 21,
+      "inactiveTextExemptions": 0,
+      "extremes": [],
+      "contrastFailures": [],
+      "tokens": {
+        "text-primary": "#2B211D",
+        "surface": "#FAF7F0",
+        "surface-elevated": "#FCFAF6",
+        "background": "#FBF4E8"
+      }
+    },
+    {
+      "label": "A05 /admin/products",
+      "width": 1440,
+      "visibleElements": 36,
+      "textChecks": 21,
+      "inactiveTextExemptions": 0,
+      "extremes": [],
+      "contrastFailures": [],
+      "tokens": {
+        "text-primary": "#2B211D",
+        "surface": "#FAF7F0",
+        "surface-elevated": "#FCFAF6",
+        "background": "#FBF4E8"
+      }
+    },
+    {
+      "label": "A06 /admin/products/preview-product/edit",
+      "width": 1440,
+      "visibleElements": 36,
+      "textChecks": 21,
+      "inactiveTextExemptions": 0,
+      "extremes": [],
+      "contrastFailures": [],
+      "tokens": {
+        "text-primary": "#2B211D",
+        "surface": "#FAF7F0",
+        "surface-elevated": "#FCFAF6",
+        "background": "#FBF4E8"
+      }
+    },
+    {
+      "label": "A07 /admin/categories",
+      "width": 1440,
+      "visibleElements": 36,
+      "textChecks": 21,
+      "inactiveTextExemptions": 0,
+      "extremes": [],
+      "contrastFailures": [],
+      "tokens": {
+        "text-primary": "#2B211D",
+        "surface": "#FAF7F0",
+        "surface-elevated": "#FCFAF6",
+        "background": "#FBF4E8"
+      }
+    },
+    {
+      "label": "A08 /admin/inventory",
+      "width": 1440,
+      "visibleElements": 36,
+      "textChecks": 21,
+      "inactiveTextExemptions": 0,
+      "extremes": [],
+      "contrastFailures": [],
+      "tokens": {
+        "text-primary": "#2B211D",
+        "surface": "#FAF7F0",
+        "surface-elevated": "#FCFAF6",
+        "background": "#FBF4E8"
+      }
+    },
+    {
+      "label": "A09 /admin/customers",
+      "width": 1440,
+      "visibleElements": 36,
+      "textChecks": 21,
+      "inactiveTextExemptions": 0,
+      "extremes": [],
+      "contrastFailures": [],
+      "tokens": {
+        "text-primary": "#2B211D",
+        "surface": "#FAF7F0",
+        "surface-elevated": "#FCFAF6",
+        "background": "#FBF4E8"
+      }
+    },
+    {
+      "label": "A10 /admin/customers/preview-customer",
+      "width": 1440,
+      "visibleElements": 36,
+      "textChecks": 21,
+      "inactiveTextExemptions": 0,
+      "extremes": [],
+      "contrastFailures": [],
+      "tokens": {
+        "text-primary": "#2B211D",
+        "surface": "#FAF7F0",
+        "surface-elevated": "#FCFAF6",
+        "background": "#FBF4E8"
+      }
+    },
+    {
+      "label": "A11 /admin/restaurant-supply",
+      "width": 1440,
+      "visibleElements": 36,
+      "textChecks": 21,
+      "inactiveTextExemptions": 0,
+      "extremes": [],
+      "contrastFailures": [],
+      "tokens": {
+        "text-primary": "#2B211D",
+        "surface": "#FAF7F0",
+        "surface-elevated": "#FCFAF6",
+        "background": "#FBF4E8"
+      }
+    },
+    {
+      "label": "A12 /admin/promotions",
+      "width": 1440,
+      "visibleElements": 36,
+      "textChecks": 21,
+      "inactiveTextExemptions": 0,
+      "extremes": [],
+      "contrastFailures": [],
+      "tokens": {
+        "text-primary": "#2B211D",
+        "surface": "#FAF7F0",
+        "surface-elevated": "#FCFAF6",
+        "background": "#FBF4E8"
+      }
+    },
+    {
+      "label": "A13 /admin/delivery",
+      "width": 1440,
+      "visibleElements": 36,
+      "textChecks": 21,
+      "inactiveTextExemptions": 0,
+      "extremes": [],
+      "contrastFailures": [],
+      "tokens": {
+        "text-primary": "#2B211D",
+        "surface": "#FAF7F0",
+        "surface-elevated": "#FCFAF6",
+        "background": "#FBF4E8"
+      }
+    },
+    {
+      "label": "A14 /admin/reports",
+      "width": 1440,
+      "visibleElements": 36,
+      "textChecks": 21,
+      "inactiveTextExemptions": 0,
+      "extremes": [],
+      "contrastFailures": [],
+      "tokens": {
+        "text-primary": "#2B211D",
+        "surface": "#FAF7F0",
+        "surface-elevated": "#FCFAF6",
+        "background": "#FBF4E8"
+      }
+    },
+    {
+      "label": "A15 /admin/settings",
+      "width": 1440,
+      "visibleElements": 36,
+      "textChecks": 21,
+      "inactiveTextExemptions": 0,
+      "extremes": [],
+      "contrastFailures": [],
+      "tokens": {
+        "text-primary": "#2B211D",
+        "surface": "#FAF7F0",
+        "surface-elevated": "#FCFAF6",
+        "background": "#FBF4E8"
+      }
+    },
+    {
+      "label": "Sample account overview",
+      "width": 1440,
+      "visibleElements": 188,
+      "textChecks": 64,
+      "inactiveTextExemptions": 0,
+      "extremes": [],
+      "contrastFailures": [],
+      "tokens": {
+        "text-primary": "#2B211D",
+        "surface": "#FAF7F0",
+        "surface-elevated": "#FCFAF6",
+        "background": "#FBF4E8"
+      }
+    },
+    {
+      "label": "Sample account inline editor",
+      "width": 1440,
+      "visibleElements": 177,
+      "textChecks": 55,
+      "inactiveTextExemptions": 0,
+      "extremes": [],
+      "contrastFailures": [],
+      "tokens": {
+        "text-primary": "#2B211D",
+        "surface": "#FAF7F0",
+        "surface-elevated": "#FCFAF6",
+        "background": "#FBF4E8"
+      }
+    },
+    {
+      "label": "Open cart panel",
+      "width": 1440,
+      "visibleElements": 199,
+      "textChecks": 62,
+      "inactiveTextExemptions": 0,
+      "extremes": [],
+      "contrastFailures": [],
+      "tokens": {
+        "text-primary": "#2B211D",
+        "surface": "#FAF7F0",
+        "surface-elevated": "#FCFAF6",
+        "background": "#FBF4E8"
+      }
+    }
+  ]
+}

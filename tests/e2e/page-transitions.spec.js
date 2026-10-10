@@ -60,7 +60,7 @@ test('Back/Forward, rapid navigation and cart activation clean up the active tra
   await expect(page.locator('#cart-drawer')).not.toHaveAttribute('open');
 });
 
-test('desktop transition settles on resize and reduced motion; mobile keeps its existing behaviour', async ({ page }) => {
+test('transitions settle on width changes and reduced motion, then continue on mobile', async ({ page }) => {
   await page.setViewportSize({ width: 1440, height: 900 });
   await page.goto('/');
   await headerLink(page, '/help').click();
@@ -76,6 +76,7 @@ test('desktop transition settles on resize and reduced motion; mobile keeps its 
   await page.getByRole('button', { name: 'Menu', exact: true }).click();
   await page.locator('.site-navigation a[href="/shop"]').click();
   await expect(page).toHaveURL('/shop');
+  await expect(page.locator('#app')).toHaveAttribute('data-page-transition', 'backward');
   await expect(page.locator('.page-transition-viewport')).toHaveCount(0);
   await expect(page.locator('#app')).not.toHaveAttribute('data-page-transition');
 });

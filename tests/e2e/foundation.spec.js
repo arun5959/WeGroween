@@ -29,7 +29,7 @@ test('active header labels grow without moving or resizing the menu items', asyn
   }
 });
 
-test('all 37 direct links load the correct page and shell without runtime errors', async ({ page }) => {
+test('all current direct links load the correct page and shell without runtime errors', async ({ page }) => {
   const failures = [];
   page.on('pageerror', (error) => failures.push(error.message));
   for (const entry of pages) {
@@ -125,13 +125,12 @@ test('phone emulation keeps hero text and header controls inside the visible vie
   await context.close();
 });
 
-test('search query stays in URL and renders as text; unknown routes show 404', async ({ page }) => {
-  await page.goto('/search');
-  await page.getByLabel('Search mushrooms or microgreens').fill('<script>alert(1)</script>');
-  await page.getByRole('button', { name: 'Search', exact: true }).click();
-  await expect(page).toHaveURL(/q=/);
-  await expect(page.locator('#search-results')).toContainText('<script>alert(1)</script>');
-  await expect(page.locator('#search-results script')).toHaveCount(0);
+test('legacy search opens header suggestions safely and unknown routes show 404', async ({ page }) => {
+  await page.goto('/search?q=radish');
+  await expect(page).toHaveURL('/shop?q=radish');
+  await page.getByLabel('Search products').fill('<script>alert(1)</script>');
+  await expect(page.locator('[data-header-search-empty]')).toContainText('<script>alert(1)</script>');
+  await expect(page.locator('[data-header-search-panel] script')).toHaveCount(0);
   await page.goto('/not-an-existing-route');
   await expect(page.locator('#app')).toHaveAttribute('data-status', '404');
 });

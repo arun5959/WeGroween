@@ -18,24 +18,29 @@ export function setupInterfaceMotion(root) {
     heights.delete(element);
     current.animation.cancel();
     element.style.overflow = current.overflow;
+    current.resolve();
   }
 
   function height(element, from, to, finish = () => {}) {
     if (preference.matches || Math.abs(from - to) < .5 || !element.animate) {
       finish();
-      return;
+      return Promise.resolve();
     }
     const overflow = element.style.overflow;
     element.style.overflow = 'hidden';
     const animation = element.animate([{ height: `${from}px` }, { height: `${to}px` }], { duration, easing });
-    const record = { animation, overflow, finish };
+    let resolve;
+    const completion = new Promise(done => { resolve = done; });
+    const record = { animation, overflow, finish, resolve };
     heights.set(element, record);
     animation.onfinish = () => {
       if (heights.get(element) !== record) return;
       heights.delete(element);
       element.style.overflow = overflow;
       finish();
+      resolve();
     };
+    return completion;
   }
 
   function reveal(element) {
@@ -82,12 +87,13 @@ export function setupInterfaceMotion(root) {
     navigation.inert = !expanded;
     navigation.toggleAttribute('data-lenis-prevent', expanded);
     const to = expanded ? navigation.getBoundingClientRect().height : 0;
-    height(navigation, from, to, () => {
+    const completion = height(navigation, from, to, () => {
       navigation.classList.toggle('is-open', expanded);
       // Inert is only needed during the closing animation. Desktop stays usable.
       navigation.inert = false;
     });
     if (expanded) reveal(navigation);
+    return completion;
   }
 
   function settle() {

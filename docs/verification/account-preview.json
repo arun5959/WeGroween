@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-10",
+  "reviewUrl": "http://127.0.0.1:5173/__account-preview",
+  "directions": ["compact account overview", "account book with inline information rows"],
+  "data": "fictional, in memory only; reload and reset restore the fixture",
+  "build": "passed",
+  "unitChecks": { "passed": 9, "command": "npm test" },
+  "accountBrowserChecks": { "passed": 10, "command": "npx playwright test --config playwright.account.config.js" },
+  "regressionBrowserChecks": { "passed": 21, "suites": ["foundation", "cart-drawer", "page-transitions"] },
+  "productionBoundaryBrowserChecks": { "passed": 1, "suite": "account-boundary" },
+  "responsiveWidths": [320, 390, 720, 1024, 1440],
+  "checks": [
+    "Protected account routes remain 403 in development and production",
+    "Sample workspace returns 404 outside development",
+    "Profile edit, cancellation, validation, escaping and reload reset",
+    "Address creation, editing, default selection, deletion and empty state",
+    "Sample order expansion, keyboard activation and reduced motion",
+    "No external requests during profile edits",
+    "No horizontal overflow; focused editor fields remain visible"
+  ],
+  "screenshots": ["account-overview-1440.png", "account-overview-390.png", "account-profile-1440.png", "account-profile-390.png"]
+}

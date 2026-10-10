@@ -1,0 +1,63 @@
+{
+  "date": "2026-10-10",
+  "captureNote": "Sticky header and skip link hidden only during isolated component screenshots.",
+  "results": [
+    {
+      "width": 1440,
+      "zoom": 1,
+      "overflow": false,
+      "headingGaps": [
+        20,
+        20,
+        20
+      ],
+      "labelWeight": "500",
+      "inputHeight": 51.59375,
+      "expandedOverflow": false
+    },
+    {
+      "width": 390,
+      "zoom": 1,
+      "overflow": false,
+      "headingGaps": [
+        20,
+        20,
+        20
+      ],
+      "labelWeight": "500",
+      "inputHeight": 51.59375,
+      "expandedOverflow": false
+    },
+    {
+      "width": 320,
+      "zoom": 1,
+      "overflow": false,
+      "headingGaps": [
+        20,
+        20,
+        20
+      ],
+      "labelWeight": "500",
+      "inputHeight": 51.59375,
+      "expandedOverflow": false
+    },
+    {
+      "width": 1440,
+      "zoom": 1.25,
+      "overflow": false,
+      "headingGaps": [
+        20,
+        20,
+        20
+      ],
+      "labelWeight": "500",
+      "inputHeight": 51.2,
+      "expandedOverflow": false
+    }
+  ],
+  "validation": {
+    "build": "passed",
+    "existingBrowserChecks": 25,
+    "developmentServer": "http://127.0.0.1:5173/ - running"
+  }
+}

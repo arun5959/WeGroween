@@ -1,0 +1,31 @@
+.wg-select-trigger {
+  display: flex; align-items: center; justify-content: space-between; gap: var(--space-sm);
+  width: 100%; min-width: 0; min-height: var(--component-input-height);
+  padding: var(--space-sm) var(--component-input-padding-inline); border: 1px solid var(--color-border-strong);
+  border-radius: var(--radius-control); font: inherit; text-align: left; color: var(--color-text-primary);
+  background: var(--color-surface); cursor: pointer;
+  transition: border-color var(--motion-micro) var(--motion-easing-standard), background-color var(--motion-micro) var(--motion-easing-standard);
+}
+.wg-select-trigger:hover, .wg-select-trigger[aria-expanded="true"] { border-color: var(--color-brand-secondary); background: var(--color-background); }
+.wg-select-value { min-width: 0; overflow-wrap: anywhere; }
+.wg-select-trigger > .wg-icon { width: 20px; height: 20px; color: var(--color-brand-primary); transition: transform var(--motion-standard) var(--motion-easing-standard); }
+.wg-select-trigger[aria-expanded="true"] > .wg-icon { transform: rotate(180deg); }
+.wg-select-listbox {
+  position: fixed; z-index: 30; overflow-y: auto; overscroll-behavior: contain;
+  padding: var(--space-xs); border: 1px solid var(--color-border); border-radius: var(--radius-control);
+  background: var(--color-surface); color: var(--color-text-primary); font: inherit;
+  box-shadow: 0 8px 24px color-mix(in srgb, var(--color-brand-primary) 12%, transparent);
+}
+.wg-select-listbox[hidden] { display: none !important; }
+.wg-select-option {
+  display: flex; align-items: center; justify-content: space-between; gap: var(--space-sm); min-height: 44px;
+  padding: var(--space-sm); border-radius: var(--radius-control); cursor: pointer; line-height: 1.4;
+  transition: background-color var(--motion-micro) var(--motion-easing-standard), color var(--motion-micro) var(--motion-easing-standard);
+}
+.wg-select-option > span { min-width: 0; overflow-wrap: anywhere; }
+.wg-select-option > .wg-icon { width: 18px; height: 18px; visibility: hidden; color: var(--color-brand-secondary); }
+.wg-select-option[aria-selected="true"] { color: var(--color-brand-secondary); background: color-mix(in srgb, var(--color-brand-secondary) 7%, var(--color-surface)); }
+.wg-select-option[aria-selected="true"] > .wg-icon { visibility: visible; }
+.wg-select-option.is-active { background: color-mix(in srgb, var(--color-brand-secondary) 14%, var(--color-surface)); color: var(--color-brand-primary); }
+.wg-select-option[aria-disabled="true"] { color: var(--color-disabled-content); cursor: not-allowed; }
+@media (prefers-reduced-motion: reduce) { .wg-select-trigger, .wg-select-trigger > .wg-icon, .wg-select-option { transition: none; } }

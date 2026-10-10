@@ -1,0 +1,226 @@
+[
+  {
+    "source": "fresh-mushrooms-and-microgreens-on-parchment-portrait.png",
+    "originalBytes": 2936807,
+    "dimensions": [
+      1122,
+      1402
+    ],
+    "copies": [
+      {
+        "filename": "supply-hero-portrait-480.webp",
+        "width": 480,
+        "height": 600,
+        "bytes": 77320
+      },
+      {
+        "filename": "supply-hero-portrait-768.webp",
+        "width": 768,
+        "height": 960,
+        "bytes": 159740
+      },
+      {
+        "filename": "supply-hero-portrait-1122.webp",
+        "width": 1122,
+        "height": 1402,
+        "bytes": 269090
+      }
+    ]
+  },
+  {
+    "source": "fresh-mushrooms-and-microgreens-on-parchment-landscape.png",
+    "originalBytes": 2980182,
+    "dimensions": [
+      1402,
+      1122
+    ],
+    "copies": [
+      {
+        "filename": "supply-hero-landscape-480.webp",
+        "width": 480,
+        "height": 384,
+        "bytes": 54402
+      },
+      {
+        "filename": "supply-hero-landscape-768.webp",
+        "width": 768,
+        "height": 615,
+        "bytes": 120498
+      },
+      {
+        "filename": "supply-hero-landscape-1402.webp",
+        "width": 1402,
+        "height": 1122,
+        "bytes": 276490
+      }
+    ]
+  },
+  {
+    "source": "sauteed-mushrooms-with-microgreens-portrait.png",
+    "originalBytes": 2253140,
+    "dimensions": [
+      1122,
+      1402
+    ],
+    "copies": [
+      {
+        "filename": "kitchen-dish-portrait-480.webp",
+        "width": 480,
+        "height": 600,
+        "bytes": 53200
+      },
+      {
+        "filename": "kitchen-dish-portrait-768.webp",
+        "width": 768,
+        "height": 960,
+        "bytes": 103678
+      },
+      {
+        "filename": "kitchen-dish-portrait-1122.webp",
+        "width": 1122,
+        "height": 1402,
+        "bytes": 166024
+      }
+    ]
+  },
+  {
+    "source": "sauteed-mushrooms-with-microgreens-landscape.png",
+    "originalBytes": 2229256,
+    "dimensions": [
+      1402,
+      1122
+    ],
+    "copies": [
+      {
+        "filename": "kitchen-dish-landscape-480.webp",
+        "width": 480,
+        "height": 384,
+        "bytes": 39400
+      },
+      {
+        "filename": "kitchen-dish-landscape-768.webp",
+        "width": 768,
+        "height": 615,
+        "bytes": 78944
+      },
+      {
+        "filename": "kitchen-dish-landscape-1402.webp",
+        "width": 1402,
+        "height": 1122,
+        "bytes": 169112
+      }
+    ]
+  },
+  {
+    "source": "Oyster Mushroom Cluster on Stone.png",
+    "originalBytes": 2094864,
+    "dimensions": [
+      1448,
+      1086
+    ],
+    "copies": [
+      {
+        "filename": "oyster-mushrooms-detail-480.webp",
+        "width": 480,
+        "height": 360,
+        "bytes": 24606
+      },
+      {
+        "filename": "oyster-mushrooms-detail-768.webp",
+        "width": 768,
+        "height": 576,
+        "bytes": 46858
+      },
+      {
+        "filename": "oyster-mushrooms-detail-1448.webp",
+        "width": 1448,
+        "height": 1086,
+        "bytes": 106848
+      }
+    ]
+  },
+  {
+    "source": "Fresh Microgreens on Stone Texture.png",
+    "originalBytes": 2696625,
+    "dimensions": [
+      1448,
+      1086
+    ],
+    "copies": [
+      {
+        "filename": "microgreens-detail-480.webp",
+        "width": 480,
+        "height": 360,
+        "bytes": 50382
+      },
+      {
+        "filename": "microgreens-detail-768.webp",
+        "width": 768,
+        "height": 576,
+        "bytes": 100156
+      },
+      {
+        "filename": "microgreens-detail-1448.webp",
+        "width": 1448,
+        "height": 1086,
+        "bytes": 224454
+      }
+    ]
+  },
+  {
+    "source": "Vibrant Microgreen Trio Overhead.png",
+    "originalBytes": 2983259,
+    "dimensions": [
+      1448,
+      1086
+    ],
+    "copies": [
+      {
+        "filename": "microgreens-range-480.webp",
+        "width": 480,
+        "height": 360,
+        "bytes": 69940
+      },
+      {
+        "filename": "microgreens-range-768.webp",
+        "width": 768,
+        "height": 576,
+        "bytes": 138736
+      },
+      {
+        "filename": "microgreens-range-1448.webp",
+        "width": 1448,
+        "height": 1086,
+        "bytes": 307014
+      }
+    ]
+  },
+  {
+    "source": "Harvesting Microgreens on Indoor Racks.png",
+    "originalBytes": 2353843,
+    "dimensions": [
+      1536,
+      1024
+    ],
+    "copies": [
+      {
+        "filename": "microgreens-harvest-480.webp",
+        "width": 480,
+        "height": 320,
+        "bytes": 31730
+      },
+      {
+        "filename": "microgreens-harvest-768.webp",
+        "width": 768,
+        "height": 512,
+        "bytes": 62124
+      },
+      {
+        "filename": "microgreens-harvest-1536.webp",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 154682
+      }
+    ]
+  }
+]

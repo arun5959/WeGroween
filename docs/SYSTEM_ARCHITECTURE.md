@@ -1,8 +1,8 @@
 # WeGroween website system architecture
 
-Version 0.2 | 6 October 2026 | Foundation implemented; remaining development proposed
+Version 0.3 | 10 October 2026 | Foundation implemented; remaining development proposed
 
-Decision owner: user. Scope: 22 customer page types and 15 admin page types, using the existing WeGroween design language. Phase 1 now has runnable build tooling, a manifest-derived router, five shared layouts, token-based primitives and public HTML generation. The pages are foundation previews/scaffolds; database, authentication, payment and production integrations remain unimplemented. See `FOUNDATION_HANDOFF.md` for actual commands, files, verification and limitations.
+Decision owner: user. Scope: 21 customer page types and 15 admin page types, using the existing WeGroween design language. Phase 1 now has runnable build tooling, a manifest-derived router, five shared layouts, token-based primitives and public HTML generation. The pages are foundation previews/scaffolds; database, authentication, payment and production integrations remain unimplemented. See `FOUNDATION_HANDOFF.md` for actual commands, files, verification and limitations.
 
 ## 1. Product boundary and decisions
 
@@ -10,7 +10,7 @@ WeGroween is a household-first fresh-produce store with a secondary restaurant-s
 
 The initial offer can cover microgreens, mushrooms, vegetables, fruits and combos. Category availability depends on confirmed launch products; categories are data rather than independent implementations. Combo products need explicit constituent-stock handling before they can be sold.
 
-The architecture covers all 37 page types agreed as the planning baseline. Product, category, customer and order records reuse their respective templates. Modals, filter panels, payment states, verification links, 404 and access-denied responses are additional states or utility handlers, not additional scoped page types.
+The architecture now covers 36 page types. The original 37-type baseline retired C04 on 10 October 2026: search is a shared expanding header interaction, and /search is a compatibility entry to Shop that restores the query. Product, category, customer and order records reuse their respective templates. Modals, filter panels, payment states, verification links, 404 and access-denied responses are additional states or utility handlers, not additional scoped page types.
 
 | Decision | Architecture position | Status |
 |---|---|---|
@@ -95,14 +95,13 @@ Administration
   General settings
 ```
 
-### Customer pages: 22 reusable types
+### Customer pages: 21 reusable types
 
 | ID | Page and route | Main sections and primary action | Data and access |
 |---|---|---|---|
 | C01 | Home `/` | Approved H1 homepage structure, seasonal products, category discovery, provenance, delivery clarity, restaurant pathway. Shop this harvest. | Public published content and catalogue. |
 | C02 | Shop `/shop` | Intro, available categories, filters, sorting, paginated product grid. Open product or add selected pack. | Public catalogue; URL-backed filters. |
 | C03 | Category `/shop/category/:slug` | Category introduction, category-specific filters, product grid. Explore a product. | One template for all published categories, including combos if launched. |
-| C04 | Search `/search?q=` | Query, results count, filters, suggestions and no-results state. Open a result. | Public catalogue search; no indexation of arbitrary search URLs. |
 | C05 | Product `/products/:slug` | Gallery, verified description, pack/variant, price, availability, delivery eligibility, storage/use guidance, provenance and related products. Add to cart. | Published product, variants and safe availability projection. |
 | C06 | Our Farm `/our-farm` | Brand story, real practices, verified provenance and photographs. Explore products. | Curated content; evidence-backed claims. |
 | C07 | Restaurant Supply `/restaurant-supply` | Supply capabilities, available categories, enquiry process and business form. Send enquiry. | Public content; rate-limited enquiry intake. |
@@ -189,7 +188,7 @@ URL owns discovery query, category, filters, sort and pagination. Forms own unsa
 
 ### Rendering and SEO
 
-Use a frontend route registry and shared templates instead of 37 copied HTML files. Vite compiles assets; it does not by itself supply public-page server rendering or a database-backed prerender pipeline. Public home, category, product, farm, help, supply and policy pages must produce meaningful HTML and route-specific metadata before launch. A build-time catalogue snapshot can generate those pages while stock and checkout refresh from live services.
+Use a frontend route registry and shared templates instead of 36 copied HTML files. Vite compiles assets; it does not by itself supply public-page server rendering or a database-backed prerender pipeline. Public home, category, product, farm, help, supply and policy pages must produce meaningful HTML and route-specific metadata before launch. A build-time catalogue snapshot can generate those pages while stock and checkout refresh from live services.
 
 Publishing a product/content change queues a controlled rebuild of generated public HTML. A failed rebuild keeps the previous release live, exposes its status to staff and permits retry. Stock changes never require a full rebuild. If the required publishing cadence makes rebuilds unsuitable, choose a server-rendered HTML framework/hosting adapter before frontend scaffolding; this document does not silently assume one.
 
@@ -361,7 +360,7 @@ This is the intended complete development structure. Its phase-1 app, layout, co
 WeGroween/
   docs/
     SYSTEM_ARCHITECTURE.md        # this canonical explanation
-    PAGE_MANIFEST.json            # 37 types and route/access/render contracts
+    PAGE_MANIFEST.json            # 36 types and route/access/render contracts
   design-system/                  # current canonical design-language package
   design-memory/                  # existing project design history
   src/
@@ -458,7 +457,7 @@ Shared domain calculations belong on the server or in tested pure modules, not c
 
 | Stage | Pages/modules | Required result |
 |---|---|---|
-| 1. Foundation | Route registry, five shells, tokens, primitives, public-page rendering strategy | Reusable navigation/layouts work on mobile and keyboard; all 37 page types are mapped without duplicated business logic. |
+| 1. Foundation | Route registry, five shells, tokens, primitives, public-page rendering strategy | Reusable navigation/layouts work on mobile and keyboard; all 36 page types are mapped without duplicated business logic. |
 | 2. Catalogue | C01-C08; catalogue, media, product/category/search | Realistic local data; public page HTML/metadata and working discovery; approved H1 structure preserved. |
 | 3. Identity and accounts | C12-C18; Auth, profiles, addresses, owned orders | Customer A cannot read/write customer B's data; session expiry and recovery work. Guest decision incorporated. |
 | 4. Commerce and policy | C09-C11, C19-C22; pricing, reservations, delivery and payments | Test-mode end-to-end purchase; duplicate callbacks/webhooks and stock races reconcile correctly. |
@@ -472,7 +471,7 @@ The first reviewable implementation is Home -> Shop/category -> Product -> Cart 
 
 | Area | Meaningful acceptance cases |
 |---|---|
-| Scope | Exactly 22 customer and 15 admin page types; aliases/modes do not inflate count; page routes/access/render strategies resolve. |
+| Scope | Exactly 21 customer and 15 admin page types; aliases/modes do not inflate count; page routes/access/render strategies resolve. |
 | Discovery | Search/filter/sort/pagination state survives URL navigation; invalid slug returns 404; unpublished products do not leak. |
 | Accounts | Own-data allow and other-user deny; verified recovery; roles cannot be edited through customer profile APIs. |
 | Stock and delivery | Two customers race for last pack/slot; only eligible allocation succeeds; expired/spoiled lot cannot be sold; bundle components reserve atomically. |
@@ -496,7 +495,7 @@ Reports distinguish placed order value, captured payment value, successful refun
 
 ## 16. Decisions to resolve before dependent implementation
 
-1. Guest checkout or mandatory sign-in. The existing 37 page types support either; the security/session implementation differs.
+1. Guest checkout or mandatory sign-in. The existing 36 page types support either; the security/session implementation differs.
 2. Launch catalogue: confirmed products, pack sizes, SKU/stock units, bundle contents, prices and tax handling.
 3. Delivery geography, fees, cutoff dates, slots/capacity, substitutions and cancellation/refund policy.
 4. Static public-page rebuild cadence versus server-rendered hosting. This determines the final frontend scaffold/adapter.

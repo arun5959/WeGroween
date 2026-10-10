@@ -5,12 +5,12 @@
 ## Implemented
 
 - Pinned Vite 8.3.3, Tailwind 4.3.3, its Vite plugin, Playwright 1.63.0 and Lenis 1.3.26, with a lockfile and Node 22.12+ requirement.
-- A runtime registry derived from the existing `PAGE_MANIFEST.json`: 37 page types and 38 route patterns (product create/edit modes share a type).
+- A runtime registry derived from the existing `PAGE_MANIFEST.json`: 36 page types and 37 route patterns (product create/edit modes share a type).
 - Five reusable shells: storefront, checkout, identity, account and admin. Restricted shell previews contain access-denied messaging only, with no customer/staff records.
 - Existing `design-system/tokens.css`, Fraunces and DM Sans consumed without editing canonical design inputs. Website images now use the updated supplied assets in `public/media`, mapped in `src/content/media.js`. Asset preparation validates those files and creates missing local font files without overwriting public assets.
 - Shared escaped markup, links/buttons, field labels/help/error state, notices, navigation, focusable main landmarks, skip links and mobile menus.
 - Working local homepage/category navigation and two product examples. These are composition examples; catalogue enrichment and final homepage content belong to phase 2.
-- Client navigation, browser back/forward, focus restoration, URL-backed search query, empty cart, placeholder informational/policy pages and proper not-found views.
+- Client navigation, browser back/forward, focus restoration, shared expanding header search with live local product matching, empty cart, placeholder informational/policy pages and proper not-found views.
 - All account, checkout, order and staff-data routes deny access. Authentication forms are disabled; the preview does not collect credentials or call a backend.
 - Development-only `/__foundation` registry and primitive review. It returns not-found in the production preview.
 - A reusable public HTML generator: 14 concrete public routes, `404.html`, client app shell and prerender manifest. Generated pages contain useful headings, content and image URLs without JavaScript. All previews remain `noindex, nofollow`.
@@ -19,7 +19,7 @@
 
 ## What remains
 
-The 37 types are wired foundation scaffolds, not 37 finished business pages. Supabase tables/RLS/Auth, real permissions, cart contents, live catalogue/search, stock, delivery eligibility, checkout, Razorpay, notifications and admin actions are not connected. Inputs for launch products, prices, delivery rules, guest checkout, operating policies, public asset rights and hosting remain open.
+The current 36 types are wired foundation scaffolds, not 36 finished business pages. C04 was retired on 10 October 2026; search is a shared header interaction, and old /search query links reopen it over Shop. Supabase tables/RLS/Auth, real permissions, cart contents, remote catalogue/search, stock, delivery eligibility, checkout, Razorpay, notifications and admin actions are not connected. Inputs for launch products, prices, delivery rules, guest checkout, operating policies, public asset rights and hosting remain open.
 
 The route access guard deliberately denies everything protected; it is not a substitute for the server/RLS ownership checks planned for later phases. Public example records are the existing Button mushrooms and Radish microgreens, with no invented pack, price, stock or purchase availability. Restaurant/supplier claims and legal policies are not fabricated.
 

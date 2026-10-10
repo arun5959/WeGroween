@@ -25,4 +25,6 @@ The complete 92-file legacy rollback is retained under history/2026-10-05-system
 
 ## Rebuilding
 
+Website neutral shades were refined on 2026-10-10 at the user's request: soft white `#FCFAF6`, card surface `#FAF7F0`, and existing warm dark text `#2B211D`. Canonical token values and generated `tokens.css` are synchronized. See [the interface color policy](../docs/INTERFACE_COLOR_POLICY.md). The historical PDFs and migration QA above were not reissued for this website update.
+
 Use scripts/build_project_delivery.py for this project's authorized R3 presentation adapter, then scripts/validate_project_delivery.py rendered. The generic skill renderer cannot preserve the approved photo/form content and three-page presentation. The adapter retains the standard approval, token/CSS, coverage, file, hash, PDF and scope checks. Review affected rendered outputs after any rebuild; final validation additionally requires confirmed release and immutable private archival.

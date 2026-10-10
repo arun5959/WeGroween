@@ -5,7 +5,6 @@ import { cartContents } from '../components/cart.js';
 export function unavailablePage(page) {
   const descriptions = {
     C06: ['Our story', 'Our farm, your kitchen.', 'The WeGroween story and verified growing practices are being prepared.'],
-    C07: ['Restaurant supply', 'Supply your kitchen.', 'Restaurant supply information and the enquiry service will be available here.'],
     C19: ['Delivery', 'From harvest to your door.', 'Service areas, delivery charges and timing will be published before ordering opens.'],
     C20: ['Order support', 'Returns and refunds.', 'The policy for perishable produce and order issues will be published here.'],
     C21: ['Your information', 'Privacy policy.', 'The approved policy will describe how WeGroween handles your information.'],
@@ -19,10 +18,6 @@ export function cart() {
   return `${pageIntro('Your selection', 'Your cart.')}<div class="empty-state">${cartContents()}${notice('Ordering is not open', 'Shopping and payment will be available after the catalogue and delivery details are confirmed.')}</div>`;
 }
 
-export function search() {
-  return `<div class="container section narrow">${pageIntro('Find your harvest', 'Search the catalogue.')}<form id="catalogue-search" method="get" action="/search"><div class="field"><label for="search-query">Search mushrooms or microgreens</label><div class="search-row"><input id="search-query" name="q" type="search" autocomplete="off"><button class="button" type="submit">Search</button></div></div></form><div id="search-results" aria-live="polite">${notice('Explore the current categories', 'The complete catalogue search will open with the product range.')}${link('Browse categories', '/shop', 'quiet')}</div></div>`;
-}
-
 export function identityPage(page) {
   const title = page.id === 'A01' ? 'Staff sign in.' : page.id === 'C13' ? 'Create your account.' : page.id === 'C14' ? 'Recover your account.' : 'Welcome back.';
   return `${pageIntro(page.id === 'A01' ? 'WeGroween operations' : 'Your WeGroween account', title)}${notice('Account access is not open', 'Sign-in and account recovery will be available when the account service opens. No credentials are collected in this preview.')}<div class="identity-fields">${field({ id: 'identity-email', label: 'Email address', type: 'email', disabled: true })}${page.id !== 'C14' ? field({ id: 'identity-password', label: 'Password', type: 'password', disabled: true }) : ''}<button class="button" type="button" disabled aria-describedby="identity-disabled">${escapeHtml(page.primary_action)}</button><p id="identity-disabled" class="muted">Account access is unavailable in this preview.</p></div>${page.id === 'C12' ? '<div class="action-row"><a href="/register">Create an account</a><a href="/recover-password">Forgot password?</a></div>' : ''}`;
@@ -33,7 +28,7 @@ export function accessRequired(page, decision, path) {
 }
 
 export function notFound() {
-  return `${pageIntro('404', 'This page could not be found.', 'The address may have changed, or this item is not in the available catalogue.')}${link('Back to the catalogue', '/shop')}`;
+  return `${pageIntro('404', 'This page could not be found.', 'The address may have changed, or this item is not in the available catalogue.')}${link('Back to the catalogue', '/shop', 'primary', { direction: 'back' })}`;
 }
 
 export function foundationPreview() {

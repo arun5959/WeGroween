@@ -6,8 +6,9 @@ export function escapeHtml(value = '') {
   })[character]);
 }
 
-export function link(label, href, variant = 'primary') {
-  return `<a class="button button--${escapeHtml(variant)}" href="${escapeHtml(href)}">${escapeHtml(label)}${variant === 'primary' ? icon('arrow-right') : ''}</a>`;
+export function link(label, href, variant = 'primary', { direction = 'forward' } = {}) {
+  const isBack = direction === 'back';
+  return `<a class="button button--${escapeHtml(variant)}" href="${escapeHtml(href)}">${isBack ? icon('arrow-left') : ''}${escapeHtml(label)}${!isBack && variant === 'primary' ? icon('arrow-right') : ''}</a>`;
 }
 
 export function notice(title, message) {

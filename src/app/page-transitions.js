@@ -1,16 +1,21 @@
 import { pageMotionDirection } from './route-motion-order.js';
 
-// Runtime-only presentation layer: public HTML and mobile routing stay intact.
+// Runtime-only presentation layer: public HTML stays intact at every width.
 export function setupPageTransitions({ root, pauseScroll, resumeScroll }) {
-  const desktop = window.matchMedia('(min-width: 1051px)');
   const reduced = window.matchMedia('(prefers-reduced-motion: reduce)');
   const events = new AbortController();
   const options = { signal: events.signal };
   const priorScrollRestoration = history.scrollRestoration;
-  const syncHistory = () => { history.scrollRestoration = desktop.matches ? 'manual' : priorScrollRestoration; };
-  syncHistory();
+  history.scrollRestoration = 'manual';
+  let viewportWidth = document.documentElement.clientWidth;
   let active = null;
   let pending = null;
+  const idleWaiters = new Set();
+  function notifyIdle() {
+    if (active) return;
+    idleWaiters.forEach(resolve => resolve());
+    idleWaiters.clear();
+  }
 
   function wrapPage() {
     const stage = document.createElement('div');
@@ -48,6 +53,7 @@ export function setupPageTransitions({ root, pauseScroll, resumeScroll }) {
       if (animateNext) run(current.to, next.to, next.update);
       else next.update({ slide: false });
     } else if (focus) root.querySelector('#main-content')?.focus({ preventScroll: true });
+    notifyIdle();
   }
 
   function run(from, to, update) {
@@ -59,8 +65,9 @@ export function setupPageTransitions({ root, pauseScroll, resumeScroll }) {
     }
     const direction = pageMotionDirection(from, to);
     const oldStage = root.querySelector('.page-stage');
-    if (!desktop.matches || reduced.matches || !direction || !oldStage?.animate) {
+    if (reduced.matches || !direction || !oldStage?.animate) {
       update({ slide: false });
+      notifyIdle();
       return;
     }
     // Read the outgoing geometry before rendering changes scroll or layout.
@@ -116,11 +123,17 @@ export function setupPageTransitions({ root, pauseScroll, resumeScroll }) {
     const current = active;
     enter.onfinish = () => { if (active === current) settle(); };
   }
-  desktop.addEventListener('change', () => { syncHistory(); settle({ animateNext: false }); }, options);
   reduced.addEventListener('change', () => settle({ animateNext: false }), options);
-  window.addEventListener('resize', () => settle({ animateNext: false }), options);
+  window.addEventListener('resize', () => {
+    const width = document.documentElement.clientWidth;
+    // Mobile browser chrome changes height while scrolling. The fixed clipped
+    // layer follows its viewport without cancelling an otherwise valid slide.
+    if (width !== viewportWidth) settle({ animateNext: false });
+    viewportWidth = width;
+  }, options);
   return {
     wrapPage, run,
+    whenIdle() { return active ? new Promise(resolve => idleWaiters.add(resolve)) : Promise.resolve(); },
     cancel: (options) => settle({ ...options, animateNext: false }),
     dispose() { settle({ focus: false, discardPending: true }); history.scrollRestoration = priorScrollRestoration; events.abort(); },
   };

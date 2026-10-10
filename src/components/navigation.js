@@ -3,6 +3,7 @@ import { icon } from './icons.js';
 import { mediaAssets } from '../content/media.js';
 import { categories } from '../content/foundation.js';
 import { businessContact } from '../content/contact.js';
+import { headerSearchMarkup } from './header-search.js';
 
 export function navLink(label, href, currentPath, iconName = null, { reserveEmphasis = false } = {}) {
   const exactOnly = ['/', '/account', '/admin'].includes(href);
@@ -22,7 +23,7 @@ export function header(path) {
   const headerLink = (label, href, glyph = null) => navLink(label, href, path, glyph, { reserveEmphasis: true });
   const actions = [['Search', '/search', 'search'], ['Account', '/account', 'account'], ['Cart', '/cart', 'basket']]
     .map(([label, href, glyph]) => headerLink(label, href, glyph)).join('');
-  return `<header class="site-header"><div class="container header-inner header-inner--storefront">${brand()}<div class="mobile-header-controls"><a class="header-icon-control" href="/search" aria-label="Search">${icon('search')}</a><button class="menu-toggle header-icon-control" type="button" aria-label="Menu" aria-expanded="false" aria-controls="site-navigation"><span class="menu-open-icon">${icon('menu')}</span><span class="menu-close-icon">${icon('close')}</span></button></div><nav id="site-navigation" class="site-navigation" aria-label="Main navigation">${[['Shop', '/shop'], ['Our Story', '/our-farm'], ['Restaurant Supply', '/restaurant-supply'], ['Contact', '/help']].map(([label, href]) => headerLink(label, href)).join('')}<div class="mobile-menu-actions">${actions}</div></nav><div class="header-actions">${actions}</div></div></header>`;
+  return `<header class="site-header"><div class="container header-inner header-inner--storefront">${brand()}<div class="mobile-header-controls"><a class="header-icon-control" href="/search" aria-label="Search">${icon('search')}</a><button class="menu-toggle header-icon-control" type="button" aria-label="Menu" aria-expanded="false" aria-controls="site-navigation"><span class="menu-open-icon">${icon('menu')}</span><span class="menu-close-icon">${icon('close')}</span></button></div><nav id="site-navigation" class="site-navigation" aria-label="Main navigation">${[['Shop', '/shop'], ['Our Story', '/our-farm'], ['Restaurant Supply', '/restaurant-supply'], ['Contact', '/help']].map(([label, href]) => headerLink(label, href)).join('')}<div class="mobile-menu-actions">${actions}</div></nav><div class="header-actions">${actions}</div>${headerSearchMarkup()}</div></header>`;
 }
 
 export function footer() {

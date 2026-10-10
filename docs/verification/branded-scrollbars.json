@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-10",
+  "styles": {
+    "width": "10px",
+    "thumb": "rgb(146, 121, 108)",
+    "radius": "999px",
+    "track": "rgb(251, 244, 232)",
+    "arrows": "none",
+    "gutter": "stable"
+  },
+  "cart": {
+    "overflows": true,
+    "scrollbarWidth": "10px"
+  },
+  "mobileFits": true,
+  "forcedColors": {
+    "width": "auto",
+    "color": "auto"
+  },
+  "serverStatus": 200
+}

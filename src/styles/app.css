@@ -2,17 +2,27 @@
 @import "lenis/dist/lenis.css";
 @import "../../design-system/tokens.css";
 @import "./components/buttons.css";
+@import "./components/select.css";
+@import "./components/account.css";
 @import "./components/story.css";
 @import "./components/contact.css";
+@import "./components/restaurant-supply.css";
 @import "./components/motion.css";
 @import "./components/cart.css";
+@import "./components/header-search.css";
 @import "./components/page-transitions.css";
+@import "./components/scrollbars.css";
 
-@font-face { font-family: "Fraunces"; src: url("/fonts/fraunces-latin-variable.woff2") format("woff2"); font-weight: 300 900; font-display: swap; }
-@font-face { font-family: "Fraunces"; src: url("/fonts/fraunces-latin-italic-variable.woff2") format("woff2"); font-weight: 300 800; font-style: italic; font-display: swap; }
-@font-face { font-family: "DM Sans"; src: url("/fonts/dm-sans-latin-variable.woff2") format("woff2"); font-weight: 300 900; font-display: swap; }
+/* Ship the approved fonts with the render-blocking stylesheet. Separate font
+   requests and fallback swaps otherwise redraw headings and resize controls. */
+@font-face { font-family: "Fraunces"; src: url("../../design-system/assets/fraunces-latin-variable.woff2?inline") format("woff2"); font-weight: 300 900; font-display: block; }
+@font-face { font-family: "Fraunces"; src: url("../../design-system/assets/fraunces-latin-italic-variable.woff2?inline") format("woff2"); font-weight: 300 800; font-style: italic; font-display: block; }
+@font-face { font-family: "DM Sans"; src: url("../../design-system/assets/dm-sans-latin-variable.woff2?inline") format("woff2"); font-weight: 300 900; font-display: block; }
 
 @theme inline {
+  /* Future utility classes inherit the muted brand endpoints as well. */
+  --color-black: var(--color-text-primary);
+  --color-white: var(--color-surface-elevated);
   --color-ink: var(--color-text-primary);
   --color-paper: var(--color-background);
   --font-sans: var(--typography-family-body);
@@ -22,11 +32,12 @@
 /* Hero is section 1; scale the following sections without changing its spacing. */
 :root { --section-spacing-scale: 1.5; }
 * { box-sizing: border-box; }
-html { color: var(--color-text-primary); background: var(--color-background); scroll-behavior: smooth; scroll-padding-top: var(--site-header-height, 99px); }
+html { color-scheme: light; color: var(--color-text-primary); background: var(--color-background); accent-color: var(--color-brand-primary); scroll-behavior: smooth; scroll-padding-top: var(--site-header-height, 99px); }
 html.lenis { scroll-behavior: auto; }
 body { margin: 0; font-family: var(--typography-family-body); font-size: var(--typography-style-body-size); line-height: var(--typography-style-body-line-height); }
 a { color: inherit; text-underline-offset: .22em; }
-button, input { font: inherit; }
+button, input, select, textarea { font: inherit; color: inherit; }
+::selection { background: var(--color-brand-primary); color: var(--color-text-inverse); }
 :focus-visible { outline: var(--component-focus-ring-width) solid var(--color-focus); outline-offset: var(--component-focus-ring-offset); }
 main:focus { outline: none; }
 h1, h2, h3, p, figure { margin: 0; }
@@ -74,12 +85,13 @@ nav a[aria-current="page"] { color: var(--color-brand-secondary); text-decoratio
 .hero-copy em { font-weight: 500; color: var(--color-brand-secondary); }
 .hero-media { position: relative; height: 580px; overflow: hidden; }
 .hero-media img { height: 100%; object-fit: cover; }
+.hero-media picture { display: block; width: 100%; height: 100%; }
 .hero-detail { display: flex; flex-wrap: wrap; gap: var(--space-lg); margin-top: var(--space-xl); padding-top: var(--space-md); border-top: 1px solid var(--color-border); font-size: 13px; color: var(--color-text-secondary); }
 .hero-detail strong { color: var(--color-text-primary); font-weight: 500; }
 .section-heading { display: flex; justify-content: space-between; gap: var(--space-md); align-items: end; margin-bottom: var(--space-lg); }
 .section-heading h2 { margin-top: var(--space-sm); }
 .category-grid, .product-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--space-md); }
-.category-card { display: block; text-decoration: none; background: var(--color-surface); border: 1px solid var(--color-border); overflow: hidden; border-radius: var(--radius-card); transition: transform var(--motion-standard) var(--motion-easing-standard); }
+.category-card { display: block; text-decoration: none; background: var(--color-surface); border: 1px solid var(--color-border); overflow: hidden; border-radius: var(--radius-card); cursor: pointer; transition: transform var(--motion-standard) var(--motion-easing-standard); }
 .category-card figure { overflow: hidden; aspect-ratio: 4 / 3; }
 .category-card img { height: 100%; object-fit: cover; }
 .category-grid .category-card { position: relative; display: flex; flex-direction: column; }
@@ -154,7 +166,6 @@ nav a[aria-current="page"] { color: var(--color-brand-secondary); text-decoratio
 .admin-workspace { padding-inline: var(--space-lg); min-width: 0; }
 .admin-topbar { display: flex; justify-content: space-between; flex-wrap: wrap; gap: var(--space-sm); padding-block: var(--space-md); border-bottom: 1px solid var(--color-border); font-size: 14px; }
 .compact-footer { padding-block: var(--space-lg); color: var(--color-text-secondary); }
-.search-row { display: flex; gap: var(--space-sm); }
 .product-detail { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-xl); margin-top: var(--space-lg); align-items: start; }
 .product-detail img { border-radius: var(--radius-card); }
 .route-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--space-md); margin-top: var(--space-lg); }
@@ -199,8 +210,6 @@ nav a[aria-current="page"] { color: var(--color-brand-secondary); text-decoratio
   .admin-sidebar .side-navigation a { font-size: 14px; }
   .admin-workspace { padding-inline: var(--space-md); }
   .route-grid, .specimen-grid { grid-template-columns: 1fr; }
-  .search-row { flex-wrap: wrap; }
-  .search-row .button { width: 100%; }
 }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; scroll-behavior: auto !important; }

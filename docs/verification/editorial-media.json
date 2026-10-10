@@ -1,0 +1,17 @@
+{
+  "checkedOn": "2026-10-10",
+  "status": "passed",
+  "newSourceImagesInspected": 10,
+  "sourceImagesPlaced": 8,
+  "responsiveWebpFiles": 24,
+  "sourceImagesRetainedForLater": ["Rustic Hands Tearing Oyster Mushrooms.png", "Oyster Mushrooms on the Grow Rack.png"],
+  "originalBytes": 20527976,
+  "largestWebpCopyBytes": 1673714,
+  "build": "passed",
+  "browserChecks": 42,
+  "staticHostingChecks": 3,
+  "suites": ["restaurant-supply", "branded-select", "foundation", "page-transitions", "deployment"],
+  "visualReview": ["media-supply-1536-hero.png", "media-supply-1536-full.png", "media-supply-390-full.png", "media-home-1440-full.png", "media-home-390-hero.png"],
+  "evidenceFiles": ["editorial-media-files.json", "editorial-media-browser.json"],
+  "developmentServer": "http://127.0.0.1:5173/restaurant-supply returned HTTP 200 after verification"
+}

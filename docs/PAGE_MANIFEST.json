@@ -2,8 +2,8 @@
   "schema_version": "1.0",
   "project": "WeGroween",
   "status": "proposed-development-baseline",
-  "updated": "2026-10-05",
-  "counts": { "customer": 22, "admin": 15, "total": 37 },
+  "updated": "2026-10-10",
+  "counts": { "customer": 21, "admin": 15, "total": 36 },
   "counting_rule": "A reusable page type counts once. Dynamic records, alternate create/edit paths, query strings, UI states and utility handlers do not increase the count.",
   "access_rules": {
     "public": "Only published content and safe catalogue projections; no private stock/customer fields.",
@@ -21,7 +21,6 @@
     { "id": "C01", "area": "customer", "name": "Home", "route": "/", "shell": "storefront", "access": "public", "rendering": "public-html-live-data", "module": "catalogue", "primary_action": "Shop this harvest" },
     { "id": "C02", "area": "customer", "name": "Shop", "route": "/shop", "shell": "storefront", "access": "public", "rendering": "public-html-live-data", "module": "catalogue", "primary_action": "Explore products" },
     { "id": "C03", "area": "customer", "name": "Category listing", "route": "/shop/category/:slug", "shell": "storefront", "access": "public", "rendering": "public-html-live-data", "module": "catalogue", "primary_action": "Explore category products" },
-    { "id": "C04", "area": "customer", "name": "Search results", "route": "/search", "query_parameters": ["q", "category", "sort", "page"], "shell": "storefront", "access": "public", "rendering": "client", "module": "catalogue", "primary_action": "Open product", "indexing": "noindex" },
     { "id": "C05", "area": "customer", "name": "Product detail", "route": "/products/:slug", "shell": "storefront", "access": "public", "rendering": "public-html-live-data", "module": "catalogue", "primary_action": "Add selected pack to cart" },
     { "id": "C06", "area": "customer", "name": "Our Story", "route": "/our-farm", "shell": "storefront", "access": "public", "rendering": "public-html-live-data", "module": "content", "primary_action": "Explore products" },
     { "id": "C07", "area": "customer", "name": "Restaurant Supply", "route": "/restaurant-supply", "shell": "storefront", "access": "public", "rendering": "public-html-live-data", "module": "restaurant-supply", "primary_action": "Submit supply enquiry" },
@@ -57,6 +56,7 @@
     { "id": "A15", "area": "admin", "name": "General settings", "route": "/admin/settings", "shell": "admin", "access": "staff", "permissions": ["settings.manage"], "action_permissions": { "assign-staff-role": "owner.only" }, "rendering": "client", "module": "administration", "primary_action": "Save authorised settings", "indexing": "noindex" }
   ],
   "utility_handlers": [
+    { "route": "/search", "purpose": "Compatibility entry to Shop with header search opened and q restored; C04 retired", "counted_as_page": false },
     { "route": "/auth/callback", "purpose": "Validate Auth callback and redirect to existing safe destination", "counted_as_page": false },
     { "route": "/order-access", "purpose": "Exchange guest access token for protected order session if enabled; redirect to C18", "counted_as_page": false }
   ],

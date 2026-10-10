@@ -22,6 +22,8 @@ function documentFor(path) {
 }
 // Static hosts need entry documents for concrete client routes on reload too.
 const staticPaths = [...new Set([...publicPaths, ...pages.flatMap(page => [page.route, ...(page.alternate_routes ?? [])]).filter(route => !route.includes(':'))])];
+// Old search URLs hydrate the Shop entry and reopen the header with their query.
+staticPaths.push('/search');
 for (const path of staticPaths) {
   const folder = resolve(output, `.${path}`);
   await mkdir(folder, { recursive: true });

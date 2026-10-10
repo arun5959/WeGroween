@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-10",
+  "width": "6px",
+  "inactivityDelayMs": 650,
+  "paintedThumbPixels": {
+    "scrollbar-hidden-idle.png": 0,
+    "scrollbar-visible-scrolling.png": 2076,
+    "scrollbar-hidden-after-scroll.png": 0
+  },
+  "viewportPaintOrigins": [
+    "html",
+    "body"
+  ],
+  "serverStatus": 200
+}

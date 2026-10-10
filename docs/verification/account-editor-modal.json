@@ -1,0 +1,68 @@
+[
+  {
+    "kind": "profile",
+    "width": 1440,
+    "height": 900,
+    "x": 440,
+    "y": 253.40625,
+    "panelWidth": 560,
+    "panelHeight": 393.171875,
+    "scrollable": false,
+    "overflow": false
+  },
+  {
+    "kind": "address",
+    "width": 1440,
+    "height": 900,
+    "x": 440,
+    "y": 209.015625,
+    "panelWidth": 560,
+    "panelHeight": 481.96875,
+    "scrollable": false,
+    "overflow": false
+  },
+  {
+    "kind": "profile",
+    "width": 390,
+    "height": 844,
+    "x": 16,
+    "y": 186.015625,
+    "panelWidth": 358,
+    "panelHeight": 471.96875,
+    "scrollable": false,
+    "overflow": false
+  },
+  {
+    "kind": "address",
+    "width": 390,
+    "height": 844,
+    "x": 16,
+    "y": 97.21875,
+    "panelWidth": 358,
+    "panelHeight": 649.5625,
+    "scrollable": false,
+    "overflow": false
+  },
+  {
+    "kind": "profile",
+    "width": 320,
+    "height": 480,
+    "x": 16,
+    "y": 16,
+    "panelWidth": 288,
+    "panelHeight": 448,
+    "scrollable": true,
+    "overflow": false
+  },
+  {
+    "kind": "address",
+    "width": 320,
+    "height": 480,
+    "x": 16,
+    "y": 16,
+    "panelWidth": 288,
+    "panelHeight": 448,
+    "scrollable": true,
+    "overflow": false
+  }
+]

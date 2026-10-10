@@ -1,23 +1,26 @@
 .cart-drawer { position: fixed; inset: 0; margin: 0; padding: 0; width: 100vw; max-width: none; height: 100dvh; max-height: none; border: 0; background: transparent; color: var(--color-text-primary); overflow: hidden; }
 .cart-drawer::backdrop { background: transparent; }
 .cart-drawer:not([open]) { display: none; }
-.cart-drawer-shade { position: absolute; inset: 0; background: color-mix(in srgb, var(--color-brand-primary) 36%, transparent); }
+/* The existing shade fade also eases in this gentle blur; the sibling panel stays sharp. */
+.cart-drawer-shade, .account-edit-modal-shade { position: absolute; inset: 0; background: color-mix(in srgb, var(--color-brand-primary) 36%, transparent); -webkit-backdrop-filter: blur(2px); backdrop-filter: blur(2px); }
 .cart-drawer-panel { position: absolute; inset-block: 0; right: 0; width: min(480px, 100%); display: flex; flex-direction: column; background: var(--color-background); border-left: 1px solid var(--color-border); }
 .cart-drawer-header { display: flex; align-items: center; justify-content: space-between; gap: var(--space-md); padding: var(--space-md) var(--space-lg); border-bottom: 1px solid var(--color-border); }
 .cart-drawer-header h2 { font-size: 28px; margin-top: var(--space-xs); }
 .cart-drawer-content { flex: 1; min-height: 0; overflow-y: auto; overscroll-behavior: contain; padding: var(--space-lg); display: flex; flex-direction: column; }
 .cart-empty { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: var(--space-md); min-width: 0; text-align: center; }
 .cart-drawer-content .cart-empty { flex: 1; padding-block: var(--space-lg); }
-.cart-drawer .cart-empty { gap: var(--space-sm); }
-.cart-drawer .cart-empty-icon .wg-icon { width: 56px; height: 56px; }
-.cart-drawer .cart-empty h3 { font-size: 24px; }
-.cart-drawer .cart-empty p { font-size: 14px; }
+.cart-drawer .cart-empty { gap: var(--space-xs); }
+.cart-drawer .cart-empty-icon .wg-icon { width: 48px; height: 48px; }
+.cart-drawer .cart-empty h3 { font-size: 22px; }
+.cart-drawer .cart-empty p { font-size: 13px; }
 .cart-drawer .button { font-size: 14px; min-height: var(--component-button-height-sm); padding: var(--space-xs) var(--component-button-padding-inline-sm); gap: var(--space-sm); }
 .cart-drawer .button .wg-icon, .cart-drawer-close.header-icon-control .wg-icon { width: 20px; height: 20px; }
 .cart-empty-icon .wg-icon { width: 72px; height: 72px; color: var(--color-brand-secondary); }
 .cart-empty h2, .cart-empty h3 { font-size: 28px; }
 .cart-empty p { font-size: 16px; color: var(--color-text-secondary); max-width: 28ch; }
 .cart-empty .button { margin-top: var(--space-sm); max-width: 100%; }
+.cart-drawer .cart-empty .button { font-size: 13px; min-height: 44px; padding-inline: 16px; gap: var(--space-xs); margin-top: var(--space-xs); }
+.cart-drawer .cart-empty .button .wg-icon { width: 18px; height: 18px; }
 .cart-drawer-footer { border-top: 1px solid var(--color-border); padding: var(--space-md) var(--space-lg); padding-bottom: max(var(--space-md), env(safe-area-inset-bottom)); }
 .cart-drawer-footer p { font-size: 12px; line-height: 1.6; color: var(--color-text-secondary); margin-bottom: var(--space-sm); }
 .cart-drawer-footer .button { width: 100%; }

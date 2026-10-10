@@ -1,0 +1,167 @@
+{
+  "checkedOn": "2026-10-10",
+  "pages": [
+    {
+      "route": "/restaurant-supply",
+      "width": 1536,
+      "height": 706,
+      "failures": [],
+      "images": [
+        {
+          "alt": "Fresh oyster and button mushrooms with mixed microgreens arranged on parchment",
+          "url": "/media/optimized/supply-hero-portrait-768.webp",
+          "width": 536,
+          "height": 670,
+          "complete": true
+        },
+        {
+          "alt": "Oyster mushroom cluster showing curved caps and fine gills on a stone surface",
+          "url": "/media/optimized/oyster-mushrooms-detail-768.webp",
+          "width": 564,
+          "height": 423,
+          "complete": true
+        },
+        {
+          "alt": "Freshly cut microgreens with green leaves and pale and pink stems on stone",
+          "url": "/media/optimized/microgreens-detail-768.webp",
+          "width": 564,
+          "height": 423,
+          "complete": true
+        },
+        {
+          "alt": "A person handling a tray of mixed microgreens between indoor growing racks",
+          "url": "/media/optimized/microgreens-harvest-768.webp",
+          "width": 564,
+          "height": 376,
+          "complete": true
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "route": "/restaurant-supply",
+      "width": 390,
+      "height": 844,
+      "failures": [],
+      "images": [
+        {
+          "alt": "Fresh oyster and button mushrooms with mixed microgreens arranged on parchment",
+          "url": "/media/optimized/supply-hero-landscape-480.webp",
+          "width": 342,
+          "height": 273,
+          "complete": true
+        },
+        {
+          "alt": "Oyster mushroom cluster showing curved caps and fine gills on a stone surface",
+          "url": "/media/optimized/oyster-mushrooms-detail-480.webp",
+          "width": 342,
+          "height": 256,
+          "complete": true
+        },
+        {
+          "alt": "Freshly cut microgreens with green leaves and pale and pink stems on stone",
+          "url": "/media/optimized/microgreens-detail-480.webp",
+          "width": 342,
+          "height": 256,
+          "complete": true
+        },
+        {
+          "alt": "A person handling a tray of mixed microgreens between indoor growing racks",
+          "url": "/media/optimized/microgreens-harvest-480.webp",
+          "width": 342,
+          "height": 228,
+          "complete": true
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "route": "/",
+      "width": 1440,
+      "height": 900,
+      "failures": [],
+      "images": [
+        {
+          "alt": "A hand adding microgreens to a pan of sautéed mushrooms on a kitchen worktop",
+          "url": "/media/optimized/kitchen-dish-portrait-768.webp",
+          "width": 536,
+          "height": 670,
+          "complete": true
+        },
+        {
+          "alt": "A plate with button, golden oyster and other oyster mushrooms",
+          "url": "/media/Rustic%20Mixed%20Mushroom%20Harvest.png",
+          "width": 1448,
+          "height": 1086,
+          "complete": true
+        },
+        {
+          "alt": "An overhead view of dense microgreen trays with green leaves and pink stems",
+          "url": "/media/optimized/microgreens-range-480.webp",
+          "width": 387,
+          "height": 290,
+          "complete": true
+        },
+        {
+          "alt": "A platter of mushrooms and fresh microgreens",
+          "url": "/media/Rustic%20Mushroom%20and%20Microgreen%20Platter%20(1).png",
+          "width": 1448,
+          "height": 1086,
+          "complete": true
+        },
+        {
+          "alt": "Indoor growing space with illuminated microgreen trays on the left and oyster mushroom racks behind glass on the right",
+          "url": "/media/Industrial%20Microgreens%20and%20Mushroom%20Farm.png",
+          "width": 1672,
+          "height": 941,
+          "complete": true
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "route": "/",
+      "width": 390,
+      "height": 844,
+      "failures": [],
+      "images": [
+        {
+          "alt": "A hand adding microgreens to a pan of sautéed mushrooms on a kitchen worktop",
+          "url": "/media/optimized/kitchen-dish-landscape-480.webp",
+          "width": 358,
+          "height": 286,
+          "complete": true
+        },
+        {
+          "alt": "A plate with button, golden oyster and other oyster mushrooms",
+          "url": "/media/Rustic%20Mixed%20Mushroom%20Harvest.png",
+          "width": 1448,
+          "height": 1086,
+          "complete": true
+        },
+        {
+          "alt": "An overhead view of dense microgreen trays with green leaves and pink stems",
+          "url": "/media/optimized/microgreens-range-480.webp",
+          "width": 358,
+          "height": 268,
+          "complete": true
+        },
+        {
+          "alt": "A platter of mushrooms and fresh microgreens",
+          "url": "/media/Rustic%20Mushroom%20and%20Microgreen%20Platter%20(1).png",
+          "width": 1448,
+          "height": 1086,
+          "complete": true
+        },
+        {
+          "alt": "Indoor growing space with illuminated microgreen trays on the left and oyster mushroom racks behind glass on the right",
+          "url": "/media/Industrial%20Microgreens%20and%20Mushroom%20Farm.png",
+          "width": 1672,
+          "height": 941,
+          "complete": true
+        }
+      ],
+      "overflow": false
+    }
+  ]
+}

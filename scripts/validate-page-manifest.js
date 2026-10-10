@@ -3,10 +3,10 @@ import manifest from '../docs/PAGE_MANIFEST.json' with { type: 'json' };
 import { pages, examplePath, matchRoute } from '../src/app/routes.js';
 import { renderPage } from '../src/app/render-page.js';
 
-assert.equal(pages.length, 37);
-assert.equal(pages.filter((page) => page.area === 'customer').length, 22);
+assert.equal(pages.length, manifest.counts.total);
+assert.equal(pages.filter((page) => page.area === 'customer').length, manifest.counts.customer);
 assert.equal(pages.filter((page) => page.area === 'admin').length, 15);
-assert.equal(new Set(pages.map((page) => page.id)).size, 37);
+assert.equal(new Set(pages.map((page) => page.id)).size, manifest.counts.total);
 const allPaths = pages.flatMap((page) => [page.route, ...(page.alternate_routes ?? [])]);
 assert.equal(new Set(allPaths).size, allPaths.length);
 for (const page of pages) {
@@ -20,4 +20,4 @@ for (const page of pages) {
   assert.equal((view.html.match(/<h1[ >]/g) ?? []).length, 1, `${page.id} needs one page heading`);
   assert.ok(!view.html.includes('href="#"'));
 }
-console.log('PASS: 37 page types (22 customer / 15 admin), 38 route patterns, five layouts.');
+console.log(`PASS: ${pages.length} page types (${manifest.counts.customer} customer / ${manifest.counts.admin} admin), ${allPaths.length} route patterns, five layouts.`);

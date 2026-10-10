@@ -1,0 +1,21 @@
+{
+  "checkedOn": "2026-10-10",
+  "status": "passed",
+  "build": "passed",
+  "browserChecks": 30,
+  "suites": ["branded-select", "restaurant-supply", "contact", "interface-motion"],
+  "dropdownTouchWidths": [320, 390, 768],
+  "heroViewports": [[1920, 882], [1536, 706], [1440, 900], [1366, 768], [1280, 720], [1024, 600], [1920, 600]],
+  "verified": [
+    "Branded option surfaces, custom icons and selected state",
+    "Keyboard selection, Escape cancellation, typeahead and Tab order",
+    "Touch selection and horizontal viewport bounds",
+    "Upward/downward popup placement without form-height changes",
+    "Native form values, draft invalidation and topic guidance",
+    "Popup cleanup on route navigation and restoration",
+    "Subtle opening animation and live reduced-motion support",
+    "Entire desktop hero below the sticky header within tested viewport heights",
+    "Existing supply and contact form validation, FAQs and no-JavaScript fallbacks"
+  ],
+  "screenshots": ["supply-hero-fitted-desktop.png", "supply-branded-dropdown-desktop.png", "supply-branded-dropdown-mobile.png"]
+}

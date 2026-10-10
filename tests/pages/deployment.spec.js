@@ -11,11 +11,10 @@ test('mounted navigation, history, search, and cart stay at the publishing addre
   await expect(page.locator('#app')).toHaveAttribute('data-page-id', 'C02');
   await page.goBack();
   await expect(page.locator('#app')).toHaveAttribute('data-page-id', 'C01');
-  await page.goto(siteUrl('/search'));
-  await page.locator('#search-query').fill('fresh mushrooms');
-  await page.locator('#catalogue-search').evaluate(form => form.requestSubmit());
-  await expect(page).toHaveURL(new RegExp(siteUrl('/search') + '\\?q=fresh%20mushrooms$'));
-  await expect(page.locator('#search-results')).toContainText('fresh mushrooms');
+  await page.goto(siteUrl('/search?q=radish'));
+  await expect(page).toHaveURL(new RegExp(siteUrl('/shop') + '\\?q=radish$'));
+  await expect(page.getByLabel('Search products')).toHaveValue('radish');
+  await expect(page.locator('[role="option"]')).toContainText('Radish microgreens');
   await page.goto(siteUrl('/'));
   await page.locator('.header-actions').getByRole('link', { name: 'Cart', exact: true }).click();
   await expect(page.locator('#cart-drawer')).toBeVisible();

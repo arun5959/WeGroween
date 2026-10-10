@@ -1,0 +1,36 @@
+{
+  "status": "passed",
+  "checkedOn": "2026-10-10",
+  "scope": "desktop, tablet and phone page transitions",
+  "phoneTabletWidths": [320, 360, 390, 440, 600, 720, 768, 1024],
+  "browser": "Chromium, including mobile and touch emulation",
+  "order": ["Home", "Shop", "Our Story", "Restaurant Supply", "Contact", "Account"],
+  "motionMilliseconds": 420,
+  "checks": [
+    "forward and reverse section navigation at all eight phone/tablet widths",
+    "distant section jumps use the same ordering",
+    "mobile menu closes smoothly before page capture",
+    "compact header height remains stable during slides",
+    "menu requests during a slide wait for idle and can be cancelled",
+    "pre-menu reading position survives browser scroll anchoring",
+    "rapid taps preserve the current slide and retain the latest destination",
+    "height-only viewport changes keep movement running",
+    "orientation and width changes settle temporary layers",
+    "Back/Forward restores reading positions on phone and tablet",
+    "reduced motion skips slides and preserves history restoration",
+    "one outgoing copy, live incoming content, lazy images preserved",
+    "keyboard focus, inert state and temporary layers restored",
+    "no horizontal overflow",
+    "desktop, cart, contact, story, search and route regressions",
+    "account and admin access remains denied"
+  ],
+  "unitTests": { "passed": 7 },
+  "browserTests": { "passed": 45, "suite": "complete e2e suite on final build" },
+  "staticHostingTests": { "passed": 3 },
+  "build": "passed",
+  "visualChecks": [
+    { "width": 390, "screenshot": "page-transition-mobile-390-mid.png", "headerBottom": 81, "overlayTop": 81, "outgoingCopies": 1, "horizontalOverflow": false },
+    { "width": 768, "screenshot": "page-transition-mobile-768-mid.png", "headerBottom": 150.8125, "overlayTop": 150.8125, "outgoingCopies": 1, "horizontalOverflow": false }
+  ],
+  "developmentServer": { "url": "http://127.0.0.1:5173/", "httpStatus": 200 }
+}

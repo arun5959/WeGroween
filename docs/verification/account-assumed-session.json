@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-10",
+  "presentation": "Development-only assumed signed-in account with synthetic data",
+  "results": [
+    {
+      "width": 1440,
+      "overflow": false,
+      "heading": "Your kitchen, at a glance.",
+      "guardActions": false,
+      "disclosureBelowWorkspace": true
+    },
+    {
+      "width": 390,
+      "overflow": false,
+      "heading": "Your kitchen, at a glance.",
+      "guardActions": false,
+      "disclosureBelowWorkspace": true
+    },
+    {
+      "width": 320,
+      "overflow": false,
+      "heading": "Your kitchen, at a glance.",
+      "guardActions": false,
+      "disclosureBelowWorkspace": true
+    }
+  ],
+  "validation": {
+    "build": "passed",
+    "unitChecks": 9,
+    "accountBrowserChecks": 11,
+    "productionBoundaryAndCartChecks": 5
+  }
+}

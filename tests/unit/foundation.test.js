@@ -23,7 +23,7 @@ test('all protected pages deny access and collect no credentials or private data
     const view = renderPage(examplePath(page));
     assert.equal(view.status, 403);
     assert.match(view.html, /Sign-in required/);
-    assert.doesNotMatch(view.html, /<input/);
+    assert.doesNotMatch(view.html, /type="password"|name="(?:email|identity-email)"/);
   }
 });
 

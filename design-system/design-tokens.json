@@ -46,7 +46,8 @@
       },
       "grain-50": {
         "$type": "color",
-        "$value": "#FFFDF7"
+        "$value": "#FAF7F0",
+        "$description": "Muted warm card surface; avoid a bright white endpoint."
       },
       "grain-100": {
         "$type": "color",
@@ -62,7 +63,8 @@
       },
       "white": {
         "$type": "color",
-        "$value": "#FFFFFF"
+        "$value": "#FCFAF6",
+        "$description": "Compatibility name for soft warm white; never pure white in the interface."
       },
       "teal-700": {
         "$type": "color",
@@ -194,7 +196,7 @@
           },
           "surface-elevated": {
             "$type": "color",
-            "$value": "#FFFFFF"
+            "$value": "#FCFAF6"
           },
           "text-primary": {
             "$type": "color",
@@ -266,11 +268,11 @@
           },
           "surface": {
             "$type": "color",
-            "$value": "#FFFDF7"
+            "$value": "#FAF7F0"
           },
           "surface-elevated": {
             "$type": "color",
-            "$value": "#FFFFFF"
+            "$value": "#FCFAF6"
           },
           "text-primary": {
             "$type": "color",
@@ -346,7 +348,7 @@
           },
           "surface-elevated": {
             "$type": "color",
-            "$value": "#FFFFFF"
+            "$value": "#FCFAF6"
           },
           "text-primary": {
             "$type": "color",
