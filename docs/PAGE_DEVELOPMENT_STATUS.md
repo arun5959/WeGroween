@@ -36,8 +36,8 @@ This counts frontend designs and local review interactions, **not production bus
 | C12 | Sign in | /sign-in | Transformed | Branded customer entry with inactive fields. Secure authentication and redirect behavior remain. |
 | C13 | Register | /register | Transformed | Branded account-creation entry with inactive fields. Account creation, verification and service responses remain. |
 | C14 | Password recovery | /recover-password | Transformed | Branded recovery entry with inactive fields. Recovery request, reset-token and new-password states require the identity service. |
-| C15 | Profile | /account | Transformed | Assumed signed-in DEV dashboard, populated initial essentials and local centered profile editor. Real identity/profile persistence remains. |
-| C16 | Saved addresses | /account/addresses | Transformed | DEV create/edit/remove/default address flows in centered editors. Authorised persistent storage remains. |
+| C15 | Profile | /account | Transformed | Assumed signed-in localhost/Pages preview dashboard, populated initial essentials and local centered profile editor. Real identity/profile persistence remains. |
+| C16 | Saved addresses | /account/addresses | Transformed | Localhost/Pages preview create/edit/remove/default address flows in centered editors. Authorised persistent storage remains. |
 | C17 | Order history | /account/orders | Transformed | Fictional history with item/address/total disclosures and detail links. Actual owned-order history remains. |
 | C18 | Order detail and tracking | /account/orders/SAMPLE-1042 | Transformed | Focused sample order, leading return, fulfilment timeline and support. Local admin updates reach this tracking view. Real owned-order data remain. |
 | C19 | Delivery policy | /policies/delivery | Transformed | Editorial policy navigation and factual preview content. Approved coverage, fees, slots and service rules remain. |

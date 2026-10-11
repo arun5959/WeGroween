@@ -32,11 +32,13 @@ jobs:
         run: npm run build
         env:
           WEGROWEEN_BASE_PATH: ${{ steps.pages.outputs.base_path }}/
+          VITE_ACCOUNT_PREVIEW: 'true'
       - run: npx playwright install --with-deps chromium
       - name: Verify the static Pages release
         run: npm run test:pages
         env:
           WEGROWEEN_BASE_PATH: ${{ steps.pages.outputs.base_path }}/
+          VITE_ACCOUNT_PREVIEW: 'true'
       - uses: actions/upload-pages-artifact@v4
         with:
           path: dist

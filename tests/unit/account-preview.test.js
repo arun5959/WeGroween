@@ -29,3 +29,17 @@ test('sample data resets from an independent fixture and totals reflect line qua
   assert.equal(createSampleAccount().addresses.length, 2);
   assert.equal(orderTotal(first.orders[0]), 330);
 });
+
+test('published account review matches localhost without enabling staff, checkout or synthetic review routes', () => {
+  for (const path of ['/account','/account/addresses','/account/orders','/account/orders/SAMPLE-1042']) {
+    const published = renderPage(path, { accountReview:true });
+    assert.equal(published.status,200);
+    assert.equal(published.html,renderPage(path,{development:true}).html);
+    assert.match(published.html,/Fictional orders, prices and addresses/);
+    assert.doesNotMatch(published.html,/Go to sign in|Explore the sample account/);
+  }
+  assert.equal(renderPage('/account/orders/unknown',{accountReview:true}).status,404);
+  for (const path of ['/admin','/admin/orders/SAMPLE-1042','/checkout']) assert.equal(renderPage(path,{accountReview:true}).status,403);
+  assert.equal(renderPage('/__account-preview',{accountReview:true}).status,404);
+  assert.equal(renderPage('/__foundation',{accountReview:true}).status,404);
+});

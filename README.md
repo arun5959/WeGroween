@@ -26,4 +26,4 @@ Build output is in `dist/`. `npm.cmd run preview` serves it on port 4173. The fi
 
 ## Publishing
 
-The [Pages workflow](.github/workflows/deploy-pages.yml) builds and tests the application, then publishes only `dist/` to GitHub Pages on a push to `main`. The full application source, design system, documentation and tests remain in this repository. See [deployment and rollback](docs/DEPLOYMENT.md) for the project-directory build, static-host limitations and preserved previous version.
+The [Pages workflow](.github/workflows/deploy-pages.yml) builds and tests the application, then publishes only `dist/` to GitHub Pages on a push to `main`. The Pages build includes the localhost account design with fictional data and in-memory editing (`VITE_ACCOUNT_PREVIEW=true`); authentication and real orders remain unconnected. The full application source, design system, documentation and tests remain in this repository. See [deployment and rollback](docs/DEPLOYMENT.md) for the project-directory build, static-host limitations and preserved previous version.

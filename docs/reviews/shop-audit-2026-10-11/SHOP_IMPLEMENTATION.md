@@ -12,6 +12,10 @@ Curated mobile shelves show a comfortable card and a preview of the next, with p
 
 Following the dropdown refinement, product counts remain available to screen readers and the visible count / Sample prices row is removed. Each card's price context remains accessible. The availability note is smaller and quieter. Prices, packs and availability remain review inputs; no inventory, organic certification or sales-ranking claims were added. Production ordering remains closed.
 
+## Mode toolbar refinement
+
+Sort by now sits immediately to the left of the mode switch on desktop and tablet. Its reserved slot and fixed switch width keep both mode buttons steady. Sorting fades and slides into view using the shared 220ms standard duration and easing. On mobile, its row expands above the switch using the same timing; reduced motion settles immediately. Hidden controls are inert and excluded from the accessibility tree, and hiding a focused sort closes its portalled list and moves focus to Our selections. Rapid switches and browser history retain the existing page and controls. Verification: build passed, 10 development Shop checks passed, and 3 production sorting/category checks passed (the category check passed on rerun after an initial browser stability timeout). Visual checks at 1440, 1024, 900, 768, 390 and 320px confirmed no horizontal overflow and matching shared motion tokens. Evidence: [desktop toolbar](toolbar-motion-1440.png), [mobile toolbar](toolbar-motion-390.png).
+
 ## Before and after
 
 Measured at a 900px viewport height after fonts and images loaded. Positions include the header; main height excludes the footer. Mobile curated height measures the two horizontal shelves, not a vertical display of all eleven cards.

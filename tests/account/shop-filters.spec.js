@@ -33,3 +33,40 @@ test('direct category links, reload and rapid choices settle correctly',async({p
  await expect(page.locator('.shop-page')).toHaveAttribute('data-shop-category','exotics');await expect(page.locator('[data-product-card]')).toHaveCount(0);
  await page.goto('/shop/category/not-real');await expect(page.locator('#app')).toHaveAttribute('data-status','404');
 });
+
+for (const reducedMotion of ['reduce','no-preference']) {
+ test(`mode toolbar stays aligned and settles after interrupted transitions (${reducedMotion})`,async({page})=>{
+  await page.emulateMedia({reducedMotion});
+  for (const width of [1440,768,390,320]) {
+   await page.setViewportSize({width,height:900});await page.goto('/shop');
+   const toolbar=page.locator('.shop-result-toolbar'),switcher=page.locator('.shop-view-switch');
+   await expect(toolbar).not.toBeVisible();
+   const before=await switcher.boundingBox();
+   const motion=await page.evaluate(async()=>{
+    const el=document.querySelector('.shop-result-toolbar');
+    getComputedStyle(el).opacity;
+    document.querySelector('[data-shop-view-link="all"]').click();
+    await new Promise(requestAnimationFrame);
+    const token=getComputedStyle(document.documentElement).getPropertyValue('--motion-standard').trim();
+    return {durations:el.getAnimations().map(a=>a.effect.getTiming().duration),expected:parseFloat(token)*(token.endsWith('ms')?1:1000)};
+   });
+   if (reducedMotion==='no-preference') {
+    expect(motion.durations.length).toBeGreaterThan(0);
+    expect(motion.durations.every(d=>d===motion.expected)).toBe(true);
+   } else expect(motion.durations).toEqual([]);
+   await expect.poll(()=>toolbar.evaluate(el=>el.getAnimations().length)).toBe(0);
+   const after=await switcher.boundingBox(),sort=await toolbar.boundingBox();
+   expect(after.x).toBeCloseTo(before.x,1);expect(after.width).toBeCloseTo(before.width,1);
+   if(width>720) {expect(after.y).toBe(before.y);expect(sort.x+sort.width).toBeLessThan(after.x);}
+   else expect(sort.y+sort.height).toBeCloseTo(after.y,1);
+   const trigger=page.locator('#shop-sort-catalogue-trigger');await expect(trigger).toBeEnabled();expect((await trigger.boundingBox()).height).toBeGreaterThanOrEqual(44);
+   await trigger.click();await expect(page.locator('#shop-sort-catalogue-listbox')).toBeVisible();
+   await page.goBack();await expect(toolbar).not.toBeVisible();await expect(toolbar).toHaveAttribute('inert','');
+   await expect(page.locator('#shop-sort-catalogue-listbox')).not.toBeVisible();await expect(page.getByRole('combobox',{name:'Sort by in All products'})).toHaveCount(0);
+   await page.evaluate(()=>{for(const mode of ['all','selections','all','selections']) document.querySelector(`[data-shop-view-link="${mode}"]`).click();});
+   await expect(toolbar).not.toBeVisible();await expect.poll(()=>toolbar.evaluate(el=>el.getAnimations().length)).toBe(0);
+   await expect(page.locator('[data-shop-collection]')).toHaveCount(2);
+   expect(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+1)).toBe(false);
+  }
+ });
+}

@@ -6,6 +6,7 @@ import { identity } from '../layouts/identity.js';
 import { account } from '../layouts/account.js';
 import { accountPreview } from '../pages/account-preview.js';
 import { sampleAccount } from '../content/sample-account.js';
+import { publishedAccountPreview } from './account-review-config.js';
 import { admin } from '../layouts/admin.js';
 import { home, shop, category, product } from '../pages/storefront.js';
 import { ourStory } from '../pages/story.js';
@@ -24,7 +25,7 @@ import { unavailablePage, cart, identityPage, accessRequired, notFound, foundati
 const layouts = { storefront, checkout, identity, account, admin };
 const defaultDescription = 'Explore the WeGroween catalogue.';
 
-export function renderPage(path, { development = false, search = '' } = {}) {
+export function renderPage(path, { development = false, accountReview = publishedAccountPreview, search = '' } = {}) {
   if (['/search', '/shop/category/combos'].includes(path.replace(/\/$/, ''))) path = '/shop';
   // Synthetic review workspace only. This never changes the account access decision.
   if (development && path === '/__account-preview') {
@@ -44,8 +45,8 @@ export function renderPage(path, { development = false, search = '' } = {}) {
   if (development && ['C10', 'C11'].includes(page.id)) {
     return { html: mountHtml(checkout(page.id === 'C10' ? checkoutPage() : confirmationPage(params), { path, page, development })), title: page.name, description: 'Sample purchasing flow. No real order or payment.', status: 200, shell: page.shell, pageId: page.id };
   }
-  // Local design assumption: use fictional data without changing real access decisions.
-  if (development && page.shell === 'account') {
+  // Local and published design review share fictional data and in-memory edits.
+  if ((development || accountReview) && page.shell === 'account') {
     if (page.id === 'C18' && !sampleAccount.orders.some(order => order.id === params.orderId)) return errorPage(path);
     const initialView = page.id === 'C16' ? 'addresses' : ['C17', 'C18'].includes(page.id) ? 'orders' : 'overview';
     return { html: mountHtml(accountPreview({ assumedSignedIn: true, initialView, orderId: params.orderId })), title: 'Your account', description: 'Your orders, delivery addresses and personal details.', status: 200, shell: 'account', pageId: page.id };

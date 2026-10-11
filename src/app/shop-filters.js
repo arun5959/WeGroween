@@ -80,8 +80,17 @@ export function setupShopFilters(root, { motion, navigate }) {
       sort.value = next.querySelector('[data-shop-sort]').value;
       picker.dispatchEvent(new Event('change',{bubbles:true}));sort.dispatchEvent(new Event('change',{bubbles:true}));
       syncing = false;
-      page.querySelector('.shop-global-sort').hidden = next.querySelector('.shop-global-sort').hidden;
-      page.querySelector('.shop-result-toolbar').hidden = next.querySelector('.shop-result-toolbar').hidden;
+      const sortToolbar = page.querySelector('.shop-result-toolbar');
+      const hideSort = next.querySelector('.shop-result-toolbar').hasAttribute('data-sort-hidden');
+      if (hideSort && sortToolbar.contains(document.activeElement)) {
+        // Blur closes the portalled list before its trigger becomes inert.
+        document.activeElement.blur();
+        page.querySelector('[data-shop-view-link="selections"]').focus({preventScroll:true});
+      }
+      sortToolbar.inert = hideSort;
+      sortToolbar.toggleAttribute('data-sort-hidden',hideSort);
+      if (hideSort) sortToolbar.setAttribute('aria-hidden','true');
+      else sortToolbar.removeAttribute('aria-hidden');
       page.querySelector('.shop-sort label .sr-only').textContent = next.querySelector('.shop-sort label .sr-only').textContent;
       page.querySelectorAll('[data-shop-view-link]').forEach(link => {
         const target = next.querySelector(`[data-shop-view-link="${link.dataset.shopViewLink}"]`);

@@ -15,9 +15,11 @@ npm.cmd test
 npm.cmd run build
 npm.cmd run test:e2e
 $env:WEGROWEEN_BASE_PATH = '/WeGroween/'
+$env:VITE_ACCOUNT_PREVIEW = 'true'
 npm.cmd run build
 npm.cmd run test:pages
 Remove-Item Env:WEGROWEEN_BASE_PATH
+Remove-Item Env:VITE_ACCOUNT_PREVIEW
 ```
 
 Normal local builds use `/`. The release uses the publishing path reported by `actions/configure-pages`. URL adaptation covers rendered navigation, images, icons, responsive image sources, the cart drawer, search submissions and browser history. Static entry documents cover concrete public/client routes. Old category HTML addresses have redirect documents. `release.json` records the deployed Git commit for live verification.
@@ -26,7 +28,7 @@ Normal local builds use `/`. The release uses the publishing path reported by `a
 
 This release publishes the existing storefront foundation. Ordering, payments, authentication and private/admin data integrations are not connected. Existing `noindex, nofollow` directives and disabled/denied states remain in place.
 
-GitHub Pages cannot execute Vite's route middleware or return custom HTTP 403 responses. Concrete protected routes serve a static access-denied document and remain denied after client rendering. Unpublished dynamic records and unknown routes initially return the shared HTTP 404 document; JavaScript then renders the appropriate denied/not-found state for the requested path. No private records or credentials are present in these files. Static legacy redirects use HTML refresh and a normal link; GitHub Pages does not provide the local server's HTTP 301 behavior.
+GitHub Pages cannot execute Vite's route middleware or return custom HTTP 403 responses. Staff and checkout routes serve a static access-denied document and remain denied after client rendering. The Pages design release sets `VITE_ACCOUNT_PREVIEW=true` to publish the same assumed-session account UI as localhost: overview, orders, delivery addresses, profile and centred edit dialogs. These contain fictional sample data only; edits stay in browser memory and reset on reload. The flag does not create an authenticated session or enable development commerce/admin features. Account entry documents and known sample-order links are prerendered with the same UI, avoiding the older sign-in state on first load. Standard builds without this explicit flag still deny account access. Unpublished dynamic records and unknown routes initially return the shared HTTP 404 document; JavaScript then renders the appropriate denied/not-found state for the requested path. No private records or credentials are present in these files. Static legacy redirects use HTML refresh and a normal link; GitHub Pages does not provide the local server's HTTP 301 behavior.
 
 ## Backup and rollback
 
