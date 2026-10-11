@@ -1,6 +1,10 @@
 import { cartDrawerMarkup } from '../components/cart.js';
 import { shouldHandleLink } from './navigation.js';
 import { appPath, mountHtml, siteUrl } from './hosting.js';
+import { developmentWorkspace as state, basketTotal, money } from '../content/development-workspace.js';
+import { basketLines } from '../pages/customer-workflows.js';
+import { cartContents } from '../components/cart.js';
+import { link } from '../components/primitives.js';
 
 export function setupCartDrawer({ pauseScroll, resumeScroll, navigate }) {
   const host = document.createElement('div');
@@ -17,6 +21,27 @@ export function setupCartDrawer({ pauseScroll, resumeScroll, navigate }) {
   let animations = [];
   let completion = null;
   let scrollStyles = null;
+  function paintSelection() {
+    if (!import.meta.env.DEV) return;
+    const content = dialog.querySelector('.cart-drawer-content');
+    const scroll = content.scrollTop;
+    content.innerHTML = mountHtml(state.basket.length ? `<div class="work-form"><p class="work-small">Sample selection · Illustrative packs and prices.</p>${basketLines({ compact: true })}<div class="work-section-heading"><span>Illustrative subtotal</span><strong>${money(basketTotal())}</strong></div></div>` : cartContents({ panel: true }));
+    content.scrollTop = scroll;
+    dialog.querySelector('[data-cart-checkout-action]').innerHTML = mountHtml(state.basket.length
+      ? link('Proceed to checkout', '/checkout')
+      : '<button class="button button--primary" type="button" disabled aria-describedby="cart-checkout-note">Proceed to checkout</button>');
+  }
+  document.addEventListener('wg:basket-changed', paintSelection, options);
+  dialog.addEventListener('click', event => {
+    if (!import.meta.env.DEV) return;
+    const control = event.target.closest('[data-basket-change], [data-basket-remove]'); if (!control) return;
+    const id = control.dataset.basketRemove || control.dataset.product, line = state.basket.find(l => l.id === id); if (!line) return;
+    const change = control.dataset.basketChange;
+    if (control.dataset.basketRemove) state.basket = state.basket.filter(l => l.id !== id);
+    else { line.quantity = Math.min(20, line.quantity + Number(change)); if (line.quantity < 1) state.basket = state.basket.filter(l => l.id !== id); }
+    document.dispatchEvent(new CustomEvent('wg:basket-changed'));
+    (dialog.querySelector(`[data-product="${id}"][data-basket-change="${change}"]`) || dialog.querySelector('.cart-drawer-close')).focus({ preventScroll: true });
+  }, options);
 
   function stopAnimation() {
     for (const animation of animations) animation.cancel();
@@ -77,6 +102,7 @@ export function setupCartDrawer({ pauseScroll, resumeScroll, navigate }) {
   }
   function open(anchor) {
     if (desiredOpen) return;
+    paintSelection();
     desiredOpen = true;
     trigger = anchor;
     setTriggers(true);

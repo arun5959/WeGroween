@@ -10,7 +10,7 @@ export const enquiryTopics = Object.freeze([
 ]);
 
 export const contactFAQs = Object.freeze([
-  { question: 'What produce can I ask about?', answer: 'Explore mushrooms, microgreens and pairings in our catalogue. Let us know which produce you’re interested in and what you would like to know.' },
+  { question: 'What produce can I ask about?', answer: 'Explore mushrooms and microgreens in our catalogue, and ask about the upcoming Organic Harvest and Exotics ranges. Let us know which produce you’re interested in and what you would like to know.' },
   { question: 'What should I include in a delivery enquiry?', answer: enquiryTopics[1].guidance },
   { question: 'How should a restaurant get in touch?', answer: enquiryTopics[2].guidance },
 ]);

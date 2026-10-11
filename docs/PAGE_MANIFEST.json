@@ -65,6 +65,6 @@
     { "from": "/index.html", "to": "/" },
     { "from": "/microgreens.html", "to": "/shop/category/microgreens", "condition": "Matching category is published" },
     { "from": "/mushrooms.html", "to": "/shop/category/mushrooms", "condition": "Matching category is published" },
-    { "from": "/combos.html", "to": "/shop/category/combos", "condition": "Matching category is published" }
+    { "from": "/combos.html", "to": "/shop", "condition": "Pairings category retired" }
   ]
 }

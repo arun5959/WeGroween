@@ -14,7 +14,8 @@ test('header and footer cart links open the right drawer without navigation or l
   await expect(drawer.getByRole('button', { name: 'Close cart' })).toBeFocused();
   await expect(cart).toHaveAttribute('aria-expanded', 'true');
   await page.keyboard.press('Shift+Tab');
-  await expect(drawer.getByRole('button', { name: 'Continue browsing' })).toBeFocused();
+  await expect(drawer.getByRole('button', { name: 'Proceed to checkout' })).toBeDisabled();
+  await expect(drawer.getByRole('link', { name: 'Explore the catalogue' })).toBeFocused();
   await page.keyboard.press('Tab');
   await expect(drawer.getByRole('button', { name: 'Close cart' })).toBeFocused();
   await expect.poll(() => page.locator('.cart-drawer-panel').evaluate(e => e.getAnimations().length)).toBe(0);
@@ -26,7 +27,7 @@ test('header and footer cart links open the right drawer without navigation or l
   await expect(page.getByLabel('Name (optional)')).toHaveValue('Unsent visitor');
   await page.locator('.site-footer a[href="/cart"]').click();
   await expect(drawer).toBeVisible();
-  await drawer.getByRole('button', { name: 'Continue browsing' }).click();
+  await drawer.getByRole('button', { name: 'Close cart' }).click();
   await expect(drawer).toBeHidden();
   await expect(page).toHaveURL('/help');
   expect(errors).toEqual([]);

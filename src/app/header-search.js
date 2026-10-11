@@ -99,7 +99,7 @@ export function setupHeaderSearch(root, { beforeOpen = () => {}, navigate }) {
     input.removeAttribute('aria-activedescendant');
     if (normalizeSearch(input.value).length < 2) { showPanel(false); status.textContent = ''; return; }
     const previousHeight = panelOpen ? panel.getBoundingClientRect().height : 0;
-    list.innerHTML = mountHtml(results.map((product, i) => `<li><a id="header-search-result-${i}" role="option" aria-selected="false" tabindex="-1" class="header-search-result" href="/products/${escapeHtml(product.slug)}" data-search-index="${i}"><img src="${escapeHtml(product.image)}" alt="" width="48" height="48" decoding="async"><span><strong>${escapeHtml(product.name)}</strong><small>${escapeHtml(categories.find(category => category.slug === product.category)?.name ?? product.category)}</small></span></a></li>`).join(''));
+    list.innerHTML = mountHtml(results.map((product, i) => `<li><a id="header-search-result-${i}" role="option" aria-selected="false" tabindex="-1" class="header-search-result" href="/products/${escapeHtml(product.slug)}" data-search-index="${i}"><img src="${escapeHtml(product.thumbnail ?? product.image)}" alt="" width="48" height="48" decoding="async"><span><strong>${escapeHtml(product.name)}</strong><small>${escapeHtml(categories.find(category => category.slug === product.category)?.name ?? product.category)}</small></span></a></li>`).join(''));
     list.hidden = !results.length;
     empty.hidden = Boolean(results.length);
     count.hidden = !results.length;

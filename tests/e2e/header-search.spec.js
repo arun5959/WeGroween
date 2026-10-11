@@ -24,7 +24,7 @@ for (const reducedMotion of ['reduce', 'no-preference']) {
     await expect(field(page)).toBeFocused();
     await page.keyboard.type('mush');
     await settled(page);
-    await expect(page.locator('#header-search-list [role="option"]')).toHaveCount(1);
+    await expect(page.locator('#header-search-list [role="option"]')).toHaveCount(6);
     const input = await page.locator('.header-search-field').boundingBox();
     const popup = await panel(page).boundingBox();
     expect(Math.abs(input.x - popup.x)).toBeLessThan(1);
@@ -93,7 +93,7 @@ test('manual keyboard selection, Escape layers, query retention and clearing beh
   await field(page).fill('radish');
   await page.keyboard.press('ArrowUp');
   await page.keyboard.press('Enter');
-  await expect(page).toHaveURL('/products/radish-microgreens');
+  await expect(page).toHaveURL('/products/oyster-radish-pairing');
   await expect(page.locator('[data-header-search]')).not.toBeVisible();
 });
 
@@ -152,7 +152,7 @@ test('old search addresses reopen the header on Shop without a separate search p
   await expect(page).toHaveURL('/shop?q=radish');
   await expect(page.locator('#app')).toHaveAttribute('data-page-id', 'C02');
   await expect(field(page)).toHaveValue('radish');
-  await expect(page.locator('#header-search-list [role="option"]')).toContainText('Radish microgreens');
+  await expect(page.locator('#header-search-list [role="option"]').first()).toContainText('Radish microgreens');
   await page.reload();
   await expect(field(page)).toHaveValue('radish');
 });
@@ -170,7 +170,7 @@ test('search settles pending page slides and opens against the current header', 
   await expect(page.locator('.page-transition-viewport')).toHaveCount(0);
   await expect(field(page)).toBeFocused();
   await field(page).fill('mush');
-  await expect(page.locator('#header-search-list [role="option"]')).toHaveCount(1);
+  await expect(page.locator('#header-search-list [role="option"]')).toHaveCount(6);
 });
 
 for (const width of [1920, 1440, 1280, 1024, 768, 390, 320]) {
@@ -196,12 +196,14 @@ for (const width of [1920, 1440, 1280, 1024, 768, 390, 320]) {
   });
 }
 
-test('mobile menu search restores a usable trigger and hidden navigation stays inert', async ({ browser }) => {
+test('mobile header has the only Search trigger when the menu is open and restores focus after search', async ({ browser }) => {
   const context = await browser.newContext({ viewport: { width: 390, height: 844 }, isMobile: true, hasTouch: true });
   const page = await context.newPage();
   await page.goto('/');
   await page.getByRole('button', { name: 'Menu', exact: true }).tap();
-  await page.locator('.mobile-menu-actions a[href="/search"]').tap();
+  await expect(page.locator('.mobile-menu-actions a[href="/search"]')).toHaveCount(0);
+  await expect(page.getByRole('link', { name: 'Search', exact: true })).toHaveCount(1);
+  await page.locator('.mobile-header-controls a[href="/search"]').tap();
   await field(page).fill('mush');
   await expect.poll(() => page.locator('#site-navigation').evaluate(nav => nav.getAnimations().length)).toBe(0);
   await expect(page.locator('#site-navigation')).toHaveJSProperty('inert', true);

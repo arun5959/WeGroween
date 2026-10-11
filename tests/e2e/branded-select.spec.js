@@ -75,7 +75,8 @@ test('dropdowns initialise on both pages and clean up their portals on navigatio
   await expect(page.locator('#contact-topic')).toHaveValue('restaurant');
   await expect(page.locator('#contact-message-hint')).toContainText('Share your kitchen');
   await page.locator('.site-navigation a[href="/shop"]').click();
-  await expect(page.locator('.wg-select-listbox')).toHaveCount(0);
+  await expect(page.locator('.wg-select-listbox[id^="contact-"]')).toHaveCount(0);
+  await expect(page.locator('.wg-select-listbox[id^="shop-"]')).toHaveCount(2);
   await page.goBack();
   await expect(topic).toHaveCount(1);
   await expect(page.locator('.wg-select-listbox')).toHaveCount(1);

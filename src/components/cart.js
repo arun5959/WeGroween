@@ -13,7 +13,7 @@ export function cartDrawerMarkup() {
     <section class="cart-drawer-panel">
       <header class="cart-drawer-header"><div><p class="eyebrow">Your selection</p><h2 id="cart-drawer-title">Your cart</h2></div><button class="header-icon-control cart-drawer-close" type="button" aria-label="Close cart" autofocus>${icon('close')}</button></header>
       <div class="cart-drawer-content">${cartContents({ panel: true })}</div>
-      <footer class="cart-drawer-footer"><p>Ordering is not open yet. Packs, prices and delivery details are being prepared.</p><button class="button button--secondary cart-drawer-close" type="button">Continue browsing</button></footer>
+      <footer class="cart-drawer-footer"><p id="cart-checkout-note">We’re not currently delivering. You can review checkout, but orders are unavailable.</p><div data-cart-checkout-action><button class="button button--primary" type="button" disabled aria-describedby="cart-checkout-note">Proceed to checkout ${icon('arrow-right')}</button></div></footer>
     </section>
   </dialog>`;
 }

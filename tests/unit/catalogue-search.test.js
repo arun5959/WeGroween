@@ -7,9 +7,9 @@ import { pages, matchRoute } from '../../src/app/routes.js';
 test('catalogue search normalizes input and searches only actual public records', () => {
   assert.equal(normalizeSearch('  RÁDISH--Microgreens  '), 'radish microgreens');
   for (const query of ['', ' ', 'a', 'pear']) assert.deepEqual(searchCatalogue(query), []);
-  assert.deepEqual(searchCatalogue('mushroom').map(product => product.slug), ['button-mushrooms']);
-  assert.deepEqual(searchCatalogue('RADISH micro').map(product => product.slug), ['radish-microgreens']);
-  assert.deepEqual(searchCatalogue('mushroom radish'), []);
+  assert.deepEqual(new Set(searchCatalogue('mushroom').map(product => product.slug)), new Set(['button-mushrooms', 'oyster-mushrooms', 'white-oyster-mushrooms', 'golden-oyster-mushrooms', 'mushroom-microgreen-pairing', 'oyster-radish-pairing']));
+  assert.deepEqual(searchCatalogue('RADISH micro').map(product => product.slug), ['radish-microgreens', 'oyster-radish-pairing']);
+  assert.deepEqual(searchCatalogue('mushroom radish').map(product => product.slug), ['oyster-radish-pairing']);
 });
 test('ranking prioritizes exact names and aliases require all query words', () => {
   const records = [

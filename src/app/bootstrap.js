@@ -8,9 +8,12 @@ import { setupContactForm } from './contact-form.js';
 import { setupRestaurantSupplyForm } from './restaurant-supply-form.js';
 import { setupBrandedSelects } from './branded-select.js';
 import { setupAccountPreview } from './account-preview.js';
+import { setupWorkspaceInteractions } from './workspace-interactions.js';
+import { setupShopFilters } from './shop-filters.js';
 import { setupHeaderSearch } from './header-search.js';
 import { setupInterfaceMotion } from './interface-motion.js';
 import { setupCartDrawer } from './cart-drawer.js';
+import { setupCartFeedback } from './cart-feedback.js';
 import { setupPageTransitions } from './page-transitions.js';
 import { appPath, siteUrl } from './hosting.js';
 
@@ -22,12 +25,14 @@ const scrollbarVisibility = setupScrollbarVisibility();
 let disposePage = () => {};
 let interfaceMotion;
 let headerSearch;
-if (import.meta.hot) import.meta.hot.dispose(() => { navigationRequest++; cancelPendingMenu(); pageTransitions.dispose(); disposePage(); cartDrawer.dispose(); scrollbarVisibility.dispose(); scroller.dispose(); });
+let shopFilters;
+if (import.meta.hot) import.meta.hot.dispose(() => { navigationRequest++; cancelPendingMenu(); pageTransitions.dispose(); disposePage(); cartDrawer.dispose(); cartFeedback.dispose(); scrollbarVisibility.dispose(); scroller.dispose(); });
 
 const root = document.getElementById('app');
 const announcement = document.getElementById('route-announcement');
 const pageTransitions = setupPageTransitions({ root, pauseScroll: () => scroller.pause(), resumeScroll: () => scroller.resume() });
 const cartDrawer = setupCartDrawer({ pauseScroll: () => scroller.pause(), resumeScroll: () => scroller.resume(), navigate });
+const cartFeedback = setupCartFeedback();
 let priorLocation = location.pathname + location.search;
 const scrollPositions = new Map();
 function entryKey() {
@@ -53,7 +58,7 @@ function render({ focus = false, slide = false, restoreY = null } = {}) {
   const redirect = legacyDestination(appPath(location.pathname));
   if (redirect) history.replaceState(history.state, '', siteUrl(redirect));
   renderedEntry = entryKey();
-  const view = renderPage(appPath(location.pathname), { development: import.meta.env.DEV });
+  const view = renderPage(appPath(location.pathname), { development: import.meta.env.DEV, search: location.search });
   cartDrawer.reset({ restoreFocus: false });
   disposePage();
   root.innerHTML = view.html;
@@ -67,10 +72,13 @@ function render({ focus = false, slide = false, restoreY = null } = {}) {
   if (slide || restoreY !== null) scroller.toPosition(restoreY ?? 0, { immediate: true });
   const disposeStory = setupStoryMotion(root);
   interfaceMotion = setupInterfaceMotion(root);
+  shopFilters = setupShopFilters(root, { motion: interfaceMotion, navigate });
   const disposeContact = setupContactForm(root, interfaceMotion);
   const disposeSupply = setupRestaurantSupplyForm(root, interfaceMotion);
-  const disposeSelects = setupBrandedSelects(root);
+  // Shop owns its selects because filter changes replace only the results.
+  const disposeSelects = setupBrandedSelects(root, { selector: 'select:not([multiple]):not([data-shop-sort]):not([data-shop-category-picker])' });
   const disposeAccount = setupAccountPreview(root, interfaceMotion, scroller);
+  const disposeWorkspace = setupWorkspaceInteractions(root, { scroller, refresh: () => { render(); interfaceMotion.reveal(root.querySelector('[data-workspace]')); }, navigate });
   headerSearch = setupHeaderSearch(root, { navigate, beforeOpen: () => {
     cancelPendingMenu();
     pageTransitions.cancel({ focus: false });
@@ -88,8 +96,10 @@ function render({ focus = false, slide = false, restoreY = null } = {}) {
     }
   } });
   const thisSearch = headerSearch;
-  disposePage = () => { thisSearch.dispose(); disposeStory(); disposeContact(); disposeSupply(); disposeSelects(); disposeAccount(); interfaceMotion.dispose(); };
+  const thisShopFilters = shopFilters;
+  disposePage = () => { thisSearch.dispose(); thisShopFilters?.dispose(); disposeStory(); disposeContact(); disposeSupply(); disposeSelects(); disposeAccount(); disposeWorkspace(); interfaceMotion.dispose(); };
   cartDrawer.refresh();
+  cartFeedback.refresh();
   if (focus) {
     if (!slide) root.querySelector('#main-content')?.focus({ preventScroll: true });
     if (!slide && restoreY === null) scroller.toTop();
@@ -98,6 +108,22 @@ function render({ focus = false, slide = false, restoreY = null } = {}) {
   }
   const query = new URLSearchParams(location.search).get('q');
   if (compatibilitySearch || (appPath(location.pathname) === '/shop' && query !== null)) headerSearch.open(undefined, query ?? '');
+}
+
+function renderShopFilter({ focus = false, restoreY = null } = {}) {
+  if (root.dataset.pageTransition || !shopFilters?.canUpdate(appPath(location.pathname)) || new URLSearchParams(location.search).has('q')) return false;
+  const view = renderPage(appPath(location.pathname), { development: import.meta.env.DEV, search: location.search });
+  if (view.status !== 200 || !shopFilters.update(view.html, { focus })) return false;
+  cartDrawer.reset({ restoreFocus: false });
+  renderedEntry = entryKey();
+  root.dataset.pageId = view.pageId;
+  root.dataset.shell = view.shell;
+  root.dataset.status = String(view.status);
+  document.title = `${view.title} · WeGroween`;
+  document.querySelector('meta[name="description"]').setAttribute('content', view.description);
+  scroller.refresh();
+  if (restoreY !== null) scroller.toPosition(restoreY, { immediate: true });
+  return true;
 }
 
 function navigate(url) {
@@ -119,9 +145,11 @@ function navigate(url) {
     return;
   }
   const from = priorLocation;
+  if (url.pathname + url.search === priorLocation && shopFilters?.canUpdate(appPath(url.pathname))) return;
   rememberScroll();
   history.pushState({ wgEntry: crypto.randomUUID() }, '', url.pathname + url.search);
   priorLocation = location.pathname + location.search;
+  if (renderShopFilter({ focus: true })) return;
   pageTransitions.run(from, priorLocation, ({ slide }) => render({ focus: true, slide }));
 }
 
@@ -199,6 +227,7 @@ window.addEventListener('popstate', () => {
   if (current !== priorLocation) {
     const from = priorLocation;
     priorLocation = current;
+    if (renderShopFilter({ focus: true, restoreY })) return;
     pageTransitions.run(from, current, ({ slide }) => render({ focus: true, slide, restoreY }));
   } else if (renderedEntry !== destinationEntry) {
     renderedEntry = destinationEntry;

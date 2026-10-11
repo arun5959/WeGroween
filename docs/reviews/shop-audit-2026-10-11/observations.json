@@ -1,0 +1,580 @@
+{
+  "viewports": [
+    {
+      "width": 1440,
+      "header": {
+        "top": 0,
+        "height": 99,
+        "width": 1434
+      },
+      "intro": {
+        "top": 147,
+        "height": 164,
+        "width": 1200
+      },
+      "filters": {
+        "top": 339,
+        "height": 53,
+        "width": 1200
+      },
+      "firstImage": {
+        "top": 542,
+        "height": 215,
+        "width": 286
+      },
+      "firstBuy": {
+        "top": 956,
+        "height": 44,
+        "width": 120
+      },
+      "firstPrice": {
+        "top": 892,
+        "height": 47,
+        "width": 248
+      },
+      "main": {
+        "top": 99,
+        "height": 2540,
+        "width": 1434
+      },
+      "documentHeight": 3133,
+      "overflow": false,
+      "productCount": 11,
+      "sortCount": 3,
+      "productBodyFont": "12px",
+      "sections": [
+        {
+          "name": "New to the harvest",
+          "top": 453,
+          "height": 567,
+          "width": 1200,
+          "products": 4,
+          "columns": 4
+        },
+        {
+          "name": "Kitchen favourites",
+          "top": 1076,
+          "height": 581,
+          "width": 1200,
+          "products": 4,
+          "columns": 4
+        },
+        {
+          "name": "A little more to explore",
+          "top": 1713,
+          "height": 627,
+          "width": 1200,
+          "products": 3,
+          "columns": 4
+        }
+      ],
+      "categoryCounts": [
+        {
+          "slug": "all",
+          "count": "11",
+          "top": 339,
+          "height": 52,
+          "width": 167
+        },
+        {
+          "slug": "mushrooms",
+          "count": "6",
+          "top": 339,
+          "height": 52,
+          "width": 168
+        },
+        {
+          "slug": "microgreens",
+          "count": "5",
+          "top": 339,
+          "height": 52,
+          "width": 172
+        },
+        {
+          "slug": "organic-harvest",
+          "count": "0",
+          "top": 339,
+          "height": 52,
+          "width": 195
+        },
+        {
+          "slug": "exotics",
+          "count": "0",
+          "top": 339,
+          "height": 52,
+          "width": 140
+        }
+      ]
+    },
+    {
+      "width": 1024,
+      "header": {
+        "top": 0,
+        "height": 151,
+        "width": 1018
+      },
+      "intro": {
+        "top": 199,
+        "height": 157,
+        "width": 970
+      },
+      "filters": {
+        "top": 384,
+        "height": 53,
+        "width": 970
+      },
+      "firstImage": {
+        "top": 587,
+        "height": 233,
+        "width": 311
+      },
+      "firstBuy": {
+        "top": 992,
+        "height": 44,
+        "width": 132
+      },
+      "firstPrice": {
+        "top": 928,
+        "height": 47,
+        "width": 272
+      },
+      "main": {
+        "top": 151,
+        "height": 3514,
+        "width": 1018
+      },
+      "documentHeight": 4368,
+      "overflow": false,
+      "productCount": 11,
+      "sortCount": 3,
+      "productBodyFont": "12px",
+      "sections": [
+        {
+          "name": "New to the harvest",
+          "top": 498,
+          "height": 1044,
+          "width": 970,
+          "products": 4,
+          "columns": 3
+        },
+        {
+          "name": "Kitchen favourites",
+          "top": 1599,
+          "height": 1085,
+          "width": 970,
+          "products": 4,
+          "columns": 3
+        },
+        {
+          "name": "A little more to explore",
+          "top": 2740,
+          "height": 626,
+          "width": 970,
+          "products": 3,
+          "columns": 3
+        }
+      ],
+      "categoryCounts": [
+        {
+          "slug": "all",
+          "count": "11",
+          "top": 384,
+          "height": 52,
+          "width": 167
+        },
+        {
+          "slug": "mushrooms",
+          "count": "6",
+          "top": 384,
+          "height": 52,
+          "width": 168
+        },
+        {
+          "slug": "microgreens",
+          "count": "5",
+          "top": 384,
+          "height": 52,
+          "width": 172
+        },
+        {
+          "slug": "organic-harvest",
+          "count": "0",
+          "top": 384,
+          "height": 52,
+          "width": 195
+        },
+        {
+          "slug": "exotics",
+          "count": "0",
+          "top": 384,
+          "height": 52,
+          "width": 140
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "header": {
+        "top": 0,
+        "height": 151,
+        "width": 762
+      },
+      "intro": {
+        "top": 199,
+        "height": 141,
+        "width": 714
+      },
+      "filters": {
+        "top": 368,
+        "height": 109,
+        "width": 714
+      },
+      "firstImage": {
+        "top": 683,
+        "height": 260,
+        "width": 347
+      },
+      "firstBuy": {
+        "top": 1115,
+        "height": 44,
+        "width": 150
+      },
+      "firstPrice": {
+        "top": 1052,
+        "height": 47,
+        "width": 309
+      },
+      "main": {
+        "top": 151,
+        "height": 4372,
+        "width": 762
+      },
+      "documentHeight": 5226,
+      "overflow": false,
+      "productCount": 11,
+      "sortCount": 3,
+      "productBodyFont": "12px",
+      "sections": [
+        {
+          "name": "New to the harvest",
+          "top": 538,
+          "height": 1155,
+          "width": 714,
+          "products": 4,
+          "columns": 2
+        },
+        {
+          "name": "Kitchen favourites",
+          "top": 1749,
+          "height": 1196,
+          "width": 714,
+          "products": 4,
+          "columns": 2
+        },
+        {
+          "name": "A little more to explore",
+          "top": 3001,
+          "height": 1223,
+          "width": 714,
+          "products": 3,
+          "columns": 2
+        }
+      ],
+      "categoryCounts": [
+        {
+          "slug": "all",
+          "count": "11",
+          "top": 368,
+          "height": 52,
+          "width": 167
+        },
+        {
+          "slug": "mushrooms",
+          "count": "6",
+          "top": 368,
+          "height": 52,
+          "width": 168
+        },
+        {
+          "slug": "microgreens",
+          "count": "5",
+          "top": 368,
+          "height": 52,
+          "width": 172
+        },
+        {
+          "slug": "organic-harvest",
+          "count": "0",
+          "top": 368,
+          "height": 52,
+          "width": 195
+        },
+        {
+          "slug": "exotics",
+          "count": "0",
+          "top": 424,
+          "height": 52,
+          "width": 140
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "header": {
+        "top": 0,
+        "height": 81,
+        "width": 384
+      },
+      "intro": {
+        "top": 113,
+        "height": 212,
+        "width": 352
+      },
+      "filters": {
+        "top": 353,
+        "height": 153,
+        "width": 352
+      },
+      "firstImage": {
+        "top": 708,
+        "height": 263,
+        "width": 350
+      },
+      "firstBuy": {
+        "top": 1142,
+        "height": 44,
+        "width": 312
+      },
+      "firstPrice": {
+        "top": 1078,
+        "height": 47,
+        "width": 312
+      },
+      "main": {
+        "top": 81,
+        "height": 7558,
+        "width": 384
+      },
+      "documentHeight": 8707,
+      "overflow": false,
+      "productCount": 11,
+      "sortCount": 3,
+      "productBodyFont": "12px",
+      "sections": [
+        {
+          "name": "New to the harvest",
+          "top": 567,
+          "height": 2394,
+          "width": 352,
+          "products": 4,
+          "columns": 1
+        },
+        {
+          "name": "Kitchen favourites",
+          "top": 3001,
+          "height": 2427,
+          "width": 352,
+          "products": 4,
+          "columns": 1
+        },
+        {
+          "name": "A little more to explore",
+          "top": 5468,
+          "height": 1886,
+          "width": 352,
+          "products": 3,
+          "columns": 1
+        }
+      ],
+      "categoryCounts": [
+        {
+          "slug": "all",
+          "count": "11",
+          "top": 353,
+          "height": 48,
+          "width": 352
+        },
+        {
+          "slug": "mushrooms",
+          "count": "6",
+          "top": 405,
+          "height": 48,
+          "width": 174
+        },
+        {
+          "slug": "microgreens",
+          "count": "5",
+          "top": 405,
+          "height": 48,
+          "width": 174
+        },
+        {
+          "slug": "organic-harvest",
+          "count": "0",
+          "top": 457,
+          "height": 48,
+          "width": 174
+        },
+        {
+          "slug": "exotics",
+          "count": "0",
+          "top": 457,
+          "height": 48,
+          "width": 174
+        }
+      ]
+    },
+    {
+      "width": 320,
+      "header": {
+        "top": 0,
+        "height": 81,
+        "width": 314
+      },
+      "intro": {
+        "top": 113,
+        "height": 244,
+        "width": 282
+      },
+      "filters": {
+        "top": 385,
+        "height": 163,
+        "width": 282
+      },
+      "firstImage": {
+        "top": 750,
+        "height": 210,
+        "width": 280
+      },
+      "firstBuy": {
+        "top": 1159,
+        "height": 44,
+        "width": 242
+      },
+      "firstPrice": {
+        "top": 1095,
+        "height": 47,
+        "width": 242
+      },
+      "main": {
+        "top": 81,
+        "height": 7154,
+        "width": 314
+      },
+      "documentHeight": 8304,
+      "overflow": false,
+      "productCount": 11,
+      "sortCount": 3,
+      "productBodyFont": "12px",
+      "sections": [
+        {
+          "name": "New to the harvest",
+          "top": 610,
+          "height": 2238,
+          "width": 282,
+          "products": 4,
+          "columns": 1
+        },
+        {
+          "name": "Kitchen favourites",
+          "top": 2887,
+          "height": 2217,
+          "width": 282,
+          "products": 4,
+          "columns": 1
+        },
+        {
+          "name": "A little more to explore",
+          "top": 5144,
+          "height": 1781,
+          "width": 282,
+          "products": 3,
+          "columns": 1
+        }
+      ],
+      "categoryCounts": [
+        {
+          "slug": "all",
+          "count": "11",
+          "top": 385,
+          "height": 48,
+          "width": 282
+        },
+        {
+          "slug": "mushrooms",
+          "count": "6",
+          "top": 437,
+          "height": 48,
+          "width": 139
+        },
+        {
+          "slug": "microgreens",
+          "count": "5",
+          "top": 437,
+          "height": 48,
+          "width": 139
+        },
+        {
+          "slug": "organic-harvest",
+          "count": "0",
+          "top": 489,
+          "height": 58,
+          "width": 139
+        },
+        {
+          "slug": "exotics",
+          "count": "0",
+          "top": 489,
+          "height": 58,
+          "width": 139
+        }
+      ]
+    }
+  ],
+  "interaction": {
+    "sorted": [
+      {
+        "name": "New to the harvest",
+        "sort": "price-asc",
+        "prices": [
+          "₹180",
+          "₹180",
+          "₹180",
+          "₹220"
+        ]
+      },
+      {
+        "name": "Kitchen favourites",
+        "sort": "selection",
+        "prices": [
+          "₹140",
+          "₹180",
+          "₹190",
+          "₹170"
+        ]
+      },
+      {
+        "name": "A little more to explore",
+        "sort": "selection",
+        "prices": [
+          "₹320",
+          "₹350",
+          "₹200"
+        ]
+      }
+    ],
+    "mushrooms": [
+      "Button mushrooms",
+      "Oyster mushrooms",
+      "White oyster mushrooms",
+      "Golden oyster mushrooms",
+      "Mushroom & microgreen pairing",
+      "Oyster & radish pairing"
+    ],
+    "empty": "RANGE TAKING SHAPE\n\nA new harvest is on its way.\n\nWe’re preparing this part of the catalogue. Products and growing details will appear here when the range is ready.\n\nExplore the current harvest",
+    "notification": "Added to your cart\n\nButton mushrooms · 1 item in your cart",
+    "drawerOpened": false,
+    "cardDestination": "/products/golden-oyster-mushrooms",
+    "errors": []
+  }
+}

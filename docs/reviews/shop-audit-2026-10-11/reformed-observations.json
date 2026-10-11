@@ -1,0 +1,455 @@
+{
+  "viewports": [
+    {
+      "width": 1440,
+      "firstImage": 426.953125,
+      "firstBuy": 797.015625,
+      "mainHeight": 1957.890625,
+      "overflow": false,
+      "cards": [
+        {
+          "w": 288,
+          "h": 435.25,
+          "overflow": false
+        },
+        {
+          "w": 288,
+          "h": 435.25,
+          "overflow": false
+        },
+        {
+          "w": 288,
+          "h": 435.25,
+          "overflow": false
+        },
+        {
+          "w": 288,
+          "h": 435.25,
+          "overflow": false
+        },
+        {
+          "w": 288,
+          "h": 408.265625,
+          "overflow": false
+        },
+        {
+          "w": 288,
+          "h": 408.265625,
+          "overflow": false
+        },
+        {
+          "w": 288,
+          "h": 408.265625,
+          "overflow": false
+        },
+        {
+          "w": 288,
+          "h": 408.265625,
+          "overflow": false
+        },
+        {
+          "w": 288,
+          "h": 470.640625,
+          "overflow": false
+        },
+        {
+          "w": 288,
+          "h": 470.640625,
+          "overflow": false
+        },
+        {
+          "w": 288,
+          "h": 470.640625,
+          "overflow": false
+        }
+      ],
+      "shelves": [
+        {
+          "w": 1200,
+          "scroll": 1200
+        },
+        {
+          "w": 1200,
+          "scroll": 1200
+        }
+      ],
+      "sortVisible": false
+    },
+    {
+      "width": 1024,
+      "firstImage": 466.1875,
+      "firstBuy": 907.59375,
+      "mainHeight": 3738.515625,
+      "overflow": false,
+      "cards": [
+        {
+          "w": 477,
+          "h": 506.59375,
+          "overflow": false
+        },
+        {
+          "w": 477,
+          "h": 506.59375,
+          "overflow": false
+        },
+        {
+          "w": 477,
+          "h": 506.59375,
+          "overflow": false
+        },
+        {
+          "w": 477,
+          "h": 506.59375,
+          "overflow": false
+        },
+        {
+          "w": 477,
+          "h": 506.59375,
+          "overflow": false
+        },
+        {
+          "w": 477,
+          "h": 506.59375,
+          "overflow": false
+        },
+        {
+          "w": 477,
+          "h": 506.59375,
+          "overflow": false
+        },
+        {
+          "w": 477,
+          "h": 506.59375,
+          "overflow": false
+        },
+        {
+          "w": 477,
+          "h": 526.390625,
+          "overflow": false
+        },
+        {
+          "w": 477,
+          "h": 526.390625,
+          "overflow": false
+        },
+        {
+          "w": 477,
+          "h": 506.59375,
+          "overflow": false
+        }
+      ],
+      "shelves": [
+        {
+          "w": 970,
+          "scroll": 970
+        },
+        {
+          "w": 970,
+          "scroll": 970
+        }
+      ],
+      "sortVisible": false
+    },
+    {
+      "width": 768,
+      "firstImage": 465.328125,
+      "firstBuy": 846.53125,
+      "mainHeight": 3383.625,
+      "overflow": false,
+      "cards": [
+        {
+          "w": 349,
+          "h": 446.390625,
+          "overflow": false
+        },
+        {
+          "w": 349,
+          "h": 446.390625,
+          "overflow": false
+        },
+        {
+          "w": 349,
+          "h": 446.390625,
+          "overflow": false
+        },
+        {
+          "w": 349,
+          "h": 446.390625,
+          "overflow": false
+        },
+        {
+          "w": 349,
+          "h": 446.390625,
+          "overflow": false
+        },
+        {
+          "w": 349,
+          "h": 446.390625,
+          "overflow": false
+        },
+        {
+          "w": 349,
+          "h": 446.390625,
+          "overflow": false
+        },
+        {
+          "w": 349,
+          "h": 446.390625,
+          "overflow": false
+        },
+        {
+          "w": 349,
+          "h": 473.375,
+          "overflow": false
+        },
+        {
+          "w": 349,
+          "h": 473.375,
+          "overflow": false
+        },
+        {
+          "w": 349,
+          "h": 446.390625,
+          "overflow": false
+        }
+      ],
+      "shelves": [
+        {
+          "w": 714,
+          "scroll": 714
+        },
+        {
+          "w": 714,
+          "scroll": 714
+        }
+      ],
+      "sortVisible": false
+    },
+    {
+      "width": 560,
+      "firstImage": 433.21875,
+      "firstBuy": 872.34375,
+      "mainHeight": 1743.625,
+      "overflow": false,
+      "cards": [
+        {
+          "w": 490,
+          "h": 556.3125,
+          "overflow": false
+        },
+        {
+          "w": 490,
+          "h": 556.3125,
+          "overflow": false
+        },
+        {
+          "w": 490,
+          "h": 556.3125,
+          "overflow": false
+        },
+        {
+          "w": 490,
+          "h": 556.3125,
+          "overflow": false
+        },
+        {
+          "w": 490,
+          "h": 576.109375,
+          "overflow": false
+        },
+        {
+          "w": 490,
+          "h": 576.109375,
+          "overflow": false
+        },
+        {
+          "w": 490,
+          "h": 576.109375,
+          "overflow": false
+        },
+        {
+          "w": 490,
+          "h": 576.109375,
+          "overflow": false
+        },
+        {
+          "w": 490,
+          "h": 576.109375,
+          "overflow": false
+        },
+        {
+          "w": 490,
+          "h": 576.109375,
+          "overflow": false
+        },
+        {
+          "w": 490,
+          "h": 576.109375,
+          "overflow": false
+        }
+      ],
+      "shelves": [
+        {
+          "w": 522,
+          "scroll": 2008
+        },
+        {
+          "w": 522,
+          "scroll": 3526
+        }
+      ],
+      "sortVisible": false
+    },
+    {
+      "width": 390,
+      "firstImage": 433.21875,
+      "firstBuy": 785.890625,
+      "mainHeight": 1597.09375,
+      "overflow": false,
+      "cards": [
+        {
+          "w": 320,
+          "h": 469.859375,
+          "overflow": false
+        },
+        {
+          "w": 320,
+          "h": 469.859375,
+          "overflow": false
+        },
+        {
+          "w": 320,
+          "h": 469.859375,
+          "overflow": false
+        },
+        {
+          "w": 320,
+          "h": 469.859375,
+          "overflow": false
+        },
+        {
+          "w": 320,
+          "h": 496.84375,
+          "overflow": false
+        },
+        {
+          "w": 320,
+          "h": 496.84375,
+          "overflow": false
+        },
+        {
+          "w": 320,
+          "h": 496.84375,
+          "overflow": false
+        },
+        {
+          "w": 320,
+          "h": 496.84375,
+          "overflow": false
+        },
+        {
+          "w": 320,
+          "h": 496.84375,
+          "overflow": false
+        },
+        {
+          "w": 320,
+          "h": 496.84375,
+          "overflow": false
+        },
+        {
+          "w": 320,
+          "h": 496.84375,
+          "overflow": false
+        }
+      ],
+      "shelves": [
+        {
+          "w": 352,
+          "scroll": 1328
+        },
+        {
+          "w": 352,
+          "scroll": 2336
+        }
+      ],
+      "sortVisible": false
+    },
+    {
+      "width": 320,
+      "firstImage": 510.625,
+      "firstBuy": 846.53125,
+      "mainHeight": 1694.171875,
+      "overflow": false,
+      "cards": [
+        {
+          "w": 250,
+          "h": 453.09375,
+          "overflow": false
+        },
+        {
+          "w": 250,
+          "h": 453.09375,
+          "overflow": false
+        },
+        {
+          "w": 250,
+          "h": 453.09375,
+          "overflow": false
+        },
+        {
+          "w": 250,
+          "h": 453.09375,
+          "overflow": false
+        },
+        {
+          "w": 250,
+          "h": 488.484375,
+          "overflow": false
+        },
+        {
+          "w": 250,
+          "h": 488.484375,
+          "overflow": false
+        },
+        {
+          "w": 250,
+          "h": 488.484375,
+          "overflow": false
+        },
+        {
+          "w": 250,
+          "h": 488.484375,
+          "overflow": false
+        },
+        {
+          "w": 250,
+          "h": 488.484375,
+          "overflow": false
+        },
+        {
+          "w": 250,
+          "h": 488.484375,
+          "overflow": false
+        },
+        {
+          "w": 250,
+          "h": 488.484375,
+          "overflow": false
+        }
+      ],
+      "shelves": [
+        {
+          "w": 282,
+          "scroll": 1048
+        },
+        {
+          "w": 282,
+          "scroll": 1846
+        }
+      ],
+      "sortVisible": false
+    }
+  ],
+  "errors": []
+}

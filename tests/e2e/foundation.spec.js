@@ -51,7 +51,8 @@ test('shopping navigation and browser back/forward preserve route and keyboard f
   await page.getByRole('link', { name: 'Shop this harvest' }).click();
   await expect(page).toHaveURL('/shop');
   await expect(page.locator('#main-content')).toBeFocused();
-  await page.getByRole('link', { name: 'Explore mushrooms', exact: true }).click();
+  await page.getByRole('combobox', { name: 'Category', exact: true }).click();
+  await page.getByRole('option', { name: 'Mushrooms · 6', exact: true }).click();
   await expect(page).toHaveURL('/shop/category/mushrooms');
   await page.goBack();
   await expect(page.locator('#app')).toHaveAttribute('data-page-id', 'C02');

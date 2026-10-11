@@ -17,7 +17,9 @@ test('assumed session uses sample data only in development and production accoun
     assert.doesNotMatch(local.html, /Go to sign in|Explore the sample account/);
   }
   assert.equal(renderPage('/account/orders/unknown', { development: true }).status, 404);
-  assert.equal(renderPage('/admin', { development: true }).status, 403);
+  assert.equal(renderPage('/admin').status, 403);
+  assert.equal(renderPage('/admin', { development: true }).status, 200);
+  assert.match(renderPage('/admin', { development: true }).html, /Fictional records/);
 });
 test('sample data resets from an independent fixture and totals reflect line quantities', () => {
   const first = createSampleAccount();

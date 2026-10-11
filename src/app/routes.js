@@ -1,7 +1,7 @@
 import manifest from '../../docs/PAGE_MANIFEST.json' with { type: 'json' };
 
 export const pages = Object.freeze(manifest.pages.map((page) => Object.freeze({ ...page })));
-const parameterExamples = { slug: 'mushrooms', orderId: 'preview-order', productId: 'preview-product', customerId: 'preview-customer' };
+const parameterExamples = { slug: 'mushrooms', orderId: 'SAMPLE-1042', productId: 'button-mushrooms', customerId: 'sample-customer' };
 
 export function examplePath(page) {
   return page.route.replace(/:([A-Za-z]+)/g, (_, name) => page.id === 'C05' ? 'button-mushrooms' : parameterExamples[name]);
@@ -35,5 +35,6 @@ export function matchRoute(pathname) {
 }
 
 export function legacyDestination(pathname) {
+  if (normalizePath(pathname) === '/shop/category/combos') return '/shop';
   return manifest.legacy_redirects.find((entry) => entry.from === pathname)?.to ?? null;
 }

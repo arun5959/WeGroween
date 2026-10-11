@@ -3,7 +3,7 @@ import { mountHtml } from './hosting.js';
 
 // Progressive enhancement: the native select remains the form's value source.
 // Popups live outside animated form panels so expanding layouts never clip them.
-export function setupBrandedSelects(root) {
+export function setupBrandedSelects(root, { selector = 'select:not([multiple])' } = {}) {
   const controller = new AbortController();
   const events = { signal: controller.signal };
   const preference = matchMedia('(prefers-reduced-motion: reduce)');
@@ -12,7 +12,7 @@ export function setupBrandedSelects(root) {
   const timing = getComputedStyle(document.documentElement).getPropertyValue('--motion-standard').trim();
   const duration = (parseFloat(timing) * (timing.endsWith('ms') ? 1 : 1000)) || 220;
 
-  root.querySelectorAll('select:not([multiple])').forEach(select => {
+  root.querySelectorAll(selector).forEach(select => {
     if (!select.id || select.disabled || select.querySelector('optgroup')) return;
     const labels = [...select.labels];
     const originalLabelFors = labels.map(label => label.htmlFor);
@@ -44,7 +44,8 @@ export function setupBrandedSelects(root) {
     list.setAttribute('data-lenis-prevent', '');
     list.setAttribute('aria-label', labels.map(label => label.textContent.trim()).join(' ') || select.name);
     list.hidden = true;
-    document.body.append(list);
+    // Keep a modal's popup in the same native top layer as its input.
+    (select.closest('dialog') || document.body).append(list);
     const choices = [...select.options];
     const items = choices.map((choice, index) => {
       const item = document.createElement('div');

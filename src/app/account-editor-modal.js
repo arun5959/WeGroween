@@ -1,7 +1,7 @@
 import { icon } from '../components/icons.js';
 import { mountHtml } from './hosting.js';
 
-export function setupAccountEditorModal(workspace, scroller, { onDismiss }) {
+export function setupAccountEditorModal(workspace, scroller, { onDismiss, eyebrow = 'Your account', description = 'Update your details below.' }) {
   const dialog = document.createElement('dialog');
   dialog.className = 'account-edit-modal';
   dialog.id = 'account-edit-modal';
@@ -9,6 +9,8 @@ export function setupAccountEditorModal(workspace, scroller, { onDismiss }) {
   dialog.setAttribute('aria-describedby', 'account-edit-description');
   dialog.innerHTML = mountHtml(`<div class="account-edit-modal-shade"></div><div class="account-edit-modal-panel"><header class="account-edit-modal-header"><div><p class="eyebrow">Your account</p><h2 id="account-edit-title"></h2></div><button type="button" class="account-edit-close" aria-label="Close editor" data-account-action="cancel-edit">${icon('close')}</button></header><div class="account-edit-modal-body" data-lenis-prevent><p id="account-edit-description">Update your details below.</p></div></div>`);
   workspace.append(dialog);
+  dialog.querySelector('.eyebrow').textContent = eyebrow;
+  dialog.querySelector('#account-edit-description').textContent = description;
   const panel = dialog.querySelector('.account-edit-modal-panel');
   const shade = dialog.querySelector('.account-edit-modal-shade');
   const body = dialog.querySelector('.account-edit-modal-body');
@@ -82,7 +84,7 @@ export function setupAccountEditorModal(workspace, scroller, { onDismiss }) {
   dialog.addEventListener('keydown', event => {
     if (event.key === 'Escape') event.stopPropagation();
     if (event.key !== 'Tab') return;
-    const controls = [...dialog.querySelectorAll('button:not([disabled]), input:not([disabled]), [tabindex="0"]')].filter(element => element.getClientRects().length && !element.closest('[hidden]'));
+    const controls = [...dialog.querySelectorAll('button:not([disabled]), input:not([disabled]), textarea:not([disabled]), select:not([disabled]), a[href], [tabindex="0"]')].filter(element => element.getClientRects().length && !element.closest('[hidden]'));
     const first = controls[0];
     const last = controls.at(-1);
     if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last?.focus(); }

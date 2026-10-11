@@ -68,6 +68,8 @@ export function setupAccountPreview(root, motion, scroller) {
     currentView = view;
     motion.changeLayout(content, () => {
       closeEditors();
+      workspace.querySelectorAll('[data-order-id]').forEach(order => { order.hidden = false; });
+      workspace.querySelector('.account-order-back')?.remove();
       workspace.querySelectorAll('[data-account-panel]').forEach(panel => { panel.hidden = panel.dataset.accountPanel !== view; });
       workspace.querySelectorAll('.account-sidebar [data-account-target]').forEach(button => {
         if (button.dataset.accountTarget === view) button.setAttribute('aria-current', 'page');
@@ -160,10 +162,13 @@ export function setupAccountPreview(root, motion, scroller) {
     if (button.dataset.accountTarget === currentView) button.setAttribute('aria-current', 'page');
     else button.removeAttribute('aria-current');
   });
-  workspace.querySelector('#sample-account-heading').textContent = accountViews[currentView][0];
-  workspace.querySelector('[data-account-description]').textContent = accountViews[currentView][1];
+  workspace.querySelector('#sample-account-heading').textContent = workspace.dataset.accountOrder ? `Order ${workspace.dataset.accountOrder}.` : accountViews[currentView][0];
+  workspace.querySelector('[data-account-description]').textContent = workspace.dataset.accountOrder ? 'The selection, delivery details and journey of this sample order.' : accountViews[currentView][1];
   paint();
   const initialOrder = workspace.dataset.accountOrder;
-  if (initialOrder) [...workspace.querySelectorAll('[data-order-id]')].find(order => order.dataset.orderId === initialOrder)?.querySelector('summary').click();
+  if (initialOrder) {
+    const order = [...workspace.querySelectorAll('[data-order-id]')].find(order => order.dataset.orderId === initialOrder);
+    if (order && !order.open) order.querySelector('summary').click();
+  }
   return () => { editorModal.dispose(); controller.abort(); };
 }

@@ -4,6 +4,9 @@
 @import "./components/buttons.css";
 @import "./components/select.css";
 @import "./components/account.css";
+@import "./components/workspace.css";
+@import "./components/checkout.css";
+@import "./components/shop.css";
 @import "./components/story.css";
 @import "./components/contact.css";
 @import "./components/restaurant-supply.css";
@@ -91,15 +94,24 @@ nav a[aria-current="page"] { color: var(--color-brand-secondary); text-decoratio
 .section-heading { display: flex; justify-content: space-between; gap: var(--space-md); align-items: end; margin-bottom: var(--space-lg); }
 .section-heading h2 { margin-top: var(--space-sm); }
 .category-grid, .product-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--space-md); }
+.category-grid { grid-template-columns:repeat(4,minmax(0,1fr)); }
 .category-card { display: block; text-decoration: none; background: var(--color-surface); border: 1px solid var(--color-border); overflow: hidden; border-radius: var(--radius-card); cursor: pointer; transition: transform var(--motion-standard) var(--motion-easing-standard); }
-.category-card figure { overflow: hidden; aspect-ratio: 4 / 3; }
+.category-card figure { overflow: hidden; aspect-ratio: 8 / 5; }
 .category-card img { height: 100%; object-fit: cover; }
 .category-grid .category-card { position: relative; display: flex; flex-direction: column; }
-.category-grid .category-copy { display: flex; flex-direction: column; flex: 1; padding: var(--space-lg); }
-.category-grid .category-copy .eyebrow { color: var(--color-brand-secondary); font-size: var(--typography-style-label-size); margin-bottom: var(--space-md); }
-.category-grid .category-copy h3 { margin-bottom: var(--space-md); }
-.category-description { flex: 1; }
-.category-cta { align-self: flex-start; max-width: 100%; margin-top: var(--space-lg); }
+.category-grid .category-copy { display: flex; flex-direction: column; flex: 1; padding: clamp(20px,2vw,24px); }
+.category-grid .category-copy .eyebrow { color: var(--color-brand-secondary); font-size: 11px; margin-bottom: 12px; }
+.category-grid .category-copy h3 { font-size:clamp(22px,2.2vw,26px);margin-bottom:12px; }
+.category-grid .category-description { flex:1;font-size:14px;line-height:1.65; }
+.category-grid .category-cta { align-self:flex-start;max-width:100%;min-height:44px;padding:10px 16px;margin-top:20px;font-size:13px;line-height:1.4; }
+.category-card .category-placeholder { position:relative;display:grid;place-content:center;justify-items:center;gap:12px;background:color-mix(in srgb,var(--color-success) 5%,var(--color-background)); }
+.category-card .category-placeholder--exotics { background:color-mix(in srgb,var(--color-brand-secondary) 7%,var(--color-background)); }
+.category-placeholder-art { display:grid;place-items:center;width:90px;height:90px;border:1px solid color-mix(in srgb,var(--color-border-strong) 35%,transparent);border-radius:50%;color:var(--color-brand-secondary); }
+.category-placeholder--organic-harvest .category-placeholder-art { color:var(--color-success); }
+.category-placeholder-art .wg-icon { width:48px;height:48px; }
+.category-placeholder figcaption { font-size:10px;letter-spacing:.09em;text-transform:uppercase;color:var(--color-text-secondary); }
+@media(min-width:721px) and (max-width:1099px) { .category-grid { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+@media(min-width:1100px) { .category-grid .category-copy h3 { min-height:2.4em;align-items:flex-start; } }
 /* The CTA owns its hover area; hovering it leaves the card at its resting scale. */
 @media (hover: hover) and (pointer: fine) {
   .category-grid .category-card:hover:not(:has(.category-cta:hover)) { transform: scale(1.01); }
@@ -107,7 +119,7 @@ nav a[aria-current="page"] { color: var(--color-brand-secondary); text-decoratio
 .category-copy { padding: var(--space-md); }
 .category-copy h3 { font-size: 30px; display: flex; align-items: center; justify-content: space-between; gap: var(--space-sm); margin-bottom: var(--space-sm); }
 .wg-icon { display: inline-block; width: var(--component-icon-size-md); height: var(--component-icon-size-md); flex: 0 0 auto; fill: none; stroke: currentColor; stroke-width: var(--component-icon-stroke-width); stroke-linecap: square; stroke-linejoin: round; }
-.category-copy h3 .wg-icon { width: var(--component-icon-size-xl); height: var(--component-icon-size-xl); }
+.category-copy h3 .wg-icon { width:24px;height:24px; }
 .text-link { display: inline-flex; align-items: center; gap: var(--space-xs); }
 .category-copy h2 { font-size: 28px; margin-bottom: var(--space-sm); }
 .category-copy p { color: var(--color-text-secondary); font-size: 14px; }
@@ -186,7 +198,7 @@ nav a[aria-current="page"] { color: var(--color-brand-secondary); text-decoratio
   .section { padding-block: calc(var(--space-xl) * var(--section-spacing-scale)); }
   .header-inner { min-height: 80px; padding-block: var(--space-sm); column-gap: var(--space-xs); }
   .header-inner .brand { width: 200px; max-width: calc(100% - 104px); }
-  .header-inner--storefront { display: grid; grid-template-columns: minmax(0, 1fr) 96px; }
+  .header-inner--storefront { display: grid; grid-template-columns: minmax(0, 1fr) 148px; }
   .header-inner--storefront .brand { min-width: 0; max-width: 100%; }
   .header-inner--storefront .site-navigation { grid-column: 1 / -1; min-width: 0; }
   .mobile-header-controls { display: flex; align-items: center; gap: var(--space-xs); min-height: calc(44px + var(--space-sm)); margin-left: auto; }
