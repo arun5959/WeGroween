@@ -28,11 +28,15 @@ for (const width of [1440, 320]) {
     const errors = [];
     page.on('pageerror', error => errors.push(error.message));
     for (const route of routes) {
-      await ready(page, route);
-      await expect(page.locator('main')).toHaveCount(1);
-      await expect(page.locator('h1')).toHaveCount(1);
-      const overflow = await page.evaluate(() => document.documentElement.scrollWidth > innerWidth + 1);
+      const routePage = await page.context().newPage();
+      await routePage.setViewportSize({ width, height: 900 });
+      routePage.on('pageerror', error => errors.push(error.message));
+      await ready(routePage, route);
+      await expect(routePage.locator('main')).toHaveCount(1);
+      await expect(routePage.locator('h1')).toHaveCount(1);
+      const overflow = await routePage.evaluate(() => document.documentElement.scrollWidth > innerWidth + 1);
       expect(overflow, `${route} overflows ${width}`).toBe(false);
+      await routePage.close();
     }
     expect(errors).toEqual([]);
   });
@@ -67,13 +71,13 @@ test('cart has one bottom checkout action and payment selection cannot place an 
 test('table filtering combines search and status and handles no matching records', async ({ page }) => {
   await ready(page, '/admin/orders');
   await choose(page, 'Status', 'Delivered');
-  await expect(page.locator('[data-work-row]:visible')).toHaveCount(1);
+  await expect(page.locator('[data-work-row]:visible')).toHaveCount(3);
   await page.getByLabel('Find an order').fill('1050');
   await expect(page.locator('[data-work-empty]')).toBeVisible();
   await choose(page, 'Status', 'All statuses');
   await expect(page.locator('[data-work-row]:visible')).toContainText('SAMPLE-1050');
   await page.getByLabel('Find an order').fill('');
-  await expect(page.locator('[data-work-row]:visible')).toHaveCount(2);
+  await expect(page.locator('[data-work-row]:visible')).toHaveCount(6);
 });
 
 test('category editor contains dropdown, restores focus and escapes saved content', async ({ page }) => {
@@ -88,14 +92,14 @@ test('category editor contains dropdown, restores focus and escapes saved conten
   expect(await dialog.getByRole('listbox', { includeHidden: true }).count()).toBe(1);
   await dialog.getByRole('button', { name: 'Save changes', exact: true }).click();
   await expect(dialog).not.toBeVisible();
-  await expect(page.locator('[data-work-row]').last()).toContainText('<img onerror=alert(1)>');
+  await expect(page.locator('[data-work-row]').filter({hasText:'<img onerror=alert(1)>'})).toHaveCount(1);
   await expect(page.locator('.work-table img')).toHaveCount(0);
   await expect(page.getByRole('button', { name: 'Add a category' })).toBeFocused();
   await page.getByRole('button', { name: 'Add a category' }).click();
   await page.keyboard.press('Escape');
   await expect(page.getByRole('dialog')).not.toBeVisible();
   await page.reload();
-  await expect(page.locator('[data-work-row]')).toHaveCount(4);
+  await expect(page.locator('[data-work-row]')).toHaveCount(5);
 });
 
 test('stock adjustments require a reason and keep a local adjustment record', async ({ page }) => {
@@ -108,7 +112,7 @@ test('stock adjustments require a reason and keep a local adjustment record', as
   await page.getByRole('button', { name: 'Save changes', exact: true }).click();
   await expect(page.getByRole('dialog')).not.toBeVisible();
   await expect(page.locator('[data-work-row]').first()).toContainText('40 packs');
-  await expect(page.getByText('Button mushrooms: 36 → 40 packs · Sample recount')).toBeVisible();
+  await expect(page.locator('.admin-activity')).toContainText('Button mushrooms: 36 → 40 packs · Sample recount');
 });
 
 test('product drafts can be added and order fulfilment can be advanced', async ({ page }) => {
@@ -117,14 +121,14 @@ test('product drafts can be added and order fulfilment can be advanced', async (
   await page.getByLabel('Sample pack size').fill('100 g');
   await page.getByLabel('Illustrative price (₹)').fill('150');
   await page.getByRole('button', { name: 'Save product' }).click();
-  await expect(page).toHaveURL('/admin/products');
+  await expect(page).toHaveURL(/\/admin\/products\?q=Sample/);
   await expect(page.locator('[data-work-row]').last()).toContainText('Sample draft');
   await page.getByRole('navigation', { name: 'Admin navigation' }).getByRole('link', { name: 'Orders', exact: true }).click();
   await page.locator('[data-work-row]').first().getByRole('link', { name: 'Open order' }).click();
   await choose(page, 'Order status', 'Ready');
   await page.getByRole('button', { name: 'Update sample order' }).click();
   await expect(page.locator('.work-header .account-tag')).toHaveText('Ready');
-  await expect(page.locator('.work-step-list li[data-complete="true"]')).toHaveCount(2);
+  await expect(page.locator('.admin-activity')).toContainText('Preparing → Ready');
 });
 
 for (const example of [
@@ -156,7 +160,7 @@ test('report export uses sample data and business settings remain local', async 
   await page.getByRole('button', { name: 'Save changes' }).click();
   await expect(page.locator('.work-status')).toContainText('Sample settings updated');
   await page.reload();
-  await expect(page.getByLabel('Business name')).toHaveValue('WeGroween');
+  await expect(page.getByLabel('Business name')).toHaveValue('Local sample');
 });
 
 test('editing checkout quantities preserves delivery details and the selected payment method', async ({ page }) => {
@@ -174,10 +178,10 @@ test('editing checkout quantities preserves delivery details and the selected pa
 test('new screens have usable mobile editors and deliberately inactive credential fields', async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 844 });
   await ready(page, '/admin/restaurant-supply');
-  await page.getByRole('button', { name: 'Review enquiry' }).click();
+  await page.locator('[data-record-id="sample-kitchen"]').getByRole('button', { name: 'Review enquiry' }).click();
   await choose(page, 'Conversation stage', 'Discussing');
   await page.getByRole('button', { name: 'Save changes' }).click();
-  await expect(page.locator('[data-work-row]')).toContainText('Discussing');
+  await expect(page.locator('[data-record-id="sample-kitchen"]')).toContainText('Discussing');
   for (const route of ['/sign-in', '/register', '/recover-password', '/admin/sign-in']) {
     await ready(page, route);
     await expect(page.getByLabel('Email address', { exact: true })).toBeDisabled();

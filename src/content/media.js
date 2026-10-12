@@ -7,9 +7,9 @@ const responsiveAsset = (stem, alt, width, height) => {
 };
 
 export const mediaAssets = Object.freeze({
-  logoHeader: asset('Logo/wegroween-header.svg', 'WeGroween'),
-  logoFooter: asset('Logo/wegroween-footer.svg', 'WeGroween'),
-  logoMark: asset('Logo/wegroween-favicon.svg', 'WeGroween mushroom and sprout mark'),
+  logoHeader: asset('Logo/wegroween-header.webp', 'WeGroween'),
+  logoFooter: asset('Logo/wegroween-footer.webp', 'WeGroween'),
+  logoMark: asset('Logo/wegroween-favicon.webp', 'WeGroween mushroom and sprout mark'),
   hero: responsiveAsset('kitchen-dish-portrait', 'A hand adding microgreens to a pan of sautéed mushrooms on a kitchen worktop', 1122, 1402),
   heroLandscape: responsiveAsset('kitchen-dish-landscape', 'A hand adding microgreens to a pan of sautéed mushrooms on a kitchen worktop', 1402, 1122),
   supplyHero: responsiveAsset('supply-hero-portrait', 'Fresh oyster and button mushrooms with mixed microgreens arranged on parchment', 1122, 1402),
@@ -17,10 +17,10 @@ export const mediaAssets = Object.freeze({
   supplyMushrooms: responsiveAsset('oyster-mushrooms-detail', 'Oyster mushroom cluster showing curved caps and fine gills on a stone surface', 1448, 1086),
   supplyMicrogreens: responsiveAsset('microgreens-detail', 'Freshly cut microgreens with green leaves and pale and pink stems on stone', 1448, 1086),
   supplyGrowing: responsiveAsset('microgreens-harvest', 'A person handling a tray of mixed microgreens between indoor growing racks', 1536, 1024),
-  farm: asset('Industrial Microgreens and Mushroom Farm.png', 'Indoor growing space with illuminated microgreen trays on the left and oyster mushroom racks behind glass on the right'),
-  mushrooms: asset('Rustic Mixed Mushroom Harvest.png', 'A plate with button, golden oyster and other oyster mushrooms'),
+  farm: responsiveAsset('indoor-farm', 'Indoor growing space with illuminated microgreen trays on the left and oyster mushroom racks behind glass on the right', 1672, 941),
+  mushrooms: responsiveAsset('mixed-mushroom-harvest', 'A plate with button, golden oyster and other oyster mushrooms', 1448, 1086),
   microgreens: responsiveAsset('microgreens-range', 'An overhead view of dense microgreen trays with green leaves and pink stems', 1448, 1086),
-  pairings: asset('Rustic Mushroom and Microgreen Platter (1).png', 'A platter of mushrooms and fresh microgreens'),
+  pairings: responsiveAsset('mushroom-microgreen-platter', 'A platter of mushrooms and fresh microgreens', 1448, 1086),
   buttonMushrooms: responsiveAsset('product-button-mushrooms', 'White button mushrooms on a stone surface', 1448, 1086),
   radishMicrogreens: responsiveAsset('product-radish-microgreens', 'Pink-stemmed radish microgreens on a stone surface', 1448, 1086),
   oysterMushrooms: responsiveAsset('product-oyster-mushrooms', 'A grey oyster mushroom cluster with layered caps on stone', 1448, 1086),

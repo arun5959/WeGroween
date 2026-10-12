@@ -45,3 +45,11 @@ Vercel at https://wegroween.vercel.app used the same Git commit as Pages, but it
 The committed vercel.json selects npm run build:vercel and dist output. The cross-platform build target forces the root hosting path and fictional account preview in both Vite's client bundle and static HTML generation, even if project variables retain the older false value or the Pages subdirectory. It checks the generated account document and release flag before completing. release.json now records VERCEL_GIT_COMMIT_SHA when GITHUB_SHA is absent.
 
 Run npm.cmd run build:vercel locally to reproduce this target. Verify the account overview, addresses, history and known sample-order paths on first load and reload, including centred editors. The standard npm.cmd run build retains its explicit account-preview opt-in. Real customer auth, ordering and staff access remain unavailable. Existing prerendered documents and Vercel filesystem routing preserve the correct first paint.
+
+## Published sample operations — 12 October 2026
+
+At the user's request, the Vercel target also enables VITE_OPERATIONS_PREVIEW=true. A02–A15 publish the current interactive sample dashboard: records can be edited, filtered and exported; changes persist only in each browser. This is the existing fictional operations model with its validations and centred editors. It does not grant a staff session, connect private backend data or enable live purchasing.
+
+Admin entry documents include the initial sample dashboard. Existing sample order/product/customer detail paths are prerendered. Newly created browser-local records use the /admin/:path* fallback to app-shell.html and hydrate saved records on reload. Reset preview data restores the fictional fixtures. Set VITE_OPERATIONS_PREVIEW=false in a normal build to restore the previous protected admin presentation; the Vercel build target explicitly opts into the preview until that target is changed. Pages keeps its existing account preview configuration and protected admin default.
+
+Visible raster media now use WebP; true vector icons remain SVG. Lossless logo copies preserve the approved header/footer framing, and responsive variants replace remaining PNG photograph references. Source PNGs are retained for editing. Existing SVG logo URLs remain compatible using embedded WebP payloads.

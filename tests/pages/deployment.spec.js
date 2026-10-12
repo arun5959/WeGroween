@@ -1,5 +1,6 @@
 import { test, expect } from '@playwright/test';
 import { siteUrl } from '../../src/app/hosting.js';
+import { publishedOperationsPreview } from '../../src/app/operations-review-config.js';
 import { publishedAccountPreview } from '../../src/app/account-review-config.js';
 
 test('mounted navigation, history, search, and cart stay at the publishing address', async ({ page }) => {
@@ -31,7 +32,7 @@ test('direct routes, assets, legacy redirects, denied access, and unknown pages 
     await expect(page.locator('#app')).not.toHaveAttribute('data-page-id', '404');
     const images = await page.locator('img').evaluateAll(images => Promise.all(images.map(image => new Promise(resolve => { image.loading = 'eager'; if (image.complete) resolve(image.naturalWidth > 0); else { image.onload = () => resolve(true); image.onerror = () => resolve(false); } }))));
     expect(images.every(Boolean)).toBe(true);
-    if (['/admin', '/checkout', ...(!publishedAccountPreview ? ['/account'] : [])].includes(path)) await expect(page.locator('#app')).toHaveAttribute('data-status', '403');
+    if (['/checkout', ...(!publishedOperationsPreview ? ['/admin'] : []), ...(!publishedAccountPreview ? ['/account'] : [])].includes(path)) await expect(page.locator('#app')).toHaveAttribute('data-status', '403');
     const rootUrls = await page.locator('[href], [src]').evaluateAll(elements => elements.flatMap(element => ['href', 'src'].map(attribute => element.getAttribute(attribute)).filter(value => value?.startsWith('/') && !value.startsWith('//'))));
     expect(rootUrls.every(value => value.startsWith(siteUrl('/')))).toBe(true);
   }
@@ -42,8 +43,8 @@ test('direct routes, assets, legacy redirects, denied access, and unknown pages 
   expect(unknown.status()).toBe(404);
   await expect(page.locator('#app')).toHaveAttribute('data-status', '404');
   const dynamicDenied = await page.goto(siteUrl('/admin/orders/example-order'));
-  expect(dynamicDenied.status()).toBe(404);
-  await expect(page.locator('#app')).toHaveAttribute('data-status', '403');
+  expect(dynamicDenied.status()).toBe(publishedOperationsPreview ? 200 : 404);
+  await expect(page.locator('#app')).toHaveAttribute('data-status', publishedOperationsPreview ? '404' : '403');
 });
 
 test('public pages render without JavaScript on mobile', async ({ browser }) => {

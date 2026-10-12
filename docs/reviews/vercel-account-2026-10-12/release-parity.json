@@ -1,0 +1,54 @@
+{
+  "published": "http://127.0.0.1:4183",
+  "errors": [],
+  "observations": [
+    {
+      "path": "/account",
+      "width": 1440,
+      "match": true,
+      "heading": "Your kitchen, at a glance."
+    },
+    {
+      "path": "/account/addresses",
+      "width": 1440,
+      "match": true,
+      "heading": "Delivery addresses."
+    },
+    {
+      "path": "/account/orders",
+      "width": 1440,
+      "match": true,
+      "heading": "Your orders."
+    },
+    {
+      "path": "/account/orders/SAMPLE-1042",
+      "width": 1440,
+      "match": true,
+      "heading": "Order SAMPLE-1042."
+    },
+    {
+      "path": "/account",
+      "width": 390,
+      "match": true,
+      "heading": "Your kitchen, at a glance."
+    },
+    {
+      "path": "/account/addresses",
+      "width": 390,
+      "match": true,
+      "heading": "Delivery addresses."
+    },
+    {
+      "path": "/account/orders",
+      "width": 390,
+      "match": true,
+      "heading": "Your orders."
+    },
+    {
+      "path": "/account/orders/SAMPLE-1042",
+      "width": 390,
+      "match": true,
+      "heading": "Order SAMPLE-1042."
+    }
+  ]
+}

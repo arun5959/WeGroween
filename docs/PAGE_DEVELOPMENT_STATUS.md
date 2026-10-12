@@ -1,11 +1,11 @@
 # Page development tracker
 
-Updated: 11 October 2026. Active source: working tree based on commit b95b035.
+Updated: 11 October 2026. Active source: working tree based on commit 9a8a30b.
 Inventory: [PAGE_MANIFEST.json](PAGE_MANIFEST.json). Review: [PAGE_TRANSFORMATION_REVIEW.md](PAGE_TRANSFORMATION_REVIEW.md).
 
 **All 32 previously remaining page types now have purpose-specific frontend designs.** There are 36 frontend types available for review: 21 customer and 15 administration. No inventoried page remains just a generic coming-soon layout in development.
 
-This counts frontend designs and local review interactions, **not production business readiness**. Authentication, persistent records, live purchasing, payment, delivery rules and approved operating policies remain to be connected or supplied. Protected production routes still deny access; identity fields collect no credentials.
+This counts frontend designs and local review interactions, **not production business readiness**. Authentication, shared database records, live purchasing, payment integration and approved operating policies remain to be connected or supplied. Local admin records now persist in browser storage. Protected production routes still deny access; identity fields collect no credentials.
 
 | Area | Previously developed | Newly transformed | Frontend types for review | Total |
 | --- | ---: | ---: | ---: | ---: |
@@ -17,6 +17,7 @@ This counts frontend designs and local review interactions, **not production bus
 
 - Existing: established frontend experience retained.
 - Transformed: purpose-specific frontend implemented. Each row distinguishes public behavior, local fictional workflows and inactive identity designs.
+- Dynamic preview: connected, validated local workflows with versioned browser persistence; production integration remains separate.
 - Dynamic records, create/edit paths, popups, screen sizes and UI states do not increase the count. Header search replaces C04. The cart drawer belongs to C09. The 404 and separate review artifacts are outside the inventory.
 
 ## Customer pages
@@ -47,25 +48,25 @@ This counts frontend designs and local review interactions, **not production bus
 
 ## Administration
 
-Administrative workflows are development-only fictional previews. Production staff access remains denied until verified identity and permission enforcement are connected.
+Administrative workflows are fictional previews available locally and through the explicit Vercel operations-preview build. A02–A15 now share validated operations, browser persistence, activity records, search/sort/pagination and selected-record actions where applicable. Staff authentication and private backend access remain unconnected; the published preview edits only browser-local sample records. See [the implementation plan](ADMIN_DYNAMIC_PLAN.md) and [verification](reviews/admin-dynamic-2026-10-11/VERIFICATION.md).
 
 | ID | Page type | Review route | Frontend | Implemented scope / launch dependency |
 | --- | --- | --- | --- | --- |
 | A01 | Admin sign in | /admin/sign-in | Transformed | Branded staff entry with inactive fields. Authentication, membership, MFA and permissions remain. |
-| A02 | Overview | /admin | Transformed | Sample metrics, preparation queue and inventory/enquiry shortcuts. Real authorised operational data remain. |
-| A03 | Orders | /admin/orders | Transformed | Search/status filtering, no-match recovery and detail links. Real order querying remains. |
-| A04 | Order detail | /admin/orders/SAMPLE-1042 | Transformed | Sample line snapshots, payment/address context, timeline and local status updates. Trusted fulfilment, exceptions and refunds remain. |
-| A05 | Products | /admin/products | Transformed | Search/status product table and create/edit navigation. Real catalogue management remains. |
-| A06 | Product editor | /admin/products/button-mushrooms/edit | Transformed | Local create/edit draft, description, category, pack, price, stock and state. Also /admin/products/new. Real media upload, publishing and persistence remain. |
-| A07 | Categories | /admin/categories | Transformed | Filtered records and centered add/edit/state forms. Real ordering/publication rules remain. |
-| A08 | Inventory | /admin/inventory | Transformed | Reasoned local stock adjustment with before/after notebook. Transactional stock, reservations and durable audit records remain. |
-| A09 | Customers | /admin/customers | Transformed | Search/status customer table and detail navigation. Authorised customer records remain. |
-| A10 | Customer detail | /admin/customers/sample-customer | Transformed | Contact summary, local modal editing and linked order context. Permission-checked records/persistence remain. |
-| A11 | Restaurant enquiries and accounts | /admin/restaurant-supply | Transformed | Kitchen requirements, local review/edit and conversation stages. Real enquiry capture, business-account terms and ongoing arrangements remain. |
-| A12 | Promotions | /admin/promotions | Transformed | Local name, sample code, discount and state editors. Actual eligibility, dates, limits and pricing rules remain. |
-| A13 | Delivery settings | /admin/delivery | Transformed | Local zone/PIN/illustrative-fee editors. Real coverage matching, slot capacity, cut-offs and rules remain. |
-| A14 | Reports | /admin/reports | Transformed | Sample metrics, explicitly fictional chart, inventory summary and CSV download. Real permission-checked reporting remains. |
-| A15 | General settings | /admin/settings | Transformed | Local business contact and store-state form. Real configuration, staff access and integration settings remain. |
+| A02 | Overview | /admin | Dynamic preview | Actionable queue metrics, period reporting, ledger chart, low-stock alerts, kitchen follow-ups and activity. Real authorised data remain. |
+| A03 | Orders | /admin/orders | Dynamic preview | Search/status/sort/pagination with reloadable URL state; selected preparing orders can advance to Ready. Authorised server querying remains. |
+| A04 | Order detail | /admin/orders/SAMPLE-1042 | Dynamic preview | Saved next-stage fulfilment, cancellation reason, internal notes/history, immutable purchased packs/prices and linked sample tracking. Real exceptions/refunds remain. |
+| A05 | Products | /admin/products | Dynamic preview | Category/status/search/sort/pagination and selected publishing/draft/archive actions. Preview catalogue remains separate from public catalogue. |
+| A06 | Product editor | /admin/products/button-mushrooms/edit | Dynamic preview | Saved create/edit with approved photographs and live preview, description, category, pack, decimal price, stock and state; changed stock requires a reason. Also /admin/products/new. Real media uploads/publication remain. |
+| A07 | Categories | /admin/categories | Dynamic preview | Saved centered category editors, unique names, display positions and linked product counts. Public ordering/publication remain separate. |
+| A08 | Inventory | /admin/inventory | Dynamic preview | Reasoned saved stock adjustments, threshold summaries, sortable stock table and before/after movement notebook. Server transactions/reservations remain. |
+| A09 | Customers | /admin/customers | Dynamic preview | Saved customer creation/editing, searchable/paged records and selected active/inactive changes. Authorised customer storage remains. |
+| A10 | Customer detail | /admin/customers/sample-customer | Dynamic preview | Contact/service notes, linked customer orders and values, saved modal editing. Permission-checked records remain. |
+| A11 | Restaurant enquiries and accounts | /admin/restaurant-supply | Dynamic preview | Saved kitchen creation/editing, follow-up dates, conversation notes/stages and overview summaries. Real enquiry capture and business terms remain. |
+| A12 | Promotions | /admin/promotions | Dynamic preview | Saved unique codes, dates, validated percentages/minimum values and state actions. Preview offers do not alter storefront pricing; real eligibility/usage remain. |
+| A13 | Delivery settings | /admin/delivery | Dynamic preview | Saved zone/PIN uniqueness, fee/minimum/cut-off validation and state actions. Actual coverage/capacity remain; delivery stays closed. |
+| A14 | Reports | /admin/reports | Dynamic preview | Period/stage-filtered ledger, consistent totals/averages/daily bars/item quantities and exact search-filtered CSV with formula protection. Real permission-checked reporting remains. |
+| A15 | General settings | /admin/settings | Dynamic preview | Saved business contacts, stock-alert threshold and activity preference; confirmed preview reset with storage recovery warnings. Staff access and real integrations remain. |
 
 ## Remaining launch work
 
@@ -80,3 +81,5 @@ The frontend transformation does not reduce these operating dependencies to a ze
 ## Verification and history
 
 The earlier audit found 4 developed, 8 partial and 24 foundation types. This work transforms the frontend designs of those 32 remaining types. All 36 types plus product-create mode were checked at 1440px and 320px. See the review document for workflow and production-boundary verification.
+
+The 11 October admin upgrade adds dynamic preview functionality to A02–A15 without increasing the page count. Domain, persistence, browser workflows, responsive layouts and protected production/Pages boundaries are verified in the linked admin review.

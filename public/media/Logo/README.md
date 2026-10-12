@@ -48,3 +48,7 @@ Use case: background-extraction. Edit target: supplied standalone WeGroween mush
 ## Verification
 
 The production build, 5 unit tests and 9 browser tests passed. The logo images loaded at 1440px, 390px and 320px; no horizontal overflow or runtime errors were observed. All 37 routes passed the existing mobile checks. Header/footer screenshots and the browser mark at 16px/32px on light/dark backgrounds were reviewed in `docs/verification/logo-*.png`. Original source hashes were verified after renaming.
+
+## WebP delivery — 12 October 2026
+
+The website now uses wegroween-header.webp (2111 × 460), wegroween-footer.webp (2018 × 514) and wegroween-favicon.webp (256 × 256). Header/footer pixels are cropped to the exact previously approved SVG viewports and encoded losslessly with transparency; the favicon keeps its approved paper background. Encoding is checked against the decoded pixels. The PNG sources remain untouched. scripts/prepare-modern-media.py recreates the copies and source hash manifest; prepare-logo-assets.js validates them and retains old SVG URLs with WebP payloads for cached documents.

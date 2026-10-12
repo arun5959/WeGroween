@@ -4,9 +4,10 @@ import { readFileSync } from 'node:fs';
 import { vercelBuildEnvironment } from '../../scripts/build-vercel.js';
 
 test('Vercel explicitly publishes the root-mounted fictional account even with conflicting host variables', () => {
-  const environment = { VITE_ACCOUNT_PREVIEW: 'false', WEGROWEEN_BASE_PATH: '/WeGroween/', VERCEL_GIT_COMMIT_SHA: 'sample-commit' };
+  const environment = { VITE_ACCOUNT_PREVIEW: 'false', VITE_OPERATIONS_PREVIEW: 'false', WEGROWEEN_BASE_PATH: '/WeGroween/', VERCEL_GIT_COMMIT_SHA: 'sample-commit' };
   const target = vercelBuildEnvironment(environment);
   assert.equal(target.VITE_ACCOUNT_PREVIEW, 'true');
+  assert.equal(target.VITE_OPERATIONS_PREVIEW, 'true');
   assert.equal(target.WEGROWEEN_BASE_PATH, '/');
   assert.equal(target.VERCEL_GIT_COMMIT_SHA, 'sample-commit');
   assert.equal(environment.VITE_ACCOUNT_PREVIEW, 'false');

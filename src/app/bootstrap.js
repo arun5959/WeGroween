@@ -8,6 +8,8 @@ import { setupContactForm } from './contact-form.js';
 import { setupRestaurantSupplyForm } from './restaurant-supply-form.js';
 import { setupBrandedSelects } from './branded-select.js';
 import { setupAccountPreview } from './account-preview.js';
+import { initializeOperationsPreview } from './operations-store.js';
+import { setupOperationsInteractions } from './operations-interactions.js';
 import { setupWorkspaceInteractions } from './workspace-interactions.js';
 import { setupShopFilters } from './shop-filters.js';
 import { setupHeaderSearch } from './header-search.js';
@@ -27,6 +29,8 @@ let interfaceMotion;
 let headerSearch;
 let shopFilters;
 if (import.meta.hot) import.meta.hot.dispose(() => { navigationRequest++; cancelPendingMenu(); pageTransitions.dispose(); disposePage(); cartDrawer.dispose(); cartFeedback.dispose(); scrollbarVisibility.dispose(); scroller.dispose(); });
+
+initializeOperationsPreview();
 
 const root = document.getElementById('app');
 const announcement = document.getElementById('route-announcement');
@@ -78,6 +82,7 @@ function render({ focus = false, slide = false, restoreY = null } = {}) {
   // Shop owns its selects because filter changes replace only the results.
   const disposeSelects = setupBrandedSelects(root, { selector: 'select:not([multiple]):not([data-shop-sort]):not([data-shop-category-picker])' });
   const disposeAccount = setupAccountPreview(root, interfaceMotion, scroller);
+  const disposeOperations = setupOperationsInteractions(root, { scroller, refresh: () => { render(); interfaceMotion.reveal(root.querySelector('.admin-operations-page')); }, navigate });
   const disposeWorkspace = setupWorkspaceInteractions(root, { scroller, refresh: () => { render(); interfaceMotion.reveal(root.querySelector('[data-workspace]')); }, navigate });
   headerSearch = setupHeaderSearch(root, { navigate, beforeOpen: () => {
     cancelPendingMenu();
@@ -97,7 +102,7 @@ function render({ focus = false, slide = false, restoreY = null } = {}) {
   } });
   const thisSearch = headerSearch;
   const thisShopFilters = shopFilters;
-  disposePage = () => { thisSearch.dispose(); thisShopFilters?.dispose(); disposeStory(); disposeContact(); disposeSupply(); disposeSelects(); disposeAccount(); disposeWorkspace(); interfaceMotion.dispose(); };
+  disposePage = () => { thisSearch.dispose(); thisShopFilters?.dispose(); disposeStory(); disposeContact(); disposeSupply(); disposeSelects(); disposeAccount(); disposeOperations(); disposeWorkspace(); interfaceMotion.dispose(); };
   cartDrawer.refresh();
   cartFeedback.refresh();
   if (focus) {

@@ -1,3 +1,4 @@
+import { publishedOperationsPreview } from '../src/app/operations-review-config.js';
 import { createServer } from 'node:http';
 import { readFile, stat } from 'node:fs/promises';
 import { resolve, extname, sep } from 'node:path';
@@ -13,7 +14,10 @@ createServer(async (request, response) => {
     if (file !== root && !file.startsWith(root + sep)) { response.writeHead(404); return response.end(); }
     let status = 200;
     try { if ((await stat(file)).isDirectory()) file = resolve(file, 'index.html'); await stat(file); }
-    catch { status = 404; file = resolve(root, '404.html'); }
+    catch {
+      if (publishedOperationsPreview && /^\/admin(?:\/|$)/.test(appPath(pathname))) file = resolve(root, 'app-shell.html');
+      else { status = 404; file = resolve(root, '404.html'); }
+    }
     const body = await readFile(file);
     response.writeHead(status, { 'Content-Type': types[extname(file)] ?? 'application/octet-stream' });
     response.end(request.method === 'HEAD' ? undefined : body);

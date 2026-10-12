@@ -1,0 +1,29 @@
+[
+  {
+    "source": "wegroween-header-logo.png",
+    "output": "wegroween-header.webp",
+    "width": 2111,
+    "height": 460,
+    "originalBytes": 381419,
+    "bytes": 241838,
+    "sourceSha256": "0df61297ee1a09d2fc4ed9eec7aa0450509eafcc5c818c59c82f74f3f45daa5e"
+  },
+  {
+    "source": "wegroween-footer-logo.png",
+    "output": "wegroween-footer.webp",
+    "width": 2018,
+    "height": 514,
+    "originalBytes": 376129,
+    "bytes": 241612,
+    "sourceSha256": "e8e6e45f6fbb86181a264b2ea84e72359c384663e35cdbf851de7abdfc6a9b15"
+  },
+  {
+    "source": "wegroween-brand-mark.png",
+    "output": "wegroween-favicon.webp",
+    "width": 256,
+    "height": 256,
+    "originalBytes": 555972,
+    "bytes": 22172,
+    "sourceSha256": "b23c6bbae1bac5ab35e09748fcbd82cd5d42867e23a2e420492365833d76a177"
+  }
+]

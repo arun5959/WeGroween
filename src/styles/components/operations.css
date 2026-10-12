@@ -1,0 +1,102 @@
+/* The operations desk follows Soil & Saffron with a calmer working density. */
+.operations-shell .admin-sidebar { background:var(--color-surface); }
+.operations-shell .side-navigation a { border-radius:var(--radius-control);transition:background-color var(--motion-micro),color var(--motion-micro); }
+.operations-shell .side-navigation a:hover { background:var(--color-background);color:var(--color-brand-secondary); }
+.operations-shell .side-navigation a[aria-current="page"] { background:color-mix(in srgb,var(--color-brand-secondary) 9%,var(--color-background));color:var(--color-brand-primary); }
+.admin-nav-count { margin-left:auto;display:grid;place-items:center;min-width:22px;height:22px;padding:0 6px;border-radius:6px;background:var(--color-background);font-size:11px;color:var(--color-brand-secondary);font-variant-numeric:tabular-nums; }
+.operations-shell .admin-topbar { display:flex;align-items:center;gap:20px;flex-wrap:wrap;min-height:88px;background:var(--color-background);border-bottom:1px solid var(--color-border); }
+.admin-context { display:grid;gap:6px;flex:1; }
+.admin-context .eyebrow { font-size:10px; }
+.admin-local-indicator { font-size:11px;color:var(--color-text-secondary); }
+.admin-local-indicator::before { content:'';display:inline-block;width:6px;height:6px;margin-right:7px;border-radius:50%;background:var(--color-brand-secondary); }
+.admin-refresh { padding:8px 12px;min-height:44px;border:0;background:transparent;color:var(--color-text-secondary);font-size:12px;cursor:pointer;text-underline-offset:4px; }
+.admin-refresh:hover { text-decoration:underline;color:var(--color-brand-primary); }
+.admin-operations-page .work-header { margin-bottom:24px; }
+.admin-operations-page .work-header h1 { font-size:clamp(30px,3vw,42px); }
+.admin-operations-page .work-columns,.admin-dashboard-grid { margin-block:24px; }
+.admin-metrics { display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-bottom:24px; }
+.admin-metrics>a { position:relative;display:flex;flex-direction:column;gap:12px;padding:20px;border:1px solid var(--color-border);border-radius:var(--radius-card);background:var(--color-surface);text-decoration:none;min-width:0;transition:border-color var(--motion-micro),box-shadow var(--motion-standard); }
+.admin-metrics>a:hover { border-color:var(--color-border-strong);box-shadow:0 3px 12px color-mix(in srgb,var(--color-brand-primary) 5%,transparent); }
+.admin-metric-label { display:flex;align-items:center;gap:8px;font-size:12px;color:var(--color-text-secondary); }
+.admin-metric-label .wg-icon { width:18px;height:18px;color:var(--color-brand-secondary);flex-shrink:0; }
+.admin-metrics strong { font:500 32px/1.15 var(--typography-family-display); }
+.admin-metrics small { font-size:11px;line-height:1.5;color:var(--color-text-secondary);max-width:90%; }
+.admin-metric-arrow { position:absolute;right:14px;bottom:14px;color:var(--color-border-strong); }
+.admin-metric-arrow .wg-icon { width:16px;height:16px; }
+.admin-dashboard-grid { display:grid;grid-template-columns:1fr 1fr;gap:24px; }
+.admin-dashboard-grid>.work-panel+.work-panel { margin-top:0; }
+.admin-period-controls { display:flex;align-items:end;gap:20px;margin-bottom:24px;flex-wrap:wrap; }
+.admin-period-controls .field { width:230px;min-width:0;margin:0;gap:6px; }
+.admin-period-controls label { font-size:12px;font-weight:400; }
+.admin-period-controls .wg-select-trigger { height:44px;min-height:44px;font-size:13px;background:var(--color-background); }
+.admin-period-controls p { max-width:35ch;line-height:1.5; }
+.admin-attention { display:grid;grid-template-columns:1fr 1fr;gap:20px; }
+.admin-attention>div+div { border-left:1px solid var(--color-border);padding-left:20px; }
+.admin-attention-number { display:block;font:500 38px/1.15 var(--typography-family-display);color:var(--color-brand-secondary);margin-bottom:8px; }
+.admin-attention p { font-size:12px;line-height:1.5;margin-bottom:10px; }
+.admin-attention .account-text-action { font-size:12px;min-height:44px; }
+.admin-order-chart { display:flex;align-items:end;gap:18px;min-height:160px;height:160px;margin:18px 0;border-bottom:1px solid var(--color-border);padding-top:12px;overflow-x:auto; }
+.admin-chart-day { flex:1;min-width:44px;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:end;gap:8px; }
+.admin-chart-day>span { position:relative;min-height:20px;height:calc(var(--bar)*.8);width:100%;max-width:72px;background:color-mix(in srgb,var(--color-brand-secondary) 68%,var(--color-background));border-radius:5px 5px 0 0; }
+.admin-chart-day strong { position:absolute;top:8px;width:100%;text-align:center;color:var(--color-text-inverse);font:500 12px/1 var(--typography-family-body); }
+.admin-chart-day small { font-size:11px;white-space:nowrap; }
+.admin-activity,.admin-follow-ups,.admin-low-stock { list-style:none;padding:0;margin:0; }
+.admin-activity li { display:flex;align-items:start;justify-content:space-between;gap:16px;padding:14px 0;border-bottom:1px solid var(--color-border);font-size:13px;line-height:1.6; }
+.admin-activity li:last-child { border:0; }
+.admin-activity time { font-size:11px;color:var(--color-text-secondary);flex-shrink:0; }
+.admin-activity span { min-width:0;overflow-wrap:anywhere; }
+.admin-activity p { margin-top:6px;white-space:pre-wrap; }
+.admin-follow-ups li { display:flex;align-items:start;justify-content:space-between;gap:12px;padding:14px 0;border-bottom:1px solid var(--color-border); }
+.admin-follow-ups strong { font-size:14px;font-weight:500; }
+.admin-follow-ups p { font-size:12px;margin-top:4px; }
+.admin-follow-ups small { font-size:11px;color:var(--color-brand-secondary); }
+.admin-low-stock { margin-top:18px; }
+.admin-low-stock li { display:flex;justify-content:space-between;gap:12px;padding:8px 0;font-size:12px; }
+.admin-low-stock strong { color:var(--color-brand-secondary);white-space:nowrap; }
+.admin-empty { padding-block:12px;font-size:13px;color:var(--color-text-secondary); }
+.admin-operations-page .work-table td .account-text-action { min-height:44px;display:inline-flex;align-items:center;gap:8px; }
+.admin-operations-page .work-toolbar { gap:12px;padding:16px; }
+.admin-operations-page .work-toolbar>.field { min-width:145px;flex:0 1 180px; }
+.admin-operations-page .work-toolbar>.field:first-child { flex:1 1 200px; }
+.admin-operations-page .work-toolbar label { font-weight:400;font-size:12px; }
+.admin-operations-page .work-toolbar .wg-select-trigger,.admin-operations-page .work-toolbar input { font-size:13px;height:44px; }
+.admin-operations-page .work-table td,.admin-operations-page .work-table th { padding:10px 16px; }
+.admin-operations-page .work-table th { padding-block:14px; }
+.admin-operations-page .work-table td:first-child:has(input) { width:44px;padding-inline:10px; }
+.admin-row-select { display:flex;align-items:center;justify-content:center;min-width:44px;min-height:44px;cursor:pointer; }
+.admin-row-select input { width:16px;height:16px;accent-color:var(--color-brand-secondary);cursor:pointer; }
+.admin-product-cell { display:flex;align-items:center;gap:12px; }
+.admin-product-cell img { width:40px;height:40px;border-radius:5px;object-fit:cover; }
+.admin-product-cell small { display:block;font-size:11px;font-weight:400;color:var(--color-text-secondary);margin-top:5px; }
+.admin-wrapped { display:block;min-width:180px;max-width:32ch;white-space:normal;line-height:1.5; }
+.admin-bulk { display:flex;align-items:center;gap:12px;flex-wrap:wrap;padding:12px 16px;border-top:1px solid var(--color-border);background:color-mix(in srgb,var(--color-brand-secondary) 5%,var(--color-surface));font-size:12px; }
+.admin-bulk[hidden] { display:none; }
+.admin-table-footer { display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;padding:12px 16px;border-top:1px solid var(--color-border); }
+.admin-pagination { display:flex;align-items:center;gap:8px;font-size:11px; }
+.admin-pagination>label { color:var(--color-text-secondary); }
+.admin-pagination .wg-select-trigger { width:68px;height:44px;min-height:44px;padding-inline:10px;font-size:12px; }
+.admin-pagination .wg-select-trigger .wg-icon { width:14px; }
+.admin-icon-button { display:grid;place-items:center;width:44px;height:44px;border:1px solid var(--color-border);border-radius:var(--radius-control);color:var(--color-brand-primary);background:var(--color-background);cursor:pointer;transition:border-color var(--motion-micro); }
+.admin-icon-button .wg-icon { width:16px;height:16px; }
+.admin-icon-button:not(:disabled):hover { border-color:var(--color-border-strong); }
+.admin-icon-button:disabled { opacity:.4;cursor:default; }
+.admin-product-preview { display:grid;gap:14px; }
+.admin-product-preview>img { width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--radius-control); }
+.admin-product-preview>h2 { overflow-wrap:anywhere; }
+.admin-product-preview>p { white-space:pre-wrap;overflow-wrap:anywhere; }
+.admin-form-error { color:var(--color-brand-secondary);font-size:12px!important; }
+.admin-form-error:empty { display:none; }
+@media(max-width:1150px) { .admin-metrics { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+@media(max-width:900px) { .admin-dashboard-grid { grid-template-columns:1fr; }.admin-activity li { flex-wrap:wrap; }.admin-activity time { flex-basis:100%; } }
+@media(max-width:720px) {
+ .operations-shell .admin-topbar { gap:8px;padding:14px 16px; }.admin-context { flex-basis:100%; }
+ .admin-refresh { padding-left:0; }.operations-shell .admin-topbar .text-link { margin-left:auto;font-size:12px; }
+ .admin-nav-count { display:none; }.admin-metrics { gap:10px; }.admin-metrics>a { padding:16px; }.admin-metrics strong { font-size:29px; }.admin-metric-label { font-size:11px; }
+ .admin-dashboard-grid,.admin-operations-page .work-columns { gap:16px;margin-block:20px; }
+ .admin-period-controls { gap:12px; }.admin-period-controls>.field { width:100%; }.admin-period-controls p { max-width:none; }
+ .admin-operations-page .work-header { flex-direction:column;gap:16px; }.admin-operations-page .work-header-actions { width:100%; }.admin-operations-page .work-header-actions>.button { width:100%; }
+ .admin-operations-page .work-toolbar>.field { flex:1 1 100%; }.admin-operations-page .work-toolbar>.button { width:100%; }
+ .admin-table-footer { padding:12px; }.admin-pagination { width:100%;justify-content:space-between; }.admin-table-footer>.work-small { width:100%; }
+ .admin-operations-page .work-panel { padding:20px; }.admin-metric-arrow { display:none; }.admin-metrics small { max-width:none; }
+}
+@media(prefers-reduced-motion:reduce) { .operations-shell .side-navigation a,.admin-metrics>a,.admin-icon-button { transition:none; } }

@@ -8,7 +8,7 @@ import { siteUrl, mountHtml } from './hosting.js';
 
 export function setupWorkspaceInteractions(root, { scroller, refresh, navigate }) {
   const workspace = root.querySelector('[data-workspace]');
-  if (!workspace) return () => {};
+  if (!workspace || workspace.dataset.workspaceKind === 'operations') return () => {};
   const controller = new AbortController(), events = { signal: controller.signal };
   let modal, modalEditor, modalSelects = () => {}, modalAction = '', modalId = '', modalTriggerAction = '';
   const notify = text => { const node = root.querySelector('.work-status'); if (node) node.textContent = text; };

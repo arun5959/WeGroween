@@ -6,6 +6,7 @@ import { identity } from '../layouts/identity.js';
 import { account } from '../layouts/account.js';
 import { accountPreview } from '../pages/account-preview.js';
 import { sampleAccount } from '../content/sample-account.js';
+import { publishedOperationsPreview } from './operations-review-config.js';
 import { publishedAccountPreview } from './account-review-config.js';
 import { admin } from '../layouts/admin.js';
 import { home, shop, category, product } from '../pages/storefront.js';
@@ -25,7 +26,7 @@ import { unavailablePage, cart, identityPage, accessRequired, notFound, foundati
 const layouts = { storefront, checkout, identity, account, admin };
 const defaultDescription = 'Explore the WeGroween catalogue.';
 
-export function renderPage(path, { development = false, accountReview = publishedAccountPreview, search = '' } = {}) {
+export function renderPage(path, { development = false, accountReview = publishedAccountPreview, operationsReview = publishedOperationsPreview, search = '' } = {}) {
   if (['/search', '/shop/category/combos'].includes(path.replace(/\/$/, ''))) path = '/shop';
   // Synthetic review workspace only. This never changes the account access decision.
   if (development && path === '/__account-preview') {
@@ -37,10 +38,10 @@ export function renderPage(path, { development = false, accountReview = publishe
   }
   if (!matched) return errorPage(path);
   const { page, params } = matched;
-  if (development && page.shell === 'admin') {
-    const content = operationsPage(page, params, path);
+  if ((development || operationsReview) && page.shell === 'admin') {
+    const content = operationsPage(page, params, path, search);
     if (content === null) return errorPage(path);
-    return { html: mountHtml(admin(content, { path, page, development })), title: page.name, description: 'Fictional operations workspace for design review.', status: 200, shell: page.shell, pageId: page.id };
+    return { html: mountHtml(admin(content, { path, page, preview: true })), title: page.name, description: 'Fictional operations workspace for design review.', status: 200, shell: page.shell, pageId: page.id };
   }
   if (development && ['C10', 'C11'].includes(page.id)) {
     return { html: mountHtml(checkout(page.id === 'C10' ? checkoutPage() : confirmationPage(params), { path, page, development })), title: page.name, description: 'Sample purchasing flow. No real order or payment.', status: 200, shell: page.shell, pageId: page.id };

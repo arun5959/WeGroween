@@ -1,7 +1,7 @@
 import { mediaAssets } from './media.js';
 
 export const categories = Object.freeze([
-  { slug: 'mushrooms', name: 'Mushrooms', eyebrow: 'Distinct varieties', actionLabel: 'Explore mushrooms', icon: 'mushroom', image: mediaAssets.mushrooms.src, imageAlt: mediaAssets.mushrooms.alt, description: 'Explore the mushroom varieties in the WeGroween catalogue.' },
+  { slug: 'mushrooms', name: 'Mushrooms', eyebrow: 'Distinct varieties', actionLabel: 'Explore mushrooms', icon: 'mushroom', image: mediaAssets.mushrooms.src, imageSrcSet: mediaAssets.mushrooms.srcSet, imageAlt: mediaAssets.mushrooms.alt, description: 'Explore the mushroom varieties in the WeGroween catalogue.' },
   { slug: 'microgreens', name: 'Microgreens', eyebrow: 'Small leaves. Big character.', actionLabel: 'Explore microgreens', icon: 'microgreens', image: mediaAssets.microgreens.src, imageSrcSet: mediaAssets.microgreens.srcSet, imageAlt: mediaAssets.microgreens.alt, description: 'Discover radish, sunflower, mustard, broccoli and mixed microgreens.' },
   { slug: 'organic-harvest', name: 'Organic Harvest', eyebrow: 'Rooted in the everyday', actionLabel: 'Explore organic harvest', icon: 'produce', description: 'A new corner of the catalogue for everyday produce. The range is taking shape.', emptyDescription: 'We’re preparing this part of the catalogue. Products and growing details will appear here when the range is ready.' },
   { slug: 'exotics', name: 'Exotics', eyebrow: 'Beyond the familiar', actionLabel: 'Explore exotics', icon: 'exotic', description: 'A little curiosity for your kitchen. Our speciality range is taking shape.', emptyDescription: 'Something different is taking shape. Speciality varieties and their details will appear here when the range is ready.' },

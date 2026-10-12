@@ -42,9 +42,9 @@ Known fictional records make the registry links usable. Unknown product, custome
 
 ## Scope still required for launch
 
-Review records stay in tab memory and reset on reload. There is no database write, actual stock change, payment or real order placement. Illustrative packs/prices are not public offers. Production account, checkout and administrative routes continue to deny access. The earlier not-signed-in state remains in the guarded renderer; previewing a local account never grants actual access.
+Customer profile/address and basket preview edits stay in tab memory. The subsequent [dynamic admin upgrade](ADMIN_DYNAMIC_PLAN.md) persists operations records in browser storage, including after reload. There is no database write, actual stock change, payment or real order placement. Illustrative packs/prices are not public offers. The default production account, checkout and administrative routes deny access. The Pages workflow opts into the fictional account design preview; staff access and real purchasing remain denied. The earlier not-signed-in state remains in the guarded renderer; previewing a local account never grants actual access.
 
-Authentication/verification/recovery responses, authorised persistent records, image upload, stock reservations, delivery validation, trusted payments and durable order operations remain service work. Richer operating modes also remain: business-account arrangements, promotion eligibility/dates/limits, delivery slots/cut-offs and refunds/exceptions. Final policies require business-approved terms matched to actual services.
+Authentication/verification/recovery responses, authorised persistent records, image upload, stock reservations, delivery validation, trusted payments and durable order operations remain service work. Richer operating modes also remain: business-account arrangements, real promotion eligibility/usage limits, delivery slot capacity and refunds/exceptions. The dynamic admin preview now includes saved dates, minimum values, cut-offs and domain validation. Final policies require business-approved terms matched to actual services.
 
 See [PAGE_DEVELOPMENT_STATUS.md](PAGE_DEVELOPMENT_STATUS.md) for all 36 types and their dependencies.
 
@@ -55,3 +55,5 @@ The development suite passed 33 checks: all 36 types plus product-create mode at
 Final validation: 12 unit checks, 33 development browser checks, 92 production browser checks and 3 static-hosting checks passed (140 checks total). The final build validates 36 page types / 37 route patterns and generates the public/static entries. A final live-server check confirmed port 5173 was listening and Shop returned HTTP 200. Screenshots were reviewed for product detail, identity, operations, checkout and mobile editor balance.
 
 Representative screenshots: [reviews/page-transformation-2026-10-11](reviews/page-transformation-2026-10-11).
+
+These verification counts describe the earlier page transformation. The subsequent admin changes and their current checks are recorded in [the 11 October dynamic admin verification](reviews/admin-dynamic-2026-10-11/VERIFICATION.md).

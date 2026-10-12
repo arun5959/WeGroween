@@ -1,0 +1,487 @@
+{
+  "date": "2026-10-11",
+  "baseURL": "http://127.0.0.1:5173",
+  "errors": [],
+  "observations": [
+    {
+      "path": "/admin",
+      "width": 1440,
+      "status": "200",
+      "overflow": false,
+      "heading": "The day, at a glance.",
+      "rows": 3
+    },
+    {
+      "path": "/admin/orders",
+      "width": 1440,
+      "status": "200",
+      "overflow": false,
+      "heading": "From harvest to handover.",
+      "rows": 6
+    },
+    {
+      "path": "/admin/orders/SAMPLE-1050",
+      "width": 1440,
+      "status": "200",
+      "overflow": false,
+      "heading": "SAMPLE-1050",
+      "rows": 0
+    },
+    {
+      "path": "/admin/products",
+      "width": 1440,
+      "status": "200",
+      "overflow": false,
+      "heading": "Make room for a harvest.",
+      "rows": 6
+    },
+    {
+      "path": "/admin/products/new",
+      "width": 1440,
+      "status": "200",
+      "overflow": false,
+      "heading": "Introduce a new harvest.",
+      "rows": 0
+    },
+    {
+      "path": "/admin/products/button-mushrooms/edit",
+      "width": 1440,
+      "status": "200",
+      "overflow": false,
+      "heading": "Button mushrooms",
+      "rows": 0
+    },
+    {
+      "path": "/admin/categories",
+      "width": 1440,
+      "status": "200",
+      "overflow": false,
+      "heading": "A place for every harvest.",
+      "rows": 4
+    },
+    {
+      "path": "/admin/inventory",
+      "width": 1440,
+      "status": "200",
+      "overflow": false,
+      "heading": "Know what is ready.",
+      "rows": 6
+    },
+    {
+      "path": "/admin/customers",
+      "width": 1440,
+      "status": "200",
+      "overflow": false,
+      "heading": "The people at the table.",
+      "rows": 3
+    },
+    {
+      "path": "/admin/customers/sample-customer",
+      "width": 1440,
+      "status": "200",
+      "overflow": false,
+      "heading": "Aarav Sample",
+      "rows": 3
+    },
+    {
+      "path": "/admin/restaurant-supply",
+      "width": 1440,
+      "status": "200",
+      "overflow": false,
+      "heading": "Good conversations grow.",
+      "rows": 3
+    },
+    {
+      "path": "/admin/promotions",
+      "width": 1440,
+      "status": "200",
+      "overflow": false,
+      "heading": "A thoughtful invitation.",
+      "rows": 1
+    },
+    {
+      "path": "/admin/delivery",
+      "width": 1440,
+      "status": "200",
+      "overflow": false,
+      "heading": "Plan the last few miles.",
+      "rows": 1
+    },
+    {
+      "path": "/admin/reports",
+      "width": 1440,
+      "status": "200",
+      "overflow": false,
+      "heading": "See how the harvest moves.",
+      "rows": 6
+    },
+    {
+      "path": "/admin/settings",
+      "width": 1440,
+      "status": "200",
+      "overflow": false,
+      "heading": "Keep the essentials together.",
+      "rows": 0
+    },
+    {
+      "path": "/admin",
+      "width": 768,
+      "status": "200",
+      "overflow": false,
+      "heading": "The day, at a glance.",
+      "rows": 3
+    },
+    {
+      "path": "/admin/orders",
+      "width": 768,
+      "status": "200",
+      "overflow": false,
+      "heading": "From harvest to handover.",
+      "rows": 6
+    },
+    {
+      "path": "/admin/orders/SAMPLE-1050",
+      "width": 768,
+      "status": "200",
+      "overflow": false,
+      "heading": "SAMPLE-1050",
+      "rows": 0
+    },
+    {
+      "path": "/admin/products",
+      "width": 768,
+      "status": "200",
+      "overflow": false,
+      "heading": "Make room for a harvest.",
+      "rows": 6
+    },
+    {
+      "path": "/admin/products/new",
+      "width": 768,
+      "status": "200",
+      "overflow": false,
+      "heading": "Introduce a new harvest.",
+      "rows": 0
+    },
+    {
+      "path": "/admin/products/button-mushrooms/edit",
+      "width": 768,
+      "status": "200",
+      "overflow": false,
+      "heading": "Button mushrooms",
+      "rows": 0
+    },
+    {
+      "path": "/admin/categories",
+      "width": 768,
+      "status": "200",
+      "overflow": false,
+      "heading": "A place for every harvest.",
+      "rows": 4
+    },
+    {
+      "path": "/admin/inventory",
+      "width": 768,
+      "status": "200",
+      "overflow": false,
+      "heading": "Know what is ready.",
+      "rows": 6
+    },
+    {
+      "path": "/admin/customers",
+      "width": 768,
+      "status": "200",
+      "overflow": false,
+      "heading": "The people at the table.",
+      "rows": 3
+    },
+    {
+      "path": "/admin/customers/sample-customer",
+      "width": 768,
+      "status": "200",
+      "overflow": false,
+      "heading": "Aarav Sample",
+      "rows": 3
+    },
+    {
+      "path": "/admin/restaurant-supply",
+      "width": 768,
+      "status": "200",
+      "overflow": false,
+      "heading": "Good conversations grow.",
+      "rows": 3
+    },
+    {
+      "path": "/admin/promotions",
+      "width": 768,
+      "status": "200",
+      "overflow": false,
+      "heading": "A thoughtful invitation.",
+      "rows": 1
+    },
+    {
+      "path": "/admin/delivery",
+      "width": 768,
+      "status": "200",
+      "overflow": false,
+      "heading": "Plan the last few miles.",
+      "rows": 1
+    },
+    {
+      "path": "/admin/reports",
+      "width": 768,
+      "status": "200",
+      "overflow": false,
+      "heading": "See how the harvest moves.",
+      "rows": 6
+    },
+    {
+      "path": "/admin/settings",
+      "width": 768,
+      "status": "200",
+      "overflow": false,
+      "heading": "Keep the essentials together.",
+      "rows": 0
+    },
+    {
+      "path": "/admin",
+      "width": 390,
+      "status": "200",
+      "overflow": false,
+      "heading": "The day, at a glance.",
+      "rows": 3
+    },
+    {
+      "path": "/admin/orders",
+      "width": 390,
+      "status": "200",
+      "overflow": false,
+      "heading": "From harvest to handover.",
+      "rows": 6
+    },
+    {
+      "path": "/admin/orders/SAMPLE-1050",
+      "width": 390,
+      "status": "200",
+      "overflow": false,
+      "heading": "SAMPLE-1050",
+      "rows": 0
+    },
+    {
+      "path": "/admin/products",
+      "width": 390,
+      "status": "200",
+      "overflow": false,
+      "heading": "Make room for a harvest.",
+      "rows": 6
+    },
+    {
+      "path": "/admin/products/new",
+      "width": 390,
+      "status": "200",
+      "overflow": false,
+      "heading": "Introduce a new harvest.",
+      "rows": 0
+    },
+    {
+      "path": "/admin/products/button-mushrooms/edit",
+      "width": 390,
+      "status": "200",
+      "overflow": false,
+      "heading": "Button mushrooms",
+      "rows": 0
+    },
+    {
+      "path": "/admin/categories",
+      "width": 390,
+      "status": "200",
+      "overflow": false,
+      "heading": "A place for every harvest.",
+      "rows": 4
+    },
+    {
+      "path": "/admin/inventory",
+      "width": 390,
+      "status": "200",
+      "overflow": false,
+      "heading": "Know what is ready.",
+      "rows": 6
+    },
+    {
+      "path": "/admin/customers",
+      "width": 390,
+      "status": "200",
+      "overflow": false,
+      "heading": "The people at the table.",
+      "rows": 3
+    },
+    {
+      "path": "/admin/customers/sample-customer",
+      "width": 390,
+      "status": "200",
+      "overflow": false,
+      "heading": "Aarav Sample",
+      "rows": 3
+    },
+    {
+      "path": "/admin/restaurant-supply",
+      "width": 390,
+      "status": "200",
+      "overflow": false,
+      "heading": "Good conversations grow.",
+      "rows": 3
+    },
+    {
+      "path": "/admin/promotions",
+      "width": 390,
+      "status": "200",
+      "overflow": false,
+      "heading": "A thoughtful invitation.",
+      "rows": 1
+    },
+    {
+      "path": "/admin/delivery",
+      "width": 390,
+      "status": "200",
+      "overflow": false,
+      "heading": "Plan the last few miles.",
+      "rows": 1
+    },
+    {
+      "path": "/admin/reports",
+      "width": 390,
+      "status": "200",
+      "overflow": false,
+      "heading": "See how the harvest moves.",
+      "rows": 6
+    },
+    {
+      "path": "/admin/settings",
+      "width": 390,
+      "status": "200",
+      "overflow": false,
+      "heading": "Keep the essentials together.",
+      "rows": 0
+    },
+    {
+      "path": "/admin",
+      "width": 320,
+      "status": "200",
+      "overflow": false,
+      "heading": "The day, at a glance.",
+      "rows": 3
+    },
+    {
+      "path": "/admin/orders",
+      "width": 320,
+      "status": "200",
+      "overflow": false,
+      "heading": "From harvest to handover.",
+      "rows": 6
+    },
+    {
+      "path": "/admin/orders/SAMPLE-1050",
+      "width": 320,
+      "status": "200",
+      "overflow": false,
+      "heading": "SAMPLE-1050",
+      "rows": 0
+    },
+    {
+      "path": "/admin/products",
+      "width": 320,
+      "status": "200",
+      "overflow": false,
+      "heading": "Make room for a harvest.",
+      "rows": 6
+    },
+    {
+      "path": "/admin/products/new",
+      "width": 320,
+      "status": "200",
+      "overflow": false,
+      "heading": "Introduce a new harvest.",
+      "rows": 0
+    },
+    {
+      "path": "/admin/products/button-mushrooms/edit",
+      "width": 320,
+      "status": "200",
+      "overflow": false,
+      "heading": "Button mushrooms",
+      "rows": 0
+    },
+    {
+      "path": "/admin/categories",
+      "width": 320,
+      "status": "200",
+      "overflow": false,
+      "heading": "A place for every harvest.",
+      "rows": 4
+    },
+    {
+      "path": "/admin/inventory",
+      "width": 320,
+      "status": "200",
+      "overflow": false,
+      "heading": "Know what is ready.",
+      "rows": 6
+    },
+    {
+      "path": "/admin/customers",
+      "width": 320,
+      "status": "200",
+      "overflow": false,
+      "heading": "The people at the table.",
+      "rows": 3
+    },
+    {
+      "path": "/admin/customers/sample-customer",
+      "width": 320,
+      "status": "200",
+      "overflow": false,
+      "heading": "Aarav Sample",
+      "rows": 3
+    },
+    {
+      "path": "/admin/restaurant-supply",
+      "width": 320,
+      "status": "200",
+      "overflow": false,
+      "heading": "Good conversations grow.",
+      "rows": 3
+    },
+    {
+      "path": "/admin/promotions",
+      "width": 320,
+      "status": "200",
+      "overflow": false,
+      "heading": "A thoughtful invitation.",
+      "rows": 1
+    },
+    {
+      "path": "/admin/delivery",
+      "width": 320,
+      "status": "200",
+      "overflow": false,
+      "heading": "Plan the last few miles.",
+      "rows": 1
+    },
+    {
+      "path": "/admin/reports",
+      "width": 320,
+      "status": "200",
+      "overflow": false,
+      "heading": "See how the harvest moves.",
+      "rows": 6
+    },
+    {
+      "path": "/admin/settings",
+      "width": 320,
+      "status": "200",
+      "overflow": false,
+      "heading": "Keep the essentials together.",
+      "rows": 0
+    }
+  ]
+}

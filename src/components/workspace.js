@@ -5,7 +5,7 @@ export const tag = value => `<span class="account-tag">${e(value)}</span>`;
 export const action = (label, type, record = '') => `<button class="account-text-action" type="button" data-work-action="${e(type)}" data-record="${e(record)}">${e(label)}</button>`;
 export const demoNote = () => `<p class="work-demo">${icon('information')} Design workspace · Fictional records and illustrative prices. Changes stay in this tab and reset on reload.</p>`;
 export function workHeader(eyebrow, title, description, actions = '') {
-  return `<header class="work-header"><div><p class="eyebrow">${e(eyebrow)}</p><h1>${e(title)}</h1><p>${e(description)}</p></div>${actions ? `<div class="work-header-actions">${actions}</div>` : ''}</header>`;
+  return `<header class="work-header"><div><p class="eyebrow">${e(eyebrow)}</p><h1 tabindex="-1">${e(title)}</h1><p>${e(description)}</p></div>${actions ? `<div class="work-header-actions">${actions}</div>` : ''}</header>`;
 }
 export function panel(title, body, aside = '') {
   return `<section class="work-panel"><div class="work-section-heading"><h2>${e(title)}</h2>${aside}</div>${body}</section>`;
@@ -18,7 +18,7 @@ export function workField(name, label, value = '', options = {}) {
     ? `<select id="${id}" name="${e(name)}" ${disabled}>${options.choices.map(choice => `<option value="${e(choice)}" ${choice === value ? 'selected' : ''}>${e(choice)}</option>`).join('')}</select>`
     : options.type === 'textarea'
       ? `<textarea id="${id}" name="${e(name)}" rows="3" maxlength="1200" data-lenis-prevent ${required} ${disabled}>${e(value)}</textarea>`
-      : `<input id="${id}" name="${e(name)}" type="${e(options.type || 'text')}" value="${e(value)}" ${options.type === 'number' ? `min="${options.min ?? 0}" max="${options.max ?? 1000000}" step="1"` : 'maxlength="160"'} ${required} ${disabled} ${options.autocomplete ? `autocomplete="${e(options.autocomplete)}"` : ''}>`;
+      : `<input id="${id}" name="${e(name)}" type="${e(options.type || 'text')}" value="${e(value)}" ${options.type === 'number' ? `min="${options.min ?? 0}" max="${options.max ?? 1000000}" step="${options.step ?? 1}"` : 'maxlength="160"'} ${required} ${disabled} ${options.autocomplete ? `autocomplete="${e(options.autocomplete)}"` : ''}>`;
   return `<div class="field">${options.type === 'checkbox' ? `<label class="work-check"><input type="checkbox" name="${e(name)}" ${value ? 'checked' : ''} ${disabled}>${e(label)}</label>` : `<label for="${id}">${e(label)}</label>${input}`}${options.hint ? `<p class="muted work-small">${e(options.hint)}</p>` : ''}</div>`;
 }
 export function workForm(key, body, label = 'Save changes') {
