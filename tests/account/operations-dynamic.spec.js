@@ -64,7 +64,7 @@ test('promotion and delivery editors reject invalid rules then save valid record
 test('reports share one period-filtered ledger, chart, arithmetic and exact CSV export',async({page})=>{
  await ready(page,'/admin/reports');await choose(page,'Reporting period','Last 7 days');await expect(page.locator('.work-metrics')).toContainText('₹1,290');await expect(page.locator('[data-work-row]')).toHaveCount(4);await expect(page.locator('.admin-chart-day')).toHaveCount(4);
  await page.getByLabel('Find an order').fill('1050');const downloadPromise=page.waitForEvent('download');await page.getByRole('button',{name:'Export sample CSV'}).click();const download=await downloadPromise;const csv=await fs.readFile(await download.path(),'utf8');expect(csv).toContain('SAMPLE-1050');expect(csv).not.toContain('SAMPLE-1048');
- await page.reload();await expect(page.getByLabel('Find an order')).toHaveValue('1050');await expect(page.locator('.work-metrics')).toContainText('₹1,290');
+ await page.reload();await expect(page.getByLabel('Find an order')).toHaveValue('1050');await expect(page.locator('.work-metrics')).toContainText('₹330');
 });
 
 test('settings persist, update thresholds and preferences, and reset requires an explicit action',async({page})=>{

@@ -28,6 +28,8 @@ Build output is in `dist/`. `npm.cmd run preview` serves it on port 4173. The fi
 
 Open `/admin` on the Vite development server. The operations preview now supports catalogue editing and approved photograph previews, reasoned stock adjustments, fulfilment and order notes, customer history, kitchen follow-ups, promotion/delivery rules, linked reports and filtered CSV export. Tables provide search, status/category filters, sort, pagination and selected-record actions.
 
+Operations records synchronise between tabs on the same origin. Unsaved editors retain their inputs; a conflicting change requires reviewing the latest record before saving. Reports apply their ledger search and stage filters to totals, charts and CSV export.
+
 Operations records are fictional and persist in this browser under `wegroween.operations.preview.v1`. Settings → Reset preview data restores the original records through a confirmation dialog. Basket and customer profile/address previews remain separate. Period reports end at the latest sample order date; cancelled orders are excluded from sample value and item quantities. A storage warning explains when changes can only remain in the current tab.
 
 The Vercel build publishes this editable fictional admin preview with VITE_OPERATIONS_PREVIEW=true. Changes stay in each browser and do not publish the storefront catalogue, send messages, collect payments or enable delivery. Shared database persistence, authenticated permissions and live integrations remain separate work. Standard and GitHub Pages builds retain their protected admin state unless this explicit preview flag is enabled.

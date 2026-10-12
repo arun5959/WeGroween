@@ -2,7 +2,7 @@ import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {createWorkspace} from '../../src/content/development-workspace.js';
 import {applyOperation,bulkOperation,operationsReport,queryRecords,operationsCsv,nextOrderStates} from '../../src/app/operations-model.js';
-import {operationsSnapshot,parseOperationsSnapshot,hydrateOperationsState,operationsStorageKey} from '../../src/app/operations-store.js';
+import {operationsSnapshot,parseOperationsSnapshot,hydrateOperationsState,operationsStorageKey,operationsRecordFingerprint} from '../../src/app/operations-store.js';
 const now='2026-10-11T12:00:00.000Z';
 test('stock movements are reasoned, whole nonnegative quantities and atomic on invalid inputs',()=>{
  const s=createWorkspace(),p=s.products[0],before=structuredClone(s);
@@ -74,4 +74,25 @@ test('published operations renders fictional editors without authorising staff d
  assert.equal(renderPage('/checkout',{operationsReview:true}).status,403);
  assert.equal(renderPage('/account',{operationsReview:true,accountReview:false}).status,403);
  assert.equal(accessDecision({access:'staff'}).allowed,false);
+});
+
+test('full stock reasons round-trip and movement history stays inside the storage limit',()=>{
+ const s=createWorkspace(),reason='a'.repeat(1200);applyOperation(s,'stock',{stock:40,reason},{id:s.products[0].id,now});
+ assert.equal(s.inventoryLog[0].reason,reason);assert.equal(parseOperationsSnapshot(JSON.stringify(operationsSnapshot(s))).inventoryLog[0].reason,reason);
+ s.inventoryLog=Array.from({length:5000},()=>({...s.inventoryLog[0]}));applyOperation(s,'stock',{stock:41,reason:'Another recount'},{id:s.products[0].id,now});assert.equal(s.inventoryLog.length,5000);
+});
+test('report arithmetic uses all matching rows rather than only the visible pagination',()=>{
+ const s=createWorkspace(),report=operationsReport(s,{query:'Meera',tableStatus:'Ready'});assert.equal(report.value,440);assert.equal(report.orders.length,1);assert.equal(report.daily.length,1);assert.equal(report.items[0].quantity,2);
+ assert.equal(operationsReport(s,{status:'Delivered',tableStatus:'Ready'}).value,0);assert.equal(operationsReport(s).orders.length,7);
+});
+test('record fingerprints stay stable after persistence and record capacity is checked before mutation',()=>{
+ const s=createWorkspace(),restored=parseOperationsSnapshot(JSON.stringify(operationsSnapshot(s)));
+ assert.equal(operationsRecordFingerprint(s,'products',s.products[0].id),operationsRecordFingerprint(restored,'products',s.products[0].id));
+ s.customers=Array.from({length:2000},(_,i)=>({id:'customer-'+i,name:'Existing',email:'sample@example.invalid',status:'Active'}));
+ assert.throws(()=>applyOperation(s,'customer',{name:'Overflow',email:'new@example.invalid',status:'Active'}),/2000/);assert.equal(s.customers.length,2000);
+});
+
+test('an unphotographed draft keeps its fingerprint across reloads',()=>{
+ const s=createWorkspace(),created=applyOperation(s,'product',{name:'Draft',description:'',category:'mushrooms',pack:'100 g',price:10,stock:0,imageKey:'',status:'Draft'},{now});
+ const parsed=parseOperationsSnapshot(JSON.stringify(operationsSnapshot(s)));assert.equal(operationsRecordFingerprint(s,'products',created.record.id),operationsRecordFingerprint(parsed,'products',created.record.id));
 });

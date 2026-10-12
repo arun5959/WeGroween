@@ -1,7 +1,7 @@
 import { defineConfig } from '@playwright/test';
 export default defineConfig({
   testDir: './tests/account',
-  testMatch: 'operations-dynamic.spec.js',
+  testMatch: ['operations-dynamic.spec.js','operations-audit.spec.js'],
   outputDir: './test-results/operations-published',
   workers: 1,
   reporter: 'list',

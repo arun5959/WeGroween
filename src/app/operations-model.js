@@ -10,7 +10,7 @@ const lists = {product:'products',category:'categories',customer:'customers',enq
 export class OperationError extends Error { constructor(message,field='') {super(message);this.field=field;} }
 const reject = (message,field) => {throw new OperationError(message,field);};
 const text = (value,max=160) => String(value ?? '').trim().slice(0,max);
-const required = (data,key,label) => { const value=text(data[key],key==='description'||key==='notes'?1200:160);if(!value)reject(`${label} is required.`,key);return value; };
+const required = (data,key,label) => { const value=text(data[key],['description','notes','reason'].includes(key)?1200:160);if(!value)reject(`${label} is required.`,key);return value; };
 const number = (data,key,label,max=1000000,integer=false) => {const n=Number(data[key]);if(text(data[key])===''||!Number.isFinite(n)||n<0||n>max||(integer&&!Number.isInteger(n)))reject(`${label} must be ${integer?'a whole number':'a number'} from 0 to ${max}.`,key);return n;};
 const email = data => {const value=required(data,'email','Email');if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value))reject('Enter a valid email address.','email');return value;};
 function stateValue(collection,data) {if(!operationStates[collection].includes(data.status))reject('Choose a valid state.','status');return data.status;}
@@ -41,7 +41,7 @@ export function applyOperation(state,kind,data,{id='',now=new Date().toISOString
     const stock=number(data,'stock','Stock',1000000,true),reason=required(data,'reason','Adjustment reason');
     if(stock===record.stock)reject('Enter a different stock quantity.','stock');
     const message=`${record.name}: ${record.stock} → ${stock} packs · ${reason}`;
-    state.inventoryLog.unshift({id:crypto.randomUUID(),productId:id,productName:record.name,from:record.stock,to:stock,reason,at:now,message});
+    state.inventoryLog.unshift({id:crypto.randomUUID(),productId:id,productName:record.name,from:record.stock,to:stock,reason,at:now,message});state.inventoryLog=state.inventoryLog.slice(0,5000);
     record.stock=stock;recordActivity(state,message,now);return {record,message};
   }
   if(kind==='settings') {
@@ -50,6 +50,7 @@ export function applyOperation(state,kind,data,{id='',now=new Date().toISOString
     Object.assign(state.settings,record);recordActivity(state,'Workspace preferences updated.',now);return {record:state.settings,message:'Sample settings updated. Saved in this browser.'};
   }
   const collection=lists[kind];if(!collection)reject('Unknown operations action.');
+  if(!id&&state[collection].length>=2000)reject('This preview supports 2000 records per collection.');
   const existing=state[collection].find(r=>r.id===id);if(id&&!existing)reject('This record no longer exists.');
   const record={name:required(data,'name','Name'),status:stateValue(collection,data)};
   if(kind==='product') {
@@ -98,12 +99,13 @@ export function queryRecords(records,{query='',status='All statuses',sort='selec
   const compare={ 'name-asc':(a,b)=>(a.name||a.customer||a.id).localeCompare(b.name||b.customer||b.id),'name-desc':(a,b)=>(b.name||b.customer||b.id).localeCompare(a.name||a.customer||a.id),'value-asc':(a,b)=>value(a)-value(b),'value-desc':(a,b)=>value(b)-value(a),'stock-asc':(a,b)=>a.stock-b.stock,'date-desc':(a,b)=>orderDate(b).localeCompare(orderDate(a)),'date-asc':(a,b)=>orderDate(a).localeCompare(orderDate(b)) }[sort];
   if(compare)rows=[...rows].sort(compare);const pages=Math.max(1,Math.ceil(rows.length/pageSize)),current=Math.max(1,Math.min(pages,Math.floor(Number(page))||1));return {all:rows,visible:rows.slice((current-1)*pageSize,current*pageSize),page:current,pages,count:rows.length};
 }
-export function operationsReport(state,{period='all',status='All statuses'}={}) {
+export function operationsReport(state,{period='all',status='All statuses',query='',tableStatus='All statuses'}={}) {
   if(!['all','7','30'].includes(period))period='all';
   if(!['All statuses',...operationStates.orders].includes(status))status='All statuses';
   const anchor=state.orders.map(orderDate).sort().at(-1)||new Date().toISOString().slice(0,10);
   const from=period==='all'?'':new Date(Date.parse(anchor+'T12:00:00Z')-(Number(period)-1)*86400000).toISOString().slice(0,10);
-  const orders=state.orders.filter(o=>(!from||orderDate(o)>=from)&&(status==='All statuses'||o.status===status));
+  const periodOrders=state.orders.filter(o=>(!from||orderDate(o)>=from)&&(status==='All statuses'||o.status===status));
+  const orders=queryRecords(periodOrders,{query,status:tableStatus}).all;
   const accepted=orders.filter(o=>o.status!=='Cancelled'),value=accepted.reduce((n,o)=>n+o.total,0),daily=new Map(),items=new Map();
   for(const order of orders){const date=orderDate(order),day=daily.get(date)||{date,count:0,value:0};day.count++;if(order.status!=='Cancelled')day.value+=order.total;daily.set(date,day);}
   for(const order of accepted)for(const item of order.items){const current=items.get(item.slug)||{id:item.slug,quantity:0,value:0};current.quantity+=item.quantity;current.value+=(item.amount??0)*item.quantity;items.set(item.slug,current);}

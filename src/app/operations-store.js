@@ -43,7 +43,7 @@ export function parseOperationsSnapshot(raw) {
     if(o.history!==undefined&&(!Array.isArray(o.history)||o.history.some(h=>!string(h.note)||!string(h.at,100)||!Number.isFinite(Date.parse(h.at))||!operationStates.orders.includes(h.to))))throw Error('Invalid order history.');
   }
   if(!Array.isArray(data.activity)||data.activity.length>200||data.activity.some(a=>!string(a.message,500)||!string(a.at,100)||!Number.isFinite(Date.parse(a.at))))throw Error('Invalid activity.');
-  if(!Array.isArray(data.inventoryLog)||data.inventoryLog.length>5000||data.inventoryLog.some(l=>typeof l==='string'?!string(l):!finite(l.from)||!finite(l.to)||!string(l.reason)||!string(l.message)||!Number.isFinite(Date.parse(l.at))))throw Error('Invalid inventory log.');
+  if(!Array.isArray(data.inventoryLog)||data.inventoryLog.length>5000||data.inventoryLog.some(l=>typeof l==='string'?!string(l):!finite(l.from)||!finite(l.to)||!string(l.reason)||!string(l.message,1600)||!Number.isFinite(Date.parse(l.at))))throw Error('Invalid inventory log.');
   const s=data.settings;if(!s||!string(s.name,160)||!string(s.email,160)||!string(s.phone,160)||!['Closed','Preview only'].includes(s.ordering)||!finite(s.lowStockThreshold,1000)||!Number.isInteger(s.lowStockThreshold)||typeof s.digest!=='boolean')throw Error('Invalid settings.');
   return data;
 }
@@ -56,18 +56,44 @@ export function hydrateOperationsState(storage,target=state) {
   try {const raw=storage.getItem(operationsStorageKey);if(raw)restoreOperationsState(target,parseOperationsSnapshot(raw));return {ok:true};}
   catch{return {ok:false,message:'Saved preview records could not be loaded. The original sample workspace is available.'};}
 }
-let storage,storageNotice='';
+let storage,storageNotice='',lastStoredRaw=null;
 export function initializeOperationsPreview() {
   if(!operationsPreviewEnabled||typeof window==='undefined')return;
-  try{storage=window.localStorage;storageNotice=hydrateOperationsState(storage).message||'';}catch{storageNotice='Browser storage is unavailable. Changes will remain in this tab.';}
+  try{storage=window.localStorage;storageNotice=hydrateOperationsState(storage).message||'';lastStoredRaw=storage.getItem(operationsStorageKey);}catch{storageNotice='Browser storage is unavailable. Changes will remain in this tab.';}
 }
 export const operationsStorageNotice=()=>storageNotice;
 export function persistOperationsState() {
   syncAccountOrders(state);
-  try{if(!storage)throw Error();storage.setItem(operationsStorageKey,JSON.stringify(operationsSnapshot(state)));storageNotice='';return true;}
+  try{if(!storage)throw Error();const raw=JSON.stringify(operationsSnapshot(state));storage.setItem(operationsStorageKey,raw);lastStoredRaw=raw;storageNotice='';return true;}
   catch{storageNotice='Browser storage is unavailable or full. This change remains in this tab.';return false;}
 }
 export function resetOperationsPreview() {
   restoreOperationsState(state,operationsSnapshot(createWorkspace()));
-  try{if(!storage)throw Error();storage.removeItem(operationsStorageKey);storageNotice='';return true;}catch{storageNotice='Browser storage is unavailable. The reset applies to this tab; saved records may return after reload.';return false;}
+  try{if(!storage)throw Error();storage.removeItem(operationsStorageKey);lastStoredRaw=null;storageNotice='';return true;}catch{storageNotice='Browser storage is unavailable. The reset applies to this tab; saved records may return after reload.';return false;}
+}
+
+// Serialise browser-local writers and refresh before each mutation. In-flight
+// editors compare their original record with the latest snapshot in the controller.
+export function withOperationsLock(task) {
+  return typeof navigator!=='undefined'&&navigator.locks?.request
+    ? navigator.locks.request(operationsStorageKey,task)
+    : Promise.resolve().then(task);
+}
+export function synchronizeOperationsPreview() {
+  if(!storage)return {changed:false};
+  let raw;
+  try{raw=storage.getItem(operationsStorageKey);}catch{return {changed:false};}
+  if(raw===lastStoredRaw)return {changed:false};
+  try{
+    const snapshot=raw===null?operationsSnapshot(createWorkspace()):parseOperationsSnapshot(raw);
+    restoreOperationsState(state,snapshot);lastStoredRaw=raw;storageNotice='';return {changed:true};
+  }catch{return {changed:false,conflict:true,message:'Saved changes from another tab could not be loaded. Your inputs were kept; refresh or reset the preview before saving.'};}
+}
+
+export function operationsRecordFingerprint(source,collection,id='') {
+  const record=collection==='settings'?source.settings:source[collection]?.find(r=>r.id===id);
+  if(!record)return JSON.stringify(null);
+  const value=pick(record,fields[collection]||Object.keys(record));
+  if(collection==='products')for(const key of ['image','imageAlt','imageSrcSet'])if(!value[key])delete value[key];
+  return JSON.stringify(value);
 }

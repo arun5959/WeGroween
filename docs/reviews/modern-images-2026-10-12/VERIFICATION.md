@@ -18,4 +18,8 @@ Thirty unit checks passed. Five static-host checks passed for the root Vercel ta
 
 ## Publishing verification
 
-Publication and live image/admin checks are completed after pushing the tested release. This record will be updated with the deployed commit and live observations.
+Vercel now serves commit 3cecb96ffd250d953825470811d569a709ae1835 with accountPreview=true and operationsPreview=true. The /admin response contains the actual operations dashboard on first load and no sign-in restriction. WebP URLs return image/webp with RIFF/WEBP file signatures.
+
+All 14 live checks passed: the complete 13 operations workflows and the modern-image sweep across storefront/account/admin pages. This includes stored edits, bulk fulfilment, stock alerts, customer/enquiry/offer/zone records, report exports, confirmation/reset behavior, mobile keyboard/history cleanup and reloads of newly created browser-local product records. No legacy PNG/JPEG/GIF/BMP image requests, missing images or browser runtime errors were found. Detailed results are in live-workflows.json.
+
+The Vercel deployment was initiated by the user after the automatic Git integration did not create a deployment for the pushed commit. GitHub Pages also completed its workflow successfully for this source commit.
