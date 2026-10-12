@@ -37,3 +37,11 @@ The pre-release commit remains in Git history and is tagged `pre-redevelopment-2
 To restore the original site, restore the tagged source as a new commit on `main` (preserving history), push it, and restore the saved GitHub Pages publishing configuration to branch publishing. The pre-release Pages settings are saved alongside the backup when authenticated API access is available. Do not force-push or discard unrelated changes made after this release.
 
 The historical foundation handoff describes its earlier local-only milestone. This document describes the new hosting integration; actual deployment results are recorded separately after publication.
+
+## Vercel account parity — 12 October 2026
+
+Vercel at https://wegroween.vercel.app used the same Git commit as Pages, but its release.json reported accountPreview=false. The Pages workflow supplied VITE_ACCOUNT_PREVIEW=true; Vercel used the normal protected-account build. This was a build-target mismatch, not a missing account redesign or a browser cache issue.
+
+The committed vercel.json selects npm run build:vercel and dist output. The cross-platform build target forces the root hosting path and fictional account preview in both Vite's client bundle and static HTML generation, even if project variables retain the older false value or the Pages subdirectory. It checks the generated account document and release flag before completing. release.json now records VERCEL_GIT_COMMIT_SHA when GITHUB_SHA is absent.
+
+Run npm.cmd run build:vercel locally to reproduce this target. Verify the account overview, addresses, history and known sample-order paths on first load and reload, including centred editors. The standard npm.cmd run build retains its explicit account-preview opt-in. Real customer auth, ordering and staff access remain unavailable. Existing prerendered documents and Vercel filesystem routing preserve the correct first paint.

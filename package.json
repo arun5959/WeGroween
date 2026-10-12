@@ -10,6 +10,7 @@
     "prepare:assets": "node scripts/prepare-assets.js",
     "dev": "npm run prepare:assets && vite --host 127.0.0.1",
     "validate": "node scripts/validate-page-manifest.js",
+    "build:vercel": "node scripts/build-vercel.js",
     "build": "npm run validate && npm run prepare:assets && vite build && node scripts/generate-public-pages.js",
     "preview": "vite preview --host 127.0.0.1",
     "test": "node --test tests/unit/*.test.js",

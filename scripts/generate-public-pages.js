@@ -40,7 +40,7 @@ for (const { from, to } of manifest.legacy_redirects.filter(entry => entry.from 
   await writeFile(resolve(output, `.${from}`), `<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="robots" content="noindex, nofollow"><meta http-equiv="refresh" content="0; url=${target}"><link rel="canonical" href="${target}"><title>WeGroween</title></head><body><p><a href="${target}">Continue to the catalogue</a></p></body></html>`);
 }
 await writeFile(resolve(output, '.nojekyll'), '');
-await writeFile(resolve(output, 'release.json'), JSON.stringify({ commit: process.env.GITHUB_SHA ?? null, basePath: siteUrl('/'), stage: 'foundation', accountPreview: publishedAccountPreview }, null, 2));
+await writeFile(resolve(output, 'release.json'), JSON.stringify({ commit: process.env.GITHUB_SHA ?? process.env.VERCEL_GIT_COMMIT_SHA ?? null, basePath: siteUrl('/'), stage: 'foundation', accountPreview: publishedAccountPreview }, null, 2));
 await writeFile(resolve(output, 'prerender-manifest.json'), JSON.stringify({ stage: 'foundation', publicPaths, staticPaths, robots: 'noindex, nofollow' }, null, 2));
 console.log(`Generated ${publicPaths.length} public HTML routes, ${staticPaths.length} static entries, legacy redirects, 404.html and client app shell. All remain noindex pending launch.`);
 
